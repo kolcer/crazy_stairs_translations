@@ -1126,7 +1126,7 @@ module.gui.gameover.credits = {
 	"bash1234567888",
 	"cakegirlserina",
 	"FORDÍTÓK:",
-	"English - Sleazel", --Isn't English the original language? So this shouldn't be in the credits.
+	"English - Sleazel", 
 	"Polski - Sleazel",
 	"Fran ais - Alexnumbers",	
 	"Italiano - Roloversion",	
@@ -1435,7 +1435,7 @@ module.tutorial = {
 	["tut_big_12"] = "Te most egy Wicked vagy, használd ezt a varázsigét, hogy elpusztítsd az utadban álló lépcsőt.",
 	["tut_big_13"] = "El tudsz pusztítani feletted lévő lépcsőket úgy, hogy ráugrasz az alattuk lévőre.",
 	["tut_big_14"] = "Mielőtt még elkezdenél játszani, hadd mutassam meg neked a prémium osztályt.",
-	["tut_big_15"] = "Te most egy Spectre vagy, Spectre az egy prémium osztály, ami a legjobb, ha egyedül játszol.",
+	["tut_big_15"] = "Te most egy Spectre vagy. Spectre az egy prémium osztály, ami legjobb, ha egyedül játszol.",
 	["tut_big_16"] = "A célod - juss el a legfelső szintre és szerezd meg a gömböt. Sok szerencsét",
 
 	["tut_select"] = "Válaszd ki ezt a varázsigét.",
@@ -1626,7 +1626,7 @@ module.serverfeedback = {
 	["pass"] = "Már van itt egy kitérés.",
 	["link"] = "Már van itt egy kapocs.",
 	["noblink"] = "Csak útban álló lépcsőkön lehet átvillanni.",
-	["noblink2"] = "Nem tudod felvonóhidakon és lehajlított lépcsőkön végrehajtani ezt a varázsigét.",
+	["noblink2"] = "Csak olyan lépcsőkön tudod végrehajtani ezt a varázsigét, amelyeknek a teteje hozzá ér az útban álló lépcsőhöz.",
 	["noflip"] = "Csak a normális, fordított vagy riges lépcsőket lehet megfordítani.",
 	["nothingtocopy"] = "Nincsenek itt lépcsők, amelyeket te vagy a szellemed le tudnátok másolni.",
 	["wrongdirection"] = "Nem tudod ezt a varázsigét végrehajtani abban az irányban.",
