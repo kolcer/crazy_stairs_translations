@@ -101,12 +101,10 @@ module.gui.spellbar = {
 }
 
 module.gui.stats = {
-
-	["total"] = "Total climbs: %d / Wins: %d",
-	["class"] = "Climbs as %s: %d",
-	["best"] = "Best %s time: %.2f",
+	["total"] = "Ascese conseguite: %d / Vittorie: %d",
+	["class"] = "Scalate praticate con %s: %d",
+	["best"] = "Miglior tempo con %s: %.2f",
 	["na"] = "N/A",
-
 }
 
 module.gui.timedspell = {
