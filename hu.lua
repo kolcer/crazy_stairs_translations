@@ -1239,7 +1239,7 @@ module.static = {
 	["cus_4"] = "A jutalmak az Egyedi Toronyban meg vannak felezve. Kapsz 1 zsetont minden 12. szintért és egy mászást minden 30. szintért.",
 	["cus_5"] = "Torony Beállításai",
 	["cus_6"] = "Beállíthatod a tornyot úgy, ahogy akarod. Beállíthatod a szintek számát, lezárhatod a páros szinteket vagy bekapcsolhatod a végtelen módot.",
-	["cus_7"] = "Csak a szerver tulajdonosa állíthatja be a tornyot. Nyilvános szervereken a szerver tulajdonosa ",
+	["cus_7"] = "Csak a szerver tulajdonosa állíthatja be a tornyot.", --Nyilvános szervereken csak az a játékos állíthatja be a tornyot, amelyik a legtöbb időt töltött el a szerverben.
 	["cus_8"] = "Drón Beállításai",
 	["cus_9"] = "Meg tudod változtatni a kis drónok beállításait is. Beállíthatod a lépcsők számát, a drónok gyorsaságát, az átkozott lépcsőkre és kereszteződésekre az esélyt, vagy kikapcsolhatod a drónokat.",
 
