@@ -923,7 +923,7 @@ module.gui.gameover.messages = {
 	},
 	["SPECTRE"] = {
 		"ELTÜNNI, ELBÚJNI és TELEPORTÁLNI",
-		"Persze hogy biztonságos a teleportálás",
+		"Mi baj lehet a teleportálással?",
 		"Nem tudsz elkapni",
 		"A szellemesített lépcsők gyönyöre páratlan",
 		"Miért érdekelne az engem, ha emberek leesnek?",
@@ -1265,7 +1265,7 @@ module.static = {
 	["nether_1"] = "SPECTRE KÖDE",
 	["nether_2"] = "JELMONDATUNK:\nELTÜNNI\nELBÚJNI\nÉS\nTELEPORTÁLNI",
 	["nether_3"] = "ELŐNYÖK:\nGyors varázsigék\nTökéletes ha egyedül játszol\nHÁTRÁNYOK:\nRobuxba kerül\nNem ajánlott csapatokban",
-	["nether_4"] = "„Persze hogy biztonságos a teleportálás.”\nalapítónk idézete (MIA)", 
+	["nether_4"] = "„Mi baj lehet a teleportálással?”\nalapítónk idézete (MIA)", 
 
 	["study_1"] = "ARCHON LABORA",
 	["study_2"] = "JELMONDATUNK:\nNYISS\nPORTÁLT\n???\nHASZON",
