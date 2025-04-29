@@ -163,28 +163,26 @@ module.gui.jukebox = {
 }
 
 module.gui.results = {
+	["title"] = "CLASSIFICA RISULTATI",
 
-	["title"] = "RACE RESULTS",
-
-	["place"] = "PLACE",
-	["name"] = "NAME",
-	["level"] = "MAX LEVEL",
-	["time"] = "TIME",
-	["rank"] = "RANK",
+	["place"] = "POSIZIONE",
+	["name"] = "NOME",
+	["level"] = "PIANO PIÙ ALTO",
+	["time"] = "TEMPO",
+	["rank"] = "RANGO",
 	["not"] = "N/A",
-	[1] = "WINNER",
-	[2] = "2nd",
-	[3] = "3rd",
-	[4] = "4th",
-	[5] = "5th",
-	[6] = "6th",
-	[7] = "7th",
-	[8] = "8th",
-	[9] = "9th",
-	[10] = "10th",
-	[11] = "11th",
-	[12] = "12th",
-
+	[1] = "CAMPIONE",
+	[2] = "secondo",
+	[3] = "terzo",
+	[4] = "quarto",
+	[5] = "quinto",
+	[6] = "sesto",
+	[7] = "settimo",
+	[8] = "ottavo",
+	[9] = "nono",
+	[10] = "decimo",
+	[11] = "undicesimo",
+	[12] = "dodicesimo",
 }
 
 module.gui.racetimer = {
