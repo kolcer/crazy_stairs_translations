@@ -245,16 +245,16 @@ module.spells.names = {
 	["wickedaltevent"] = "Evento Annichilazione",
 
 	--KEEPER
-	["move"] = "Move Stairs",
-	["rotate"] = "Rotate Stairs",
-	["moveup"] = "Move Stairs Up",
-	["movedown"] = "Restore Stairs",
-	["moverandom"] = "Random Above Move",
-	["rig"] = "Random Move",
+	["move"] = "Muovi Scale",
+	["rotate"] = "Ruota Scale",
+	["moveup"] = "Innalza Scale",
+	["movedown"] = "Ripristina Scale",
+	["moverandom"] = "Spostamento Randomico in Alto",
+	["rig"] = "Spostamento Randomico",
 
-	["ascension"] = "Ascension",
-	["keeperevent"] = "Reshuffle",
-	["keeperaltevent"] = "Restoration",
+	["ascension"] = "Ascensione",
+	["keeperevent"] = "Evento Mescolazione",
+	["keeperaltevent"] = "Evento Restaurazione",
 
 	--SPECTRE
 	["phantom"] = "Create Phantom Stairs",
