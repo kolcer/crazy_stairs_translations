@@ -186,14 +186,12 @@ module.gui.results = {
 }
 
 module.gui.racetimer = {
-
-	["gather"] = "You're not\nin the race",
-	["race"] = "RACE\nOVER",
-	["inf"] = "Eliminated",
-	["off"] = "RACE\nTIMER",
-	["wait"] = "Race in",
-	["on"] = "Rank",
-
+	["gather"] = "Non sei\nun corridore.",
+	["race"] = "GARA\nCONCLUSA!",
+	["inf"] = "Sei fuori!",
+	["off"] = "CRONOMETRO\nCORSA",
+	["wait"] = "Prossima corsa tra",
+	["on"] = "Rango",
 }
 
 
