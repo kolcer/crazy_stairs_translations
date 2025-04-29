@@ -1,3 +1,6 @@
+--VERSION 1.0--
+--BRITISH ENGLISH--
+
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
 local RankData = require(game.ReplicatedFirst.DataModules:WaitForChild('RankData'))
@@ -293,7 +296,7 @@ module.spells.names = {
 
 	["traveller"] = "Shimmering",
 	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["spectrealtevent"] = "Ã†ther Realm",
 
 	--HACKER
 	["dash"] = "Dash",
@@ -448,14 +451,14 @@ module.spells.descriptions = {
 	--JOKER
 	["flip"] = "This spell flips stairs around, so top will become bottom and vice versa. You may also flip such stairs back.",
 	["flipabove"] = "This spell flips above stairs, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["fake"] = "This spell allows you to create fake stairs in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, IT's and players in the Ghost Union Mode.",
+	["fake"] = "This spell allows you to create fake stairs in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "This spell creates invisible stairs. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
 	["disco"] = "This spell turns stairs into disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
 	["trap"] = "This spell turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
 
 	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
-	["jokerevent"] = event .. "the Invisiblity. Found messages will not show, to avoid spam.",
+	["jokerevent"] = event .. "the Invisiblity.",
 	["jokeraltevent"] = event .. "the Flip spell.",
 	["jokermode"] = string.format(mode,"Joker","Joker Rig","Invisible Spell"),
 	["jokerrefill"] = overload,
@@ -649,12 +652,12 @@ module.spells.descriptions = {
 	["gremlinrigevent"] = rig .. "the Gremlin Rig. Stairs, once triggered, will hypnotize the triggering player. They will have to find Mana to be released. Hypnotized players have their controls reversed. Rank up to HOBGOBLIN to be immune to Gremlin Rigs.",
 	["gremlinevent"] = event .. "the Random Revolve Stairs spell.", 
 	["gremlinaltevent"] = fill .. "Created stairs will be of Tram variety.",
-	["gremlinmode"] = string.format(mode,"Gremlin","Gremlin Rig","Random Revolve Stairs spell."),
+	["gremlinmode"] = string.format(mode,"Gremlin","Gremlin Rig","Random Revolve Stairs spell"),
 	["gremlinrefill"] = overload,
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "This used to be a Keeper spell, before it got rejected. It will move any normal or rigged stairs down. If you have ranked Keeper to Captain, you may also move flipped stairs.",
+	["chamdown"] = "This used to be a Keeper spell, before it got rejected. It will move any normal or rigged stairs down. If you have ranked Keeper to Captain, you may also move any un-cursed stairs.",
 	["chamswap"] = "This used to be a Necromancer spell, before it got rejected. It will copy your ghost, but unlike Reaver merge, your ghost is still active. This spell was unfinished and it is purely visual now.",
 	["chamdraw"] = "This used to be a Heretic spell, before it got rejected. It will turn stairs into drawbridge, making descent impossible unless other player activates bridge from below.",
 	["ditch"] = "This used to be a thief spell, before it got rejected. It will turn stairs into a crossed staircase.",
@@ -720,7 +723,7 @@ module.gui.ranks = {
 	},
 	["SPECTRE"] = { 
 		[4] = "You will get an extra 1 Mana when you collect crystals with Your Ghost.", 
-		[5] = "Your DE-GHOSTIFY spell is now free.",
+		[5] = "Your GHOSTIFY spell is now free.",
 		[6] = "You can now touch the orb at the top with your ghost to finish a climb.",
 		[8] = "You have the option to avoid triggering any Spectre Rigs.", 
 		[9] = "You can now walk on ghosted stairs.",
@@ -742,14 +745,14 @@ module.gui.ranks = {
 	["THIEF"] = {
 		[4] = "Your Bypass will now last twice as long (120s).",
 		[5] = "Your Spiral Staircase will now last twice as long (120s).",
-		[6] = "You can now steal any un-curesed stairs.",
+		[6] = "You can now steal any un-cursed stairs.",
 		[8] = "If you are out of Mana, jump on a platform to get 1 Mana from your stash.", 
 		[9] = "You can now keep 2 stolen stairs at the same time.",
 	},
 	["ARCHON"] = {
 		[4] = "You can now cast the Destroy Gate spell on platforms, to remove Platform Gates.",
 		[5] = "Your Destroy Gate spell is now free.",
-		[6] = "Gates will nevev teleport you down.",
+		[6] = "Gates will never teleport you down.",
 		[8] = "You can now cast Gate spells on stairs with Gates already on them.",
 		[9] = "You can choose to avoid teleportation on all but upward Gates.",
 	},
@@ -865,12 +868,12 @@ module.gui.settings = {
 	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
 	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
 	["multi"] = "Show Multi Token window selection after the climb",
-	["kchoices"] = "Show direction selection window for Keeper (won't work on Xbox)",
-	["hchoices"] = "Show direction selection window for Hacker (won't work on Xbox)",
-	["achoices"] = "Show direction selection window for Archon (won't work on Xbox)",
-	["rchoices"] = "Show direction selection window for Reaver (won't work on Xbox)",
-	["schoices"] = "Show direction selection window for Splicer (won't work on Xbox)",
-	["gchoices"] = "Show direction selection window for Gremlin (won't work on Xbox)",
+	["kchoices"] = "Show direction selection window for Keeper (won't work on consoles)",
+	["hchoices"] = "Show direction selection window for Hacker (won't work on consoles)",
+	["achoices"] = "Show direction selection window for Archon (won't work on consoles)",
+	["rchoices"] = "Show direction selection window for Reaver (won't work on consoles)",
+	["schoices"] = "Show direction selection window for Splicer (won't work on consoles)",
+	["gchoices"] = "Show direction selection window for Gremlin (won't work on consoles)",
 	["stats"] = "Show extra stats when casting Rig & Event spells",
 
 }
@@ -896,7 +899,7 @@ module.gui.gameover.messages = {
 		"11 out of 10, on the scale of niceness",
 		"Sharing is caring",
 		"You can never have too many stairs",
-		"There is no I in Team, but there is definetely a Patron",
+		"There is no I in Team, but there is definitely a Patron",
 		"You cannot have a staircase without stairs",
 		"Another job well done",
 	},
@@ -1047,7 +1050,7 @@ module.gui.gameover.messages = {
 	},
 	["NECROMANCER"] = {
 		"FOLLOW, REVIVE and BENEFIT",
-		"We aren’t actually haunting you, we just wanna be friends",
+		"We arenâ€™t actually haunting you, we just wanna be friends",
 		"Your soul is MINE!",
 		"Follow my ghost. Trust me!",
 		"It is safe near my ghost. Why would I lie?",
@@ -1198,7 +1201,7 @@ module.static = {
 	["pro_1"] = "PRO TOWER",
 	["pro_2"] = "Even levels restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
-	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red hollow circle in the middle.",
+	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
 	["pro_5"] = "Cursed Stairs",
 	["pro_6"] = "In the Pro Tower Drones will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
 	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
@@ -1227,7 +1230,7 @@ module.static = {
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
 	["cus_5"] = "Tower Settings",
 	["cus_6"] = "By changing the tower settings you can have it your way. Choose levels, restrict even levels or even set the tower to the infinite mode.",
-	["cus_7"] = "Only server owner can adjust the settings, therefore public servers are not supported in the Custom Tower.",
+	["cus_7"] = "Only server owner can adjust the settings.",
 	["cus_8"] = "Drone Settings",
 	["cus_9"] = "You can also change the small drone setting. Adjust the max count, the min count or even disable them altoghether.",
 
@@ -1321,7 +1324,7 @@ module.static = {
 	["grave_1"] = "NECROMANCER'S GRAVE",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'We arenâ€™t actually haunting you, we just wanna be friends.'\nour founder's quote",
 
 	--SHARED
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
@@ -1450,7 +1453,7 @@ module.guide = {
 	["arrow"] = {
 		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
 		--["restore"] = "Can be executed next to.",
-		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Exiled to demolish crossing cursed stairs.",
+		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
 		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
 		["any"] = "Can be executed on any un-cursed intersection.",
 		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
@@ -1480,7 +1483,7 @@ module.guide = {
 	["stairs"] ={
 		
 		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
-		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed staris.",
+		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
 		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
 		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
@@ -1504,7 +1507,7 @@ module.guide = {
 	["above"] = {
 		
 		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
-		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed staris.",
+		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
 		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
 		["flip"]= "Can be executed below normal, flipped or rigged stairs.",
 		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
@@ -1640,6 +1643,7 @@ module.serverfeedback = {
 	["lockedinter"] = "This intersection is locked.",
 	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
 	["duplicatemirror"] = "There is already a mirror on this level.",
+	["norestore"] = "Thief bypasses and spirals cannot be restored.",
 
 	--higher rank required
 	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
@@ -1653,10 +1657,11 @@ module.serverfeedback = {
 	["traveller"] = "Rank up to Traveller to boost Elevators.",
 	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
 	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
-	["lich"] = "Rank up to Lich to demolish crossing stairs",
+	["lich"] = "Rank up to Lich to demolish crossing stairs.",
 	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
 	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
 	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
+	["poltergeist"] = "Rank up to Poltergeist to demolish crossing stairs.",
 
 	--rig activation
 	["keeperrig"] = "Stairs are moving!",
