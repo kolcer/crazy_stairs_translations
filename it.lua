@@ -257,16 +257,16 @@ module.spells.names = {
 	["keeperaltevent"] = "Evento Restaurazione",
 
 	--SPECTRE
-	["phantom"] = "Create Phantom Stairs",
-	["ghost"] = "Ghostify Above Stairs",
-	["shadow"] = "Ghostify Stairs",
-	["horizontal"] = "Horizontal Teleport",
-	["random"] = "Random Teleport",
-	["vertical"] = "Vertical Teleport",
+	["phantom"] = "Evoca Scale",
+	["ghost"] = "Spettralizza Scale in Alto",
+	["shadow"] = "Spettralizza Scale",
+	["horizontal"] = "Scatto Fantasma",
+	["random"] = "Teletrasporto Randomico",
+	["vertical"] = "Emersione",
 
-	["traveller"] = "Shimmering",
-	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["traveller"] = "Nomade",
+	["spectreevent"] = "Evento Mescolazione Spettrale",
+	["spectrealtevent"] = "Evento Fantasmagòrico",
 
 	--HACKER
 	["dash"] = "Dash",
