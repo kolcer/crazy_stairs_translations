@@ -108,11 +108,9 @@ module.gui.stats = {
 }
 
 module.gui.timedspell = {
-
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
-	["released"] = "RELEASED",
-	["timesup"] = "times up...",
-
+	["possessed"] = "POSSEDUTO! (colleziona Mana per liberarti)",
+	["released"] = "RILASCIATO",
+	["timesup"] = "Tempo scaduto...",
 }
 
 
