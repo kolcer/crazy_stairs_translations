@@ -305,16 +305,16 @@ module.spells.names = {
 	["archonaltevent"] = "Evento Portali in Alto",
 
 	--DRIFTER
-	["indrift"] = "Surf",
-	["outdrift"] = "Random Drift",
-	["updrift"] = "Elevator",
-	["diagdrift"] = "Diagonal Drift",
-	["spin"] = "Spin Stairs",
-	["driftabove"] = "Lift Above Stairs",
+	["indrift"] = "Naviga",
+	["outdrift"] = "Navigazione a Caso",
+	["updrift"] = "Elevazione",
+	["diagdrift"] = "Perlustrazione",
+	["spin"] = "Rotea Scale",
+	["driftabove"] = "Solleva Scale in Alto",
 
-	["riser"] = "Riser",
-	["drifterevent"] = "Driftage",
-	["drifteraltevent"] = "Liftage",
+	["riser"] = "Ascensore",
+	["drifterevent"] = "Evento Deviazione",
+	["drifteraltevent"] = "Evento Sollevamento",
 
 	--HERETIC
 	["createcursed"] = "Create Cursed Stairs",
