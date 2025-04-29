@@ -221,16 +221,16 @@ module.spells.names = {
 	["patronaltevent"] = "Evento Restringente",
 
 	--JOKER 
-	["flip"] = "Flip Stairs",
-	["flipabove"] = "Flip Above Stairs",
-	["fake"] = "Create Fake Stairs",
-	["invisible"] = "Create Invisible Stairs",
-	["disco"] = "Disco Stairs",
-	["trap"] = "Create Trap",
+	["flip"] = "Ribalta Scale",
+	["flipabove"] = "Ribalta Scale in Alto",
+	["fake"] = "Genera Scale Illusorie",
+	["invisible"] = "Genera Scale Invisibili",
+	["disco"] = "Discoteca",
+	["trap"] = "Crea Trappola",
 
-	["flipper"] = "Flipper",
-	["jokerevent"] = "The Cloak",
-	["jokeraltevent"] = "Flip Them All",
+	["flipper"] = "Ribaltatore",
+	["jokerevent"] = "Evento Invisibile",
+	["jokeraltevent"] = "Evento Sottosopra",
 
 	--WICKED
 	["destroy"] = "Destroy Stairs",
