@@ -365,16 +365,16 @@ module.spells.names = {
 	["reaveraltevent"] = "Evento Ascendente",
 
 	--gremlin
-	["tram"] = "Create Tram Stairs",
-	["screwup"] = "Up Corkscrew",
-	["revolve"] = "Revolve Stairs",
-	["trapstairs"] = "Trapdoor Stairs",
-	["screwdown"] = "Down Corkscrew",
-	["spinplatform"] = "Revolve Platform",
+	["tram"] = "Genera Tram",
+	["screwdown"] = "Avvolgi Scale",
+	["screwup"] = "Avvolgi Scale in Alto",
+	["revolve"] = "Scale Girevoli",
+	["trapstairs"] = "Scale Trappola",
+	["spinplatform"] = "Gira Piattaforma",
 
-	["tramway"] = "Tram-way",
-	["gremlinevent"] = "Revolvelution",
-	["gremlinaltevent"] = "Gridlock",
+	["tramway"] = "Conducente",
+	["gremlinevent"] = "Evento Girevole",
+	["gremlinaltevent"] = "Evento Capolinea",
 
 	--CHAMELEON
 	["ditch"] = "Cross Stairs",
