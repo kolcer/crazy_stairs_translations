@@ -77,32 +77,28 @@ module.gui.serversettings = {
 }
 
 module.gui.shop = {
+	["title"] = "NEGOZIO SCALEMANIA",
 
-	["title"] = "CRAZY STAIRS SHOP",
+	["chameleon"] = "Chameleon permette di cambiare classe durante le scalate.",
+	["spectre"] = "Gli incantesimi di Spectre si basano sul teletrasporto, meglio usato in solitaria.",
+	["mana"] = "Aumenta di 10 il limite massimo di Mana che puoi accumulare.",
 
-	["chameleon"] = "Chameleons can change alignment during climb.",
-	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
-	["mana"] = "Expand your Mana storage capacity by 10 points.",
+	["3tokens"] = "Equivale allo sblocco di 1 incantesimo, o all'uso di fino a 3 sortilegi.",
+	["30tokens"] = "Equivale allo sblocco di 10 incantesimi, o all'uso di fino a 30 sortilegi.",
+	["300tokens"] = "Sufficiente per sbloccare tutti gli incantesimi, con 93 gettoni rimanenti.",
 
-	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
-	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
-	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
-
-	["3TOKENS"] = "3 Multi Tokens (R$%d)",
-	["30TOKENS"] = "30 Multi Tokens (R$%d)",
-	["300TOKENS"] = "300 Multi Tokens (R$%d)",
-	["SPECTRE PASS"] = "Spectre game pass (R$%d)",
-	["MANA PASS"] = "20 Mana Storage game pass (R$%d)",
-	["CHAMELEON PASS"] = "Chameleon game pass (R$%d)",
-
+	["3TOKENS"] = "3 Gettoni Multiuso (R$%d)",
+	["30TOKENS"] = "30 Gettoni Multiuso (R$%d)",
+	["300TOKENS"] = "300 Gettoni Multiuso (R$%d)",
+	["SPECTRE PASS"] = "Pass Spectre (R$%d)",
+	["MANA PASS"] = "Contenitore Mana Migliorato (R$%d)",
+	["CHAMELEON PASS"] = "Pass Chameleon (R$%d)",
 }
 
 module.gui.spellbar = {
-
-	["share"] = "SHARE\nMANA",
-	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
-
-} 
+	["share"] = "CONDIVIDI\nMANA",
+	["nocasual"] = "SOLO I CORRIDORI POSSONO USARE GLI INCANTESIMI",
+}
 
 module.gui.stats = {
 
