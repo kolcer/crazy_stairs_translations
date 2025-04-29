@@ -293,16 +293,16 @@ module.spells.names = {
 	["thiefaltevent"] = "Evento Scorciatoia",
 
 	--ARCHON
-	["splitup"] = "Create Up Gate",
-	["splitrotate"] = "Create Rotated Gate",
-	["splitside"] = "Create Straight Gate",
-	["splitrandom"] = "Create Random Gate",
-	["cancelsplit"] = "Destroy Gate",
-	["splitforward"] = "Create Platform Gate",
+	["splitup"] = "Portale Dimensionale in Alto",
+	["splitrotate"] = "Portale Dimensionale Adiacente",
+	["splitside"] = "Portale Dimensionale Parallelo",
+	["splitrandom"] = "Portale Dimensionale Randomico",
+	["cancelsplit"] = "Scollega Portali Dimensionali",
+	["splitforward"] = "Crea Portale Dimensionale",
 
-	["splitter"] = "Portalmania",
-	["archonevent"] = "StairGate-1",
-	["archonaltevent"] = "Division",
+	["splitter"] = "Mania dei Portali",
+	["archonevent"] = "Evento Portali Laterali",
+	["archonaltevent"] = "Evento Portali in Alto",
 
 	--DRIFTER
 	["indrift"] = "Surf",
