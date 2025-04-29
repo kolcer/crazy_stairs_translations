@@ -116,7 +116,7 @@ module.gui.stats = {
 
 module.gui.timedspell = {
 
-	["possessed"] = "MEG LETTÉL SZÁLVA! (Találj manát hogy felszabadulj)",
+	["possessed"] = "MEG LETTÉL SZÁLLVA! (Találj manát hogy felszabadulj)",
 	["released"] = "FELSZABADULTÁL",
 	["timesup"] = "az idő lejárt...",
 
@@ -384,7 +384,7 @@ module.spells.names = {
 	["bigmirror"] = "Hatalmas Tükör",
 	["smallmirror"] = "Kicsi Tükör",
 	["outermirror"] = "Külső Tükör",
-	["merge"] = "Reaver Eggyesülés",
+	["merge"] = "Reaver Egyesülés",
 	["oneway"] = "Egyirányú Lépcső",
 
 	["reflection"] = "Tükröződés",
@@ -400,7 +400,7 @@ module.spells.names = {
 	["spinplatform"] = "Felület Pörgetése",
 
 	["tramway"] = "Villamospálya",
-	["gremlinevent"] = "Forr(dul) a dalom", 
+	["gremlinevent"] = "Forr(dul) a dalom", --This pun makes no sense if you do not play the English version of the game, but on the other hand it is funny(maybe).
 	["gremlinaltevent"] = "Torlódás", 
 
 	--CHAMELEON
@@ -413,12 +413,6 @@ module.spells.names = {
 
 	--MISC (compatibility)
 	["reg"] = "A lépcsőház újraépül",
-
-	--shouldn't be visible withouth glitches
-	["muggleevent"] = "Nem tudom"
-	["mugglealtevent"] = "Emphratius_Maximus"
-	["noneevent"] = "😱 Derítsük ki CRAZY STAIRS Titkát a Robloxban! 😱" --actual video title but I replaced TUNG TUNG SAHUR with crazy stairs
-	["nonealtevent"] = "Rossz dolgok fognak veled történni te mocskos csaló"
 
 }-- " .. RankData.PATRON[7].name .. " 
 
@@ -434,7 +428,7 @@ local timedExtra = " Ha rendelkezel %s ranggal, akkor ez a varázsige 90 másodp
 
 module.spells.descriptions = {
 
-	--PATRON
+	--PATRON I might be dumb but I have always assumed that they were written like PATREON i do not know why
 	["summon"] = "Ezzel a varázsigével létre tudsz hozni egy lépcsőt egy általad választott irányban. Ha van útban egy lépcső, akkor az a lépcső elpusztul.",
 	["restore"] = : "Ez a varázsige odahívja a legfelső szinten lévő gömböt a választott felületre. Ha rendelkezel DEFENDER ranggal, akkor ez a varázsige 2 Manába fog kerülni. Ha rendelkezel SAVIOUR ranggal, akkor a gömb kétszer olyan gyorsan fog feléd jönni.",
 	["split"] = "Ez a varázsige újraépíti az alattad lévő lépcsőt a másik irányba. Az újraépített lépcső normális lesz attól függetlenül, hogy milyen volt az eredeti lépcső.",
@@ -451,8 +445,8 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Ez a varázsige megfordítja a lépcsőt, így az alja a teteje lesz és fordítva. A lépcsőket vissza lehet fordítani.",
-	["flipabove"] = "Ez a varázsige megfordítja a feletted lévő lépcsőt, így az alja a teteje lesz és fordítva. A lépcsőket vissza lehet fordítani.",
+	["flip"] = "Ez a varázsige megfordítja a lépcsőt, így az alja a teteje lesz és fordítva. Az ilyen lépcsőket vissza lehet fordítani.",
+	["flipabove"] = "Ez a varázsige megfordítja a feletted lévő lépcsőt, így az alja a teteje lesz és fordítva. Az ilyen lépcsőket vissza lehet fordítani.",
 	["fake"] = "Ezzel a varázsigével létre tudsz hozni egy hamis lépcsőt egy általad választott irányban. Ha van útban egy lépcső, akkor az a lépcső elpusztul. Ha egy játékos (beleértve téged) megpróbál felmenni rajta leesik, kivéve TRICKSTERek, ITek és Szellem Unió módban lévő játékosok.",
 	["invisible"] =  "Ezzel a varázsigével létre tudsz hozni egy láthatatlan lépcsőt. Azonban ez nem tud lépcsőket elpusztítani, tehát egy szabad kereszteződésbe kell raknod. Ha rendelkezel JESTER ranggal, akkor láthatod az összes láthatatlan lépcsőt, és lesz választásod, hogy ne fedd fel őket.",
 	["disco"] = "Ez a varázsige átváltoztatja az alattad lévő lépcsőt egy diszkós lépcsővé. Ha egy játékos (beleértve téged) rálép, akkor megáll (általában kétszer) és táncol 5 másodpercig. Ha rendelkezel COMIC ranggal, akkor immunis leszel a diszkó lépcsőkre.",
@@ -460,7 +454,7 @@ module.spells.descriptions = {
 
 	["flipper"] = timed ..  "Ezzel a varázsigével bármennyiszer megfordíthatsz lépcsőket egy percig. Mindig a feletted lévő lépcső fordul meg. Ha nem lehet megfordítani, akkor az alattad lévő lépcső fordul meg."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokernek",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "Joker Riget. Ha aktiválják, akkor a lépcső megfordul.",
-	["jokerevent"] = event .. "Láthatatlanná teszi. Ha megtalálják, akkor nem adja ki az üzenetet, hogy ne legyen túl sok üzenet.",
+	["jokerevent"] = event .. "Láthatatlanná teszi.",
 	["jokeraltevent"] = event .. "Megfordítja.",
 	["jokermode"] = string.format(mode,"Joker","Joker Riget","Láthatatlanná változtatja."),
 	["jokerrefill"] = overload,
@@ -897,11 +891,11 @@ module.gui.gameover.messages = {
 	["PATRON"] = {
 		"SEGÍTENI, MEGVÉDENI és LÉTREHOZNI",
 		"Ki más fog segíteni a szerencsétlen embereken, ha nem mi?",
-		"Patreonok nélkül nem lenne remény ",
+		"Patronok nélkül nem lenne remény ",
 		"A kedvességem 1-től 10-es skálán 11-es",
 		"Osztozkodni öröm",
 		"Nincs olyan, hogy túl sok a lépcső",
-		"Minden csapatba kell egy Patreon",
+		"Minden csapatba kell egy Patron",
 		"Nem lehet lépcsőházad lépcsők nélkül",
 		"Egy újabb jól végzett munka",
 	},
@@ -1245,7 +1239,7 @@ module.static = {
 	["cus_4"] = "A jutalmak az Egyedi Toronyban meg vannak felezve. Kapsz 1 zsetont minden 12. szintért és egy mászást minden 30. szintért.",
 	["cus_5"] = "Torony Beállításai",
 	["cus_6"] = "Beállíthatod a tornyot úgy, ahogy akarod. Beállíthatod a szintek számát, lezárhatod a páros szinteket vagy bekapcsolhatod a végtelen módot.",
-	["cus_7"] = "Csak a szerver tulajdonosa állíthatja be a tornyot. A nyilvános szervereken az a játékos állíthatja be a tornyot, amelyik a legtovább játszott a szerveren.",
+	["cus_7"] = "Csak a szerver tulajdonosa állíthatja be a tornyot. Nyilvános szervereken a szerver tulajdonosa ",
 	["cus_8"] = "Drón Beállításai",
 	["cus_9"] = "Meg tudod változtatni a kis drónok beállításait is. Beállíthatod a lépcsők számát, a drónok gyorsaságát, az átkozott lépcsőkre és kereszteződésekre az esélyt, vagy kikapcsolhatod a drónokat.",
 
@@ -1383,7 +1377,7 @@ module.static = {
 	["drifter_lead"] = "SEBES DRIFTEREK",
 	["drifter_ranks"] = "DRIFTER RANGOK",
 
-	["patron_lead"] = "NEMES PATREONOK",
+	["patron_lead"] = "NEMES PATRONOK",
 	["patron_ranks"] = "PATRON RANGOK",
 
 	["archon_lead"] = "FÜRGE ARCHONOK",
@@ -1423,7 +1417,7 @@ module.tutorial = {
 
 	["tut_big_1"] = "Üdvözöljük az Őrült Lépcsőkben!",
 	["tut_big_2"] = "Először tanuld meg hogyan változz át.",
-	["tut_big_3"] = "Te most egy Patreon vagy. A Patreonok lépcsőket tudnak létrehozni.",
+	["tut_big_3"] = "Te most egy Patron vagy. A Patronok lépcsőket tudnak létrehozni.",
 	["tut_big_4"] = "Az összes varázsigét ugrással kell végrehajtani.",
 	["tut_big_5"] = "Menő, ugye? Most változz át Jokerré. A Jokerek meg tudják fordítani a lépcsőket.",
 	["tut_big_6"] = "Te most egy Joker vagy, használd ezt a varázsigét, hogy átfordíts lépcsőket.",
@@ -1906,7 +1900,7 @@ module.timedspells = {}
 
 module.eventspells = {
 
-	["patronrigevent"] = "%s rárakott az összes normális lépcsőre Patreon Riget!",
+	["patronrigevent"] = "%s rárakott az összes normális lépcsőre Patron Riget!",
 	["patronevent"] = "%s túlterhelte a tornyot lépcsőkkel!",
 	["patronaltevent"] = "%s az összes normális lépcsőt összezsugorította!",
 
@@ -1965,14 +1959,6 @@ module.eventspells = {
 	["newmode"] = "%s átváltotta a drónokat %s módra!",
 
 	["chameleonrigevent"] = "%s rárakott az összes normális lépcsőre Chameleon Riget!"
-
-	--shouldn't be visible withouth glitches
-	["mugglerigevent"] = "A repülés minden ismert törvénye szerint a méhnek semmiképpen sem szabad tudnia repülni. Szárnyai túl kicsik ahhoz, hogy kövér kis testét felemelje a földről. A méh természetesen úgyis repül, mert a méheket nem érdekli, hogy az emberek mit tartanak lehetetlennek. Sárga, fekete. Sárga, fekete. Sárga, fekete. Sárga, fekete. Ó, fekete és sárga! Rázzuk fel egy kicsit. Barry! Kész a reggeli! Eljövetel! Várj egy kicsit. Helló? - Barry? - Ádám? - El tudod hinni, hogy ez megtörténik? - Nem tudok. felveszlek. Élesen néz ki. Használja a lépcsőt."
-	["nonerigevent"] = "Nem vagyunk idegenek a szerelemtől Ismered a szabályokat és én is A teljes elkötelezettség az, amire gondolok Ezt senki mástól nem kapnád meg Csak el akarom mondani, hogy mit érzek Meg kell értened Soha nem foglak feladni, soha nem hagylak cserben Soha nem fogok elszaladni és elhagyni Soha nem foglak sírni, soha nem fogok elbúcsúzni Soha nem fog hazudni és bántani Olyan régóta ismerjük egymást Fáj a szíved, de túl félénk vagy ahhoz, hogy kimondd Odabent mindketten tudjuk, mi folyik itt Ismerjük a játékot, és játszani is fogunk vele És ha megkérdezed, hogy érzem magam Ne mondd, hogy túl vak vagy ahhoz, hogy láss Soha nem foglak feladni, soha nem hagylak cserben Soha nem fogok elrohanni és elhagyni Soha nem foglak sírni, soha nem fogok elbúcsúzni Soha nem fog hazudni és bántani Soha nem foglak feladni, soha nem hagylak cserben Soha nem fogok elrohanni és elhagyni Soha nem foglak sírni, soha nem fogok elbúcsúzni Soha nem fog hazudni és bántani Olyan régóta ismerjük egymást Fáj a szíved, de túl félénk vagy ahhoz, hogy kimondd Odabent mindketten tudjuk, mi folyik itt Ismerjük a játékot, és játszani is fogunk vele Csak el akarom mondani, hogy mit érzek Meg kell értened Soha nem foglak feladni, soha nem hagylak cserben Soha nem fogok elrohanni és elhagyni Soha nem foglak sírni, soha nem fogok elbúcsúzni Soha nem fog hazudni és bántani Soha nem foglak feladni, soha nem hagylak cserben Soha nem fogok elszaladni és elhagyni Soha nem foglak sírni, soha nem fogok elbúcsúzni Soha nem fog hazudni és bántani Soha nem foglak feladni, soha nem hagylak cserben Soha nem fogok elrohanni és elhagyni Soha nem foglak sírni, soha nem fogok elbúcsúzni Soha nem fog hazudni és bántani"
-	["muggleevent"] = "Subscribe to Technoblade"
-	["mugglealtevent"] = "Itt járt Emph"
-	["noneevent"] = "Hogy hívják a magyar autószerelőt? Bekő Tóni"
-	["nonealtevent"] = "Te, gyere csak felém tovább és nehogy fékezz! Most készül a képed, mosolyogj! Megvagy! Húú, úgy látom a sebességhatárt átlépted és a gyorshajtás nem egy olcsó dolog… (Béla #igazoltatás alá vont személy) Úúú! Mondja meg, miért állított meg biztosúr? Figyeltem a KRESZ táblákra piszkosul betartottam mindent a szabályokból! (Pista) Óóó nem! Hát, 21-el mentél 20-as táblánál sokakat életveszélybe sodortál búcsúzzál el 30 ezer forintodtól! (béla) Undorító! 21 az távol áll a gyorshajtástól! Nem is látsz a tábla attól a fától! Elegem van azigazságtalanságból! Undorító! Sunyiban a bokor mögül kamerázol és ekkora büntetésről magyarázol ezzel a 30 ronggyal le nullázol (Piasta) Sok a- sok a duma! Sok a duma! Ne hogy már engem hibáztass törvényszegő féreg! Én csak szolgálok és védek! Most maradj csöndben és add már a pénzed! 30 rugó, 30 rugó baby! (Béla) Nem védesz te senkit nem jár erre ember nézd meg! Csak azért vagy itt, hogy a pénzt szedd! Rosszindulatú vagy értsd meg! (Piasta) Rosszindulatot akarsz, megkapod! Mit jelent mindjárt megkapod! Égőkészletet kirakod, mire háromig számolok! Hiányzik, az egyik égő megy a bünti! Bam! Bam! Túl halvány a helyzetjelző, megy a bünti! Bam! Bam! Nézz már ide! Rég lejárt az elsősegély készlet! Ugye-ugye nem hitted, hogy ezt nem veszem majd észre? A kocsi belsejét teljesen átvizsgáltam végre nyolcvan rongynál tartunk, s messze még a vége! Ez nem lesz így jó, kicsit sok a CO Hogyha ezt most látná Sírna DiCaprio! Akkor ez a rendszám megy most a kukába A kocsidnak annyi, mész te is utána! Csináld, amit mondok érintsd meg az orrod! Úgy látom ez nem megy vannak itt gondok! A jogsidnak is lőttek, ketté is van vágva! Most már gyalogos vagy, húzzál az anyádba Óó jee! (Béla) Maga teljesen meg őrült mi a francot képzel? Nem elég hogy le húzott pénzel? Többet erővel, mint ésszel! (Pista) Ez nagy hiba volt, nagy hiba volt, baby! Remélem tudod, hogy innen már bilincsben mész el! Azonnal tarkóra a kézzel! Ezt pedig tekerd majd be gézzel! (Béla) Undorító! Biztos úr, egy kicsikét még kérem várjon! Azt hiszem, hogy van egy másik megoldásom! Egy Deák van a zsebembe, azt önnek szánom! (Pista) Nagyon jó! Hát miért nem ezzel kezdte? Most már minden rendben! Nincsen semmi probléma, nyugodtan menjen! Emiatt volt ilyen bunkó? Ez olyan el szomorító… (Pista) Korrupció, korrupció baby! Kedves barátom, útjára bocsátom vigyázzon az úton, remélem, még látom! (Béla) Mekkora gáz ez az ember! Az előbb még a földön vert el… Undorító…"
 }
 
 module.spells.extras = {
@@ -2043,7 +2029,7 @@ module.gui.hints = {
 
 module.gui.gameover.extras = {
 
-	["noobs"] = "Kinek kell a kiképzés?",
+	["noobs"] = "Kinek kell kiképzés?",
 	["possessed"] = "Azok az idegesítő Hereticek!",
 	["hypnotized"] = "Hol vagyok?",
 	["new"] = "Új rang megszerezve - %s",
