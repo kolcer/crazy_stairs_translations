@@ -377,27 +377,28 @@ module.spells.names = {
 	["gremlinaltevent"] = "Evento Capolinea",
 
 	--CHAMELEON
-	["ditch"] = "Cross Stairs",
-	["warp"] = "Warp Stairs",
-	["chamdown"] = "Move Stairs Down",
-	["chamdraw"] = "Below Drawbridge",
-	["chamswap"] = "Copy Ghost (visual)",
-	["chamdrawabove"] = "Above Drawbridge",
+	["ditch"] = "Incrocia Scale",
+	["warp"] = "Distorci Scale",
+	["chamdown"] = "Sprofonda Scale",
+	["chamdraw"] = "Ponte Levatoio in Basso",
+	["chamswap"] = "Copy Ghost (visual)", --TODO
+	["chamdrawabove"] = "Ponte Levatoio in Alto",
 
 	--MISC (compatibility)
-	["reg"] = "Staircase is regenerating",
+	["reg"] = "Rigenerazione in corso",
 
 }-- " .. RankData.PATRON[7].name .. " 
 
 -- common description stuff
-local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
-local overload = "This is an Overload spell. It will grant you one Mana every 6 seconds for the next minute (10 in total). You can have only one overload active at a time."
-local timed = "This spell is timed. "  -- do not remove space
-local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
-local event = "This is an Event spell. It will affect all normal stairs with " -- do not remove space
-local fill = "This is a Fill spell. It will create stairs in every empty uncursed intersection in a random direction. " -- do not remove spaces
-local mode = "This is a Drone spell. It will change the drone mode to %s. In this mode drones will cast randomly either %s or %s on normal stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively."
-local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this spell will also refill Mana for all %s with at least %s Rank." -- do not remove leading space
+
+local union = "Questo è un sortilegio temporaneo. Quando attivo, puoi camminare attraverso le scale che bloccano il passaggio. Qualsiasi effetto malevolo/benevolo è inefficace su di te mentre sei in questo stato. Tuttavia non puoi lanciare incantesimi."
+local overload = "Questo è un sortilegio a intervalli. Ricevi 1 mana ogni 6 secondi, per 1 minuto (10 in totale). Per rieseguire l'incantesimo è necessario attendere che finisca l'effetto di quello precedente."
+local timed = "Questo incantesimo è temporaneo. "  -- do not remove space
+local rig = "Questo è un sortilegio Rig. Tutte le scale normali verranno alterate una alla volta da " -- do not remove space
+local event = "Questo è un sortilegio Evento. Tutte le scale normali verranno alterate una alla volta da " -- do not remove space
+local fill = "Questo è un sortilegio Culmine. Verranno generate scale in tutte le intersecazioni senza malefici. " -- do not remove spaces
+local mode = "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in fase %s. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: %s e %s. Le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
+local timedExtra = " Raggiungi il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
 
 module.spells.descriptions = {
 
@@ -1095,8 +1096,8 @@ module.gui.gameover.credits = {
 	"TRANSLATIONS:",
 	"English - Sleazel",
 	"Polski - Sleazel",
-	"Fran ais - Alexnumbers",	
-	"Italiano - Roloversion",	
+	"Fran ais - Alexnumbers",
+	"Italiano - Roloversion",
 	"Nederlandse - Sanderk35_2",
 	"Romana - NoobMaster38271",
 	"= ??? - ambronium",
