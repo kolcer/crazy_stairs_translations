@@ -201,9 +201,9 @@ module.spells = {}
 
 local CommonSpellNames = {
 	["rigevent"] = "%s Rig",
-	["mode"] = "Drones %s Mode",
-	["refill"] = "Mana Overload (%s)",
-	["union"] = "Ghost Union (%s)",
+	["mode"] = "Droni in fase %s",
+	["refill"] = "Mana a Gogo (%s)",
+	["union"] = "Unione Spettrale (%s)",
 	--["event"]
 }
 
