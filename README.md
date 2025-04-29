@@ -10,6 +10,7 @@ RULES:
 6. Translations are provided free of charge.
 7. Collaborations are very welcome.
 8. To become a translator, contact me on Discord. I reserve the right to reject any application without giving a reason.
+9. Files are manually added to the game, so let me know when your translation is ready/updated.
 
 GENERAL TRANSLATION GUIDELINES:
 1. Do not translate class names (Patron, Joker, etc.)
