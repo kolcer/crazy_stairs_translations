@@ -353,18 +353,17 @@ module.spells.names = {
 	["necromanceraltevent"] = "Evento Prosciugazione",
 
 	--reaver
-	["createmirrored"] = "Create Mirrored Stairs",
-	["bigmirror"] = "Giant Mirror",
-	["smallmirror"] = "Small Mirror",
-	["outermirror"] = "Outer Mirror",
-	["merge"] = "Reaver Merge",
-	["oneway"] = "One-Way Stairs",
+	["createmirrored"] = "Genera Scale Specchiate",
+	["bigmirror"] = "Genera Specchio Esteso",
+	["smallmirror"] = "Genera Specchio",
+	["outermirror"] = "Specchio Perimetrale",
+	["merge"] = "Unione",
+	["oneway"] = "Scale a Senso Unico",
 
-	["reflection"] = "Reflection",
-	["reaverevent"] = "Cross Roads",
-	["reaveraltevent"] = "Conjucture",
-	
-	
+	["reflection"] = "Specchio Riflesso",
+	["reaverevent"] = "Evento Monodirezionale",
+	["reaveraltevent"] = "Evento Ascendente",
+
 	--gremlin
 	["tram"] = "Create Tram Stairs",
 	["screwup"] = "Up Corkscrew",
