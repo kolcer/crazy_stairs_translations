@@ -269,16 +269,16 @@ module.spells.names = {
 	["spectrealtevent"] = "Evento Fantasmagòrico",
 
 	--HACKER
-	["dash"] = "Dash",
-	["blink"] = "Blink",
-	["swap"] = "Swap",
-	["slide"] = "Escalator",
-	["slideup"] = "Hack In Stairs",
-	["glitch"] = "Glitch Stairs",
+	["dash"] = "Passaggio",
+	["blink"] = "Smaterializzazione",
+	["swap"] = "Sostituzione",
+	["slide"] = "Scale Mobili",
+	["slideup"] = "Manometti Scale",
+	["glitch"] = "Scale Anomale",
 
-	["hack"] = "Speed Hack",
-	["hackerevent"] = "Escalation",
-	["hackeraltevent"] = "Breach",
+	["hack"] = "Accellerazione",
+	["hackerevent"] = "Evento Mobilità",
+	["hackeraltevent"] = "Evento Scali Mobili",
 
 	--THIEF
 	["steal"] = "Steal Stairs",
