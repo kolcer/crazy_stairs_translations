@@ -153,15 +153,13 @@ module.gui.gauges = {
 }
 
 module.gui.jukebox = {
-
 	["title"] = "JUKEBOX",
 
-	["master"] = "MASTER VOLUME",
-	["default"] = "(using master volume)",
-	["climb"] = "CLIMB MUSIC",
-	["endgame"] = "ENDGAME MUSIC",
-	["failed"] = "[failed to load]",
-
+	["master"] = "VOLUME PRINCIPALE",
+	["default"] = "(volume principale in uso)",
+	["climb"] = "MUSICA SCALATA",
+	["endgame"] = "MUSICA FINALE",
+	["failed"] = "[caricamento fallito]",
 }
 
 module.gui.results = {
