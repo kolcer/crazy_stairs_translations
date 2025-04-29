@@ -339,19 +339,19 @@ module.spells.names = {
 	["twister"] = "Scombinatore",
 	["splicerevent"] = "Evento Combinazione",
 	["spliceraltevent"] = "Evento Divisione",
-	
-	--necro
-	["createdual"] = "Create Dual Stairs",
-	["copyplatform"] = "Copy Ghost's Platform",
-	["soulbridge"] = "Create Soul Bridge",
-	["undeadabove"] = "Remove Soul Above",
-	["revival"] = "Revival Point",
-	["regen"] = "Regenerate Mana",
 
-	["duality"] = "Duality",
-	["necromancerevent"] = "Resurrection",
-	["necromanceraltevent"] = "Soul Harvest",
-	
+	--necro
+	["createdual"] = "Genera Scale Gemelle",
+	["copyplatform"] = "Imita Piattaforma della Controfigura",
+	["soulbridge"] = "Genera Incrocio",
+	["undeadabove"] = "Prosciuga Scale in Alto",
+	["revival"] = "Punto di Appoggio",
+	["regen"] = "Rigenera Mana",
+
+	["duality"] = "Dualismo",
+	["necromancerevent"] = "Evento Resurrezione",
+	["necromanceraltevent"] = "Evento Prosciugazione",
+
 	--reaver
 	["createmirrored"] = "Create Mirrored Stairs",
 	["bigmirror"] = "Giant Mirror",
