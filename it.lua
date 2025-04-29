@@ -233,16 +233,16 @@ module.spells.names = {
 	["jokeraltevent"] = "Evento Sottosopra",
 
 	--WICKED
-	["destroy"] = "Destroy Stairs",
-	["destroyabove"] = "Destroy Above Stairs",
-	["bend"] = "Bend Stairs Up",
-	["damage"] = "Damage Above Stairs",
-	["flatten"] = "Bend Opposite Stairs Down",
-	["wall"] = "Create Wall" ,
+	["destroy"] = "Demolisci Scale",
+	["destroyabove"] = "Demolisci Scale in Alto",
+	["bend"] = "Solleva Ponte",
+	["damage"] = "Frantuma Scale in Alto",
+	["flatten"] = "Abbassa Ponte",
+	["wall"] = "Genera Barriera",
 
-	["bender"] = "Bender",
-	["wickedevent"] = "Destruction",
-	["wickedaltevent"] = "Purge",
+	["bender"] = "Imperatore",
+	["wickedevent"] = "Evento Distruzione",
+	["wickedaltevent"] = "Evento Annichilazione",
 
 	--KEEPER
 	["move"] = "Move Stairs",
