@@ -281,16 +281,16 @@ module.spells.names = {
 	["hackeraltevent"] = "Evento Scali Mobili",
 
 	--THIEF
-	["steal"] = "Steal Stairs",
-	["stealabove"] = "Steal Above Stairs",
-	["place"] = "Place Stairs",
-	["uppass"] = "Spiral Staircase",
-	["sidepass"] = "Create Bypass",
-	["drop"] = "Ditch Stairs",
+	["steal"] = "Ruba Scale",
+	["stealabove"] = "Ruba Scale in Alto",
+	["place"] = "Posiziona Scale",
+	["uppass"] = "Posiziona Scale a Spirale",
+	["sidepass"] = "Posiziona Scorciatoia",
+	["drop"] = "Posiziona Scale Piatte",
 
-	["heist"] = "Heist",
-	["thiefevent"] = "Flat Land",
-	["thiefaltevent"] = "Mega Bypass",
+	["heist"] = "Rapina",
+	["thiefevent"] = "Evento Piatto",
+	["thiefaltevent"] = "Evento Scorciatoia",
 
 	--ARCHON
 	["splitup"] = "Create Up Gate",
