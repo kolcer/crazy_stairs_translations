@@ -137,21 +137,19 @@ module.gui.codes = {
 }
 
 module.gui.gauges = {
+	["prompt"] = "Esegui un salto per eseguire, premi nuovamente per annullare.",
 
-	["prompt"] = "Jump to proceed, click again to cancel.",
-
-	["found"] = "%d staircases found (%.1f%% fill)",
-	["special"] = "%d are special (%.1f%%)",
-	["affected"] = "%d staircases will be affected (%.1f%%)",
-	["cursed"] = "%d cursed intersections found (%.1f%%)",
-	["fill"] = "%d staircases will be created (%.1f%%)",
-	["purge"] = "%d objects will be destroyed (%.1f%%)",
-	["normal"] = "%d are already normal (%.1f%%)",
-	["restore"] = "%d staircases will be restored (%.1f%%)",
-	["bypass1"] = "%d curses are in the way (%.1f%%)",
-	["bypass2"] = "%d bypasses already exist (%.1f%%)",
-	["bypass3"] = "%d bypasses will be created (%.1f%%)",
-
+	["found"] = "%d scale trovate (%.1f%% del totale)",
+	["special"] = "%d sono alterate (%.1f%%)",
+	["affected"] = "%d scale saranno coinvolte (%.1f%%)",
+	["cursed"] = "%d malefici trovati (%.1f%%)",
+	["fill"] = "%d scale verranno generate (%.1f%%)",
+	["purge"] = "%d oggetti verranno distrutti (%.1f%%)",
+	["normal"] = "%d sono già normali (%.1f%%)",
+	["restore"] = "%d scale saranno ripristinate (%.1f%%)",
+	["bypass1"] = "%d maledizioni trovate (%.1f%%)",
+	["bypass2"] = "%d scorciatoie già esistono (%.1f%%)",
+	["bypass3"] = "%d scorciatoie verranno generate (%.1f%%)",
 }
 
 module.gui.jukebox = {
