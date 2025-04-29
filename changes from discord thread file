@@ -4,3 +4,4 @@ Added norestore line in server feedback.
 Changed jokerevent description (removed info about found messages not being shown)
 Changed custom tower description a bit. (["cus_7"])
 Changed Spectre rank 5 description
+Changed XboX occurences to "consoles". ( module.gui.settings )
