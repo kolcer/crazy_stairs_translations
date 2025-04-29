@@ -23,6 +23,7 @@ GENERAL TRANSLATION GUIDELINES:
 8. Where should I start? - Anywhere, but I suggest starting from Spell names, as those may be referenced elsewhere.
 9. If you find "\n" in translation, this simply forces a new line. Feel free to remove, add your own or move it around.
 10. Lines starting with '--' are comments only for your and my convenience.
+11. Name your file with 2-letter country code (https://www.iban.com/country-codes) with a `.lua` extension.
 
 STEP-BY-STEP GUIDE:
 1. 'module.gui.basic' - Basic GUI elements - keep it as short as possible, so it fits in the images. %s will be replaced with the current Drone mode alignment.
