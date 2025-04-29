@@ -113,19 +113,14 @@ module.gui.timedspell = {
 	["timesup"] = "Tempo scaduto...",
 }
 
-
 module.gui.activatecham = {
-
-	["title"] = "ACTIVATE CHAMELEON",
-	["body"] = "Do you want to activate Chameleon Mode?\nIt will stay active for the rest of the climb."
-
+	["title"] = "ATTIVA CHAMELEON PASS",
+	["body"] = "Vuoi attivare il Chameleon Pass?\nResterà attivo per tutta la scalata.",
 }
 
 module.gui.caceltimed = {
-
-	["title"] = "CANCEL TIMED SPELL",
-	["body"] = "Do you want to cancel this timed spell? Tokens will not be refunded."
-
+	["title"] = "INTERROMPI SORTILEGIO TEMPORANEO",
+	["body"] = "Vuoi interrompere questo sortilegio temporaneo?\nI gettoni non verranno rimborsati.",
 }
 
 module.gui.climbtimer = {
