@@ -329,16 +329,16 @@ module.spells.names = {
 	["hereticaltevent"] = "Evento Nefasto",
 
 	--SPLICER
-	["twistup"] = "Splice Stairs Up",
-	["twistside"] = "Splice Parallel Stairs",
-	["twistrotate"] = "Splice Adjacent Stairs",
-	["canceltwist"] = "Restore Spliced Stairs",
-	["split2"] = "Split Stairs",
-	["splitalt"] = "Split Stairs Forward",
+	["twistup"] = "Combina Scale in Alto",
+	["twistside"] = "Combina Scale Parallele",
+	["twistrotate"] = "Combina Scale Adiacenti",
+	["canceltwist"] = "Ripristina Giuntura",
+	["split2"] = "Taglia Scale",
+	["splitalt"] = "Dividi Scale",
 
-	["twister"] = "Twister",
-	["splicerevent"] = "Interweave",
-	["spliceraltevent"] = "Bisect",
+	["twister"] = "Scombinatore",
+	["splicerevent"] = "Evento Combinazione",
+	["spliceraltevent"] = "Evento Divisione",
 	
 	--necro
 	["createdual"] = "Create Dual Stairs",
