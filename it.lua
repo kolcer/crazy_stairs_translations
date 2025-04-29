@@ -25,16 +25,14 @@ module.gui.basic = {
 }
 
 module.gui.switcher = {
+	["title"] = "CAMBIA SERVER",
 
-	["title"] = "SWITCH SERVER",
-
-	["public"] = "PUBLIC SERVER",
-	["private"] = "PRIVATE SERVER",
-	["join"] = "JOIN",
-	["friends"] = "FRIENDS ONLINE",
-	["refresh"] = "refreshing...",
-	["fail"] = "FAILED TO REFRESH!",
-
+	["public"] = "SERVER PUBBLICO",
+	["private"] = "SERVER PRIVATO",
+	["join"] = "UNISCITI",
+	["friends"] = "AMICI COLLEGATI",
+	["refresh"] = "sto aggiornando la lista...",
+	["fail"] = "IMPOSSIBILE AGGIORNARE LA LISTA!",
 }
 
 module.gui.serversettings = {
