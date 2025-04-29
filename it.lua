@@ -208,18 +208,17 @@ local CommonSpellNames = {
 }
 
 module.spells.names = {
-
 	--PATRON
-	["summon"] = "Create Stairs",
-	["restore"] = "Call the Orb", 
-	["split"] = "Rebuild Opposite",
-	["shrinkabove"] = "Shrink Above Stairs",
-	["link"] = "Create Link",
-	["portal"] = "Create Portal",
+	["summon"] = "Genera Scale",
+	["restore"] = "Richiama Sfera",
+	["split"] = "Costruisci al Contrario",
+	["shrinkabove"] = "Restringi Scale in Alto",
+	["link"] = "Crea Collegamento",
+	["portal"] = "Crea Portale",
 
-	["summoner"] = "Summoner",
-	["patronevent"] = "Stairs Overload",
-	["patronaltevent"] = "Shrinkage",
+	["summoner"] = "Generatore",
+	["patronevent"] = "Evento Scalemania",
+	["patronaltevent"] = "Evento Restringente",
 
 	--JOKER 
 	["flip"] = "Flip Stairs",
