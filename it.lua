@@ -317,16 +317,16 @@ module.spells.names = {
 	["drifteraltevent"] = "Evento Sollevamento",
 
 	--HERETIC
-	["createcursed"] = "Create Cursed Stairs",
-	["curse"] = "Curse Stairs",
-	["curseabove"] = "Curse Above Stairs",
-	["curseinter"] = "Flicker",
-	["autodown"] = "Raise Schism",
-	["autoup"] = "Lower Schism",
+	["createcursed"] = "Genera Scale Maledette",
+	["curse"] = "Maledici Scale",
+	["curseabove"] = "Maledici Scale in Alto",
+	["curseinter"] = "Crea Maleficio",
+	["autodown"] = "Innalza Scisma",
+	["autoup"] = "Abbassa Scisma",
 
-	["malediction"] = "Malediction",
-	["hereticevent"] = "Disunion",
-	["hereticaltevent"] = "Vengeance",
+	["malediction"] = "Sciagura",
+	["hereticevent"] = "Evento Scisma",
+	["hereticaltevent"] = "Evento Nefasto",
 
 	--SPLICER
 	["twistup"] = "Splice Stairs Up",
