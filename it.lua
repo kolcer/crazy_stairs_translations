@@ -124,20 +124,16 @@ module.gui.caceltimed = {
 }
 
 module.gui.climbtimer = {
-
-	["prompt"] = "Climb the\nstairs!",
-	["floor"] = "Floor",
-	["last"] = "Last time",
-
+	["prompt"] = "Sali sulle\nscale!",
+	["floor"] = "Piano",
+	["last"] = "Tempo cronometrato\nprecedente",
 }
 
 module.gui.codes = {
-
-	["title"] = "ENTER THE CODE",
-	["body"] = "Input Your code here:",
-	["prompt"] = "(code)",
-	["button"] = "VALIDATE",
-
+	["title"] = "INSERIRE_CODICE_QUI.EXE",
+	["body"] = "Digita il codice qui di seguito:",
+	["prompt"] = "(codice)",
+	["button"] = "CONFERMA",
 }
 
 module.gui.gauges = {
