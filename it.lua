@@ -226,7 +226,7 @@ module.spells.names = {
 	["fake"] = "Genera Scale Illusorie",
 	["invisible"] = "Genera Scale Invisibili",
 	["disco"] = "Discoteca",
-	["trap"] = "Crea Trappola",
+	["trap"] = "Crea Botola",
 
 	["flipper"] = "Ribaltatore",
 	["jokerevent"] = "Evento Invisibile",
