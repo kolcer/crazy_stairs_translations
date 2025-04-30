@@ -403,14 +403,14 @@ local timedExtra = " Raggiungi il rango %s per estendere la durata del sortilegi
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "Genera una scala nella direzione indicata. Eventuali scale trovate in mezzo verranno distrutte.",
-	["restore"] = "Richiama la sfera finale sulla piattaforma colpita (in cima). Sblocca il rango Defender per ridurre il costo a 2 Mana. Sblocca il rango Saviour per velocizzare il processo.",
+	["summon"] = "Genera una scala nella direzione indicata, distruggendo eventuali scale in mezzo.",
+	["restore"] = "Richiama la sfera finale sulla piattaforma colpita (in cima).\nSblocca il rango Defender per ridurre il costo a 2 Mana.\nSblocca il rango Saviour per velocizzare il processo.",
 	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
-	["link"] = "Genera un collegamento temporaneo nella direzione desiderata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso. Sblocca il rango Creator per raddoppiare la durabilità.",
-	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma posizionata direttamente sopra. Dura 60 secondi. Sblocca il rango Protector per raddoppiare la durabilità.",
+	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango Creator per raddoppiare la durabilità.",
+	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma posizionata direttamente sopra. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durabilità.",
 
-	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),,
+	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."Patron Rig. Quando calpestate, conferiscono 1 Mana (l'effetto non si attiva se il contenitore Mana è pieno). In seguito all'attivazione, ridiventano scale normali.",
 	["patronevent"] = fill ..  "Le scale create saranno normali.",
 	["patronaltevent"] = event .. "Restringi Scale.",
@@ -419,18 +419,18 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "This spell flips stairs around, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["flipabove"] = "This spell flips above stairs, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["fake"] = "This spell allows you to create fake stairs in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
-	["invisible"] =  "This spell creates invisible stairs. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
-	["disco"] = "This spell turns stairs into disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
-	["trap"] = "This spell turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
+	["flip"] = "Ribalta la scala colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
+	["flipabove"] = "Ribalta la scala posizionata direttamente sopra a quella colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
+	["fake"] = "Genera una scala illusoria nella direzione indicata, distruggendo eventuali scale in mezzo. Non può essere scalata, se non da chi è immune al suo effetto malevolo (Joker con rango Trickster sbloccato e giocatori con il sortilegio Unione Spettrale attivo).",
+	["invisible"] =  "Genera una scala invisibile nella direzione indicata, se l'intersecazione è libera. Quando calpestata, diventa visibile a tutti (opzionale se il rango Jester è sbloccato).",
+	["disco"] = "Trasforma la scala colpita in una pista da ballo. Chi la calpesterà, non potrà fare a meno di ballare.\nSblocca il rango Comic per diventarne immune.",
+	["trap"] = "Sostituisce la piattaforma colpita con una fasulla. I malcapitati che ci passeranno sopra cadranno al piano di sotto.\nSblocca il rango Jokester per essere in grado di individuarle.\nSblocca il rango Trickster per diventarne immune.",
 
-	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
+	["flipper"] = timed ..  "Permette di ribaltare scale in continuazione, per 60 secondi. Se scale posizionate direttamente sopra a quella colpita non sono presenti, ribalta la scala colpita."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
-	["jokerevent"] = event .. "the Invisiblity.",
-	["jokeraltevent"] = event .. "the Flip spell.",
-	["jokermode"] = string.format(mode,"Joker","Joker Rig","Invisible Spell"),
+	["jokerevent"] = event .. "Scale Illusorie.",
+	["jokeraltevent"] = event .. "Ribalta Scale.",
+	["jokermode"] = string.format(mode,"Joker","Joker Rig","Scale Illusorie"),
 	["jokerrefill"] = overload,
 	["jokerunion"] = union,
 
