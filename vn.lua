@@ -421,14 +421,14 @@ module.spells.names = {
 }-- " .. RankData.PATRON[7].name .. " 
 
 -- common description stuff
-local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
-local overload = "This is an Overload spell. It will grant you one Mana every 6 second for the next minute (10 in total). You can have only one overload active at a time."
-local timed = "This spell is timed. "  -- do not remove space
-local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
-local event = "This is an Event spell. It will affect all normal stairs with " -- do not remove space
-local fill = "This is a Fill spell. It will create stairs in every empty uncursed intersection in a random direction. " -- do not remove spaces
-local mode = "This is a Drone spell. It will change the drone mode to %s. In this mode drones will cast randomly either %s or %s on normal stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively."
-local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this spell will also refill Mana for all %s with at least %s Rank." -- do not remove leading space
+local union = "Đây là phép Liên Kết Ma hẹn giờ. Khi trong Chế Độ Liên Kết Ma, bạn có thể xuyên qua thang chắn và đi trên thang ma, chướng ngại, và giả. Thang đặc biệt sẽ không tác dụng đến bạn, và bạn sẽ không kích hoạt rig. Tuy nhiên, bạn không thể dùng phép trong chế độ này."
+local overload = "Đây là một phép Quá Tải. Nó sẽ cho bạn một Mana mỗi 6 giây cho phút tiếp theo (tổng cộng 10). Bạn chỉ có thể kích hoạt một quá tải tại một thời điểm"
+local timed = "Phép này có hạn thời gian. "  -- do not remove space
+local rig = "Đây là phép Rig. Nó sẽ Rig tất cả các cầu thang thường, từng cái một, với " -- do not remove space
+local event = "Đây là phép Sự Kiện. Nó sẽ ảnh hưởng tất cả các cầu thang thường với " -- do not remove space
+local fill = "Đây là một phép Điền. Nó sẽ tạo ra cầu thang ở mọi giao lộ trống không bị nguyền theo hướng ngẫu nhiên. " -- do not remove spaces
+local mode = "Đây là một phép Drone. Nó sẽ thay đổi chế độ drone thành %s. Trong chế độ này, drone sẽ ngẫu nhiên thi triển %s hoặc %s trên cầu thang bình thường. Cầu thang đặc biệt sẽ được phục hồi. Ngoài giới hạn, drone sẽ tạo và phá hủy tương ứng."
+local timedExtra = " Thăng lên cấp %s để tăng giới hạn tới 90s. Thi triển phép này cũng sẽ nạp lại Mana cho tất cả %s với tối thiểu cấp %s." -- do not remove leading space
 
 module.spells.descriptions = {
 
