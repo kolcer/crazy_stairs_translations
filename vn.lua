@@ -434,7 +434,7 @@ module.spells.descriptions = {
 
 	--PATRON
 	["summon"] = "Phép này cho phép bạn tạo thang theo hướng được chọn. Nếu có bất kì thang nào chắn đường, chúng sẽ bị tiêu hủy.",
-	["restore"] = "Phép này gọi quả ỏ trên tầng đỉnh tháp đến nền được chọn. Thăng lên cấp DEFENDER để giảm chí phí về 2 Mana. Thăng lên cấp SAVIOUR để gấp đôi tốc độ mà quả cầu sẽ di chuyển đến Bạn.",
+	["restore"] = "Phép này gọi quả cầu trên tầng đỉnh tháp đến nền được chọn. Thăng lên cấp DEFENDER để giảm chí phí về 2 Mana. Thăng lên cấp SAVIOUR để gấp đôi tốc độ mà quả cầu sẽ di chuyển đến Bạn.",
 	["split"] = "Phép này tái tạo thang bên dưới ở hướng ngược lại. Thang được tái tạo sẽ là thường bất kể loại của thang gốc.",
 	["shrinkabove"] = "Phép này thu hẹp thang bên trên, cho phép bạn đi vòng qua chúng.",
 	["link"] = "Phép này tạo một cầu năng lượng giữa các nền trong 60 giây. Liên kết vô hình từ bên dưới. Thăng lên cấp CREATOR để kéo thời hạn lên 120 giây.",
@@ -451,12 +451,12 @@ module.spells.descriptions = {
 	--JOKER
 	["flip"] = "Phép này lật thang lại, vậy đỉnh sẽ thành đáy và ngược lại. Bạn cũng có thể lật những thang đó lại.",
 	["flipabove"] = "Phép này lật thang bên trên, vậy đỉnh sẽ thành đáy và ngược lại. Bạn cũng có thể lật những thang đó lại.",
-	["fake"] = "Phép này cho phép bạn tạo thang giả theo hướng được chọn. Nếu có bất kì thang nào chắn đường, chúng sẽ bị tiêu hủy. Bất kì ai (kể cả bạn) mà cố gắng leo chúng sẽ bị rơi qua, với ngoại lệ là TRICKSTERS, ITS và người chươi trong Chế Độ Liên Kết Ma.",
+	["fake"] = "Phép này cho phép bạn tạo thang giả theo hướng được chọn. Nếu có bất kì thang nào chắn đường, chúng sẽ bị tiêu hủy. Bất kì ai (kể cả bạn) mà cố  leo chúng sẽ bị rơi qua, với ngoại lệ là TRICKSTERS, ITS và người chươi trong Chế Độ Liên Kết Ma.",
 	["invisible"] =  "Phép này tạo thang tàng hình. Tuy nhiên, đây sẽ không tiêu hủy thang chắn đường, nên bạn chỉ có thể đặt thang ở một giao lộ trống. Thăng lên cấp JESTER để nhìn tất cả thang tàng hình, và có tùy chọn để không tiết lộ chúng.",
 	["disco"] = "Phép này biến thang sang chế độ disco. Bất kì ai (kể cả bạn) sẽ dừng lại và nhảy trên chúng 5 giây (thường là hai lần). cấp COMIC trở lên miễn ảnh hưởng bởi thang disco.",
 	["trap"] = "Phép này biến nền thành một cửa sập trong 60 giây. Bất kì ai (kể cả bạn) mà cố đi lên bẫy sẽ rơi xuống nền bên dưới. Thăng lên cấp JOKESTER để có thể phát hiện bẫy nền. Thăng lên cấp TRICKSTER để miễn ảnh hưởng bởi mấy bẫy đó.",
 
-	["flipper"] = timed ..  "Nó cho phép bạn thi triển bao nhiêu phép lậtthang tùy ý thích trong một phút. Thang bên trên sẽ luôn được lật, nếu có. Nếu không, thang bên dưới sẽ được lật thay."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
+	["flipper"] = timed ..  "Nó cho phép bạn thi triển bao nhiêu phép lật thang tùy ý thích trong một phút. Thang bên trên sẽ luôn được lật, nếu có. Nếu không, thang bên dưới sẽ được lật thay."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "bậc Joker Rig. Thang, một khi kích hoạt, sẽ tự động lật.",
 	["jokerevent"] = event .. "Sự Tàng Hình.",
 	["jokeraltevent"] = event .. "phép Lật.",
