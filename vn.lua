@@ -433,12 +433,12 @@ local timedExtra = " Thăng lên cấp %s để tăng giới hạn tới 90s. Th
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "This spell allows you to create stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
-	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
-	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
-	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
-	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangilbe from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
-	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
+	["summon"] = "Phép này cho phép bạn tạo thang theo hướng được chọn. Nếu có bất kì thang nào chắn đường, chúng sẽ bị tiêu hủy.",
+	["restore"] = "Phép này gọi quả ỏ trên tầng đỉnh tháp đến nền được chọn. Thăng lên cấp DEFENDER để giảm chí phí về 2 Mana. Thăng lên cấp SAVIOUR để gấp đôi tốc độ mà quả cầu sẽ di chuyển đến Bạn.",
+	["split"] = "Phép này tái tạo thang bên dưới ở hướng ngược lại. Thang được tái tạo sẽ là thường bất kể loại của thang gốc.",
+	["shrinkabove"] = "Phép này thu hẹp thang bên trên, cho phép bạn đi vòng qua chúng.",
+	["link"] = "Phép này tạo một cầu năng lượng giữa các nền trong 60 giây. Liên kết vô hình từ bên dưới. Thăng lên cấp CREATOR để kéo thời hạn lên 120 giây.",
+	["portal"] = "Phép này sẽ tạo cổng dịch chuyển mọi người chơi lên một tầng. Cổng có hạn 60 giây. Thăng lên cấp PROTECTOR để kéo thời hạn lên 120 giây.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
