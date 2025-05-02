@@ -129,7 +129,7 @@ module.gui.timedspell = {
 module.gui.activatecham = {
 
 	["title"] = "KÍCH HOẠT CHAMELEON",
-	["body"] = "Bạn muốn kích hoạt Chế Độ Chameleon?\nNó sẽ duy trì hoạt động đến hết lần leo."
+	["body"] = "Bạn muốn kích hoạt Chế Độ Chameleon?\nNó sẽ duy trì hoạt động tới hết lần leo."
 
 }
 
@@ -421,7 +421,7 @@ module.spells.names = {
 }-- " .. RankData.PATRON[7].name .. " 
 
 -- common description stuff
-local union = "Đây là phép Liên Kết Ma hẹn giờ. Khi trong Chế Độ Liên Kết Ma, bạn có thể xuyên qua thang chắn và đi trên thang ma, chướng ngại, và giả. Thang đặc biệt sẽ không tác dụng đến bạn, và bạn sẽ không kích hoạt rig. Tuy nhiên, bạn không thể dùng phép trong chế độ này."
+local union = "Đây là phép Liên Kết Ma hẹn giờ. Khi trong Chế Độ Liên Kết Ma, bạn có thể xuyên qua thang chắn và đi trên thang ma, obby, và giả. Thang đặc biệt sẽ không tác dụng tới bạn, và bạn sẽ không kích hoạt rig. Tuy nhiên, bạn không thể dùng phép trong chế độ này."
 local overload = "Đây là một phép Quá Tải. Nó sẽ cho bạn một Mana mỗi 6 giây cho phút tiếp theo (tổng cộng 10). Bạn chỉ có thể kích hoạt một quá tải tại một thời điểm"
 local timed = "Phép này có hạn thời gian. "  -- do not remove space
 local rig = "Đây là phép Rig. Nó sẽ Rig tất cả các cầu thang thường, từng cái một, với " -- do not remove space
@@ -434,7 +434,7 @@ module.spells.descriptions = {
 
 	--PATRON
 	["summon"] = "Phép này cho phép bạn tạo thang theo hướng được chọn. Nếu có bất kì thang nào chắn đường, chúng sẽ bị tiêu hủy.",
-	["restore"] = "Phép này gọi quả cầu trên tầng đỉnh tháp đến nền được chọn. Thăng lên cấp DEFENDER để giảm chí phí về 2 Mana. Thăng lên cấp SAVIOUR để gấp đôi tốc độ mà quả cầu sẽ di chuyển đến Bạn.",
+	["restore"] = "Phép này gọi quả cầu trên tầng đỉnh tháp tới nền được chọn. Thăng lên cấp DEFENDER để giảm chí phí về 2 Mana. Thăng lên cấp SAVIOUR để gấp đôi tốc độ mà quả cầu sẽ di chuyển tới Bạn.",
 	["split"] = "Phép này tái tạo thang bên dưới ở hướng ngược lại. Thang được tái tạo sẽ là thường bất kể loại của thang gốc.",
 	["shrinkabove"] = "Phép này thu hẹp thang bên trên, cho phép bạn đi vòng qua chúng.",
 	["link"] = "Phép này tạo một cầu năng lượng giữa các nền trong 60 giây. Liên kết là ảo từ bên dưới. Thăng lên cấp CREATOR để kéo thời hạn lên 120 giây.",
@@ -465,18 +465,18 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "This spell destroys stairs. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
-	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
-	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "This spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Only Wickeds and Ghost Unions can go through such wall and on the link.",
+	["destroy"] = "Phép này tiêu hủy thang. Khác phép khác, nó sẽ có tác dụng trên mọi cầu thang. Thăng lên cấp VILE để thi triển phép này miễn phí. Thăng lên cấp VICIOUS để lấy 1 Mana mỗi lần bạn tiêu hủy thang đặc biệt. Thăng lên cấp ANNIHILATOR để tiêu hủy thang bị nguyền.",
+	["destroyabove"] = "Phép này tiêu hủy thang bên trên. Khác phép khác, nó sẽ có tác dụng trên mọi cầu thang. Thăng lên cấp VICIOUS để lấy 1 Mana mỗi lần bạn tiêu hủy thang đặc biệt. Thăng lên cấp ANNIHILATOR để tiêu hủy thang bị nguyền.",
+	["bend"] = "Phép này uốn thang lên. Dùng nó để tiếp cận được nền trên.",
+	["damage"] = "Phép này biến thang bên trên thành obby, bằng cách loại bỏ hầu hết các bước. Trước khi thử, nhớ để ý hồi chiêu nhảy. Thăng lên cấp DESTROYER để đi trên obby như thang thường.",
+	["flatten"] = "Phép này uốn thang đối diện xuống. Dùng nó để tiếp cận được nền đối diện.",
+	["wall"] = "Phép này tạo tường năng lượng trên nền cộng một liên kết tới nền đối diện trong 60 giây. Chỉ các Wicked và Liên Kết Ma có thể đi qua mấy tường và trên liên kết đó.",
 
-	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
-	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
-	["wickedevent"] = event .. "the Destroy spell. Regeneration will not be triggered.",
-	["wickedaltevent"] = "This is an Event spell. It will destroy all the stairs and curses in the game. No exceptions. Regeneration will be triggered.",
-	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Bend Spell"),
+	["bender"] = timed .. "Nó cho phép bạn thi triển bao nhiêu phép thang lên tùy ý thích trong một phút. Cả hai thang bên dưới và bên trên sẽ được uốn cùng lúc time nếu đáp ứng đủ điều kiện."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
+	["wickedrigevent"] = rig .. "bậc Wicked Rig. Thang, một khi kích hoạt, sẽ tự động tiêu hủy. Thăng lên cấp Devil để đi trên Wicked Rig mà không kích hoạt chúng.",
+	["wickedevent"] = event .. "phép Tiêu Hủy. Sự Tái Tạo sẽ không được kích hoạt.",
+	["wickedaltevent"] = "Đây là một phép Sự Kiện. Nó sẽ tiêu hủy tất cả thang và nguyền trong trò chơi. Không ngoại lệ. Sự Tái Tạo sẽ được kích hoạt.",
+	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Phép Uốn"),
 	["wickedrefill"] = overload,
 	["wickedunion"] = union,
 
