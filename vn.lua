@@ -472,7 +472,7 @@ module.spells.descriptions = {
 	["flatten"] = "Phép này uốn thang đối diện xuống. Dùng nó để tiếp cận được nền đối diện.",
 	["wall"] = "Phép này tạo tường năng lượng trên nền cộng một liên kết tới nền đối diện trong 60 giây. Chỉ các Wicked và Liên Kết Ma có thể đi qua mấy tường và trên liên kết đó.",
 
-	["bender"] = timed .. "Nó cho phép bạn thi triển bao nhiêu phép thang lên tùy ý thích trong một phút. Cả hai thang bên dưới và bên trên sẽ được uốn cùng lúc time nếu đáp ứng đủ điều kiện."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
+	["bender"] = timed .. "Nó cho phép bạn thi triển bao nhiêu phép uốn thang lên tùy ý thích trong một phút. Cả hai thang bên dưới và bên trên sẽ được uốn cùng lúc time nếu đáp ứng đủ điều kiện."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "bậc Wicked Rig. Thang, một khi kích hoạt, sẽ tự động tiêu hủy. Thăng lên cấp Devil để đi trên Wicked Rig mà không kích hoạt chúng.",
 	["wickedevent"] = event .. "phép Tiêu Hủy. Sự Tái Tạo sẽ không được kích hoạt.",
 	["wickedaltevent"] = "Đây là một phép Sự Kiện. Nó sẽ tiêu hủy tất cả thang và nguyền trong trò chơi. Không ngoại lệ. Sự Tái Tạo sẽ được kích hoạt.",
@@ -481,18 +481,18 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "This spell will move stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["movedown"] = "This spell fixes any special stairs. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
-	["rig"] = "This spell will move or rotate stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Phép này sẽ chuyển thang theo chiều ngang, tiêu hủy thang cản đường. Khi thi triển, các mũi tên sẽ hiện lên thang, để nhắc bạn chọn hướng. Thang không thể chuyển khỏi khu vực trò chơi. Thăng lên cấp CONTROLLER để chuyển thang không bị nguyền bất kỳ.",
+	["rotate"] = "Phép này sẽ quay thang theo chiều ngang, tiêu hủy thang cản đường. Khi thi triển, các mũi tên sẽ hiện lên thang, để nhắc bạn chọn hướng. Thang không thể quay khỏi khu vực trò chơi. Thăng lên cấp CONTROLLER để chuyển thang không bị nguyền bất kỳ.",
+	["moveup"] = "Phép này sẽ chuyển thang lên, tiêu hủy thang cản đường. Thang không thể chuyển lên trên tầng cao nhất. Thăng lên cấp CONTROLLER để chuyển thang không bị nguyền bất kỳ.",
+	["movedown"] = "Phép này sửa thang đặc biệt bất kỳ. Nếu thang đã bình thường sẵn, phép này sẽ không thực hiện. Thăng lên cấp CAPTAIN để thi triển phép này miễn phí. Thăng lên cấp ADMIRAL để sửa được Thang Bị Nguyền và Giao Lộ Bị Nguyền.",
+	["rig"] = "Phép này sẽ chuyển hoặc quay thang theo ngẫu nhiên, tiêu hủy thang cản đường. Thăng lên cấp OPERATOR để tránh thang di xuống. Thăng lên cấp CONTROLLER để chuyển thang không bị nguyền bất kỳ.",
+	["moverandom"] = "Phép này sẽ chuyển hoặc quay thang bên trên theo ngẫu nhiên, tiêu hủy thang cản đường. Thăng lên cấp OPERATOR để tránh thang di xuống. Thăng lên cấp CONTROLLER để chuyển thang không bị nguyền bất kỳ.",
 
-	["ascension"] = timed .. "It allows you to cast as many move up spells as you like for one minute."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
-	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to Operator, for any rigs that you trigger to never go down. Rank up to Sentinel to have an option not to trigger them.",
-	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
-	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["ascension"] = timed .. "Nó cho phép bạn thi triển bao nhiêu phép chuyển lên tùy ý thích trong một phút"  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
+	["keeperrigevent"] = rig .. "bậc Keeper Rig. Thang, một khi kích hoạt, sẽ chuyển hoặc quay thang theo ngẫu nhiên. Thăng lên cấp Operator, để mọi rig mà bạn kích hoạt không được di xuống. Thăng lên cấp Sentinel để có tùy chọn không kích hoạt chúng.",
+	["keeperevent"] = event .. "phép Chuyển Ngẫu Nhiên. Trước thi triển bạn có thể chọn chế độ mềm hoặc ép buộc. Trong chế độ mềm, phép này sẽ chuyển hoặc quay tất cả thang thường theo ngẫu nhiên, mà không tiêu hủy bất cứ gì trong quá trình. Trong chế độ ép buộc, phép này sẽ chuyển hoặc quay tất cả thang theo ngẫu nhiên, tiêu hủy thang cản đường.",
+	["keeperaltevent"] = "Đây là một phép Sự Kiện. Nó sẽ khôi phục tất cả cầu thang trong trò chơi, kể cả thang bị nguyền. Khác Thanh Lọc nó sẽ không loại bỏ giao lộ bị nguyền.",
+	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Phép Chuyển Ngẫu Nhiên"),
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
