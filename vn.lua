@@ -470,7 +470,7 @@ module.spells.descriptions = {
 	["bend"] = "Phép này uốn thang lên. Dùng nó để tiếp cận được nền trên.",
 	["damage"] = "Phép này biến thang bên trên thành obby, bằng cách loại bỏ hầu hết các bước. Trước khi thử, nhớ để ý hồi chiêu nhảy. Thăng lên cấp DESTROYER để đi trên obby như thang thường.",
 	["flatten"] = "Phép này uốn thang đối diện xuống. Dùng nó để tiếp cận được nền đối diện.",
-	["wall"] = "Phép này tạo tường năng lượng trên nền cộng một liên kết tới nền đối diện trong 60 giây. Chỉ các Wicked và Liên Kết Ma có thể đi qua mấy tường và trên liên kết đó.",
+	["wall"] = "Phép này tạo tường năng lượng trên nền cộng một liên kết tới nền đối diện trong 60 giây. Chỉ các Wicked và Liên Kết Ma có thể đi xuyên mấy tường và trên liên kết đó.",
 
 	["bender"] = timed .. "Nó cho phép bạn thi triển bao nhiêu phép uốn thang lên tùy ý thích trong một phút. Cả hai thang bên dưới và bên trên sẽ được uốn cùng lúc time nếu đáp ứng đủ điều kiện."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "bậc Wicked Rig. Thang, một khi kích hoạt, sẽ tự động tiêu hủy. Thăng lên cấp Devil để đi trên Wicked Rig mà không kích hoạt chúng.",
@@ -498,17 +498,17 @@ module.spells.descriptions = {
 
 	--SPECTRE
 	["phantom"] = "Phép này sẽ tạo Thang Ảo theo hướng được chọn. Nếu có bất kì thang nào chắn đường, chúng sẽ bị tiêu hủy. Thang ảo sẽ nhanh mờ dần sau thi triển, biến mất hoàn toàn.",
-	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
-	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
-	["horizontal"] = "This spell lets you teleport horizontally in the choosen direction. You can teleport through any un-cursed stairs in the way.",
-	["random"] = "This spell will teleport you to a random platform on the same level.",
-	["vertical"] = "This spell will teleport you up, to the platform above.",
+	["ghost"] = "Phép này cho bạn hóa linh thang bên trên. Bạn có thể đi xuyên thang được hóa linh, nhưng không thể đi lên chúng trừ khi bạn đã lên cấp AETHER. Dùng lại phép này để khử hóa linh thang. ",
+	["shadow"] = "Phép này cho bạn hóa linh thang. Bạn có thể đi xuyên thang được hóa linh, nhưng không thể đi lên chúng trừ khi bạn đã lên cấp AETHER. Thăng lên cấp PHANTOM để thi triển phép này miễn phí. Dùng lại phép này để khử hóa linh thang.",
+	["horizontal"] = "Phép này cho bạn dịch chuyển ngang theo hướng được chọn. Bạn có thể dịch chuyển xuyên thang không bị nguyền chắn đường.",
+	["random"] = "Phép này sẽ dịch chuyển bạn tới một nền ngẫu nhiên trên cùng tầng.",
+	["vertical"] = "Phép này sẽ dịch chuyển bạn lên, tới nền bên trên.",
 
-	["traveller"] = timed ..  "It allows you to cast as many Horizontal Teleport spells, as you like for one minute."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
-	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to Vision to have an option to walk on Spectre Rigs without triggering them.",
-	["spectreevent"] = event .. "the Ghosted Random Move spell. Before executing you can choose soft ghosted or forced ghosted mode. In soft ghosted mode this spell will move or rotate normal stairs in random direction, without destroying anything in the process. In forced ghost mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
-	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to Aether to walk on ghostified stairs. Ghost Union can also be used to walk on ghostified stairs.",
-	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Soft Ghosted Random Move Spell"),
+	["traveller"] = timed ..  "Nó cho phép bạn thi triển bao nhiêu phép Dịch Chuyển Ngang tùy ý thích trong một phút."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
+	["spectrerigevent"] = rig .. "bậc Spectre Rig. Thang, một khi kích hoạt, sẽ có cơ hội 50% hóa linh. Thăng lên cấp Vision để tùy chọn đi trên Spectre Rig mà không kích hoạt chúng.",
+	["spectreevent"] = event .. "phép Chuyển Hóa Linh Ngẫu Nhiên. Trước thi triển bạn có thể chọn chế độ hóa linh mềm hoặc ép buộc. Trong chế độ mềm phép này sẽ chuyển hoặc quay tất cả thang thường theo ngẫu nhiên, mà không tiêu hủy bất cứ gì trong quá trình. Trong chế độ ép buộc, phép này sẽ chuyển hoặc quay tất cả thang theo ngẫu nhiên, tiêu hủy thang cản đường.",
+	["spectrealtevent"] = "Đây là một phép Sự Kiện. Nó sẽ hóa linh tất cả thang thường. Thăng lên cấp Aether để đi trên thang hóa linh. Liên Kết Ma cũng có thể được dùng đề đi trên thang hóa linh.",
+	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Phép Chuyển Hóa Linh Mềm Ngẫu Nhiên"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
