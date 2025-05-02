@@ -505,7 +505,7 @@ module.spells.descriptions = {
 	["vertical"] = "Phép này sẽ dịch chuyển bạn lên, tới nền bên trên.",
 
 	["traveller"] = timed ..  "Nó cho phép bạn thi triển bao nhiêu phép Dịch Chuyển Ngang tùy ý thích trong một phút."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
-	["spectrerigevent"] = rig .. "bậc Spectre Rig. Thang, một khi kích hoạt, sẽ có cơ hội 50% hóa linh. Thăng lên cấp Vision để tùy chọn đi trên Spectre Rig mà không kích hoạt chúng.",
+	["spectrerigevent"] = rig .. "bậc Spectre Rig. Thang, một khi kích hoạt, sẽ có cơ hội 50% hóa linh. Thăng lên cấp Vision để có tùy chọn đi trên Spectre Rig mà không kích hoạt chúng.",
 	["spectreevent"] = event .. "phép Chuyển Hóa Linh Ngẫu Nhiên. Trước thi triển bạn có thể chọn chế độ hóa linh mềm hoặc ép buộc. Trong chế độ mềm phép này sẽ chuyển hoặc quay tất cả thang thường theo ngẫu nhiên, mà không tiêu hủy bất cứ gì trong quá trình. Trong chế độ ép buộc, phép này sẽ chuyển hoặc quay tất cả thang theo ngẫu nhiên, tiêu hủy thang cản đường.",
 	["spectrealtevent"] = "Đây là một phép Sự Kiện. Nó sẽ hóa linh tất cả thang thường. Thăng lên cấp Aether để đi trên thang hóa linh. Liên Kết Ma cũng có thể được dùng đề đi trên thang hóa linh.",
 	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Phép Chuyển Hóa Linh Mềm Ngẫu Nhiên"),
@@ -513,18 +513,18 @@ module.spells.descriptions = {
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "This spell will teleport you in the chosen direction. You cannot teleport through blocking stairs. Rank up to CRACKER to speed up this spell by 50%.",
-	["blink"] = "This spell will teleport you around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Rank up to EXPLOITER to speed up this spell by 50%.",
-	["swap"] = "This spell will teleport you to the spot where your ghost is. Unlike other basic spells, Swap can be cast anywhere.",
-	["slide"] = "This spell will turn stairs into an Escalator. You can choose either Up or Down Escalator. Rank up to SCRIPTER to have an option to be immune to Escalators.",
-	["slideup"] = "This spell will hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
-	["glitch"] = "This spell will glitch stairs, teleporting you and themselves to a different spot on the same level. Rank up to ZERO, to teleport stairs next to the orb, if you already are on the top level.",
+	["dash"] = "Phép này sẽ dịch chuyển bạn theo hướng được chọn. Bạn không thể dịch chuyển xuyên thang chắn đường. Thăng lên cấp CRACKER để tăng tốc phép này 50%.",
+	["blink"] = "Phép này sẽ dịch chuyển bạn qua bất kì thang không bị nguyền chắn bên trên. Nếu thang bên trên không chắn đường hiệu quả, phép này sẽ không tác dụng. Thăng lên cấp EXPLOITER để tăng tốc phép này 50%.",
+	["swap"] = "Phép này sẽ dịch chuyển bạn đến chõ mà bóng ma bạn ở. Khác các phép cơ bản khác, Hoán Vị có thể được thi triển bất cứ đâu.",
+	["slide"] = "Phép này sẽ biến thang thành một Thang Cuốn. Bạn có thể chọn Thang Cuốn Lên hoặc Xuống. Thăng lên cấp SCRIPTER để tùy chọn miễn ảnh hưởng bởi Thang Cuốn.",
+	["slideup"] = "Phép này sẽ trình đảo thang theo hướng được chọn. Để nó hoạt động, phải có sẵn thang đang ở giao lộ đó quay hướng ngược lại. Thang được trình đảo có thể là loại bất kì không bị nguyền và sẽ được khôi phục khi xuất hiện.",
+	["glitch"] = "Phép này sẽ lỗi thang, dịch chuyển bạn và chính chúng tới một chỗ khác trên cùng tầng. Thăng lên cấp ZERO, để dịch chuyển thang tới cạnh quả cầu, nễu bạn đã sẵn ở trên tầng đỉnh tháp.",
 
-	["hack"] = timed .. "It allows you to cast as many Upwards Escalators as you like for one minute. If there are blocking un-cursed stairs above, they will be demolished." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
-	["hackerrigevent"] = rig .. "the Hacker Rig. Stairs, once triggered it will teleport player and stairs to a different spot on the same level. Only one player will be teleported. Rank up to REAPER to have an option to walk on Hacker Rigs without triggering them.",
-	["hackerevent"] = event .. "the Random Escalator spell.",
-	["hackeraltevent"] = event ..  "the Upward Escalator spell.",
-	["hackermode"] =  string.format(mode,"Hacker","Hacker Rig","Random Escalator spell"),
+	["hack"] = timed .. "Nó cho phép bạn thi triển bao nhiêu phép Thang Cuốn Lên tùy ý thích trong một phút. Nếu có có thang không bị nguyền bên trên chắn đường, chúng sẽ bị tiêu hủy." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
+	["hackerrigevent"] = rig .. "bậc Hacker Rig. Thang, một khi kích hoạt nó sẽ dịch chuyển người chơi và thang tới một chỗ khác trên cùng tầng. Chỉ một người chơi sẽ được dịch chuyển. Thăng lên cấp REAPER để có tùy chọn đi trên Hacker Rig mà không kích hoạt chúng.",
+	["hackerevent"] = event .. "phép Thang Cuốn Ngẫu Nhiên.",
+	["hackeraltevent"] = event ..  "=phép Thang Cuốn Lên.",
+	["hackermode"] =  string.format(mode,"Hacker","Hacker Rig","Phép Thang Cuốn Ngẫu Nhiên"),
 	["hackerrefill"] = overload,
 	["hackerunion"] =  union,
 
