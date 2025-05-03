@@ -1051,7 +1051,7 @@ module.gui.gameover.messages = {
 		"Kövesd a szellemem. Vagy kövess engem, nekem igazából mindegy",
 		"Bú! Jaj ez véletlen volt, bocsánat ha megijedtél.",
 		"Ideje néhány lelket begyűjteni",
-		"Ne hidd el azt a sok propagandát, amit Hollywood mond. Mi jók vagyunk",
+		"Ne hidd el azt a sok propagandát, amit Hollywood terjeszt. Mi jók vagyunk",
 		"Ha a halál rossz, akkor a Szellemidézés jó",
 		"Kéne néhány léle- akarom mondani Mana, kéne Mana",
  		"Nem félek attól, hogy leesek. Majd a szellemem megment!",
