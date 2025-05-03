@@ -499,18 +499,18 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the choosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
-	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
-	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
-	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
+	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi di Thief è necessario rubare delle scale con questo incantesimo o con Ruba Scale in Alto.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter rubare 2 scale alla volta.",
+	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi di Thief è necessario rubare delle scale con questo incantesimo o con Ruba Scale.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter rubare 2 scale alla volta.",
+	["place"] = "Posiziona una scala precedentemente rubata nella direzione indicata, se l'intersecazione è libera.",
+	["uppass"] = "Posiziona una scala a spirale che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango Bandit per raddoppiare la durabilità.",
+	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango Robber per raddoppiare la durabilità.",
+	["drop"] = "Posiziona una scala piatta nella direzione indicata, se l'intersecazione è libera.",
 
-	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast through crossing stairs, as stairs will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
-	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
-	["thiefevent"] = event .. "the Flatten Stairs spell.",
-	["thiefaltevent"] = "This is an Event spell. It will create bypass in each inward north and south intersection. If the intersection is cursed, bypass will not be created.",
-	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Steal or Place spell"),
+	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Eventuali scale che bloccano il passaggio verranno sottratte automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
+	["thiefrigevent"] = rig .. "Thief Rig. Quando calpestate, sottraggono 1 Mana ai malcapitati e te lo trasferiscono, se hai spazio disponibile e non hai cambiato classe.",
+	["thiefevent"] = event .. "Posiziona Scale Piatte.",
+	["thiefaltevent"] = "Questo è un sortilegio Evento. Posiziona scorciatoie in tutte le intersecazioni disponibili, eccetto in quelle dove ci sono scale maledette o malefici.",
+	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Ruba/Posiziona Scale"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
 
@@ -579,13 +579,14 @@ module.spells.descriptions = {
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
+	--NECROMANCER
 	["createdual"] = "This spell will Create Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
 	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
 	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
 	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
 	["regen"] = "Use this spell to regenrate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
-	
+
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
 	["necromancerevent"] = fill ..  "Created stairs will be soul-less and will fade away after a minute.",
@@ -594,7 +595,7 @@ module.spells.descriptions = {
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
-
+	--REAVER
 	["createmirrored"] = "This spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. Rank up to Poltergeist to demolish crossing stairs with this spell. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["bigmirror"] = "This spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Giant mirrors will remove any small mirrors on the level. Rank up to Presence to extend mirror lifetime to 15 seconds.",
 	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Rank up to Presence to extend mirror lifetime to 10 seconds.",
@@ -610,14 +611,14 @@ module.spells.descriptions = {
 	["reaverrefill"] = overload,
 	["reaverunion"] = union,
 
-
+	--GREMLIN
 	["tram"] = "This spell will create Tram Stairs in the chosen direction. Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
 	["screwdown"] = "This spell will turn below stairs into downwards corkscrew. It will be near to impossible to ascend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["screwup"] = "This spell will turn above stairs into upwards corkscrew, allowing you to pass. It will be near to impossible to descend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["revolve"] = "This spell will turn below stairs into revolving propeller on a Z axis. You can choose direction of the rotation. Stairs will stop briefly after each 180 turn.",
 	["trapstairs"] = "This spell will turn below stairs into a trap door. Stairs, once triggered, will revolve on X axis, dropping careless players below. Rank up to GOBLIN to detect Gremlin Traps. Rank up to DIABLO to be immune to Gremlin traps.",
 	["spinplatform"] = "This spell will revolve the whole platform with any adjacent stairs (including cursed ones), in the direction of your choice. Platform will pause briefly after each 90 degree turn. Once full 360 spin is achieved, platform will turn back to normal.",
-	
+
 	["tramway"] = timed .. "It allows you to cast as many Tram Stairs as you like for one minute." .. string.format(timedExtra,RankData.GREMLIN[7].name,"Gremlins",RankData.GREMLIN[3].name), 
 	["gremlinrigevent"] = rig .. "the Gremlin Rig. Stairs, once triggered, will hypnotize the triggering player. They will have to find Mana to be released. Hypnotized players have their controls reversed. Rank up to HOBGOBLIN to be immune to Gremlin Rigs.",
 	["gremlinevent"] = event .. "the Random Revolve Stairs spell.", 
@@ -638,7 +639,6 @@ module.spells.descriptions = {
 	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","random spell from all other modes"),
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
-
 }
 local CommonPerksInsertALignment = {
 	[1] = "This is Your starter %s rank.",
