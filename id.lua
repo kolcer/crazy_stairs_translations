@@ -306,7 +306,7 @@ module.spells.names = {
 	["slideup"] = "Hack Tangga",
 	["glitch"] = "Glitch Tangga",
 
-	["hack"] = "Pengeskalasi",
+	["hack"] = "Pembuat Eskalasi",
 	["hackerevent"] = "Eskalasi Tangga",
 	["hackeraltevent"] = "Eskalasi Menaik Semua Tangga",
 
@@ -314,7 +314,7 @@ module.spells.names = {
 	["steal"] = "Curi Tangga",
 	["stealabove"] = "Curi Tangga di Atas",
 	["place"] = "Kembalikan Tangga",
-	["uppass"] = "Tangga Putar",
+	["uppass"] = "Tangga Spiral",
 	["sidepass"] = "Buat Jalan Pintas",
 	["drop"] = "Enyahkan Tangga",
 
@@ -328,7 +328,7 @@ module.spells.names = {
 	["splitside"] = "Buat Portal ke Samping",
 	["splitrandom"] = "Buat Portal secara Acak",
 	["cancelsplit"] = "Hancurkan Portal",
-	["splitforward"] = "Buat Portal antara 2 Platform",
+	["splitforward"] = "Buat Portal Platform",
 
 	["splitter"] = "Buffet Portal",
 	["archonevent"] = "Buat Portal pada Semua Tangga",
@@ -336,14 +336,14 @@ module.spells.names = {
 
 	--DRIFTER
 	["indrift"] = "Selancar",
-	["outdrift"] = "Layangkan Tangga secara Acak",
+	["outdrift"] = "Hanyutkan Tangga secara Acak",
 	["updrift"] = "Lift ke Atas",
 	["diagdrift"] = "Platform Selancar",
 	["spin"] = "Putar Tangga",
 	["driftabove"] = "Angkat Tangga di Atas",
 
 	["riser"] = "Peliftkan",
-	["drifterevent"] = "Layangkan Semua Tangga",
+	["drifterevent"] = "Hanyutkan Semua Tangga",
 	["drifteraltevent"] = "Angkat Semua Tangga",
 
 	--HERETIC
