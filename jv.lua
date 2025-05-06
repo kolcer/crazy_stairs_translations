@@ -26,10 +26,10 @@ module.gui.basic = {
 
 module.gui.switcher = {
 
-	["title"] = "SWITCH SERVER",
+	["title"] = "NGGANTI SERVER",
 
-	["public"] = "PUBLIC SERVER",
-	["private"] = "PRIVATE SERVER",
+	["public"] = "SERVER PUBLIK",
+	["private"] = "SERVER PRIBADI",
 	["join"] = "JOIN",
 	["friends"] = "FRIENDS ONLINE",
 	["refresh"] = "refreshing...",
@@ -244,7 +244,7 @@ module.spells.names = {
 	["split"] = "Rebuild Opposite",
 	["shrinkabove"] = "Shrink Above Stairs",
 	["link"] = "Create Link",
-	["portal"] = "Create Portal",
+	["portal"] = "Gawé Portal",
 
 	["summoner"] = "Summoner",
 	["patronevent"] = "Stairs Overload",
@@ -278,7 +278,7 @@ module.spells.names = {
 	["move"] = "Ngalih Undhak-undhakan",
 	["rotate"] = "Rotate Stairs",
 	["moveup"] = "Move Stairs Up",
-	["movedown"] = "Restore Stairs",
+	["movedown"] = "Pulih Undhak-undhakan",
 	["moverandom"] = "Random Above Move",
 	["rig"] = "Random Move",
 
