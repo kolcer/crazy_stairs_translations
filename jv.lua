@@ -82,7 +82,7 @@ module.gui.serversettings = {
 
 module.gui.shop = {
 
-	["title"] = "CRAZY STAIRS SHOP",
+	["title"] = "TOKO UNDHAK-UNDHAKAN ÉDAN",
 
 	["chameleon"] = "Chameleons can change alignment during climb.",
 	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
@@ -1246,17 +1246,17 @@ module.static = {
 	["vr_10"] = "Execute the spell with the trigger button, while still holding the grip button. Each alignment in VR has two spells. One platform and one stairs spell. Depending on the target, a proper spell will be chosen.",
 	["vr_11"] = "To change an alingment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
 
-	["home_1"] = "MUGGLE'S HOME",
+	["home_1"] = "OMAH MUGGLE",
 	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
 	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
 	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
 
-	["oasis_1"] = "CHAMELEON'S OASIS",
+	["oasis_1"] = "OASIS CHAMELEON",
 	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
 
-	["nexus_1"] = "HERETIC'S NEXUS",
+	["nexus_1"] = "PENGHUBUNG HERETIC",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
@@ -1266,42 +1266,42 @@ module.static = {
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
-	["nether_1"] = "SPECTRE'S NETHER",
+	["nether_1"] = "NJERO LEMAH SPECTRE",
 	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
 	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
 	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
 
-	["study_1"] = "ARCHON'S STUDY",
+	["study_1"] = "TELAAH ARCHON",
 	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
 	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
 
-	["haven_1"] = "PATRON'S HAVEN",
+	["haven_1"] = "SWARGA PATRON",
 	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
 	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
 	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
 
-	["shelter_1"] = "DRIFTER'S SHELTER",
+	["shelter_1"] = "PAPAN PANGAYOM DRIFTER",
 	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
 	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
 
-	["circus_1"] = "JOKER'S CIRCUS",
+	["circus_1"] = "SIRKUS JOKER",
 	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
 	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
 
-	["base_1"] = "KEEPER'S BASE",
+	["base_1"] = "PANGKALAN KEEPER",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
 	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
 
-	["chamber_1"] = "WICKED'S CHAMBER",
+	["chamber_1"] = "KAMAR WICKED",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
 	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
 
-	["backdoor_1"] = "HACKER'S BACKDOOR",
+	["backdoor_1"] = "BACKDOOR HACKER",
 	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
@@ -1311,17 +1311,17 @@ module.static = {
 	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
-	["shack_1"] = "GREMLIN'S SHACK",
+	["shack_1"] = "GUBUG GREMLIN",
 	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
-	["mirror_1"] = "REAVER'S MIRROR",
+	["mirror_1"] = "PANGILON REAVER",
 	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
 
-	["grave_1"] = "NECROMANCER'S GRAVE",
+	["grave_1"] = "KUBURAN NECROMANCER",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
@@ -1350,57 +1350,57 @@ module.static = {
 	["over_owner"] = "PRANK ME - Game creator (sleazel)",
 
 	--OTHER
-	["muggle_lead"] = "HASTY MUGGLES",
-	["muggle_ranks"] = "MUGGLE RANKS",
+	["muggle_lead"] = "MUGGLE PALING CEPET",
+	["muggle_ranks"] = "PANGKAT MUGGLE",
 
-	["hacker_lead"] = "ENCRYPTED HACKERS",
-	["hacker_ranks"] = "HACKER RANKS",
+	["hacker_lead"] = "HACKER PALING MAJENG",
+	["hacker_ranks"] = "PANGKAT HACKER",
 
-	["wicked_lead"] = "VIOLENT WICKEDS",
-	["wicked_ranks"] = "WICKED RANKS",
+	["wicked_lead"] = "WICKED PALING NAKAL",
+	["wicked_ranks"] = "PANGKAT WICKED",
 
-	["keeper_lead"] = "PREPARED KEEPERS",
-	["keeper_ranks"] = "KEEPER RANKS",
+	["keeper_lead"] = "KEEPER PALING SATYA",
+	["keeper_ranks"] = "PANGKAT KEEPER",
 
-	["joker_lead"] = "CRAZY JOKERS",
-	["joker_ranks"] = "JOKER RANKS",
+	["joker_lead"] = "JOKER PALING ÉDAN",
+	["joker_ranks"] = "PANGKAT JOKER",
 
-	["drifter_lead"] = "RAPID DRIFTERS",
-	["drifter_ranks"] = "DRIFTER RANKS",
+	["drifter_lead"] = "DRIFTER PALING WANI",
+	["drifter_ranks"] = "PANGKAT DRIFTER",
 
-	["patron_lead"] = "NOBLE PATRONS",
-	["patron_ranks"] = "PATRON RANKS",
+	["patron_lead"] = "PATRON PALING APIK",
+	["patron_ranks"] = "PANGKAT PATRON",
 
-	["archon_lead"] = "AGILE ARCHONS",
-	["archon_ranks"] = "ARCHON RANKS",
+	["archon_lead"] = "ARCHON PALING PRIGEL",
+	["archon_ranks"] = "PANGKAT ARCHON",
 
-	["spectre_lead"] = "FLYING SPECTRES",
-	["spectre_ranks"] = "SPECTRE RANKS",
+	["spectre_lead"] = "SPECTRE PALING MEMEDI",
+	["spectre_ranks"] = "PANGKAT SPECTRE",
 
-	["thief_lead"] = "STEALTHY THIEVES",
-	["thief_ranks"] = "THIEF RANKS",
+	["thief_lead"] = "THIEF PALING SINAMUN",
+	["thief_ranks"] = "PANGKAT THIEF",
 
-	["heretic_lead"] = "RUTHLESS HERETICS",
-	["heretic_ranks"] = "HERETIC RANKS",
+	["heretic_lead"] = "HERETIC PALING KEJEM",
+	["heretic_ranks"] = "PANGKAT HERETIC",
 
-	["necromancer_lead"] = "UNDEAD NECROMANCERS",
-	["necromancer_ranks"] = "NECROMANCER RANKS",
+	["necromancer_lead"] = "NECROMANCER PALING UNDEAD",
+	["necromancer_ranks"] = "PANGKAT NECROMANCER",
 
-	["splicer_lead"] = "TWISTED SPLICERS",
-	["splicer_ranks"] = "SPLICER RANKS",
+	["splicer_lead"] = "SPLICER PALING TÈKNIS",
+	["splicer_ranks"] = "PANGKAT SPLICER",
 
-	["reaver_lead"] = "REFLECTED REAVERS",
-	["reaver_ranks"] = "REAVER RANKS",
+	["reaver_lead"] = "REAVER PALING MIKIRAKÉ",
+	["reaver_ranks"] = "PANGKAT REAVER",
 
-	["gremlin_lead"] = "LUCKY GREMLINS",
-	["gremlin_ranks"] = "GREMLIN RANKS",
+	["gremlin_lead"] = "GREMLIN PALING BEGJA",
+	["gremlin_ranks"] = "PANGKAT GREMLIN",
 
-	["chameleon_lead"] = "SWIFT CHAMELEONS",
-	["chameleon_ranks"] = "CHAMELEON RANKS",
+	["chameleon_lead"] = "CHAMELEON PALING KESÈD",
+	["chameleon_ranks"] = "PANGKAT CHAMELEON",
 
-	["dailies"] = "TODAY'S RECORDS",
-	["most_climbs"] = "MOST CLIMBS",
-	["most_wins"] = "MOST RACE WINS", 
+	["dailies"] = "RÈKOR DINA IKI",
+	["most_climbs"] = "MENDHAK PALING AKÈH",
+	["most_wins"] = "MENANG BALAPAN PALING AKÈH", 
 
 }
 
