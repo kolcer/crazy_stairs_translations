@@ -1,5 +1,5 @@
 --VERSION 1.0--
---BRITISH ENGLISH--
+--JAVANESE | JAWA | ꦗꦮ --
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
@@ -240,19 +240,19 @@ module.spells.names = {
 
 	--PATRON
 	["summon"] = "Gawé Undhak-undhakan",
-	["restore"] = "Call the Orb", 
+	["restore"] = "Manggil Orb", 
 	["split"] = "Rebuild Opposite",
 	["shrinkabove"] = "Shrink Above Stairs",
-	["link"] = "Create Link",
+	["link"] = "Gawé Kreteg",
 	["portal"] = "Gawé Portal",
 
 	["summoner"] = "Summoner",
-	["patronevent"] = "Stairs Overload",
+	["patronevent"] = "Berkahi Menara karo Undhak-undhakan",
 	["patronaltevent"] = "Shrinkage",
 
 	--JOKER 
 	["flip"] = "Walik Undhak-undhakan",
-	["flipabove"] = "Walik Undhak-undhakan ing Dhuwur",
+	["flipabove"] = "Walik Undhak-undhakan Dhuwur",
 	["fake"] = "Gawé Undhak-undhakan Fake",
 	["invisible"] = "Gawé Undhak-undhakan Invisible",
 	["disco"] = "Undhak-undhakan sing gawé orang nari",
@@ -260,19 +260,19 @@ module.spells.names = {
 
 	["flipper"] = "Flipper",
 	["jokerevent"] = "The Cloak",
-	["jokeraltevent"] = "Flip Them All",
+	["jokeraltevent"] = "Walik Kabèh Undhak-undhakan",
 
 	--WICKED
 	["destroy"] = "Remuk Undhak-undhakan",
-	["destroyabove"] = "Remuk Undhak-undhakan ing Dhuwur",
+	["destroyabove"] = "Remuk Undhak-undhakan Dhuwur",
 	["bend"] = "Bend Stairs Up",
 	["damage"] = "Damage Above Stairs",
 	["flatten"] = "Bend Opposite Stairs Down",
 	["wall"] = "Gawé Témbok" ,
 
 	["bender"] = "Bender",
-	["wickedevent"] = "Destruction",
-	["wickedaltevent"] = "Purge",
+	["wickedevent"] = "Remuk Kabèh Undhak-undhakan Normal",
+	["wickedaltevent"] = "Remukaké Kabèh Menara",
 
 	--KEEPER
 	["move"] = "Ngalih Undhak-undhakan",
@@ -283,24 +283,24 @@ module.spells.names = {
 	["rig"] = "Random Move",
 
 	["ascension"] = "Ascension",
-	["keeperevent"] = "Reshuffle",
-	["keeperaltevent"] = "Restoration",
+	["keeperevent"] = "Ngalih Kabèh Undhak-undhakan",
+	["keeperaltevent"] = "Mulihaké Kabèh Menara",
 
 	--SPECTRE
-	["phantom"] = "Create Phantom Stairs",
+	["phantom"] = "Gawé Undhak-undhakan Lenyap",
 	["ghost"] = "Ghostify Above Stairs",
 	["shadow"] = "Ghostify Stairs",
 	["horizontal"] = "Horizontal Teleport",
 	["random"] = "Random Teleport",
-	["vertical"] = "Vertical Teleport",
+	["vertical"] = "Teleportasi menyang Ndhuwur",
 
 	["traveller"] = "Shimmering",
 	["spectreevent"] = "Phantom Shuffle",
 	["spectrealtevent"] = "Æther Realm",
 
 	--HACKER
-	["dash"] = "Flyhack",
-	["blink"] = "Noclip",
+	["dash"] = "Flyhack menyang Platform",
+	["blink"] = "Noclip tembus Undhak-undhakan Dhuwur",
 	["swap"] = "Teleport",
 	["slide"] = "Èskalator",
 	["slideup"] = "Hack Undhak-undhakan",
@@ -312,21 +312,21 @@ module.spells.names = {
 
 	--THIEF
 	["steal"] = "Nyolong Undhak-undhakan",
-	["stealabove"] = "Nyolong Undhak-undhakan ing Dhuwur",
-	["place"] = "Place Stairs Back - ",
-	["uppass"] = "Spiral Staircase",
-	["sidepass"] = "Create Bypass",
-	["drop"] = "Ditch Stairs",
+	["stealabove"] = "Nyolong Undhak-undhakan Dhuwur",
+	["place"] = "Bali Undhak-undhakan",
+	["uppass"] = "Undhak-undhakan Spiral",
+	["sidepass"] = "Undhak-undhakan Trabasan",
+	["drop"] = "Undhak-undhakan Kreteg",
 
 	["heist"] = "Heist",
 	["thiefevent"] = "Flat Land",
 	["thiefaltevent"] = "Mega Bypass",
 
 	--ARCHON
-	["splitup"] = "Create Up Gate",
-	["splitrotate"] = "Create Rotated Gate",
-	["splitside"] = "Create Straight Gate",
-	["splitrandom"] = "Create Random Gate",
+	["splitup"] = "Gawé Portal menyang Ndhuwur",
+	["splitrotate"] = "Gawé Portal menyang Adjacent",
+	["splitside"] = "Gawé Portal menyang Sisih",
+	["splitrandom"] = "Gawé Portal Acak",
 	["cancelsplit"] = "Remuk Portal",
 	["splitforward"] = "Gawé Portal Platform",
 
@@ -359,8 +359,8 @@ module.spells.names = {
 	["hereticaltevent"] = "Vengeance",
 
 	--SPLICER
-	["twistup"] = "Splice Stairs Up",
-	["twistside"] = "Splice Parallel Stairs",
+	["twistup"] = "Nyambung Undhak-undhakan Up",
+	["twistside"] = "Nyambung Parallel Undhak-undhakan",
 	["twistrotate"] = "Splice Adjacent Stairs",
 	["canceltwist"] = "Restore Spliced Stairs",
 	["split2"] = "Split Stairs",
@@ -374,13 +374,13 @@ module.spells.names = {
 	["createdual"] = "Create Dual Stairs",
 	["copyplatform"] = "Copy Ghost's Platform",
 	["soulbridge"] = "Create Soul Bridge",
-	["undeadabove"] = "Remove Soul Above",
+	["undeadabove"] = "Matèni Undhak-undhakan Dhuwuk",
 	["revival"] = "Revival Point",
 	["regen"] = "Regenerate Mana",
 
 	["duality"] = "Duality",
 	["necromancerevent"] = "Resurrection",
-	["necromanceraltevent"] = "Soul Harvest",
+	["necromanceraltevent"] = "Matèni Kabèh Undhak-undhakan",
 	
 	--reaver
 	["createmirrored"] = "Gawé Undhak-undhakan Pangilon",
@@ -397,10 +397,10 @@ module.spells.names = {
 	
 	--gremlin
 	["tram"] = "Gawé Undhak-undhakan Trèm",
-	["screwup"] = "Up Corkscrew",
+	["screwup"] = "Muter Munggah",
 	["revolve"] = "Ubeng Undhak-Undhakan",
 	["trapstairs"] = "Trapdoor Stairs",
-	["screwdown"] = "Down Corkscrew",
+	["screwdown"] = "Muter Mudhun",
 	["spinplatform"] = "Ubeng Platform",
 
 	["tramway"] = "Tram-way",
