@@ -546,20 +546,19 @@ module.spells.descriptions = {
 	["drifterrefill"] = overload,
 	["drifterunion"] = union,
 
-
 	--HERETIC
-	["createcursed"] = "This spell allows you to create cursed stairs in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
-	["curse"] = "This spell will curse below stairs. Use this spell again to uncurse stairs.",
-	["curseabove"] = "This spell will curse above stairs. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
-	["curseinter"] = "This spell will allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
-	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
-	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
+	["createcursed"] = "Genera una scala maledetta nella direzione indicata, distruggendo eventuali scale in mezzo.\nSblocca il rango Banished per poter demolire eventuali scale maledette in mezzo.",
+	["curse"] = "Maledice la scala colpita se non lo è già, altrimenti rimuove la maledizione.",
+	["curseabove"] = "Maledice la scala posizionata direttamente sopra a quella colpita e la solleva leggermente, permettendoti di passarci sotto e scalarla. Se la scala è già maledetta, rimuove la maledizione.",
+	["curseinter"] = "Ti fa passare attraverso l'intersecazione lasciando indietro un maleficio, se non ci sono scale in mezzo.\nSblocca il rango Infidel per poter eseguire l'incantesimo su intersecazioni con malefici.",
+	["autodown"] = "Solleva una copia della parte inferiore della scala colpita, permettendoti di raggiungere una nuova piattaforma. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
+	["autoup"] = "Abbassa la parte superiore della scala colpita, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
 
-	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
-	["hereticevent"] = event .. "the Random Schism spell.",
-	["hereticaltevent"] = event .. "the Curse Stairs spell.",
-	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
+	["malediction"] = timed .. "Permette di generare scale maledette in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
+	["hereticrigevent"] = rig .. "Heretic Rig. Chi le calpesta diventa posseduto, inibendo gli incantesimi (ignorato con il rango Unbeliever sbloccato). I giocatori posseduti si possono liberare raccogliendo Mana.\nSblocca il rango Exiled per guadagnare 1 Mana per giocatore posseduto.",
+	["hereticevent"] = event .. "Scisma Randomico.",
+	["hereticaltevent"] = event .. "Maledici Scale.",
+	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Scisma Randomico"),
 	["hereticrefill"] = overload,
 	["hereticunion"] =  union,
 
