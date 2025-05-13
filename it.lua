@@ -459,7 +459,7 @@ module.spells.descriptions = {
 	["moverandom"] = "Sposta o ruota la scala soprastante a quella colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango Operator per assicurati che la scala non sprofondi.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
 
 	["ascension"] = timed .. "Permette di innalzare scale in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
-	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel).\nSblocca il rango Operator per assicurati che la scala non sprofondi.",
+	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango Operator per assicurati che la scala non sprofondi.",
 	["keeperevent"] = event .. "Spostamento Randomico. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
 	["keeperaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno ripristinate, senza eccezioni. A differenza dell'Evento Annichilazione, i malefici saranno ignorati.",
 	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Spostamento Randomico"),
@@ -475,7 +475,7 @@ module.spells.descriptions = {
 	["vertical"] = "Ti teletrasporta sulla piattaforma posizionata direttamente sopra a quella colpita.",
 
 	["traveller"] = timed ..  "Permette di effettuari scatti fantasma in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
-	["spectrerigevent"] = rig .. "Spectre Rig. Quando calpestate, potrebbero diventare spettralizzate (1/2) (opzionale con il rango Vision).",
+	["spectrerigevent"] = rig .. "Spectre Rig. Quando calpestate, potrebbero diventare spettralizzate (1/2) (opzionale con il rango Vision sbloccato).",
 	["spectreevent"] = event .. "Mescolazione Spettrale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
 	["spectrealtevent"] = "Questo è un sortilegio Evento. Tutte le scale normali verranno spettralizzate.\nLancia il sortilegio Unione Spettrale o sblocca il rango Aether per poterci camminare sopra.",
 	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Mescolazione Spettrale (Leggera)"),
@@ -491,7 +491,7 @@ module.spells.descriptions = {
 	["glitch"] = "Ti teletrasporta insieme alla scala colpita in un'intersecazione libera sullo stesso piano.\nSblocca il rango Zero per assicurare il teletrasporto di fianco alla sfera finale (se lanciato in cima).",
 
 	["hack"] = timed .. "Permette di trasformare scale mobili in continuazione, per 60 secondi. Se ci sono scale che bloccano il passaggio, queste verranno demolite (tranne quelle maledette)." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
-	["hackerrigevent"] = rig .. "Hacker Rig. Quando calpestate, ti teletrasportano insieme alla scala in un'intersecazione libera sullo stesso piano (opzionale con il rango Reaper). Solo una persona può essere teletrasportata.",
+	["hackerrigevent"] = rig .. "Hacker Rig. Quando calpestate, ti teletrasportano insieme alla scala in un'intersecazione libera sullo stesso piano (opzionale con il rango Reaper sbloccato). Solo una persona può essere teletrasportata.",
 	["hackerevent"] = event .. "Scale Mobili Randomiche.",
 	["hackeraltevent"] = event ..  "Scale Mobili Ascendenti.",
 	["hackermode"] =  string.format(mode,"Hacker","Hacker Rig","Scale Mobili Randomiche"),
@@ -563,18 +563,18 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistup"] = "This spell will twist above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
-	["split2"] = "This spell splits stairs into two opposing staircases, allowing you to access all four platforms.",
-	["splitalt"] = "This spell splits stairs into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
+	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
+	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
+	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango Transformer per poter combinare scale già unite.",
+	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo sulle piattaforme.\nSblocca il rango Mixer per rimuovere il costo di esecuzione.\nSblocca il rango Optimus per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
+	["split2"] = "Taglia in due la scala colpita, garantendoti accesso a tutte e quattro le piattaforme.",
+	["splitalt"] = "Divide la scala colpita, permettendoti di aggirare la scala posizionata direttamente sopra e scalarla.",
 
-	["twister"] = timed .. "It allows you to cast as many Split Stairs Spells as you like for one minute. Split spell variety will be chosen automatically for Your benefit." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
-	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
-	["splicerevent"] = event .. "the Random Splice spell.",
-	["spliceraltevent"] = event .. "the Split Stairs spell.",
-	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
+	["twister"] = timed .. "Permette di combinare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
+	["splicerrigevent"] = rig .. "Splicer Rig. Quando calpestate, si combineranno con altre scale in modo casuale (opzionale con il rango Assembler sbloccato).",
+	["splicerevent"] = event .. "Combina Scale a Caso.",
+	["spliceraltevent"] = event .. "Taglia Scale.",
+	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Combina Scale a Caso"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
