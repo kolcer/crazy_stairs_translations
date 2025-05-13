@@ -343,7 +343,7 @@ module.spells.names = {
 	--necro
 	["createdual"] = "Genera Scale Gemelle",
 	["copyplatform"] = "Imita Piattaforma della Controfigura",
-	["soulbridge"] = "Genera Incrocio",
+	["soulbridge"] = "Genera Ponte",
 	["undeadabove"] = "Prosciuga Scale in Alto",
 	["revival"] = "Punto di Appoggio",
 	["regen"] = "Rigenera Mana",
@@ -579,18 +579,18 @@ module.spells.descriptions = {
 	["splicerunion"] = union,
 
 	--NECROMANCER
-	["createdual"] = "This spell will Create Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
-	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
-	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
-	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
-	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
-	["regen"] = "Use this spell to regenrate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
+	["createdual"] = "Genera una scala per te e la tua controfigura nella direzione indicata.\nSblocca il rango Skeleton per poter ignorare scale maledette e malefici dalla parte della controfigura.\nSblocca il rango Lich per poter demolire eventuali scale in mezzo per entrambi.",
+	["copyplatform"] = "Copia le scale nella piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango Revenant per poter rimuovere le maledizioni.",
+	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Se l'incantesimo viene lanciato al centro, verrà generato un incrocio a X. Sia il ponte che l'incrocio ruoteranno automaticamente.",
+	["undeadabove"] = "Prosciuga la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale prosciugate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.",
+	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura, teletrasportandoti lì qualora ti trovassi in un piano inferiore. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale (in cima).",
+	["regen"] = "Ottieni 6 Mana e offri 3 Mana a chi sta vicino alla tua controfigura.\nSblocca il rango Deathbringer per aumentare i valori a 10 e 5.",
 
-	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
-	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
-	["necromancerevent"] = fill ..  "Created stairs will be soul-less and will fade away after a minute.",
-	["necromanceraltevent"] = event .. "the Remove Soul spell. Such stairs will fade away after a minute.",
-	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Remove Soul spell"),
+	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Eventuali scale in mezzo saranno sempre demolite." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name),
+	["necromancerrigevent"] = rig .. "Necromancer Rig. Quando calpestate, verranno prosciugate.",
+	["necromancerevent"] = fill ..  "Le scale generate saranno prosciugate e svaniranno dopo 60 secondi.",
+	["necromanceraltevent"] = event .. "Prosciuga Scale. Queste scale svaniranno dopo 60 secondi.",
+	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Prosciuga Scale"),
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
