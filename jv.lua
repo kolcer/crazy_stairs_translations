@@ -301,7 +301,7 @@ module.spells.names = {
 	--HACKER
 	["dash"] = "Flyhack menyang Platform",
 	["blink"] = "Noclip tembus Undhak-undhakan Dhuwur",
-	["swap"] = "Teleport",
+	["swap"] = "Teleport menyang Memedimu",
 	["slide"] = "Èskalator",
 	["slideup"] = "Hack Undhak-undhakan",
 	["glitch"] = "Glitch Undhak-undhakan",
@@ -311,8 +311,8 @@ module.spells.names = {
 	["hackeraltevent"] = "Breach",
 
 	--THIEF
-	["steal"] = "Nyolong Undhak-undhakan",
-	["stealabove"] = "Nyolong Undhak-undhakan Dhuwur",
+	["steal"] = "Colong Undhak-undhakan",
+	["stealabove"] = "Colong Undhak-undhakan Dhuwur",
 	["place"] = "Bali Undhak-undhakan",
 	["uppass"] = "Undhak-undhakan Spiral",
 	["sidepass"] = "Undhak-undhakan Trabasan",
