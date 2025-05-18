@@ -639,13 +639,15 @@ module.spells.descriptions = {
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
 }
+
 local CommonPerksInsertALignment = {
-	[1] = "This is Your starter %s rank.",
-	[2] = "You will get bonus Mana when drones are in %s mode.",
+	[1] = "Questo è il primo rango di %s.",
+	[2] = "Il tuo contenitore Mana viene riempito regolarmente mentre i Droni sono in modalità %s.",
 }
+
 local CommonPerksInsertTimedSpell = {
-	[3] = "If someone casts a %s spell, your Mana will be refilled.",
-	[7] = "Your %s spell will last 50%% longer (90s).",
+	[3] = "Il tuo contenitore Mana viene riempito completamente quando qualcuno (tu compreso) lancia il sortilegio %s.",
+	[7] = "La durata dell'incantesimo %s è raddoppiata (120s).",
 }
 
 
