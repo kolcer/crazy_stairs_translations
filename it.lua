@@ -732,11 +732,11 @@ module.gui.ranks = {
 		[9] = "Puoi potenziare di nuovo gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
 	},
 	["HERETIC"] = {
-		[4] = "When out of Mana, you can touch cursed stairs to uncurse them and get one Mana.",
-		[5] = "You are now immune to being possessed.",
-		[6] = "You can now cast the Flicker spell on a cursed intersection.",
-		[8] = "Your Create Cursed Stairs and Malediction spells can now destroy blocking cursed stairs.",
-		[9] = "You will get 1 extra Mana everytime someone is possessed.",
+		[4] = "Solo ed esclusivamente quando sei a corto di Mana, puoi toccare una scala maledetta per ripristinarla e guadagnare 1 Mana.",
+		[5] = "Sei immune dall'effetto Posseduto.",
+		[6] = "Puoi usare l'incantesimo Crea Maleficio per rimuovere malefici.",
+		[8] = "L'incantesimo Genera Scale Maledette e il sortilegio Sciagura possono demolire eventuali scale in mezzo.",
+		[9] = "Ottieni 1 Mana quando qualcuno viene Posseduto.",
 	},
 	["SPLICER"] = {
 		[4] = "You can now restore disconnected stairs from platform.",
