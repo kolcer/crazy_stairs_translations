@@ -796,13 +796,11 @@ module.gui.reshuffle = {
 }
 
 module.gui.multitokens = {
+	["title"] = "CONVERTI I TUOI GETTONI MULTIUSO",
 
-	["title"] = "CHOOSE YOUR TOKENS",
-
-	["info"] = "You need 3 tokens to unlock a spell.",
-	["notokens"] = "You have no multi tokens left",
-	["nopass"] = "NO GAME PASS",
-
+	["info"] = "Sono necessari 3 gettoni per sbloccare un nuovo incantesimo.",
+	["notokens"] = "Hai esaurito i Gettoni Multiuso.",
+	["nopass"] = "NON POSSIEDI QUESTA CLASSE...",
 }
 
 module.gui.feedback = {
