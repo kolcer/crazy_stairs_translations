@@ -804,13 +804,11 @@ module.gui.multitokens = {
 }
 
 module.gui.feedback = {
+	["title"] = "FACCI SAPERE LA TUA",
 
-	["title"] = "SEND FEEDBACK",
-
-	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please no spam.)",
-	["send"] = "SEND",
-	["locked"] = "LOCKED",
-
+	["prompt"] = "Premi qui per iniziare a scrivere un messaggio, verrà poi letto dallo sviluppatore di ScaleMania! (almeno 20 caratteri richiesti)",
+	["send"] = "INVIA",
+	["locked"] = "ATTENDI",
 }
 
 module.gui.settings = {
