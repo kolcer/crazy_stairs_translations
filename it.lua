@@ -733,7 +733,7 @@ module.gui.ranks = {
 	},
 	["HERETIC"] = {
 		[4] = "Solo ed esclusivamente quando sei a corto di Mana, puoi toccare una scala maledetta per ripristinarla e guadagnare 1 Mana.",
-		[5] = "Sei immune dall'effetto Posseduto.",
+		[5] = "Sei immune all'effetto Posseduto.",
 		[6] = "Puoi usare l'incantesimo Crea Maleficio per rimuovere malefici.",
 		[8] = "L'incantesimo Genera Scale Maledette ed il sortilegio Sciagura possono demolire eventuali scale in mezzo.",
 		[9] = "Ottieni 1 Mana quando qualcuno viene Posseduto.",
@@ -760,24 +760,23 @@ module.gui.ranks = {
 		[9] = "Rigenera Mana ripristina 10 mana invece di 6, e 5 a chi si trova vicino alla tua controfigura.",
 	},
 	["GREMLIN"] = {
-		[4] = "You can now see all Gremlin Traps.",
-		[5] = "You can now jump on platform to call all adjacent Trams.",
-		[6] = "You are now immune to Gremlin Rigs.",
-		[8] = "You are now immune to Gremlin Traps.",
-		[9] = "You can now control Corkscrew Stairs via a button. This may not work if there is another Daemon nearby.",
+		[4] = "Puoi rilevare le Scale Trappola.",
+		[5] = "Puoi richiamare i Tramm dalle piattaforme.",
+		[6] = "Sei immune all'effetto Ipnotizzato.",
+		[8] = "Sei immune alle Scale Trappola.",
+		[9] = "You can now control Corkscrew Stairs via a button. This may not work if there is another Daemon nearby.", --TODO
 	},
 	["MUGGLE"] = { 
-		[2] = "Your jump cooldown is reduced by 0.125s.",
-		[3] = "Your jump cooldown is reduced by 0.25s.",
-		[4] = "Your jump cooldown is reduced by 0.375s.",
-		[5] = "Your jump cooldown is reduced by 0.5s.",
-		[6] = "Your walkspeed is increased by 10%.",
-		[7] = "Your walkspeed is increased by 20%.",
-		[8] = "Your walkspeed is increased by 30%.",
-		[9] = "Your jump power is increased by 20%.",
+		[2] = "Ricarica salto ridotta di 0.125 secondi.",
+		[3] = "Ricarica salto ridotta di 0.25 secondi.",
+		[4] = "Ricarica salto ridotta di 0.375 secondi.",
+		[5] = "Ricarica salto ridotta di 0.5 secondi.",
+		[6] = "Velocità di movimento aumentata del 10%.",
+		[7] = "Velocità di movimento aumentata del 20%.",
+		[8] = "Velocità di movimento aumentata del 30%.",
+		[9] = "Potenza del salto aumentata del 20%.",
 	},
-
-	["CHAMELEON"] = { 
+	["CHAMELEON"] = {
 		[1] = "This is your starter CHAMELEON rank. Other alignment rank bonuses still apply.",
 		[2] = "EXCEPTION! You will ONLY get bonus Mana when drones are in CHAMELEON mode.",
 		[3] = "Alignment change animation is much faster now.",
@@ -788,8 +787,6 @@ module.gui.ranks = {
 		[8] = "Changing alignments doesn't have a morph animation anymore, making switching alignments seamless and private. Can be turned off in options.",
 		[9] = "You can now cast the Mystery Rig spell with multi-tokens.",
 	},
-
-
 }
 
 module.gui.reshuffle = {
