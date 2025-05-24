@@ -306,7 +306,7 @@ module.spells.names = {
 
 	--DRIFTER
 	["indrift"] = "Naviga",
-	["outdrift"] = "Navigazione a Caso",
+	["outdrift"] = "Devia Scale",
 	["updrift"] = "Elevazione",
 	["diagdrift"] = "Perlustrazione",
 	["spin"] = "Rotea Scale",
@@ -381,7 +381,7 @@ module.spells.names = {
 	["warp"] = "Distorci Scale",
 	["chamdown"] = "Sprofonda Scale",
 	["chamdraw"] = "Ponte Levatoio in Basso",
-	["chamswap"] = "Copy Ghost (visual)", --TODO
+	["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
 
 	--MISC (compatibility)
@@ -540,9 +540,9 @@ module.spells.descriptions = {
 
 	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSblocca almeno il rango Traveller per poter potenziare ascensori già esistenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifters",RankData.DRIFTER[3].name), 
 	["drifterrigevent"] = rig .. "Drifter Rig. Quando calpestate, diventeranno deviate (opzionale con il rango Voyager sbloccato).",
-	["drifterevent"] = event .. "Navigazione a Caso.",
+	["drifterevent"] = event .. "Devia Scale.",
 	["drifteraltevent"] = event .. "Solleva Scale in Alto.",
-	["driftermode"] = string.format(mode,"Drifter","Drifter Rig","Navigazione a Caso"),
+	["driftermode"] = string.format(mode,"Drifter","Drifter Rig","Devia Scale"),
 	["drifterrefill"] = overload,
 	["drifterunion"] = union,
 
@@ -725,11 +725,11 @@ module.gui.ranks = {
 		[9] = "Ricevi l'opzione per ignorare qualsiasi tipo di portale dimensionale ad eccezioni di quelli che teletrasportano verso l'alto.",
 	},
 	["DRIFTER"] = {
-		[4] = "Your upward platform drifts will appear and move 50% faster.",
-		[5] = "You can now spin and drift already drifted stairs.",
-		[6] = "You can now boost Elevators with both Riser and Elevator spells. Vagabond perk does not apply to boosted Elevators.",
-		[8] = "You have the option to avoid triggering any Drifter Rigs.",
-		[9] = "You can now boost Elevators twice, with both Riser and Elevator spells. Vagabond perk does not apply to boosted Elevators.",
+		[4] = "Le piattaforme colpite dal sortilegio Ascensore e dall'incantesimo Elevazione si muovono più velocemente del 50%.",
+		[5] = "Puoi roteare e deviare scale già deviate.",
+		[6] = "Puoi potenziare gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
+		[8] = "Ricevi l'opzione per non attivare le scale alterate da Drifter Rig quando le calpesti.",
+		[9] = "Puoi potenziare di nuovo gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
 	},
 	["HERETIC"] = {
 		[4] = "When out of Mana, you can touch cursed stairs to uncurse them and get one Mana.",
