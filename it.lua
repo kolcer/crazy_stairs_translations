@@ -718,11 +718,11 @@ module.gui.ranks = {
 		[9] = "Puoi rubare due scale alla volta.",
 	},
 	["ARCHON"] = {
-		[4] = "You can now cast the Destroy Gate spell on platforms, to remove Platform Gates.",
-		[5] = "Your Destroy Gate spell is now free.",
-		[6] = "Gates will never teleport you down.",
-		[8] = "You can now cast Gate spells on stairs with Gates already on them.",
-		[9] = "You can choose to avoid teleportation on all but upward Gates.",
+		[4] = "Puoi lanciare l'incantesimo Scollega Portali Dimensionali sulle piattaforme.",
+		[5] = "L'incantesimo Scollega Portali Dimensionali non richiede Mana per l'esecuzione.",
+		[6] = "Diventi immune ai portali dimensionali che teletrasportano verso il basso.",
+		[8] = "Puoi cambiare la destinazione di un portale dimensionale già esistente.",
+		[9] = "Ricevi l'opzione per ignorare qualsiasi tipo di portale dimensionale ad eccezioni di quelli che teletrasportano verso l'alto.",
 	},
 	["DRIFTER"] = {
 		[4] = "Your upward platform drifts will appear and move 50% faster.",
