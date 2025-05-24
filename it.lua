@@ -1034,24 +1034,22 @@ module.gui.gameover.messages = {
 }
 
 module.gui.gameover.maxrank ={
-
-	["SAVIOUR"] = "Leave no noob behind",
-	["IT"] = "Pranking is living",
-	["ANNIHILATOR"] = "Destroy everything!",
-	["AETHER"] = "Enter the nether realm",
-	["DABSFORLIF"] = "Spells are overrated",
-	["USURPER"] = "I just like all the spells",
-	["ADMIRAL"] = "Order restored",
-	["OUTLAW"] = "Mine, mine all MINE!",
-	["ZERO"] = "Rootkit installed",
-	["EXILED"] = "Excommunication",
-	["ILLUMINATI"] = "Illuminati confirmed",
-	["STRIDER"] = "I'll take the elevator",
-	["DEATHBRINGER"] = "Rise, rise, RISE!",
-	["OPTIMUS"] = "The Entanglement",
-	["ALIEN"] = "We are one",
-	["DAEMON"] = "You spin me round and round.",
-
+	["SAVIOUR"] = "Modello da seguire",
+	["IT"] = "La burla, la risata, la comicità...",
+	["ANNIHILATOR"] = "Hai distrutto tutto, ma a che costo?",
+	["AETHER"] = "Benvenuto nel regno degli inferi",
+	["DABSFORLIF"] = "Incantesimi non disponibili",
+	["USURPER"] = "Mi piacciono tutti gli incantesimi",
+	["ADMIRAL"] = "Comandante in piena regola",
+	["OUTLAW"] = "L'avidità in persona",
+	["ZERO"] = "Devo solo premere questo pulsante...",
+	["EXILED"] = "Scomunica",
+	["ILLUMINATI"] = "L'illuminazione divina",
+	["STRIDER"] = "Prenderò l'ascensore, grazie",
+	["DEATHBRINGER"] = "Alzati per me!",
+	["OPTIMUS"] = "Combinazione perfetta",
+	["ALIEN"] = "L'unione",
+	["DAEMON"] = "Quante dita vedi?",
 }
 
 module.gui.gameover.credits = {
