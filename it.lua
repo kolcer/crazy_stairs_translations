@@ -656,7 +656,7 @@ module.gui.ranks = {
 	--none
 	["none_1"] = "Nessuna classe selezionata!",
 	["none_2"] = "Non puoi lanciare alcun incantesimo in questo stato.",
-	["none_3"] = "Salta sopra un trasformatore (locati al centro della mappa) per rimediares.",
+	["none_3"] = "Salta sopra un trasformatore (locati al centro della mappa) per rimediare.",
 
 	--shared
 	["higher"] = "POSSIEDI UN RANGO MIGLIORE",
@@ -777,15 +777,15 @@ module.gui.ranks = {
 		[9] = "Potenza del salto aumentata del 20%.",
 	},
 	["CHAMELEON"] = {
-		[1] = "This is your starter CHAMELEON rank. Other alignment rank bonuses still apply.",
-		[2] = "EXCEPTION! You will ONLY get bonus Mana when drones are in CHAMELEON mode.",
-		[3] = "Alignment change animation is much faster now.",
-		[4] = "Your hands will now glow purple when casting, disguising your motives.",
-		[5] = "Fake Stairs and Create Stairs spells will both have a purple glow.",
-		[6] = "You can now cast 4 spells which were rejected during development.",
-		[7] = "You can now cast 2 more spells which were rejected during development.",
-		[8] = "Changing alignments doesn't have a morph animation anymore, making switching alignments seamless and private. Can be turned off in options.",
-		[9] = "You can now cast the Mystery Rig spell with multi-tokens.",
+		[1] = "Questo è il primo rango di CHAMELEON. Gli effetti dei ranghi delle altre classi vengono applicati se sbloccati.",
+		[2] = "ATTENZIONE! Il tuo contenitore Mana viene riempito regolarmente SOLO mentre i Droni sono in modalità CHAMELEON.",
+		[3] = "Le trasformazioni durano molto di meno.",
+		[4] = "Gli altri giocatori non sono più in grado di comprendere quale classe stai imitando quando selezioni un incantesimo.",
+		[5] = "Le scale normali e quelle illusiore sono indistinguibili.",
+		[6] = "Ottieni l'accesso a 4 incantesimi proibiti.",
+		[7] = "Ottieni l'accesso ad altri 2 incantesimi proibiti.",
+		[8] = "Ottieni l'opzione per rendere le trasformazioni instantanee. Gli altri giocatori non sanno più quando imiti altre classi.",
+		[9] = "Ottieni il sortilegio Chameleon Rig.",
 	},
 }
 
