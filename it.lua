@@ -225,7 +225,7 @@ module.spells.names = {
 	["flipabove"] = "Ribalta Scale in Alto",
 	["fake"] = "Genera Scale Illusorie",
 	["invisible"] = "Genera Scale Invisibili",
-	["disco"] = "Discoteca",
+	["disco"] = "Scale Festose",
 	["trap"] = "Crea Botola",
 
 	["flipper"] = "Ribaltatore",
@@ -647,66 +647,63 @@ local CommonPerksInsertALignment = {
 
 local CommonPerksInsertTimedSpell = {
 	[3] = "Il tuo contenitore Mana viene riempito completamente quando qualcuno (tu compreso) lancia il sortilegio %s.",
-	[7] = "La durata dell'incantesimo %s è raddoppiata (120s).",
+	[7] = "Il sortilegio %s dura di più del 50% (90s).",
 }
 
-
-
 module.gui.ranks = {
-
-	["title"] = "YOUR RANK",
+	["title"] = "IL TUO RANGO",
 
 	--none
-	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "You will not have access to any spells!",
-	["none_3"] = "Jump on a morph in the middle of the map to change your alignment.",
+	["none_1"] = "Nessuna classe selezionata!",
+	["none_2"] = "Non puoi lanciare alcun incantesimo in questo stato.",
+	["none_3"] = "Salta sopra un trasformatore (locati al centro della mappa) per rimediares.",
 
 	--shared
-	["higher"] = "HIGHER RANK ACQUIRED",
-	["current"] = "YOUR CURRENT RANK",
-	["lower"] = "RANK NOT ACQUIRED",
+	["higher"] = "POSSIEDI UN RANGO MIGLIORE",
+	["current"] = "RANGO ATTUALE",
+	["lower"] = "RANGO BLOCCATO",
 
-	["more"] = "You need %d more climbs as %s to obtain this rank.",
-	["done"] = "You already own a higher rank. All lower rank effects add up to the current rank.",
-	["max"] = "This is the maximum rank. You have made %d climbs as %s.",
-	["next"] = "Click on the right arrow to check requirements for the next rank.",
+	["more"] = "Ti mancano %d ascese per ottenere questo rango.",
+	["done"] = "Rango già sbloccato. Questo effetto è incluso nel tuo rango attuale.",
+	["max"] = "Ultimo rango raggiunto!\nIn totale hai completato %d scalate con %s.",
+	["next"] = "Premi sulla freccia verso destra per scoprire gli altri ranghi.",
 
 	["PATRON"] = {
-		[4] = "Your links will last twice as long (120s).",
-		[5] = "Your portals will last twice as long (120s).",
-		[6] = "The cost of the Call the Orb spell is reduced to 2 Mana.",
-		[8] = "If you are out of Mana, jump on a platform to be blessed with 1 Mana.",
-		[9] = "Called Orb will travel twice as fast.",
+		[4] = "La durata dei collegamenti è raddoppiata (120s).",
+		[5] = "La durata dei portali è raddoppiata (120s).",
+		[6] = "Richiama Sfera richiede 2 Mana per l'esecuzione (da 3 Mana).",
+		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi eseguire un salto sopra una piattaforma per ricevere in dono 1 Mana.",
+		[9] = "La sfera viene richiamata più velocemente.",
 	}, 
 	["JOKER"] = { 
-		[4] = "Disco stairs have no effect on you.",
-		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
-		[6] = "You can now detect platform traps and fake stairs.",
-		[8] = "You can now walk on fake stairs.", 
-		[9] = "You will get bonus Mana when someone triggers any prank. (1 mana per player pranked)",
+		[4] = "Sei immune alle scale festose.",
+		[5] = "Puoi rilevare le scale invisibili e hai l'opzione di non svelarle quando le calpesti.",
+		[6] = "Puoi rilevare le botole e le scale illusorie.",
+		[8] = "Puoi camminare sulle scale illusorie.",
+		[9] = "Ricevi 1 Mana quando qualcuno cade per le tue trappole (una volta per giocatore).",
 	},
 	["WICKED"] = {
-		[4] = "You can now walk on obbies as if they were normal stairs.",
-		[5] = "The Destroy Below spell is now free.",
-		[6] = "You will get 1 bonus Mana from destroying any special stairs.",
-		[8] = "You have the option to avoid triggering any Wicked Rigs.",
-		[9] = "You can now destroy cursed stairs.",
+		[4] = "Puoi camminare sulle scale frantumate.",
+		[5] = "L'incantesimo Demolisci Scale non richiede Mana per l'esecuzione.",
+		[6] = "Ottieni 1 Mana per scala alterata demolita.",
+		[8] = "Ricevi l'opzione per non attivare le scale alterate da Wicked Rig quando le calpesti.",
+		[9] = "Puoi demolire le scale maledette.",
 	},
 	["SPECTRE"] = { 
-		[4] = "You will get an extra 1 Mana when you collect crystals with Your Ghost.", 
-		[5] = "Your GHOSTIFY spell is now free.",
-		[6] = "You can now touch the orb at the top with your ghost to finish a climb.",
-		[8] = "You have the option to avoid triggering any Spectre Rigs.", 
-		[9] = "You can now walk on ghosted stairs.",
+		[4] = "Ottieni 1 Mana aggiuntivo quando la tua controfigura colleziona Mana.",
+		[5] = "L'incantesimo Spettralizza Scale non richiede Mana per l'esecuzione.",
+		[6] = "La tua controfigura può toccare la sfera finale al tuo posto.",
+		[8] = "Ricevi l'opzione per non attivare le scale alterate da Spectre Rig quando le calpesti.",
+		[9] = "Puoi camminare sulle scale spettralizzate.",
 	},
 	["KEEPER"] = {
-		[4] = "The Move Random spell and Keeper Rigs that you trigger will never cause the stairs to go down.",
-		[5] = "You can now move any un-cursed stairs.",
-		[6] = "Your Restore spell is now free.", 
-		[8] = "You have the option to avoid triggering any Keeper Rigs.",
-		[9] = "You can now restore cursed stairs and cursed intersections.",
+		[4] = "Le scale non sprofondano più con l'incantesimo Spostamento Randomico e il sortilegio Keeper Rig.",
+		[5] = "Puoi spostare qualsiasi scala che non sia maledetta.",
+		[6] = "L'incantesimo Ripristina Scale non richiede Mana per l'esecuzione.",
+		[8] = "Ricevi l'opzione per non attivare le scale alterate da Keeper Rig quando le calpesti.",
+		[9] = "Puoi ripristinare le scale maledette ed i malefici.",
 	},
-	["HACKER"] = { 
+	["HACKER"] = {
 		[4] = "You have the option to be immune to Escalators.",
 		[5] = "Your Dash spell is now 50% faster.",
 		[6] = "Your Blink spell is now 50% faster.", 
