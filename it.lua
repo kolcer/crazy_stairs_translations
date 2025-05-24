@@ -790,11 +790,9 @@ module.gui.ranks = {
 }
 
 module.gui.reshuffle = {
+	["title"] = "MESCOLAZIONE FORZATA?",
 
-	["title"] = "STAIRS RESHUFFLE MODE",
-
-	["body"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
-
+	["body"] = "Le scale in movimento potrebbero scontrarsi con altre scale. Nel caso succeda, queste verranno distrutte. Premi NO se vuoi evitare un mescolamento forzato.",
 }
 
 module.gui.multitokens = {
