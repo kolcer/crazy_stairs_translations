@@ -812,29 +812,27 @@ module.gui.feedback = {
 }
 
 module.gui.settings = {
+	["title"] = "IMPOSTAZIONI DI GIOCO",
 
-	["title"] = "GAME SETTINGS",
+	["ANIM"] = "IMPOSTAZIONI\nANIMAZIONE",
+	["MISC"] = "IMPOSTAZIONI\nGENERALI",
+	["INTER"] = "IMPOSTAZIONI\nINTERFACCIA",
+	["INTER2"] = "IMPOSTAZIONI\nINTERFACCIA AGGIUNTIVE",
 
-	["ANIM"] = "ANIMATION\nSETTINGS",	
-	["MISC"] = "MISCELLANEOUS\nSETTINGS",
-	["INTER"] = "INTERFACE\nSETTINGS",	
-	["INTER2"] = "EXTRA INTERFACE\nSETTINGS",	
-
-	["list"] = "Show animated playerlist",
-	["morph"] = "Show morph animation when using Deceiver or Usurper",
-	["billboard"] = "Show Your own avatar billboard",
-	["rank"] = "Show Your Overall Rank in avatar billboard",
-	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
-	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
-	["multi"] = "Show Multi Token window selection after the climb",
-	["kchoices"] = "Show direction selection window for Keeper (won't work on consoles)",
-	["hchoices"] = "Show direction selection window for Hacker (won't work on consoles)",
-	["achoices"] = "Show direction selection window for Archon (won't work on consoles)",
-	["rchoices"] = "Show direction selection window for Reaver (won't work on consoles)",
-	["schoices"] = "Show direction selection window for Splicer (won't work on consoles)",
-	["gchoices"] = "Show direction selection window for Gremlin (won't work on consoles)",
-	["stats"] = "Show extra stats when casting Rig & Event spells",
-
+	["list"] = "Attiva lista giocatori animata",
+	["morph"] = "Mostra animazioni di trasformazione di CHAMELEON (Deceiver/Usurper)",
+	["billboard"] = "Mostra ad altri giocatori informazioni sulla tua classe",
+	["rank"] = "Mostra ad altri giocatori il tuo ruolo",
+	["switchback"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
+	["safecancel"] = "Mostra conferma quando vuoi interrompere un sortilegio temporaneo",
+	["multi"] = "Mostra convertitore Gettoni Multiuso al termine delle scalate",
+	["kchoices"] = "Mostra icone direzionali per KEEPER (solo PC)",
+	["hchoices"] = "Mostra icone direzionali per HACKER (solo PC)",
+	["achoices"] = "Mostra icone direzionali per ARCHON (solo PC)",
+	["rchoices"] = "Mostra icone direzionali per REAVER (solo PC)",
+	["schoices"] = "Mostra icone direzionali per SPLICER (solo PC)",
+	["gchoices"] = "Mostra icone direzionali per GREMLIN (solo PC)",
+	["stats"] = "Mostra informazioni aggiuntive quando selezioni un sortilegio",
 }
 
 module.gui.gameover = {}
