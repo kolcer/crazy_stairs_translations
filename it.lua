@@ -838,13 +838,11 @@ module.gui.settings = {
 module.gui.gameover = {}
 
 module.gui.gameover.results = {
-
-	["class"] = "YOUR ALIGNMENT",
-	["time"] = "YOUR CLIMB TIME",
-	["climbs"] = "CLIMBS AWARDED",
-	["tokens"] = "TOKENS AWARDED",
-	["rank"] = "YOUR CURRENT RANK",
-
+	["class"] = "LA TUA CLASSE",
+	["time"] = "TEMPO CRONOMETRATO",
+	["climbs"] = "ASCESE GUADAGNATE",
+	["tokens"] = "GETTONI RICEVUTI",
+	["rank"] = "RANGO ATTUALE",
 }
 
 module.gui.gameover.messages = {
