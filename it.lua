@@ -627,7 +627,7 @@ module.spells.descriptions = {
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "Sprofonda la scala colpita di un piano.\nSblocca il rango Captain di Keeper per poter sprofondare qualsiasi scala non maledetta.",
+	["chamdown"] = "Sprofonda la scala colpita di un piano.\nSblocca il rango Controller di Keeper per poter sprofondare qualsiasi scala non maledetta.",
 	["chamswap"] = "Copia la tua controfigura. Tuttavia, a differenza di Unione di Reaver, questo incantesimo è solo visivo.",
 	["chamdraw"] = "Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile.",
 	["chamdrawabove"] = "Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile. Il rango che influenzava questo incantesimo non ha più effetto.",
@@ -704,18 +704,18 @@ module.gui.ranks = {
 		[9] = "Puoi ripristinare le scale maledette ed i malefici.",
 	},
 	["HACKER"] = {
-		[4] = "You have the option to be immune to Escalators.",
-		[5] = "Your Dash spell is now 50% faster.",
-		[6] = "Your Blink spell is now 50% faster.", 
-		[8] = "You have the option to avoid triggering any Hacker Rigs. (merges with Escalator switch)",
-		[9] = "If there is at least one free intersection, casting Glitch on the top level will create stairs leading to the orb.", 
+		[4] = "Ricevi l'opzione per non attivare le scale mobili quando le calpesti.",
+		[5] = "L'esecuzione dell'incantesimo Passaggio è più veloce del 50%.",
+		[6] = "L'esecuzione dell'incantesimo Smaterializzazione è più veloce del 50%.",
+		[8] = "Aggiunge l'opzione per non attivare le scale alterate da Hacker Rig quando le calpesti.",
+		[9] = "Quando usi l'incantesimo Scale Anomale in cima alla torre, vieni teletrasportato nelle vicinanze della sfera finale (se possibile).",
 	},
 	["THIEF"] = {
-		[4] = "Your Bypass will now last twice as long (120s).",
-		[5] = "Your Spiral Staircase will now last twice as long (120s).",
-		[6] = "You can now steal any un-cursed stairs.",
-		[8] = "If you are out of Mana, jump on a platform to get 1 Mana from your stash.", 
-		[9] = "You can now keep 2 stolen stairs at the same time.",
+		[4] = "Le tue Scorciatoie durano il doppio del tempo (da 60s a 120s).",
+		[5] = "Le tue scale a spirale durano il doppio del tempo (da 60s a 120s).",
+		[6] = "Puoi rubare qualsiasi scala che non sia maledetta.",
+		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi eseguire un salto sopra una piattaforma per rubare 1 Mana.",
+		[9] = "Puoi rubare due scale alla volta.",
 	},
 	["ARCHON"] = {
 		[4] = "You can now cast the Destroy Gate spell on platforms, to remove Platform Gates.",
