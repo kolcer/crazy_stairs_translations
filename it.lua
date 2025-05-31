@@ -1200,10 +1200,10 @@ module.static = {
 	["vr_10"] = "Lancia un incantesimo premendo il pulsante centrale del controller, tenendo premuto anche quello laterale. Ogni classe dispone di due incantesimi: uno per le scale e uno per le piattaforme. L'effetto varia in base all'elemento colpito.",
 	["vr_11"] = "Per cambiare classe, tieni premuto solo il pulsante centrale del controller e seleziona l'opzione desiderata.",
 
-	["home_1"] = "MUGGLE'S HOME",
-	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
-	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
-	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
+	["home_1"] = "CASA DI MUGGLE",
+	["home_2"] = "LA NOSTRA MASSIMA:\nCAMMINA\nSALTA\nE\nCADI",
+	["home_3"] = "PRO:\nSei più veloce degli altri (con i ranghi)\nTi puoi vantare\nCONTRO:\nNiente incantesimi\nPotresti perderti spesso",
+	["home_4"] = "'Ai miei tempi gli incantesimi non esistevano...'\ncitazione dal nostro fondatore",
 
 	["oasis_1"] = "CHAMELEON'S OASIS",
 	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
