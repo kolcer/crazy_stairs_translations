@@ -859,8 +859,8 @@ module.gui.gameover.messages = {
 	},
 	["JOKER"] = {
 		"INGANNA, CONFONDI e RIDI SOTTO I BAFFI",
-		"Se i Droni mi ripristinano un'altra scala illusoria...",
 		"Questa scalinata è uno scherzo",
+		"Se i Droni mi ripristinano un'altra scala illusoria...",
 		"Tutta questa serietà è angosciante...",
 		"Grosse risate",
 		"Seguitemi a vostro rischio e pericolo",
@@ -1240,10 +1240,10 @@ module.static = {
 	["shelter_3"] = "PRO:\nVersatile\nPortato per le alleanze\nCONTRO:\nRichiede agilità nel movimento\nComplicato da usare nella torre professionale",
 	["shelter_4"] = "'Piccolo dettaglio: siamo nello SPAZIO'\ncitazione dal nostro fondatore",
 
-	["circus_1"] = "JOKER'S CIRCUS",
-	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
-	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
-	["circus_4"] = "'This staircase is a joke.'\ncitazione dal nostro fondatore",
+	["circus_1"] = "CIRCO DI JOKER",
+	["circus_2"] = "LA NOSTRA MASSIMA:\nINGANNA\nCONFONDI\nE\nRIDI SOTTO I BAFFI",
+	["circus_3"] = "PRO:\nRisate assicurate\nIncantesimi utili\nCONTRO:\nIncantesimi costosi\nPossibile perdita di amicizie",
+	["circus_4"] = "'Questa scalinata è uno scherzo.'\ncitazione dal nostro fondatore",
 
 	["base_1"] = "KEEPER'S BASE",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
