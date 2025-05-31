@@ -1281,12 +1281,12 @@ module.static = {
 	["grave_4"] = "'Vogliamo solo giocare, non spaventarti... troppo.'\ncitazione dal nostro fondatore",
 
 	--SHARED
-	["leader_pro"] = "Pro Tower counts as 2 climbs",	
-	["leader_update"] = "Update in: ",	
-	["leader_updating"] = "Updating...",	
-	["leader_rank"] = "RANK",
-	["leader_req"] = "CLIMBS REQ",
-	["leader_off"] = "Custom tower does not support leaderboards.",
+	["leader_pro"] = "La torre professionale conferisce 2 Ascese per completamento",
+	["leader_update"] = "Aggiornamento in: ",
+	["leader_updating"] = "Sto aggiornando...",
+	["leader_rank"] = "RANGO",
+	["leader_req"] = "ASCESE NECESS.",
+	["leader_off"] = "La torre personalizzabile non influenza le classifiche.",
 
 	--OVERALL
 	["over_title"] = "OVERALL RANKS",
