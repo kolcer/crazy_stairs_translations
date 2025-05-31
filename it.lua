@@ -1245,10 +1245,10 @@ module.static = {
 	["circus_3"] = "PRO:\nRisate assicurate\nIncantesimi utili\nCONTRO:\nIncantesimi costosi\nPossibile perdita di amicizie",
 	["circus_4"] = "'Questa scalinata è uno scherzo.'\ncitazione dal nostro fondatore",
 
-	["base_1"] = "KEEPER'S BASE",
-	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
-	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
-	["base_4"] = "'Stop messing up my staircase!'\ncitazione dal nostro fondatore",
+	["base_1"] = "FORTEZZA DI KEEPER",
+	["base_2"] = "LA NOSTRA MASSIMA:\nMUOVI\nRUOTA\nE\nSORVEGLIA",
+	["base_3"] = "PRO:\nPuò ripristinare le scale\nPuò riusare le scale\nCONTRO:\nRichiede agilità nel movimento\nRichiede la presenza di scale",
+	["base_4"] = "'Le mie scale, NON. SI. TOCCANO!'\ncitazione dal nostro fondatore",
 
 	["chamber_1"] = "WICKED'S CHAMBER",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
