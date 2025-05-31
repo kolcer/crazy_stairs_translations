@@ -1205,10 +1205,10 @@ module.static = {
 	["home_3"] = "PRO:\nSei più veloce degli altri (con i ranghi)\nTi puoi vantare\nCONTRO:\nNiente incantesimi\nPotresti perderti spesso",
 	["home_4"] = "'Ai miei tempi gli incantesimi non esistevano...'\ncitazione dal nostro fondatore",
 
-	["oasis_1"] = "CHAMELEON'S OASIS",
-	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
-	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
-	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
+	["oasis_1"] = "OASI DI CHAMELEON",
+	["oasis_2"] = "LA NOSTRA MASSIMA:\nCOPIA\nIMITA\nE\nSTUPISCI",
+	["oasis_3"] = "PRO:\nDecidi tu quando cambiare classe\nCONTRO:\nA pagamento\nCi vuole del tempo per potenziare le altre classi",
+	["oasis_4"] = "'Sono troppo pigro per creare incantesimi originali.'\ncitazione dal nostro fondatore",
 
 	["nexus_1"] = "HERETIC'S NEXUS",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
