@@ -1235,50 +1235,50 @@ module.static = {
 	["haven_3"] = "PRO:\nFacile da usare\nPortato per le alleanze\nCONTRO:\nUsa molto Mana\nAttrae attenzioni indesiderate",
 	["haven_4"] = "'Questi fannulloni hanno bisogno del nostro aiuto!'\ncitazione dal nostro fondatore",
 
-	["shelter_1"] = "DRIFTER'S SHELTER",
-	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
-	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
-	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
+	["shelter_1"] = "RIFUGIO DI DRIFTER",
+	["shelter_2"] = "LA NOSTRA MASSIMA:\nVOLA\nVIAGGIA\nE\nVISITA",
+	["shelter_3"] = "PRO:\nVersatile\nPortato per le alleanze\nCONTRO:\nRichiede agilità nel movimento\nComplicato da usare nella torre professionale",
+	["shelter_4"] = "'Piccolo dettaglio: siamo nello SPAZIO'\ncitazione dal nostro fondatore",
 
 	["circus_1"] = "JOKER'S CIRCUS",
 	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
-	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
+	["circus_4"] = "'This staircase is a joke.'\ncitazione dal nostro fondatore",
 
 	["base_1"] = "KEEPER'S BASE",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
-	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
+	["base_4"] = "'Stop messing up my staircase!'\ncitazione dal nostro fondatore",
 
 	["chamber_1"] = "WICKED'S CHAMBER",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
-	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
+	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\ncitazione dal nostro fondatore",
 
 	["backdoor_1"] = "HACKER'S BACKDOOR",
 	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
-	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
+	["backdoor_4"] = "'Fair play? There's no such thing.'\ncitazione dal nostro fondatore",
 
 	["hub_1"] = "SPLICER'S HUB",
 	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
 	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
-	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
+	["hub_4"] = "'Never go in a straight line for too long.'\ncitazione dal nostro fondatore",
 
 	["shack_1"] = "GREMLIN'S SHACK",
 	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
-	["shack_4"] = "'Come play with me.'\nour founder's quote",
+	["shack_4"] = "'Come play with me.'\ncitazione dal nostro fondatore",
 
 	["mirror_1"] = "REAVER'S MIRROR",
 	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
-	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
+	["mirror_4"] = "'Mirrors are just doorways.'\ncitazione dal nostro fondatore",
 
 	["grave_1"] = "NECROMANCER'S GRAVE",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\ncitazione dal nostro fondatore",
 
 	--SHARED
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
