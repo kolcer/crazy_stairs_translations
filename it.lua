@@ -904,7 +904,7 @@ module.gui.gameover.messages = {
 	},
 	["CHAMELEON"] = {
 		"COPIA, IMITA e SORPRENDI",
-		"Non mi pagano abbastanza per inventare incantesimi miei",
+		"Sono troppo pigro per creare incantesimi originali",
 		"Più siamo, meglio è",
 		"Formate alleanze? Io sono un'alleanza vivente!",
 		"Essere propensi al cambiamento ripaga",
@@ -927,7 +927,7 @@ module.gui.gameover.messages = {
 	},
 	["THIEF"] = {
 		"PRENDI IN PRESTITO, USA E RESTITUISCI",
-		"Il reato di cui mi stai accusando è molto grave",
+		"Lo restituisco dopo",
 		"Le scale piatte sono affascinanti",
 		"Non sono così meschino come pensi, non ho toccato alcuna piattaforma!",
 		"Se non vuoi essere derubato, beh... non farti derubare, ovvio",
@@ -1220,10 +1220,10 @@ module.static = {
 	["guild_3"] = "PRO:\nNon ha problemi di Mana\nVersatile\nCONTRO:\nDevi rubare scale\nNon demolisce scale già presenti",
 	["guild_4"] = "'Lo restituisco dopo'\ncitazione dal nostro fondatore",
 
-	["nether_1"] = "SPECTRE'S NETHER",
-	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
-	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
-	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
+	["nether_1"] = "ALDILÀ DI SPECTRE",
+	["nether_2"] = "LA NOSTRA MASSIMA:\nSPARISCI\nNASCONDITI\nE\nTELETRASPORTATI",
+	["nether_3"] = "PRO:\nIncantesimi veloci\nOttimo per giocare in solitaria\nCONTRO:\nA pagamento\nInefficace nelle alleanze",
+	["nether_4"] = "'È stato scientificamente provato che il teletrasporto è sicuro.'\ncitazione dal nostro fondatore (DISPERSO)",
 
 	["study_1"] = "ARCHON'S STUDY",
 	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
