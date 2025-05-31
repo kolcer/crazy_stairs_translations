@@ -1289,19 +1289,19 @@ module.static = {
 	["leader_off"] = "La torre personalizzabile non influenza le classifiche.",
 
 	--OVERALL
-	["over_title"] = "OVERALL RANKS",
-	["over_desc"] = "Each acquired rank adds 1 point",
-	["over_rank"] = "RANK",
-	["over_req"] = "POINTS REQ",
-	["emperor_req"] = "* Requires Chamelon OR Spectre",
-	["overmind_req"] = "** Requires Chamelon AND Spectre",
-	["over_prefix"] = "PREFIX",
-	["over_passes"] = "GAME PASSES\nREQUIRED",
-	["over_notgroup"] = "OLIVE COLOR - not in group",
-	["over_group"] = "TEAL COLOR - in the group",
-	["over_mod"] = "MODERATOR - player is a moderator",
-	["over_admin"] = "ADMIN - player is an admin", -- pwease sleazel uwu
-	["over_owner"] = "PRANK ME - Game creator (sleazel)",
+	["over_title"] = "TUTTI I RUOLI",
+	["over_desc"] = "Ogni ruolo sbloccato aggiunge 1 punto",
+	["over_rank"] = "RUOLO",
+	["over_req"] = "PUNTI NECESS.",
+	["emperor_req"] = "* Richiede O Chamelon O Spectre",
+	["overmind_req"] = "** Richiede SIA Chamelon CHE Spectre",
+	["over_prefix"] = "PREFISSO",
+	["over_passes"] = "PASS\nRICHIESTI",
+	["over_notgroup"] = "COLORE OLIVA - non sei nel gruppo",
+	["over_group"] = "COLORE VERDE ACQUA - sei nel gruppo \n",
+	["over_mod"] = "MODERATOR - il giocatore è un moderatore",
+	["over_admin"] = "ADMIN - il giocatore è un admin",
+	["over_owner"] = "PRANK ME - il giocatore è Sleazel",
 
 	--OTHER
 	["muggle_lead"] = "HASTY MUGGLES",
