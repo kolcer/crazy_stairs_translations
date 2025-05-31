@@ -1270,15 +1270,15 @@ module.static = {
 	["shack_3"] = "PRO:\nNessun vantaggio\nSono serio\nCONTRO:\nSarai odiato da tutti\nTUTTI QUANTI",
 	["shack_4"] = "'Giochiamo insieme!'\ncitazione dal nostro fondatore",
 
-	["mirror_1"] = "REAVER'S MIRROR",
-	["mirror_2"] = "LA NOSTRA MASSIMA:\nREFLECT\nREPLACE\nAND\nMERGE",
-	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
-	["mirror_4"] = "'Mirrors are just doorways.'\ncitazione dal nostro fondatore",
+	["mirror_1"] = "SPECCHIO DI REAVER",
+	["mirror_2"] = "LA NOSTRA MASSIMA:\nRIFLETTI\nRIMPIAZZA\nE\nUNISCI",
+	["mirror_3"] = "PRO:\nAnche gli altri possono\nusare gli specchi\nCONTRO:\nUnione con la controfigura\nè un po' confusionario.",
+	["mirror_4"] = "'Gli specchi sono come le porte.'\ncitazione dal nostro fondatore",
 
-	["grave_1"] = "NECROMANCER'S GRAVE",
-	["grave_2"] = "LA NOSTRA MASSIMA:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
-	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\ncitazione dal nostro fondatore",
+	["grave_1"] = "TOMBA DI NECROMANCER",
+	["grave_2"] = "LA NOSTRA MASSIMA:\nSEGUI\nRIANIMA\nE\nRACCOGLI",
+	["grave_3"] = "PRO:\nUtile se gli altri\nseguono la tua controfigura\nPortato per le alleanze\nCONTRO:\nRichiede molto Mana\nBisogna prenderci l'abitudine",
+	["grave_4"] = "'Vogliamo solo giocare, non spaventarti... troppo.'\ncitazione dal nostro fondatore",
 
 	--SHARED
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
