@@ -1225,10 +1225,10 @@ module.static = {
 	["nether_3"] = "PRO:\nIncantesimi veloci\nOttimo per giocare in solitaria\nCONTRO:\nA pagamento\nInefficace nelle alleanze",
 	["nether_4"] = "'È stato scientificamente provato che il teletrasporto è sicuro.'\ncitazione dal nostro fondatore (DISPERSO)",
 
-	["study_1"] = "ARCHON'S STUDY",
-	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
-	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
-	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
+	["study_1"] = "STUDIO DI ARCHON",
+	["study_2"] = "LA NOSTRA MASSIMA:\nCREA PORTALI DIMENSIONALI\n???\nGUADAGNO",
+	["study_3"] = "PRO:\nSortilegi utili\nConfonde gli altri\nCONTRO:\nComplicato da usare\nTi fa pensare troppo",
+	["study_4"] = "'Un tempo regnavo sovrano in queste torri.'\ncitazione dal nostro fondatore",
 
 	["haven_1"] = "PATRON'S HAVEN",
 	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
