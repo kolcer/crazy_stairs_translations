@@ -1210,10 +1210,10 @@ module.static = {
 	["oasis_3"] = "PRO:\nDecidi tu quando cambiare classe\nCONTRO:\nA pagamento\nCi vuole del tempo per potenziare le altre classi",
 	["oasis_4"] = "'Sono troppo pigro per creare incantesimi originali.'\ncitazione dal nostro fondatore",
 
-	["nexus_1"] = "HERETIC'S NEXUS",
-	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
-	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
+	["nexus_1"] = "SETTA DI HERETIC",
+	["nexus_2"] = "LA NOSTRA MASSIMA:\nTU\nNON\nPASSERAI",
+	["nexus_3"] = "PRO:\nUtile nella torre professionale\nNon lo puoi fermare\nCONTRO:\nNon conviene fare alleanze\nNecessita di molto mana",
+	["nexus_4"] = "'Bandire la magia nera equivale a bandire il divertimento.'\ncitazione dal nostro fondatore",
 
 	["guild_1"] = "THIEF'S GUILD",
 	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
