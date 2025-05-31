@@ -1218,7 +1218,7 @@ module.static = {
 	["guild_1"] = "GILDA DI THIEF",
 	["guild_2"] = "LA NOSTRA MASSIMA:\nPRENDI IN PRESTITO\nUSA\nE\nRESTITUISCI",
 	["guild_3"] = "PRO:\nNon ha problemi di Mana\nVersatile\nCONTRO:\nDevi rubare scale\nNon demolisce scale già presenti",
-	["guild_4"] = "'Lo restituisco dopo'\ncitazione dal nostro fondatore",
+	["guild_4"] = "'Lo restituisco dopo.'\ncitazione dal nostro fondatore",
 
 	["nether_1"] = "ALDILÀ DI SPECTRE",
 	["nether_2"] = "LA NOSTRA MASSIMA:\nSPARISCI\nNASCONDITI\nE\nTELETRASPORTATI",
@@ -1238,7 +1238,7 @@ module.static = {
 	["shelter_1"] = "RIFUGIO DI DRIFTER",
 	["shelter_2"] = "LA NOSTRA MASSIMA:\nVOLA\nVIAGGIA\nE\nVISITA",
 	["shelter_3"] = "PRO:\nVersatile\nPortato per le alleanze\nCONTRO:\nRichiede agilità nel movimento\nComplicato da usare nella torre professionale",
-	["shelter_4"] = "'Piccolo dettaglio: siamo nello SPAZIO'\ncitazione dal nostro fondatore",
+	["shelter_4"] = "'Piccolo dettaglio: siamo nello SPAZIO.'\ncitazione dal nostro fondatore",
 
 	["circus_1"] = "CIRCO DI JOKER",
 	["circus_2"] = "LA NOSTRA MASSIMA:\nINGANNA\nCONFONDI\nE\nRIDI SOTTO I BAFFI",
@@ -1250,10 +1250,10 @@ module.static = {
 	["base_3"] = "PRO:\nPuò ripristinare le scale\nPuò riusare le scale\nCONTRO:\nRichiede agilità nel movimento\nRichiede la presenza di scale",
 	["base_4"] = "'Le mie scale, NON. SI. TOCCANO!'\ncitazione dal nostro fondatore",
 
-	["chamber_1"] = "WICKED'S CHAMBER",
-	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
-	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
-	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\ncitazione dal nostro fondatore",
+	["chamber_1"] = "OBLIO DI WICKED",
+	["chamber_2"] = "LA NOSTRA MASSIMA:\nPREVIENI\nBLOCCA\ne\nDISTRUGGI",
+	["chamber_3"] = "PRO:\nPuò demolire le scale\nPuò far crollare l'intera torre\nCONTRO:\nRichiede la presenza di scale",
+	["chamber_4"] = "'Non era mia intenzione far fuori tutte quelle scale.'\ncitazione dal nostro fondatore",
 
 	["backdoor_1"] = "HACKER'S BACKDOOR",
 	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
