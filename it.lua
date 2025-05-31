@@ -848,7 +848,7 @@ module.gui.gameover.results = {
 module.gui.gameover.messages = {
 	["PATRON"] = {
 		"AIUTA, PROTEGGI e CREA",
-		"Questi fannulloni hanno bisogno del nostro aiuto",
+		"Questi fannulloni hanno bisogno del nostro aiuto!",
 		"La nostra presenza è fondamentale!",
 		"Mi do un 11 su 10 per la mia prestazione",
 		"Condividere è un gesto di bontà",
@@ -1230,10 +1230,10 @@ module.static = {
 	["study_3"] = "PRO:\nSortilegi utili\nConfonde gli altri\nCONTRO:\nComplicato da usare\nTi fa pensare troppo",
 	["study_4"] = "'Un tempo regnavo sovrano in queste torri.'\ncitazione dal nostro fondatore",
 
-	["haven_1"] = "PATRON'S HAVEN",
-	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
-	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
-	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
+	["haven_1"] = "PARADISO DI PATRON",
+	["haven_2"] = "LA NOSTRA MASSIMA:\nAIUTA\nPROTEGGI\nE\nCREA",
+	["haven_3"] = "PRO:\nFacile da usare\nPortato per le alleanze\nCONTRO:\nUsa molto Mana\nAttrae attenzioni indesiderate",
+	["haven_4"] = "'Questi fannulloni hanno bisogno del nostro aiuto!'\ncitazione dal nostro fondatore",
 
 	["shelter_1"] = "DRIFTER'S SHELTER",
 	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
