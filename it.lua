@@ -1215,10 +1215,10 @@ module.static = {
 	["nexus_3"] = "PRO:\nUtile nella torre professionale\nNon lo puoi fermare\nCONTRO:\nNon conviene fare alleanze\nNecessita di molto mana",
 	["nexus_4"] = "'Bandire la magia nera equivale a bandire il divertimento.'\ncitazione dal nostro fondatore",
 
-	["guild_1"] = "THIEF'S GUILD",
-	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
-	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
-	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
+	["guild_1"] = "GILDA DI THIEF",
+	["guild_2"] = "LA NOSTRA MASSIMA:\nPRENDI IN PRESTITO\nUSA\nE\nRESTITUISCI",
+	["guild_3"] = "PRO:\nNon ha problemi di Mana\nVersatile\nCONTRO:\nDevi rubare scale\nNon demolisce scale già presenti",
+	["guild_4"] = "'Lo restituisco dopo'\ncitazione dal nostro fondatore",
 
 	["nether_1"] = "SPECTRE'S NETHER",
 	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
