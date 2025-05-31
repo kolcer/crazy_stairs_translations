@@ -1020,7 +1020,7 @@ module.gui.gameover.messages = {
  		"Prevenire è meglio che curare",
 	},
 	["GREMLIN"] = {
-		"AVVOLGI, GIRA E IPNOTIZZA",
+		"GIRA, AVVOLGI, E IPNOTIZZA",
 		"Giochiamo insieme!",
 		"You spin me right 'round, baby, right 'round",
 		"Questa scalinata è ultra noiosa",
@@ -1260,23 +1260,23 @@ module.static = {
 	["backdoor_3"] = "PRO:\nVeloce\nDifficile da pedinare\nCONTRO:\nRichiede la presenza di scale\nInefficace nelle alleanze",
 	["backdoor_4"] = "'Gioco sportivo? Fammi il piacere.'\ncitazione dal nostro fondatore",
 
-	["hub_1"] = "SPLICER'S HUB",
-	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
-	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
-	["hub_4"] = "'Never go in a straight line for too long.'\ncitazione dal nostro fondatore",
+	["hub_1"] = "INTRECCIO DI SPLICER",
+	["hub_2"] = "LA NOSTRA MASSIMA:\nDEVIA\nCOMBINA\ne\nDIVIDI",
+	["hub_3"] = "PRO:\nVersatile\nPortato per le alleanze\nCONTRO:\nConfusionario\nBisogna prenderci l'abitudine",
+	["hub_4"] = "'Non si può andare sempre dritti.'\ncitazione dal nostro fondatore",
 
-	["shack_1"] = "GREMLIN'S SHACK",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
-	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
-	["shack_4"] = "'Come play with me.'\ncitazione dal nostro fondatore",
+	["shack_1"] = "BARACCA DI GREMLIN",
+	["shack_2"] = "LA NOSTRA MASSIMA:\nGIRA\nAVVOLGI\nE\nIPNOTIZZA",
+	["shack_3"] = "PRO:\nNessun vantaggio\nSono serio\nCONTRO:\nSarai odiato da tutti\nTUTTI QUANTI",
+	["shack_4"] = "'Giochiamo insieme!'\ncitazione dal nostro fondatore",
 
 	["mirror_1"] = "REAVER'S MIRROR",
-	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
+	["mirror_2"] = "LA NOSTRA MASSIMA:\nREFLECT\nREPLACE\nAND\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "'Mirrors are just doorways.'\ncitazione dal nostro fondatore",
 
 	["grave_1"] = "NECROMANCER'S GRAVE",
-	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
+	["grave_2"] = "LA NOSTRA MASSIMA:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\ncitazione dal nostro fondatore",
 
