@@ -1255,10 +1255,10 @@ module.static = {
 	["chamber_3"] = "PRO:\nPuò demolire le scale\nPuò far crollare l'intera torre\nCONTRO:\nRichiede la presenza di scale",
 	["chamber_4"] = "'Non era mia intenzione far fuori tutte quelle scale.'\ncitazione dal nostro fondatore",
 
-	["backdoor_1"] = "HACKER'S BACKDOOR",
-	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
-	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
-	["backdoor_4"] = "'Fair play? There's no such thing.'\ncitazione dal nostro fondatore",
+	["backdoor_1"] = "METAVERSO DI HACKER",
+	["backdoor_2"] = "LA NOSTRA MASSIMA:\nSFRUTTA\nCREA ERRORI\nE\nRESETTA",
+	["backdoor_3"] = "PRO:\nVeloce\nDifficile da pedinare\nCONTRO:\nRichiede la presenza di scale\nInefficace nelle alleanze",
+	["backdoor_4"] = "'Gioco sportivo? Fammi il piacere.'\ncitazione dal nostro fondatore",
 
 	["hub_1"] = "SPLICER'S HUB",
 	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
