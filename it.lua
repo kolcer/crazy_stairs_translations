@@ -1304,58 +1304,57 @@ module.static = {
 	["over_owner"] = "PRANK ME - il giocatore è Sleazel",
 
 	--OTHER
-	["muggle_lead"] = "HASTY MUGGLES",
-	["muggle_ranks"] = "MUGGLE RANKS",
+	["muggle_lead"] = "MUGGLE SCALTRI",
+	["muggle_ranks"] = "RANGHI DI MUGGLE",
 
-	["hacker_lead"] = "ENCRYPTED HACKERS",
-	["hacker_ranks"] = "HACKER RANKS",
+	["hacker_lead"] = "HACKER CRITTOGRAFATI",
+	["hacker_ranks"] = "RANGHI DI HACKER",
 
-	["wicked_lead"] = "VIOLENT WICKEDS",
-	["wicked_ranks"] = "WICKED RANKS",
+	["wicked_lead"] = "WICKED SCELLERATI",
+	["wicked_ranks"] = "RANGHI DI WICKED",
 
-	["keeper_lead"] = "PREPARED KEEPERS",
-	["keeper_ranks"] = "KEEPER RANKS",
+	["keeper_lead"] = "KEEPER ORDINATI",
+	["keeper_ranks"] = "RANGHI DI KEEPER",
 
-	["joker_lead"] = "CRAZY JOKERS",
-	["joker_ranks"] = "JOKER RANKS",
+	["joker_lead"] = "JOKER ISTERICI",
+	["joker_ranks"] = "RANGHI DI JOKER",
 
-	["drifter_lead"] = "RAPID DRIFTERS",
-	["drifter_ranks"] = "DRIFTER RANKS",
+	["drifter_lead"] = "DRIFTER ERRANTI",
+	["drifter_ranks"] = "RANGHI DI DRIFTER",
 
-	["patron_lead"] = "NOBLE PATRONS",
-	["patron_ranks"] = "PATRON RANKS",
+	["patron_lead"] = "PATRON NOBILI",
+	["patron_ranks"] = "RANGHI DI PATRON",
 
-	["archon_lead"] = "AGILE ARCHONS",
-	["archon_ranks"] = "ARCHON RANKS",
+	["archon_lead"] = "ARCHON ALL'AVANGUARDIA",
+	["archon_ranks"] = "RANGHI DI ARCHON",
 
-	["spectre_lead"] = "FLYING SPECTRES",
-	["spectre_ranks"] = "SPECTRE RANKS",
+	["spectre_lead"] = "SPECTRE VOLANTI",
+	["spectre_ranks"] = "RANGHI DI SPECTRE",
 
-	["thief_lead"] = "STEALTHY THIEVES",
-	["thief_ranks"] = "THIEF RANKS",
+	["thief_lead"] = "THIEF SILENZIOSI",
+	["thief_ranks"] = "RANGHI DI THIEF",
 
-	["heretic_lead"] = "RUTHLESS HERETICS",
-	["heretic_ranks"] = "HERETIC RANKS",
+	["heretic_lead"] = "HERETIC SPREGEVOLI",
+	["heretic_ranks"] = "RANGHI DI HERETIC",
 
-	["necromancer_lead"] = "UNDEAD NECROMANCERS",
-	["necromancer_ranks"] = "NECROMANCER RANKS",
+	["necromancer_lead"] = "NECROMANCER VIVENTI",
+	["necromancer_ranks"] = "RANGHI DI NECROMANCER",
 
-	["splicer_lead"] = "TWISTED SPLICERS",
-	["splicer_ranks"] = "SPLICER RANKS",
+	["splicer_lead"] = "SPLICER CONTORTI",
+	["splicer_ranks"] = "RANGHI DI SPLICER",
 
-	["reaver_lead"] = "REFLECTED REAVERS",
-	["reaver_ranks"] = "REAVER RANKS",
+	["reaver_lead"] = "REAVER RIFLETTENTI",
+	["reaver_ranks"] = "RANGHI DI REAVER",
 
-	["gremlin_lead"] = "LUCKY GREMLINS",
-	["gremlin_ranks"] = "GREMLIN RANKS",
+	["gremlin_lead"] = "GREMLIN BIRICCHINI",
+	["gremlin_ranks"] = "RANGHI DI GREMLIN",
 
-	["chameleon_lead"] = "SWIFT CHAMELEONS",
-	["chameleon_ranks"] = "CHAMELEON RANKS",
+	["chameleon_lead"] = "CHAMELEON MUTAFORMA",
+	["chameleon_ranks"] = "RANGHI DI CHAMELEON",
 
-	["dailies"] = "TODAY'S RECORDS",
-	["most_climbs"] = "MOST CLIMBS",
-	["most_wins"] = "MOST RACE WINS", 
-
+	["dailies"] = "RECORD DI OGGI",
+	["most_climbs"] = "PIÙ ASCESE",
+	["most_wins"] = "PIÙ VITTORIE",
 }
 
 --TUTORIAL
