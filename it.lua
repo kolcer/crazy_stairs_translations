@@ -1509,11 +1509,11 @@ module.spells.tokencosts = {
 
 module.serverfeedback = {
 	--failed spell (local)
-	["nomana"] = "Not enough Mana!",
-	["notokens"] = "Not enough tokens!",
-	["coolwait"] = "You can't cast rigs and events now, please wait ",
-	["nomirror"] = "You need to be joined with ghost to walk on mirrors",
-	["regenused"] = "Regen already used during this climb.",
+	["nomana"] = "Mana insufficiente!",
+	["notokens"] = "Gettoni insufficienti!",
+	["coolwait"] = "Impossibile eseguire in questo momento, attendi ",
+	["nomirror"] = "Devi unirti alla tua controfigura per poter camminare sugli specchi",
+	["regenused"] = "Hai già usato l'incantesimo Rigenera Mana durante questa scalata.",
 
 	--failed spell (server)
 	["unknown"] = "Unknown issue.", --this should not show for normal players, only exploiters
