@@ -1385,17 +1385,15 @@ module.tutorial = {
 }
 
 module.where = {
-
-	["platform"] = "Must be executed on platform. Won't work on bottom nor even levels in pro towers.",
-	["arrow"] = "Must be executed on platform's arrows.",
-	["stairs"] = "Must be executed on stairs.",
-	["above"] = "Must be executed on below stairs, to affect the above stairs. Works on links too.",
-	["dynamic"] = "May affect both below and above stairs.",
-	["both"] = "Can be executed on either platform's arrows or stairs.",
-	["both2"] = "Can be executed on either platform or stairs.",
-	["anywhere"] = "Can be executed anywhere.",
-	["nowhere"] = "This spell does not require an execution.",
-
+	["platform"] = "Da lanciare sulle piattaforme, eccetto quelle del primo piano e quelle vincolate.",
+	["arrow"] = "Da lanciare sulle frecce delle piattaforme.",
+	["stairs"] = "Da lanciare sulle scale.",
+	["above"] = "Colpisce la scala posizionata direttamente sopra a quella colpita (funziona sui collegamenti di Patron).",
+	["dynamic"] = "Può influenzare sia la scala colpita che quella soprastante.",
+	["both"] = "Può essere eseguito sia sulle frecce delle piattaforme che scale.",
+	["both2"] = "Può essere eseguito sia su piattaforme che scale.",
+	["anywhere"] = "Può essere lanciato ovunque.",
+	["nowhere"] = "Questo incantesimo si attiva al momento della selezione.",
 }
 
 module.guide = {
