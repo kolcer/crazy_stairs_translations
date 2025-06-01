@@ -1359,31 +1359,29 @@ module.static = {
 
 --TUTORIAL
 module.tutorial = {
+	["tut_big_1"] = "Benvenuto in ScaleMania!",
+	["tut_big_2"] = "Prima di tutto, impara a cambiare classe.",
+	["tut_big_3"] = "La classe Patron è in grado di generare scale. Seleziona l'incantesimo Genera Scale.",
+	["tut_big_4"] = "Tutti gli incantesimi si lanciano saltando.",
+	["tut_big_5"] = "Notevole, vero? Adesso trasformati in Joker per poter ribaltare le scale.",
+	["tut_big_6"] = "Il giallo ti dona. Ora, seleziona l'incantesimo Ribalta Scale per proseguire.",
+	["tut_big_7"] = "Alcuni incantesimi vengono eseguiti saltando sopra le scale.",
+	["tut_big_8"] = "Ci stai prendendo la mano. Trasformati in Keeper per poter spostare le scale.",
+	["tut_big_9"] = "Ben fatto, ora seleziona l'incantesimo Muovi Scale per continuare.",
+	["tut_big_10"] = "Salta sulla freccia che indica in avanti per spostare la scala.",
+	["tut_big_11"] = "Troverai molte scale che ostacoleranno il tuo passaggio.",
+	["tut_big_12"] = "Stai andando bene! Seleziona l'incantesimo Demolisci Scale in Alto per procedere.",
+	["tut_big_13"] = "Alcuni incantesimi interagiscono con le scale situate in alto, prova con questo.",
+	["tut_big_14"] = "Prima di lasciarci, permettimi di mostrarti le classi a pagamento.",
+	["tut_big_15"] = "Magnifico, vero? Spectre si ottiene acquistando il suo Pass. È utile anche per giocare in solitaria.",
+	["tut_big_16"] = "Il tuo obiettivo? Raggiungi la cima della torre e tocca la sfera in movimento. Alla prossima!",
 
-	["tut_big_1"] = "Welcome to Crazy Stairs!",
-	["tut_big_2"] = "First learn how to morph.",
-	["tut_big_3"] = "You are now a Patron, Patrons can create stairs.",
-	["tut_big_4"] = "All spells need to be executed by jumping.",
-	["tut_big_5"] = "Cool, huh? Now morph to Joker. Jokers can flip stairs.",
-	["tut_big_6"] = "You are now a Joker, use this spell to flip stairs.",
-	["tut_big_7"] = "Some spells need to be executed on stairs.",
-	["tut_big_8"] = "Now morph to Keeper. Keepers can move stairs.",
-	["tut_big_9"] = "You are now a Keeper, use this spell to move stairs.",
-	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
-	["tut_big_11"] = "You will encounter many blocking stairs in this game.",
-	["tut_big_12"] = "You are now a Wicked, use this spell to destroy blocking stairs.",
-	["tut_big_13"] = "You can destroy above stairs, by jumping on below ones.",
-	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
-	["tut_big_15"] = "You are now a Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
+	["tut_select"] = "Seleziona questo incantesimo:",
 
-	["tut_select"] = "Select this spell.",
-
-	["tut_small_init"] = "Jump to spawn tutorial",
-	["tut_small_morph"] = "Jump on morph.",
-	["tut_small_arrow"] = "Jump on arrow.",
-	["tut_small_stairs"] = "Jump on stairs.",
-
+	["tut_small_init"] = "Fai un salto se vuoi iniziare il tutorial",
+	["tut_small_morph"] = "Salta sul trasformatore",
+	["tut_small_arrow"] = "Salta sulla freccia",
+	["tut_small_stairs"] = "Salta sulle scale",
 }
 
 module.where = {
