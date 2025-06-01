@@ -1472,15 +1472,15 @@ module.guide = {
 	},
 
 	['both2'] = {
-		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates."
+		['delsplits'] = "Può essere lanciato su scale con portali dimensionali. Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme."
 	},
 
 	['anywhere'] = {
-		['anywhere'] = "This spell can be executed anywhere.",
+		['anywhere'] = "Può essere lanciato ovunque.",
 	},
 
 	["nowhere"] = {
-		['slide'] = "This spell does not require an execution.",
+		['slide'] = "Questo incantesimo si attiva al momento della selezione.",
 	},
 }
 
