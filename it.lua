@@ -1490,26 +1490,24 @@ module.spells.manacosts = {
 	"2 Mana",
 	"3 Mana",
 	"4 Mana", 
-	"0 Mana + stairs",
-	"1 Mana + stairs",
-	"2 Mana + stairs",
-	"3 Mana + stairs", 
-	"", 
-	"10 Mana" 
+	"0 Mana + scale",
+	"1 Mana + scale",
+	"2 Mana + scale",
+	"3 Mana + scale", 
+	"",
+	"10 Mana"
 }
 
 module.spells.tokencosts = {
+	"1 Gettone",
+	"2 Gettoni",
+	"3 Gettoni",
 
-	"1 Token",
-	"2 Tokens",
-	"3 Tokens",
-
-	["chameleonrigevent"] = "2 Multi Tokens",
-	["unlock"] = "(unlock for 3 tokens)",
+	["chameleonrigevent"] = "2 Gettoni Multiuso",
+	["unlock"] = "(sblocca con 3 Gettoni)",
 }
 
 module.serverfeedback = {
-	 
 	--failed spell (local)
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough tokens!",
