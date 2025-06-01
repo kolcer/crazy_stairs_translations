@@ -1435,8 +1435,8 @@ module.guide = {
 		["rotate"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
 		["flip"]= "Può essere lanciato su scale normali, ribaltate e alterate da rig.",
 		["gate"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
-		["gatestr"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali",
-		["gaterot"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali",
+		["gatestr"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
+		["gaterot"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
 		["twist"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Transformer per poter rimpiazzare le giunture.",
 		["twiststr"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Transformer per poter rimpiazzare le giunture.",
 		["twistrot"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Transformer per poter rimpiazzare le giunture.",
@@ -1449,28 +1449,26 @@ module.guide = {
 	},
 
 	["above"] = {
-		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
-		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
-		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
-		["flip"]= "Can be executed below normal, flipped or rigged stairs.",
-		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
-		["slide"] = "This spell lets you bypass any un-cursed blocking stairs.",
-		["normalrig"] = "Can be executed below normal or rigged stairs only.",
-
+		["cursed"] = "Può essere lanciato sotto a scale normali, maledette e alterate da rig.",
+		["all"] = "Può essere lanciato sotto a qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
+		["steal"] = "Può essere lanciato sotto a scale normali e alterate da rig. Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
+		["flip"]= "Può essere lanciato sotto a scale normali, ribaltate o alterate da rig.",
+		["onedirection"] = "Può essere lanciato sotto a scale normali e alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
+		["slide"] = "Questo incantesimo ti permette di aggirare qualsiasi scala non maledetta.",
+		["normalrig"] = "Può essere lanciato solo sotto a scale normali e alterate da rig.",
 	},
 
 	["dynamic"] = {
 		--hack, twister, bender and flipper
-		['flip'] = "Can be executed on or below normal, flipped or rigged stairs. If above execution fails for any reason, below stairs will be affected instead.",
-		['normalrig'] = "Can be executed on or below any normal or rigged stairs. Spell will be applied to both above and below stairs.",
-		['slide'] = "Can be executed on normal or rigged stairs. If there are blocking un-cursed stairs above, they will be removed.",
+		["flip"] = "Può essere lanciato su o sotto scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala soprastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
+		["normalrig"] = "Può essere lanciato su o sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe: la scala selezionata e quella soprastante.",
+		["slide"] = "Può essere lanciato su scale normali o alterate da rig. Le scale non maledette che bloccano il passaggio verranno demolite.",
 	},
 
 	["both"] = {
-		['restore'] = "Can be executed on any stairs or on platform's arrow with any adjacent stairs. Rank up to Admiral to restore cursed stairs.",
-		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
-		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
-
+		['restore'] = "Principalmente da lanciare sulle scale o anche sulle frecce delle piattaforme. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
+		['deltwists'] = "Da lanciare sulle scale combinate. Sblocca il rango Combiner per poterle ripristinare direttamente dalle piattaforme.",
+		['ghosted'] = "Da lanciare su scale normali, spettralizzate o alterate da rig, oppure sulle frecce delle piattaforme.",
 	},
 
 	['both2'] = {
