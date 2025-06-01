@@ -1417,13 +1417,13 @@ module.guide = {
 
 	["platform"]= {
 		--platform
-		["middle"] = "This spell has no special requirements.",
-		["diag"] = "Can be executed in both inner and outer diagonal directions.",
-		["outer"] = "Can be executed in perpendicular outer directions only.",
-		["centre"] = "This spell will demolish any small mirrors already on the current level, but not the big one.",
-		["inner"] = "Can be executed in inner diagonal directions only, without a link yet.",
-		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
-		["top"] = "Can be exectued on top platforms only.",
+		["middle"] = "Non ci sono requisiti per questo incantesimo.",
+		["diag"] = "Può essere lanciato diagonalmente su qualsiasi piattaforma.",
+		["outer"] = "Può essere lanciato solo sulle piattaforme perimetrali.",
+		["centre"] = "Questo incantesimo rimuove gli specchi piccoli presenti sul piano, ma non quelli estesi.",
+		["inner"] = "Può essere lanciato sulle piattaforme non perimetriche che non abbiano un collegamento attivo.",
+		["prevolve"] = "Può essere lanciato in direzione oraria e antioraria.",
+		["top"] = "Può essere lanciato solo sulla cima della torre.",
 	},
 
 	["stairs"] ={
