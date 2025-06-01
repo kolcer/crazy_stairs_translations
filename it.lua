@@ -1397,28 +1397,25 @@ module.where = {
 }
 
 module.guide = {
-
 	--arrows
 	["arrow"] = {
-		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
+		["through"] = "Può essere lanciato in intersecazioni libere o attraverso scale tangibili.",
 		--["restore"] = "Can be executed next to.",
-		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
-		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
-		["any"] = "Can be executed on any un-cursed intersection.",
-		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
+		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango Banished per poter demolire le scale maledette.",
+		["flicker"] = "Può essere lanciato solo in intersecazioni libere (e maledette con il rango Infidel sbloccato).",
+		["any"] = "Può essere lanciato in intersecazioni senza malefici.",
+		["wall"] = "Può essere lanciato in intersecazioni senza malefici che non abbiano una barriera o un portale dimensionale.",
 		--["ghosted"] = "Can be only used on normal, rigged or ghosted stairs",
 		--["deltwists"] = "Can be only used on spliced stairs.",
-		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
-		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
-		["soft"] = "Can be executed on an empty intersection only.",
-		["flatten"] = "Can be executed on an intersection with normal or rigged crossing stairs only.",
-		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
-		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
+		["forced"] = "Può essere lanciato in intersecazioni libere o attraverso scale opposte non maledette.",
+		["halfsoft"] = "Può essere lanciato in intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
+		["soft"] = "Può essere lanciato solo in intersecazioni libere.",
+		["flatten"] = "Può essere lanciato solo attraverso scale opposte normali o alterate da rig.",
+		["hack"] = "Può essere lanciato solo attraverso scale opposte non maledette.",
+		["sidepass"] = "Può essere lanciato in intersecazioni senza malefici e senza scorciatoie.",
 	},
 
 	["platform"]= {
-		
-
 		--platform
 		["middle"] = "This spell has no special requirements.",
 		["diag"] = "Can be executed in both inner and outer diagonal directions.",
@@ -1428,9 +1425,8 @@ module.guide = {
 		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
 		["top"] = "Can be exectued on top platforms only.",
 	},
-	
+
 	["stairs"] ={
-		
 		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
 		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
@@ -1452,9 +1448,8 @@ module.guide = {
 		["normalrig"] = "Can be executed on normal or rigged stairs only.",
 
 	},
-	
+
 	["above"] = {
-		
 		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
 		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
 		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
@@ -1464,37 +1459,33 @@ module.guide = {
 		["normalrig"] = "Can be executed below normal or rigged stairs only.",
 
 	},
-	
+
 	["dynamic"] = {
 		--hack, twister, bender and flipper
 		['flip'] = "Can be executed on or below normal, flipped or rigged stairs. If above execution fails for any reason, below stairs will be affected instead.",
 		['normalrig'] = "Can be executed on or below any normal or rigged stairs. Spell will be applied to both above and below stairs.",
 		['slide'] = "Can be executed on normal or rigged stairs. If there are blocking un-cursed stairs above, they will be removed.",
 	},
-	
+
 	["both"] = {
 		['restore'] = "Can be executed on any stairs or on platform's arrow with any adjacent stairs. Rank up to Admiral to restore cursed stairs.",
 		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
 		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
 
 	},
-	
+
 	['both2'] = {
 		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates."
 	},
-	
+
 	['anywhere'] = {
 		['anywhere'] = "This spell can be executed anywhere.",
 	},
-	
+
 	["nowhere"] = {
 		['slide'] = "This spell does not require an execution.",
-		
 	},
-
 }
-
-
 
 module.spells.manacosts = {
 	"0 Mana",
