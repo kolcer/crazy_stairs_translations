@@ -1800,85 +1800,82 @@ module.switchon = {
 }
 
 module.switchoff = {
-
-	["JOKER"] = "You will now reveal invisible stairs.",
-	["WICKED"] = "You will now trigger below Wicked Rigs.",
-	["KEEPER"] = "You will now trigger below Keeper Rigs.",
-	["SPECTRE"] = "You will now trigger below Spectre Rigs.",
-	["HACKER"] = "Escalators and rig immunity off.",
-	["ARCHON"] = "All except down splits will teleport you.",
-	["DRIFTER"] = "You will now trigger below Drifter Rigs.",
-	["SPLICER"] = "You will now trigger below Splicer Rigs.",
-	["REAVER"] = "You will now trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews unlocked.",
+	["JOKER"] = "Rivelerai le scale invisibili che calpesti.",
+	["WICKED"] = "Immunità ai rig di Wicked disattivata.",
+	["KEEPER"] = "Immunità ai rig di Keeper disattivata.",
+	["SPECTRE"] = "Immunità ai rig di Spectre disattivata.",
+	["HACKER"] = "Immunità alle scale mobili e rig di Hacker disattivata.",
+	["ARCHON"] = "Non puoi più camminare attraverso i portali dimensionali (tranne quelli verso il basso).",
+	["DRIFTER"] = "Immunità ai rig di Drifter disattivata.",
+	["SPLICER"] = "Immunità ai rig di Splicer disattivata.",
+	["REAVER"] = "Immunità ai rig di Reaver disattivata.",
+	["GREMLIN"] = "Le scale avvolte nelle vicinanze torneranno a funzionare normalmente.",
 }
 
-local timedSpell = "%s just cast the %s spell!"
+local timedSpell = "%s ha appena lanciato il sortilegio %s!"
 
 module.timedspells = {}
 
-
 module.eventspells = {
+	["patronrigevent"] = "%s ha appena alterato tutte le scale con Patron Rig!",
+	["patronevent"] = "%s ha appena riempito la torre di scale!",
+	["patronaltevent"] = "%s ha appena ristretto tutte le scale normali!",
 
-	["patronrigevent"] = "%s has just rigged all normal stairs with Mana Gift!",
-	["patronevent"] = "%s has just overloaded the tower with stairs!",
-	["patronaltevent"] = "%s has just shrunk all normal stairs!",
+	["jokerrigevent"] = "%s ha appena alterato tutte le scale con Joker Rig!",
+	["jokerevent"] = "%s ha appena nascosto tutte le scale normali!",
+	["jokeraltevent"] = "%s ha appena ribaltato tutte le scale normali!",
 
-	["jokerrigevent"] = "%s has just rigged all normal stairs with the Flip spell!",
-	["jokerevent"] = "%s has just hidden all normal stairs!",
-	["jokeraltevent"] = "%s has just flipped all normal stairs!",
+	["wickedrigevent"] = "%s ha appena alterato tutte le scale con Wicked Rig!",
+	["wickedevent"] = "%s ha appena demolito tutte le scale normali!",
+	["wickedaltevent"] = "%s ha appena demolito l'intera torre!",
 
-	["wickedrigevent"] = "%s has just rigged all normal stairs with Destroy spell!",
-	["wickedevent"] = "%s has just destroyed all normal stairs!",
-	["wickedaltevent"] = "%s has just destroyed ALL stairs!",
+	["keeperrigevent"] = "%s ha appena alterato tutte le scale con Keeper Rig!",
+	["keeperevent"] = "%s ha appena mescolato tutte le scale normali!",
+	["keeperaltevent"] = "%s ha appena ripristinato tutte le scale!",
 
-	["keeperrigevent"] = "%s has just rigged all normal stairs with the Random Move spell!",
-	["keeperevent"] = "%s has just shuffled all normal stairs!",
-	["keeperaltevent"] = "%s has just restored all stairs!",
+	["spectrerigevent"] = "%s ha appena alterato tutte le scale con Spectre Rig!",
+	["spectreevent"] = "%s ha appena mescolato tutte le scale normali in modo spettrale!",
+	["spectrealtevent"] = "%s ha appena spettralizzato tutte le scale normali!",
 
-	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50% chance of ghosting!",
-	["spectreevent"] = "%s has just phantom shuffled all normal stairs!",
-	["spectrealtevent"] = "%s has just ghosted all normal stairs!",
+	["hackerrigevent"] = "%s ha appena alterato tutte le scale con Hacker Rig!",
+	["hackerevent"] = "%s ha appena trasformato tutte le scale normali in scale mobili casuali!",
+	["hackeraltevent"] = "%s ha appena trasformato tutte le scale normali in scale mobili verso l'alto!",
 
-	["hackerrigevent"] = "%s has just rigged all normal stairs with the Glitch spell!",
-	["hackerevent"] = "%s has turned all normal stairs into Escalators!",
-	["hackeraltevent"] = "%s has turned all normal stairs into upwards Escalators!",
+	["thiefrigevent"] = "%s ha appena alterato tutte le scale con Thief Rig!",
+	["thiefevent"] = "%s ha appena appiattito tutte le scale normali!",
+	["thiefaltevent"] = "%s ha appena riempito la torre di scorciatoie!",
 
-	["thiefrigevent"] = "%s has rigged all normal stairs with Mana Steal!",
-	["thiefevent"] = "%s has flattened all normal stairs!",
-	["thiefaltevent"] = "%s has created bypasses on all levels!",
+	["archonrigevent"] = "%s ha appena alterato tutte le scale con Archon Rig!",
+	["archonevent"] = "%s ha appena riempito la torre di portali dimensionali casuali!",
+	["archonaltevent"] = "%s ha appena riempito la torre di portali dimensionali verso l'alto!",
 
-	["archonrigevent"] = "%s has just rigged all normal stairs with Phase spell!",
-	["archonevent"] = "%s has just randomly gated all normal stairs!",
-	["archonaltevent"] = "%s has just vertically gated all normal stairs!",
+	["drifterrigevent"] = "%s ha appena alterato tutte le scale con Drifter Rig!",
+	["drifterevent"] = "%s ha appena deviato tutte le scale normali!",
+	["drifteraltevent"] = "%s ha appena sollevato tutte le scale normali!",
 
-	["drifterrigevent"] = "%s has just rigged all stairs with Spin spell!",
-	["drifterevent"] = "%s has just randomly drifted all normal stairs!",
-	["drifteraltevent"] = "%s has just lifted all normal stairs!",
+	["hereticrigevent"] = "%s ha appena alterato tutte le scale con Heretic Rig!",
+	["hereticevent"] = "%s ha appena riempito la torre di scismi!",
+	["hereticaltevent"] = "%s ha appena maledetto tutte le scale!",
 
-	["hereticrigevent"] = "%s has just rigged all normal stairs with Possess spell!",
-	["hereticevent"] = "%s has just schismatized all normal stairs!",
-	["hereticaltevent"] = "%s has just cursed all normal stairs!",
+	["splicerrigevent"] = "%s ha appena alterato tutte le scale con Splicer Rig!",
+	["splicerevent"] = "%s ha appena combinato tutte le scale normali!",
+	["spliceraltevent"] = "%s ha appena diviso tutte le scale normali!",
 
-	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
-	["splicerevent"] = "%s has just spliced all normal stairs!",
-	["spliceraltevent"] = "%s has just split all normal stairs!",
+	["necromancerrigevent"] = "%s ha appena alterato tutte le scale con Necromancer Rig!",
+	["necromancerevent"] = "%s ha appena riempito la torre di scale prosciugate!",
+	["necromanceraltevent"] = "%s ha appena prosciugato tutte le scale normali!",
 
-	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
-	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
-	["necromanceraltevent"] = "%s has just turned all normal stairs Soulless!",
+	["gremlinrigevent"] = "%s ha appena alterato tutte le scale con Gremlin Rig!",
+	["gremlinevent"] = "%s ha appena avvolto tutte le scale normali!",
+	["gremlinaltevent"] = "%s ha appena riempito la torre di tram!",
 
-	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotize spell!",
-	["gremlinevent"] = "%s has just revolved all normal stairs!",
-	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
+	["reaverrigevent"] = "%s ha appena alterato tutte le scale con Reaver Rig!",
+	["reaverevent"] = "%s ha appena reso tutte le scale normali a senso unico casualmente!",
+	["reaveraltevent"] = "%s ha appena reso tutte le scale normali a senso unico verso l'alto!",
 
-	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
-	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
-	["reaveraltevent"] = "%s has turned all normal stairs into upward One-Ways!",
+	["newmode"] = "%s ha appena portato i Droni in modalità %s!",
 
-	["newmode"] = "%s has just switched drones into %s mode!",
-
-	["chameleonrigevent"] = "%s has just rigged all normal stairs with a Mystery spell!"
+	["chameleonrigevent"] = "%s ha appena alterato tutte le scale con Chameleon Rig!"
 }
 
 module.spells.extras = {
