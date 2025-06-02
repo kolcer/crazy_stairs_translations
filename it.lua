@@ -1936,7 +1936,7 @@ module.gui.mana = {
 }
 
 module.gui.hints = {
-	["bcancel"] = "Preim B per cancellare", --xbox b
+	["bcancel"] = "Premi B per cancellare", --xbox b
 	["acancel"] = "Premi di nuovo per cancellare",
 	["ocancel"] = "Cancella l'altro incantesimo",
 }
