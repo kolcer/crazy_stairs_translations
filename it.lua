@@ -1879,24 +1879,23 @@ module.eventspells = {
 }
 
 module.spells.extras = {
-
-	["Prompt"] = "Click a spell below, to learn how to use it",
-	["Title1"] = "Basic spells",
-	["Title2"] = "Unique ultimate spells",
-	["Title3"] = "Shared ultimate spells",
-	["ManaCost"] = "Mana Cost: %s", 
-	["TokenCost"] = "Token Cost: %s", 
-	["Special"] = "Special requirements: %s",
-	["Execution"] = "Execution: %s",
-	["Description"] = "Description: %s",
-	["basic"] = "Basic",
-	["ultimate"] = "Ultimate",
-	["unlock"] = "0 (3 to unlock)",
-	["none"] = "No special requirements",
+	["Prompt"] = "Seleziona un incantesimo qui sotto per capire come usarlo",
+	["Title1"] = "Incantesimi base",
+	["Title2"] = "Sortilegi unici",
+	["Title3"] = "Sortilegi condivisi",
+	["ManaCost"] = "Mana richiesto: %s",
+	["TokenCost"] = "Gettoni richiesti: %s",
+	["Special"] = "Requisiti obbligatori: %s",
+	["Execution"] = "Esecuzione: %s",
+	["Description"] = "Descrizione: %s",
+	["basic"] = "Incantesimo",
+	["ultimate"] = "Sortilegio",
+	["unlock"] = "0 (3 per sbloccare)",
+	["none"] = "Nessuno",
 }
 
-module.gui.basic.jumpdelay = "jump delay"
-module.gui.basic.dancetime = "DANCE TIME!"
+module.gui.basic.jumpdelay = "ricarica salto"
+module.gui.basic.dancetime = "BALLA COME SE NON CI FOSSE UN DOMANI!"
 
 module.gui.mana = {
 
