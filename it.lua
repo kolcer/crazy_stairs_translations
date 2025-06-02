@@ -1617,82 +1617,83 @@ module.serverfeedback = {
 	["necrorig"] = "Le scale stanno svanendo!",
 	["reaverrig"] = "Le scale sono diventate a senso unico!",
 	["gremlinrig"] = "Sei stato ipnotizzato!",
-	["reveal"] = "Hai rilevato una scala invisibile!",
+	["reveal"] = "Hai svelato una scala invisibile!",
 
 	--drifer lifts
-	["boosted"] = "Drift boosted!",
-	["noboost"] = "Cannot boost, no more platforms above.",
-	["noupplatform"] = "Cannot boost, no more platforms above.",
-	
+	["boosted"] = "Piattaforma potenziata!",
+	["noboost"] = "Azione non riuscita, non ci sono altre piattaforme.",
+	["noupplatform"] = "Azione non riuscita, non ci sono altre piattaforme.",
+
 	--mana overload
-	["overstarted"] = "You have activated Mana Overload!",
-	["overended"] = "Mana Overload ended.",
-	
+	["overstarted"] = "Hai attivato Mana a Gogo!",
+	["overended"] = "L'effetto di Mana a Gogo è terminato.",
+
 	--mana share
-	["2minshare"] = "At least 2 mana required...",
-	["noshare"] = "No nearby players to receive mana...",
-	["noinf"] = "You cannot share infinite mana!",
-	["toomuch"] = "%s has maximum Mana!",
-	["shared"] = "Mana shared with %s!",
-	["received"] = "%s has shared some Mana with you!",
-	
+	["2minshare"] = "Non puoi condividere l'unico Mana che hai...",
+	["noshare"] = "Nessuno nei paraggi...",
+	["noinf"] = "Mana infinito rilevato, azione bloccata!",
+	["toomuch"] = "%s ha già abbastanza Mana!",
+	["shared"] = "Hai condiviso del Mana con %s!",
+	["received"] = "%s ha condiviso del Mana con te!",
+
 	--prompts
-	["scancel"] = "Cancel your spell to change alignments.",
-	["morph"] = "Jump here to become %s!",
-	
+	["scancel"] = "Per favore deseleziona l'incantesimo attivo.",
+	["morph"] = "Salta qui per diventare %s!",
+
 	--race
-	["raceclosed"] = "Race is now closed.",
-	["stay"] = "Stay in the ring to take part in the race!",
-	["falsestart"] = "False Start.",
-	["charreset"] = "Character reset elimination.",
+	["raceclosed"] = "La gara non accetta più partecipanti.",
+	["stay"] = "Rimani nel cerchio per partecipare alla gara!",
+	["falsestart"] = "Sei uscito troppo presto...",
+	["charreset"] = "Hai abbandonato la gara.",
 
 	--misc
-	["secret"] = "Secret found!",
-	["unlocked"] = "Spell unlocked!",
+	["secret"] = "Segreto trovato, complimentoni!",
+	["unlocked"] = "Incantesimo sbloccato!",
 
 	--chameleon exceptions	
-	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
-	["champossessed"] = "You can't use chameleon while possessed.",
-	["chamhypnotized"] = "You can't use chameleon while hypnotized.",
-	["chamspell"] = "Please execute or cancel current spell first.",
-	["morphpossessed"] = "You can't change alignment while possessed.",
-	["morphhypnotized"] = "You can't change alignment while hypnotized.",
-	
-	["nocode"] = "Please enter the code first.",
-	["invalid"] = "This code is invalid.",
-	["old"] = "This code is no longer active.",
-	["accepted"] = "Code accepted.",
-	
+	["chamtutorial"] = "Chameleon è disabilitato nel tutorial!",
+	["champossessed"] = "Devi liberarti della possessione prima.",
+	["chamhypnotized"] = "Devi liberarti dell'ipnosi prima.",
+	["chamspell"] = "Lancia l'incantesimo selezionato o deselezionalo.",
+	["morphpossessed"] = "Devi liberarti della possessione prima.",
+	["morphhypnotized"] = "Devi liberarti dell'ipnosi prima.",
+
+	--code
+	["nocode"] = "Inserisci un codice.",
+	["invalid"] = "Codice invalido.",
+	["old"] = "Questo codice non è più attivo.",
+	["accepted"] = "Codice accettato.",
+	["used"] = "Questo codice è già stato usato.",
+	["tooshort"] = "Messaggio troppo corto.",
+	["sent"] = "Messaggio inviato, grazie!",
+
 	--free demos
-	["tryspectre"] = "Spectre unlocked for 10 minutes! Do not leave server.",
-	["endspectre"] = "Spectre demo will end in 1 minute!",
-	["trycham"] = "Chameleon unlocked for 10 minutes! Do not leave server.",
-	["new20pass"] = "Mana limit increased!",
-	["newchampass"] = "You can now change alignment during climb!",
-	["newspectrepass"] = "You can now become a SPECTRE!",
-	["endcham"] = "Chameleon demo will end in 1 minute!",
-	["trymana"] = "Bigger storage unlocked for 10 minutes! Do not leave server.",
-	["endmana"] = "Bigger storage demo will end in 1 minute!",
-	
-	
-	["used"] = "Code has been used already.",
-	["tooshort"] = "Your message was too short and not sent.",
-	["sent"] = "Your message was sent successfully, thank you.",
-	
+	["tryspectre"] = "Hai attivato Spectre per 10 minuti! Non uscire dal server.",
+	["endspectre"] = "Il pass Spectre verrà disabilitato tra 1 minuto!",
+	["newspectrepass"] = "Adesso puoi trasformarti in Spectre!",
+
+	["trycham"] = "Hai attivato Chameleon per 10 minuti! Non uscire dal server.",
+	["endcham"] = "Il pass Chameleon verrà disabilitato tra 1 minuto!",
+	["newchampass"] = "Adesso puoi cambiare classe sulla torre!",
+
+	["trymana"] = "Hai attivato Contenitore Mana Migliorato per 10 minuti! Non uscire dal server.",
+	["endmana"] = "Il pass Contenitore Mana Migliorato verrà disabilitato tra 1 minuto!",
+	["new20pass"] = "Limite Mana aumentato.",
+
 	--private server moderation (might be re-implemented in the future)
-	["muted"] = "% is now muted.",
-	["unmuted"] =  "%s is now unmuted.",
-	["kicked"] = "%s has been kicked!",
-	["banned"] = "%s has been banned!",
-	["mekicked"] = "%s has kicked you from their server.",
-	["mebanned"] = "%s has banned you from their server.",
-	["permban"] = "%s has banned you from this game.",
-	["kick"] = "%s has kicked you from the game.",
-	["48ban"] = "%s has banned you for 48 hours.",
-	["exiled"] = "You are banned from this private server! THIS IS NOT A GAME BAN",
-	["permbanned"] = "You are banned from this game.",
-	["timeout"] = "Your ban will end in: %02i hours and %02i minutes.",
-	
+	["muted"] = "% è stato mutato",
+	["unmuted"] = "%s è stato smutato.",
+	["kicked"] = "%s è stato cacciato!",
+	["banned"] = "%s è stato bandito!",
+	["mekicked"] = "%s ti ha cacciato dal server...",
+	["mebanned"] = "%s ti ha bandito dal server...",
+	["permban"] = "%s ti ha bandito dal gioco...",
+	["kick"] = "%s ti ha cacciato dal gioco...",
+	["48ban"] = "%s ti ha bandito per 48 ore...",
+	["exiled"] = "Sei stato bandito da questo server privato! (NON DAL GIOCO!)",
+	["permbanned"] = "Sei stato bandito dal gioco permanentemente.",
+	["timeout"] = "Il tuo ban terminerà tra: %02i ore e %02i minuti.",
+
 	--custom tower feedbacks
 	["notinrace"] = "You cannot switch to infinite mode during a race!",
 	["notinreg"] = "You cannot switch the infinite mode during a regeneration!",
@@ -1737,9 +1738,6 @@ module.serverfeedback = {
 	["min"] = "Minimum target staircases amount changed",
 	["curse"] = "Drone curse stairs chance changed",
 	["block"] = "Drone curse intersection chance changed",
-	
-
-
 }
 
 module.serverbroadcast = {
@@ -1769,7 +1767,6 @@ module.serverbroadcast = {
 }
 
 module.localfeedback = {
-
 	["cancel"] = "Cancel other spell first!",
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough Tokens!",

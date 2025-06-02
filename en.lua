@@ -1745,7 +1745,7 @@ module.serverfeedback = {
 	["sent"] = "Your message was sent successfully, thank you.",
 	
 	--private server moderation (might be re-implemented in the future)
-	["muted"] = "% is now muted.",
+	["muted"] = "% is now muted.", --TYPO (Missing "s" I think)
 	["unmuted"] =  "%s is now unmuted.",
 	["kicked"] = "%s has been kicked!",
 	["banned"] = "%s has been banned!",
