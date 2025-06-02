@@ -1165,7 +1165,7 @@ module.static = {
 	["pro_11"] = "I malefici inibiscono tutti gli incantesimi che vengono lanciati sulle frecce, pertanto quelli che portano alla generazione di scale o che teletrasportano l'utente su altre piattaforme non possono essere lanciati.",
 	["pro_12"] = "Solo Heretic, Keeper e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annichilazione, tuttavia la Rigenerazione ne creerà di nuovi.",
 
-	["inf_1"] = "INFINITE TOWER",
+	["inf_1"] = "TORRE SENZA FINE",
 	["inf_2"] = "CORSA OBBLIGATORIA",
 	["inf_3"] = "I giocatori sono obbligati a partecipare a una gara e agli spettatori non è concesso l'uso di incantesimi (quindi non riceveranno ricompense). La sfera finale conferisce 10 Mana al tocco.",
 	["inf_4"] = "Per vincere premi in una corsa nella torre senza fine, devi restare in gioco più a lungo possibile! Riceverai eventuali ricompense in base alla tua posizione in classifica.",
