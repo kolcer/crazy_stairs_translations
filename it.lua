@@ -1787,18 +1787,16 @@ module.localfeedback = {
 }
 
 module.switchon = {
-
-	["JOKER"] = "You will no longer reveal invisible stairs.",
-	["WICKED"] = "You will no longer trigger below Wicked Rigs.",
-	["KEEPER"] = "You will no longer trigger below Keeper Rigs.",
-	["SPECTRE"] = "You will no longer trigger below Spectre Rigs.",
-	["HACKER"] = "Escalators and rig immunity on.",
-	["ARCHON"] = "Only upward splits will teleport you.",
-	["DRIFTER"] = "You will no longer trigger below Drifter Rigs.",
-	["SPLICER"] = "You will no longer trigger below Splicer Rigs.",
-	["REAVER"] = "You will no longer trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews locked.",
-
+	["JOKER"] = "Non rivelerai più le scale invisibili che calpesti.",
+	["WICKED"] = "Immunità ai rig di Wicked attivata.",
+	["KEEPER"] = "Immunità ai rig di Keeper attivata.",
+	["SPECTRE"] = "Immunità ai rig di Spectre attivata.",
+	["HACKER"] = "Immunità alle scale mobili e rig di Hacker attivata.",
+	["ARCHON"] = "Puoi camminare attraverso i portali dimensionali (tranne quelli verso l'alto).",
+	["DRIFTER"] = "Immunità ai rig di Drifter attivata.",
+	["SPLICER"] = "Immunità ai rig di Splicer attivata.",
+	["REAVER"] = "Immunità ai rig di Reaver attivata.",
+	["GREMLIN"] = "Le scale avvolte nelle vicinanze saranno bloccate.",
 }
 
 module.switchoff = {
