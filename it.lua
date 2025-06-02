@@ -1581,22 +1581,22 @@ module.serverfeedback = {
 	["norestore"] = "Scorciatoie e Scale a Spirale non posso essere ripristinate.",
 
 	--higher rank required
-	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
-	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel flicker on cursed intersection.",
-	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
-	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
-	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
-	["nomad"] = "Rank up to Nomad to spin already drifted stairs.",
-	["prodigy"] = "Rank up to Prodigy, to override Gates.",
-	["traveller"] = "Rank up to Traveller to boost Elevators.",
-	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
-	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
-	["lich"] = "Rank up to Lich to demolish crossing stairs.",
-	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
-	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
-	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
-	["poltergeist"] = "Rank up to Poltergeist to demolish crossing stairs.",
+	["admiral2"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle scale.",
+	["admiral"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle intersecazioni.",
+	["infidel"] = "Sblocca il rango Infidel per poter lanciare Crea Maleficio sui malefici e rimuovere la maledizione.",
+	["banished"] = "Sblocca il rango Banished per poter demolire le scale maledette che bloccano il passaggio.",
+	["annihilator"] = "Sblocca il rango Annihilator per poter demolire le scale maledette.",
+	["disciple"] = "Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
+	["nomad"] = "Sblocca il rango Nomad per poter roteare le scale deviate.",
+	["prodigy"] = "Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
+	["traveller"] = "Sblocca il rango Traveller per poter potenziare gli ascensori.",
+	["controller"] = "Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
+	["replica"] = "Sblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo.",
+	["lich"] = "Sblocca il rango Lich per poter demolire le scale che bloccano il passaggio.",
+	["hijacker"] = "Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
+	["transformer"] = "Sblocca il rango Transformer per poter ricombinare le scale già combinate.",
+	["strider"] = "Sblocca il rango Strider per poter potenziare gli ascensori due volte.",
+	["poltergeist"] = "Sblocca il rango Poltergeist per poter demolire le scale che bloccano il passaggio.",
 
 	--rig activation
 	["keeperrig"] = "Stairs are moving!",

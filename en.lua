@@ -1648,7 +1648,7 @@ module.serverfeedback = {
 	--higher rank required
 	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
 	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel flicker on cursed intersection.",
+	["infidel"] = "Rank up to Infidel flicker on cursed intersection.", --TYPO
 	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
 	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
 	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
