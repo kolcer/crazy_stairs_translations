@@ -1936,36 +1936,34 @@ module.gui.mana = {
 }
 
 module.gui.hints = {
-	["bcancel"] = "Press B to cancel", --xbox b
-	["acancel"] = "Click again to cancel",
-	["ocancel"] = "Cancel other spell first", 
+	["bcancel"] = "Preim B per cancellare", --xbox b
+	["acancel"] = "Premi di nuovo per cancellare",
+	["ocancel"] = "Cancella l'altro incantesimo",
 }
 
 module.gui.gameover.extras = {
-
-	["noobs"] = "Tutorials are for noobs!",
-	["possessed"] = "Those annoying Heretics!",
-	["hypnotized"] = "Where am I?",
-	["new"] = "New rank acquired - %s",
-	["none1"] = "WAIT! WHAT?",
-	["none2"] = "Does this game",
-	["none3"] = "have spells?"
-
+	["noobs"] = "Il tutorial è per i deboli!",
+	["possessed"] = "Mannaggia a questi Heretic!",
+	["hypnotized"] = "Dove mi trovo??",
+	["new"] = "Nuovo rango sbloccato - %s",
+	["none1"] = "UN MOMENTO! COSA?",
+	["none2"] = "In questo gioco",
+	["none3"] = "Ci sono gli incantesimi?"
 }
 
 module.gui.gameover.raceplacements = {
-	"YOU HAVE WON THE RACE!",
-	"SECOND PLACE!",
-	"THIRD PLACE!",
-	"You have placed fourth.",
-	"You have placed fifth.",
-	"You have placed sixth.",
-	"You have placed seventh.",
-	"You have placed eighth.",
-	"You have placed ninth.",
-	"You have placed tenth.",
-	"You have placed eleventh.",
-	"You have placed twelfth.",
+	"HAI VINTO LA GARA!",
+	"TI SEI AGGIUDICATO IL SECONDO POSTO!",
+	"SEI ARRIVATO TERZO!",
+	"Sei arrivato quarto.",
+	"Sei arrivato quinto.",
+	"Sei arrivato sesto.",
+	"Sei arrivato settimo.",
+	"Sei arrivato ottavo.",
+	"Sei arrivato nono.",
+	"Sei arrivato decimo.",
+	"Sei arrivato undicesimo.",
+	"Sei arrivato dodicesimo.",
 }
 
 -- PREPARATION --
