@@ -108,7 +108,7 @@ module.gui.stats = {
 }
 
 module.gui.timedspell = {
-	["possessed"] = "POSSEDUTO! (colleziona Mana per liberarti)",
+	["possessed"] = "POSSEDUTO! (raccogli Mana per liberarti)",
 	["released"] = "RILASCIATO",
 	["timesup"] = "Tempo scaduto...",
 }
@@ -211,7 +211,7 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Genera Scale",
 	["restore"] = "Richiama Sfera",
-	["split"] = "Costruisci al Contrario",
+	["split"] = "Ristruisci al Contrario",
 	["shrinkabove"] = "Restringi Scale in Alto",
 	["link"] = "Crea Collegamento",
 	["portal"] = "Crea Portale",
@@ -583,7 +583,7 @@ module.spells.descriptions = {
 	["copyplatform"] = "Copia le scale nella piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango Revenant per poter rimuovere le maledizioni.",
 	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Se l'incantesimo viene lanciato al centro, verrà generato un incrocio a X. Sia il ponte che l'incrocio ruoteranno automaticamente.",
 	["undeadabove"] = "Prosciuga la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale prosciugate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.",
-	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura, teletrasportandoti lì qualora ti trovassi in un piano inferiore. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale (in cima).",
+	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura, teletrasportandoti lì qualora ti trovassi in un piano inferiore. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale verso il punto d'appoggio (in cima).",
 	["regen"] = "Ottieni 6 Mana e offri 3 Mana a chi sta vicino alla tua controfigura.\nSblocca il rango Deathbringer per aumentare i valori a 10 e 5.",
 
 	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Eventuali scale in mezzo saranno sempre demolite." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name),
@@ -612,8 +612,8 @@ module.spells.descriptions = {
 
 	--GREMLIN
 	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportanti indietro saltandoci sopra.\nSblocca il rango Fiend per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Avvolge la scala colpita al contrario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per poter decidere il verso dell'avvolgimento (potrebbe non funzionare in presenza di altri Daemon).",
-	["screwup"] = "Avvolge la scala posizionata direttamente sopra a quella colpita, rendendone la discesa un'impresa.\nSblocca il rango Daemon per poter decidere il verso dell'avvolgimento (potrebbe non funzionare in presenza di altri Daemon).",
+	["screwdown"] = "Avvolge la scala colpita al contrario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
+	["screwup"] = "Avvolge la scala posizionata direttamente sopra a quella colpita, rendendone la discesa un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
 	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno completamente di 180 gradi ogni breve intervallo.",
 	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango Goblin per rilevarle, e il rango Diablo per diventarne immune",
 	["spinplatform"] = "Fa ruotare l'intera piattaforma di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette verranno ruotate insieme alla piattaforma.",
@@ -948,7 +948,7 @@ module.gui.gameover.messages = {
 		"Stai certo, prima o poi raggiungerò i MUGGLE",
 	},
 	["HERETIC"] = {
-		"TU NON PASSERAI",
+		"TU NON PUOI PASSARE",
 		"Bandire la magia nera equivale a bandire il divertimento",
 		"Essere posseduti non è poi così male. Provare per credere",
 		"Morte e deterioramento",
