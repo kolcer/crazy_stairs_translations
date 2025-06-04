@@ -211,7 +211,7 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Genera Scale",
 	["restore"] = "Richiama Sfera",
-	["split"] = "Ristruisci al Contrario",
+	["split"] = "Ricostruisci al Contrario",
 	["shrinkabove"] = "Restringi Scale in Alto",
 	["link"] = "Crea Collegamento",
 	["portal"] = "Crea Portale",
