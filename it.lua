@@ -40,7 +40,7 @@ module.gui.serversettings = {
 
 	["Moderation"] = "MODERAZIONE",
 	["rules"] = "A casa tua, le regole le decidi tu.",
-	["temp"] = "Tutte le azioni di moderazione\neffettuate valgono solo per la\nsessione in corso",
+	["temp"] = "Le azioni di moderazione valgono\nper la sessione attuale",
 	["kick"] = "CACCIA",
 	["ban"] = "BANDISCI",
 	["mute"] = "SILENZIA",
@@ -56,7 +56,7 @@ module.gui.serversettings = {
 	["DroneSpeed"] = "Velocità dei droni (piano/secondo)",
 	["DroneDelay"] = "Intervallo tra gli incantesimi (secondi)",
 	["DroneMax"] = "Numero massimo di scale (scale in eccesso verranno demolite)",
-	["DroneMin"] = "Numero minimo di scale (verranno create scale fino a raggiungere il minimo necessario)",
+	["DroneMin"] = "Numero minimo di scale (verranno generate scale per raggiungerlo)",
 	["DroneBlock"] = "Probabilità che i droni creino malefici (percentuale)",
 	["DroneCurse"] = "Probabilità che i droni creino o trasformino scale maledette (percentuale)",
 
@@ -64,15 +64,15 @@ module.gui.serversettings = {
 	["TowerReadOnly"] = "INFORMAZIONI TORRE (sola lettura)",
 	["InfMode"] = "Modalità senza fine (opzione disabilitata durante le gare e la rigenerazione)",
 	["CasualPlayers"] = "I non corridori possono usare gli incantesimi",
-	["Regeneration"] = "Abilita rigenerazione in seguito all'uso di Evento Annichilazione di Wicked (esclusa modalità senza fine)",
+	["Regeneration"] = "Abilita rigenerazione in seguito all'uso di Evento Annientamento di Wicked (esclusa modalità senza fine)",
 	["EvenLevels"] = "Vincola le piattaforme sui piani pari",
 	["OrbMoves"] = "La sfera finale si muove",
 	["InfRegeneration"] = "Abilita rigenerazione in seguito a: nuovo server, alterazione dei piani e conclusione corsa senza fine",
-	["TowerLevels"] = "Numero di piani (alternativamente, piani attivi della torre senza fine). Opzione disabilitata durante le gare e la rigenerazione",
+	["TowerLevels"] = "Numero di piani (o piani attivi della torre senza fine). Opzione disabilitata durante le gare e la rigenerazione",
 	["RaceDuration"] = "Durata massima delle gare. Non influisce sulla corsa in corso (secondi)",
-	["InfStart"] = "Ogni quanti secondi creare nuovi livelli durante la modalità senza fine (2 nuovi livelli per intervallo) (secondi)",
+	["InfStart"] = "Intervallo tra la creazione dei vari piani nella torre senza fine (2 piani per intervallo) (secondi) ",
 	["InfReduction"] = "Riduzione di tempo per la creazione di nuovi livelli (ogni lasso di tempo dura sempre meno di...) (secondi)",
-	["InfMin"] = "A lungo andare, non ridurre più i divari di tempo qualora raggiungessero... (secondi)",
+	["InfMin"] =  "Durata intervalli minima per la creazione di nuovi piani (secondi)",
 	["Cooldown"] = "Tempo di attesa tra sortilegi eventi e rig (secondi)",
 }
 
@@ -229,7 +229,7 @@ module.spells.names = {
 	["trap"] = "Crea Botola",
 
 	["flipper"] = "Ribaltatore",
-	["jokerevent"] = "Evento Invisibile",
+	["jokerevent"] = "Evento Invisibile", --ToDo
 	["jokeraltevent"] = "Evento Sottosopra",
 
 	--WICKED
@@ -240,17 +240,17 @@ module.spells.names = {
 	["flatten"] = "Abbassa Ponte",
 	["wall"] = "Genera Barriera",
 
-	["bender"] = "Imperatore",
+	["bender"] = "Imperatore", --ToDo
 	["wickedevent"] = "Evento Distruzione",
-	["wickedaltevent"] = "Evento Annichilazione",
+	["wickedaltevent"] = "Evento Annientamento",
 
 	--KEEPER
 	["move"] = "Muovi Scale",
 	["rotate"] = "Ruota Scale",
 	["moveup"] = "Innalza Scale",
 	["movedown"] = "Ripristina Scale",
-	["moverandom"] = "Spostamento Randomico in Alto",
-	["rig"] = "Spostamento Randomico",
+	["moverandom"] = "Movimento Casuale in Alto",
+	["rig"] = "Movimento Casuale",
 
 	["ascension"] = "Ascensione",
 	["keeperevent"] = "Evento Mescolamento",
@@ -460,9 +460,9 @@ module.spells.descriptions = {
 
 	["ascension"] = timed .. "Permette di innalzare scale in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
 	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango Operator per assicurati che la scala non sprofondi.",
-	["keeperevent"] = event .. "Spostamento Randomico. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
-	["keeperaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno ripristinate, senza eccezioni. A differenza dell'Evento Annichilazione, i malefici saranno ignorati.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Spostamento Randomico"),
+	["keeperevent"] = event .. "Movimento Casuale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
+	["keeperaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno ripristinate, senza eccezioni. A differenza dell'Evento Annientamento, i malefici saranno ignorati.",
+	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Movimento Casuale"),
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -697,7 +697,7 @@ module.gui.ranks = {
 		[9] = "Puoi camminare sulle scale spettralizzate.",
 	},
 	["KEEPER"] = {
-		[4] = "Le scale non sprofondano più con l'incantesimo Spostamento Randomico e il sortilegio Keeper Rig.",
+		[4] = "Le scale non sprofondano più con l'incantesimo Movimento Casuale e il sortilegio Keeper Rig.",
 		[5] = "Puoi spostare qualsiasi scala che non sia maledetta.",
 		[6] = "L'incantesimo Ripristina Scale non richiede Mana per l'esecuzione.",
 		[8] = "Ricevi l'opzione per non attivare le scale alterate da Keeper Rig quando le calpesti.",
@@ -1159,11 +1159,11 @@ module.static = {
 	["pro_5"] = "Scale maledette",
 	["pro_6"] = "Nella Torre Professionale i Droni possono creare scale maledette o trasformare quelle normali in maledette con una probabilità del 20%. Le frecce guida scompaiono vicino a queste",
 	["pro_7"] = "Le scale maledette sono immuni alla maggior parte degli incantesimi, inclusi Smaterializzazione e Scatto Fantasma. In conclusione, qualsiasi incantesimo che porterebbe alla distruzione di queste scale non ha effetto.",
-	["pro_8"] = "Solo Heretic e Keeper possono ripristinare le scale maledette. Anche l'Evento Annichilazione e l'Evento Restaurazione possono rispettivamente distruggere e ripristinare le scale maledette. I Droni non resteranno con le mani in mano, tuttavia.",
+	["pro_8"] = "Solo Heretic e Keeper possono ripristinare le scale maledette. Anche l'Evento Annientamento e l'Evento Restaurazione possono rispettivamente distruggere e ripristinare le scale maledette. I Droni non resteranno con le mani in mano, tuttavia.",
 	["pro_9"] = "Malefici",
 	["pro_10"] = "Come se non fosse abbastanza, i Droni possono anche creare malefici. Le intersecazioni normali hanno il 20% di diventare maledette. Le frecce guida nelle vicinanze di malefici prenderanno le sembianze di una croce rossa.",
 	["pro_11"] = "I malefici inibiscono tutti gli incantesimi che vengono lanciati sulle frecce, pertanto quelli che portano alla generazione di scale o che teletrasportano l'utente su altre piattaforme non possono essere lanciati.",
-	["pro_12"] = "Solo Heretic, Keeper e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annichilazione, tuttavia la Rigenerazione ne creerà di nuovi.",
+	["pro_12"] = "Solo Heretic, Keeper e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annientamento, tuttavia la Rigenerazione ne creerà di nuovi.",
 
 	["inf_1"] = "TORRE SENZA FINE",
 	["inf_2"] = "CORSA OBBLIGATORIA",
@@ -1701,8 +1701,8 @@ module.serverfeedback = {
 	["classic"] = "Modalità classica attivata!",
 	["casual"] = "Tutti possono lanciare gli incantesimi!",
 	["nocasual"] = "Solo i corridori possono lanciare gli incantesimi.",
-	["purge"] = "Evento Annichilazione attiverà la rigenerazione in modalità classica!",
-	["nopurge"] = "Evento Annichilazione NON attiverà la rigenerazione in modalità classica.",
+	["purge"] = "Evento Annientamento attiverà la rigenerazione in modalità classica!",
+	["nopurge"] = "Evento Annientamento NON attiverà la rigenerazione in modalità classica.",
 	["noevens"] = "Vincolo sui piani pari attivato.",
 	["evens"] = "Vincolo sui piani pari disattivato.",
 	["orbmoves"] = "La sfera finale è in movimento!",
@@ -1912,7 +1912,7 @@ module.gui.mana = {
 	["prank"] = "BURLA",
 	["possession"] = "POSSESSIONE",
 	["ritual"] = "RITUALE",
-	["purge"] = "ANNICHILAZIONE",
+	["purge"] = "ANNIENTAMENTO",
 	["blessing"] = "BENEDIZIONE",
 	["hack"] = "HACK",
 	["stash"] = "BOTTINO",
