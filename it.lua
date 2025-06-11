@@ -257,8 +257,8 @@ module.spells.names = {
 	["keeperaltevent"] = "Evento Restaurazione",
 
 	--SPECTRE
-	["phantom"] = "Evoca Scale",
-	["ghost"] = "Spettralizza Scale in Alto",
+	["phantom"] = "Evoca Scale Fantasma",
+	["ghost"] = "Spettralizza Scale in Alto", --ToDo
 	["shadow"] = "Spettralizza Scale",
 	["horizontal"] = "Scatto Fantasma",
 	["random"] = "Teletrasporto Randomico",
@@ -277,19 +277,19 @@ module.spells.names = {
 	["glitch"] = "Scale Anomale",
 
 	["hack"] = "Accellerazione",
-	["hackerevent"] = "Evento Mobilità",
-	["hackeraltevent"] = "Evento Scali Mobili",
+	["hackerevent"] = "Evento Viavai",
+	["hackeraltevent"] = "Evento Scale Mobili",
 
 	--THIEF
 	["steal"] = "Ruba Scale",
 	["stealabove"] = "Ruba Scale in Alto",
 	["place"] = "Posiziona Scale",
-	["uppass"] = "Posiziona Scale a Spirale",
+	["uppass"] = "Posiziona Scale a Chiocciola",
 	["sidepass"] = "Posiziona Scorciatoia",
-	["drop"] = "Posiziona Scale Piatte",
+	["drop"] = "Posiziona Scale Piatte", --ToDo
 
 	["heist"] = "Rapina",
-	["thiefevent"] = "Evento Piatto",
+	["thiefevent"] = "Evento Terra Piatta",
 	["thiefaltevent"] = "Evento Scorciatoia",
 
 	--ARCHON
@@ -306,7 +306,7 @@ module.spells.names = {
 
 	--DRIFTER
 	["indrift"] = "Naviga",
-	["outdrift"] = "Devia Scale",
+	["outdrift"] = "Devia Scale", --ToDo
 	["updrift"] = "Elevazione",
 	["diagdrift"] = "Perlustrazione",
 	["spin"] = "Rotea Scale",
@@ -320,7 +320,7 @@ module.spells.names = {
 	["createcursed"] = "Genera Scale Maledette",
 	["curse"] = "Maledici Scale",
 	["curseabove"] = "Maledici Scale in Alto",
-	["curseinter"] = "Crea Maleficio",
+	["curseinter"] = "Sorpasso D'Ombra",
 	["autodown"] = "Innalza Scisma",
 	["autoup"] = "Abbassa Scisma",
 
@@ -343,14 +343,14 @@ module.spells.names = {
 	--necro
 	["createdual"] = "Genera Scale Gemelle",
 	["copyplatform"] = "Imita Piattaforma della Controfigura",
-	["soulbridge"] = "Genera Ponte",
+	["soulbridge"] = "Genera Ponte degli Inferi",
 	["undeadabove"] = "Prosciuga Scale in Alto",
 	["revival"] = "Punto di Appoggio",
 	["regen"] = "Rigenera Mana",
 
 	["duality"] = "Dualismo",
 	["necromancerevent"] = "Evento Resurrezione",
-	["necromanceraltevent"] = "Evento Prosciugazione",
+	["necromanceraltevent"] = "Evento Mietitore",
 
 	--reaver
 	["createmirrored"] = "Genera Scale Specchiate",
@@ -362,7 +362,7 @@ module.spells.names = {
 
 	["reflection"] = "Specchio Riflesso",
 	["reaverevent"] = "Evento Monodirezionale",
-	["reaveraltevent"] = "Evento Ascendente",
+	["reaveraltevent"] = "Evento Sola Salita",
 
 	--gremlin
 	["tram"] = "Genera Tram",
@@ -370,10 +370,10 @@ module.spells.names = {
 	["screwup"] = "Avvolgi Scale in Alto",
 	["revolve"] = "Scale Girevoli",
 	["trapstairs"] = "Scale Trappola",
-	["spinplatform"] = "Gira Piattaforma",
+	["spinplatform"] = "Rotea Piattaforma",
 
 	["tramway"] = "Conducente",
-	["gremlinevent"] = "Evento Girevole",
+	["gremlinevent"] = "Evento Tutti Giù per Terra",
 	["gremlinaltevent"] = "Evento Capolinea",
 
 	--CHAMELEON
@@ -467,7 +467,7 @@ module.spells.descriptions = {
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "Evoca una scala effimera nella direzione indicata, distruggendo eventuali scale in mezzo. La scala svanirà dopo un breve periodo.",
+	["phantom"] = "Evoca una scala temporanea nella direzione indicata, distruggendo eventuali scale in mezzo. La scala svanirà dopo un breve periodo.",
 	["ghost"] = "Spettralizza la scala posizionata direttamente sopra a quella colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango Aether per poterci camminare sopra.",
 	["shadow"] = "Spettralizza la scala colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango Aether per poterci camminare sopra.\nSblocca il rango Phantom per rimuovere il costo di esecuzione.",
 	["horizontal"] = "Ti teletrasporta sulla piattaforma indicata, attraversando eventuali scale in mezzo (tranne quelle maledette).",
@@ -502,7 +502,7 @@ module.spells.descriptions = {
 	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario rubare delle scale con questo qui o con Ruba Scale in Alto.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter rubare 2 scale alla volta.",
 	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario rubare delle scale con questo qui o con Ruba Scale.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter rubare 2 scale alla volta.",
 	["place"] = "Posiziona una scala rubata nella direzione indicata, se l'intersecazione è libera.",
-	["uppass"] = "Posiziona una scala a spirale che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango Bandit per raddoppiare la durabilità.",
+	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango Bandit per raddoppiare la durabilità.",
 	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango Robber per raddoppiare la durabilità.",
 	["drop"] = "Posiziona una scala piatta nella direzione indicata, se l'intersecazione è libera.",
 
@@ -712,7 +712,7 @@ module.gui.ranks = {
 	},
 	["THIEF"] = {
 		[4] = "Le tue Scorciatoie durano il doppio del tempo (da 60s a 120s).",
-		[5] = "Le tue scale a spirale durano il doppio del tempo (da 60s a 120s).",
+		[5] = "Le tue scale a chiocciola durano il doppio del tempo (da 60s a 120s).",
 		[6] = "Puoi rubare qualsiasi scala che non sia maledetta.",
 		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi eseguire un salto sopra una piattaforma per rubare 1 Mana.",
 		[9] = "Puoi rubare due scale alla volta.",
@@ -734,7 +734,7 @@ module.gui.ranks = {
 	["HERETIC"] = {
 		[4] = "Solo ed esclusivamente quando sei a corto di Mana, puoi toccare una scala maledetta per ripristinarla e guadagnare 1 Mana.",
 		[5] = "Sei immune all'effetto Posseduto.",
-		[6] = "Puoi usare l'incantesimo Crea Maleficio per rimuovere malefici.",
+		[6] = "Puoi usare l'incantesimo Sorpasso D'Ombra per rimuovere malefici.",
 		[8] = "L'incantesimo Genera Scale Maledette ed il sortilegio Sciagura possono demolire eventuali scale in mezzo.",
 		[9] = "Ottieni 1 Mana quando qualcuno viene Posseduto.",
 	},
@@ -1154,7 +1154,7 @@ module.static = {
 
 	["pro_1"] = "TORRE PROFESSIONALE",
 	["pro_2"] = "Vincolo dei piani pari",
-	["pro_3"] = "Nella torre professionale, alcuni incantesimi non possono essere usati sui piani pari. Crea Trappola, Crea Portale, Emersione, Posiziona Scale a Spirale e altri possono essere lanciati solo sui piani dispari.",
+	["pro_3"] = "Nella torre professionale, alcuni incantesimi non possono essere usati sui piani pari. Crea Trappola, Crea Portale, Emersione, Posiziona Scale a Chiocciola e altri possono essere lanciati solo sui piani dispari.",
 	["pro_4"] = "Neanche i Drifter possono usare queste piattaforme. Sono facilmente riconoscibili grazie al cerchio rosso al centro.",
 	["pro_5"] = "Scale maledette",
 	["pro_6"] = "Nella Torre Professionale i Droni possono creare scale maledette o trasformare quelle normali in maledette con una probabilità del 20%. Le frecce guida scompaiono vicino a queste",
@@ -1544,7 +1544,7 @@ module.serverfeedback = {
 	["noway2"] = "Impossibile eseguire, ci sono delle scale nella direzione opposta (potrebbero essere invisibili).",
 	["noplatform"] = "Nessuna piattaforma rilevata nella direzione indicata.",
 	["nopass"] = "Questa scala può essere posizionata solo sulle piattaforme perimetrali.",
-	["pass"] = "Scala a Spirale già presente.",
+	["pass"] = "Scala a Chiocciola già presente.",
 	["link"] = "Collegamento già presente.",
 	["noblink"] = "La scala posizionata direttamente sopra rilevata NON blocca il passaggio.",
 	["noblink2"] = "Impossibile eseguire. Scala piatta o piegata rilevata.",
@@ -1578,12 +1578,12 @@ module.serverfeedback = {
 	["lockedinter"] = "Questa intersecazione è bloccata.",
 	["toponly"] = "Non ti trovi in cima alla torre.",
 	["duplicatemirror"] = "Specchio già presente.",
-	["norestore"] = "Scorciatoie e Scale a Spirale non posso essere ripristinate.",
+	["norestore"] = "Scorciatoie e Scale a Chiocciola non posso essere ripristinate.",
 
 	--higher rank required
 	["admiral2"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle scale.",
 	["admiral"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle intersecazioni.",
-	["infidel"] = "Sblocca il rango Infidel per poter lanciare Crea Maleficio sui malefici e rimuovere la maledizione.",
+	["infidel"] = "Sblocca il rango Infidel per poter lanciare Sorpasso D'Ombra sui malefici e rimuovere la maledizione.",
 	["banished"] = "Sblocca il rango Banished per poter demolire le scale maledette che bloccano il passaggio.",
 	["annihilator"] = "Sblocca il rango Annihilator per poter demolire le scale maledette.",
 	["disciple"] = "Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
