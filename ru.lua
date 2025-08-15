@@ -2004,7 +2004,7 @@ module.gui.mana = {
 	["guild"] = "ГИЛЬДИЯ",
 	["nexus"] = "НЕКСУС",
 	["oasis"] = "ОАЗИС",
-	["hub"] = "ХАБ",
+	["hub"] = "ШТАБ",
 	["mirror"] = "ЗЕРКАЛО",
 	["grave"] = "МОГИЛА",
 	["shack"] = "ХИЖИНА",
@@ -2103,4 +2103,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
