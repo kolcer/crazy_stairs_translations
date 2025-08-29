@@ -239,12 +239,12 @@ local CommonSpellNames = {
 module.spells.names = {
 
 	--PATRON
-	["summon"] = "Gawé Undhak-undhakan",
+	["summon"] = "Mbangun Undhak-undhakan",
 	["restore"] = "Manggil Orb", 
 	["split"] = "Rebuild Opposite",
 	["shrinkabove"] = "Shrink Above Stairs",
-	["link"] = "Gawé Kreteg",
-	["portal"] = "Gawé Portal",
+	["link"] = " Kreteg",
+	["portal"] = " Portal",
 
 	["summoner"] = "Summoner",
 	["patronevent"] = "Berkahi Menara karo Undhak-undhakan",
@@ -253,8 +253,8 @@ module.spells.names = {
 	--JOKER 
 	["flip"] = "Walik Undhak-undhakan",
 	["flipabove"] = "Walik Undhak-undhakan Dhuwur",
-	["fake"] = "Gawé Undhak-undhakan Fake",
-	["invisible"] = "Gawé Undhak-undhakan Invisible",
+	["fake"] = "Mbangun Undhak-undhakan Fake",
+	["invisible"] = "Mbangun Undhak-undhakan Invisible",
 	["disco"] = "Undhak-undhakan sing gawé orang nari",
 	["trap"] = "Create Trap",
 
@@ -287,7 +287,7 @@ module.spells.names = {
 	["keeperaltevent"] = "Mulihaké Kabèh Menara",
 
 	--SPECTRE
-	["phantom"] = "Gawé Undhak-undhakan Lenyap",
+	["phantom"] = "Mbangun Undhak-undhakan Lenyap",
 	["ghost"] = "Ghostify Above Stairs",
 	["shadow"] = "Ghostify Stairs",
 	["horizontal"] = "Horizontal Teleport",
@@ -347,7 +347,7 @@ module.spells.names = {
 	["drifteraltevent"] = "Liftage",
 
 	--HERETIC
-	["createcursed"] = "Gawé Undhak-undhakan Cursed",
+	["createcursed"] = "Mbangun Undhak-undhakan Cursed",
 	["curse"] = "Curse Stairs",
 	["curseabove"] = "Curse Above Stairs",
 	["curseinter"] = "Flicker",
@@ -2103,4 +2103,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
