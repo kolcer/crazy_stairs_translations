@@ -403,9 +403,9 @@ module.spells.names = {
 	["screwdown"] = "Muter Mudhun",
 	["spinplatform"] = "Ubeng Platform",
 
-	["tramway"] = "Tram-way",
+	["tramway"] = "Masinis",
 	["gremlinevent"] = "Revolvelution",
-	["gremlinaltevent"] = "Gridlock",
+	["gremlinaltevent"] = "Kemacetan Trèm",
 
 	--CHAMELEON
 	["ditch"] = "Cross Stairs",
@@ -1032,9 +1032,9 @@ module.gui.gameover.messages = {
 		"I can totally connect those stairs",
 		"Connect with people - nah, CONNECT WITH STAIRS!",
 		"My mind is just twisted like that",
-		"Split or Splice - that is the question",
-		"Thanks Markerquest, you saved me",
-		"This staircase is too straight",
+		"Loro bab sing paling apik babagan Splicer: nyambungaké dan coklat mint.",
+		"Matur nuwun kanggo nylametké aku, Markerquest..",
+		"Undhak-undhakan iki lurus banget!",
 	},
 	["REAVER"] = {
 		"REFLECT, REPLACE and MERGE",
@@ -1045,7 +1045,7 @@ module.gui.gameover.messages = {
 		"Seven years of bad luck. For me or for the other one?",
 		"Are the ghosts stuck behind the mirror - or are we?",
 		"I can no longer see myself, I see the future",
-		"MOM! It's not a phase!!!",
+		"Iki ora fase, Ibu!!!",
 		"Don't sneak up on me like that!",
 	},
 	["NECROMANCER"] = {
@@ -2103,5 +2103,6 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
