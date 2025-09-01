@@ -26,12 +26,12 @@ module.gui.basic = {
 
 module.gui.switcher = {
 
-	["title"] = "NGGANTI SERVER",
+	["title"] = "GANTI SERVER",
 
 	["public"] = "SERVER PUBLIK",
 	["private"] = "SERVER PRIBADI",
-	["join"] = "JOIN",
-	["friends"] = "FRIENDS ONLINE",
+	["join"] = "GABUNG",
+	["friends"] = "KANCA ONLINE",
 	["refresh"] = "refreshing...",
 	["fail"] = "FAILED TO REFRESH!",
 
@@ -48,8 +48,8 @@ module.gui.serversettings = {
 	["ban"] = "BAN",
 	["mute"] = "MUTE",
 
-	["Drones"] = "DRONE SETTINGS",
-	["DronesReadOnly"] = "DRONE SETTINGS (read only)",
+	["Drones"] = "SETÈLAN DRONE",
+	["DronesReadOnly"] = "SETÈLAN DRONE (read only)",
 	["DroneEnabled"] = "Drones enabled",
 	["DroneFix"] = "Drones restore stairs",
 	["DroneRemove"] = "Drones remove cursed intersections",
@@ -63,7 +63,7 @@ module.gui.serversettings = {
 	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
 	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
 
-	["Tower"] = "TOWER SETTINGS",
+	["Tower"] = "SETÈLAN MENARA",
 	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
 	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
 	["CasualPlayers"] = "Casual players allowed to cast spells",
@@ -844,27 +844,27 @@ module.gui.multitokens = {
 
 module.gui.feedback = {
 
-	["title"] = "SEND FEEDBACK",
+	["title"] = "KIRIM FEEDBACK",
 
-	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please no spam.)",
-	["send"] = "SEND",
-	["locked"] = "LOCKED",
+	["prompt"] = "Click here kanggo nulis lan ngirim feedback menyang developer! (minimum of 20 characters)",
+	["send"] = "KIRIM",
+	["locked"] = "DIKUNCI",
 
 }
 
 module.gui.settings = {
 
-	["title"] = "GAME SETTINGS",
+	["title"] = "SETÈLAN GAME",
 
-	["ANIM"] = "ANIMATION\nSETTINGS",	
+	["ANIM"] = "SETÈLAN\nANIMASI",	
 	["MISC"] = "MISCELLANEOUS\nSETTINGS",
 	["INTER"] = "INTERFACE\nSETTINGS",	
 	["INTER2"] = "EXTRA INTERFACE\nSETTINGS",	
 
-	["list"] = "Show animated playerlist",
-	["morph"] = "Show morph animation when using Deceiver or Usurper",
-	["billboard"] = "Show Your own avatar billboard",
-	["rank"] = "Show Your Overall Rank in avatar billboard",
+	["list"] = "Tampilaké animated playerlist",
+	["morph"] = "Tampilaké morph animation when using Deceiver or Usurper",
+	["billboard"] = "Tampilaké Your own avatar billboard",
+	["rank"] = "Tampilaké Your Overall Rank in avatar billboard",
 	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
 	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
 	["multi"] = "Show Multi Token window selection after the climb",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
