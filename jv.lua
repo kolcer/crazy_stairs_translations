@@ -189,37 +189,37 @@ module.gui.jukebox = {
 
 module.gui.results = {
 
-	["title"] = "RACE RESULTS",
+	["title"] = "ASIL BALAP",
 
-	["place"] = "PLACE",
-	["name"] = "NAME",
-	["level"] = "MAX LEVEL",
-	["time"] = "TIME",
-	["rank"] = "RANK",
+	["place"] = "POSISI",
+	["name"] = "JENENG",
+	["level"] = "LEVEL MAKSIMAL",
+	["time"] = "WEKTU",
+	["rank"] = "PANGKAT",
 	["not"] = "N/A",
-	[1] = "WINNER",
-	[2] = "2nd",
-	[3] = "3rd",
-	[4] = "4th",
-	[5] = "5th",
-	[6] = "6th",
-	[7] = "7th",
-	[8] = "8th",
-	[9] = "9th",
-	[10] = "10th",
-	[11] = "11th",
-	[12] = "12th",
+	[1] = "PEMENANG",
+	[2] = "ke-2",
+	[3] = "ke-3",
+	[4] = "ke-4",
+	[5] = "ke-5",
+	[6] = "ke-6",
+	[7] = "ke-7",
+	[8] = "ke-8",
+	[9] = "ke-9",
+	[10] = "ke-10",
+	[11] = "ke-11",
+	[12] = "ke-12",
 
 }
 
 module.gui.racetimer = {
 
-	["gather"] = "You're not\nin the race",
-	["race"] = "RACE\nOVER",
-	["inf"] = "Eliminated",
-	["off"] = "RACE\nTIMER",
-	["wait"] = "Race in",
-	["on"] = "Rank",
+	["gather"] = "Kowé\nmèlu balap iki.",
+	["race"] = "BALAP IKI\nRAMPUNG!",
+	["inf"] = "Disingkiraké!",
+	["off"] = "TIMER\nBALAP.",
+	["wait"] = "Balap diwiwiti ing",
+	["on"] = "Posisi",
 
 }
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
