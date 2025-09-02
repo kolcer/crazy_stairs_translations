@@ -32,7 +32,7 @@ module.gui.switcher = {
 	["private"] = "SERVER PRIBADI",
 	["join"] = "GABUNG",
 	["friends"] = "KANCA ONLINE",
-	["refresh"] = "refreshing...",
+	["refresh"] = "nyegeraké...",
 	["fail"] = "FAILED TO REFRESH!",
 
 }
@@ -119,7 +119,7 @@ module.gui.stats = {
 
 module.gui.timedspell = {
 
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
+	["possessed"] = "DIKUTUK! (Find Mana to break free)",
 	["released"] = "RELEASED",
 	["timesup"] = "times up...",
 
@@ -128,8 +128,8 @@ module.gui.timedspell = {
 
 module.gui.activatecham = {
 
-	["title"] = "ACTIVATE CHAMELEON",
-	["body"] = "Do you want to activate Chameleon Mode?\nIt will stay active for the rest of the climb."
+	["title"] = "AKTIFAKÉ CHAMELEON",
+	["body"] = "Apa kowé gelem ngaktifaké mode Chameleon?\nIki bakal stay active for the rest of the climb."
 
 }
 
@@ -150,10 +150,10 @@ module.gui.climbtimer = {
 
 module.gui.codes = {
 
-	["title"] = "ENTER THE KODE",
-	["body"] = "Input Your kode here:",
-	["prompt"] = "(kode)",
-	["button"] = "VALIDATE",
+	["title"] = "LEBOKAKÉ KODÉ",
+	["body"] = "Ketik kodé ing kéné:",
+	["prompt"] = "(kodé)",
+	["button"] = "TEBUS",
 
 }
 
@@ -347,16 +347,16 @@ module.spells.names = {
 	["drifteraltevent"] = "Liftage",
 
 	--HERETIC
-	["createcursed"] = "Bangun Undhak-undhakan Cursed",
-	["curse"] = "Curse Stairs",
-	["curseabove"] = "Curse Above Stairs",
+	["createcursed"] = "Bangun Undhak-undhakan Dikutuk",
+	["curse"] = "Kutuk Undhak-undhakan",
+	["curseabove"] = "Kutuk Undhak-undhakan Above",
 	["curseinter"] = "Flicker",
 	["autodown"] = "Raise Schism",
 	["autoup"] = "Lower Schism",
 
 	["malediction"] = "Malediction",
 	["hereticevent"] = "Disunion",
-	["hereticaltevent"] = "Vengeance",
+	["hereticaltevent"] = "Kutuk Menara",
 
 	--SPLICER
 	["twistup"] = "Sambung Undhak-undhakan Up",
@@ -374,13 +374,13 @@ module.spells.names = {
 	["createdual"] = "Bangun Dual Stairs",
 	["copyplatform"] = "Salin Platform Memedimu",
 	["soulbridge"] = "Bangun Soul Bridge",
-	["undeadabove"] = "Matèni Undhak-undhakan Dhuwuk",
+	["undeadabove"] = "Patèni Undhak-undhakan Dhuwuk",
 	["revival"] = "Revival Point",
 	["regen"] = "Regenerate Mana",
 
 	["duality"] = "Duality",
 	["necromancerevent"] = "Resurrection",
-	["necromanceraltevent"] = "Matèni Kabèh Undhak-undhakan",
+	["necromanceraltevent"] = "Patèni Kabèh Undhak-undhakan",
 	
 	--reaver
 	["createmirrored"] = "Bangun Undhak-undhakan Pangilon",
@@ -578,10 +578,10 @@ module.spells.descriptions = {
 
 
 	--HERETIC
-	["createcursed"] = "This spell allows you to create cursed stairs in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
-	["curse"] = "This spell will curse below stairs. Use this spell again to uncurse stairs.",
-	["curseabove"] = "This spell will curse above stairs. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
-	["curseinter"] = "This spell will allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
+	["createcursed"] = "Mantra iki kanggo mbangun undhak-undhakan dikutuk in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
+	["curse"] = "Mantra iki kanggo ngutuk undhak-undhakan ngisor. Use this spell again to uncurse stairs.",
+	["curseabove"] = "Mantra iki kanggo ngutuk undhak-undhakan sing ana ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
+	["curseinter"] = "Mantra iki kanggo you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
 
@@ -1247,7 +1247,7 @@ module.static = {
 	["vr_11"] = "To change an alingment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
 
 	["home_1"] = "OMAH MUGGLE",
-	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
+	["home_2"] = "´SESANTI:\nWALK\nJUMP\nAND\nFALL",
 	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
 	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
 
@@ -1897,16 +1897,16 @@ module.eventspells = {
 	["patronaltevent"] = "%s has just shrunk all normal stairs!",
 
 	["jokerrigevent"] = "%s has just rigged all normal stairs with the Flip spell!",
-	["jokerevent"] = "%s has just hidden all normal stairs!",
-	["jokeraltevent"] = "%s has just flipped all normal stairs!",
+	["jokerevent"] = "%s wis ndhelikaké kabèh undhak-undhakan normal!",
+	["jokeraltevent"] = "%s wis mbalikaké kabèh kabèh undhak-undhakan normal!",
 
 	["wickedrigevent"] = "%s has just rigged all normal stairs with Destroy spell!",
-	["wickedevent"] = "%s has just destroyed all normal stairs!",
-	["wickedaltevent"] = "%s has just destroyed ALL stairs!",
+	["wickedevent"] = "%s wis ngremukaké kabèh undhak-undhakan normal!",
+	["wickedaltevent"] = "%s wis ngremukaké KABÈH menara!",
 
 	["keeperrigevent"] = "%s has just rigged all normal stairs with the Random Move spell!",
 	["keeperevent"] = "%s has just shuffled all normal stairs!",
-	["keeperaltevent"] = "%s has just restored all stairs!",
+	["keeperaltevent"] = "%s wis mulihaké kabèh undhak-undhakan!",
 
 	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50% chance of ghosting!",
 	["spectreevent"] = "%s has just phantom shuffled all normal stairs!",
@@ -1930,18 +1930,18 @@ module.eventspells = {
 
 	["hereticrigevent"] = "%s has just rigged all normal stairs with Possess spell!",
 	["hereticevent"] = "%s has just schismatized all normal stairs!",
-	["hereticaltevent"] = "%s has just cursed all normal stairs!",
+	["hereticaltevent"] = "%s wis ngutuk kabèh undhak-undhakan normal!",
 
 	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
-	["splicerevent"] = "%s has just spliced all normal stairs!",
-	["spliceraltevent"] = "%s has just split all normal stairs!",
+	["splicerevent"] = "%s wis nyambungaké kabèh undhak-undhakan normal!",
+	["spliceraltevent"] = "%s wis nyigar kabèh undhak-undhakan!",
 
 	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
-	["necromanceraltevent"] = "%s has just turned all normal stairs Soulless!",
+	["necromanceraltevent"] = "%s wis matèni kabèh undhak-undhakan normal!",
 
 	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotize spell!",
-	["gremlinevent"] = "%s has just revolved all normal stairs!",
+	["gremlinevent"] = "%s wis mubeng kabèh undhak-undhakan normal!",
 	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
 
 	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
