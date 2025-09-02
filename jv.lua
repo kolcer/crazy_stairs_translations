@@ -143,16 +143,16 @@ module.gui.caceltimed = {
 module.gui.climbtimer = {
 
 	["prompt"] = "Climb the\nstairs!",
-	["floor"] = "Floor",
+	["floor"] = "Lanté",
 	["last"] = "Last time",
 
 }
 
 module.gui.codes = {
 
-	["title"] = "ENTER THE CODE",
-	["body"] = "Input Your code here:",
-	["prompt"] = "(code)",
+	["title"] = "ENTER THE KODE",
+	["body"] = "Input Your kode here:",
+	["prompt"] = "(kode)",
 	["button"] = "VALIDATE",
 
 }
@@ -372,7 +372,7 @@ module.spells.names = {
 	
 	--necro
 	["createdual"] = "Bangun Dual Stairs",
-	["copyplatform"] = "Copy Ghost's Platform",
+	["copyplatform"] = "Salin Platform Memedimu",
 	["soulbridge"] = "Bangun Soul Bridge",
 	["undeadabove"] = "Matèni Undhak-undhakan Dhuwuk",
 	["revival"] = "Revival Point",
@@ -610,7 +610,7 @@ module.spells.descriptions = {
 	["splicerunion"] = union,
 
 	["createdual"] = "Mantra iki kanggo mbangun Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
-	["copyplatform"] = "Mantra iki kanggo copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
+	["copyplatform"] = "Mantra iki kanggo nyalin any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "Mantra iki kanggo mbangun a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
 	["undeadabove"] = "Mantra iki kanggo remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
 	["revival"] = "Mantra iki kanggo create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
@@ -844,9 +844,9 @@ module.gui.multitokens = {
 
 module.gui.feedback = {
 
-	["title"] = "KIRIM FEEDBACK",
+	["title"] = "KIRIM UMPAN BALIK",
 
-	["prompt"] = "Click here kanggo nulis lan ngirim feedback menyang developer! (minimum of 20 characters)",
+	["prompt"] = "Click here kanggo nulis lan ngirim pesen menyang developer! (minimum of 20 characters)",
 	["send"] = "KIRIM",
 	["locked"] = "DIKUNCI",
 
@@ -906,10 +906,10 @@ module.gui.gameover.messages = {
 	["JOKER"] = {
 		"DECEIVE, CONFUSE and LAUGH",
 		"This staircase is a joke",
-		"Why so serious?",
-		"HA! HA! HA!",
+		"Kok emen?",
+		"HA HA HA!",
 		"Relax and watch them fall",
-		"You mad bro?",
+		"Kok nepsu?",
 		"You know the rules and so do I",
 		"It would be boring without me",
 		"Fake stairs are real",
@@ -1070,7 +1070,7 @@ module.gui.gameover.messages = {
 		"Doctor told me to relax, and this is how I relax.",
 		"Joker take some notes. Just kidding, hire me back in the Circus please!",
 		"Where did that staircase go?",
-		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
+		"Waaaaaaaaaaaaaa!!!!!!!",
 	},
 
 }
@@ -1409,27 +1409,27 @@ module.tutorial = {
 
 	["tut_big_1"] = "Sugeng rawuh ing Undhak-Undhakan Édan!",
 	["tut_big_2"] = "Kapisan, sinau piyé carané ngganti.",
-	["tut_big_3"] = "Kowé saiki dadi Patron, Patron bisa nggawe undhak-undhakan.",
-	["tut_big_4"] = "All spells need to be executed by jumping.",
-	["tut_big_5"] = "Cool, huh? Now morph to Joker. Jokers can flip stairs.",
-	["tut_big_6"] = "Kowé saiki dadi Joker, use this spell to flip stairs.",
+	["tut_big_3"] = "Kowé saiki dadi Patron, Patron bisa nggawé undhak-undhakan.",
+	["tut_big_4"] = "Kabèh mantra mbutuhaké diolèhi karo mlumpat.",
+	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker bisa mbalik undhak-undhakan.",
+	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké mantra iki kanggo mbalik undhak-undhakan.",
 	["tut_big_7"] = "Some spells need to be executed on stairs.",
-	["tut_big_8"] = "Now morph to Keeper. Keepers can move stairs.",
-	["tut_big_9"] = "Kowé saiki dadi Joker, use this spell to move stairs.",
-	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
-	["tut_big_11"] = "You will encounter many blocking stairs in this game.",
-	["tut_big_12"] = "Kowé saiki dadi Wicked, use this spell to destroy blocking stairs.",
-	["tut_big_13"] = "You can destroy above stairs, by jumping on below ones.",
+	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper bisa ngalih undhak-undhakan.",
+	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké mantra iki mindah undhak-undhakan.",
+	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
+	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing gamé iki.",
+	["tut_big_12"] = "Kowé saiki dadi Wicked, use mantra iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
+	["tut_big_13"] = "Kowé bisa remukaké undhak-undhakan above, by jumping on below ones.",
 	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
 	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
+	["tut_big_16"] = "Tujuanmu mènèk kanggo puncak lan njaluk orb ing menara. Apik luck!",
 
-	["tut_select"] = "Select this spell.",
+	["tut_select"] = "Pilih mantra iki.",
 
-	["tut_small_init"] = "Lumpat to spawn tutorial",
-	["tut_small_morph"] = "Lumpat on morph.",
-	["tut_small_arrow"] = "Lumpat on arrow.",
-	["tut_small_stairs"] = "Lumpat on stairs.",
+	["tut_small_init"] = "Lumpat kanggo miwiti tutorial!",
+	["tut_small_morph"] = "Lumpat ing lèmèr ngganti.",
+	["tut_small_arrow"] = "Lumpat ing panah.",
+	["tut_small_stairs"] = "Lumpat ing undhak-undhakan.",
 
 }
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
