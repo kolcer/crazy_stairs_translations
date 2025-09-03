@@ -433,12 +433,12 @@ local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this sp
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "Mantra iki kanggo nggawé undhak-undhakan in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
-	["restore"] = "Mantra iki kanggo calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
-	["split"] = "Mantra iki kanggo recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
-	["shrinkabove"] = "Mantra iki shrinks above stairs, allowing you to walk around them.",
-	["link"] = "Mantra iki kanggo nggawé an energy bridge between platforms for 60 seconds. Links are intangilbe from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
-	["portal"] = "Mantra iki kanggo nggawé portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
+	["summon"] = "Mantera iki kanggo nggawé undhak-undhakan in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
+	["restore"] = "Mantera iki kanggo calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
+	["split"] = "Mantera iki kanggo recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
+	["shrinkabove"] = "Mantera iki shrinks above stairs, allowing you to walk around them.",
+	["link"] = "Mantera iki kanggo nggawé an energy bridge between platforms for 60 seconds. Links are intangilbe from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
+	["portal"] = "Mantera iki kanggo nggawé portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
@@ -449,12 +449,12 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Mantra iki kanggo mbalikaké undhak-undhakan, ngganti top will become bottom and vice versa. You may also flip such stairs back.",
-	["flipabove"] = "Mantra iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["fake"] = "Mantra iki kanggo mbangun undhak-undhakan palsu in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
-	["invisible"] =  "Mantra iki kanggo nggawé undhak-undhakan didhelikaké. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
-	["disco"] = "Mantra iki kanggo nggawé undhak-undhakan dadi disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
-	["trap"] = "Mantra iki kanggo nggawé turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
+	["flip"] = "Mantera iki kanggo mbalikaké undhak-undhakan, ngganti top will become bottom and vice versa. You may also flip such stairs back.",
+	["flipabove"] = "Mantera iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, so top will become bottom and vice versa. You may also flip such stairs back.",
+	["fake"] = "Mantera iki kanggo mbangun undhak-undhakan palsu in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
+	["invisible"] =  "Mantera iki kanggo nggawé undhak-undhakan didhelikaké. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
+	["disco"] = "Mantera iki kanggo nggawé undhak-undhakan dadi disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
+	["trap"] = "Mantera iki kanggo nggawé turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
 
 	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
@@ -465,8 +465,8 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "Mantra iki kanggo ngremukaké undhak-undhakan. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["destroyabove"] = "Mantra iki kanggo ngremukaké undhak-undhakan sing ana ing ndhuwur. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
+	["destroy"] = "Mantera iki kanggo ngremukaké undhak-undhakan. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
+	["destroyabove"] = "Mantera iki kanggo ngremukaké undhak-undhakan sing ana ing ndhuwur. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
@@ -481,7 +481,7 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Mantra iki bakal gawa ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Mantera iki bakal gawa ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["movedown"] = "This spell fixes any special stairs. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
@@ -513,12 +513,12 @@ module.spells.descriptions = {
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "Mantra iki kanggo nggawé kowé teleport in the chosen direction. You cannot teleport through blocking stairs. Rank up to CRACKER to speed up this spell by 50%.",
-	["blink"] = "Mantra iki kanggo nggawé kowé teleport around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Rank up to EXPLOITER to speed up this spell by 50%.",
+	["dash"] = "Mantera iki kanggo nggawé kowé teleport in the chosen direction. You cannot teleport through blocking stairs. Rank up to CRACKER to speed up this spell by 50%.",
+	["blink"] = "Mantera iki kanggo nggawé kowé teleport around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Rank up to EXPLOITER to speed up this spell by 50%.",
 	["swap"] = "This spell will teleport you to the spot where your ghost is. Unlike other basic spells, Swap can be cast anywhere.",
 	["slide"] = "This spell will turn stairs into an Escalator. You can choose either Up or Down Escalator. Rank up to SCRIPTER to have an option to be immune to Escalators.",
-	["slideup"] = "Mantra iki kangoo hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
-	["glitch"] = "Mantra iki kanggo menèhi glitch ing undhak-undhakan, teleport kamu dan dheweke menyang a different spot on the same level. Rank up to ZERO, to teleport stairs next to the orb, if you already are on the top level.",
+	["slideup"] = "Mantera iki kangoo hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
+	["glitch"] = "Mantera iki kanggo menèhi glitch ing undhak-undhakan, teleport kamu dan dheweke menyang a different spot on the same level. Rank up to ZERO, to teleport stairs next to the orb, if you already are on the top level.",
 
 	["hack"] = timed .. "It allows you to cast as many Upwards Escalators as you like for one minute. If there are blocking un-cursed stairs above, they will be demolished." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
 	["hackerrigevent"] = rig .. "the Hacker Rig. Stairs, once triggered it will teleport player and stairs to a different spot on the same level. Only one player will be teleported. Rank up to REAPER to have an option to walk on Hacker Rigs without triggering them.",
@@ -545,7 +545,7 @@ module.spells.descriptions = {
 	["thiefunion"] = union,
 
 	--ARCHON
-	["splitside"] = "Mantra iki connect below stairs to another in a horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to ILLUMINATI to be able to walk through horizontal portals.",
+	["splitside"] = "Mantera iki connect below stairs to another in a horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to ILLUMINATI to be able to walk through horizontal portals.",
 	["splitrotate"] = "This spell will connect below stairs to another in a rotated horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to ILLUMINATI to be able to walk through horizontal portals.",
 	["splitup"] = "This spell will connect below stairs to stairs above with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to SAGE to ignore downward connections.",
 	["cancelsplit"] = "This spell will discard any Gates on stairs. Rank up to DISCIPLE to be able to remove platform Gates. Rank up to SCHOLAR to cast this spell for free.",
@@ -578,10 +578,10 @@ module.spells.descriptions = {
 
 
 	--HERETIC
-	["createcursed"] = "Mantra iki kanggo mbangun undhak-undhakan dikutuk in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
-	["curse"] = "Mantra iki kanggo ngutuk undhak-undhakan ngisor. Use this spell again to uncurse stairs.",
-	["curseabove"] = "Mantra iki kanggo ngutuk undhak-undhakan sing ana ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
-	["curseinter"] = "Mantra iki kanggo you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
+	["createcursed"] = "Mantera iki kanggo mbangun undhak-undhakan dikutuk in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
+	["curse"] = "Mantera iki kanggo ngutuk undhak-undhakan ngisor. Use this spell again to uncurse stairs.",
+	["curseabove"] = "Mantera iki kanggo ngutuk undhak-undhakan sing ana ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
+	["curseinter"] = "Mantera iki kanggo you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
 
@@ -594,12 +594,12 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Mantra iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dh to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistrotate"] = "Mantra iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistup"] = "Mantra iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["canceltwist"] = "Mantra iki kanggo mulihaké any undhak-undhakan sing diplintir. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
-	["split2"] = "Mantra iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
-	["splitalt"] = "Mantra iki kanggo nyigar undhak-undhakan into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
+	["twistside"] = "Mantera iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dh to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistrotate"] = "Mantera iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistup"] = "Mantera iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["canceltwist"] = "Mantera iki kanggo mulihaké any undhak-undhakan sing diplintir. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
+	["split2"] = "Mantera iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
+	["splitalt"] = "Mantera iki kanggo nyigar undhak-undhakan into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
 
 	["twister"] = timed .. "It allows you to cast as many Split Stairs Spells as you like for one minute. Split spell variety will be chosen automatically for Your benefit." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
@@ -609,12 +609,12 @@ module.spells.descriptions = {
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
-	["createdual"] = "Mantra iki kanggo mbangun Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
-	["copyplatform"] = "Mantra iki kanggo nyalin any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
-	["soulbridge"] = "Mantra iki kanggo mbangun a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
-	["undeadabove"] = "Mantra iki kanggo remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
-	["revival"] = "Mantra iki kanggo create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
-	["regen"] = "Mantra iki kanggo regenrate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
+	["createdual"] = "Mantera iki kanggo mbangun Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
+	["copyplatform"] = "Mantera iki kanggo nyalin any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
+	["soulbridge"] = "Mantera iki kanggo mbangun a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
+	["undeadabove"] = "Mantera iki kanggo remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
+	["revival"] = "Mantera iki kanggo create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
+	["regen"] = "Mantera iki kanggo regenrate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
 	
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
@@ -828,17 +828,17 @@ module.gui.reshuffle = {
 
 	["title"] = "STAIRS RESHUFFLE MODE",
 
-	["body"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
+	["body"] = "Apa kowé gelem kabèh undhak-undhakan to avoid collisions while moving? Yèn ora, any stairs in the way will be destroyed.",
 
 }
 
 module.gui.multitokens = {
 
-	["title"] = "CHOOSE YOUR TOKENS",
+	["title"] = "PILIH TOKENMU",
 
-	["info"] = "You need 3 tokens to unlock a spell.",
-	["notokens"] = "You have no multi tokens left",
-	["nopass"] = "NO GAME PASS",
+	["info"] = "Kowé butuh 3 token kanggo mbukak mantera.",
+	["notokens"] = "Kowé ora duwé multi token left",
+	["nopass"] = "ORA ANA GAME PASS",
 
 }
 
@@ -846,7 +846,7 @@ module.gui.feedback = {
 
 	["title"] = "KIRIM UMPAN BALIK",
 
-	["prompt"] = "Click here kanggo nulis lan ngirim pesen menyang developer! (minimum of 20 characters)",
+	["prompt"] = "Klik kéné kanggo nulis lan ngirim pesen menyang developer! (minimum of 20 characters)",
 	["send"] = "KIRIM",
 	["locked"] = "DIKUNCI",
 
@@ -858,8 +858,8 @@ module.gui.settings = {
 
 	["ANIM"] = "SETÈLAN\nANIMASI",	
 	["MISC"] = "MISCELLANEOUS\nSETTINGS",
-	["INTER"] = "INTERFACE\nSETTINGS",	
-	["INTER2"] = "EXTRA INTERFACE\nSETTINGS",	
+	["INTER"] = "SETÈLAN\nINTERACE",	
+	["INTER2"] = "SETÈLAN\INTERACE ÈKSTRA",	
 
 	["list"] = "Tampilaké animated playerlist",
 	["morph"] = "Tampilaké morph animation when using Deceiver or Usurper",
@@ -867,14 +867,14 @@ module.gui.settings = {
 	["rank"] = "Tampilaké Your Overall Rank in avatar billboard",
 	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
 	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
-	["multi"] = "Show Multi Token window selection after the climb",
-	["kchoices"] = "Show direction selection window for Keeper (won't work on consoles)",
-	["hchoices"] = "Show direction selection window for Hacker (won't work on consoles)",
-	["achoices"] = "Show direction selection window for Archon (won't work on consoles)",
-	["rchoices"] = "Show direction selection window for Reaver (won't work on consoles)",
-	["schoices"] = "Show direction selection window for Splicer (won't work on consoles)",
-	["gchoices"] = "Show direction selection window for Gremlin (won't work on consoles)",
-	["stats"] = "Show extra stats when casting Rig & Event spells",
+	["multi"] = "Tampilaké window milih Multi Token after the climb",
+	["kchoices"] = "Tampilaké window milih arah kanggo Keeper (ora nyambut gawé ing konsol)",
+	["hchoices"] = "Tampilaké window milih arah kanggo Hacker (ora nyambut gawé ing konsol)",
+	["achoices"] = "Tampilaké window milih arah kanggo Archon (ora nyambut gawé ing konsol)",
+	["rchoices"] = "Tampilaké window milih arah kanggo Reaver (ora nyambut gawé ing konsol)",
+	["schoices"] = "Tampilaké window milih arah kanggo Splicer (ora nyambut gawé ing konsol)",
+	["gchoices"] = "Tampilaké window milih arah kanggo Gremlin (ora nyambut gawé ing konsol)",
+	["stats"] = "Tampilaké èkstra statistika nalika casting mantera Acara lan Rig",
 
 }
 
@@ -1198,7 +1198,7 @@ module.static = {
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
-	["pro_1"] = "PRO TOWER",
+	["pro_1"] = "MENARA PRO",
 	["pro_2"] = "Even levels restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
@@ -1211,20 +1211,20 @@ module.static = {
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
-	["inf_1"] = "INFINITE TOWER",
+	["inf_1"] = "MENARA INFINIT",
 	["inf_2"] = "RACE MANDATORY",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
 	["inf_5"] = "Fallen Drone",
-	["inf_6"] = "Unlike classic and pro towers, Fallen Drone has a special task in the infinite tower.",
+	["inf_6"] = "Ora kaya menara klasik lan pro, Fallen Drone duwé tugasé spésial ing menara infinit.",
 	["inf_7"] = "Each 'raise interval', Fallen Drone will create 2 new levels. Each even level will be restricted. On top of that, some stairs or intersections may even become cursed.",
 	["inf_8"] = "First interval lasts for 20 seconds. Each raise will reduce the interval by half second, until the levels are created faster than they could be climbed.",
-	["inf_9"] = "Eraser",
-	["inf_10"] = "Eraser is a special force field that will rise together with tower and remove bottom levels. Falling behind the eraser eliminates players from the round. This is similar to rising lava in other games.",
+	["inf_9"] = "Busakan",
+	["inf_10"] = "Busak is a special force field that will rise together with tower and remove bottom levels. Falling behind the eraser eliminates players from the round. This is similar to rising lava in other games.",
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
 
-	["cus_1"] = "CUSTOM TOWER",
+	["cus_1"] = "MENARA KUSTOM",
 	["cus_2"] = "YOU DECIDE!",
 	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
@@ -1410,21 +1410,21 @@ module.tutorial = {
 	["tut_big_1"] = "Sugeng rawuh ing Undhak-Undhakan Édan!",
 	["tut_big_2"] = "Kapisan, sinau piyé carané ngganti.",
 	["tut_big_3"] = "Kowé saiki dadi Patron, Patron bisa nggawé undhak-undhakan.",
-	["tut_big_4"] = "Kabèh mantra mbutuhaké diolèhi karo mlumpat.",
+	["tut_big_4"] = "Kabèh mantera mbutuhaké diolèhi karo mlumpat.",
 	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker bisa mbalik undhak-undhakan.",
-	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké mantra iki kanggo mbalik undhak-undhakan.",
+	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké mantera iki kanggo mbalik undhak-undhakan.",
 	["tut_big_7"] = "Some spells need to be executed on stairs.",
 	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper bisa ngalih undhak-undhakan.",
-	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké mantra iki mindah undhak-undhakan.",
+	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké mantera iki mindah undhak-undhakan.",
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
 	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing gamé iki.",
-	["tut_big_12"] = "Kowé saiki dadi Wicked, use mantra iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
+	["tut_big_12"] = "Kowé saiki dadi Wicked, use mantera iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
 	["tut_big_13"] = "Kowé bisa remukaké undhak-undhakan above, by jumping on below ones.",
 	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
 	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre is a premium alignment best for solo play.",
 	["tut_big_16"] = "Tujuanmu mènèk kanggo puncak lan njaluk orb ing menara. Apik luck!",
 
-	["tut_select"] = "Pilih mantra iki.",
+	["tut_select"] = "Pilih mantera iki.",
 
 	["tut_small_init"] = "Lumpat kanggo miwiti tutorial!",
 	["tut_small_morph"] = "Lumpat ing lèmèr ngganti.",
@@ -1548,24 +1548,24 @@ module.guide = {
 
 
 module.spells.manacosts = {
-	"0 Mana",
-	"1 Mana",
-	"2 Mana",
-	"3 Mana",
-	"4 Mana", 
-	"0 Mana + stairs",
-	"1 Mana + stairs",
-	"2 Mana + stairs",
-	"3 Mana + stairs", 
+	"0 mana",
+	"1 mana",
+	"2 mana",
+	"3 mana",
+	"4 mana", 
+	"0 mana + undhak-undhakan",
+	"1 mana + undhak-undhakan",
+	"2 mana + undhak-undhakan",
+	"3 mana + undhak-undhakan", 
 	"", 
-	"10 Mana" 
+	"10 mana" 
 }
 
 module.spells.tokencosts = {
 
-	"1 Token",
-	"2 Tokens",
-	"3 Tokens",
+	"1 token",
+	"2 token",
+	"3 token",
 
 	["chameleonrigevent"] = "2 Multi Tokens",
 	["unlock"] = "(unlock for 3 tokens)",
@@ -1597,10 +1597,10 @@ module.serverfeedback = {
 	["nospellsnow"] = "You cannot cast spells right now.",
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
-	["cursed"] = "These stairs are cursed!",
-	["cursed2"] = "Cursed stairs are in the way!",
-	["blocked"] = "This intersection is cursed.",
-	["locked"] = "These stairs are locked.",
+	["cursed"] = "Undhak-undhakan iki dikutuk!",
+	["cursed2"] = "Ana undhak-undhakan dikutuk iku in the way!",
+	["blocked"] = "intersection iki dikutuk.",
+	["locked"] = "Undhak-undhakan iki dikunci.",
 	["platformlocked"] = "Target platform is locked.",
 	["normalrig"] = "This spell works only on normal or rigged stairs.",
 	["cantblock"] = "Cannot curse, there are stairs here. (might be invisible)",
@@ -1616,9 +1616,9 @@ module.serverfeedback = {
 	["noflip"] = "Only normal, flipped or rigged stairs can be flipped.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
 	["wrongdirection"] = "You cannot cast this spell in that direction.",
-	["notfound"] = "Stairs not found.",
+	["notfound"] = "Undhak-undhakan not found.",
 	["nocursedblink"] = "You can't blink around cursed stairs.",
-	["nostairs"] = "There are no stairs here.",
+	["nostairs"] = "Ora ana undhak-undhakan kéné.",
 	["noground"] = "This spell cannot be cast on the ground level.",
 	["oddonly"] = "This spell cannot be cast on this level.",
 	["noabove"] = "No stairs found directly above.",
@@ -1626,7 +1626,7 @@ module.serverfeedback = {
 	["lock"] = "You cannot cast spells now",
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
 	["cantgate"] = "This direction is blocked.",
-	["wall"] = "Wall is already here.",
+	["wall"] = "Ana témbok sing wis kéné.",
 	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
 	["nogate"] = "These stairs are not gated.",
 	["noghost"] = "Only ghosted stairs can be de-ghostified.",
@@ -1639,11 +1639,11 @@ module.serverfeedback = {
 	["wrongmove"] = "Stairs cannot be moved out of game area.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
-	["normal"] = "These stairs are normal.",
-	["lockedinter"] = "This intersection is locked.",
+	["normal"] = "Undhak-undhakan iki normal.",
+	["lockedinter"] = "Intersection iki dikunci.",
 	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
 	["duplicatemirror"] = "There is already a mirror on this level.",
-	["norestore"] = "Thief bypasses and spirals cannot be restored.",
+	["norestore"] = "bypasses lan spirals Thief ora bisa dipulihaké.",
 
 	--higher rank required
 	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
@@ -1712,8 +1712,8 @@ module.serverfeedback = {
 	["charreset"] = "Character reset elimination.",
 
 	--misc
-	["secret"] = "Secret found!",
-	["unlocked"] = "Spell unlocked!",
+	["secret"] = "Rahasya found!",
+	["unlocked"] = "Mantera wis dibukak!",
 
 	--chameleon exceptions	
 	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
