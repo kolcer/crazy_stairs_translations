@@ -17,7 +17,7 @@ module.gui.basic = {
 	["default"] = "DEFAULT",
 	["validate"] = "VALIDATE",
 	["play"] = "PLAY",
-	["skip"] = "SKIP\nTUTORIAL",
+	["skip"] = "SKIP\nLATIHAN",
 	["loading"] = "LOADING, PLEASE WAIT...",
 	["mode"] = "%s\nMODE",
 	["cd"] = "ULTIMATE\nCOOLDOWN",
@@ -254,7 +254,7 @@ module.spells.names = {
 	["flip"] = "Balik Undhak-undhakan",
 	["flipabove"] = "Balik Undhak-undhakan Dhuwur",
 	["fake"] = "Bangun Undhak-undhakan Fake",
-	["invisible"] = "Bangun Undhak-undhakan Ora Katon",
+	["invisible"] = "Bangun Undhak-undhakan Ora Katon/Didhelikaké",
 	["disco"] = "Undhak-undhakan sing nggawé orang nari",
 	["trap"] = "Gawé Trap",
 
@@ -1247,82 +1247,82 @@ module.static = {
 	["vr_11"] = "To change an alingment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
 
 	["home_1"] = "OMAH MUGGLE",
-	["home_2"] = "´SESANTI:\nWALK\nJUMP\nAND\nFALL",
-	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
+	["home_2"] = "SESANTI:\nLAYU\nLUMPAT\nLAN\nTIBA",
+	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nOra duwé mantera\nGets stuck easily",
 	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
 
 	["oasis_1"] = "OASIS CHAMELEON",
-	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
+	["oasis_2"] = "OUR MOTTO:\nSALIN\nTIRU\nLAN\nKAGÈT",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
 
 	["nexus_1"] = "SARANG HERETIC",
-	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
+	["nexus_2"] = "SESANTI:\nSAMPÉYAN\nMBOTÉN\nAJENG\nLIWETI",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
-	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
-	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
+	["guild_2"] = "OUR MOTTO:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
+	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra bisa remukaké undhak-undhakan crossing",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
 	["nether_1"] = "NJERO LEMAH SPECTRE",
-	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
-	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
+	["nether_2"] = "SESANTI:\nILANG\nDHELIK\nLAN\nTELEPORT",
+	["nether_3"] = "PROS:\nMantera Fast\nPerfect for solo play\nCONS:\nMbutuhaké Robux\nNot recommended for teams",
 	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
 
 	["study_1"] = "TELAAH ARCHON",
-	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
+	["study_2"] = "SESANTI:\nBUKAK\nPORTAL\n???\nUNTUNG",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
 	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
 
 	["haven_1"] = "SWARGA PATRON",
-	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
+	["haven_2"] = "SESANTI:\nBIYANTU\nPROTECT\nLAN\nGAWÉ",
 	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
 	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
 
 	["shelter_1"] = "PAPAN PANGAYOM DRIFTER",
-	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
+	["shelter_2"] = "SESANTI:\nLÉYANG\nTUMPAK\nLAN\nPLOROD",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
 	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
 
 	["circus_1"] = "SIRKUS JOKER",
-	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
+	["circus_2"] = "SESANTI:\nPAÈS\nMBINGUNGAKÉ\nLAN\nGUYU",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
 	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
 
 	["base_1"] = "PANGKALAN KEEPER",
-	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
+	["base_2"] = "SESANTI:\nMOVE\nROTATE\nLAN\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
 	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
 
 	["chamber_1"] = "KAMAR WICKED",
-	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
+	["chamber_2"] = "SESANTI:\nREMUKAKÉ\nBLOKIR\nLAN\nCEGAH",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
 	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
 
 	["backdoor_1"] = "BACKDOOR HACKER",
-	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
+	["backdoor_2"] = "SESANTI:\nHACK\nGLITCH\nLAN\nBREAK",
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
 
-	["hub_1"] = "SPLICER'S HUB",
-	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
+	["hub_1"] = "GARASI SPLICER",
+	["hub_2"] = "SESANTI:\nSAMBUNG\nBELAH\nLAN\nPLINTIR",
 	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
 	["shack_1"] = "GUBUG GREMLIN",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
+	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nLAN\nHYPNOTIZE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
 	["mirror_1"] = "PANGILON REAVER",
-	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
+	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nLAN\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
 
 	["grave_1"] = "KUBURAN NECROMANCER",
-	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
+	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nLAN\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
 
@@ -1426,7 +1426,7 @@ module.tutorial = {
 
 	["tut_select"] = "Pilih mantera iki.",
 
-	["tut_small_init"] = "Lumpat kanggo miwiti tutorial!",
+	["tut_small_init"] = "Lumpat kanggo miwiti latihan!",
 	["tut_small_morph"] = "Lumpat ing lèmèr ngganti.",
 	["tut_small_arrow"] = "Lumpat ing panah.",
 	["tut_small_stairs"] = "Lumpat ing undhak-undhakan.",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
