@@ -15,9 +15,9 @@ module.gui.basic = {
 	["ok"] = "OKE",
 	["menu"] = "MENU",
 	["default"] = "DEFAULT",
-	["validate"] = "VALIDATE",
+	["validate"] = "TEBUS",
 	["play"] = "PLAY",
-	["skip"] = "SKIP\nLATIHAN",
+	["skip"] = "LIWATI\nLATIHAN",
 	["loading"] = "LOADING, PLEASE WAIT...",
 	["mode"] = "%s\nMODE",
 	["cd"] = "ULTIMATE\nCOOLDOWN",
@@ -56,7 +56,7 @@ module.gui.serversettings = {
 	["DroneUnCurse"] = "Drones restore cursed stairs",
 	["DroneMove"] = "Drones move stairs in default mode",
 	["DroneSpin"] = "Drones spin stairs in default mode",
-	["DroneSpeed"] = "Drone travel speed (level/second)",
+	["DroneSpeed"] = "Kacepetan mlesir Drone (level/second)",
 	["DroneDelay"] = "Drone spin duration (seconds)",
 	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
 	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
@@ -110,9 +110,9 @@ module.gui.spellbar = {
 
 module.gui.stats = {
 
-	["total"] = "Total climbs: %d / Wins: %d",
-	["class"] = "Climbs as %s: %d",
-	["best"] = "Best %s time: %.2f",
+	["total"] = "Gunggung pendakian: %d / Kamenangan: %d",
+	["class"] = "Pendakian as %s: %d",
+	["best"] = "Wektu %s paling rikat: %.2f",
 	["na"] = "N/A",
 
 }
@@ -862,8 +862,8 @@ module.gui.settings = {
 	["INTER2"] = "SETÈLAN\INTERACE ÈKSTRA",	
 
 	["list"] = "Tampilaké animated playerlist",
-	["morph"] = "Tampilaké morph animation when using Deceiver or Usurper",
-	["billboard"] = "Tampilaké Your own avatar billboard",
+	["morph"] = "Tampilaké animasi ngganti nalika using Deceiver or Usurper",
+	["billboard"] = "Tampilaké billboard avatar kowé",
 	["rank"] = "Tampilaké Your Overall Rank in avatar billboard",
 	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
 	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
@@ -1422,7 +1422,7 @@ module.tutorial = {
 	["tut_big_13"] = "Kowé bisa remukaké undhak-undhakan above, by jumping on below ones.",
 	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
 	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Tujuanmu mènèk kanggo puncak lan njaluk orb ing menara. Apik luck!",
+	["tut_big_16"] = "Tujuanmu mènèk kanggo mendaki lan njaluk orb ing menara. Apik luck!",
 
 	["tut_select"] = "Pilih mantera iki.",
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
