@@ -84,27 +84,27 @@ module.gui.shop = {
 
 	["title"] = "TOKO UNDHAK-UNDHAKAN ÉDAN",
 
-	["chameleon"] = "Chameleons can change alignment during climb.",
-	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
+	["chameleon"] = "Chameleon bisa ngganti kelas wektu climb.",
+	["spectre"] = "Spectre iku kelas teleport based nodheg kanggo climb dhèwèkan (solo play).",
 	["mana"] = "Expand your Mana storage capacity by 10 points.",
 
 	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
 	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
 	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
 
-	["3TOKENS"] = "3 Multi Tokens (R$%d)",
-	["30TOKENS"] = "30 Multi Tokens (R$%d)",
-	["300TOKENS"] = "300 Multi Tokens (R$%d)",
-	["SPECTRE PASS"] = "Spectre game pass (R$%d)",
-	["MANA PASS"] = "20 Mana Storage game pass (R$%d)",
-	["CHAMELEON PASS"] = "Chameleon game pass (R$%d)",
+	["3TOKENS"] = "3 Multi Token (R$%d)",
+	["30TOKENS"] = "30 Multi Token (R$%d)",
+	["300TOKENS"] = "300 Multi Token (R$%d)",
+	["SPECTRE PASS"] = "Gamepass Spectre (R$%d)",
+	["MANA PASS"] = "Gamepass Énérgi 20 Mana (R$%d)",
+	["CHAMELEON PASS"] = "Gamepass Chameleon (R$%d)",
 
 }
 
 module.gui.spellbar = {
 
-	["share"] = "SHARE\nMANA",
-	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
+	["share"] = "BAGÉ\nMANA",
+	["nocasual"] = "MUNG PEMBALAP SING BISA CAST MANTERA",
 
 } 
 
@@ -136,7 +136,7 @@ module.gui.activatecham = {
 module.gui.caceltimed = {
 
 	["title"] = "CANCEL TIMED SPELL",
-	["body"] = "Do you want to cancel this timed spell? Tokens will not be refunded."
+	["body"] = "Apa kowé gelem to cancel mantera timed iki? Tokens will not be refunded."
 
 }
 
@@ -159,7 +159,7 @@ module.gui.codes = {
 
 module.gui.gauges = {
 
-	["prompt"] = "Jump to proceed, click again to cancel.",
+	["prompt"] = "Lumpat kanggo mulai, click again to cancel.",
 
 	["found"] = "%d staircases found (%.1f%% fill)",
 	["special"] = "%d are special (%.1f%%)",
@@ -243,8 +243,8 @@ module.spells.names = {
 	["restore"] = "Panggil Orb", 
 	["split"] = "Rebuild Opposite",
 	["shrinkabove"] = "Shrink Above Stairs",
-	["link"] = " Kreteg",
-	["portal"] = " Portal",
+	["link"] = "Gawé Kreteg",
+	["portal"] = "Gawé Portal",
 
 	["summoner"] = "Summoner",
 	["patronevent"] = "Berkahi Menara karo Undhak-undhakan",
@@ -465,12 +465,12 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "Mantera iki kanggo ngremukaké undhak-undhakan. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["destroyabove"] = "Mantera iki kanggo ngremukaké undhak-undhakan sing ana ing ndhuwur. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
+	["destroy"] = "Mantera iki kanggo ngremukaké undhak-undhakan. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
+	["destroyabove"] = "Mantera iki kanggo ngremukaké undhak-undhakan sing ana ing ndhuwur. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "This spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Only Wickeds and Ghost Unions can go through such wall and on the link.",
+	["wall"] = "Mantera iki kanggo nggawé témbok ing platform kanggo mblokir player, lan uga kreteg menyang platform iring wis 60 detik. Mung Wicked lan memedi digabung sing bisa go through such wall and on the link.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
