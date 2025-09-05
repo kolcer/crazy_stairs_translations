@@ -16,7 +16,7 @@ module.gui.basic = {
 	["menu"] = "MENU",
 	["default"] = "DEFAULT",
 	["validate"] = "TEBUS",
-	["play"] = "PLAY",
+	["play"] = "MAIN",
 	["skip"] = "LIWATI\nLATIHAN",
 	["loading"] = "LOADING, PLEASE WAIT...",
 	["mode"] = "%s\nMODE",
@@ -39,7 +39,7 @@ module.gui.switcher = {
 
 module.gui.serversettings = {
 
-	["title"] = "OWNER SETTINGS",
+	["title"] = "SETÈLAN OWNER",
 
 	["Moderation"] = "MODERATION",
 	["rules"] = "Your server, Your rules.",
@@ -50,14 +50,14 @@ module.gui.serversettings = {
 
 	["Drones"] = "SETÈLAN DRONE",
 	["DronesReadOnly"] = "SETÈLAN DRONE (read only)",
-	["DroneEnabled"] = "Drones enabled",
-	["DroneFix"] = "Drones restore stairs",
-	["DroneRemove"] = "Drones remove cursed intersections",
-	["DroneUnCurse"] = "Drones restore cursed stairs",
+	["DroneEnabled"] = "Drone diaktifaké",
+	["DroneFix"] = "Drone mulihaké undhak-undhakan",
+	["DroneRemove"] = "Drone remove cursed intersections",
+	["DroneUnCurse"] = "Drone mulihaké undhak-undhakan dikutuk",
 	["DroneMove"] = "Drones move stairs in default mode",
 	["DroneSpin"] = "Drones spin stairs in default mode",
 	["DroneSpeed"] = "Kacepetan mlesir Drone (level/second)",
-	["DroneDelay"] = "Drone spin duration (seconds)",
+	["DroneDelay"] = "Durasi Drone spin (seconds)",
 	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
 	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
 	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
@@ -72,7 +72,7 @@ module.gui.serversettings = {
 	["OrbMoves"] = "Endgame orb changes position",
 	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
 	["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
+	["RaceDuration"] = "Durasi Balap Maximum. Will not affect current race. (seconds)",
 	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
 	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
 	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
@@ -119,9 +119,9 @@ module.gui.stats = {
 
 module.gui.timedspell = {
 
-	["possessed"] = "DIKUTUK! (Find Mana to break free)",
-	["released"] = "RELEASED",
-	["timesup"] = "times up...",
+	["possessed"] = "DIKUTUK! (Kumpulaké mana kanggo diluwari)",
+	["released"] = "DILUWARI!",
+	["timesup"] = "wektuné entèk…",
 
 }
 
@@ -135,8 +135,8 @@ module.gui.activatecham = {
 
 module.gui.caceltimed = {
 
-	["title"] = "CANCEL TIMED SPELL",
-	["body"] = "Apa kowé gelem to cancel mantera timed iki? Tokens will not be refunded."
+	["title"] = "WURUNGAKÉ MANTERA TIMED",
+	["body"] = "Apa kowé gelem murungaké mantera timed iki? Token ora bakal be refunded."
 
 }
 
@@ -179,10 +179,10 @@ module.gui.jukebox = {
 
 	["title"] = "JUKEBOX",
 
-	["master"] = "MASTER VOLUME",
-	["default"] = "(using master volume)",
-	["climb"] = "CLIMB MUSIC",
-	["endgame"] = "ENDGAME MUSIC",
+	["master"] = "VOLUME MASTER",
+	["default"] = "(using volume master)",
+	["climb"] = "MUSIK CLIMB",
+	["endgame"] = "MUSIK ENDGAME",
 	["failed"] = "[failed to load]",
 
 }
@@ -449,8 +449,8 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Mantera iki kanggo mbalikaké undhak-undhakan, ngganti top will become bottom and vice versa. You may also flip such stairs back.",
-	["flipabove"] = "Mantera iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, so top will become bottom and vice versa. You may also flip such stairs back.",
+	["flip"] = "Mantera iki kanggo mbalikaké undhak-undhakan, nganti top bakal become bottom lan vice versa. Kowé uga bisa mbalikaké dhèwèké manèh.",
+	["flipabove"] = "Mantera iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, nganti top bakal become bottom lan vice versa. You may also flip such stairs back.",
 	["fake"] = "Mantera iki kanggo mbangun undhak-undhakan palsu in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "Mantera iki kanggo nggawé undhak-undhakan didhelikaké. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
 	["disco"] = "Mantera iki kanggo nggawé undhak-undhakan dadi disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
@@ -865,7 +865,7 @@ module.gui.settings = {
 	["morph"] = "Tampilaké animasi ngganti nalika using Deceiver or Usurper",
 	["billboard"] = "Tampilaké billboard avatar kowé",
 	["rank"] = "Tampilaké Your Overall Rank in avatar billboard",
-	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
+	["switchback"] = "Otomatis switch back to basic spells after executed ultimate spell",
 	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
 	["multi"] = "Tampilaké window milih Multi Token after the climb",
 	["kchoices"] = "Tampilaké window milih arah kanggo Keeper (ora nyambut gawé ing konsol)",
@@ -1234,7 +1234,7 @@ module.static = {
 	["cus_8"] = "Drone Settings",
 	["cus_9"] = "You can also change the small drone setting. Adjust the max count, the min count or even disable them altoghether.",
 
-	["vr_1"] = "By launching Crazy Stairs in VR mode you automatically become an Architect.",
+	["vr_1"] = "By launching Crazy Stairs in mode VR, kowé otomatis dadi Architect.",
 	["vr_2"] = "Unlike regular players, Architects do not need to ascend the staircase. Your goal is to help or troll other players that are climbing the tower.",
 	["vr_3"] = "The choice is yours. Will you be a menace or a saviour? Or do you simply want to mess around? Have fun!",
 	["vr_4"] = "How do I navigate?",
@@ -1252,7 +1252,7 @@ module.static = {
 	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
 
 	["oasis_1"] = "OASIS CHAMELEON",
-	["oasis_2"] = "OUR MOTTO:\nSALIN\nTIRU\nLAN\nKAGÈT",
+	["oasis_2"] = "SESANTI:\nSALIN\nTIRU\nLAN\nKAGÈT",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
 
@@ -1274,12 +1274,12 @@ module.static = {
 	["study_1"] = "TELAAH ARCHON",
 	["study_2"] = "SESANTI:\nBUKAK\nPORTAL\n???\nUNTUNG",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
-	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
+	["study_4"] = ""I used to rule this staircase."\nour founder's quote",
 
 	["haven_1"] = "SWARGA PATRON",
 	["haven_2"] = "SESANTI:\nBIYANTU\nPROTECT\nLAN\nGAWÉ",
 	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
-	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
+	["haven_4"] = ""Those noobs need our help!"\nour founder's quote",
 
 	["shelter_1"] = "PAPAN PANGAYOM DRIFTER",
 	["shelter_2"] = "SESANTI:\nLÉYANG\nTUMPAK\nLAN\nPLOROD",
@@ -1317,7 +1317,7 @@ module.static = {
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
 	["mirror_1"] = "PANGILON REAVER",
-	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nLAN\nMERGE",
+	["mirror_2"] = "OUR MOTTO:\nILO\nGANTI\nLAN\nGABUNG",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
 
@@ -1774,7 +1774,7 @@ module.serverfeedback = {
 	["infreg"] = "Staircase will regenerate after infinite round!",
 	["noinfreg"] = "Staircase will not regenerate after infinite round!",
 	["drones"] = "Small Drones enabled!",
-	["nodrones"] = "Small Drones disabled!",
+	["nodrones"] = "Small Drones dipatèni!",
 	["dronefix"] = "Drones will restore stairs!",
 	["nodronefix"] = "Drones will not restore stairs!",
 	["droneunlock"] = "Drones will remove cursed intersections!",
@@ -1791,13 +1791,13 @@ module.serverfeedback = {
 	["notultimate"] = "You cannot change tower levels during an ultimate spell!",
 	["notregen"] = "You cannot change tower levels during a regeneration!",
 	["wait"] = "Tower levels are being changed, please wait...",
-	["duration"] = "Race duration changed (it will not affect current race)",
+	["duration"] = "Durasi balap diganti (it will not affect current race)",
 	["init"] = "Initial infinite interval time changed",
 	["reduction"] = "Infinite reduction time changed",
 	["mininf"] = "Minimum infinite interval time changed",
 	["cooldown"] = "Rig and event spell cooldown changed",
 	["speed"] = "Small drones speed changed",
-	["spin"] = "Small drones casting duration changed",
+	["spin"] = "Small drones casting durasi changed",
 	["max"] = "Maximum target staircases amount changed",
 	["min"] = "Minimum target staircases amount changed",
 	["curse"] = "Drone curse stairs chance changed",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
