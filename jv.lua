@@ -150,9 +150,9 @@ module.gui.climbtimer = {
 
 module.gui.codes = {
 
-	["title"] = "LEBOKAKÉ KODÉ",
-	["body"] = "Ketik kodé ing kéné:",
-	["prompt"] = "(kodé)",
+	["title"] = "LEBOKAKÉ KODHÉ",
+	["body"] = "Ketik kodhé ing kéné:",
+	["prompt"] = "(kodhé)",
 	["button"] = "TEBUS",
 
 }
@@ -275,7 +275,7 @@ module.spells.names = {
 	["wickedaltevent"] = "Remukaké Kabèh Menara",
 
 	--KEEPER
-	["move"] = "Ngalih Undhak-undhakan",
+	["move"] = "Alih Undhak-undhakan",
 	["rotate"] = "Rotate Stairs",
 	["moveup"] = "Move Stairs Up",
 	["movedown"] = "Pulih Undhak-undhakan",
@@ -283,7 +283,7 @@ module.spells.names = {
 	["rig"] = "Random Move",
 
 	["ascension"] = "Ascension",
-	["keeperevent"] = "Ngalih Kabèh Undhak-undhakan",
+	["keeperevent"] = "Alih Kabèh Undhak-undhakan",
 	["keeperaltevent"] = "Mulihaké Kabèh Menara",
 
 	--SPECTRE
@@ -481,10 +481,10 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Mantera iki bakal gawa ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Mantera iki kanggo gawa ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["movedown"] = "This spell fixes any special stairs. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
+	["movedown"] = "Mantera iki kanggo mulihaké sembarang undhak-undhakan sing spésial. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
 	["rig"] = "This spell will move or rotate stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
 
@@ -716,10 +716,10 @@ module.gui.ranks = {
 	},
 	["WICKED"] = {
 		[4] = "You can now walk on obbies as if they were normal stairs.",
-		[5] = "The Destroy Below spell is now free.",
-		[6] = "You will get 1 bonus Mana from destroying any special stairs.",
+		[5] = "Mantera Remukaké Undhak-undhakan Dhuwur saiki gratis.",
+		[6] = "Kowé bisa njaluk 1 mana bonus karo ngremukaké undhak-undhakan sing spésial.",
 		[8] = "You have the option to avoid triggering any Wicked Rigs.",
-		[9] = "You can now destroy cursed stairs.",
+		[9] = "Kowé saiki bisa ngremukaké undhak-undhakan sing dikutuk.",
 	},
 	["SPECTRE"] = { 
 		[4] = "You will get an extra 1 Mana when you collect crystals with Your Ghost.", 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
