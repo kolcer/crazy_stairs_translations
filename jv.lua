@@ -31,7 +31,7 @@ module.gui.switcher = {
 	["public"] = "SERVER PUBLIK",
 	["private"] = "SERVER PRIBADI",
 	["join"] = "GABUNG",
-	["friends"] = "KANCA ONLINE",
+	["friends"] = "KANCA ONLINÉ",
 	["refresh"] = "nyegeraké...",
 	["fail"] = "FAILED TO REFRESH!",
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
