@@ -117,7 +117,7 @@ module.gui.stats = {
 
 }
 
-module.gui.timedspell = {
+module.gui.spell = {
 
 	["possessed"] = "DIKUTUK! (Kumpulaké mana kanggo diluwari)",
 	["released"] = "DILUWARI!",
@@ -133,10 +133,10 @@ module.gui.activatecham = {
 
 }
 
-module.gui.caceltimed = {
+module.gui.cacel = {
 
-	["title"] = "WURUNGAKÉ MANTERA TIMED",
-	["body"] = "Apa kowé gelem murungaké mantera timed iki? Token ora bakal be refunded."
+	["title"] = "WURUNGAKÉ MANTERA WINATES",
+	["body"] = "Apa kowé gelem murungaké mantera winates iki? Token ora bakal be refunded."
 
 }
 
@@ -423,7 +423,7 @@ module.spells.names = {
 -- common description stuff
 local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
 local overload = "This is an Overload spell. It will grant you one Mana every 6 seconds for the next minute (10 in total). You can have only one overload active at a time."
-local timed = "This spell is timed. "  -- do not remove space
+local timed = "Mantera iki winates. "  -- do not remove space
 local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
 local event = "This is an Event spell. It will affect all normal stairs with " -- do not remove space
 local fill = "This is a Fill spell. It will create stairs in every empty uncursed intersection in a random direction. " -- do not remove spaces
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
