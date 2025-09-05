@@ -197,7 +197,7 @@ module.gui.results = {
 	["time"] = "WEKTU",
 	["rank"] = "PANGKAT",
 	["not"] = "N/A",
-	[1] = "PEMENANG",
+	[1] = "PAMENANG",
 	[2] = "ke-2",
 	[3] = "ke-3",
 	[4] = "ke-4",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
