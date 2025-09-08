@@ -18,7 +18,7 @@ module.gui.basic = {
 	["validate"] = "TEBUS",
 	["play"] = "MAIN",
 	["skip"] = "LIWATI\nLATIHAN",
-	["loading"] = "LOADING, PLEASE WAIT...",
+	["loading"] = "MUAT, NJALUK NGENTÈNI...",
 	["mode"] = "%s\nMODE",
 	["cd"] = "ULTIMATE\nCOOLDOWN",
 	["complete"] = "COMPLETE",
@@ -29,11 +29,11 @@ module.gui.switcher = {
 	["title"] = "GANTI SERVER",
 
 	["public"] = "SERVER PUBLIK",
-	["private"] = "SERVER PRIBADI",
+	["private"] = "SERVER PRIBADHI",
 	["join"] = "GABUNG",
 	["friends"] = "KANCA ONLINÉ",
 	["refresh"] = "nyegeraké...",
-	["fail"] = "FAILED TO REFRESH!",
+	["fail"] = "GAGAL NYEGERAKÉ! :(",
 
 }
 
@@ -41,27 +41,27 @@ module.gui.serversettings = {
 
 	["title"] = "SETÈLAN OWNER",
 
-	["Moderation"] = "MODERATION",
-	["rules"] = "Your server, Your rules.",
+	["Moderation"] = "MODHERASI",
+	["rules"] = "Servermu, Aturanmu.",
 	["temp"] = "All mutes and bans are temporary",
 	["kick"] = "KICK",
 	["ban"] = "BAN",
 	["mute"] = "MUTE",
 
 	["Drones"] = "SETÈLAN DRONE",
-	["DronesReadOnly"] = "SETÈLAN DRONE (read only)",
+	["DronesReadOnly"] = "SETÈLAN DRONE (waca mung)",
 	["DroneEnabled"] = "Drone diaktifaké",
 	["DroneFix"] = "Drone mulihaké undhak-undhakan",
-	["DroneRemove"] = "Drone remove cursed intersections",
+	["DroneRemove"] = "Drone remove prapatan dikutuk",
 	["DroneUnCurse"] = "Drone mulihaké undhak-undhakan dikutuk",
 	["DroneMove"] = "Drones move stairs in default mode",
 	["DroneSpin"] = "Drones spin stairs in default mode",
 	["DroneSpeed"] = "Kacepetan mlesir Drone (level/second)",
-	["DroneDelay"] = "Durasi Drone spin (seconds)",
+	["DroneDelay"] = "Durasi Drone spin (detik)",
 	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
 	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
-	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
+	["DroneBlock"] = "Cursed prapatan chance for every empty prapatan encounter (percent)",
+	["DroneCurse"] = "Cursed undhak-undhakan chance for creation and normal undhak-undhakan encounter (percent)",
 
 	["Tower"] = "SETÈLAN MENARA",
 	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
@@ -161,17 +161,17 @@ module.gui.gauges = {
 
 	["prompt"] = "Lumpat kanggo mulai, click again to cancel.",
 
-	["found"] = "%d staircases found (%.1f%% fill)",
-	["special"] = "%d are special (%.1f%%)",
-	["affected"] = "%d staircases will be affected (%.1f%%)",
-	["cursed"] = "%d cursed intersections found (%.1f%%)",
-	["fill"] = "%d staircases will be created (%.1f%%)",
+	["found"] = "%d undhak-undhakan found (%.1f%% fill)",
+	["special"] = "%d sing spésial (%.1f%%)",
+	["affected"] = "%d undhak-undhakan will be affected (%.1f%%)",
+	["cursed"] = "%d prapatan dikutuk found (%.1f%%)",
+	["fill"] = "%d undhak-undhakan will be created (%.1f%%)",
 	["purge"] = "%d objects will be destroyed (%.1f%%)",
-	["normal"] = "%d are already normal (%.1f%%)",
-	["restore"] = "%d staircases will be restored (%.1f%%)",
+	["normal"] = "%d sing wis normal (%.1f%%)",
+	["restore"] = "%d undhak-undhakan will be restored (%.1f%%)",
 	["bypass1"] = "%d curses are in the way (%.1f%%)",
-	["bypass2"] = "%d bypasses already exist (%.1f%%)",
-	["bypass3"] = "%d bypasses will be created (%.1f%%)",
+	["bypass2"] = "%d trabasan already exist (%.1f%%)",
+	["bypass3"] = "%d trabasan will be created (%.1f%%)",
 
 }
 
@@ -529,11 +529,11 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the choosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
+	["steal"] = "Mantera iki kanggo nyolong undhak-undhakan sing normal utawa rigged. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["stealabove"] = "Mantera iki kanggo nyolong undhak-undhakan sing normal utawa rigged sing ana ing ndhuwur. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["place"] = "Mantera iki kanggo mbalèkaké lan undhak-undhakan stolen back in the choosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
 	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
-	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
+	["sidepass"] = "Mantera iki kanggo nggawé trabasan bent from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
 	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
 
 	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast through crossing stairs, as stairs will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
@@ -683,16 +683,16 @@ local CommonPerksInsertTimedSpell = {
 
 module.gui.ranks = {
 
-	["title"] = "YOUR RANK",
+	["title"] = "PANGKAT",
 
 	--none
-	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "You will not have access to any spells!",
-	["none_3"] = "Jump on a morph in the middle of the map to change your alignment.",
+	["none_1"] = "Kowé durung milih kelas!",
+	["none_2"] = "Kowé ora have access to any spells!",
+	["none_3"] = "Lumpat ing lèmèr ngganti ing tengah menara kanggo ngganti kelas.",
 
 	--shared
 	["higher"] = "HIGHER RANK ACQUIRED",
-	["current"] = "YOUR CURRENT RANK",
+	["current"] = "PANGKAT CURRENT KOWÉ",
 	["lower"] = "RANK NOT ACQUIRED",
 
 	["more"] = "You need %d more climbs as %s to obtain this rank.",
@@ -708,10 +708,10 @@ module.gui.ranks = {
 		[9] = "Called Orb will travel twice as fast.",
 	}, 
 	["JOKER"] = { 
-		[4] = "Disco stairs have no effect on you.",
+		[4] = "Undhak-undhakan Disko saiki ora bisa nggawé kowé menyang nari.",
 		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
 		[6] = "You can now detect platform traps and fake stairs.",
-		[8] = "You can now walk on fake stairs.", 
+		[8] = "Kowé saiki bisa walk on fake stairs.", 
 		[9] = "You will get bonus Mana when someone triggers any prank. (1 mana per player pranked)",
 	},
 	["WICKED"] = {
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
