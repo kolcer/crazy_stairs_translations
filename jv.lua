@@ -21,7 +21,7 @@ module.gui.basic = {
 	["loading"] = "MUAT, NJALUK NGENTÈNI...",
 	["mode"] = "%s\nMODE",
 	["cd"] = "ULTIMATE\nCOOLDOWN",
-	["complete"] = "COMPLETE",
+	["complete"] = "RAMPUNG",
 }
 
 module.gui.switcher = {
@@ -64,19 +64,19 @@ module.gui.serversettings = {
 	["DroneCurse"] = "Cursed undhak-undhakan chance for creation and normal undhak-undhakan encounter (percent)",
 
 	["Tower"] = "SETÈLAN MENARA",
-	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
-	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
+	["TowerReadOnly"] = "SETÈLAN MENARA (waca mung)",
+	["InfMode"] = "Mode Infinit (ora bisa diganti wektu mbalap utawa mulih)",
 	["CasualPlayers"] = "Casual players allowed to cast spells",
 	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
 	["EvenLevels"] = "Even Levels Restricted",
 	["OrbMoves"] = "Endgame orb changes position",
 	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
 	["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["RaceDuration"] = "Durasi Balap Maximum. Will not affect current race. (seconds)",
-	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
-	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
-	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
-	["Cooldown"] = "Event and Rig cool down period (seconds)",
+	["RaceDuration"] = "Durasi Balap Maximum. Will not affect current race. (detik)",
+	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (detik)",
+	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (detik)",
+	["InfMin"] = "Infinite mode minimum interval duration (detik)",
+	["Cooldown"] = "Event and Rig cool down period (detik)",
 
 }
 
@@ -159,19 +159,19 @@ module.gui.codes = {
 
 module.gui.gauges = {
 
-	["prompt"] = "Lumpat kanggo mulai, click again to cancel.",
+	["prompt"] = "Lumpat kanggo mulai, utawa klik lagi kanggo murung.",
 
 	["found"] = "%d undhak-undhakan found (%.1f%% fill)",
 	["special"] = "%d sing spésial (%.1f%%)",
-	["affected"] = "%d undhak-undhakan will be affected (%.1f%%)",
+	["affected"] = "%d undhak-undhakan bakal kena pengaruh (%.1f%%)",
 	["cursed"] = "%d prapatan dikutuk found (%.1f%%)",
-	["fill"] = "%d undhak-undhakan will be created (%.1f%%)",
-	["purge"] = "%d objects will be destroyed (%.1f%%)",
+	["fill"] = "%d undhak-undhakan bakal dibangun (%.1f%%)",
+	["purge"] = "%d objects bakal diremuk (%.1f%%)",
 	["normal"] = "%d sing wis normal (%.1f%%)",
-	["restore"] = "%d undhak-undhakan will be restored (%.1f%%)",
+	["restore"] = "%d undhak-undhakan bakal dipulihaké (%.1f%%)",
 	["bypass1"] = "%d curses are in the way (%.1f%%)",
-	["bypass2"] = "%d trabasan already exist (%.1f%%)",
-	["bypass3"] = "%d trabasan will be created (%.1f%%)",
+	["bypass2"] = "%d trabasan sing wis ana (%.1f%%)",
+	["bypass3"] = "%d trabasan bakal digawé (%.1f%%)",
 
 }
 
@@ -272,7 +272,7 @@ module.spells.names = {
 
 	["bender"] = "Bender",
 	["wickedevent"] = "Remuk Kabèh Undhak-undhakan Normal",
-	["wickedaltevent"] = "Remukaké Kabèh Menara",
+	["wickedaltevent"] = "Sirnakaké Kabèh Menara!",
 
 	--KEEPER
 	["move"] = "Alih Undhak-undhakan",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
