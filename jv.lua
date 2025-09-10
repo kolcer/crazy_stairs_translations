@@ -1000,7 +1000,7 @@ module.gui.gameover.messages = {
 		"We should not restrict ourselves",
 		"Get possessed",
 		"Choose the dark side - It's easier than Illumination",
-		"Why would I care if people get stranded?",
+		"Yèn wong njaluk terdampar, ngapa aku care iku, èh?",
 	},
 	["ARCHON"] = {
 		"OPEN PORTAL, ???, PROFIT",
@@ -1058,7 +1058,7 @@ module.gui.gameover.messages = {
 		"We just have a bad PR. I blame Hollywood",
 		"If death is bad, then Necromancy must be good",
 		"I need to collect sou- I mean Mana, I need mana",
- 		"I am not scared of falling, this is a strategic spell!",
+ 		"Aku ora wedi karo tiba, iku mantera stratégis aku babo!",
 	},
 	["GREMLIN"] = {
 		"ROTATE, REVOLVE and HYPNOTIZE",
@@ -1066,10 +1066,10 @@ module.gui.gameover.messages = {
 		"You spin me right 'round, baby, right 'round",
 		"This staircase is too boring",
 		"Let me fix that staircase for you, heheh",
-		"Do you like my masterpiece? No? Too bad, I am only starting.",
-		"Doctor told me to relax, and this is how I relax.",
+		"Opo you like my masterpiece? No? Too bad, I am only starting.",
+		"Dhokter told me to relax, and this is how I relax.",
 		"Joker take some notes. Just kidding, hire me back in the Circus please!",
-		"Ndi undhak-undhakan iku lungo?",
+		"Undhak-undhakan iku lunga nang ndi ah?",
 		"Waaaaaaaaaaaaaa!!!!!!!",
 	},
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
