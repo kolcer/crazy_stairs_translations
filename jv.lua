@@ -955,7 +955,7 @@ module.gui.gameover.messages = {
 		"Ability to adjust is the basis of survival",
 		"I AM decisive, I just like to change my mind",
 		"You mastered a class? I mastered all the classes",
-		"One alignment only? Boring!",
+		"Siji kelas mung dah? Boring!",
 		"I like chaos",
 	},
 	["KEEPER"] = {
@@ -965,9 +965,9 @@ module.gui.gameover.messages = {
 		"Mission complete!",
 		"I like order",
 		"Chaos tamed",
-		"I am the only true alignment",
+		"Aku the only true alignment",
 		"One day I will sort out this tower",
-		"Fixed stairs = happy stairs",
+		"Undhak-undhakan dipulih = undhak-undhakan happy :)",
 	},
 	["THIEF"] = {
 		"\"BORROW\", USE and RETURN",
@@ -1008,14 +1008,14 @@ module.gui.gameover.messages = {
 		"Plan ahead to succeed",
 		"Study hard and you will succeed",
 		"Ability to gate stairs is an Art form",
-		"I can't using my Archon potar",
+		"Aku ora iso nggunakaké potar Archon aku",
 		"The cake is a lie",
 		"There is a gate for every problem",
-		"Confused everyone!",
+		"Bingungaké kabèh pendaki lah!",
 	},
 	["DRIFTER"] = {
 		"SURF, RIDE, and GLIDE",
-		"Who needs stairs anyway? We're in space!",
+		"Sapa butuh undhak²an anyway? Kami dalem AKASA lah!",
 		"Fly you fools!",
 		"Surf the Solar Wind",
 		"There is no down in space - Jump without worry",
@@ -1029,8 +1029,8 @@ module.gui.gameover.messages = {
 		"Never go in a straight line for too long",
 		"Splice up your life",
 		"Other people mess is Splicer's order",
-		"I can totally connect those stairs",
-		"Connect with people - nah, CONNECT WITH STAIRS!",
+		"Aku bisa totally connect those stairs",
+		"Sambungaké karo wong - nah, SAMBUNGAKÉ KARO UNDHAK-UNDHAKAN!",
 		"My mind is just twisted like that",
 		"Loro bab sing paling apik babagan Splicer: nyambungaké dan coklat mint.",
 		"Matur nuwun kanggo nylametké aku, Markerquest..",
@@ -1043,7 +1043,7 @@ module.gui.gameover.messages = {
 		"You can see your soul in the mirror",
 		"Are we watching them, or are they watching us?",
 		"Seven years of bad luck. For me or for the other one?",
-		"Are the ghosts stuck behind the mirror - or are we?",
+		"Apa the ghosts stuck behind the mirror - or are we?",
 		"I can no longer see myself, I see the future",
 		"Iki ora fase, Ibu!!!",
 		"Don't sneak up on me like that!",
@@ -1069,7 +1069,7 @@ module.gui.gameover.messages = {
 		"Do you like my masterpiece? No? Too bad, I am only starting.",
 		"Doctor told me to relax, and this is how I relax.",
 		"Joker take some notes. Just kidding, hire me back in the Circus please!",
-		"Where did that staircase go?",
+		"Ndi undhak-undhakan iku lungo?",
 		"Waaaaaaaaaaaaaa!!!!!!!",
 	},
 
@@ -1287,7 +1287,7 @@ module.static = {
 	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
 
 	["circus_1"] = "SIRKUS JOKER",
-	["circus_2"] = "SESANTI:\nPAÈS\nMBINGUNGAKÉ\nLAN\nGUYU",
+	["circus_2"] = "SESANTI:\nPAÈS\nBINGUNGAKÉ\nLAN\nGUYU",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
 	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
