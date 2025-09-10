@@ -229,7 +229,7 @@ module.spells.names = {
 	["trap"] = "Crea Botola",
 
 	["flipper"] = "Ribaltatore",
-	["jokerevent"] = "Evento Invisibile", --ToDo
+	["jokerevent"] = "Evento Nascondiscale",
 	["jokeraltevent"] = "Evento Sottosopra",
 
 	--WICKED
@@ -391,32 +391,32 @@ module.spells.names = {
 
 -- common description stuff
 
-local union = "Questo è un sortilegio temporaneo. Quando attivo, puoi camminare attraverso le scale che bloccano il passaggio. Qualsiasi effetto malevolo/benevolo è inefficace su di te mentre sei in questo stato. Tuttavia non puoi lanciare incantesimi."
-local overload = "Questo è un sortilegio a intervalli. Ricevi 1 mana ogni 6 secondi, per 1 minuto (10 in totale). Per rieseguire l'incantesimo è necessario attendere che finisca l'effetto di quello precedente."
+local union = "Questo è un sortilegio temporaneo. Quando attivo, ti permette di attraversare le scale che bloccano il passaggio e di camminare su quelle su cui normalmente non potresti salire. In questo stato le scale speciali non hanno alcun effetto su di te, tuttavia non puoi lanciare incantesimi."
+local overload = "Questo è un sortilegio a intervalli. Ricevi 1 mana ogni 6 secondi, per 1 minuto (10 in totale). Questo sortilegio non può essere attivato più volte contemporaneamente."
 local timed = "Questo è un sortilegio temporaneo. "  -- do not remove space
 local rig = "Questo è un sortilegio Rig. Tutte le scale normali verranno alterate una alla volta da " -- do not remove space
 local event = "Questo è un sortilegio Evento. Tutte le scale normali verranno alterate una alla volta dall'incantesimo " -- do not remove space
-local fill = "Questo è un sortilegio Culmine. Verranno generate scale in tutte le intersecazioni senza malefici. " -- do not remove spaces
+local fill = "Questo è un sortilegio Culmine. Verranno generate scale in tutte le intersecazioni libere e senza malefici. " -- do not remove spaces
 local mode = "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in fase %s. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: %s e %s, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
 local timedExtra = " Raggiungi il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
 
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "Genera una scala nella direzione indicata, distruggendo eventuali scale in mezzo.",
-	["restore"] = "Richiama la sfera finale sulla piattaforma colpita (in cima).\nSblocca il rango Defender per ridurre il costo a 2 Mana.\nSblocca il rango Saviour per velocizzare il processo.",
+	["summon"] = "Genera una scala normale nella direzione indicata, distruggendo eventuali scale in mezzo.",
+	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango Defender per ridurre il costo a 2 Mana.\nSblocca il rango Saviour per velocizzare il processo.",
 	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
 	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango Creator per raddoppiare la durabilità.",
-	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma posizionata direttamente sopra. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durabilità.",
+	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma soprastante. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durabilità.",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
-	["patronrigevent"] = rig .."Patron Rig. Quando calpestate, conferiscono 1 Mana (l'effetto non si attiva se il contenitore Mana è pieno). In seguito all'attivazione, ridiventano scale normali.",
+	["patronrigevent"] = rig .."Patron Rig. Quando calpestate, conferiscono 1 Mana (l'effetto non si attiva se il contenitore Mana è pieno). In seguito all'attivazione, tornano ad essere scale normali.",
 	["patronevent"] = fill ..  "Le scale create saranno normali.",
 	["patronaltevent"] = event .. "Restringi Scale.",
 	["patronmode"] = string.format(mode,"Patron","Patron Rig","Restringi Scale"),
 	["patronrefill"] = overload,
-	["patronunion"] = union,
+	["patronunion"] = union, --Continue from here
 
 	--JOKER
 	["flip"] = "Ribalta la scala colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
@@ -535,7 +535,7 @@ module.spells.descriptions = {
 	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango Vagabond per aumentare la velocità della piattaforma.\nSblocca il rango Traveller per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango Strider per far raggiungere alla piattaforma ancora un altro piano (3 in totale).",
 	["diagdrift"] = "Se la direzione indicata è fuori dall'area di gioco, la piattaforma farà un giro completo intorno al perimetro; altrimenti andrà avanti e indietro diagonalmente tra due piattaforme per 7 volte.",
 	["spin"] = "Rotea la scala colpita di 180 gradi.\nSblocca il rango Nomad per poter roteare le scale deviate.",
-	["outdrift"] = "Devia la scala colpita verso un'intersezione libera casuale sullo stesso piano.\nSblocca il rango Nomad per deviare scale già deviate.",
+	["outdrift"] = "Devia la scala colpita verso un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Nomad per deviare scale già deviate.",
 	["driftabove"] = "Devia leggermente la scala posizionata direttamente sopra a quella colpita in modo da permetterti di passarci sotto e scalarla.",
 
 	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSblocca almeno il rango Traveller per poter potenziare ascensori già esistenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifters",RankData.DRIFTER[3].name), 
