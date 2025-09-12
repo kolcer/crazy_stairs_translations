@@ -85,7 +85,7 @@ module.gui.shop = {
 	["title"] = "TOKO UNDHAK-UNDHAKAN ÉDAN",
 
 	["chameleon"] = "Chameleon bisa ngganti kelas wektu climb.",
-	["spectre"] = "Spectre iku kelas teleport based nodheg kanggo climb dhèwèkan (solo play).",
+	["spectre"] = "Spectre iku kelas teleport based nodheg kanggo mendaki dhèwèkan (solo play).",
 	["mana"] = "Expand your Mana storage capacity by 10 points.",
 
 	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
@@ -497,7 +497,7 @@ module.spells.descriptions = {
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "This spell will create Phantom Stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
+	["phantom"] = "Mantera iki kanggo nggawé undhak-undhakan Phantom in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
 	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
 	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
 	["horizontal"] = "This spell lets you teleport horizontally in the choosen direction. You can teleport through any un-cursed stairs in the way.",
@@ -1303,7 +1303,7 @@ module.static = {
 
 	["backdoor_1"] = "BACKDOOR HACKER",
 	["backdoor_2"] = "SESANTI:\nHACK\nGLITCH\nLAN\nBREAK",
-	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
+	["backdoor_3"] = "PROS:\nKelas Fastest\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
 
 	["hub_1"] = "GARASI SPLICER",
@@ -1313,7 +1313,7 @@ module.static = {
 
 	["shack_1"] = "GUBUG GREMLIN",
 	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nLAN\nHYPNOTIZE",
-	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
+	["shack_3"] = "PROS:\nOra pro\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
 	["mirror_1"] = "PANGILON REAVER",
@@ -1413,16 +1413,16 @@ module.tutorial = {
 	["tut_big_4"] = "Kabèh mantera mbutuhaké diolèhi karo mlumpat.",
 	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker bisa mbalik undhak-undhakan.",
 	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké mantera iki kanggo mbalik undhak-undhakan.",
-	["tut_big_7"] = "Some spells need to be executed on stairs.",
+	["tut_big_7"] = "Sawatara mantera kudu to dilakokaké mring undhak-undhakan.",
 	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper bisa ngalih undhak-undhakan.",
 	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké mantera iki mindah undhak-undhakan.",
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
 	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing gamé iki.",
 	["tut_big_12"] = "Kowé saiki dadi Wicked, use mantera iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
-	["tut_big_13"] = "Kowé bisa remukaké undhak-undhakan above, by jumping on below ones.",
-	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
-	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Tujuanmu mènèk kanggo mendaki lan njaluk orb ing menara. Apik luck!",
+	["tut_big_13"] = "Kowé bisa ngremukaké undhak-undhakan sing ana ing ndhuwur, by jumping on below ones.",
+	["tut_big_14"] = "Sadurungé kita miwiti, let aku show you the kelas prèmium.",
+	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre iku kelas prèmium nodheg kanggo mendaki dhèwèkan.",
+	["tut_big_16"] = "Tujuanmu mènèk kanggo mendaki lan njaluk orb ing menara. Muga-muga suksés! :]",
 
 	["tut_select"] = "Pilih mantera iki.",
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
