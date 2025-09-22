@@ -578,7 +578,7 @@ module.spells.descriptions = {
 
 
 	--HERETIC
-	["createcursed"] = "Mantera iki kanggo mbangun undhak-undhakan dikutuk in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
+	["createcursed"] = "Mantera iki kanggo mbangun undhak-undhakan dikutuk ing arah sing dipilih. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
 	["curse"] = "Mantera iki kanggo ngutuk undhak-undhakan ngisor. Use this spell again to uncurse stairs.",
 	["curseabove"] = "Mantera iki kanggo ngutuk undhak-undhakan sing ana ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "Mantera iki kanggo you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
@@ -594,8 +594,8 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Mantera iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dh to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistrotate"] = "Mantera iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistside"] = "Mantera iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dh to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistrotate"] = "Mantera iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Mantera iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "Mantera iki kanggo mulihaké any undhak-undhakan sing diplintir. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "Mantera iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
@@ -609,7 +609,7 @@ module.spells.descriptions = {
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
-	["createdual"] = "Mantera iki kanggo mbangun Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
+	["createdual"] = "Mantera iki kanggo mbangun undhak-undhakan for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
 	["copyplatform"] = "Mantera iki kanggo nyalin any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "Mantera iki kanggo mbangun a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
 	["undeadabove"] = "Mantera iki kanggo remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
@@ -641,7 +641,7 @@ module.spells.descriptions = {
 	["reaverunion"] = union,
 
 
-	["tram"] = "Mantera iki kanggo mbangun undhak-undhakan trèm ing arah sing dipilih. Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
+	["tram"] = "Mantera iki kanggo mbangun undhak-undhakan trèm ing arah sing dipilih. Undhak-undhakan trèm have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
 	["screwdown"] = "This spell will turn below stairs into downwards corkscrew. It will be near to impossible to ascend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["screwup"] = "This spell will turn above stairs into upwards corkscrew, allowing you to pass. It will be near to impossible to descend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["revolve"] = "This spell will turn below stairs into revolving propeller on a Z axis. You can choose direction of the rotation. Stairs will stop briefly after each 180 turn.",
@@ -792,7 +792,7 @@ module.gui.ranks = {
 		[9] = "Regenerate restores 10 mana instead of 6, and will restore 5 mana to those nearby your ghost.",
 	},
 	["GREMLIN"] = {
-		[4] = "You can now see all Gremlin Traps.",
+		[4] = "Kowé saiki bisa ndetèksi basangan Gremlin.",
 		[5] = "You can now jump on platform to call all adjacent Trams.",
 		[6] = "You are now immune to Gremlin Rigs.",
 		[8] = "You are now immune to Gremlin Traps.",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
