@@ -193,7 +193,7 @@ module.gui.results = {
 
 	["place"] = "POSISI",
 	["name"] = "JENENG",
-	["level"] = "LEVEL MAKSIMAL",
+	["level"] = "TATARAN MAKSIMAL",
 	["time"] = "WEKTU",
 	["rank"] = "PANGKAT",
 	["not"] = "N/A",
@@ -253,7 +253,7 @@ module.spells.names = {
 	--JOKER 
 	["flip"] = "Balik Undhak-undhakan",
 	["flipabove"] = "Balik Undhak-undhakan Dhuwur",
-	["fake"] = "Bangun Undhak-undhakan Fake",
+	["fake"] = "Bangun Undhak-undhakan Palsu",
 	["invisible"] = "Bangun Undhak-undhakan Ora Katon/Didhelikaké",
 	["disco"] = "Undhak-undhakan sing nggawé orang nari",
 	["trap"] = "Gawé Trap",
@@ -710,7 +710,7 @@ module.gui.ranks = {
 	["JOKER"] = { 
 		[4] = "Undhak-undhakan Disko saiki ora bisa nggawé kowé menyang nari.",
 		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
-		[6] = "You can now detect platform traps and fake stairs.",
+		[6] = "Kowé saiki bisa ndetèksi platform sing trap lan undhak-undhakan sing palsu.",
 		[8] = "Kowé saiki bisa walk on fake stairs.", 
 		[9] = "You will get bonus Mana when someone triggers any prank. (1 mana per player pranked)",
 	},
@@ -724,16 +724,16 @@ module.gui.ranks = {
 	["SPECTRE"] = { 
 		[4] = "You will get an extra 1 Mana when you collect crystals with Your Ghost.", 
 		[5] = "Your GHOSTIFY spell is now free.",
-		[6] = "You can now touch the orb at the top with your ghost to finish a climb.",
+		[6] = "Kowé saiki bisa touch orb at the top with your ghost to finish a climb.",
 		[8] = "You have the option to avoid triggering any Spectre Rigs.", 
-		[9] = "You can now walk on ghosted stairs.",
+		[9] = "Kowé saiki bisa walk on ghosted stairs.",
 	},
 	["KEEPER"] = {
 		[4] = "The Move Random spell and Keeper Rigs that you trigger will never cause the stairs to go down.",
-		[5] = "You can now move any un-cursed stairs.",
-		[6] = "Your Restore spell is now free.", 
+		[5] = "Kowé saiki bisa ngalih undhak-undhakan sing ora dikutuk any.",
+		[6] = "Mantera Pulih kowé saiki dadi gratis.", 
 		[8] = "You have the option to avoid triggering any Keeper Rigs.",
-		[9] = "You can now restore cursed stairs and cursed intersections.",
+		[9] = "Kowé saiki bisa mulihaké undhak-undhakan lan prapatan sing dikutuk.",
 	},
 	["HACKER"] = { 
 		[4] = "You have the option to be immune to Escalators.",
@@ -766,7 +766,7 @@ module.gui.ranks = {
 	["HERETIC"] = {
 		[4] = "When out of Mana, you can touch cursed stairs to uncurse them and get one Mana.",
 		[5] = "You are now immune to being possessed.",
-		[6] = "You can now cast the Flicker spell on a cursed intersection.",
+		[6] = "Kowé saiki bisa cast mantera Flicker mring prapatan sing dikutuk.",
 		[8] = "Your Create Cursed Stairs and Malediction spells can now destroy blocking cursed stairs.",
 		[9] = "You will get 1 extra Mana everytime someone is possessed.",
 	},
@@ -774,7 +774,7 @@ module.gui.ranks = {
 		[4] = "You can now restore disconnected stairs from platform.",
 		[5] = "Your Restore Twist spell is now free.",
 		[6] = "You have the option to avoid below Splicer Rigs.",
-		[8] = "You can now splice already spliced stairs.",
+		[8] = "Kowé saiki bisa nyambungaké undhak-undhakan sing wis diplintir.",
 		[9] = "You will get 1 Mana everytime you restore a Splice.",
 	},
 	["REAVER"] = {
@@ -826,7 +826,7 @@ module.gui.ranks = {
 
 module.gui.reshuffle = {
 
-	["title"] = "STAIRS RESHUFFLE MODE",
+	["title"] = "MODE RESHUFFLE UNDHAK-UNDHAKAN",
 
 	["body"] = "Apa kowé gelem kabèh undhak-undhakan to avoid collisions while moving? Yèn ora, any stairs in the way will be destroyed.",
 
@@ -882,10 +882,10 @@ module.gui.gameover = {}
 
 module.gui.gameover.results = {
 
-	["class"] = "YOUR ALIGNMENT",
-	["time"] = "YOUR CLIMB TIME",
-	["climbs"] = "CLIMBS AWARDED",
-	["tokens"] = "TOKENS AWARDED",
+	["class"] = "KELASMU",
+	["time"] = "WEKTU PENDAKIANMU",
+	["climbs"] = "PENDAKIAN AWARDED",
+	["tokens"] = "TOKEN AWARDED",
 	["rank"] = "YOUR CURRENT RANK",
 
 }
@@ -1185,31 +1185,31 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "How do I play?",
+	["cla_1"] = "Carané main Undhak-undhakan Édan?",
 	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
 	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
-	["cla_5"] = "How do I cast spells?",
+	["cla_5"] = "Carané cast mantera?",
 	["cla_6"] = "Every spell has a mana cost that will be required to cast the spell. When you collect enough Mana click on the spell. Your hands will start to glow, indicating a successful cast.",
 	["cla_7"] = "After casting, the spell still needs to be executed. All spells are executed by jumping. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
 	["cla_8"] = "Once you complete the climb, you will receive 3 spell tokens, that will let you unlock one spell. Complete the climb again to unlock more spells. You can't use tokens from one class to unlock a spell from another.",
-	["cla_9"] = "How do I cast ultimate spells?",
+	["cla_9"] = "Carané cast mantera ultimate?",
 	["cla_10"] = "First you will need to unlock all basic spells to access the ultimate spells. Ultimate spells do not require unlocking themself, but they use Tokens instead of Mana when cast.",
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
 	["pro_1"] = "MENARA PRO",
-	["pro_2"] = "Even levels restrictions",
+	["pro_2"] = "Tataran Even restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
-	["pro_5"] = "Cursed Stairs",
-	["pro_6"] = "In the Pro Tower Drones will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
+	["pro_5"] = "Undhak-undhakan Dikutuk",
+	["pro_6"] = "Jero Menara Pro, Drone bakal randomly mbangun undhak-undhakan dikutuk utawa ngutuk undhak-undhakan sing biyasa. There is 20% chance of Cursed Stairs apperance. Panah panuntun ora bakal ditampilaké ning cedhak undhak-undhakan dikutuk.",
 	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
-	["pro_8"] = "Only Heretics and Admirals can restore Cursed Stairs. Purge Event and Restoration will get rid of all cursed stairs too. However Drones will always create new ones in Pro Tower.",
-	["pro_9"] = "Cursed Intersections",
-	["pro_10"] = "In the Pro Tower Drones will randomly create Cursed Intersections too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
-	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
-	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
+	["pro_8"] = "Heretic lan Admiral mung bisa mulihaké undhak-undhakan dikutuk. Purge Event and Restoration will get rid of all cursed stairs too. However, Drone bakal always create new ones in Pro Tower.",
+	["pro_9"] = "Prapatan Dikutuk",
+	["pro_10"] = "Jero Menara Pro, drone bakal randomly nggawé prapatan dikutuk too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
+	["pro_11"] = "Prapatan dikutuk nyegah kabèh mantera platform, that are executed on arrows. Kowé ora bisa nggawé undhak-undhakan, kreteg utawa teleportasi tembus prapatan dikutuk.",
+	["pro_12"] = "Heretic, Admiral lan Drone mung bisa mulihaké prapatan dikutuk. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
 	["inf_1"] = "MENARA INFINIT",
 	["inf_2"] = "RACE MANDATORY",
@@ -1257,12 +1257,12 @@ module.static = {
 	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
 
 	["nexus_1"] = "SARANG HERETIC",
-	["nexus_2"] = "SESANTI:\nSAMPÉYAN\nMBOTÉN\nAJENG\nLIWETI",
+	["nexus_2"] = "SESANTI:\nAWAKMU\nMBOTÉN\nAJENG\nLIWETI",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
-	["guild_2"] = "OUR MOTTO:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
+	["guild_2"] = "SESANTI:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra bisa remukaké undhak-undhakan crossing",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
@@ -1278,7 +1278,7 @@ module.static = {
 
 	["haven_1"] = "SWARGA PATRON",
 	["haven_2"] = "SESANTI:\nBIYANTU\nPROTECT\nLAN\nGAWÉ",
-	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
+	["haven_3"] = "PROS:\nPaling gampang kanggo sinau\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
 	["haven_4"] = ""Those noobs need our help!"\nour founder's quote",
 
 	["shelter_1"] = "PAPAN PANGAYOM DRIFTER",
@@ -1312,17 +1312,17 @@ module.static = {
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
 	["shack_1"] = "GUBUG GREMLIN",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nLAN\nHYPNOTIZE",
+	["shack_2"] = "SESANTI:\nROTATE\nREVOLVE\nLAN\nHYPNOTIZE",
 	["shack_3"] = "PROS:\nOra pro\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
 	["mirror_1"] = "PANGILON REAVER",
-	["mirror_2"] = "OUR MOTTO:\nILO\nGANTI\nLAN\nGABUNG",
+	["mirror_2"] = "SESANTI:\nILO\nGANTI\nLAN\nGABUNG",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "'Mirrors are just doorways.'\nour founder's quote",
 
 	["grave_1"] = "KUBURAN NECROMANCER",
-	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nLAN\nBENEFIT",
+	["grave_2"] = "SESANTI:\nFOLLOW\nREVIVE\nLAN\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
 
@@ -1339,15 +1339,15 @@ module.static = {
 	["over_desc"] = "Each acquired rank adds 1 point",
 	["over_rank"] = "RANK",
 	["over_req"] = "POINTS REQ",
-	["emperor_req"] = "* Requires Chamelon OR Spectre",
-	["overmind_req"] = "** Requires Chamelon AND Spectre",
+	["emperor_req"] = "* Requires Chamelon UTAWA Spectre",
+	["overmind_req"] = "** Requires Chamelon LAN Spectre",
 	["over_prefix"] = "PREFIX",
 	["over_passes"] = "GAME PASSES\nREQUIRED",
-	["over_notgroup"] = "OLIVE COLOR - not in group",
-	["over_group"] = "TEAL COLOR - in the group",
+	["over_notgroup"] = "WERNA IJO JAÉTUN - not in group",
+	["over_group"] = "WERNA BIRU CAHYA - in the group",
 	["over_mod"] = "MODERATOR - player is a moderator",
 	["over_admin"] = "ADMIN - player is an admin", -- pwease sleazel uwu
-	["over_owner"] = "PRANK ME - Game creator (sleazel)",
+	["over_owner"] = "PRANK ME - Pangripat gamé (Sleazel)",
 
 	--OTHER
 	["muggle_lead"] = "MUGGLE PALING CEPET",
@@ -1582,14 +1582,14 @@ module.serverfeedback = {
 
 	--failed spell (server)
 	["unknown"] = "Unknown issue.", --this should not show for normal players, only exploiters
-	["lockedspell"] = "This spell is locked!",
-	["possessed"] = "You can't use spells while possessed.",
+	["lockedspell"] = "Mantera iki dikunci!",
+	["possessed"] = "Kowé ora bisa use manteramu nalika dikutuk.",
 	["spelllock"] = "You cannot cast spells now",
-	["nothere"] = "You can't use this spell in the tutorial.",
+	["nothere"] = "Kowé ora bisa use mantera iki jero latihan.",
 	["onlyracers"] = "Only racing players can cast spells.",
 	["cancelfirst"] = "You need to cancel current spell first...",
 	["stashfull"] = "Your stairs stash is full.",
-	["stashempty"] = "You have to steal stairs before casting this spell.",
+	["stashempty"] = "Kowé kudu nyolong undhak-undhakan before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
 	["regwait"] = "You cannot cast rigs and events, while the Staircase is regenerating.",
@@ -1613,19 +1613,19 @@ module.serverfeedback = {
 	["link"] = "Link is already here.",
 	["noblink"] = "You can only blink through blocking stairs.",
 	["noblink2"] = "You cannot blink on bridges and bent down stairs.",
-	["noflip"] = "Only normal, flipped or rigged stairs can be flipped.",
+	["noflip"] = "Undhak-undhakan sing biyasa, dibalik utawa rigged mung bisa dibalikaké.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
-	["wrongdirection"] = "You cannot cast this spell in that direction.",
+	["wrongdirection"] = "Kowé ora bisa cast mantera iki mring arah iku.",
 	["notfound"] = "Undhak-undhakan not found.",
 	["nocursedblink"] = "You can't blink around cursed stairs.",
 	["nostairs"] = "Ora ana undhak-undhakan kéné.",
-	["noground"] = "This spell cannot be cast on the ground level.",
-	["oddonly"] = "This spell cannot be cast on this level.",
+	["noground"] = "Mantera iki ora bisa be cast mring tataran ground.",
+	["oddonly"] = "Mantera iki ora bisa be cast on tataran iki.",
 	["noabove"] = "No stairs found directly above.",
 	["linklimit"] = "Only \"above spells\" can be executed on links.",
 	["lock"] = "You cannot cast spells now",
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
-	["cantgate"] = "This direction is blocked.",
+	["cantgate"] = "Arah iki diblokir.",
 	["wall"] = "Ana témbok sing wis kéné.",
 	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
 	["nogate"] = "These stairs are not gated.",
@@ -1635,7 +1635,7 @@ module.serverfeedback = {
 	["cursedtarget"] = "There are Cursed Stairs in that destination.",
 	["lockedsplit"] = "Cannot create split yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
-	["notwist"] = "Those stairs are not twisted.",--*
+	["notwist"] = "Undhak-undhakan iku ora diplintir.",--*
 	["wrongmove"] = "Stairs cannot be moved out of game area.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
