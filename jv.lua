@@ -12,7 +12,7 @@ module.gui = {}
 module.gui.basic = {
 	["yes"] = "IYA",
 	["no"] = "ORA",
-	["ok"] = "OKE",
+	["ok"] = "OKÉ",
 	["menu"] = "MENU",
 	["default"] = "DEFAULT",
 	["validate"] = "TEBUS",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
