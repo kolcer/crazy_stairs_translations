@@ -242,7 +242,7 @@ module.spells.names = {
 	["summon"] = "Bangun Undhak-undhakan",
 	["restore"] = "Panggil Orb", 
 	["split"] = "Rebuild Opposite",
-	["shrinkabove"] = "Shrink Above Stairs",
+	["shrinkabove"] = "Shrink Undhak-undhakan Dhuwur",
 	["link"] = "Gawé Kreteg",
 	["portal"] = "Gawé Portal",
 
@@ -449,8 +449,8 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Mantera iki kanggo mbalikaké undhak-undhakan, nganti top bakal become bottom lan vice versa. Kowé uga bisa mbalikaké dhèwèké manèh.",
-	["flipabove"] = "Mantera iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, nganti top bakal become bottom lan vice versa. You may also flip such stairs back.",
+	["flip"] = "Mantera iki kanggo mbalikaké undhak-undhakan, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé uga bisa mbalikaké dhèwèké manèh.",
+	["flipabove"] = "Mantera iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé uga bisa mbalikaké dhèwèké manèh.",
 	["fake"] = "Mantera iki kanggo mbangun undhak-undhakan palsu in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "Mantera iki kanggo nggawé undhak-undhakan didhelikaké. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
 	["disco"] = "Mantera iki kanggo nggawé undhak-undhakan dadi disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
@@ -470,7 +470,7 @@ module.spells.descriptions = {
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "Mantera iki kanggo nggawé témbok ing platform kanggo mblokir player, lan uga kreteg menyang platform iring wis 60 detik. Mung Wicked lan memedi digabung sing bisa go through such wall and on the link.",
+	["wall"] = "Mantera iki kanggo nggawé témbok ing platform kanggo mblokir pendaki, lan uga kreteg menyang platform iring sasuwéné 60 detik. Mung Wicked lan memedi digabung sing bisa mlaku tembus témbok lan ing kreteg.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
@@ -529,12 +529,12 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "Mantera iki kanggo nyolong undhak-undhakan sing normal utawa rigged. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "Mantera iki kanggo nyolong undhak-undhakan sing normal utawa rigged sing ana ing ndhuwur. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "Mantera iki kanggo mbalèkaké lan undhak-undhakan stolen back in the choosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
-	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
-	["sidepass"] = "Mantera iki kanggo nggawé trabasan bent from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
-	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
+	["steal"] = "Mantera iki kanggo nyolong undhak-undhakan sing biyasa utawa rigged. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["stealabove"] = "Mantera iki kanggo nyolong undhak-undhakan sing biyasa utawa rigged sing ana ing ndhuwur. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["place"] = "Mantera iki kanggo mbalèkaké lan undhak-undhakan stolen back ing arah sing dipilih. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
+	["uppass"] = "Mantera iki kanggo mbangun undhak-undhakan spiral karo undhak-undhakan sing dicolong kowé. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
+	["sidepass"] = "Mantera iki kanggo mbangunn trabasan bent karo undhak-undhakan sing dicolong kowé. Iki bakal dibangun ing arah sing dipilih sasuwéné siji menit. Rank up to ROBBER for the bypass to last two minutes.",
+	["drop"] = "Mantera iki allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
 
 	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast through crossing stairs, as stairs will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
 	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
@@ -578,7 +578,7 @@ module.spells.descriptions = {
 
 
 	--HERETIC
-	["createcursed"] = "Mantera iki kanggo mbangun undhak-undhakan dikutuk ing arah sing dipilih. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
+	["createcursed"] = "Mantera iki kanggo mbangun undhak-undhakan dikutuk ing arah sing dipilih. Any crossing stairs bakal diremukaké. Rank up to BANISHED to destroy crossing cursed stairs.",
 	["curse"] = "Mantera iki kanggo ngutuk undhak-undhakan ngisor. Use this spell again to uncurse stairs.",
 	["curseabove"] = "Mantera iki kanggo ngutuk undhak-undhakan sing ana ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "Mantera iki kanggo you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
@@ -594,7 +594,7 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Mantera iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dh to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistside"] = "Mantera iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
 	["twistrotate"] = "Mantera iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Mantera iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "Mantera iki kanggo mulihaké any undhak-undhakan sing diplintir. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
@@ -625,12 +625,12 @@ module.spells.descriptions = {
 	["necromancerunion"] = union,
 
 
-	["createmirrored"] = "Mantera iki kanggo mbangun undhak-undhakan nganggo pangilon ing tengahné. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. Rank up to Poltergeist to demolish crossing stairs with this spell. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["bigmirror"] = "Mantera iki kanggo nggawé pangilon raksasa on the whole level sasuwené 10 detik. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Giant mirrors will remove any small mirrors on the level. Rank up to Presence to extend mirror lifetime to 15 seconds.",
-	["smallmirror"] = "Mantera iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwené 6 detik. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Rank up to Presence to extend mirror lifetime to 10 seconds.",
-	["outermirror"] = "Mantera iki kanggo mbangun pangilon ing arah outer and twin mirror on the other side of the map. It can only be used in outer platforms. Players who walk through such mirror will merge with their ghost and teleport to the connected mirror on the other side of the tower. Mirror will fade away after 60 seconds. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["merge"] = "Mantera iki kanggo nggamblok to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["oneway"] = "This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Alien to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["createmirrored"] = "Mantera iki kanggo mbangun undhak-undhakan nganggo pangilon ing tengahné. Sauwisé kowé mlaku tembus pangilonné, kowé bakal digabung karo memedimu. Lumaku tembus pangilonné again lan kowé bakal dipisahaké karo memedimu. Rank up to Poltergeist to demolish crossing stairs with this spell. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["bigmirror"] = "Mantera iki kanggo nggawé pangilon raksasa ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné bisa mlaku ing platform pangilon. Nalika kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon raksasa bakal mbusek pangilon cilik ing tataran sing padha. Rank up to Presence to extend mirror lifetime to 15 seconds.",
+	["smallmirror"] = "Mantera iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pendaki sing digabung karo memediné bisa mlaku ing platform pangilon. Nalika kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Rank up to Presence to extend mirror lifetime to 10 seconds.",
+	["outermirror"] = "Mantera iki kanggo mbangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung bisa can only be used in outer platforms. Pendaki sing mlaku tembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menara. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["merge"] = "Mantera iki kanggo nggamblok to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["oneway"] = "Mantera iki kanggo nggawé undhak-undhakan dadi one-way passage, while merging players with their ghost, if they walk in proper direction. Kowé bisa milih arah sing arep diblokir. Rank up to Alien to be immune to one-way stairs effect. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will turn into one-way stairs with random direction blocked. Rank up to WIGHT to have an option to avoid below Reaver Rigs.",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
