@@ -104,7 +104,7 @@ module.gui.shop = {
 module.gui.spellbar = {
 
 	["share"] = "BAGÉ\nMANA",
-	["nocasual"] = "MUNG PEMBALAP SING BISA CAST MANTERA",
+	["nocasual"] = "MUNG PAMBALAP SING BISA CAST MANTERA",
 
 } 
 
@@ -167,7 +167,7 @@ module.gui.gauges = {
 	["cursed"] = "%d prapatan dikutuk found (%.1f%%)",
 	["fill"] = "%d undhak-undhakan bakal dibangun (%.1f%%)",
 	["purge"] = "%d objects bakal diremuk (%.1f%%)",
-	["normal"] = "%d sing wis normal (%.1f%%)",
+	["normal"] = "%d sing wis biyasa (%.1f%%)",
 	["restore"] = "%d undhak-undhakan bakal dipulihaké (%.1f%%)",
 	["bypass1"] = "%d curses are in the way (%.1f%%)",
 	["bypass2"] = "%d trabasan sing wis ana (%.1f%%)",
@@ -198,17 +198,17 @@ module.gui.results = {
 	["rank"] = "PANGKAT",
 	["not"] = "N/A",
 	[1] = "PAMENANG",
-	[2] = "ke-2",
-	[3] = "ke-3",
-	[4] = "ke-4",
-	[5] = "ke-5",
-	[6] = "ke-6",
-	[7] = "ke-7",
-	[8] = "ke-8",
-	[9] = "ke-9",
-	[10] = "ke-10",
-	[11] = "ke-11",
-	[12] = "ke-12",
+	[2] = "ka-2",
+	[3] = "ka-3",
+	[4] = "ka-4",
+	[5] = "ka-5",
+	[6] = "ka-6",
+	[7] = "ka-7",
+	[8] = "ka-8",
+	[9] = "ka-9",
+	[10] = "ka-10",
+	[11] = "ka-11",
+	[12] = "ka-12",
 
 }
 
@@ -271,7 +271,7 @@ module.spells.names = {
 	["wall"] = "Gawé Témbok" ,
 
 	["bender"] = "Bender",
-	["wickedevent"] = "Remuk Kabèh Undhak-undhakan Normal",
+	["wickedevent"] = "Remuk Kabèh Undhak-undhakan Biyasa",
 	["wickedaltevent"] = "Sirnakaké Kabèh Menara!",
 
 	--KEEPER
@@ -1261,12 +1261,12 @@ module.static = {
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
-	["guild_1"] = "PERSEMBUNYIAN THIEF",
+	["guild_1"] = "PANDHELIKAN THIEF",
 	["guild_2"] = "SESANTI:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra bisa remukaké undhak-undhakan crossing",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
-	["nether_1"] = "NJERO LEMAH SPECTRE",
+	["nether_1"] = "NERAKA SPECTRE",
 	["nether_2"] = "SESANTI:\nILANG\nDHELIK\nLAN\nTELEPORT",
 	["nether_3"] = "PROS:\nMantera Fast\nPerfect for solo play\nCONS:\nMbutuhaké Robux\nNot recommended for teams",
 	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
@@ -1482,8 +1482,8 @@ module.guide = {
 	
 	["stairs"] ={
 		
-		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
-		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
+		["cursed"] = "Can be exectued on undhak-undhakan sing biyasa, rigged utawa dikutuk.",
+		["all"] = "Can be executed on any stairs. Rank up to Annihilator to ngremukaké undhak-undhakan dikutuk.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
 		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
 		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
@@ -1535,7 +1535,7 @@ module.guide = {
 	},
 	
 	['anywhere'] = {
-		['anywhere'] = "This spell can be executed anywhere.",
+		['anywhere'] = "Mantera iki bisa be executed ing ngendi waé.",
 	},
 	
 	["nowhere"] = {
@@ -1586,8 +1586,8 @@ module.serverfeedback = {
 	["possessed"] = "Kowé ora bisa use manteramu nalika dikutuk.",
 	["spelllock"] = "You cannot cast spells now",
 	["nothere"] = "Kowé ora bisa use mantera iki jero latihan.",
-	["onlyracers"] = "Only racing players can cast spells.",
-	["cancelfirst"] = "You need to cancel current spell first...",
+	["onlyracers"] = "Mung pambalap bisa cast mantera.",
+	["cancelfirst"] = "Kowé need to cancel current mantera first...",
 	["stashfull"] = "Your stairs stash is full.",
 	["stashempty"] = "Kowé kudu nyolong undhak-undhakan before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
@@ -1873,7 +1873,7 @@ module.switchon = {
 
 module.switchoff = {
 
-	["JOKER"] = "You will now reveal invisible stairs.",
+	["JOKER"] = "Kowé saiki bakal ndetèksi undhak-undhakan sing invisible.",
 	["WICKED"] = "You will now trigger below Wicked Rigs.",
 	["KEEPER"] = "You will now trigger below Keeper Rigs.",
 	["SPECTRE"] = "You will now trigger below Spectre Rigs.",
@@ -1897,11 +1897,11 @@ module.eventspells = {
 	["patronaltevent"] = "%s has just shrunk all normal stairs!",
 
 	["jokerrigevent"] = "%s has just rigged all normal stairs with the Flip spell!",
-	["jokerevent"] = "%s wis ndhelikaké kabèh undhak-undhakan normal!",
-	["jokeraltevent"] = "%s wis mbalikaké kabèh kabèh undhak-undhakan normal!",
+	["jokerevent"] = "%s wis ndhelikaké kabèh undhak-undhakan biyasa!",
+	["jokeraltevent"] = "%s wis mbalikaké kabèh kabèh undhak-undhakan biyasa!",
 
 	["wickedrigevent"] = "%s has just rigged all normal stairs with Destroy spell!",
-	["wickedevent"] = "%s wis ngremukaké kabèh undhak-undhakan normal!",
+	["wickedevent"] = "%s wis ngremukaké kabèh undhak-undhakan biyasa!",
 	["wickedaltevent"] = "%s wis ngremukaké KABÈH menara!",
 
 	["keeperrigevent"] = "%s has just rigged all normal stairs with the Random Move spell!",
@@ -1930,18 +1930,18 @@ module.eventspells = {
 
 	["hereticrigevent"] = "%s has just rigged all normal stairs with Possess spell!",
 	["hereticevent"] = "%s has just schismatized all normal stairs!",
-	["hereticaltevent"] = "%s wis ngutuk kabèh undhak-undhakan normal!",
+	["hereticaltevent"] = "%s wis ngutuk kabèh undhak-undhakan biyasa!",
 
 	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
-	["splicerevent"] = "%s wis nyambungaké kabèh undhak-undhakan normal!",
+	["splicerevent"] = "%s wis nyambungaké kabèh undhak-undhakan biyasa!",
 	["spliceraltevent"] = "%s wis nyigar kabèh undhak-undhakan!",
 
 	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
-	["necromanceraltevent"] = "%s wis matèni kabèh undhak-undhakan normal!",
+	["necromanceraltevent"] = "%s wis matèni kabèh undhak-undhakan biyasa!",
 
 	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotize spell!",
-	["gremlinevent"] = "%s wis mubeng kabèh undhak-undhakan normal!",
+	["gremlinevent"] = "%s wis mubeng kabèh undhak-undhakan biyasa!",
 	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
 
 	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
@@ -1955,68 +1955,68 @@ module.eventspells = {
 
 module.spells.extras = {
 
-	["Prompt"] = "Click a spell below, to learn how to use it",
-	["Title1"] = "Basic spells",
-	["Title2"] = "Unique ultimate spells",
-	["Title3"] = "Shared ultimate spells",
-	["ManaCost"] = "Mana Cost: %s", 
-	["TokenCost"] = "Token Cost: %s", 
-	["Special"] = "Special requirements: %s",
+	["Prompt"] = "Klik mantera ing ngisor kanggo nyinau carané to use dhèwèké.",
+	["Title1"] = "Mantera dhasar",
+	["Title2"] = "Mantera pokok sing unik",
+	["Title3"] = "Mantera pokok sing dibagé",
+	["ManaCost"] = "Béaya mana: %s", 
+	["TokenCost"] = "Béaya token: %s", 
+	["Special"] = "Syarat spésial: %s",
 	["Execution"] = "Execution: %s",
-	["Description"] = "Description: %s",
-	["basic"] = "Basic",
-	["ultimate"] = "Ultimate",
+	["Description"] = "Dèskripsi: %s",
+	["basic"] = "Dhasar",
+	["ultimate"] = "Pokok",
 	["unlock"] = "0 (3 to unlock)",
-	["none"] = "No special requirements",
+	["none"] = "Ora ana syarat spésial",
 }
 
-module.gui.basic.jumpdelay = "jump delay"
-module.gui.basic.dancetime = "DANCE TIME!"
+module.gui.basic.jumpdelay = "tundha mlumpat"
+module.gui.basic.dancetime = "💃 WEKTUNÉ NJOGÈD! 🕺"
 
 module.gui.mana = {
 
 	["mana"] = "MANA", --main name
-	["ghost"] = "GHOST",
+	["ghost"] = "MEMEDI",
 	["spirit"] = "SPIRIT", --only for spirit spectres
-	["welcome"] = "WELCOME",
-	["drones"] = "DRONES",
+	["welcome"] = "SUGENG RAWUH",
+	["drones"] = "DRONE",
 	["orb"] = "ORB",
 	["refill"] = "REFILL", --for all 2nd rank bonuses
 	["overload"] = "OVERLOAD",
-	["steal"] = "STEAL",
-	["gift"] = "GIFT",
-	["share"] = "SHARE",
-	["prank"] = "PRANK",
+	["steal"] = "PENDAKI DICOLONG",
+	["gift"] = "PAWÈWÈH",
+	["share"] = "DIBAGÉ",
+	["prank"] = "PENDAKI DIAPUSI",
 	["possession"] = "POSSESSION",
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
-	["blessing"] = "BLESSING",
+	["blessing"] = "BERKAT",
 	["hack"] = "HACK",
 	["stash"] = "STASH",
 	["backdoor"] = "BACKDOOR",
-	["chamber"] = "CHAMBER",
-	["base"] = "BASE",
-	["circus"] = "CIRCUS",
-	["shelter"] = "SHELTER",
-	["haven"] = "HAVEN",
-	["study"] = "STUDY",
+	["chamber"] = "KAMAR",
+	["base"] = "PANGKALAN",
+	["circus"] = "SIRKUS",
+	["shelter"] = "PAPAN PANGAYOM",
+	["haven"] = "SWARGA",
+	["study"] = "TELAAH",
 	["nether"] = "NETHER",
-	["guild"] = "GUILD",
-	["nexus"] = "NEXUS",
+	["guild"] = "PANDHELIKAN",
+	["nexus"] = "SARANG",
 	["oasis"] = "OASIS",
-	["hub"] = "HUB",
-	["mirror"] = "MIRROR",
-	["grave"] = "GRAVE",
-	["shack"] = "SHACK",
+	["hub"] = "GARASI",
+	["mirror"] = "PANGILON",
+	["grave"] = "KUBURAN",
+	["shack"] = "GUBUG",
 	["regen"] = "REGENERATE",
 	["optimus"] = "OPTIMUS",
 
 }
 
 module.gui.hints = {
-	["bcancel"] = "Press B to cancel", --xbox b
-	["acancel"] = "Click again to cancel",
-	["ocancel"] = "Cancel other spell first", 
+	["bcancel"] = "Penet B kanggo murungaké", --xbox b
+	["acancel"] = "Klik manèh kanggo murungaké.",
+	["ocancel"] = "Wurungaké mantera other dhisik", 
 }
 
 module.gui.gameover.extras = {
@@ -2024,26 +2024,26 @@ module.gui.gameover.extras = {
 	["noobs"] = "Tutorials are for noobs!",
 	["possessed"] = "Those annoying Heretics!",
 	["hypnotized"] = "Where am I?",
-	["new"] = "New rank acquired - %s",
-	["none1"] = "WAIT! WHAT?",
-	["none2"] = "Does this game",
-	["none3"] = "have spells?"
+	["new"] = "Pangkat anyar acquired - %s",
+	["none1"] = "ENTÈNI! PIYÉ?",
+	["none2"] = "Opo gamé iki",
+	["none3"] = "duwé mantera lah?"
 
 }
 
 module.gui.gameover.raceplacements = {
-	"YOU HAVE WON THE RACE!",
-	"SECOND PLACE!",
-	"THIRD PLACE!",
-	"You have placed fourth.",
-	"You have placed fifth.",
-	"You have placed sixth.",
-	"You have placed seventh.",
-	"You have placed eighth.",
-	"You have placed ninth.",
-	"You have placed tenth.",
-	"You have placed eleventh.",
-	"You have placed twelfth.",
+	"KOWÉ WIS MENANG BALAP!",
+	"POSISI KALORO!",
+	"POSISI KATELU!",
+	"Kowé wis posisi kapapat.",
+	"Kowé wis posisi kalima.",
+	"Kowé wis posisi kaenem.",
+	"Kowé wis posisi kapitu.",
+	"Kowé wis posisi kawolu.",
+	"Kowé wis posisi kasanga.",
+	"Kowé wis posisi kasapuluh.",
+	"Kowé wis posisi kasawelas.",
+	"Kowé wis posisi karolas.",
 }
 
 -- PREPARATION --
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
