@@ -19,8 +19,8 @@ module.gui.basic = {
 	["play"] = "MAIN",
 	["skip"] = "LIWATI\nLATIHAN",
 	["loading"] = "MUAT, NJALUK NGENTÈNI...",
-	["mode"] = "%s\nMODE",
-	["cd"] = "ULTIMATE\nCOOLDOWN",
+	["mode"] = "MODE\n%s",
+	["cd"] = "PANGADHEMAN\nPOKOK",
 	["complete"] = "RAMPUNG",
 }
 
@@ -33,7 +33,7 @@ module.gui.switcher = {
 	["join"] = "GABUNG",
 	["friends"] = "KANCA ONLINÉ",
 	["refresh"] = "nyegeraké...",
-	["fail"] = "GAGAL NYEGERAKÉ! :(",
+	["fail"] = "GAGAL NYEGERAKÉ! :[",
 
 }
 
@@ -76,7 +76,7 @@ module.gui.serversettings = {
 	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (detik)",
 	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (detik)",
 	["InfMin"] = "Infinite mode minimum interval duration (detik)",
-	["Cooldown"] = "Event and Rig cool down period (detik)",
+	["Cooldown"] = "Jangka pangadheman Acara lan Rig (detik)",
 
 }
 
@@ -433,7 +433,7 @@ local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this sp
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "Mantera iki kanggo nggawé undhak-undhakan in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
+	["summon"] = "Mantera iki kanggo mbangun undhak-undhakan ing arah sing dipilih. Yèn ana undhak-undhakan sing nyilang ing arahmu, they will be destroyed.",
 	["restore"] = "Mantera iki kanggo calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
 	["split"] = "Mantera iki kanggo recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
 	["shrinkabove"] = "Mantera iki shrinks above stairs, allowing you to walk around them.",
@@ -1795,7 +1795,7 @@ module.serverfeedback = {
 	["init"] = "Initial infinite interval time changed",
 	["reduction"] = "Infinite reduction time changed",
 	["mininf"] = "Minimum infinite interval time changed",
-	["cooldown"] = "Rig and event spell cooldown changed",
+	["cooldown"] = "Pangadheman mantera acara lan rig diganti",
 	["speed"] = "Small drones speed changed",
 	["spin"] = "Small drones casting durasi changed",
 	["max"] = "Maximum target staircases amount changed",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
