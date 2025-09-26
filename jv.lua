@@ -42,8 +42,8 @@ module.gui.serversettings = {
 	["title"] = "SETÈLAN OWNER",
 
 	["Moderation"] = "MODHERASI",
-	["rules"] = "Servermu, Aturanmu.",
-	["temp"] = "All mutes and bans are temporary",
+	["rules"] = "Server duwékmu, Aturan duwékmu.",
+	["temp"] = "Kabèh mute and ban are temporary",
 	["kick"] = "KICK",
 	["ban"] = "BAN",
 	["mute"] = "MUTE",
@@ -52,21 +52,21 @@ module.gui.serversettings = {
 	["DronesReadOnly"] = "SETÈLAN DRONE (waca mung)",
 	["DroneEnabled"] = "Drone diaktifaké",
 	["DroneFix"] = "Drone mulihaké undhak-undhakan",
-	["DroneRemove"] = "Drone remove prapatan dikutuk",
+	["DroneRemove"] = "Drone mbusek prapatan dikutuk",
 	["DroneUnCurse"] = "Drone mulihaké undhak-undhakan dikutuk",
-	["DroneMove"] = "Drones move stairs in default mode",
-	["DroneSpin"] = "Drones spin stairs in default mode",
-	["DroneSpeed"] = "Kacepetan mlesir Drone (level/second)",
-	["DroneDelay"] = "Durasi Drone spin (detik)",
+	["DroneMove"] = "Drone move undhak-undhakan in mode default",
+	["DroneSpin"] = "Drone spin undhak-undhakan in mode default",
+	["DroneSpeed"] = "Kacepetan mlesir Drone (tataran/detik)",
+	["DroneDelay"] = "Durasi puteran Drone (detik)",
 	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
 	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Cursed prapatan chance for every empty prapatan encounter (percent)",
-	["DroneCurse"] = "Cursed undhak-undhakan chance for creation and normal undhak-undhakan encounter (percent)",
+	["DroneBlock"] = "Kamungkinan prapatan dikutuk kanggo saben ana prapatan kothong encounter (persèn)",
+	["DroneCurse"] = "Kamungkinan undhak-undhakan dikutuk for creation and undhak-undhakan biyasa encounter (persèn)",
 
 	["Tower"] = "SETÈLAN MENARA",
 	["TowerReadOnly"] = "SETÈLAN MENARA (waca mung)",
 	["InfMode"] = "Mode Infinit (ora bisa diganti wektu mbalap utawa mulih)",
-	["CasualPlayers"] = "Casual players allowed to cast spells",
+	["CasualPlayers"] = "Pendaki kasual allowed to cast mantera",
 	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
 	["EvenLevels"] = "Even Levels Restricted",
 	["OrbMoves"] = "Endgame orb changes position",
@@ -177,13 +177,13 @@ module.gui.gauges = {
 
 module.gui.jukebox = {
 
-	["title"] = "JUKEBOX",
+	["title"] = "PAMUTER MUSIK",
 
 	["master"] = "VOLUME MASTER",
-	["default"] = "(using volume master)",
-	["climb"] = "MUSIK CLIMB",
+	["default"] = "(nggunakaké volume master)",
+	["climb"] = "MUSIK MENDAKI",
 	["endgame"] = "MUSIK ENDGAME",
-	["failed"] = "[failed to load]",
+	["failed"] = "[gagal muat]",
 
 }
 
@@ -1347,7 +1347,7 @@ module.static = {
 	["over_group"] = "WERNA BIRU CAHYA - in the group",
 	["over_mod"] = "MODERATOR - player is a moderator",
 	["over_admin"] = "ADMIN - player is an admin", -- pwease sleazel uwu
-	["over_owner"] = "PRANK ME - Pangripat gamé (Sleazel)",
+	["over_owner"] = "PRANK ME - Pangripat game (Sleazel)",
 
 	--OTHER
 	["muggle_lead"] = "MUGGLE PALING CEPET",
@@ -1411,13 +1411,13 @@ module.tutorial = {
 	["tut_big_2"] = "Kapisan, sinau piyé carané ngganti.",
 	["tut_big_3"] = "Kowé saiki dadi Patron, Patron bisa nggawé undhak-undhakan.",
 	["tut_big_4"] = "Kabèh mantera mbutuhaké diolèhi karo mlumpat.",
-	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker bisa mbalik undhak-undhakan.",
-	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké mantera iki kanggo mbalik undhak-undhakan.",
+	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker bisa mbalikaké undhak-undhakan.",
+	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké mantera iki kanggo mbalikaké undhak-undhakan.",
 	["tut_big_7"] = "Sawatara mantera kudu to dilakokaké mring undhak-undhakan.",
 	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper bisa ngalih undhak-undhakan.",
 	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké mantera iki mindah undhak-undhakan.",
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
-	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing gamé iki.",
+	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing game iki.",
 	["tut_big_12"] = "Kowé saiki dadi Wicked, use mantera iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
 	["tut_big_13"] = "Kowé bisa ngremukaké undhak-undhakan sing ana ing ndhuwur, by jumping on below ones.",
 	["tut_big_14"] = "Sadurungé kita miwiti, let aku show you the kelas prèmium.",
@@ -2026,7 +2026,7 @@ module.gui.gameover.extras = {
 	["hypnotized"] = "Where am I?",
 	["new"] = "Pangkat anyar acquired - %s",
 	["none1"] = "ENTÈNI! PIYÉ?",
-	["none2"] = "Opo gamé iki",
+	["none2"] = "Opo game iki",
 	["none3"] = "duwé mantera lah?"
 
 }
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
