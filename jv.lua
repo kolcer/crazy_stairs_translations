@@ -1301,7 +1301,7 @@ module.static = {
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
 	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
 
-	["backdoor_1"] = "BACKDOOR HACKER",
+	["backdoor_1"] = "WÈB HACKER",
 	["backdoor_2"] = "SESANTI:\nHACK\nGLITCH\nLAN\nBREAK",
 	["backdoor_3"] = "PROS:\nKelas Fastest\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
@@ -1330,9 +1330,9 @@ module.static = {
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
 	["leader_update"] = "Update in: ",	
 	["leader_updating"] = "Updating...",	
-	["leader_rank"] = "RANK",
-	["leader_req"] = "CLIMBS REQ",
-	["leader_off"] = "Custom tower does not support leaderboards.",
+	["leader_rank"] = "PANGKAT",
+	["leader_req"] = "PENDAKIAN REQ",
+	["leader_off"] = "Leaderboards ora kasadhiya njero Menara Custom.",
 
 	--OVERALL
 	["over_title"] = "OVERALL RANKS",
@@ -1581,7 +1581,7 @@ module.serverfeedback = {
 	["regenused"] = "Regen already used during this climb.",
 
 	--failed spell (server)
-	["unknown"] = "Unknown issue.", --this should not show for normal players, only exploiters
+	["unknown"] = "Masalah ora dingerteni.", --this should not show for normal players, only exploiters
 	["lockedspell"] = "Mantera iki dikunci!",
 	["possessed"] = "Kowé ora bisa use manteramu nalika dikutuk.",
 	["spelllock"] = "You cannot cast spells now",
@@ -1598,8 +1598,8 @@ module.serverfeedback = {
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
 	["cursed"] = "Undhak-undhakan iki dikutuk!",
-	["cursed2"] = "Ana undhak-undhakan dikutuk iku in the way!",
-	["blocked"] = "intersection iki dikutuk.",
+	["cursed2"] = "Ana undhak-undhakan dikutuk iku ing arah!",
+	["blocked"] = "Prapatan iki dikutuk.",
 	["locked"] = "Undhak-undhakan iki dikunci.",
 	["platformlocked"] = "Target platform is locked.",
 	["normalrig"] = "This spell works only on normal or rigged stairs.",
@@ -1867,7 +1867,7 @@ module.switchon = {
 	["DRIFTER"] = "You will no longer trigger below Drifter Rigs.",
 	["SPLICER"] = "You will no longer trigger below Splicer Rigs.",
 	["REAVER"] = "You will no longer trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews locked.",
+	["GREMLIN"] = "Puter sing cedhak saiki dikunci.",
 
 }
 
@@ -1882,17 +1882,17 @@ module.switchoff = {
 	["DRIFTER"] = "You will now trigger below Drifter Rigs.",
 	["SPLICER"] = "You will now trigger below Splicer Rigs.",
 	["REAVER"] = "You will now trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews unlocked.",
+	["GREMLIN"] = "Puter sing cedhak saiki ora dikunci.",
 }
 
-local timedSpell = "%s just cast the %s spell!"
+local timedSpell = "%s cast mantera %s!"
 
 module.timedspells = {}
 
 
 module.eventspells = {
 
-	["patronrigevent"] = "%s has just rigged all normal stairs with Mana Gift!",
+	["patronrigevent"] = "%s wis ngerigaké kabèh undhak-undhakan biyasa karo Pawèwèh Mana!",
 	["patronevent"] = "%s has just overloaded the tower with stairs!",
 	["patronaltevent"] = "%s has just shrunk all normal stairs!",
 
@@ -1948,14 +1948,14 @@ module.eventspells = {
 	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
 	["reaveraltevent"] = "%s has turned all normal stairs into upward One-Ways!",
 
-	["newmode"] = "%s has just switched drones into %s mode!",
+	["newmode"] = "%s has just switched drones into mode %s!",
 
 	["chameleonrigevent"] = "%s has just rigged all normal stairs with a Mystery spell!"
 }
 
 module.spells.extras = {
 
-	["Prompt"] = "Klik mantera ing ngisor kanggo nyinau carané to use dhèwèké.",
+	["Prompt"] = "Klik mantera ing ngisor kanggo nyinau carané nggunakakéné.",
 	["Title1"] = "Mantera dhasar",
 	["Title2"] = "Mantera pokok sing unik",
 	["Title3"] = "Mantera pokok sing dibagé",
@@ -1966,7 +1966,7 @@ module.spells.extras = {
 	["Description"] = "Dèskripsi: %s",
 	["basic"] = "Dhasar",
 	["ultimate"] = "Pokok",
-	["unlock"] = "0 (3 to unlock)",
+	["unlock"] = "0 (3 kanggo mbukak)",
 	["none"] = "Ora ana syarat spésial",
 }
 
@@ -1981,19 +1981,19 @@ module.gui.mana = {
 	["welcome"] = "SUGENG RAWUH",
 	["drones"] = "DRONE",
 	["orb"] = "ORB",
-	["refill"] = "REFILL", --for all 2nd rank bonuses
+	["refill"] = "NGISI", --for all 2nd rank bonuses
 	["overload"] = "OVERLOAD",
-	["steal"] = "PENDAKI DICOLONG",
+	["steal"] = "NYOLONG",
 	["gift"] = "PAWÈWÈH",
 	["share"] = "DIBAGÉ",
-	["prank"] = "PENDAKI DIAPUSI",
+	["prank"] = "NGAPUSI",
 	["possession"] = "POSSESSION",
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
 	["blessing"] = "BERKAT",
 	["hack"] = "HACK",
 	["stash"] = "STASH",
-	["backdoor"] = "BACKDOOR",
+	["backdoor"] = "WÈB",
 	["chamber"] = "KAMAR",
 	["base"] = "PANGKALAN",
 	["circus"] = "SIRKUS",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
