@@ -416,17 +416,17 @@ module.spells.descriptions = {
 	["patronaltevent"] = event .. "Restringi Scale.",
 	["patronmode"] = string.format(mode,"Patron","Patron Rig","Restringi Scale"),
 	["patronrefill"] = overload,
-	["patronunion"] = union, --Continue from here
+	["patronunion"] = union,
 
 	--JOKER
 	["flip"] = "Ribalta la scala colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
 	["flipabove"] = "Ribalta la scala posizionata direttamente sopra a quella colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
 	["fake"] = "Genera una scala illusoria nella direzione indicata, distruggendo eventuali scale in mezzo. Non può essere scalata, se non da altri Joker con rango Trickster sbloccato e giocatori con il sortilegio Unione Spettrale attivo.",
 	["invisible"] =  "Genera una scala invisibile nella direzione indicata, se l'intersecazione è libera. Quando calpestata, diventa visibile a tutti (opzionale se il rango Jester è sbloccato).",
-	["disco"] = "Trasforma la scala colpita in una pista da ballo. Chi la calpesterà, non potrà fare a meno di ballare.\nSblocca il rango Comic per diventarne immune.",
-	["trap"] = "Sostituisce la piattaforma colpita con una fasulla. I malcapitati che ci passeranno sopra cadranno al piano di sotto.\nSblocca il rango Jokester per essere in grado di individuarle.\nSblocca il rango Trickster per diventarne immune.",
+	["disco"] = "Trasforma la scala colpita in una pista da ballo. Chi la calpesterà, non potrà fare a meno di ballare!\nSblocca il rango Comic per diventarne immune.",
+	["trap"] = "Sostituisce la piattaforma colpita con una trappola per 60 secondi. I malcapitati che ci passeranno sopra cadranno al piano di sotto.\nSblocca il rango Jokester per essere in grado di individuarle.\nSblocca il rango Trickster per diventarne immune.",
 
-	["flipper"] = timed ..  "Permette di ribaltare scale in continuazione, per 60 secondi. Se scale posizionate direttamente sopra a quella colpita non sono presenti, ribalta la scala colpita."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
+	["flipper"] = timed ..  "Permette di ribaltare scale in continuazione, per 60 secondi. Le scale direttamente al di sopra di quella colpita avranno la priorità. In caso esse non siano presenti, ribalta la scala sottostante."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "Joker Rig. Quando calpestate, si ribaltano invertendo alto e basso.",
 	["jokerevent"] = event .. "Scale Invisibili.",
 	["jokeraltevent"] = event .. "Ribalta Scale.",
@@ -435,16 +435,17 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "Distrugge la scala colpita, qualunque essa sia.\nSblocca il rango Vile per rimuovere il costo di esecuzione.\nSblocca il rango Vicious per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango Annihilator per poter distruggere le scale maledette.",
-	["destroyabove"] = "Distrugge la scala posizionata direttamente sopra a quella colpita, qualunque essa sia.\nSblocca il rango Vicious per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango Annihilator per poter distruggere le scale maledette.",
-	["bend"] = "Piega la scala colpita verso l'alto, collegando l'estremità inferiore alla piattaforma posizionata direttamente sopra.",
+	["destroy"] = "Distrugge la scala colpita a patto che essa non sia maledetta.\nSblocca il rango Vile per rimuovere il costo di esecuzione.\nSblocca il rango Vicious per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango Annihilator per poter distruggere le scale maledette.",
+	["destroyabove"] = "Distrugge la scala posizionata direttamente sopra a quella colpita a patto che essa non sia maledetta.\nSblocca il rango Vicious per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango Annihilator per poter distruggere le scale maledette.",
+	["bend"] = "Piega la scala colpita verso l'alto formando un ponte tra le piattaforme sovrastanti",
 	["damage"] = "Frantuma la scala posizionata direttamente sopra a quella colpita, lasciando indietro solo alcuni gradini. Prima di metterti alla prova, fai attenzione alla ricarica del salto.\nSblocca il rango Destroyer per poterci camminare come se fosse una scala normale.",
 	["flatten"] = "Piega verso il basso la scala opposta, collegando l'estremità superiore alla tua piattaforma.",
-	["wall"] = "Genera una barriera temporanea che blocca il passaggio, ricoprendo solo un lato della piattaforma. Oltre la barriera, viene creato un collegamento tra due piattaforme, attraversabile solo da altri Wicked o da chi ha il sortilegio Unione Spettrale attivo. Dura 60 secondi. Alcuni incantesimi, come Passaggio o Scatto Fantasma, possono ignorarla.",
+	["wall"] = "Genera una barriera nella direzione indicata che blocca il passaggio per 60 secondi. Oltre essa viene generato un collegamento con la piattaforma seguente, attraversabile solo da Wicked o giocatori con il sortilegio Unione Spettrale attivo. Alcuni incantesimi sono comunque in grado di passarci attraverso.",
 
-	["bender"] = timed .. "Permette di piegare scale in continuazione, per 60 secondi. Se possibile, sia la scala colpita che quella soprastante verranno piegate."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
+	 --Continue from here
+	["bender"] = timed .. "Permette di piegare scale verso l'alto in continuazione, per 60 secondi. Se possibile, sia la scala colpita che quella soprastante verranno piegate."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (ignorato dal rango Devil).",
-	["wickedevent"] = event .. "Demolisci Scale.",
+	["wickedevent"] = event .. "Demolisci Scale. Non viene attivata la rigenerazione.",
 	["wickedaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno demolite e i malefici verranno rimossi, senza eccezioni. Viene attivata la rigenerazione.",
 	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Piega Scale"),
 	["wickedrefill"] = overload,
