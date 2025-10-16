@@ -31,7 +31,7 @@ module.gui.switcher = {
 	["public"] = "SERVER PUBLIK",
 	["private"] = "SERVER PRIBADHI",
 	["join"] = "GABUNG",
-	["friends"] = "KÅNCÅ ONLINÉ",
+	["friends"] = "KÅNCÅ ONLINE",
 	["refresh"] = "nyegeraké...",
 	["fail"] = "GAGAL NYEGERAKÉ! :[",
 
@@ -60,12 +60,12 @@ module.gui.serversettings = {
 	["DroneDelay"] = "Durasi puteran Drone (detik)",
 	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
 	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Kamungkinan prapatan dikutuk kanggo saben ana prapatan kothong encounter (persèn)",
+	["DroneBlock"] = "Kamungkinan prapatan dikutuk kanggo saben ånå prapatan kothong encounter (persèn)",
 	["DroneCurse"] = "Kamungkinan undhak-undhakan dikutuk for creation and undhak-undhakan biyasa encounter (persèn)",
 
-	["Tower"] = "SETÈLAN MENARA",
-	["TowerReadOnly"] = "SETÈLAN MENARA (waca mung)",
-	["InfMode"] = "Mode Infinit (ora bisa diganti wektu mbalap utåwå mulih)",
+	["Tower"] = "SETÈLAN MENÅRÅ",
+	["TowerReadOnly"] = "SETÈLAN MENÅRÅ (waca mung)",
+	["InfMode"] = "Mode Infinit (ora biså diganti wektu mbalap utåwå mulih)",
 	["CasualPlayers"] = "Pendaki kasual allowed to cast månterå",
 	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
 	["EvenLevels"] = "Even Levels Restricted",
@@ -84,7 +84,7 @@ module.gui.shop = {
 
 	["title"] = "TOKO UNDHAK-UNDHAKAN ÉDAN",
 
-	["chameleon"] = "Chameleon bisa ngganti kelas wektu climb.",
+	["chameleon"] = "Chameleon biså ngganti kelas wektu climb.",
 	["spectre"] = "Spectre iku kelas teleport based nodheg kanggo mendaki dhèwèkan (solo play).",
 	["mana"] = "Expand your Mana storage capacity by 10 points.",
 
@@ -104,7 +104,7 @@ module.gui.shop = {
 module.gui.spellbar = {
 
 	["share"] = "BAGÉ\nMANA",
-	["nocasual"] = "MUNG PAMBALAP SING BISA CAST MÅNTERå",
+	["nocasual"] = "MUNG PAMBALAP SING BISÅ CAST MÅNTERÅ",
 
 } 
 
@@ -170,7 +170,7 @@ module.gui.gauges = {
 	["normal"] = "%d sing wis biyasa (%.1f%%)",
 	["restore"] = "%d undhak-undhakan bakal dipulihaké (%.1f%%)",
 	["bypass1"] = "%d curses are in the way (%.1f%%)",
-	["bypass2"] = "%d trabasan sing wis ana (%.1f%%)",
+	["bypass2"] = "%d trabasan sing wis ånå (%.1f%%)",
 	["bypass3"] = "%d trabasan bakal digawé (%.1f%%)",
 
 }
@@ -247,15 +247,15 @@ module.spells.names = {
 	["portal"] = "Gawé Portal",
 
 	["summoner"] = "Summoner",
-	["patronevent"] = "Berkahi Menara karo Undhak-undhakan",
+	["patronevent"] = "Berkahi Menårå karo Undhak-undhakan",
 	["patronaltevent"] = "Shrinkage",
 
 	--JOKER 
-	["flip"] = "Balik Undhak-undhakan",
-	["flipabove"] = "Balik Undhak-undhakan Dhuwur",
+	["flip"] = "Walik Undhak-undhakan",
+	["flipabove"] = "Walik Undhak-undhakan Dhuwur",
 	["fake"] = "Bangun Undhak-undhakan Palsu",
 	["invisible"] = "Bangun Undhak-undhakan Ora Katon/Didhelikaké",
-	["disco"] = "Undhak-undhakan sing nggawé orang nari",
+	["disco"] = "Undhak-undhakan sing nggawé wong nari",
 	["trap"] = "Gawé Trap",
 
 	["flipper"] = "Flipper",
@@ -272,7 +272,7 @@ module.spells.names = {
 
 	["bender"] = "Bender",
 	["wickedevent"] = "Remuk Kabèh Undhak-undhakan Biyasa",
-	["wickedaltevent"] = "Sirnakaké Kabèh Menara!",
+	["wickedaltevent"] = "Sirnakaké Kabèh Menårå!",
 
 	--KEEPER
 	["move"] = "Alih Undhak-undhakan",
@@ -284,10 +284,10 @@ module.spells.names = {
 
 	["ascension"] = "Ascension",
 	["keeperevent"] = "Alih Kabèh Undhak-undhakan",
-	["keeperaltevent"] = "Mulihaké Kabèh Menara",
+	["keeperaltevent"] = "Mulihaké Kabèh Menårå",
 
 	--SPECTRE
-	["phantom"] = "Mbangun Undhak-undhakan Lenyap",
+	["phantom"] = "Bangun Undhak-undhakan Lenyap",
 	["ghost"] = "Ghostify Above Stairs",
 	["shadow"] = "Ghostify Stairs",
 	["horizontal"] = "Horizontal Teleport",
@@ -356,7 +356,7 @@ module.spells.names = {
 
 	["malediction"] = "Malediction",
 	["hereticevent"] = "Disunion",
-	["hereticaltevent"] = "Kutuk Menara",
+	["hereticaltevent"] = "Kutuk Menårå",
 
 	--SPLICER
 	["twistup"] = "Sambung Undhak-undhakan Up",
@@ -386,7 +386,7 @@ module.spells.names = {
 	["createmirrored"] = "Bangun Undhak-undhakan Pangilon",
 	["bigmirror"] = "Gawé Platform Pangilon Raksasa",
 	["smallmirror"] = "Gawé Platform Pangilon Cilik",
-	["outermirror"] = "Bangun Portal Jaba Pangilon",
+	["outermirror"] = "Bangun Portal njåbå Pangilon",
 	["merge"] = "Gamblok Reaver",
 	["oneway"] = "Undhak-undhakan Siji Arah",
 
@@ -433,7 +433,7 @@ local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this sp
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "Månterå iki kanggo mbangun undhak-undhakan ing arah sing dipilih. Yèn ana undhak-undhakan sing nyilang ing arahmu, they will be destroyed.",
+	["summon"] = "Månterå iki kanggo mbangun undhak-undhakan ing arah sing dipilih. Yèn ånå undhak-undhakan sing nyilang ing arahmu, they will be destroyed.",
 	["restore"] = "Månterå iki kanggo calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
 	["split"] = "Månterå iki kanggo recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
 	["shrinkabove"] = "Månterå iki shrinks above stairs, allowing you to walk around them.",
@@ -449,8 +449,8 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Månterå iki kanggo mbalikaké undhak-undhakan, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé uga bisa mbalikaké dhèwèké manèh.",
-	["flipabove"] = "Månterå iki kanggo mbalikaké undhak-undhakan sing ana ing ndhuwur, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé uga bisa mbalikaké dhèwèké manèh.",
+	["flip"] = "Månterå iki kanggo mbalikaké undhak-undhakan, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé uga biså mbalikaké dhèwèké manèh.",
+	["flipabove"] = "Månterå iki kanggo mbalikaké undhak-undhakan sing ånå ing ndhuwur, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé uga biså mbalikaké dhèwèké manèh.",
 	["fake"] = "Månterå iki kanggo mbangun undhak-undhakan palsu in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "Månterå iki kanggo nggawé undhak-undhakan didhelikaké. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
 	["disco"] = "Månterå iki kanggo nggawé undhak-undhakan dadi disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
@@ -466,11 +466,11 @@ module.spells.descriptions = {
 
 	--WICKED
 	["destroy"] = "Månterå iki kanggo ngremukaké undhak-undhakan. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
-	["destroyabove"] = "Månterå iki kanggo ngremukaké undhak-undhakan sing ana ing ndhuwur. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
+	["destroyabove"] = "Månterå iki kanggo ngremukaké undhak-undhakan sing ånå ing ndhuwur. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "Månterå iki kanggo nggawé témbok ing platform kanggo mblokir pendaki, lan uga kreteg menyang platform iring sasuwéné 60 detik. Mung Wicked lan memedi digabung sing bisa mlaku tembus témbok lan ing kreteg.",
+	["wall"] = "Månterå iki kanggo nggawé témbok ing platform kanggo mblokir pendaki, lan uga kreteg menyang platform iring sasuwéné 60 detik. Mung Wicked lan memedi digabung sing biså mlaku tembus témbok lan ing kreteg.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
@@ -481,7 +481,7 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Månterå iki kanggo gawa ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Månterå iki kanggo ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["movedown"] = "Månterå iki kanggo mulihaké sembarang undhak-undhakan sing spésial. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
@@ -530,7 +530,7 @@ module.spells.descriptions = {
 
 	--THIEF
 	["steal"] = "Månterå iki kanggo nyolong undhak-undhakan sing biyasa utåwå rigged. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "Månterå iki kanggo nyolong undhak-undhakan sing biyasa utåwå rigged sing ana ing ndhuwur. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["stealabove"] = "Månterå iki kanggo nyolong undhak-undhakan sing biyasa utåwå rigged sing ånå ing ndhuwur. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
 	["place"] = "Månterå iki kanggo mbalèkaké lan undhak-undhakan stolen back ing arah sing dipilih. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
 	["uppass"] = "Månterå iki kanggo mbangun undhak-undhakan spiral karo undhak-undhakan sing dicolong kowé. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
 	["sidepass"] = "Månterå iki kanggo mbangunn trabasan bent karo undhak-undhakan sing dicolong kowé. Iki bakal dibangun ing arah sing dipilih sasuwéné siji menit. Rank up to ROBBER for the bypass to last two minutes.",
@@ -580,7 +580,7 @@ module.spells.descriptions = {
 	--HERETIC
 	["createcursed"] = "Månterå iki kanggo mbangun undhak-undhakan dikutuk ing arah sing dipilih. Any crossing stairs bakal diremukaké. Rank up to BANISHED to destroy crossing cursed stairs.",
 	["curse"] = "Månterå iki kanggo ngutuk undhak-undhakan ngisor. Use this spell again to uncurse stairs.",
-	["curseabove"] = "Månterå iki kanggo ngutuk undhak-undhakan sing ana ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
+	["curseabove"] = "Månterå iki kanggo ngutuk undhak-undhakan sing ånå ing ndhuwur. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "Månterå iki kanggo you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
@@ -594,8 +594,8 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Månterå iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
-	["twistrotate"] = "Månterå iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ana undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistside"] = "Månterå iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
+	["twistrotate"] = "Månterå iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Månterå iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "Månterå iki kanggo mulihaké any undhak-undhakan sing diplintir. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "Månterå iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
@@ -625,12 +625,12 @@ module.spells.descriptions = {
 	["necromancerunion"] = union,
 
 
-	["createmirrored"] = "Månterå iki kanggo mbangun undhak-undhakan nganggo pangilon ing tengahné. Sauwisé kowé mlaku tembus pangilonné, kowé bakal digabung karo memedimu. Lumaku tembus pangilonné again lan kowé bakal dipisahaké karo memedimu. Rank up to Poltergeist to demolish crossing stairs with this spell. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["bigmirror"] = "Månterå iki kanggo nggawé pangilon raksasa ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné bisa mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon raksasa bakal mbusek pangilon cilik ing tataran sing padha. Rank up to Presence to extend mirror lifetime to 15 seconds.",
-	["smallmirror"] = "Månterå iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pendaki sing digabung karo memediné bisa mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Rank up to Presence to extend mirror lifetime to 10 seconds.",
-	["outermirror"] = "Månterå iki kanggo mbangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung bisa can only be used in outer platforms. Pendaki sing mlaku tembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menara. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["merge"] = "Månterå iki kanggo nggamblok to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["oneway"] = "Månterå iki kanggo nggawé undhak-undhakan dadi one-way passage, while merging players with their ghost, if they walk in proper direction. Kowé bisa milih arah sing arep diblokir. Rank up to Alien to be immune to one-way stairs effect. Wektu digabung karo memedimu, kowé bisa mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["createmirrored"] = "Månterå iki kanggo mbangun undhak-undhakan nganggo pangilon ing tengahné. Sauwisé kowé mlaku tembus pangilonné, kowé bakal digabung karo memedimu. Lumaku tembus pangilonné again lan kowé bakal dipisahaké karo memedimu. Rank up to Poltergeist to demolish crossing stairs with this spell. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["bigmirror"] = "Månterå iki kanggo nggawé pangilon raksasa ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon raksasa bakal mbusek pangilon cilik ing tataran sing padha. Rank up to Presence to extend mirror lifetime to 15 seconds.",
+	["smallmirror"] = "Månterå iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Rank up to Presence to extend mirror lifetime to 10 seconds.",
+	["outermirror"] = "Månterå iki kanggo mbangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung biså can only be used in outer platforms. Pendaki sing mlaku tembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menårå. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["merge"] = "Månterå iki kanggo nggamblok to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["oneway"] = "Månterå iki kanggo nggawé undhak-undhakan dadi one-way passage, while merging players with their ghost, if they walk in proper direction. Kowé biså milih arah sing arep diblokir. Rank up to Alien to be immune to one-way stairs effect. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will turn into one-way stairs with random direction blocked. Rank up to WIGHT to have an option to avoid below Reaver Rigs.",
@@ -688,7 +688,7 @@ module.gui.ranks = {
 	--none
 	["none_1"] = "Kowé durung milih kelas!",
 	["none_2"] = "Kowé ora have access to any spells!",
-	["none_3"] = "Lumpat ing lèmèr ngganti ing tengah menara kanggo ngganti kelas.",
+	["none_3"] = "Lumpat ing lèmèr ngganti ing tengah menårå kanggo ngganti kelas.",
 
 	--shared
 	["higher"] = "HIGHER RANK ACQUIRED",
@@ -708,32 +708,32 @@ module.gui.ranks = {
 		[9] = "Called Orb will travel twice as fast.",
 	}, 
 	["JOKER"] = { 
-		[4] = "Undhak-undhakan Disko saiki ora bisa nggawé kowé menyang nari.",
+		[4] = "Undhak-undhakan Disko saiki ora biså nggawé kowé menyang nari.",
 		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
-		[6] = "Kowé saiki bisa ndetèksi platform sing trap lan undhak-undhakan sing palsu.",
-		[8] = "Kowé saiki bisa walk on fake stairs.", 
+		[6] = "Kowé saiki biså ndetèksi platform sing trap lan undhak-undhakan sing palsu.",
+		[8] = "Kowé saiki biså walk on fake stairs.", 
 		[9] = "You will get bonus Mana when someone triggers any prank. (1 mana per player pranked)",
 	},
 	["WICKED"] = {
 		[4] = "You can now walk on obbies as if they were normal stairs.",
 		[5] = "Månterå Remukaké Undhak-undhakan Dhuwur saiki gratis.",
-		[6] = "Kowé bisa njaluk 1 mana bonus karo ngremukaké undhak-undhakan sing spésial.",
+		[6] = "Kowé biså njaluk 1 mana bonus karo ngremukaké undhak-undhakan sing spésial.",
 		[8] = "You have the option to avoid triggering any Wicked Rigs.",
-		[9] = "Kowé saiki bisa ngremukaké undhak-undhakan sing dikutuk.",
+		[9] = "Kowé saiki biså ngremukaké undhak-undhakan sing dikutuk.",
 	},
 	["SPECTRE"] = { 
 		[4] = "You will get an extra 1 Mana when you collect crystals with Your Ghost.", 
 		[5] = "Your GHOSTIFY spell is now free.",
-		[6] = "Kowé saiki bisa touch orb at the top with your ghost to finish a climb.",
+		[6] = "Kowé saiki biså touch orb at the top with your ghost to finish a climb.",
 		[8] = "You have the option to avoid triggering any Spectre Rigs.", 
-		[9] = "Kowé saiki bisa walk on ghosted stairs.",
+		[9] = "Kowé saiki biså walk on ghosted stairs.",
 	},
 	["KEEPER"] = {
 		[4] = "The Move Random spell and Keeper Rigs that you trigger will never cause the stairs to go down.",
-		[5] = "Kowé saiki bisa ngalih undhak-undhakan sing ora dikutuk any.",
+		[5] = "Kowé saiki biså ngalih undhak-undhakan sing ora dikutuk any.",
 		[6] = "Månterå Pulih kowé saiki dadi gratis.", 
 		[8] = "You have the option to avoid triggering any Keeper Rigs.",
-		[9] = "Kowé saiki bisa mulihaké undhak-undhakan lan prapatan sing dikutuk.",
+		[9] = "Kowé saiki biså mulihaké undhak-undhakan lan prapatan sing dikutuk.",
 	},
 	["HACKER"] = { 
 		[4] = "You have the option to be immune to Escalators.",
@@ -766,7 +766,7 @@ module.gui.ranks = {
 	["HERETIC"] = {
 		[4] = "When out of Mana, you can touch cursed stairs to uncurse them and get one Mana.",
 		[5] = "You are now immune to being possessed.",
-		[6] = "Kowé saiki bisa cast månterå Flicker mring prapatan sing dikutuk.",
+		[6] = "Kowé saiki biså cast månterå Flicker mring prapatan sing dikutuk.",
 		[8] = "Your Create Cursed Stairs and Malediction spells can now destroy blocking cursed stairs.",
 		[9] = "You will get 1 extra Mana everytime someone is possessed.",
 	},
@@ -774,7 +774,7 @@ module.gui.ranks = {
 		[4] = "You can now restore disconnected stairs from platform.",
 		[5] = "Your Restore Twist spell is now free.",
 		[6] = "You have the option to avoid below Splicer Rigs.",
-		[8] = "Kowé saiki bisa nyambungaké undhak-undhakan sing wis diplintir.",
+		[8] = "Kowé saiki biså nyambungaké undhak-undhakan sing wis diplintir.",
 		[9] = "You will get 1 Mana everytime you restore a Splice.",
 	},
 	["REAVER"] = {
@@ -792,7 +792,7 @@ module.gui.ranks = {
 		[9] = "Regenerate restores 10 mana instead of 6, and will restore 5 mana to those nearby your ghost.",
 	},
 	["GREMLIN"] = {
-		[4] = "Kowé saiki bisa ndetèksi basangan Gremlin.",
+		[4] = "Kowé saiki biså ndetèksi basangan Gremlin.",
 		[5] = "You can now jump on platform to call all adjacent Trams.",
 		[6] = "You are now immune to Gremlin Rigs.",
 		[8] = "You are now immune to Gremlin Traps.",
@@ -838,7 +838,7 @@ module.gui.multitokens = {
 
 	["info"] = "Kowé butuh 3 token kanggo mbukak månterå.",
 	["notokens"] = "Kowé ora duwé multi token left",
-	["nopass"] = "ORA ANA GAME PASS",
+	["nopass"] = "ORA ÅNÅ GAME PASS",
 
 }
 
@@ -884,8 +884,8 @@ module.gui.gameover.results = {
 
 	["class"] = "KELASMU",
 	["time"] = "WEKTU PENDAKIANMU",
-	["climbs"] = "PENDAKIAN AWARDED",
-	["tokens"] = "TOKEN AWARDED",
+	["climbs"] = "PENDAKIAN DIOLÈHAKÉ",
+	["tokens"] = "TOKEN DIOLÈHAKÉ",
 	["rank"] = "YOUR CURRENT RANK",
 
 }
@@ -967,7 +967,7 @@ module.gui.gameover.messages = {
 		"Chaos tamed",
 		"Aku the only true alignment",
 		"One day I will sort out this tower",
-		"Undhak-undhakan dipulih = undhak-undhakan happy :)",
+		"Undhak-undhakan dipulih = undhak-undhakan happy! :]",
 	},
 	["THIEF"] = {
 		"\"BORROW\", USE and RETURN",
@@ -984,7 +984,7 @@ module.gui.gameover.messages = {
 		"EXPLOIT, GLITCH and BREAK",
 		"Fair play? There's no such thing",
 		"Wait! This staircase is not real... Are we living in a simulated Roblox experience?",
-		"01000011 01010010 01000001 01011010 01011001 00100000 01010011 01010100 01000001 01001001 01010010 01010011",
+		"01010101 01001110 01000100 01001000 01000001 01001011 00101101 01010101 01001110 01000100 01001000 01000001 01001011 01000001 01001110 00100000 11000011 10001001 01000100 01000001 01001110",
 		"Have you seen any rules posted anywhere here?",
 		"I'm cheating? Everybody here is",
 		"I mean few tweaks here and there - Hardly an exploit",
@@ -1000,7 +1000,7 @@ module.gui.gameover.messages = {
 		"We should not restrict ourselves",
 		"Get possessed",
 		"Choose the dark side - It's easier than Illumination",
-		"Yèn wong njaluk terdampar, ngapa aku care iku, èh?",
+		"Yèn wong njaluk terdampar, ngåpå aku care iku, èh?",
 	},
 	["ARCHON"] = {
 		"OPEN PORTAL, ???, PROFIT",
@@ -1015,7 +1015,7 @@ module.gui.gameover.messages = {
 	},
 	["DRIFTER"] = {
 		"SURF, RIDE, and GLIDE",
-		"Sapa butuh undhak²an anyway? Kami dalem AKASA lah!",
+		"Såpå butuh undhak²an anyway? Kami dalem AKASA lah!",
 		"Fly you fools!",
 		"Surf the Solar Wind",
 		"There is no down in space - Jump without worry",
@@ -1029,7 +1029,7 @@ module.gui.gameover.messages = {
 		"Never go in a straight line for too long",
 		"Splice up your life",
 		"Other people mess is Splicer's order",
-		"Aku bisa totally connect those stairs",
+		"Aku biså totally connect those stairs",
 		"Sambungaké karo wong - nah, SAMBUNGAKÉ KARO UNDHAK-UNDHAKAN!",
 		"My mind is just twisted like that",
 		"Loro bab sing paling apik babagan Splicer: nyambungaké dan coklat mint.",
@@ -1058,7 +1058,7 @@ module.gui.gameover.messages = {
 		"We just have a bad PR. I blame Hollywood",
 		"If death is bad, then Necromancy must be good",
 		"I need to collect sou- I mean Mana, I need mana",
- 		"Aku ora wedi karo tiba, iku månterå stratégis aku babo!",
+ 		"Aku ora wedi karo tibå, iku månterå stratégis aku babo!",
 	},
 	["GREMLIN"] = {
 		"ROTATE, REVOLVE and HYPNOTIZE",
@@ -1069,7 +1069,7 @@ module.gui.gameover.messages = {
 		"Opo you like my masterpiece? No? Too bad, I am only starting.",
 		"Dhokter told me to relax, and this is how I relax.",
 		"Joker take some notes. Just kidding, hire me back in the Circus please!",
-		"Undhak-undhakan iku lunga nang ndi ah?",
+		"Undhak-undhakan iku lungå nang ndi ah?",
 		"Waaaaaaaaaaaaaa!!!!!!!",
 	},
 
@@ -1185,7 +1185,7 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "Carané main Undhak-undhakan Édan?",
+	["cla_1"] = "Carané måin Undhak-undhakan Édan?",
 	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
 	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
@@ -1198,25 +1198,25 @@ module.static = {
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
-	["pro_1"] = "MENARA PRO",
+	["pro_1"] = "MENÅRÅ PRO",
 	["pro_2"] = "Tataran Even restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
 	["pro_5"] = "Undhak-undhakan Dikutuk",
-	["pro_6"] = "Jero Menara Pro, Drone bakal randomly mbangun undhak-undhakan dikutuk utåwå ngutuk undhak-undhakan sing biyasa. There is 20% chance of Cursed Stairs apperance. Panah panuntun ora bakal ditampilaké ning cedhak undhak-undhakan dikutuk.",
+	["pro_6"] = "Jero Menårå Pro, Drone bakal randomly mbangun undhak-undhakan dikutuk utåwå ngutuk undhak-undhakan sing biyasa. There is 20% chance of Cursed Stairs apperance. Panah panuntun ora bakal ditampilaké ning cedhak undhak-undhakan dikutuk.",
 	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
-	["pro_8"] = "Heretic lan Admiral mung bisa mulihaké undhak-undhakan dikutuk. Purge Event and Restoration will get rid of all cursed stairs too. However, Drone bakal always create new ones in Pro Tower.",
+	["pro_8"] = "Heretic lan Admiral mung biså mulihaké undhak-undhakan dikutuk. Purge Event and Restoration will get rid of all cursed stairs too. However, Drone bakal always create new ones in Pro Tower.",
 	["pro_9"] = "Prapatan Dikutuk",
-	["pro_10"] = "Jero Menara Pro, drone bakal randomly nggawé prapatan dikutuk too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
-	["pro_11"] = "Prapatan dikutuk nyegah kabèh månterå platform, that are executed on arrows. Kowé ora bisa nggawé undhak-undhakan, kreteg utåwå teleportasi tembus prapatan dikutuk.",
-	["pro_12"] = "Heretic, Admiral lan Drone mung bisa mulihaké prapatan dikutuk. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
+	["pro_10"] = "Jero Menårå Pro, drone bakal randomly nggawé prapatan dikutuk too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
+	["pro_11"] = "Prapatan dikutuk nyegah kabèh månterå platform, that are executed on arrows. Kowé ora biså nggawé undhak-undhakan, kreteg utåwå teleportasi tembus prapatan dikutuk.",
+	["pro_12"] = "Heretic, Admiral lan Drone mung biså mulihaké prapatan dikutuk. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
-	["inf_1"] = "MENARA INFINIT",
+	["inf_1"] = "MENÅRÅ INFINIT",
 	["inf_2"] = "RACE MANDATORY",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
 	["inf_5"] = "Fallen Drone",
-	["inf_6"] = "Ora kaya menara klasik lan pro, Fallen Drone duwé tugasé spésial ing menara infinit.",
+	["inf_6"] = "Ora kåyå menårå klasik lan pro, Fallen Drone duwé tugasé spésial ing menårå infinit.",
 	["inf_7"] = "Each 'raise interval', Fallen Drone will create 2 new levels. Each even level will be restricted. On top of that, some stairs or intersections may even become cursed.",
 	["inf_8"] = "First interval lasts for 20 seconds. Each raise will reduce the interval by half second, until the levels are created faster than they could be climbed.",
 	["inf_9"] = "Busakan",
@@ -1224,7 +1224,7 @@ module.static = {
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
 
-	["cus_1"] = "MENARA KUSTOM",
+	["cus_1"] = "MENÅRÅ KUSTOM",
 	["cus_2"] = "YOU DECIDE!",
 	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
@@ -1262,21 +1262,21 @@ module.static = {
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
 	["guild_1"] = "PANDHELIKAN THIEF",
-	["guild_2"] = "SESANTI:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
-	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra bisa remukaké undhak-undhakan crossing",
+	["guild_2"] = "SESANTI:\nCOLONG\nGUNÅKAKÉ\nLAN\nBALÈKAKÉ",
+	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra biså remukaké undhak-undhakan crossing",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
-	["nether_1"] = "NERAKA SPECTRE",
+	["nether_1"] = "NÅRÅKÅ SPECTRE",
 	["nether_2"] = "SESANTI:\nILANG\nDHELIK\nLAN\nTELEPORT",
 	["nether_3"] = "PROS:\nMånterå Fast\nPerfect for solo play\nCONS:\nMbutuhaké Robux\nNot recommended for teams",
 	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
 
-	["study_1"] = "TELAAH ARCHON",
+	["study_1"] = "STUDHI ARCHON",
 	["study_2"] = "SESANTI:\nBUKAK\nPORTAL\n???\nUNTUNG",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
 	["study_4"] = ""I used to rule this staircase."\nour founder's quote",
 
-	["haven_1"] = "SWARGA PATRON",
+	["haven_1"] = "SWARGÅ PATRON",
 	["haven_2"] = "SESANTI:\nBIYANTU\nPROTECT\nLAN\nGAWÉ",
 	["haven_3"] = "PROS:\nPaling gampang kanggo sinau\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
 	["haven_4"] = ""Those noobs need our help!"\nour founder's quote",
@@ -1292,7 +1292,7 @@ module.static = {
 	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
 
 	["base_1"] = "PANGKALAN KEEPER",
-	["base_2"] = "SESANTI:\nMOVE\nROTATE\nLAN\nCONTROL",
+	["base_2"] = "SESANTI:\nALIH\nROTATE\nLAN\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
 	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
 
@@ -1332,7 +1332,7 @@ module.static = {
 	["leader_updating"] = "Updating...",	
 	["leader_rank"] = "PANGKAT",
 	["leader_req"] = "PENDAKIAN REQ",
-	["leader_off"] = "Leaderboards ora kasadhiya njero Menara Custom.",
+	["leader_off"] = "Leaderboards ora kasadhiya njero Menårå Custom.",
 
 	--OVERALL
 	["over_title"] = "OVERALL RANKS",
@@ -1343,8 +1343,8 @@ module.static = {
 	["overmind_req"] = "** Requires Chamelon LAN Spectre",
 	["over_prefix"] = "PREFIX",
 	["over_passes"] = "GAME PASSES\nREQUIRED",
-	["over_notgroup"] = "WERNA IJO JAÉTUN - not in group",
-	["over_group"] = "WERNA BIRU CAHYA - in the group",
+	["over_notgroup"] = "WERNÅ IJO JAÉTUN - not in group",
+	["over_group"] = "WERNÅ BIRU CAHYA - in the group",
 	["over_mod"] = "MODERATOR - player is a moderator",
 	["over_admin"] = "ADMIN - player is an admin", -- pwease sleazel uwu
 	["over_owner"] = "PRANK ME - Pangripat game (Sleazel)",
@@ -1392,13 +1392,13 @@ module.static = {
 	["reaver_lead"] = "REAVER PALING MIKIRAKÉ",
 	["reaver_ranks"] = "PANGKAT REAVER",
 
-	["gremlin_lead"] = "GREMLIN PALING BEGJA",
+	["gremlin_lead"] = "GREMLIN PALING BEGJÅ",
 	["gremlin_ranks"] = "PANGKAT GREMLIN",
 
 	["chameleon_lead"] = "CHAMELEON PALING KESÈD",
 	["chameleon_ranks"] = "PANGKAT CHAMELEON",
 
-	["dailies"] = "RÈKOR DINA IKI",
+	["dailies"] = "RÈKOR DINÅ IKI",
 	["most_climbs"] = "MENDHAK PALING AKÈH",
 	["most_wins"] = "MENANG BALAPAN PALING AKÈH", 
 
@@ -1409,20 +1409,20 @@ module.tutorial = {
 
 	["tut_big_1"] = "Sugeng rawuh ing Undhak-Undhakan Édan!",
 	["tut_big_2"] = "Kapisan, sinau piyé carané ngganti.",
-	["tut_big_3"] = "Kowé saiki dadi Patron, Patron bisa nggawé undhak-undhakan.",
+	["tut_big_3"] = "Kowé saiki dadi Patron, Patron biså nggawé undhak-undhakan.",
 	["tut_big_4"] = "Kabèh månterå mbutuhaké diolèhi karo mlumpat.",
-	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker bisa mbalikaké undhak-undhakan.",
+	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker biså mbalikaké undhak-undhakan.",
 	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké månterå iki kanggo mbalikaké undhak-undhakan.",
 	["tut_big_7"] = "Sawatara månterå kudu to dilakokaké mring undhak-undhakan.",
-	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper bisa ngalih undhak-undhakan.",
+	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper biså ngalih undhak-undhakan.",
 	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké månterå iki mindah undhak-undhakan.",
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
 	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing game iki.",
 	["tut_big_12"] = "Kowé saiki dadi Wicked, use månterå iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
-	["tut_big_13"] = "Kowé bisa ngremukaké undhak-undhakan sing ana ing ndhuwur, by jumping on below ones.",
+	["tut_big_13"] = "Kowé biså ngremukaké undhak-undhakan sing ånå ing ndhuwur, by jumping on below ones.",
 	["tut_big_14"] = "Sadurungé kita miwiti, let aku show you the kelas prèmium.",
 	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre iku kelas prèmium nodheg kanggo mendaki dhèwèkan.",
-	["tut_big_16"] = "Tujuanmu mènèk kanggo mendaki lan njaluk orb ing menara. Muga-muga suksés! :]",
+	["tut_big_16"] = "Tujuanmu mènèk kanggo mendaki lan njaluk orb ing menårå. Muga-muga suksés! :]",
 
 	["tut_select"] = "Pilih månterå iki.",
 
@@ -1535,7 +1535,7 @@ module.guide = {
 	},
 	
 	['anywhere'] = {
-		['anywhere'] = "Månterå iki bisa be executed ing ngendi waé.",
+		['anywhere'] = "Månterå iki biså be executed ing ngendi waé.",
 	},
 	
 	["nowhere"] = {
@@ -1583,10 +1583,10 @@ module.serverfeedback = {
 	--failed spell (server)
 	["unknown"] = "Masalah ora dingerteni.", --this should not show for normal players, only exploiters
 	["lockedspell"] = "Månterå iki dikunci!",
-	["possessed"] = "Kowé ora bisa use månteråmu nalikå dikutuk.",
+	["possessed"] = "Kowé ora biså use månteråmu nalikå dikutuk.",
 	["spelllock"] = "You cannot cast spells now",
-	["nothere"] = "Kowé ora bisa use månterå iki jero latihan.",
-	["onlyracers"] = "Mung pambalap bisa cast månterå.",
+	["nothere"] = "Kowé ora biså use månterå iki jero latihan.",
+	["onlyracers"] = "Mung pambalap biså cast månterå.",
 	["cancelfirst"] = "Kowé need to cancel current månterå first...",
 	["stashfull"] = "Your stairs stash is full.",
 	["stashempty"] = "Kowé kudu nyolong undhak-undhakan before casting this spell.",
@@ -1598,7 +1598,7 @@ module.serverfeedback = {
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
 	["cursed"] = "Undhak-undhakan iki dikutuk!",
-	["cursed2"] = "Ana undhak-undhakan dikutuk iku ing arah!",
+	["cursed2"] = "Ånå undhak-undhakan dikutuk iku ing arah!",
 	["blocked"] = "Prapatan iki dikutuk.",
 	["locked"] = "Undhak-undhakan iki dikunci.",
 	["platformlocked"] = "Target platform is locked.",
@@ -1613,20 +1613,20 @@ module.serverfeedback = {
 	["link"] = "Link is already here.",
 	["noblink"] = "You can only blink through blocking stairs.",
 	["noblink2"] = "You cannot blink on bridges and bent down stairs.",
-	["noflip"] = "Undhak-undhakan sing biyasa, dibalik utåwå rigged mung bisa dibalikaké.",
+	["noflip"] = "Undhak-undhakan sing biyasa, dibalik utåwå rigged mung biså dibalikaké.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
-	["wrongdirection"] = "Kowé ora bisa cast månterå iki mring arah iku.",
+	["wrongdirection"] = "Kowé ora biså cast månterå iki mring arah iku.",
 	["notfound"] = "Undhak-undhakan not found.",
 	["nocursedblink"] = "You can't blink around cursed stairs.",
-	["nostairs"] = "Ora ana undhak-undhakan kéné.",
-	["noground"] = "Månterå iki ora bisa be cast mring tataran ground.",
-	["oddonly"] = "Månterå iki ora bisa be cast on tataran iki.",
+	["nostairs"] = "Ora ånå undhak-undhakan kéné.",
+	["noground"] = "Månterå iki ora biså be cast mring tataran ground.",
+	["oddonly"] = "Månterå iki ora biså be cast on tataran iki.",
 	["noabove"] = "No stairs found directly above.",
 	["linklimit"] = "Only \"above spells\" can be executed on links.",
 	["lock"] = "You cannot cast spells now",
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
 	["cantgate"] = "Arah iki diblokir.",
-	["wall"] = "Ana témbok sing wis kéné.",
+	["wall"] = "Ånå témbok sing wis kéné.",
 	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
 	["nogate"] = "These stairs are not gated.",
 	["noghost"] = "Only ghosted stairs can be de-ghostified.",
@@ -1643,7 +1643,7 @@ module.serverfeedback = {
 	["lockedinter"] = "Intersection iki dikunci.",
 	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
 	["duplicatemirror"] = "There is already a mirror on this level.",
-	["norestore"] = "bypasses lan spirals Thief ora bisa dipulihaké.",
+	["norestore"] = "bypasses lan spirals Thief ora biså dipulihaké.",
 
 	--higher rank required
 	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
@@ -1703,7 +1703,7 @@ module.serverfeedback = {
 	
 	--prompts
 	["scancel"] = "Cancel your spell to change alignments.",
-	["morph"] = "Jump here to become %s!",
+	["morph"] = "Lumpat kéné kanggo dadi %s!",
 	
 	--race
 	["raceclosed"] = "Race is now closed.",
@@ -1902,7 +1902,7 @@ module.eventspells = {
 
 	["wickedrigevent"] = "%s has just rigged all normal stairs with Destroy spell!",
 	["wickedevent"] = "%s wis ngremukaké kabèh undhak-undhakan biyasa!",
-	["wickedaltevent"] = "%s wis ngremukaké KABÈH menara!",
+	["wickedaltevent"] = "%s wis ngremukaké KABÈH menårå!",
 
 	["keeperrigevent"] = "%s has just rigged all normal stairs with the Random Move spell!",
 	["keeperevent"] = "%s has just shuffled all normal stairs!",
@@ -1967,10 +1967,10 @@ module.spells.extras = {
 	["basic"] = "Dhasar",
 	["ultimate"] = "Pokok",
 	["unlock"] = "0 (3 kanggo mbukak)",
-	["none"] = "Ora ana syarat spésial",
+	["none"] = "Ora ånå syarat spésial",
 }
 
-module.gui.basic.jumpdelay = "tundha mlumpat"
+module.gui.basic.jumpdelay = "tundhå mlumpat"
 module.gui.basic.dancetime = "💃 WEKTUNÉ NJOGÈD! 🕺"
 
 module.gui.mana = {
@@ -1998,9 +1998,9 @@ module.gui.mana = {
 	["base"] = "PANGKALAN",
 	["circus"] = "SIRKUS",
 	["shelter"] = "PAPAN PANGAYOM",
-	["haven"] = "SWARGA",
-	["study"] = "TELAAH",
-	["nether"] = "NETHER",
+	["haven"] = "SWARGÅ",
+	["study"] = "STUDHI",
+	["nether"] = "NÅRÅKÅ",
 	["guild"] = "PANDHELIKAN",
 	["nexus"] = "SARANG",
 	["oasis"] = "OASIS",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
