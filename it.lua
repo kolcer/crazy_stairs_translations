@@ -408,7 +408,7 @@ module.spells.descriptions = {
 	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
 	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango Creator per raddoppiare la durabilità.",
-	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma soprastante. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durabilità.",
+	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma sovrastante. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durabilità.",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."Patron Rig. Quando calpestate, conferiscono 1 Mana (l'effetto non si attiva se il contenitore Mana è pieno). In seguito all'attivazione, tornano ad essere scale normali.",
@@ -442,22 +442,21 @@ module.spells.descriptions = {
 	["flatten"] = "Piega verso il basso la scala opposta, collegando l'estremità superiore alla tua piattaforma.",
 	["wall"] = "Genera una barriera nella direzione indicata che blocca il passaggio per 60 secondi. Oltre essa viene generato un collegamento con la piattaforma seguente, attraversabile solo da Wicked o giocatori con il sortilegio Unione Spettrale attivo. Alcuni incantesimi sono comunque in grado di passarci attraverso.",
 
-	 --Continue from here
-	["bender"] = timed .. "Permette di piegare scale verso l'alto in continuazione, per 60 secondi. Se possibile, sia la scala colpita che quella soprastante verranno piegate."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
-	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (ignorato dal rango Devil).",
+	["bender"] = timed .. "Permette di piegare scale verso l'alto in continuazione, per 60 secondi. Se possibile, sia la scala colpita che quella sovrastante verranno piegate."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
+	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (opzionale con il rango Devil sbloccato).", --todo, si può migliorare ignorato da...
 	["wickedevent"] = event .. "Demolisci Scale. Non viene attivata la rigenerazione.",
 	["wickedaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno demolite e i malefici verranno rimossi, senza eccezioni. Viene attivata la rigenerazione.",
-	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Piega Scale"),
+	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Solleva/Abbassa Ponte"),
 	["wickedrefill"] = overload,
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Sposta la scala colpita orizzontalmente in una direzione a scelta, distruggendo eventuali scale in mezzo. Non puoi spostare la scala al di fuori dall'area di gioco.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
-	["rotate"] = "Ruota la scala colpita orizzontalmente, a destra o a sinistra, distruggendo eventuali scale in mezzo. Non puoi ruotare la scala al di fuori dall'area di gioco.\nSblocca il rango Controller per poter ruotare qualunque scala ad eccezione di quelle maledette.",
+	["move"] = "Sposta la scala in una direzione orizzontale a scelta, distruggendo eventuali scale in mezzo. Non puoi spostare la scala al di fuori dall'area di gioco.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
+	["rotate"] = "Ruota la scala colpita, a destra o a sinistra, distruggendo eventuali scale in mezzo. Non puoi ruotare la scala al di fuori dall'area di gioco.\nSblocca il rango Controller per poter ruotare qualunque scala ad eccezione di quelle maledette.",
 	["moveup"] = "Innalza la scala colpita di un piano, distruggendo eventuali scale in mezzo.\nSblocca il rango Controller per poter innalzare qualunque scala ad eccezione di quelle maledette.",
 	["movedown"] = "Ripristina la scala colpita, riportandola alla normalità. Se la scala colpita non è alterata, l'incantesimo non viene eseguito.\nSblocca il rango Captain per rimuovere il costo di esecuzione.\nSblocca il rango Admiral per poter ripristinare le scale maledette ed i malefici.",
 	["rig"] = "Sposta o ruota la scala colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango Operator per assicurati che la scala non sprofondi.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
-	["moverandom"] = "Sposta o ruota la scala soprastante a quella colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango Operator per assicurati che la scala non sprofondi.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
+	["moverandom"] = "Sposta o ruota la scala sovrastante a quella colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango Operator per assicurati che la scala non sprofondi.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
 
 	["ascension"] = timed .. "Permette di innalzare scale in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
 	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango Operator per assicurati che la scala non sprofondi.",
@@ -468,22 +467,22 @@ module.spells.descriptions = {
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "Evoca una scala temporanea nella direzione indicata, distruggendo eventuali scale in mezzo. La scala svanirà dopo un breve periodo.",
+	["phantom"] = "Evoca una scala fantasma nella direzione indicata, distruggendo eventuali scale in mezzo. La scala svanirà dopo un breve periodo.",
 	["ghost"] = "Spettralizza la scala posizionata direttamente sopra a quella colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango Aether per poterci camminare sopra.",
 	["shadow"] = "Spettralizza la scala colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango Aether per poterci camminare sopra.\nSblocca il rango Phantom per rimuovere il costo di esecuzione.",
 	["horizontal"] = "Ti teletrasporta sulla piattaforma indicata, attraversando eventuali scale in mezzo (tranne quelle maledette).",
-	["random"] = "Ti teletrasporta su una piattaforma in modo casuale, sempre sullo stesso piano.",
+	["random"] = "Ti teletrasporta su una piattaforma casuale, sempre sullo stesso piano.",
 	["vertical"] = "Ti teletrasporta sulla piattaforma posizionata direttamente sopra a quella colpita.",
 
 	["traveller"] = timed ..  "Permette di effettuari scatti fantasma in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
-	["spectrerigevent"] = rig .. "Spectre Rig. Quando calpestate, hanno una probabilità di diventare spettralizzate (1/2) (opzionale con il rango Vision sbloccato).",
+	["spectrerigevent"] = rig .. "Spectre Rig. Quando calpestate, hanno il 50% di probabilità di diventare spettralizate (opzionale con il rango Vision sbloccato).",
 	["spectreevent"] = event .. "Mescolamento Spettrale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
 	["spectrealtevent"] = "Questo è un sortilegio Evento. Tutte le scale normali verranno spettralizzate.\nLancia il sortilegio Unione Spettrale o sblocca il rango Aether per poterci camminare sopra.",
-	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Mescolamento Spettrale (Leggera)"),
+	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Mescolamento Spettrale Leggero"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
-	--HACKER
+	--HACKER (continuare da qui)
 	["dash"] = "Ti teletrasporta sulla piattaforma indicata, se l'intersecazione è libera.\nSblocca il rango Cracker per velocizzare l'animazione del 50%.",
 	["blink"] = "Ti permette di aggirare una scala che blocca il passaggio, se non è maledetta.\nSblocca il rango Exploiter per velocizzare l'animazione del 50%.",
 	["swap"] = "Ti teletrasporta nella posizione in cui si trova la tua controfigura. Può essere eseguito in qualsiasi punto della mappa.",
@@ -518,7 +517,7 @@ module.spells.descriptions = {
 	--ARCHON
 	["splitside"] = "Collega con un portale dimensionale la scala colpita ad un'altra parallela in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
 	["splitrotate"] = "Collega con un portale dimensionale la scala colpita ad un'altra adiacente in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitup"] = "Collega la scala colpita a quella soprastante con un portale dimensionale. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Sage per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
+	["splitup"] = "Collega la scala colpita a quella sovrastante con un portale dimensionale. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Sage per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
 	["cancelsplit"] = "Rimuove tutti i portali dimensionali collegati alla scala colpita.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Scholar per rimuovere il costo di esecuzione.",
 	["splitrandom"] = "Collega con un portale dimensionale la scala colpita ad un'altra sullo stesso piano in modo casuale. Se viene scelta un'intersecazione libera, verrà generata una scala nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
 	["splitforward"] = "Crea due portali dimensionali tra le piattaforme indicate, collegandole direttamente. Eventuali scale in mezzo non rappresenteranno un problema.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali.",
@@ -1390,7 +1389,7 @@ module.where = {
 	["arrow"] = "Da lanciare sulle frecce delle piattaforme.",
 	["stairs"] = "Da lanciare sulle scale.",
 	["above"] = "Colpisce la scala posizionata direttamente sopra a quella colpita (funziona sui collegamenti di Patron).",
-	["dynamic"] = "Può influenzare sia la scala colpita che quella soprastante.",
+	["dynamic"] = "Può influenzare sia la scala colpita che quella sovrastante.",
 	["both"] = "Può essere eseguito sia sulle frecce delle piattaforme che scale.",
 	["both2"] = "Può essere eseguito sia su piattaforme che scale.",
 	["anywhere"] = "Può essere lanciato ovunque.",
@@ -1461,8 +1460,8 @@ module.guide = {
 
 	["dynamic"] = {
 		--hack, twister, bender and flipper
-		["flip"] = "Può essere lanciato su o sotto scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala soprastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
-		["normalrig"] = "Può essere lanciato su o sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe: la scala selezionata e quella soprastante.",
+		["flip"] = "Può essere lanciato su o sotto scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala sovrastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
+		["normalrig"] = "Può essere lanciato su o sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe: la scala selezionata e quella sovrastante.",
 		["slide"] = "Può essere lanciato su scale normali o alterate da rig. Le scale non maledette che bloccano il passaggio verranno demolite.",
 	},
 
