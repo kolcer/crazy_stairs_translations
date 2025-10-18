@@ -287,14 +287,14 @@ module.spells.names = {
 	["keeperaltevent"] = "Mulihaké Kabèh Menårå",
 
 	--SPECTRE
-	["phantom"] = "Wangun Undhak-undhakan Lenyap",
+	["phantom"] = "Gawé Undhak-undhakan Wewayangan",
 	["ghost"] = "Ghostify Above Stairs",
 	["shadow"] = "Ghostify Stairs",
-	["horizontal"] = "Horizontal Teleport",
-	["random"] = "Random Teleport",
+	["horizontal"] = "Teleportasi  Horisontal",
+	["random"] = "Teleportasi Acak",
 	["vertical"] = "Teleportasi Munggah",
 
-	["traveller"] = "Shimmering",
+	["traveller"] = "Melip-Melip",
 	["spectreevent"] = "Phantom Shuffle",
 	["spectrealtevent"] = "Æther Realm",
 
@@ -324,8 +324,8 @@ module.spells.names = {
 
 	--ARCHON
 	["splitup"] = "Gawé Portal Munggah",
-	["splitrotate"] = "Gawé Portal menyang Adjacent",
-	["splitside"] = "Gawé Portal menyang Sisih",
+	["splitrotate"] = "Gawé Portal menyang Sasisih",
+	["splitside"] = "Gawé Portal menyang Sandhing",
 	["splitrandom"] = "Gawé Portal Acak",
 	["cancelsplit"] = "Tutup Portal",
 	["splitforward"] = "Gawé Portal Platform",
@@ -360,9 +360,9 @@ module.spells.names = {
 
 	--SPLICER
 	["twistup"] = "Sambung Undhak-undhakan Munggah",
-	["twistside"] = "Sambung Undhak-undhakan menyang Paralel",
-	["twistrotate"] = "Sambung Undhak-undhakan Adjacent",
-	["canceltwist"] = "Jegegaké Undhak-undhakan Diplintir",
+	["twistside"] = "Sambung Undhak-undhakan Sababag",
+	["twistrotate"] = "Sambung Undhak-undhakan Sacedhak",
+	["canceltwist"] = "Jegeg Undhak-undhakan Diplintir",
 	["split2"] = "Belah Undhak-undhakan",
 	["splitalt"] = "Sigar Undhak-undhakan",
 
@@ -465,7 +465,7 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "Månterå iki kanggo ngremukaké undhak-undhakan. Unlike other spells, it will work on any stairs. Munggah pangkat dadi VILE to cast this spell for free. Munggah pangkat dadi VICIOUS to get 1 Mana everytime you destroy any special stairs. Munggah pangkat dadi ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
+	["destroy"] = "Månterå iki kanggo ngremukaké undhak-undhakan. Ora kåyå månterå liyåné, it will work on any stairs. Munggah pangkat dadi VILE kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi VICIOUS to get 1 Mana everytime you destroy any special stairs. Munggah pangkat dadi ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
 	["destroyabove"] = "Månterå iki kanggo ngremukaké undhak-undhakan sing ånå ing dhuwur. Unlike other spells, it will work on any stairs. Munggah pangkat dadi VICIOUS to get 1 Mana everytime you destroy any special stairs. Munggah pangkat dadi ANNIHILATOR kanggo ngremukaké undhak-undhakan dikutuk.",
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Munggah pangkat dadi DESTROYER to walk on obbies just like on normal stairs.",
@@ -484,7 +484,7 @@ module.spells.descriptions = {
 	["move"] = "Månterå iki kanggo ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
 	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
 	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
-	["movedown"] = "Månterå iki kanggo mulihaké sembarang undhak-undhakan sing spésial. If stairs are already normal, this spell will not execute. Munggah pangkat dadi CAPTAIN to cast this spell for free. Munggah pangkat dadi ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
+	["movedown"] = "Månterå iki kanggo mulihaké sembarang undhak-undhakan sing spésial. If stairs are already normal, this spell will not execute. Munggah pangkat dadi CAPTAIN kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
 	["rig"] = "This spell will move or rotate stairs in random direction, destroying any stairs in the way. Munggah pangkat dadi OPERATOR to avoid stairs going down. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
 	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Munggah pangkat dadi OPERATOR to avoid stairs going down. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
 
@@ -499,7 +499,7 @@ module.spells.descriptions = {
 	--SPECTRE
 	["phantom"] = "Månterå iki kanggo nggawé undhak-undhakan Phantom in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
 	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
-	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Munggah pangkat dadi PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
+	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Munggah pangkat dadi PHANTOM kanggo cast månterå iki kanthi gratis. Use this spell again to de-ghostify stairs.",
 	["horizontal"] = "This spell lets you teleport horizontally in the choosen direction. You can teleport through any un-cursed stairs in the way.",
 	["random"] = "This spell will teleport you to a random platform on the same level.",
 	["vertical"] = "This spell will teleport you up, to the platform above.",
@@ -513,8 +513,8 @@ module.spells.descriptions = {
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "Månterå iki kanggo nggawé kowé teleport in the chosen direction. You cannot teleport through blocking stairs. Munggah pangkat dadi CRACKER to speed up this spell by 50%.",
-	["blink"] = "Månterå iki kanggo nggawé kowé teleport around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Munggah pangkat dadi EXPLOITER to speed up this spell by 50%.",
+	["dash"] = "Månterå iki kanggo nggawému teleport in the chosen direction. You cannot teleport through blocking stairs. Munggah pangkat dadi CRACKER to speed up this spell by 50%.",
+	["blink"] = "Månterå iki kanggo nggawému teleport around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Munggah pangkat dadi EXPLOITER to speed up this spell by 50%.",
 	["swap"] = "This spell will teleport you to the spot where your ghost is. Unlike other basic spells, Swap can be cast anywhere.",
 	["slide"] = "This spell will turn stairs into an Escalator. You can choose either Up or Down Escalator. Munggah pangkat dadi SCRIPTER to have an option to be immune to Escalators.",
 	["slideup"] = "Månterå iki kangoo hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
@@ -533,8 +533,8 @@ module.spells.descriptions = {
 	["stealabove"] = "Månterå iki kanggo nyolong undhak-undhakan sing biyasa utåwå rigged sing ånå ing dhuwur. Either this or steal below is required to cast other basic thief spells. Munggah pangkat dadi HIJACKER able to steal any un-cursed stairs. Munggah pangkat dadi OUTLAW to be able to steal 2 staircases at a time.",
 	["place"] = "Månterå iki kanggo mbalèkaké lan undhak-undhakan stolen back ing arah sing dipilih. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
 	["uppass"] = "Månterå iki kanggo mangun undhak-undhakan spiral karo undhak-undhakan sing dicolong kowé. It can only be cast on outer platforms and will last one minute. Munggah pangkat dadi BANDIT for the staircase to last two minutes.",
-	["sidepass"] = "Månterå iki kanggo mbangunn trabasan bent karo undhak-undhakan sing dicolong kowé. Iki bakal dibangun ing arah sing dipilih sasuwéné siji menit. Munggah pangkat dadi ROBBER for the bypass to last two minutes.",
-	["drop"] = "Månterå iki allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
+	["sidepass"] = "Månterå iki kanggo mangun trabasan bent karo undhak-undhakan sing dicolong kowé. Iki bakal dibangun ing arah sing dipilih sasuwéné siji menit. Munggah pangkat dadi ROBBER for the bypass to last two minutes.",
+	["drop"] = "Månterå iki allows you to ditch stairs kanthi gratis. You will need to find an empty intersection though. Ditched stairs are flat.",
 
 	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast through crossing stairs, as stairs will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
 	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
@@ -547,8 +547,8 @@ module.spells.descriptions = {
 	--ARCHON
 	["splitside"] = "Månterå iki connect below stairs to another in a horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Munggah pangkat dadi PRODIGY to override an existing connection. Munggah pangkat dadi ILLUMINATI to be able to walk through horizontal portals.",
 	["splitrotate"] = "This spell will connect below stairs to another in a rotated horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Munggah pangkat dadi PRODIGY to override an existing connection. Munggah pangkat dadi ILLUMINATI to be able to walk through horizontal portals.",
-	["splitup"] = "This spell will connect below stairs to stairs above with a Gate. If there are no stairs, they will be created. Munggah pangkat dadi PRODIGY to override an existing connection. Munggah pangkat dadi SAGE to ignore downward connections.",
-	["cancelsplit"] = "This spell will discard any Gates on stairs. Munggah pangkat dadi DISCIPLE to be able to remove platform Gates. Munggah pangkat dadi SCHOLAR to cast this spell for free.",
+	["splitup"] = "Månterå iki kanggo nggawé portal nyambung undhak-undhakan ing ngisor karo undhak-undhakan ing dhuwur. Yèn ora ånå undhak-undhakan ing dhuwur, dhèwèké bakal digawé. Munggah pangkat dadi PRODIGY kanggo nyingkiraké portal sing wis ånå. Munggah pangkat dadi SAGE kanggo merduli portal menyang ngisor.",
+	["cancelsplit"] = "Månterå iki kanggo nutup sembarang portal ing undhak-undhakan. Munggah pangkat dadi DISCIPLE supåyå bisã nutup platform portal. Munggah pangkat dadi SCHOLAR kanggo cast månterå iki kanthi gratis",
 	["splitrandom"] = "This spell will connect below stairs to any valid intersection on the same floor with a Gate. If there are no stairs, they will be created. Munggah pangkat dadi PRODIGY to override an existing connection. Munggah pangkat dadi ILLUMINATI to be able to walk through horizontal portals.",
 	["splitforward"] = "This spell will connect two platforms in a horizontal direction of your choosing with a Gate. Munggah pangkat dadi DISCIPLE to be able to remove platform splits. Occupying stairs won't block the connection. Munggah pangkat dadi ILLUMINATI to be able to walk through such portals.",
 
@@ -594,10 +594,10 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Månterå iki kanggo mlintir undhak-undhakan menyang right or left ener, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
+	["twistside"] = "Månterå iki kanggo mlintir undhak-undhakan menyang arah kiwå utåwå tengen, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
 	["twistrotate"] = "Månterå iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Månterå iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Munggah pangkat dadi TRANSFORMER to use this spell on already twisted stairs.",
-	["canceltwist"] = "Månterå iki kanggo mulihaké any undhak-undhakan sing diplintir. Munggah pangkat dadi COMBINER to cast this spell from platform on disconnected twisted stairs. Munggah pangkat dadi MIXER to cast this spell for free. Munggah pangkat dadi OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
+	["canceltwist"] = "Månterå iki kanggo njegegaké any undhak-undhakan sing diplintir. Munggah pangkat dadi COMBINER to cast this spell from platform on disconnected twisted stairs. Munggah pangkat dadi MIXER kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "Månterå iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "Månterå iki kanggo nyigar undhak-undhakan into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
