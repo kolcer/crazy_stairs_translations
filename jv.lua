@@ -111,9 +111,9 @@ module.gui.spellbar = {
 module.gui.stats = {
 
 	["total"] = "Gunggung pendakian: %d / Kamenangan: %d",
-	["class"] = "Pendakian as %s: %d",
+	["class"] = "Pendakian minångkå %s: %d",
 	["best"] = "Wektu %s paling rikat: %.2f",
-	["na"] = "N/A",
+	["na"] = "n/a",
 
 }
 
@@ -279,12 +279,12 @@ module.spells.names = {
 	["rotate"] = "Rotate Stairs",
 	["moveup"] = "Munggahaké Undhak-undhakan",
 	["movedown"] = "Pulih Undhak-undhakan",
-	["moverandom"] = "Random Above Move",
-	["rig"] = "Random Move",
+	["moverandom"] = "Alih Undhak-undhakan ing Dhuwur Acak",
+	["rig"] = "Alih Undhak-undhakan Acak",
 
 	["ascension"] = "Pamunggah",
-	["keeperevent"] = "Pangalihan Kabèh Undhak-undhakan",
-	["keeperaltevent"] = "Mulihaké Kabèh Menårå",
+	["keeperevent"] = "Pangocok-ocok",
+	["keeperaltevent"] = "Pamulih Menårå",
 
 	--SPECTRE
 	["phantom"] = "Gawé Undhak-undhakan Wewayangan",
@@ -306,7 +306,7 @@ module.spells.names = {
 	["slideup"] = "Hack Undhak-undhakan",
 	["glitch"] = "Glitch Undhak-undhakan",
 
-	["hack"] = "Panggunå Èskalator",
+	["hack"] = "Pamasang Èskalator",
 	["hackerevent"] = "Escalation",
 	["hackeraltevent"] = "Breach",
 
@@ -413,7 +413,7 @@ module.spells.names = {
 	["chamdown"] = "Pindah Undhak-undhakan Mudhun",
 	["chamdraw"] = "Kreteg Angkat Ngisor",
 	["chamswap"] = "Dadi Memedi",
-	["chamdrawabove"] = "Kreteg Angkat Dhuwur",
+	["chamdrawabove"] = "Kreteg Angkat Ndhuwur",
 
 	--MISC (compatibility)
 	["reg"] = "Staircase is regenerating",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
