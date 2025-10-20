@@ -64,7 +64,7 @@ module.gui.serversettings = {
 	["DroneCurse"] = "Kamungkinan undhak-undhakan dikutuk for creation and undhak-undhakan biyasa encounter (persèn)",
 
 	["Tower"] = "SETÈLAN MENÅRÅ",
-	["TowerReadOnly"] = "SETÈLAN MENÅRÅ (waca mung)",
+	["TowerReadOnly"] = "SETÈLAN MENÅRÅ (wåcå mung)",
 	["InfMode"] = "Mode Infinit (ora biså diganti wektu mbalap utåwå mulih)",
 	["CasualPlayers"] = "Pendaki kasual allowed to cast månterå",
 	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
@@ -161,15 +161,15 @@ module.gui.gauges = {
 
 	["prompt"] = "Lumpat kanggo miwiti, utåwå klik lagi kanggo murung.",
 
-	["found"] = "%d undhak-undhakan found (%.1f%% fill)",
+	["found"] = "%d undhak-undhakan ditemokaké (%.1f%% fill)",
 	["special"] = "%d sing spésial (%.1f%%)",
-	["affected"] = "%d undhak-undhakan bakal kena pengaruh (%.1f%%)",
+	["affected"] = "%d undhak-undhakan bakal kenå pengaruh (%.1f%%)",
 	["cursed"] = "%d prapatan dikutuk found (%.1f%%)",
 	["fill"] = "%d undhak-undhakan bakal diwangun (%.1f%%)",
-	["purge"] = "%d objects bakal diremuk (%.1f%%)",
+	["purge"] = "%d objèk bakal diremuk (%.1f%%)",
 	["normal"] = "%d sing wis biyasa (%.1f%%)",
 	["restore"] = "%d undhak-undhakan bakal dipulihaké (%.1f%%)",
-	["bypass1"] = "%d curses are in the way (%.1f%%)",
+	["bypass1"] = "%d kutukan are in the way (%.1f%%)",
 	["bypass2"] = "%d trabasan sing wis ånå (%.1f%%)",
 	["bypass3"] = "%d trabasan bakal digawé (%.1f%%)",
 
@@ -259,7 +259,7 @@ module.spells.names = {
 	["trap"] = "Gawé Trap",
 
 	["flipper"] = "Pamalik",
-	["jokerevent"] = "Menårå Didhelikaké",
+	["jokerevent"] = "Dhelikaké Menårå",
 	["jokeraltevent"] = "Walik Kabèh Undhak-undhakan",
 
 	--WICKED
@@ -276,7 +276,7 @@ module.spells.names = {
 
 	--KEEPER
 	["move"] = "Alih Undhak-undhakan",
-	["rotate"] = "Rotate Stairs",
+	["rotate"] = "Puter Undhak-undhakan",
 	["moveup"] = "Munggahaké Undhak-undhakan",
 	["movedown"] = "Pulih Undhak-undhakan",
 	["moverandom"] = "Alih Undhak-undhakan ing Dhuwur Acak",
@@ -287,16 +287,16 @@ module.spells.names = {
 	["keeperaltevent"] = "Pamulih Menårå",
 
 	--SPECTRE
-	["phantom"] = "Gawé Undhak-undhakan Wewayangan",
-	["ghost"] = "Ghostify Above Stairs",
-	["shadow"] = "Ghostify Stairs",
+	["phantom"] = "Gawé Undhak-undhakan Ilang",
+	["ghost"] = "Memedèni Undhak-undhakan ing Dhuwur",
+	["shadow"] = "Memedèni Undhak-undhakan",
 	["horizontal"] = "Teleportasi  Horisontal",
 	["random"] = "Teleportasi Acak",
 	["vertical"] = "Teleportasi Munggah",
 
 	["traveller"] = "Melip-Melip",
 	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["spectrealtevent"] = "Alam Æther",
 
 	--HACKER
 	["dash"] = "Flyhack menyang Platform",
@@ -319,7 +319,7 @@ module.spells.names = {
 	["drop"] = "Undhak-undhakan Kreteg",
 
 	["heist"] = "Panyolong",
-	["thiefevent"] = "Menårå Wråtå",
+	["thiefevent"] = "Donyå Wråtå",
 	["thiefaltevent"] = "Mega Bypass",
 
 	--ARCHON
@@ -356,7 +356,7 @@ module.spells.names = {
 
 	["malediction"] = "Malediction",
 	["hereticevent"] = "Pamecahan",
-	["hereticaltevent"] = "Kutuk Menårå",
+	["hereticaltevent"] = "Kutuk Kabèh Menårå",
 
 	--SPLICER
 	["twistup"] = "Sambung Undhak-undhakan Munggah",
@@ -390,25 +390,25 @@ module.spells.names = {
 	["merge"] = "Gamblok Reaver",
 	["oneway"] = "Undhak-undhakan Siji Arah",
 
-	["reflection"] = "Reflection",
+	["reflection"] = "Pangilokaké",
 	["reaverevent"] = "Cross Roads",
 	["reaveraltevent"] = "Conjucture",
 	
 	
 	--gremlin
 	["tram"] = "Wangun Undhak-undhakan Trèm",
-	["screwup"] = "Puter Munggah",
+	["screwup"] = "Plintir Munggah",
 	["revolve"] = "Ubeng Undhak-Undhakan",
 	["trapstairs"] = "Undhak-undhakan Trapdoor",
-	["screwdown"] = "Puter Mudhun",
+	["screwdown"] = "Plintir Mudhun",
 	["spinplatform"] = "Ubeng Platform",
 
 	["tramway"] = "Masinis",
-	["gremlinevent"] = "Revolvelution",
+	["gremlinevent"] = "Kirkus Rodha Pati",
 	["gremlinaltevent"] = "Kamacetan Trèm",
 
 	--CHAMELEON
-	["ditch"] = "Undhak-undhakan Nyilang",
+	["ditch"] = "Undhak-undhakan Silang",
 	["warp"] = "Plengkung Undhak-undhakan",
 	["chamdown"] = "Pindah Undhak-undhakan Mudhun",
 	["chamdraw"] = "Kreteg Angkat Ngisor",
@@ -1413,7 +1413,7 @@ module.tutorial = {
 	["tut_big_4"] = "Kabèh månterå mbutuhaké diolèhi karo mlumpat.",
 	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker biså malikaké undhak-undhakan.",
 	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké månterå iki kanggo malikaké undhak-undhakan.",
-	["tut_big_7"] = "Sawatara månterå kudu to dilakokaké mring undhak-undhakan.",
+	["tut_big_7"] = "Sawatårå månterå kudu dilakokaké mring undhak-undhakan.",
 	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper biså ngalih undhak-undhakan.",
 	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké månterå iki mindah undhak-undhakan.",
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
@@ -1451,27 +1451,27 @@ module.guide = {
 
 	--arrows
 	["arrow"] = {
-		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
+		["through"] = "Biså dilakokaké ing prapatan kosong utåwå tembus undhak-undhakan sing ora ngalang-alangi.",
 		--["restore"] = "Can be executed next to.",
-		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
-		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
-		["any"] = "Can be executed on any un-cursed intersection.",
-		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
+		["superforced"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan ngalang-alangi. Munggah pangkat dadi BANISHED kanggo ngremukaké undhak-undhakan crossing sing dikutuk.",
+		["flicker"] = "Biså dilakokaké ing prapatan kosong. Munggah pangkat dadi INFIDEL kanggo nglakokaké ing prapatan dikutuk.",
+		["any"] = "Biså dilakokaké ing any prapatan dudu dikutuk.",
+		["wall"] = "Biså dilakokaké ing any prapatan dudu dikutuk, tanpå témbok utåwå portal ing arahné.",
 		--["ghosted"] = "Can be only used on normal, rigged or ghosted stairs",
 		--["deltwists"] = "Can be only used on spliced stairs.",
-		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
-		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
-		["soft"] = "Can be executed on an empty intersection only.",
-		["flatten"] = "Can be executed on an intersection with normal or rigged crossing stairs only.",
-		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
-		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
+		["forced"] = "Biså dilakokaké ing prapatan kosong, utåwå through undhak-undhakan ngalang-alangi dudu dikutuk.",
+		["halfsoft"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan dudu dikutuk ngalang-alangi on higher ranks.",
+		["soft"] = "Biså dilakokaké ing prapatan sing kosong mung.",
+		["flatten"] = "Biså dilakokaké ing prapatan karo biyasa utåwå rigged ngalang-alangi mung.",
+		["hack"] = "Biså dilakokaké ing prapatan karo any undhak-undhakan ngalang-alangi dudu dikutuk mung.",
+		["sidepass"] = "Biså dilakokaké ing any prapatan dudu dikutuk tanpå trabasan.",
 	},
 
 	["platform"]= {
 		
 
 		--platform
-		["middle"] = "This spell has no special requirements.",
+		["middle"] = "Månterå iki ora duwé special requirements.",
 		["diag"] = "Can be executed in both inner and outer diagonal directions.",
 		["outer"] = "Can be executed in perpendicular outer directions only.",
 		["centre"] = "This spell will demolish any small mirrors already on the current level, but not the big one.",
@@ -1500,7 +1500,7 @@ module.guide = {
 		["escalator"] = "Can be executed on normal or rigged stairs only.",
 		["oneway"] = "Can be executed on normal or rigged stairs only.",
 		["revolve"] = "Can be executed on normal or rigged stairs only.",
-		["normalrig"] = "Can be executed on normal or rigged stairs only.",
+		["normalrig"] = "Can be executed on undhak-undhakan sing biyasa utåwå rigged mung.",
 
 	},
 	
@@ -1892,11 +1892,11 @@ module.timedspells = {}
 
 module.eventspells = {
 
-	["patronrigevent"] = "%s wis ngerigaké kabèh undhak-undhakan biyasa karo Pawèwèh Mana!",
+	["patronrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo Pawèwèh Mana!",
 	["patronevent"] = "%s has just overloaded the tower with stairs!",
 	["patronaltevent"] = "%s has just shrunk all normal stairs!",
 
-	["jokerrigevent"] = "%s has just rigged all normal stairs with the Flip spell!",
+	["jokerrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo the Flip spell!",
 	["jokerevent"] = "%s wis ndhelikaké kabèh undhak-undhakan biyasa!",
 	["jokeraltevent"] = "%s wis malikaké kabèh kabèh undhak-undhakan biyasa!",
 
@@ -1962,7 +1962,7 @@ module.spells.extras = {
 	["ManaCost"] = "Béaya mana: %s", 
 	["TokenCost"] = "Béaya token: %s", 
 	["Special"] = "Syarat spésial: %s",
-	["Execution"] = "Execution: %s",
+	["Execution"] = "Lelakon: %s",
 	["Description"] = "Dèskripsi: %s",
 	["basic"] = "Dhasar",
 	["ultimate"] = "Pokok",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
