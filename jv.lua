@@ -18,7 +18,7 @@ module.gui.basic = {
 	["validate"] = "TEBUS",
 	["play"] = "MÅIN",
 	["skip"] = "LIWATI\nLATIHAN",
-	["loading"] = "MOMOT, NJALUK NGENTÈNI...",
+	["loading"] = "MOMOT, NJALUK NGENTÈNI…",
 	["mode"] = "MODE\n%s",
 	["cd"] = "PANGADHEMAN\nPOKOK",
 	["complete"] = "RAMPUNG",
@@ -32,7 +32,7 @@ module.gui.switcher = {
 	["private"] = "SERVER PRIBADHI",
 	["join"] = "GABUNG",
 	["friends"] = "KÅNCÅ ONLINE",
-	["refresh"] = "nyegeraké...",
+	["refresh"] = "nyegeraké…",
 	["fail"] = "GAGAL NYEGERAKÉ! :[",
 
 }
@@ -84,7 +84,7 @@ module.gui.shop = {
 
 	["title"] = "TOKO UNDHAK-UNDHAKAN ÉDAN",
 
-	["chameleon"] = "Chameleon biså ngganti kelas wektu climb.",
+	["chameleon"] = "Chameleon biså ngganti kelas wektu pendakian.",
 	["spectre"] = "Spectre iku kelas teleport based nodheg kanggo mendaki dhèwèkan (solo play).",
 	["mana"] = "Expand your Mana storage capacity by 10 points.",
 
@@ -161,10 +161,10 @@ module.gui.gauges = {
 
 	["prompt"] = "Lumpat kanggo miwiti, utåwå klik lagi kanggo murung.",
 
-	["found"] = "%d undhak-undhakan ditemokaké (%.1f%% fill)",
+	["found"] = "%d undhak-undhakan ditemokaké (%.1f%% kisèn)",
 	["special"] = "%d sing spésial (%.1f%%)",
 	["affected"] = "%d undhak-undhakan bakal kenå pengaruh (%.1f%%)",
-	["cursed"] = "%d prapatan dikutuk found (%.1f%%)",
+	["cursed"] = "%d prapatan dikutuk ditemokaké (%.1f%%)",
 	["fill"] = "%d undhak-undhakan bakal diwangun (%.1f%%)",
 	["purge"] = "%d objèk bakal diremuk (%.1f%%)",
 	["normal"] = "%d sing wis biyasa (%.1f%%)",
@@ -597,7 +597,7 @@ module.spells.descriptions = {
 	["twistside"] = "Månterå iki kanggo mlintir undhak-undhakan menyang arah kiwå utåwå tengen, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
 	["twistrotate"] = "Månterå iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Månterå iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Munggah pangkat dadi TRANSFORMER to use this spell on already twisted stairs.",
-	["canceltwist"] = "Månterå iki kanggo njegegaké any undhak-undhakan sing diplintir. Munggah pangkat dadi COMBINER to cast this spell from platform on disconnected twisted stairs. Munggah pangkat dadi MIXER kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
+	["canceltwist"] = "Månterå iki kanggo njejegaké any undhak-undhakan sing diplintir. Munggah pangkat dadi COMBINER to cast this spell from platform on disconnected twisted stairs. Munggah pangkat dadi MIXER kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "Månterå iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "Månterå iki kanggo nyigar undhak-undhakan into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
 
@@ -1262,7 +1262,7 @@ module.static = {
 	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
 
 	["guild_1"] = "PANDHELIKAN THIEF",
-	["guild_2"] = "SESANTI:\nCOLONG\nGUNÅKAKÉ\nLAN\nBALÈKAKÉ",
+	["guild_2"] = "SESANTI:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra biså remukaké undhak-undhakan crossing",
 	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
 
@@ -1435,15 +1435,15 @@ module.tutorial = {
 
 module.where = {
 
-	["platform"] = "Must be executed on platform. Won't work on bottom nor even levels in pro towers.",
-	["arrow"] = "Must be executed on platform's arrows.",
-	["stairs"] = "Must be executed on stairs.",
-	["above"] = "Must be executed on below stairs, to affect the above stairs. Works on links too.",
+	["platform"] = "Kudu dilakokaké ing platform. Won't work on bottom nor even levels in pro towers.",
+	["arrow"] = "Kudu dilakokaké ing panah platform.",
+	["stairs"] = "Kudu dilakokaké ing undhak-undhakan.",
+	["above"] = "Kudu dilakokaké ing undhak-undhakan ing ngisor, to affect the above stairs. Works on links too.",
 	["dynamic"] = "May affect both below and above stairs.",
 	["both"] = "Can be executed on either platform's arrows or stairs.",
 	["both2"] = "Can be executed on either platform or stairs.",
-	["anywhere"] = "Can be executed anywhere.",
-	["nowhere"] = "This spell does not require an execution.",
+	["anywhere"] = "Biså dilakokaké ing ngendi waé.",
+	["nowhere"] = "Månterå iki ora merlokaké pilakon.",
 
 }
 
@@ -1451,20 +1451,20 @@ module.guide = {
 
 	--arrows
 	["arrow"] = {
-		["through"] = "Biså dilakokaké ing prapatan kosong utåwå tembus undhak-undhakan sing ora ngalang-alangi.",
+		["through"] = "Biså dilakokaké prapatan kosong åpå waé utåwå tembus undhak-undhakan sing ora ngalang-alangi.",
 		--["restore"] = "Can be executed next to.",
-		["superforced"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan ngalang-alangi. Munggah pangkat dadi BANISHED kanggo ngremukaké undhak-undhakan crossing sing dikutuk.",
-		["flicker"] = "Biså dilakokaké ing prapatan kosong. Munggah pangkat dadi INFIDEL kanggo nglakokaké ing prapatan dikutuk.",
-		["any"] = "Biså dilakokaké ing any prapatan dudu dikutuk.",
-		["wall"] = "Biså dilakokaké ing any prapatan dudu dikutuk, tanpå témbok utåwå portal ing arahné.",
+		["superforced"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan ngalang-alangi. Munggah pangkat dadi BANISHED kanggo ngremukaké undhak-undhakan ngalang-alangi sing kawutuk.",
+		["flicker"] = "Biså dilakokaké ing prapatan kosong. Munggah pangkat dadi INFIDEL kanggo nglakokaké ing prapatan kawutuk.",
+		["any"] = "Biså dilakokaké ing prapatan ora kawutuk åpå waé.",
+		["wall"] = "Biså dilakokaké ing prapatan ora kawutuk åpå waé, tanpå témbok utåwå portal ing arahné.",
 		--["ghosted"] = "Can be only used on normal, rigged or ghosted stairs",
 		--["deltwists"] = "Can be only used on spliced stairs.",
-		["forced"] = "Biså dilakokaké ing prapatan kosong, utåwå through undhak-undhakan ngalang-alangi dudu dikutuk.",
-		["halfsoft"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan dudu dikutuk ngalang-alangi on higher ranks.",
+		["forced"] = "Biså dilakokaké ing prapatan kosong, utåwå through undhak-undhakan ngalang-alangi ora kawutuk.",
+		["halfsoft"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan ora kawutuk ngalang-alangi on higher ranks.",
 		["soft"] = "Biså dilakokaké ing prapatan sing kosong mung.",
 		["flatten"] = "Biså dilakokaké ing prapatan karo biyasa utåwå rigged ngalang-alangi mung.",
-		["hack"] = "Biså dilakokaké ing prapatan karo any undhak-undhakan ngalang-alangi dudu dikutuk mung.",
-		["sidepass"] = "Biså dilakokaké ing any prapatan dudu dikutuk tanpå trabasan.",
+		["hack"] = "Biså dilakokaké ing prapatan karo undhak-undhakan ngalang-alangi ora kawutuk åpå waé mung.",
+		["sidepass"] = "Biså dilakokaké ing prapatan ora kawutuk åpå waé, tanpå trabasan.",
 	},
 
 	["platform"]= {
@@ -1477,42 +1477,42 @@ module.guide = {
 		["centre"] = "This spell will demolish any small mirrors already on the current level, but not the big one.",
 		["inner"] = "Can be executed in inner diagonal directions only, without a link yet.",
 		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
-		["top"] = "Can be exectued on top platforms only.",
+		["top"] = "Biså dilakokaké ing platform paling ndhuwur mung.",
 	},
 	
 	["stairs"] ={
 		
-		["cursed"] = "Can be exectued on undhak-undhakan sing biyasa, rigged utåwå dikutuk.",
-		["all"] = "Can be executed on any stairs. Rank up to Annihilator to ngremukaké undhak-undhakan dikutuk.",
-		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
-		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
-		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
-		["rotate"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
-		["flip"]= "Can be executed on normal, flipped or rigged stairs.",
+		["cursed"] = "Biså dilakokaké ing undhak-undhakan biyasa, dimanipulasi utåwå kawutuk.",
+		["all"] = "Biså dilakokaké ing undhak-undhakan åpå waé. Munggah pangkat dadi Annihilator kanggo ngremukaké undhak-undhakan kawutuk.",
+		["steal"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Hijacker kanggo nyolong undhak-undhakan ora kawutuk åpå waé.",
+		["onedirection"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Controller kanggo munggahaké undhak-undhakan ora kawutuk åpå waé.",
+		["straight"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Controller kanggo ngalih undhak-undhakan ora kawutuk åpå waé.",
+		["rotate"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Controller kanggo muter undhak-undhakan ora kawutuk åpå waé.",
+		["flip"]= "Biså dilakokaké ing undhak-undhakan biyasa, diwalik utåwå dimanipulasi.",
 		["gate"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates.",
 		["gatestr"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
 		["gaterot"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
-		["twist"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
+		["twist"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Transformer kanggo  override splices.",
 		["twiststr"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
 		["twistrot"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
-		["spin"] = "Can be executed on normal or rigged stairs. Rank up to Nomad to spin already drifted stairs.",
-		["drift"] = "Can be executed on normal or rigged stairs. Rank up to Nomad to drift already drifted stairs.",
-		["escalator"] = "Can be executed on normal or rigged stairs only.",
-		["oneway"] = "Can be executed on normal or rigged stairs only.",
-		["revolve"] = "Can be executed on normal or rigged stairs only.",
-		["normalrig"] = "Can be executed on undhak-undhakan sing biyasa utåwå rigged mung.",
+		["spin"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Nomad kanggo mbalikaké undhak-undhakan sing wis dilelånå.",
+		["drift"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Nomad kanggo nglelånå undhak-undhakan sing wis dilelånå.",
+		["escalator"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi mung.",
+		["oneway"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi mung.",
+		["revolve"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi mung.",
+		["normalrig"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi mung.",
 
 	},
 	
 	["above"] = {
 		
-		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
-		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
-		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
-		["flip"]= "Can be executed below normal, flipped or rigged stairs.",
-		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
+		["cursed"] = "Biså dilakokaké ing undhak-undhakan biyasa, dimanipulasi utåwå kawutuk ing ngisor.",
+		["all"] = "Biså dilakokaké ing undhak-undhakan åpå waé ing ngisor. Munggah pangkat dadi Annihilator kanggo ngremukaké undhak-undhakan kawutuk ing dhuwur.",
+		["steal"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi ing ngisor. Munggah pangkat dadi Hijacker kanggo nyolong undhak-undhakan åpå waé ing dhuwur.",
+		["flip"]= "Biså dilakokaké ing undhak-undhakan biyasa, diwalik utåwå dimanipulasi ing ngisor.",
+		["onedirection"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi ing ngisor. Munggah pangkat dadi Controller kanggo alih undhak-undhakan ing dhuwur åpå waé sing ora kawutuk.",
 		["slide"] = "This spell lets you bypass any un-cursed blocking stairs.",
-		["normalrig"] = "Can be executed below normal or rigged stairs only.",
+		["normalrig"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi ing ngisor mung.",
 
 	},
 	
@@ -1520,26 +1520,26 @@ module.guide = {
 		--hack, twister, bender and flipper
 		['flip'] = "Can be executed on or below normal, flipped or rigged stairs. If above execution fails for any reason, below stairs will be affected instead.",
 		['normalrig'] = "Can be executed on or below any normal or rigged stairs. Spell will be applied to both above and below stairs.",
-		['slide'] = "Can be executed on normal or rigged stairs. If there are blocking un-cursed stairs above, they will be removed.",
+		['slide'] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Yèn ånå undhak-undhakan ora kawutuk sing ngalang-alangi ing dhuwur, dhèwèké bakal diremukaké.",
 	},
 	
 	["both"] = {
-		['restore'] = "Can be executed on any stairs or on platform's arrow with any adjacent stairs. Rank up to Admiral to restore cursed stairs.",
-		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
-		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
+		['restore'] = "Biså dilakokaké on any stairs or on platform's arrow with any adjacent stairs. Munggah pangkat dadi Admiral kanggo mulihaké undhak-undhakan sing kawutuk.",
+		['deltwists'] = "Biså dilakokaké ing undhak-undhakan diplintir mung utåwå ing platform panah with adjacent undhak-undhakan diplintir. Munggah pangkat dadi Combiner kanggo njejegaké de-attached stairs from platform.",
+		['ghosted'] = "Biså dilakokaké ing undhak-undhakan biyasa, rigged utåwå dimemedèni, utåwå on platfrom panah karo adjacent undhak-undhakan biyasa, rigged utåwå dimemedèni.",
 
 	},
 	
 	['both2'] = {
-		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates."
+		['delsplits'] = "Biså dilakokaké ing undhak-undhakan sing duwé portal mung. Munggah pangkat dadi Disciple kanggo use månterå iki kanggo nutup platform portal."
 	},
 	
 	['anywhere'] = {
-		['anywhere'] = "Månterå iki biså be executed ing ngendi waé.",
+		['anywhere'] = "Månterå iki biså dilakokaké ing ngendi waé.",
 	},
 	
 	["nowhere"] = {
-		['slide'] = "This spell does not require an execution.",
+		['slide'] = "Månterå iki ora merlokaké pilakon.",
 		
 	},
 
@@ -1567,18 +1567,18 @@ module.spells.tokencosts = {
 	"2 token",
 	"3 token",
 
-	["chameleonrigevent"] = "2 Multi Tokens",
-	["unlock"] = "(unlock for 3 tokens)",
+	["chameleonrigevent"] = "2 Multi Token",
+	["unlock"] = "(mbukak karo 3 token)",
 }
 
 module.serverfeedback = {
 	 
 	--failed spell (local)
-	["nomana"] = "Not enough Mana!",
-	["notokens"] = "Not enough tokens!",
-	["coolwait"] = "You can't cast rigs and events now, please wait ",
-	["nomirror"] = "You need to be joined with ghost to walk on mirrors",
-	["regenused"] = "Regen already used during this climb.",
+	["nomana"] = "Ora cukup mana!",
+	["notokens"] = "Ora cukup token!",
+	["coolwait"] = "Kowé ora biså cast rig lan acårå saiki, njaluk ngentèni!",
+	["nomirror"] = "Kowé kudu nggamblokaké memedimu kanggo mlaku ing platform pangilon.",
+	["regenused"] = "Kowé wis nggunakaké Réprodhuksi Mana sapisan wektu pendakian iki.",
 
 	--failed spell (server)
 	["unknown"] = "Masalah ora dingerteni.", --this should not show for normal players, only exploiters
@@ -1588,7 +1588,7 @@ module.serverfeedback = {
 	["nothere"] = "Kowé ora biså use månterå iki jero latihan.",
 	["onlyracers"] = "Mung pambalap biså cast månterå.",
 	["cancelfirst"] = "Kowé need to cancel current månterå first...",
-	["stashfull"] = "Your stairs stash is full.",
+	["stashfull"] = "Panyimpenan undhak-undhakan kowé kebak.",
 	["stashempty"] = "Kowé kudu nyolong undhak-undhakan before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
@@ -1622,7 +1622,7 @@ module.serverfeedback = {
 	["noground"] = "Månterå iki ora biså be cast mring tataran ground.",
 	["oddonly"] = "Månterå iki ora biså be cast on tataran iki.",
 	["noabove"] = "No stairs found directly above.",
-	["linklimit"] = "Only \"above spells\" can be executed on links.",
+	["linklimit"] = "Mung \"månterå dhuwur\" biså dilakokaké ing kreteg énérgi.",
 	["lock"] = "You cannot cast spells now",
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
 	["cantgate"] = "Arah iki diblokir.",
@@ -1873,7 +1873,7 @@ module.switchon = {
 
 module.switchoff = {
 
-	["JOKER"] = "Kowé saiki bakal ndetèksi undhak-undhakan sing invisible.",
+	["JOKER"] = "Kowé saiki bakal ndetèksi undhak-undhakan sing didhelikaké.",
 	["WICKED"] = "You will now trigger below Wicked Rigs.",
 	["KEEPER"] = "You will now trigger below Keeper Rigs.",
 	["SPECTRE"] = "You will now trigger below Spectre Rigs.",
@@ -1962,7 +1962,7 @@ module.spells.extras = {
 	["ManaCost"] = "Béaya mana: %s", 
 	["TokenCost"] = "Béaya token: %s", 
 	["Special"] = "Syarat spésial: %s",
-	["Execution"] = "Lelakon: %s",
+	["Execution"] = "Pilakon: %s",
 	["Description"] = "Dèskripsi: %s",
 	["basic"] = "Dhasar",
 	["ultimate"] = "Pokok",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
