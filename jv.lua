@@ -320,7 +320,7 @@ module.spells.names = {
 
 	["heist"] = "Panyolong",
 	["thiefevent"] = "Donyå Wråtå",
-	["thiefaltevent"] = "Mega Bypass",
+	["thiefaltevent"] = "Trabasan kanggo Kéré",
 
 	--ARCHON
 	["splitup"] = "Gawé Portal Munggah",
@@ -330,7 +330,7 @@ module.spells.names = {
 	["cancelsplit"] = "Tutup Portal",
 	["splitforward"] = "Gawé Portal Platform",
 
-	["splitter"] = "Portalmania",
+	["splitter"] = "Pambukak Portal",
 	["archonevent"] = "Labirin Portal",
 	["archonaltevent"] = "Munggah-Mudhun",
 
@@ -342,9 +342,9 @@ module.spells.names = {
 	["spin"] = "Balik Undhak-undhakan",
 	["driftabove"] = "Angkat Undhak-undhakan ing Dhuwur",
 
-	["riser"] = "Pangangkat Platform",
-	["drifterevent"] = "Driftage",
-	["drifteraltevent"] = "Liftage",
+	["riser"] = "Operator Lift",
+	["drifterevent"] = "Tornado",
+	["drifteraltevent"] = "Pangangkatan",
 
 	--HERETIC
 	["createcursed"] = "Wangun Undhak-undhakan Dikutuk",
@@ -354,7 +354,7 @@ module.spells.names = {
 	["autodown"] = "Benthèt Munggah",
 	["autoup"] = "Benthèt Mudhun",
 
-	["malediction"] = "Malediction",
+	["malediction"] = "Pangundang",
 	["hereticevent"] = "Pamecahan",
 	["hereticaltevent"] = "Kutuk Kabèh Menårå",
 
@@ -367,30 +367,30 @@ module.spells.names = {
 	["splitalt"] = "Sigar Undhak-undhakan",
 
 	["twister"] = "Panyambung",
-	["splicerevent"] = "Interweave",
-	["spliceraltevent"] = "Bisect",
+	["splicerevent"] = "Konèksi Undhak-undhakan",
+	["spliceraltevent"] = "Pambelahan",
 	
 	--necro
-	["createdual"] = "Wangun Dual Stairs",
+	["createdual"] = "Wangun Undhak-undhakan Kembar",
 	["copyplatform"] = "Salin Platform Memedimu",
 	["soulbridge"] = "Gawé Kreteg Roh",
 	["undeadabove"] = "Patèni Undhak-undhakan Dhuwuk",
-	["revival"] = "Revival Point",
+	["revival"] = "Papan Nangèni",
 	["regen"] = "Réprodhuksi Mana",
 
-	["duality"] = "Duality",
-	["necromancerevent"] = "Resurrection",
-	["necromanceraltevent"] = "Patèni Kabèh Undhak-undhakan",
+	["duality"] = "Gemini",
+	["necromancerevent"] = "Panguripan Undhak-undhakan",
+	["necromanceraltevent"] = "Pamanèn Undhak-undhakan",
 	
 	--reaver
 	["createmirrored"] = "Wangun Undhak-undhakan Pangilon",
 	["bigmirror"] = "Gawé Platform Pangilon Raksasa",
 	["smallmirror"] = "Gawé Platform Pangilon Cilik",
-	["outermirror"] = "Wangun Portal njåbå Pangilon",
+	["outermirror"] = "Wangun Portal Pangilon njåbå",
 	["merge"] = "Gamblok Reaver",
 	["oneway"] = "Undhak-undhakan Siji Arah",
 
-	["reflection"] = "Pangilokaké",
+	["reflection"] = "Pangilo",
 	["reaverevent"] = "Cross Roads",
 	["reaveraltevent"] = "Conjucture",
 	
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
