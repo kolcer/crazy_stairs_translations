@@ -54,28 +54,28 @@ module.gui.serversettings = {
 	["DroneFix"] = "Drone mulihaké undhak-undhakan",
 	["DroneRemove"] = "Drone mbusek prapatan dikutuk",
 	["DroneUnCurse"] = "Drone mulihaké undhak-undhakan dikutuk",
-	["DroneMove"] = "Drone move undhak-undhakan in mode default",
-	["DroneSpin"] = "Drone spin undhak-undhakan in mode default",
+	["DroneMove"] = "Drone mindahaké undhak-undhakan jero mode default",
+	["DroneSpin"] = "Drone muter undhak-undhakan jero mode default",
 	["DroneSpeed"] = "Kacepetan mlesir Drone (tataran/detik)",
 	["DroneDelay"] = "Durasi puteran Drone (detik)",
-	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
-	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
+	["DroneMax"] = "Jumlah undhak-undhakan maksimum (Drone bakal ngremukaké kanthi èksklusif ing dhuwur wates iki)",
+	["DroneMin"] = "Jumlah undhak-undhakan minimum (Drone bakal nggawé kanthi èksklusif ing ngisor wates iki)",
 	["DroneBlock"] = "Kamungkinan prapatan dikutuk kanggo saben ånå prapatan kothong encounter (persèn)",
 	["DroneCurse"] = "Kamungkinan undhak-undhakan dikutuk for creation and undhak-undhakan biyasa encounter (persèn)",
 
 	["Tower"] = "SETÈLAN MENÅRÅ",
 	["TowerReadOnly"] = "SETÈLAN MENÅRÅ (wåcå mung)",
 	["InfMode"] = "Mode Infinit (ora biså diganti wektu mbalap utåwå mulih)",
-	["CasualPlayers"] = "Pendaki kasual allowed to cast månterå",
-	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
-	["EvenLevels"] = "Even Levels Restricted",
-	["OrbMoves"] = "Endgame orb changes position",
-	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
-	["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["RaceDuration"] = "Durasi Balap Maximum. Will not affect current race. (detik)",
-	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (detik)",
-	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (detik)",
-	["InfMin"] = "Infinite mode minimum interval duration (detik)",
+	["CasualPlayers"] = "Pendaki kasual biså nggunakaké månterå",
+	["Regeneration"] = "Panggawéan undhak-undhakan otomatis sawisé Wicked wis nggunakaké månterå pokokné nyirnakaké kabèh menårå (Ora biså jero mode Infinit)",
+	["EvenLevels"] = "Tataran genep diwatesi",
+	["OrbMoves"] = "Orb endgame ngganti posisiné",
+	["InfRegeneration"] = "Panggawéan undhak-undhakan otomatis ing server anyar, tataran menårå diganti lan sawisé balap infinit",
+	["TowerLevels"] = "Tataran menårå (utåwå tataran aktif jero mode Infinit). Ora biså diganti wektu balap utåwå regeneration",
+	["RaceDuration"] = "Durasi balap maksimum. Will not affect current race. (detik)",
+	["InfStart"] = "Interval rondhe pisanan mode Infinit (2 tataran bakal digawé saben rondhe) (detik)",
+	["InfReduction"] = "Pangurangan interval mode Infinit (saben rondge bakal dikurangi karo) (detik)",
+	["InfMin"] = "Durasi interval minimum mode Infinit (detik)",
 	["Cooldown"] = "Jångkå pangadheman Acårå lan Rig (detik)",
 
 }
@@ -857,17 +857,17 @@ module.gui.settings = {
 	["title"] = "SETÈLAN GAME",
 
 	["ANIM"] = "SETÈLAN\nANIMASI",	
-	["MISC"] = "MISCELLANEOUS\nSETTINGS",
-	["INTER"] = "SETÈLAN\nINTERACE",	
-	["INTER2"] = "SETÈLAN\INTERACE ÈKSTRA",	
+	["MISC"] = "SETÈLAN\nLIYANÉ",
+	["INTER"] = "SETÈLAN\nANTARMUKA",	
+	["INTER2"] = "SETÈLAN\nANTARMUKA ÈKSTRA",	
 
-	["list"] = "Tampilaké animated playerlist",
-	["morph"] = "Tampilaké animasi ngganti nalikå using Deceiver or Usurper",
-	["billboard"] = "Tampilaké billboard avatar kowé",
-	["rank"] = "Tampilaké Your Overall Rank in avatar billboard",
-	["switchback"] = "Otomatis switch back to basic spells after executed ultimate spell",
-	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
-	["multi"] = "Tampilaké window milih Multi Token after the climb",
+	["list"] = "Tampilaké pratélan pamåin sing dianimasi",
+	["morph"] = "Tampilaké animasi ngganti nalikå dadi Deceiver utåwå Usurper",
+	["billboard"] = "Tampilaké papan avatar dhéwé",
+	["rank"] = "Tampilaké pangkatmu jero papan avatar",
+	["switchback"] = "Otomatis ngganti manèh menyang månterå dhasar sawisé nggunakaké månterå pokok",
+	["safecancel"] = "Tampilaké window konfirmasi nalikå murungaké månterå winates",
+	["multi"] = "Tampilaké window milih Multi Token nalikå rampung pendakian",
 	["kchoices"] = "Tampilaké window milih arah kanggo Keeper (ora nyambut gawé ing konsol)",
 	["hchoices"] = "Tampilaké window milih arah kanggo Hacker (ora nyambut gawé ing konsol)",
 	["achoices"] = "Tampilaké window milih arah kanggo Archon (ora nyambut gawé ing konsol)",
@@ -1327,12 +1327,12 @@ module.static = {
 	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
 
 	--SHARED
-	["leader_pro"] = "Pro Tower counts as 2 climbs",	
-	["leader_update"] = "Update in: ",	
-	["leader_updating"] = "Updating...",	
+	["leader_pro"] = "Menårå Pro counts as 2 climbs",	
+	["leader_update"] = "Disegeraké ing: ",	
+	["leader_updating"] = "Nyegeraké…",	
 	["leader_rank"] = "PANGKAT",
 	["leader_req"] = "PENDAKIAN REQ",
-	["leader_off"] = "Leaderboards ora kasadhiya njero Menårå Custom.",
+	["leader_off"] = "Leaderboards ora kasadhiyå njero Menårå Custom.",
 
 	--OVERALL
 	["over_title"] = "OVERALL RANKS",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
