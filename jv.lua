@@ -384,7 +384,7 @@ module.spells.names = {
 	
 	--reaver
 	["createmirrored"] = "Wangun Undhak-undhakan Pangilon",
-	["bigmirror"] = "Gawé Platform Pangilon Raksasa",
+	["bigmirror"] = "Gawé Platform Pangilon Gedhé",
 	["smallmirror"] = "Gawé Platform Pangilon Cilik",
 	["outermirror"] = "Wangun Portal Pangilon njåbå",
 	["merge"] = "Gamblok Reaver",
@@ -626,10 +626,10 @@ module.spells.descriptions = {
 
 
 	["createmirrored"] = "Månterå iki kanggo mangun undhak-undhakan nganggo pangilon ing tengahné. Sauwisé kowé mlaku tembus pangilonné, kowé bakal digabung karo memedimu. Lumaku tembus pangilonné again lan kowé bakal dipisahaké karo memedimu. Munggah pangkat dadi Poltergeist to demolish crossing stairs with this spell. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["bigmirror"] = "Månterå iki kanggo nggawé pangilon raksasa ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon raksasa bakal mbusek pangilon cilik ing tataran sing pådhå. Munggah pangkat dadi Presence to extend mirror lifetime to 15 seconds.",
+	["bigmirror"] = "Månterå iki kanggo nggawé pangilon gedhé ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon gedhé bakal mbusek pangilon cilik ing tataran sing pådhå. Munggah pangkat dadi Presence to extend mirror lifetime to 15 seconds.",
 	["smallmirror"] = "Månterå iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Munggah pangkat dadi Presence to extend mirror lifetime to 10 seconds.",
 	["outermirror"] = "Månterå iki kanggo mangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung biså can only be used in outer platforms. Pendaki sing mlaku tembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menårå. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["merge"] = "Månterå iki kanggo nggamblok to manually merge with Your ghost. Munggah pangkat dadi REPLICA to use this spell to unmerge from Your ghost. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["merge"] = "Månterå iki kanggo nggabung karo memedimu. Munggah pangkat dadi REPLICA kanggo nggunakaké månterå iki manèh kanggo dipisahaké karo memedimu. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 	["oneway"] = "Månterå iki kanggo nggawé undhak-undhakan dadi one-way passage, while merging players with their ghost, if they walk in proper direction. Kowé biså milih arah sing arep diblokir. Munggah pangkat dadi Alien to be immune to one-way stairs effect. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
@@ -778,7 +778,7 @@ module.gui.ranks = {
 		[9] = "You will get 1 Mana everytime you restore a Splice.",
 	},
 	["REAVER"] = {
-		[4] = "You can now use your Merge spell to unmerge.",
+		[4] = "Kowé saiki biså nggunakaké månterå Gamblok Memedimu kanggo dipisahaké.",
 		[5] = "Your floor mirrors will last 50% longer. (15s big, 9s small)",
 		[6] = "You have the option to avoid below Reaver Rigs.",
 		[8] = "You can now demolish crossing stairs, while casting Mirrored Stairs.",
@@ -955,7 +955,7 @@ module.gui.gameover.messages = {
 		"Ability to adjust is the basis of survival",
 		"I AM decisive, I just like to change my mind",
 		"You mastered a class? I mastered all the classes",
-		"Siji kelas mung dah? Boring!",
+		"Siji kelas mung dah? Jelèh!",
 		"I like chaos",
 	},
 	["KEEPER"] = {
@@ -967,14 +967,14 @@ module.gui.gameover.messages = {
 		"Chaos tamed",
 		"Aku the only true alignment",
 		"One day I will sort out this tower",
-		"Undhak-undhakan dipulih = undhak-undhakan happy! :]",
+		"Undhak-undhakan dipulih = undhak-undhakan marem! :]",
 	},
 	["THIEF"] = {
 		"\"BORROW\", USE and RETURN",
 		"It's called borrowing actually",
-		"Flat land is so beautiful",
-		"At least I do not steal platforms",
-		"Just do not walk on steal rigs, smh",
+		"Donyå Wråtå apik banget…",
+		"Saora-orané aku ra iso nyolong platform…",
+		"Åjå ngidak ing rig nyolong waé, smh.",
 		"Like did you see me steal anything?",
 		"I am like Robin Hood - Steal from the rich and give to myself",
 		"It's not like anyone would notice one staircase missing",
@@ -1000,7 +1000,7 @@ module.gui.gameover.messages = {
 		"We should not restrict ourselves",
 		"Get possessed",
 		"Choose the dark side - It's easier than Illumination",
-		"Yèn wong njaluk terdampar, ngåpå aku care iku, èh?",
+		"Yèn wong njaluk terdampar, ngåpå aku preduli karo iku, èh?",
 	},
 	["ARCHON"] = {
 		"OPEN PORTAL, ???, PROFIT",
@@ -1008,8 +1008,8 @@ module.gui.gameover.messages = {
 		"Plan ahead to succeed",
 		"Study hard and you will succeed",
 		"Ability to gate stairs is an Art form",
-		"Aku ora iso nggunakaké potar Archon aku",
-		"The cake is a lie",
+		"Aku ora iso gunakake potar Archon aku",
+		"Bolu iku apus.",
 		"There is a gate for every problem",
 		"Bingungaké kabèh pendaki lah!",
 	},
@@ -1061,7 +1061,7 @@ module.gui.gameover.messages = {
  		"Aku ora wedi karo tibå, iku månterå stratégis aku babo!",
 	},
 	["GREMLIN"] = {
-		"ROTATE, REVOLVE and HYPNOTIZE",
+		"PLINTIR, UBENG lan HIPNOTIS",
 		"Come play with me!",
 		"You spin me right 'round, baby, right 'round",
 		"This staircase is too boring",
@@ -1312,7 +1312,7 @@ module.static = {
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
 	["shack_1"] = "GUBUG GREMLIN",
-	["shack_2"] = "SESANTI:\nROTATE\nREVOLVE\nLAN\nHYPNOTIZE",
+	["shack_2"] = "SESANTI:\nPLINTIR\nUBENG\nLAN\nHIPNOTIS",
 	["shack_3"] = "PROS:\nOra pro\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
@@ -1584,17 +1584,17 @@ module.serverfeedback = {
 	["unknown"] = "Masalah ora dingerteni.", --this should not show for normal players, only exploiters
 	["lockedspell"] = "Månterå iki dikunci!",
 	["possessed"] = "Kowé ora biså use månteråmu nalikå dikutuk.",
-	["spelllock"] = "You cannot cast spells now",
-	["nothere"] = "Kowé ora biså use månterå iki jero latihan.",
+	["spelllock"] = "Kowé ora biså nggunakaké månterå sapunikå.",
+	["nothere"] = "Kowé ora biså nggunakaké månterå iki jero latihan.",
 	["onlyracers"] = "Mung pambalap biså cast månterå.",
-	["cancelfirst"] = "Kowé need to cancel current månterå first...",
+	["cancelfirst"] = "Kowé kudu to cancel current månterå first...",
 	["stashfull"] = "Panyimpenan undhak-undhakan kowé kebak.",
 	["stashempty"] = "Kowé kudu nyolong undhak-undhakan before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
 	["regwait"] = "You cannot cast rigs and events, while the Staircase is regenerating.",
 	["cooldownwait"] = "You can't cast rigs and events now, please wait %d seconds.",
-	["nospellsnow"] = "You cannot cast spells right now.",
+	["nospellsnow"] = "Kowé ora biså nggunakaké månterå sapunikå.",
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
 	["cursed"] = "Undhak-undhakan iki dikutuk!",
@@ -1609,8 +1609,8 @@ module.serverfeedback = {
 	["noway2"] = "Crossing stairs are in the way. (might be invisible)",
 	["noplatform"] = "No platform found in that direction.",
 	["nopass"] = "Pass can only be created on the outer platforms.",
-	["pass"] = "Pass is already here.",
-	["link"] = "Link is already here.",
+	["pass"] = "Ånå trabasan sing wis kéné.",
+	["link"] = "Ånå kreteg énérgi sing wis kéné.",
 	["noblink"] = "You can only blink through blocking stairs.",
 	["noblink2"] = "You cannot blink on bridges and bent down stairs.",
 	["noflip"] = "Undhak-undhakan sing biyasa, dibalik utåwå rigged mung biså dibalikaké.",
@@ -1627,82 +1627,82 @@ module.serverfeedback = {
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
 	["cantgate"] = "Arah iki diblokir.",
 	["wall"] = "Ånå témbok sing wis kéné.",
-	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
-	["nogate"] = "These stairs are not gated.",
-	["noghost"] = "Only ghosted stairs can be de-ghostified.",
+	["nocurse"] = "Mung undhak-undhakan biyasa, kawutuk utåwå dimanipulasi biså dikutuk/dibebasaké.",
+	["nogate"] = "Undhak-undhakan iki ora duwé portal.",
+	["noghost"] = "Mung undhak-undhakan dimemedèni biså diwujudi.",
 	["wrongsplit"] = "Other gate must be in the game area.",
 	["blockedplit"] = "Can't create split, target intersection is cursed.",
 	["cursedtarget"] = "There are Cursed Stairs in that destination.",
 	["lockedsplit"] = "Cannot create split yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
 	["notwist"] = "Undhak-undhakan iku ora diplintir.",--*
-	["wrongmove"] = "Stairs cannot be moved out of game area.",
-	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
+	["wrongmove"] = "Undhak-undhakan ora biså dipindahaké metu såkå area game.",
+	["blockedmove"] = "Ora biså mindahaké undhak-undhakan, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
-	["normal"] = "Undhak-undhakan iki normal.",
+	["normal"] = "Undhak-undhakan iki biyasa.",
 	["lockedinter"] = "Intersection iki dikunci.",
-	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
-	["duplicatemirror"] = "There is already a mirror on this level.",
-	["norestore"] = "bypasses lan spirals Thief ora biså dipulihaké.",
+	["toponly"] = "Månterå manggil Orb mung biså dilakokaké ing tataran top.",
+	["duplicatemirror"] = "Ånå pangilon gedhé sing wis ing tataran iki.",
+	["norestore"] = "Trabasan lan spiral Thief ora biså dipulihaké.",
 
 	--higher rank required
-	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
-	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel flicker on cursed intersection.",
-	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
-	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
-	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
-	["nomad"] = "Rank up to Nomad to spin already drifted stairs.",
-	["prodigy"] = "Rank up to Prodigy, to override Gates.",
-	["traveller"] = "Rank up to Traveller to boost Elevators.",
-	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
-	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
-	["lich"] = "Rank up to Lich to demolish crossing stairs.",
-	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
-	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
-	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
-	["poltergeist"] = "Rank up to Poltergeist to demolish crossing stairs.",
+	["admiral2"] = "Munggah pangkat dadi Admiral kanggo mbebasaké undhak-undhakan.",
+	["admiral"] = "Munggah pangkat dadi Admiral kanggo mbebasaké prapatan.",
+	["infidel"] = "Munggah pangkat dadi Infidel kanggo mlumpat ing prapatan kawutuk.",
+	["banished"] = "Munggah pangkat dadi Banished kanggo ngremukaké undhak-undhakan kawutuk sing ngalang-alangi.",
+	["annihilator"] = "Munggah pangkat dadi Annihilator kanggo ngremukaké undhak-undhakan sing kawutuk.",
+	["disciple"] = "Munggah pangkat dadi Disciple kanggo nutup portal platform.",
+	["nomad"] = "Munggah pangkat dadi Nomad kanggo mbalikaké undhak-undhakan sing wis dilelånå.",
+	["prodigy"] = "Munggah pangkat dadi Prodigy kanggo nyingkiraké portal.",
+	["traveller"] = "Munggah pangkat dadi Traveller kanggo ngupgrade platform lift.",
+	["controller"] = "Munggah pangkat dadi Controller kanggo mindahaké undhak-undhakan ora kawutuk åpå waé.",--*
+	["replica"] = "Munggah pangkat dadi Replica kanggo nggunakaké månterå iki kanggo dipisahaké.",--*
+	["lich"] = "Munggah pangkat dadi Lich kanggo ngremukaké undhak-undhakan ngalang-alangi.",
+	["hijacker"] = "Munggah pangkat dadi Hijacker kanggo nyolong undhak-undhakan ora kawutuk åpå waé.",
+	["transformer"] = "Munggah pangkat dadi Transformer kanggo nyambungaké undhak-undhakan sing wis diplintir.",
+	["strider"] = "Munggah pangkat dadi Strider to ngupgrade platform lift munggah pindho.",
+	["poltergeist"] = "Munggah pangkat dadi Poltergeist kanggo ngremukaké undhak-undhakan ngalang-alangi.",
 
 	--rig activation
-	["keeperrig"] = "Stairs are moving!",
-	["hackerrig"] = "Stairs have glitched!",
-	["jokerrig"] = "Stairs have flipped!",
-	["wickedrig"] = "Stairs are collapsing!",
-	["spectrerig"] = "Stairs have ghosted!",
-	["notspectrerig"] = "Stairs have NOT ghosted!",
+	["keeperrig"] = "Undhak-undhakan iki saiki obah!",
+	["hackerrig"] = "Undhak-undhakan iki saiki di-glitch!",
+	["jokerrig"] = "Undhak-undhakan iki saiki diwalikaké!",
+	["wickedrig"] = "Undhak-undhakan iki saiki ngruntuh!",
+	["spectrerig"] = "Undhak-undhakan iki saiki dimemedèni!",
+	["notspectrerig"] = "Undhak-undhakan iki isih ora dimemedèni…",
 	["patronrig"] = "You have received 1 Mana, courtesy of %s!",
 	["thiefrig"] = "%s has stolen 1 Mana!",
 	["mythiefrig"] = "You have stolen 1 mana from %s",
 	["notthiefrig"] = "%s is no longer a thief - no mana stolen.",
-	["leftthiefrig"] = "Thief has left the game -  no mana stolen.",
-	["hereticrig"] = "You have been possessed!",
-	["archonrig"] = "Phase teleport!",
-	["drifterrig"] = "Stairs are spinning!",
-	["splicerrig"] = "Stairs are twisting!",
-	["necrorig"] = "Stairs are fading!",
-	["reaverrig"] = "Stairs are now one way only!",
-	["gremlinrig"] = "You have been hypnotized!",
-	["reveal"] = "You have revealed invisible stairs!",
+	["leftthiefrig"] = "Thief wis left the game -  no mana stolen.",
+	["hereticrig"] = "Kowé saiki disupatani!",
+	["archonrig"] = "Teleport Archon!",
+	["drifterrig"] = "Undhak-undhakan iki saiki dibalikaké!",
+	["splicerrig"] = "Undhak-undhakan iki saiki mlintir!",
+	["necrorig"] = "Undhak-undhakan iki saiki mati!",
+	["reaverrig"] = "Undhak-undhakan iki saiki dadi siji arah!",
+	["gremlinrig"] = "Kowé saiki dihipnotis!",
+	["reveal"] = "Kowé have revealed invisible stairs!",
 	
 	--drifer lifts
-	["boosted"] = "Drift boosted!",
+	["boosted"] = "Lift diupgrade!",
 	["noboost"] = "Cannot boost, no more platforms above.",
 	["noupplatform"] = "Cannot boost, no more platforms above.",
 	
 	--mana overload
-	["overstarted"] = "You have activated Mana Overload!",
-	["overended"] = "Mana Overload ended.",
+	["overstarted"] = "Kowé saiki ngaktifaké Overload Mana!",
+	["overended"] = "Overload Mana rampung.",
 	
 	--mana share
 	["2minshare"] = "At least 2 mana required...",
 	["noshare"] = "No nearby players to receive mana...",
 	["noinf"] = "You cannot share infinite mana!",
-	["toomuch"] = "%s has maximum Mana!",
+	["toomuch"] = "Panyimpenan mana %s kebak!",
 	["shared"] = "Mana shared with %s!",
 	["received"] = "%s has shared some Mana with you!",
 	
 	--prompts
-	["scancel"] = "Cancel your spell to change alignments.",
+	["scancel"] = "Murungaké månterå kowé kanggo ngganti kelas.",
 	["morph"] = "Lumpat kéné kanggo dadi %s!",
 	
 	--race
@@ -1712,16 +1712,16 @@ module.serverfeedback = {
 	["charreset"] = "Character reset elimination.",
 
 	--misc
-	["secret"] = "Rahasya found!",
-	["unlocked"] = "Månterå wis dibukak!",
+	["secret"] = "Rahasya ditemokaké!",
+	["unlocked"] = "Månterå saiki dibukak!",
 
 	--chameleon exceptions	
-	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
-	["champossessed"] = "You can't use chameleon while possessed.",
-	["chamhypnotized"] = "You can't use chameleon while hypnotized.",
+	["chamtutorial"] = "Kowé ora biså dadi Chameleon jero latihan!",
+	["champossessed"] = "Kowé ora biså dadi Chameleon wektu disupatani.",
+	["chamhypnotized"] = "Kowé ora biså dadi Chameleon wektu dihipnotis.",
 	["chamspell"] = "Please execute or cancel current spell first.",
-	["morphpossessed"] = "You can't change alignment while possessed.",
-	["morphhypnotized"] = "You can't change alignment while hypnotized.",
+	["morphpossessed"] = "Kowé ora biså ngganti kelas wektu disupatani.",
+	["morphhypnotized"] = "Kowé ora biså ngganti kelas wektu dihipnotis.",
 	
 	["nocode"] = "Please enter the code first.",
 	["invalid"] = "This code is invalid.",
@@ -1808,7 +1808,7 @@ module.serverfeedback = {
 }
 
 module.serverbroadcast = {
-	["pranked"] = "%s pranked %s!",
+	["pranked"] = "%s ngapusi %s!",
 	["found"] = "%s wis nemokaké undhak-undhakan ora katon %s!",
 	["disco"] = "%s is enjoying %s's disco music.",
 	["trap"] = "%s has fallen for %s trap.",
@@ -2023,7 +2023,7 @@ module.gui.gameover.extras = {
 
 	["noobs"] = "Tutorials are for noobs!",
 	["possessed"] = "Those annoying Heretics!",
-	["hypnotized"] = "Where am I?",
+	["hypnotized"] = "Aku nang endi?",
 	["new"] = "Pangkat anyar acquired - %s",
 	["none1"] = "ENTÈNI! PIYÉ?",
 	["none2"] = "Opo game iki",
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
