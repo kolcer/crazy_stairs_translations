@@ -229,7 +229,7 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "Rig %s",
+	["rigevent"] = "Manipulasi %s",
 	["mode"] = "Mode %s Drone",
 	["refill"] = "Overload Mana %s",
 	["union"] = "Fusi Memedi %s",
@@ -241,21 +241,21 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Wangun Undhak-undhakan",
 	["restore"] = "Panggil Orb", 
-	["split"] = "Rebuild Opposite",
+	["split"] = "Wangun Manèh ing Ngarep",
 	["shrinkabove"] = "Cilikaké Undhak-undhakan ing Dhuwur",
 	["link"] = "Gawé Kreteg",
 	["portal"] = "Gawé Portal",
 
 	["summoner"] = "Pambangun",
-	["patronevent"] = "Berkahi Menårå karo Undhak-undhakan",
+	["patronevent"] = "Berkahi Menårå",
 	["patronaltevent"] = "Panyilikan",
 
 	--JOKER 
 	["flip"] = "Walik Undhak-undhakan",
 	["flipabove"] = "Walik Undhak-undhakan ing Dhuwur",
 	["fake"] = "Wangun Undhak-undhakan Palsu",
-	["invisible"] = "Wangun Undhak-undhakan Ora Katon/Didhelikaké",
-	["disco"] = "Undhak-undhakan sing nggawé wong nari",
+	["invisible"] = "Wangun Undhak-undhakan Ora Katon",
+	["disco"] = "Undhak-undhakan Disko",
 	["trap"] = "Gawé Trap",
 
 	["flipper"] = "Pamalik",
@@ -267,7 +267,7 @@ module.spells.names = {
 	["destroyabove"] = "Remukaké Undhak-undhakan ing Dhuwur",
 	["bend"] = "Bèngkok Undhak-undhakan Munggah",
 	["damage"] = "Rusak Undhak-undhakan ing Dhuwur",
-	["flatten"] = "Bèngkok Undhak-undhakan Opposite Mudhun",
+	["flatten"] = "Bèngkok Undhak-undhakan ing Ngarep Mudhun",
 	["wall"] = "Gawé Témbok",
 
 	["bender"] = "Pambèngkok",
@@ -283,7 +283,7 @@ module.spells.names = {
 	["rig"] = "Alih Undhak-undhakan Acak",
 
 	["ascension"] = "Pamunggah",
-	["keeperevent"] = "Pangocok-ocok",
+	["keeperevent"] = "Pangocok-ocokan",
 	["keeperaltevent"] = "Pamulih Menårå",
 
 	--SPECTRE
@@ -295,7 +295,7 @@ module.spells.names = {
 	["vertical"] = "Teleportasi Munggah",
 
 	["traveller"] = "Melip-Melip",
-	["spectreevent"] = "Phantom Shuffle",
+	["spectreevent"] = "Pangocokan Æther",
 	["spectrealtevent"] = "Alam Æther",
 
 	--HACKER
@@ -307,8 +307,8 @@ module.spells.names = {
 	["glitch"] = "Glitch Undhak-undhakan",
 
 	["hack"] = "Pamasang Èskalator",
-	["hackerevent"] = "Escalation",
-	["hackeraltevent"] = "Breach",
+	["hackerevent"] = "Èskalator Munggah kanggo Kesèd",
+	["hackeraltevent"] = "Èskalator Mal",
 
 	--THIEF
 	["steal"] = "Colong Undhak-undhakan",
@@ -335,7 +335,7 @@ module.spells.names = {
 	["archonaltevent"] = "Munggah-Mudhun",
 
 	--DRIFTER
-	["indrift"] = "Surf",
+	["indrift"] = "Plorod",
 	["outdrift"] = "Lelånå Undhak-undhakan",
 	["updrift"] = "Platform Lift",
 	["diagdrift"] = "Lelånå Platform",
@@ -391,8 +391,8 @@ module.spells.names = {
 	["oneway"] = "Undhak-undhakan Siji Arah",
 
 	["reflection"] = "Pangilo",
-	["reaverevent"] = "Cross Roads",
-	["reaveraltevent"] = "Conjucture",
+	["reaverevent"] = "Arah Kepekså",
+	["reaveraltevent"] = "Konjungsi Munggah",
 	
 	
 	--gremlin
@@ -416,7 +416,7 @@ module.spells.names = {
 	["chamdrawabove"] = "Kreteg Angkat Ndhuwur",
 
 	--MISC (compatibility)
-	["reg"] = "Staircase is regenerating",
+	["reg"] = "Menårå nembé régénerasi…",
 
 }-- " .. RankData.PATRON[7].name .. " 
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
