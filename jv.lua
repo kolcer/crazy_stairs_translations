@@ -256,7 +256,7 @@ module.spells.names = {
 	["fake"] = "Wangun Undhak-undhakan Palsu",
 	["invisible"] = "Wangun Undhak-undhakan Ora Katon",
 	["disco"] = "Undhak-undhakan Disko",
-	["trap"] = "Gawé Trap",
+	["trap"] = "Gawé Basangan",
 
 	["flipper"] = "Pamalik",
 	["jokerevent"] = "Dhelikaké Menårå",
@@ -399,7 +399,7 @@ module.spells.names = {
 	["tram"] = "Wangun Undhak-undhakan Trèm",
 	["screwup"] = "Plintir Munggah",
 	["revolve"] = "Ubeng Undhak-Undhakan",
-	["trapstairs"] = "Undhak-undhakan Trapdoor",
+	["trapstairs"] = "Undhak-undhakan Basangan",
 	["screwdown"] = "Plintir Mudhun",
 	["spinplatform"] = "Ubeng Platform",
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
