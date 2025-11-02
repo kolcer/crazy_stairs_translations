@@ -229,7 +229,7 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "Manipulasi %s",
+	["rigevent"] = "Rig %s",
 	["mode"] = "Mode %s Drone",
 	["refill"] = "Overload Mana %s",
 	["union"] = "Fusi Memedi %s",
@@ -362,7 +362,7 @@ module.spells.names = {
 	["twistup"] = "Sambung Undhak-undhakan Munggah",
 	["twistside"] = "Sambung Undhak-undhakan Sababag",
 	["twistrotate"] = "Sambung Undhak-undhakan Sacedhak",
-	["canceltwist"] = "Jegeg Undhak-undhakan Diplintir",
+	["canceltwist"] = "Jejeg Undhak-undhakan Diplintir",
 	["split2"] = "Belah Undhak-undhakan",
 	["splitalt"] = "Sigar Undhak-undhakan",
 
@@ -597,7 +597,7 @@ module.spells.descriptions = {
 	["twistside"] = "Månterå iki kanggo mlintir undhak-undhakan menyang arah kiwå utåwå tengen, nyambungaké dhèwèké to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on undhak-undhakan sing wis diplintir.",
 	["twistrotate"] = "Månterå iki kanggo mlintir undhak-undhakan menyang the rotated horizontal arah, nyambungaké them to the neighbouring staircase. Yèn ora ånå undhak-undhakan ing arah sing dipilih, dhèwèké bakal digawé. Munggah pangkat dadi TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Månterå iki kanggo nyambungaké above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Munggah pangkat dadi TRANSFORMER to use this spell on already twisted stairs.",
-	["canceltwist"] = "Månterå iki kanggo njejegaké any undhak-undhakan sing diplintir. Munggah pangkat dadi COMBINER to cast this spell from platform on disconnected twisted stairs. Munggah pangkat dadi MIXER kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
+	["canceltwist"] = "Månterå iki kanggo njejegaké undhak-undhakan sing diplintir åpå waé. Munggah pangkat dadi COMBINER to cast this spell from platform on disconnected twisted stairs. Munggah pangkat dadi MIXER kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "Månterå iki kanggo mbelah undhak-undhakan into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "Månterå iki kanggo nyigar undhak-undhakan into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
 
@@ -704,15 +704,15 @@ module.gui.ranks = {
 		[4] = "Your links will last twice as long (120s).",
 		[5] = "Your portals will last twice as long (120s).",
 		[6] = "The cost of the Call the Orb spell is reduced to 2 Mana.",
-		[8] = "If you are out of Mana, jump on a platform to be blessed with 1 Mana.",
+		[8] = "If you are out of Mana, mlumpat ing platform kanggo diberkati karo 1 mana.",
 		[9] = "Called Orb will travel twice as fast.",
 	}, 
 	["JOKER"] = { 
 		[4] = "Undhak-undhakan Disko saiki ora biså nggawé kowé menyang nari.",
-		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
-		[6] = "Kowé saiki biså ndetèksi platform sing trap lan undhak-undhakan sing palsu.",
-		[8] = "Kowé saiki biså walk on fake stairs.", 
-		[9] = "Kowé bakal will get bonus mana nalikå someone triggers any prank. (1 mana per player pranked)",
+		[5] = "Kowé saiki biså ndetèksi kabèh undhak-undhakan sing ora katon. Kowé duwé opsi kanggo ora nampilakéné.",
+		[6] = "Kowé saiki biså ndetèksi platform sing basangan lan undhak-undhakan sing palsu.",
+		[8] = "Kowé saiki biså mlaku ing undhak-undhakan sing palsu.", 
+		[9] = "Kowé bakal ngolèhaké mana bonus nalikå wong diapusi prank åpå waé. (1 mana per player pranked)",
 	},
 	["WICKED"] = {
 		[4] = "You can now walk on obbies as if they were normal stairs.",
@@ -722,21 +722,21 @@ module.gui.ranks = {
 		[9] = "Kowé saiki biså ngremukaké undhak-undhakan sing dikutuk.",
 	},
 	["SPECTRE"] = { 
-		[4] = "You will get an extra 1 Mana when you collect crystals with Your Ghost.", 
-		[5] = "Your GHOSTIFY spell is now free.",
-		[6] = "Kowé saiki biså touch orb at the top with your ghost to finish a climb.",
-		[8] = "You have the option to avoid triggering any Spectre Rigs.", 
-		[9] = "Kowé saiki biså walk on ghosted stairs.",
+		[4] = "Kowé bakal ngolèhaké 1 mana èkstra nalikå kowé ngumpulaké kristal karo memedimu.", 
+		[5] = "Månterå Memedèni kowé saiki dadi gratis.",
+		[6] = "Kowé saiki biså ndemèk orb ing lanté paling dhuwur karo memedimu kanggo rampung pendakian.",
+		[8] = "Kowé duwé opsi kanggo avoid triggering rig Spectre åpå waé.", 
+		[9] = "Kowé saiki biså mlaku ing undhak-undhakan sing dimemedèni.",
 	},
 	["KEEPER"] = {
 		[4] = "The Move Random spell and Keeper Rigs that you trigger will never cause the stairs to go down.",
-		[5] = "Kowé saiki biså ngalih undhak-undhakan sing ora dikutuk any.",
+		[5] = "Kowé saiki biså ngalih undhak-undhakan sing ora dikutuk åpå waé.",
 		[6] = "Månterå Pulih kowé saiki dadi gratis.", 
 		[8] = "You have the option to avoid triggering any Keeper Rigs.",
 		[9] = "Kowé saiki biså mulihaké undhak-undhakan lan prapatan sing dikutuk.",
 	},
 	["HACKER"] = { 
-		[4] = "You have the option to be immune to Escalators.",
+		[4] = "Kowé duwé opsi kanggo be immune to Escalators.",
 		[5] = "Your Dash spell is now 50% faster.",
 		[6] = "Your Blink spell is now 50% faster.", 
 		[8] = "You have the option to avoid triggering any Hacker Rigs. (merges with Escalator switch)",
@@ -745,37 +745,37 @@ module.gui.ranks = {
 	["THIEF"] = {
 		[4] = "Your Bypass will now last twice as long (120s).",
 		[5] = "Your Spiral Staircase will now last twice as long (120s).",
-		[6] = "You can now steal any un-cursed stairs.",
-		[8] = "If you are out of Mana, jump on a platform to get 1 Mana from your stash.", 
-		[9] = "You can now keep 2 stolen stairs at the same time.",
+		[6] = "Kowé saiki biså nyolong undhak-undhakan ora kawutuk åpå waé.",
+		[8] = "If you are out of Mana, mlumpat ing platform kanggo get 1 Mana from your stash.", 
+		[9] = "Kowé saiki biså nyimpen 2 undhak-undhakan dicolong at the same time.",
 	},
 	["ARCHON"] = {
 		[4] = "You can now cast the Destroy Gate spell on platforms, to remove Platform Gates.",
 		[5] = "Your Destroy Gate spell is now free.",
 		[6] = "Gates will never teleport you down.",
 		[8] = "You can now cast Gate spells on stairs with Gates already on them.",
-		[9] = "You can choose to avoid teleportation on all but upward Gates.",
+		[9] = "Kowé duwé opsi kanggo avoid teleportation on all but upward Gates.",
 	},
 	["DRIFTER"] = {
 		[4] = "Your upward platform drifts will appear and move 50% faster.",
-		[5] = "You can now spin and drift already drifted stairs.",
+		[5] = "Kowé saiki biså mbalik lan lelånå undhak-undhakan sing wis dilelånå.",
 		[6] = "You can now boost Elevators with both Riser and Elevator spells. Vagabond perk does not apply to boosted Elevators.",
 		[8] = "You have the option to avoid triggering any Drifter Rigs.",
 		[9] = "You can now boost Elevators twice, with both Riser and Elevator spells. Vagabond perk does not apply to boosted Elevators.",
 	},
 	["HERETIC"] = {
-		[4] = "When out of Mana, you can touch cursed stairs to uncurse them and get one Mana.",
-		[5] = "You are now immune to being possessed.",
-		[6] = "Kowé saiki biså cast månterå Flicker mring prapatan sing dikutuk.",
-		[8] = "Your Create Cursed Stairs and Malediction spells can now destroy blocking cursed stairs.",
-		[9] = "You will get 1 extra Mana everytime someone is possessed.",
+		[4] = "When out of Mana, kowé biså ndemèk undhak-undhakan kawutuk kanggo mbebasakéné lan ngolèhaké siji mana.",
+		[5] = "You are now immune to disupatani.",
+		[6] = "Kowé saiki biså nggunakaké månterå Flicker mring prapatan sing dikutuk.",
+		[8] = "Månterå Gawé Undhak-undhakan Kawutuk lan Pangundang kowé saiki biså ngremukaké undhak-undhakan kawutuk sing ngalang-alangi.",
+		[9] = "Kowé bakal ngolèhaké 1 mana èsktra saben wektu wong disupatani.",
 	},
 	["SPLICER"] = {
-		[4] = "You can now restore disconnected stairs from platform.",
-		[5] = "Your Restore Twist spell is now free.",
-		[6] = "You have the option to avoid below Splicer Rigs.",
+		[4] = "Kowé saiki biså njejegaké disconnected stairs from platform.",
+		[5] = "Månterå Jejeg Undhak-undhakan Diplintir kowé saiki dadi gratis.",
+		[6] = "Kowé duwé opsi kanggo avoid below Splicer Rigs.",
 		[8] = "Kowé saiki biså nyambungaké undhak-undhakan sing wis diplintir.",
-		[9] = "You will get 1 Mana everytime you restore a Splice.",
+		[9] = "Kowé bakal ngolèhaké 1 mana saben wektu kowé njejegaké undhak-undhakan sing diplintir.",
 	},
 	["REAVER"] = {
 		[4] = "Kowé saiki biså nggunakaké månterå Gamblok Memedimu kanggo dipisahaké.",
@@ -793,10 +793,10 @@ module.gui.ranks = {
 	},
 	["GREMLIN"] = {
 		[4] = "Kowé saiki biså ndetèksi basangan Gremlin.",
-		[5] = "You can now jump on platform to call all adjacent Trams.",
-		[6] = "You are now immune to Gremlin Rigs.",
-		[8] = "You are now immune to Gremlin Traps.",
-		[9] = "You can now control Corkscrew Stairs via a button. This may not work if there is another Daemon nearby.",
+		[5] = "You can now jump on platform to call all adjacent trèm.",
+		[6] = "You are now immune to rig Gremlin .",
+		[8] = "You are now immune to basangan Gremlin.",
+		[9] = "Kowé saiki biså control Corkscrew Stairs via a button. This may not work if there is another Daemon nearby.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Your jump cooldown is reduced by 0.125s.",
@@ -812,11 +812,11 @@ module.gui.ranks = {
 	["CHAMELEON"] = { 
 		[1] = "This is your starter CHAMELEON rank. Other alignment rank bonuses still apply.",
 		[2] = "EXCEPTION! You will ONLY get bonus Mana when drones are in CHAMELEON mode.",
-		[3] = "Alignment change animation is much faster now.",
+		[3] = "Animasi ngganti kelas saiki much faster.",
 		[4] = "Your hands will now glow purple when casting, disguising your motives.",
 		[5] = "Fake Stairs and Create Stairs spells will both have a purple glow.",
-		[6] = "You can now cast 4 spells which were rejected during development.",
-		[7] = "You can now cast 2 more spells which were rejected during development.",
+		[6] = "Kowé saiki biså nggunakaké 4 månterå which were rejected during development.",
+		[7] = "Kowé saiki biså nggunakaké 2 more spells which were rejected during development.",
 		[8] = "Changing alignments doesn't have a morph animation anymore, making switching alignments seamless and private. Can be turned off in options.",
 		[9] = "You can now cast the Mystery Rig spell with multi-tokens.",
 	},
@@ -826,9 +826,9 @@ module.gui.ranks = {
 
 module.gui.reshuffle = {
 
-	["title"] = "MODE RESHUFFLE UNDHAK-UNDHAKAN",
+	["title"] = "MODE PANGOCOK-OCOKAN",
 
-	["body"] = "Åpå kowé gelem kabèh undhak-undhakan to avoid collisions while moving? Yèn ora, any stairs in the way will be destroyed.",
+	["body"] = "Åpå kowé gelem kabèh undhak-undhakan kanggo ngéndhåni tubrukan wektu dipindahaké? Yèn ora, undhak-undhakan sing ing arah åpå waé bakal diremukaké.",
 
 }
 
@@ -846,7 +846,7 @@ module.gui.feedback = {
 
 	["title"] = "KIRIM UMPAN BALIK",
 
-	["prompt"] = "Klik kéné kanggo nulis lan ngirim pesen menyang developer! (minimum of 20 characters)",
+	["prompt"] = "Klik kéné kanggo nulis lan ngirim pesen menyang developer! (minimum 20 karakter)",
 	["send"] = "KIRIM",
 	["locked"] = "DIKUNCI",
 
@@ -874,7 +874,7 @@ module.gui.settings = {
 	["rchoices"] = "Tampilaké window milih arah kanggo Reaver (ora nyambut gawé ing konsol)",
 	["schoices"] = "Tampilaké window milih arah kanggo Splicer (ora nyambut gawé ing konsol)",
 	["gchoices"] = "Tampilaké window milih arah kanggo Gremlin (ora nyambut gawé ing konsol)",
-	["stats"] = "Tampilaké èkstra statistika nalikå casting månterå Acårå lan Rig",
+	["stats"] = "Tampilaké statistika èkstra nalikå casting månterå Acårå lan Rig",
 
 }
 
@@ -2103,6 +2103,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
