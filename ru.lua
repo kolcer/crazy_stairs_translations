@@ -433,7 +433,7 @@ module.spells.names = {
 	["archdrifter"] = "Дрейф / Лифт",
 	["archspectre"] = "Фантомная / Офантомить",
 	["archreaver"] = "Зеркало / В Один Конец",
-	["archheretic"] = "Проклясть Секцию / Лестницу",
+	["archheretic"] = "Проклясть Секцию/Лестницу",
 
 }-- " .. RankData.PATRON[7].name .. " 
 
@@ -2154,6 +2154,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
