@@ -514,13 +514,13 @@ module.spells.descriptions = {
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
 
-	--ARCHON (continue from here)
-	["splitside"] = "Collega con un portale dimensionale la scala colpita ad un'altra parallela in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitrotate"] = "Collega con un portale dimensionale la scala colpita ad un'altra adiacente in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitup"] = "Collega la scala colpita a quella sovrastante con un portale dimensionale. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Sage per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
+	--ARCHON
+	["splitside"] = "Collega con un portale dimensionale la scala colpita ad un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitrotate"] = "Collega con un portale dimensionale la scala colpita ad un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitup"] = "Collega la scala colpita a quella sovrastante con un portale dimensionale. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Sage per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
 	["cancelsplit"] = "Rimuove tutti i portali dimensionali collegati alla scala colpita.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Scholar per rimuovere il costo di esecuzione.",
-	["splitrandom"] = "Collega con un portale dimensionale la scala colpita ad un'altra sullo stesso piano in modo casuale. Se viene scelta un'intersecazione libera, verrà generata una scala nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitforward"] = "Crea due portali dimensionali tra le piattaforme indicate, collegandole direttamente. Eventuali scale in mezzo non rappresenteranno un problema.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali.",
+	["splitrandom"] = "Collega con un portale dimensionale la scala colpita ad un'altra sullo stesso piano in modo casuale. Se viene scelta un'intersecazione libera, verrà generata una scala nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitforward"] = "Crea un portale dimensionale che collega la piattaforma colpita con quella nella direzione scelta, ignorando eventuali scale in mezzo.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali.",
 
 	["splitter"] = timed .. "Permette di creare portali dimensionali su piattaforme in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.ARCHON[7].name,"Archons",RankData.ARCHON[3].name), 
 	["archonrigevent"] = rig .. "Archon Rig. Quando calpestate, ti teletrasportano verso la direzione in cui stavi camminando (attraversando eventuali scale non maledette che bloccano il passaggio).",
@@ -530,7 +530,7 @@ module.spells.descriptions = {
 	["archonrefill"] = overload,
 	["archonunion"] =  union,
 
-	--DRIFTER
+	--DRIFTER (continue from here)
 	["indrift"] = "Genera un mini drone sotto i tuoi piedi in grado di trasportarti su un'altra piattaforma nella direzione indicata.",
 	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango Vagabond per aumentare la velocità della piattaforma.\nSblocca il rango Traveller per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango Strider per far raggiungere alla piattaforma ancora un altro piano (3 in totale).",
 	["diagdrift"] = "Se la direzione indicata è fuori dall'area di gioco, la piattaforma farà un giro completo intorno al perimetro; altrimenti andrà avanti e indietro diagonalmente tra due piattaforme per 7 volte.",
@@ -563,8 +563,8 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
-	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
+	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
+	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
 	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango Transformer per poter combinare scale già unite.",
 	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo sulle piattaforme.\nSblocca il rango Mixer per rimuovere il costo di esecuzione.\nSblocca il rango Optimus per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
 	["split2"] = "Taglia in due la scala colpita, garantendoti accesso a tutte e quattro le piattaforme.",
