@@ -407,8 +407,8 @@ module.spells.descriptions = {
 	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango Defender per ridurre il costo a 2 Mana.\nSblocca il rango Saviour per velocizzare il processo.",
 	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
-	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango Creator per raddoppiare la durabilità.",
-	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma sovrastante. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durabilità.",
+	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango Creator per raddoppiare la durata.",
+	["portal"] = "Crea un portale sulla piattaforma colpita. Chi lo tocca viene teletrasportato sulla piattaforma sovrastante. Dura 60 secondi.\nSblocca il rango Protector per raddoppiare la durata.",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."Patron Rig. Quando calpestate, conferiscono 1 Mana (l'effetto non si attiva se il contenitore Mana è pieno). In seguito all'attivazione, tornano ad essere scale normali.",
@@ -482,15 +482,15 @@ module.spells.descriptions = {
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
-	--HACKER (continuare da qui)
-	["dash"] = "Ti teletrasporta sulla piattaforma indicata, se l'intersecazione è libera.\nSblocca il rango Cracker per velocizzare l'animazione del 50%.",
-	["blink"] = "Ti permette di aggirare una scala che blocca il passaggio, se non è maledetta.\nSblocca il rango Exploiter per velocizzare l'animazione del 50%.",
-	["swap"] = "Ti teletrasporta nella posizione in cui si trova la tua controfigura. Può essere eseguito in qualsiasi punto della mappa.",
+	--HACKER
+	["dash"] = "Ti teletrasporta sulla piattaforma indicata, se l'intersecazione è libera.\nSblocca il rango Cracker per velocizzare il processo del 50%.",
+	["blink"] = "Ti permette di aggirare una scala che blocca il passaggio, se non è maledetta.\nSblocca il rango Exploiter per velocizzare il priocesso del 50%.",
+	["swap"] = "Ti teletrasporta nella posizione in cui si trova la tua controfigura. Può essere eseguito ovunque.",
 	["slide"] = "Transforma la scala colpita in una scala mobile. Puoi scegliere se farla salire o scendere.\nSblocca il rango Scripter per avere l'opzione di diventare immune alle scale mobili.",
-	["slideup"] = "Cambia la direzione della scala presente nella direzione indicata, se è in direzione opposta a dove stai. Se la scala è alterata, verrà ripristinata nel processo (tranne se è maledetta).",
-	["glitch"] = "Ti teletrasporta insieme alla scala colpita in un'intersecazione libera sullo stesso piano.\nSblocca il rango Zero per assicurare il teletrasporto di fianco alla sfera finale (se lanciato in cima).",
+	["slideup"] = "Inverte la direzione della scala di fronte a patto che essa non sia maledetta. Se la scala è alterata verrà ripristinata nel processo",
+	["glitch"] = "Ti teletrasporta insieme alla scala colpita in un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Zero per poter garantire il teletrasporto affianco alla sfera finale, se possibile.",
 
-	["hack"] = timed .. "Permette di trasformare scale mobili in continuazione, per 60 secondi. Se ci sono scale che bloccano il passaggio, queste verranno demolite (tranne quelle maledette)." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
+	["hack"] = timed .. "Permette di trasformare scale mobili ascendenti in continuazione, per 60 secondi. Se ci sono scale che bloccano il passaggio, queste verranno demolite (tranne quelle maledette)." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
 	["hackerrigevent"] = rig .. "Hacker Rig. Quando calpestate, ti teletrasportano insieme alla scala in un'intersecazione libera sullo stesso piano (opzionale con il rango Reaper sbloccato). Solo una persona può essere teletrasportata.",
 	["hackerevent"] = event .. "Scale Mobili Randomiche.",
 	["hackeraltevent"] = event ..  "Scale Mobili Ascendenti.",
@@ -499,22 +499,22 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario rubare delle scale con questo incantesimo o con Ruba Scale in Alto.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter rubare 2 scale alla volta.",
-	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario rubare delle scale con questo incantesimo o con Ruba Scale.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter rubare 2 scale alla volta.",
+	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter trasportare 2 scale alla volta.",
+	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter trasportare 2 scale alla volta.",
 	["place"] = "Posiziona una scala rubata nella direzione indicata, se l'intersecazione è libera.",
-	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango Bandit per raddoppiare la durabilità.",
-	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango Robber per raddoppiare la durabilità.",
+	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango Bandit per raddoppiare la durata.",
+	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango Robber per raddoppiare la durata.",
 	["drop"] = "Posiziona una scala piatta nella direzione indicata, se l'intersecazione è libera.",
 
 	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Eventuali scale che bloccano il passaggio verranno rubate automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
-	["thiefrigevent"] = rig .. "Thief Rig. Quando calpestate, sottraggono 1 Mana ai malcapitati e te lo trasferiscono, se hai spazio disponibile e non hai cambiato classe.",
+	["thiefrigevent"] = rig .. "Thief Rig. Chi le calpesta perde 1 Mana, che viene trasferito a te se non hai cambiato classe e il tuo contenitore Mana non è pieno.",
 	["thiefevent"] = event .. "Posiziona Scale Piatte.",
 	["thiefaltevent"] = "Questo è un sortilegio Evento. Posiziona scorciatoie in tutte le intersecazioni disponibili, eccetto in quelle dove ci sono scale maledette o malefici.",
 	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Ruba/Posiziona Scale"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
 
-	--ARCHON
+	--ARCHON (continue from here)
 	["splitside"] = "Collega con un portale dimensionale la scala colpita ad un'altra parallela in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
 	["splitrotate"] = "Collega con un portale dimensionale la scala colpita ad un'altra adiacente in base alla direzione scelta. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
 	["splitup"] = "Collega la scala colpita a quella sovrastante con un portale dimensionale. Se non ci sono scale presenti nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare la destinazione di un portale dimensionale già esistente.\nSblocca il rango Sage per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
@@ -596,8 +596,8 @@ module.spells.descriptions = {
 
 	--REAVER
 	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.\nSblocca il rango Poltergeist per poter demolire eventuali scale in mezzo.",
-	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano che dura 10 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli.\nSblocca il rango Presence per aumentare la durabilità a 15 secondi.",
-	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata che dura 6 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durabilità a 10 secondi.", --TODO, Wrong value of second for the rank effect (which is also there in english version)
+	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano che dura 10 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli.\nSblocca il rango Presence per aumentare la durata a 15 secondi.",
+	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata che dura 6 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 10 secondi.", --TODO, Wrong value of second for the rank effect (which is also there in english version)
 	["outermirror"] = "Genera uno specchio nella direzione indicata e dalla parte opposta del piano, camminaci attraverso per teletrasportarti e unirti/separarti dalla tua controfigura. Gli specchi svaniranno dopo 60 secondi. Va lanciato sulle piattaforme perimetrali.",
 	["merge"] = "Unisciti con la tua controfigura.\nSblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.",
 	["oneway"] = "Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango Alien per diventarne immune. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.",
