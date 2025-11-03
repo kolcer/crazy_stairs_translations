@@ -415,6 +415,23 @@ module.spells.names = {
 	["chamswap"] = "Dadi Memedi",
 	["chamdrawabove"] = "Kreteg Angkat Ndhuwur",
 
+		["share"] = "Share mana (requires 2 Mana minimum)",
+	--ARCHITECT
+	["archpatron"] = "Create or shrink",
+	["archarchon"] = "Gate stairs or platform",
+	["archthief"] = "Steal or place",
+	["archnecro"] = "Dual or Undead stairs",
+	["archhacker"] = "Esalator or Hack-in",
+	["archkeeper"] = "Move or Restore",
+	["archsplicer"] = "Splice or Restore",
+	["archwicked"] = "Wall or Destroy",
+	["archgremlin"] = "Revolve stairs or a platform",
+	["archjoker"] = "Fake or Flip stairs",
+	["archdrifter"] = "Drift or Elevator",
+	["archspectre"] = "Phantom or Ghost stairs",
+	["archreaver"] = "Mirrored or One-way stairs",
+	["archheretic"] = "Curse intersection or stairs",
+
 	--MISC (compatibility)
 	["reg"] = "Menårå nembé régénerasi…",
 
@@ -668,6 +685,24 @@ module.spells.descriptions = {
 	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","random spell from all other modes"),
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
+
+	["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
+	
+	--ARCHITECT
+	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
+	["archarchon"] = "This spell when used on platform's arrows, will create a gate between platforms. When used on stairs, it will gate them in the direction of Your choice.",
+	["archthief"] = "This spell when used on platform's arrows, will place normal stairs. When used on normal or rigged stairs it will steal them.",
+	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
+	["archhacker"] = "This spell when used on platform's arrows, will hack-in any crossing stairs. When used on normal or rigged stairs, it will turn them into an Escalator of your choice.",
+	["archkeeper"] = "This spell when used on platform's arrows, will restore adjacent stairs. When used on normal or rigged stairs, it will move them in the direction of Your choice.",
+	["archsplicer"] = "This spell when used on platform's arrows, will restore adjacent twisted stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
+	["archwicked"] = "This spell when used on platform's arrows, will create a Wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
+	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
+	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
+	["archdrifter"] = "This spell when used on platform, will turn it into an elevator. When used on normal or rigged stairs, it will drift them into a random direction.",
+	["archspectre"] = "This spell when used on platform's arrows, will create Phantom stairs. When used on normal, ghosted or rigged stairs, it will Ghost or un-Ghost them.",
+	["archreaver"] = "This spell when used on platform's arrows, will create Mirrored stairs. When used on normal or rigged stairs, it turn them into One-Way stairs of Your choice.",
+	["archheretic"] = "This spell when used on platform's arrows, will curse an empty intersection without flickering anyone. When used on normal, cursed or rigged stairs, it curse or un-curse them.",
 
 }
 local CommonPerksInsertALignment = {
@@ -1199,8 +1234,8 @@ module.static = {
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
 	["pro_1"] = "MENÅRÅ PRO",
-	["pro_2"] = "Tataran Even restrictions",
-	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
+	["pro_2"] = "Pawatesan tataran genep",
+	["pro_3"] = "Jero Menara Pro, sawatårå månterå platform ora biså dianggo ing tataran genep. Månterå Basangan, Gawé Portal, Teleportasi Munggah, Undhak-undhakan Spiral lan Teleportasi Acak mung biså dilakokaké ing tataran ganjil.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
 	["pro_5"] = "Undhak-undhakan Dikutuk",
 	["pro_6"] = "Jero Menårå Pro, Drone bakal randomly mangun undhak-undhakan dikutuk utåwå ngutuk undhak-undhakan sing biyasa. There is 20% chance of Cursed Stairs apperance. Panah panuntun ora bakal ditampilaké ning cedhak undhak-undhakan dikutuk.",
@@ -1353,13 +1388,13 @@ module.static = {
 	["muggle_lead"] = "MUGGLE PALING CEPET",
 	["muggle_ranks"] = "PANGKAT MUGGLE",
 
-	["hacker_lead"] = "HACKER PALING MAJENG",
+	["hacker_lead"] = "HACKER PALING MAJU",
 	["hacker_ranks"] = "PANGKAT HACKER",
 
 	["wicked_lead"] = "WICKED PALING NAKAL",
 	["wicked_ranks"] = "PANGKAT WICKED",
 
-	["keeper_lead"] = "KEEPER PALING SATYA",
+	["keeper_lead"] = "KEEPER PALING SETYA",
 	["keeper_ranks"] = "PANGKAT KEEPER",
 
 	["joker_lead"] = "JOKER PALING ÉDAN",
@@ -1383,7 +1418,7 @@ module.static = {
 	["heretic_lead"] = "HERETIC PALING KEJEM",
 	["heretic_ranks"] = "PANGKAT HERETIC",
 
-	["necromancer_lead"] = "NECROMANCER PALING UNDEAD",
+	["necromancer_lead"] = "NECROMANCER PALING LESTARI",
 	["necromancer_ranks"] = "PANGKAT NECROMANCER",
 
 	["splicer_lead"] = "SPLICER PALING TÈKNIS",
@@ -1395,7 +1430,7 @@ module.static = {
 	["gremlin_lead"] = "GREMLIN PALING BEGJÅ",
 	["gremlin_ranks"] = "PANGKAT GREMLIN",
 
-	["chameleon_lead"] = "CHAMELEON PALING KESÈD",
+	["chameleon_lead"] = "CHAMELEON PALING LAJU",
 	["chameleon_ranks"] = "PANGKAT CHAMELEON",
 
 	["dailies"] = "RÈKOR DINÅ IKI",
@@ -1435,13 +1470,13 @@ module.tutorial = {
 
 module.where = {
 
-	["platform"] = "Kudu dilakokaké ing platform. Won't work on bottom nor even levels in pro towers.",
+	["platform"] = "Kudu dilakokaké ing platform. Ora bakal work ing bottom nor even levels jero Menara Pro.",
 	["arrow"] = "Kudu dilakokaké ing panah platform.",
 	["stairs"] = "Kudu dilakokaké ing undhak-undhakan.",
 	["above"] = "Kudu dilakokaké ing undhak-undhakan ing ngisor, to affect the above stairs. Works on links too.",
 	["dynamic"] = "May affect both below and above stairs.",
-	["both"] = "Can be executed on either platform's arrows or stairs.",
-	["both2"] = "Can be executed on either platform or stairs.",
+	["both"] = "Biså dilakokaké ing panah platform utåwå undhak-undhakan.",
+	["both2"] = "Biså dilakokaké ing platform utåwå undhak-undhakan.",
 	["anywhere"] = "Biså dilakokaké ing ngendi waé.",
 	["nowhere"] = "Månterå iki ora merlokaké pilakon.",
 
@@ -1472,12 +1507,12 @@ module.guide = {
 
 		--platform
 		["middle"] = "Månterå iki ora duwé special requirements.",
-		["diag"] = "Can be executed in both inner and outer diagonal directions.",
-		["outer"] = "Can be executed in perpendicular outer directions only.",
-		["centre"] = "This spell will demolish any small mirrors already on the current level, but not the big one.",
-		["inner"] = "Can be executed in inner diagonal directions only, without a link yet.",
-		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
-		["top"] = "Biså dilakokaké ing platform paling ndhuwur mung.",
+		["diag"] = "Biså dilakolaké ing both inner and outer diagonal directions.",
+		["outer"] = "Biså dilakolaké ing perpendicular outer directions only.",
+		["centre"] = "Månterå iki bakal mbusek pangilon cilik åpå waé sing wis ing tataran saiki, nanging ora gedhé.",
+		["inner"] = "Biså dilakolaké ing inner diagonal directions only, without a link yet.",
+		["prevolve"] = "Biså dilakolaké ing both clockwise and counterclockwise directions.",
+		["top"] = "Biså dilakokaké ing platform paling dhuwur mung.",
 	},
 	
 	["stairs"] ={
@@ -1489,12 +1524,12 @@ module.guide = {
 		["straight"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Controller kanggo ngalih undhak-undhakan ora kawutuk åpå waé.",
 		["rotate"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Controller kanggo muter undhak-undhakan ora kawutuk åpå waé.",
 		["flip"]= "Biså dilakokaké ing undhak-undhakan biyasa, diwalik utåwå dimanipulasi.",
-		["gate"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates.",
-		["gatestr"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
-		["gaterot"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
-		["twist"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Transformer kanggo  override splices.",
-		["twiststr"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
-		["twistrot"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
+		["gate"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Prodigy kanggo nyingkiraké portal.",
+		["gatestr"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Prodigy kanggo nyingkiraké portal.",
+		["gaterot"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Prodigy kanggo nyingkiraké portal.",
+		["twist"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Transformer kanggo nyingkiraké sambungan.",
+		["twiststr"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Transformer kanggo nyingkiraké sambungan.",
+		["twistrot"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Transformer kanggo nyingkiraké sambungan.",
 		["spin"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Nomad kanggo mbalikaké undhak-undhakan sing wis dilelånå.",
 		["drift"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Munggah pangkat dadi Nomad kanggo nglelånå undhak-undhakan sing wis dilelånå.",
 		["escalator"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi mung.",
@@ -1511,27 +1546,43 @@ module.guide = {
 		["steal"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi ing ngisor. Munggah pangkat dadi Hijacker kanggo nyolong undhak-undhakan åpå waé ing dhuwur.",
 		["flip"]= "Biså dilakokaké ing undhak-undhakan biyasa, diwalik utåwå dimanipulasi ing ngisor.",
 		["onedirection"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi ing ngisor. Munggah pangkat dadi Controller kanggo alih undhak-undhakan ing dhuwur åpå waé sing ora kawutuk.",
-		["slide"] = "This spell lets you bypass any un-cursed blocking stairs.",
+		["slide"] = "Månterå iki ngidèni kowé ngliwati undhak-undhakan ora kawutuk sing ngalang-alangi åpå waé.",
 		["normalrig"] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi ing ngisor mung.",
 
 	},
 	
 	["dynamic"] = {
 		--hack, twister, bender and flipper
-		['flip'] = "Can be executed on or below normal, flipped or rigged stairs. If above execution fails for any reason, below stairs will be affected instead.",
-		['normalrig'] = "Can be executed on or below any normal or rigged stairs. Spell will be applied to both above and below stairs.",
+		['flip'] = "Biså dilakokaké ing utåwå ing ngisor undhak-undhakan biyasa, diwalik utåwå dimanipulasi. Yèn above execution fails for any reason, below stairs will be affected instead.",
+		['normalrig'] = "Biså dilakokaké ing utåwå ing ngisor undhak-undhakan biyasa utåwå dimanipulasi åpå waé. Månterå bakal ditrapaké kanggo undhak-undhakan ing dhuwur lan ngisor.",
 		['slide'] = "Biså dilakokaké ing undhak-undhakan biyasa utåwå dimanipulasi. Yèn ånå undhak-undhakan ora kawutuk sing ngalang-alangi ing dhuwur, dhèwèké bakal diremukaké.",
 	},
 	
 	["both"] = {
-		['restore'] = "Biså dilakokaké on any stairs or on platform's arrow with any adjacent stairs. Munggah pangkat dadi Admiral kanggo mulihaké undhak-undhakan sing kawutuk.",
+		['restore'] = "Biså dilakokaké ing undhak-undhakan åpå waé utåwå panah platform karo undhak-undhakan adjacent åpå waé. Munggah pangkat dadi Admiral kanggo mulihaké undhak-undhakan sing kawutuk.",
 		['deltwists'] = "Biså dilakokaké ing undhak-undhakan diplintir mung utåwå ing platform panah with adjacent undhak-undhakan diplintir. Munggah pangkat dadi Combiner kanggo njejegaké de-attached stairs from platform.",
 		['ghosted'] = "Biså dilakokaké ing undhak-undhakan biyasa, rigged utåwå dimemedèni, utåwå on platfrom panah karo adjacent undhak-undhakan biyasa, rigged utåwå dimemedèni.",
+
+		--NEW
+		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
+		["archarchon"] = "Archon's Platform Gate (when used on arrows) or Gate Stairs (when used on stairs)",
+		["archthief"] = "Thief's Place Stairs (when used on arrows) or Steal Stairs (when used on stairs)",
+		["archnecro"] = "Necromancer's Create Dual Stairs (when used on arrows) or Undead Stairs (when used on stairs)",
+		["archhacker"] = "Hacker's Hack-In Stairs (when used on arrows) or Escalator (when used on stairs)",
+		["archkeeper"] = "Keeper's Restore Stairs (when used on arrows) or Move/Rotate Stairs (when used on stairs)",
+		["archsplicer"] = "Splicer's Restore Twisted Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
+		["archwicked"] = "Wicked's Wall without a Link (when used on arrows) or Destroy Stairs (when used on stairs)",
+		["archjoker"] = "Joker's Create Fake Stairs (when used on arrows) or Flip/Unflip Stairs (when used on stairs)",
+		["archspectre"] = "Spectre's Create Phantom Stairs (when used on arrows) or Ghost/UnGhost Stairs (when used on stairs)",
+		["archreaver"] = "Reaver's Create Mirrored Stairs (when used on arrows) or One-Way Stairs (when used on stairs)",
+		["archheretic"] = "Heretic's Curse Intersection without Flicker (when used on arrows) or Curse/unCurse Stairs (when used on stairs)",
 
 	},
 	
 	['both2'] = {
 		['delsplits'] = "Biså dilakokaké ing undhak-undhakan sing duwé portal mung. Munggah pangkat dadi Disciple kanggo use månterå iki kanggo nutup platform portal."
+		["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
+		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
 	
 	['anywhere'] = {
