@@ -530,15 +530,15 @@ module.spells.descriptions = {
 	["archonrefill"] = overload,
 	["archonunion"] =  union,
 
-	--DRIFTER (continue from here)
-	["indrift"] = "Genera un mini drone sotto i tuoi piedi in grado di trasportarti su un'altra piattaforma nella direzione indicata.",
-	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango Vagabond per aumentare la velocità della piattaforma.\nSblocca il rango Traveller per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango Strider per far raggiungere alla piattaforma ancora un altro piano (3 in totale).",
-	["diagdrift"] = "Se la direzione indicata è fuori dall'area di gioco, la piattaforma farà un giro completo intorno al perimetro; altrimenti andrà avanti e indietro diagonalmente tra due piattaforme per 7 volte.",
+	--DRIFTER
+	["indrift"] = "Genera una piattaforma drone sotto i tuoi piedi in grado di trasportati attraverso un'intersecazione libera nella direzione indicata",
+	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango Vagabond per aumentare la velocità della piattaforma.\nSblocca il rango Traveller per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango Strider per far raggiungere alla piattaforma un ulteriore piano (3 in totale).",
+	["diagdrift"] = "La piattaforma colpita si trasformerà in una piattaforma mobile che può muoversi in maniera diversa in base alla direzione scelta: se fuori dall'area di gioco, essa farà un giro completo intorno al perimetro della torre; altrimenti farà avanti e indietro diagonalmente tra due piattaforme per 7 volte.",
 	["spin"] = "Rotea la scala colpita di 180 gradi.\nSblocca il rango Nomad per poter roteare le scale deviate.",
 	["outdrift"] = "Devia la scala colpita verso un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Nomad per deviare scale già deviate.",
 	["driftabove"] = "Devia leggermente la scala posizionata direttamente sopra a quella colpita in modo da permetterti di passarci sotto e scalarla.",
 
-	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSblocca almeno il rango Traveller per poter potenziare ascensori già esistenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifters",RankData.DRIFTER[3].name), 
+	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSbloccare i ranghi Traveller e Strider ti permetterà di applicarvi i rispettivi potenziamenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifters",RankData.DRIFTER[3].name), 
 	["drifterrigevent"] = rig .. "Drifter Rig. Quando calpestate, le scale ruoteranno di 180 gradi (opzionale con il rango Voyager sbloccato).",
 	["drifterevent"] = event .. "Devia Scale.",
 	["drifteraltevent"] = event .. "Solleva Scale in Alto.",
@@ -547,10 +547,10 @@ module.spells.descriptions = {
 	["drifterunion"] = union,
 
 	--HERETIC
-	["createcursed"] = "Genera una scala maledetta nella direzione indicata, distruggendo eventuali scale in mezzo.\nSblocca il rango Banished per poter demolire eventuali scale maledette in mezzo.",
+	["createcursed"] = "Genera una scala maledetta nella direzione indicata, distruggendo eventuali scale in mezzo a patto che non maledette.\nSblocca il rango Banished per poter rimuovere questa limitazione.",
 	["curse"] = "Maledice la scala colpita se non lo è già, altrimenti rimuove la maledizione.",
 	["curseabove"] = "Maledice la scala posizionata direttamente sopra a quella colpita e la solleva leggermente, permettendoti di passarci sotto e scalarla. Se la scala è già maledetta, rimuove la maledizione.",
-	["curseinter"] = "Ti fa passare attraverso l'intersecazione lasciando indietro un maleficio, se non ci sono scale in mezzo.\nSblocca il rango Infidel per poter eseguire l'incantesimo su intersecazioni con malefici.",
+	["curseinter"] = "Ti fa passare attraverso l'intersecazione lasciando indietro un maleficio, a patto che non ci siano scale in mezzo.\nSblocca il rango Infidel per poter eseguire l'incantesimo su intersecazioni con malefici, rimuovendoli nel processo",
 	["autodown"] = "Solleva una copia della parte inferiore della scala colpita, permettendoti di raggiungere una nuova piattaforma. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
 	["autoup"] = "Abbassa la parte superiore della scala colpita, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
 
@@ -562,7 +562,7 @@ module.spells.descriptions = {
 	["hereticrefill"] = overload,
 	["hereticunion"] =  union,
 
-	--SPLICER
+	--SPLICER (continue from here)
 	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
 	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
 	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango Transformer per poter combinare scale già unite.",
