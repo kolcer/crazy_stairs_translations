@@ -17,7 +17,7 @@ module.gui.basic = {
 	["default"] = "DEFAULT",
 	["validate"] = "TEBUS",
 	["play"] = "MÅIN",
-	["skip"] = "LIWATI\nLATIHAN",
+	["skip"] = "LIWATI\nLANTIHAN",
 	["loading"] = "MOMOT, NJALUK NGENTÈNI…",
 	["mode"] = "MODE\n%s",
 	["cd"] = "PANGADHEMAN\nPOKOK",
@@ -66,8 +66,8 @@ module.gui.serversettings = {
 	["Tower"] = "SETÈLAN MENÅRÅ",
 	["TowerReadOnly"] = "SETÈLAN MENÅRÅ (wåcå mung)",
 	["InfMode"] = "Mode Infinit (ora biså diganti wektu mbalap utåwå mulih)",
-	["CasualPlayers"] = "Pendaki kasual biså nggunakaké månterå",
-	["Regeneration"] = "Panggawéan undhak-undhakan otomatis sawisé Wicked wis nggunakaké månterå pokokné nyirnakaké kabèh menårå (Ora biså jero mode Infinit)",
+	["CasualPlayers"] = "Pendaki kasual biså nganggo månterå",
+	["Regeneration"] = "Panggawéan undhak-undhakan otomatis sawisé Wicked wis nganggo månterå pokokné nyirnakaké kabèh menårå (Ora biså jero mode Infinit)",
 	["EvenLevels"] = "Tataran genep diwatesi",
 	["OrbMoves"] = "Orb endgame ngganti posisiné",
 	["InfRegeneration"] = "Panggawéan undhak-undhakan otomatis ing server anyar, tataran menårå diganti lan sawisé balap infinit",
@@ -466,7 +466,7 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Månterå iki kanggo malikaké undhak-undhakan, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé ugå biså malikaké dhèwèké manèh.",
+	["flip"] = "Månterå iki kanggo malikaké undhak-undhakan, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosok baliné. Kowé ugå biså malikaké dhèwèké manèh.",
 	["flipabove"] = "Månterå iki kanggo malikaké undhak-undhakan sing ånå ing dhuwur, nganti bagéan ndhuwur bakal dadi bagéan ngisor lan kosokbaliné. Kowé ugå biså malikaké dhèwèké manèh.",
 	["fake"] = "Månterå iki kanggo mangun undhak-undhakan palsu ing arah sing dipilih. Yèn ånå undhak-undhakan sing nyilang ing arahmu, dhèwèké bakal diremukaké. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "Månterå iki kanggo nggawé undhak-undhakan didhelikaké. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Munggah pangkat dadi JESTER to see all invisible stairs, and have the option to not reveal them.",
@@ -498,12 +498,12 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Månterå iki kanggo ngalih undhak-undhakan in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Munggah pangkat dadi CONTROLLER kanggo ngalih undhak-undhakan åpå waé.",
-	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
-	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
-	["movedown"] = "Månterå iki kanggo mulihaké undhak-undhakan sing spésial åpå waé. If stairs are already normal, this spell will not execute. Munggah pangkat dadi CAPTAIN kanggo cast månterå iki kanthi gratis. Munggah pangkat dadi ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
-	["rig"] = "This spell will move or rotate stairs in random direction, destroying any stairs in the way. Munggah pangkat dadi OPERATOR to avoid stairs going down. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
-	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Munggah pangkat dadi OPERATOR to avoid stairs going down. Munggah pangkat dadi CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Månterå iki kanggo ngalih undhak-undhakan horisontal, ngremukaké undhak-undhakan åpå waé ing arahné. Sawisé nganggo månterå iki, panah bakal katon ing undhak-undhakan, nyebabakému kanggo milih arah. Undhak-undhakan ora biså dipindahaké metu såkå area game. Munggah pangkat dadi CONTROLLER kanggo ngalih undhak-undhakan ora kawutuk åpå waé.",
+	["rotate"] = "Månterå iki kanggo muter undhak-undhakan horistonal, ngremukaké undhak-undhakan åpå waé ing arahné. Sawisé nganggo månterå iki, panah bakal katon ing undhak-undhakan, nyebabakému kanggo milih arah. Undhak-undhakan ora biså diputer metu såkå area game. Munggah pangkat dadi CONTROLLER kanggo muter undhak-undhakan ora kawutuk åpå waé.",
+	["moveup"] = "Månterå iki kanggo munggahaké undhak-undhakan, ngremukaké undhak-undhakan åpå waé ing arahné. Undhak-undhakan ora biså dimunggahaké ndhuwur tataran paling dhuwur. Munggah pangkat dadi CONTROLLER kanggo munggahaké undhak-undhakan ora kawutuk åpå waé.",
+	["movedown"] = "Månterå iki kanggo mulihaké undhak-undhakan sing spésial åpå waé. Yèn undhak-undhakan wis biyasa, månterå iki ora bakal dilakokaké. Munggah pangkat dadi CAPTAIN kanggo nganggo månterå iki kanthi gratis. Munggah pangkat dadi ADMIRAL supåyå biså mbebasaké undhak-undhakan lan prapatan sing kawutuk.",
+	["rig"] = "Månterå iki kanggo ngalih utåwå muter undhak-undhakan kanthi acak, ngremukaké undhak-undhakan åpå waé ing arahné. Munggah pangkat dadi OPERATOR to avoid stairs going down. Munggah pangkat dadi CONTROLLER kanggo ngalih utåwå muter undhak-undhakan ora kawutuk åpå waé.",
+	["moverandom"] = "Månterå iki kanggo ngalih utåwå muter undhak-undhakan sing ånå ing dhuwur kanthi acak, ngremukaké undhak-undhakan åpå waé ing arahné. Munggah pangkat dadi OPERATOR kanggo avoid stairs going down. Munggah pangkat dadi CONTROLLER kanggo ngalih utåwå muter undhak-undhakan ora kawutuk åpå waé.",
 
 	["ascension"] = timed .. "It allows you to cast as many move up spells as you like for one minute."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
 	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Munggah pangkat dadi Operator, for any rigs that you trigger to never go down. Munggah pangkat dadi Sentinel to have an option not to trigger them.",
@@ -596,9 +596,9 @@ module.spells.descriptions = {
 
 	--HERETIC
 	["createcursed"] = "Månterå iki kanggo mangun undhak-undhakan kawutuk ing arah sing dipilih. Undhak-undhakan åpå waé sing ngalang-alangi ing arahmu bakal diremukaké. Munggah pangkat dadi BANISHED kanggo ngremukaké undhak-undhakan kawutuk sing ngalang-alangi.",
-	["curse"] = "Månterå iki kanggo ngutuk undhak-undhakan ngisor. Nggunakaké månterå manèh kanggo mbébasaké undhak-undhakan.",
-	["curseabove"] = "Månterå iki kanggo ngutuk undhak-undhakan sing ånå ing dhuwur. Dhèwèké bakal diangkat kanggo sauntårå, marengaké kowé kanggo mendaki ing ngisoré. Nggunakaké månterå manèh kanggo mbébasaké undhak-undhakan.",
-	["curseinter"] = "Månterå iki kanggo mlumpat menyang platform iring, yèn ora ånå undhak-undhakan ing arah. Prapatan bakal dikutuk sawisé månterå iki, saénggå pendaki liyå ora biså nggunakakéné manèh. Munggah pangkat dadi INFIDEL supåyå biså nggunakaké månterå iki ing prapatan sing wis kawutuk, lan ugå mbebasakéné.",
+	["curse"] = "Månterå iki kanggo ngutuk undhak-undhakan ngisor. Nganggo månterå manèh kanggo mbébasaké undhak-undhakan.",
+	["curseabove"] = "Månterå iki kanggo ngutuk undhak-undhakan sing ånå ing dhuwur. Dhèwèké bakal diangkat kanggo sauntårå, marengaké kowé kanggo mendaki ing ngisoré. Nganggo månterå manèh kanggo mbébasaké undhak-undhakan.",
+	["curseinter"] = "Månterå iki kanggo mlumpat menyang platform iring, yèn ora ånå undhak-undhakan ing arah. Prapatan bakal dikutuk sawisé månterå iki, saénggå pendaki liyå ora biså nganggoné manèh. Munggah pangkat dadi INFIDEL supåyå biså nganggo månterå iki ing prapatan sing wis kawutuk, lan ugå mbebasakéné.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
 
@@ -646,7 +646,7 @@ module.spells.descriptions = {
 	["bigmirror"] = "Månterå iki kanggo nggawé pangilon gedhé ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon gedhé bakal mbusek pangilon cilik ing tataran sing pådhå. Munggah pangkat dadi Presence to extend mirror lifetime to 15 seconds.",
 	["smallmirror"] = "Månterå iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Munggah pangkat dadi Presence to extend mirror lifetime to 10 seconds.",
 	["outermirror"] = "Månterå iki kanggo mangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung biså can only be used in outer platforms. Pendaki sing mlaku tembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menårå. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["merge"] = "Månterå iki kanggo nggabung karo memedimu. Munggah pangkat dadi REPLICA kanggo nggunakaké månterå iki manèh kanggo dipisahaké karo memedimu. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["merge"] = "Månterå iki kanggo nggabung karo memedimu. Munggah pangkat dadi REPLICA kanggo nganggo månterå iki manèh kanggo dipisahaké karo memedimu. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 	["oneway"] = "Månterå iki kanggo nggawé undhak-undhakan dadi one-way passage, while merging players with their ghost, if they walk in proper direction. Kowé biså milih arah sing arep diblokir. Munggah pangkat dadi Alien to be immune to one-way stairs effect. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
@@ -801,7 +801,7 @@ module.gui.ranks = {
 	["HERETIC"] = {
 		[4] = "When out of Mana, kowé biså ndemèk undhak-undhakan kawutuk kanggo mbebasakéné lan ngolèhaké siji mana.",
 		[5] = "You are now immune to disupatani.",
-		[6] = "Kowé saiki biså nggunakaké månterå Flicker mring prapatan sing dikutuk.",
+		[6] = "Kowé saiki biså nganggo månterå Flicker mring prapatan sing dikutuk.",
 		[8] = "Månterå Gawé Undhak-undhakan Kawutuk lan Pangundang kowé saiki biså ngremukaké undhak-undhakan kawutuk sing ngalang-alangi.",
 		[9] = "Kowé bakal ngolèhaké 1 mana èsktra saben wektu wong disupatani.",
 	},
@@ -813,7 +813,7 @@ module.gui.ranks = {
 		[9] = "Kowé bakal ngolèhaké 1 mana saben wektu kowé njejegaké undhak-undhakan sing diplintir.",
 	},
 	["REAVER"] = {
-		[4] = "Kowé saiki biså nggunakaké månterå Gamblok Memedimu kanggo dipisahaké.",
+		[4] = "Kowé saiki biså nganggo månterå Gamblok Memedimu kanggo dipisahaké.",
 		[5] = "Your floor mirrors will last 50% longer. (15s big, 9s small)",
 		[6] = "You have the option to avoid below Reaver Rigs.",
 		[8] = "You can now demolish crossing stairs, while casting Mirrored Stairs.",
@@ -850,8 +850,8 @@ module.gui.ranks = {
 		[3] = "Animasi ngganti kelas saiki much faster.",
 		[4] = "Your hands will now glow purple when casting, disguising your motives.",
 		[5] = "Fake Stairs and Create Stairs spells will both have a purple glow.",
-		[6] = "Kowé saiki biså nggunakaké 4 månterå which were rejected during development.",
-		[7] = "Kowé saiki biså nggunakaké 2 more spells which were rejected during development.",
+		[6] = "Kowé saiki biså nganggo 4 månterå which were rejected during development.",
+		[7] = "Kowé saiki biså nganggo 2 more spells which were rejected during development.",
 		[8] = "Changing alignments doesn't have a morph animation anymore, making switching alignments seamless and private. Can be turned off in options.",
 		[9] = "You can now cast the Mystery Rig spell with multi-tokens.",
 	},
@@ -900,7 +900,7 @@ module.gui.settings = {
 	["morph"] = "Tampilaké animasi ngganti nalikå dadi Deceiver utåwå Usurper",
 	["billboard"] = "Tampilaké papan avatar dhéwé",
 	["rank"] = "Tampilaké pangkatmu jero papan avatar",
-	["switchback"] = "Otomatis ngganti manèh menyang månterå dhasar sawisé nggunakaké månterå pokok",
+	["switchback"] = "Otomatis ngganti manèh menyang månterå dhasar sawisé nganggo månterå pokok",
 	["safecancel"] = "Tampilaké window konfirmasi nalikå murungaké månterå winates",
 	["multi"] = "Tampilaké window milih Multi Token nalikå rampung pendakian",
 	["kchoices"] = "Tampilaké window milih arah kanggo Keeper (ora nyambut gawé ing konsol)",
@@ -1447,10 +1447,10 @@ module.tutorial = {
 	["tut_big_3"] = "Kowé saiki dadi Patron, Patron biså nggawé undhak-undhakan.",
 	["tut_big_4"] = "Kabèh månterå mbutuhaké diolèhi karo mlumpat.",
 	["tut_big_5"] = "Kerèn, 'kan? Saiki nggati kanngo dadi Joker. Joker biså malikaké undhak-undhakan.",
-	["tut_big_6"] = "Kowé saiki dadi Joker, gunakaké månterå iki kanggo malikaké undhak-undhakan.",
+	["tut_big_6"] = "Kowé saiki dadi Joker, nganggo månterå iki kanggo malikaké undhak-undhakan.",
 	["tut_big_7"] = "Sawatårå månterå kudu dilakokaké mring undhak-undhakan.",
 	["tut_big_8"] = "Saiki ngganti kanggo dadi Keeper. Keeper biså ngalih undhak-undhakan.",
-	["tut_big_9"] = "Kowé saiki dadi Keeper, gunakaké månterå iki mindah undhak-undhakan.",
+	["tut_big_9"] = "Kowé saiki dadi Keeper, nganggo månterå iki mindah undhak-undhakan.",
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
 	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing game iki.",
 	["tut_big_12"] = "Kowé saiki dadi Wicked, use månterå iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
@@ -1461,7 +1461,7 @@ module.tutorial = {
 
 	["tut_select"] = "Pilih månterå iki.",
 
-	["tut_small_init"] = "Lumpat kanggo miwiti latihan!",
+	["tut_small_init"] = "Lumpat kanggo miwiti lantihan!",
 	["tut_small_morph"] = "Lumpat ing lèmèr ngganti.",
 	["tut_small_arrow"] = "Lumpat ing panah.",
 	["tut_small_stairs"] = "Lumpat ing undhak-undhakan.",
@@ -1497,7 +1497,7 @@ module.guide = {
 		["forced"] = "Biså dilakokaké ing prapatan kosong, utåwå through undhak-undhakan ngalang-alangi ora kawutuk.",
 		["halfsoft"] = "Biså dilakokaké ing prapatan kosong, utåwå tembus undhak-undhakan ora kawutuk ngalang-alangi on higher ranks.",
 		["soft"] = "Biså dilakokaké ing prapatan sing kosong mung.",
-		["flatten"] = "Biså dilakokaké ing prapatan karo biyasa utåwå rigged ngalang-alangi mung.",
+		["flatten"] = "Biså dilakokaké ing prapatan karo biyasa utåwå dimanipulasi ngalang-alangi mung.",
 		["hack"] = "Biså dilakokaké ing prapatan karo undhak-undhakan ngalang-alangi ora kawutuk åpå waé mung.",
 		["sidepass"] = "Biså dilakokaké ing prapatan ora kawutuk åpå waé, tanpå trabasan.",
 	},
@@ -1561,7 +1561,7 @@ module.guide = {
 	["both"] = {
 		['restore'] = "Biså dilakokaké ing undhak-undhakan åpå waé utåwå panah platform karo undhak-undhakan adjacent åpå waé. Munggah pangkat dadi Admiral kanggo mulihaké undhak-undhakan sing kawutuk.",
 		['deltwists'] = "Biså dilakokaké ing undhak-undhakan diplintir mung utåwå ing platform panah with adjacent undhak-undhakan diplintir. Munggah pangkat dadi Combiner kanggo njejegaké de-attached stairs from platform.",
-		['ghosted'] = "Biså dilakokaké ing undhak-undhakan biyasa, rigged utåwå dimemedèni, utåwå on platfrom panah karo adjacent undhak-undhakan biyasa, rigged utåwå dimemedèni.",
+		['ghosted'] = "Biså dilakokaké ing undhak-undhakan biyasa, dimanipulasi utåwå dimemedèni, utåwå on platfrom panah karo adjacent undhak-undhakan biyasa, dimanipulasi utåwå dimemedèni.",
 
 		--NEW
 		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
@@ -1629,14 +1629,14 @@ module.serverfeedback = {
 	["notokens"] = "Ora cukup token!",
 	["coolwait"] = "Kowé ora biså cast rig lan acårå saiki, njaluk ngentèni!",
 	["nomirror"] = "Kowé kudu nggamblokaké memedimu kanggo mlaku ing platform pangilon.",
-	["regenused"] = "Kowé wis nggunakaké Réprodhuksi Mana sapisan wektu pendakian iki.",
+	["regenused"] = "Kowé wis nganggo Réprodhuksi Mana sapisan wektu pendakian iki.",
 
 	--failed spell (server)
 	["unknown"] = "Masalah ora dingerteni.", --this should not show for normal players, only exploiters
 	["lockedspell"] = "Månterå iki dikunci!",
 	["possessed"] = "Kowé ora biså use månteråmu nalikå dikutuk.",
-	["spelllock"] = "Kowé ora biså nggunakaké månterå sapunikå.",
-	["nothere"] = "Kowé ora biså nggunakaké månterå iki jero latihan.",
+	["spelllock"] = "Kowé ora biså nganggo månterå sapunikå.",
+	["nothere"] = "Kowé ora biså nganggo månterå iki jero lantihan.",
 	["onlyracers"] = "Mung pambalap biså cast månterå.",
 	["cancelfirst"] = "Kowé kudu to cancel current månterå first...",
 	["stashfull"] = "Panyimpenan undhak-undhakan kowé kebak.",
@@ -1645,7 +1645,7 @@ module.serverfeedback = {
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
 	["regwait"] = "You cannot cast rigs and events, while the Staircase is regenerating.",
 	["cooldownwait"] = "You can't cast rigs and events now, please wait %d seconds.",
-	["nospellsnow"] = "Kowé ora biså nggunakaké månterå sapunikå.",
+	["nospellsnow"] = "Kowé ora biså nganggo månterå sapunikå.",
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
 	["cursed"] = "Undhak-undhakan iki dikutuk!",
@@ -1664,7 +1664,7 @@ module.serverfeedback = {
 	["link"] = "Ånå kreteg énérgi sing wis kéné.",
 	["noblink"] = "You can only blink through blocking stairs.",
 	["noblink2"] = "You cannot blink on bridges and bent down stairs.",
-	["noflip"] = "Undhak-undhakan sing biyasa, dibalik utåwå rigged mung biså dibalikaké.",
+	["noflip"] = "Undhak-undhakan sing biyasa, diwalik utåwå dimanipulasi mung biså diwalikaké.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
 	["wrongdirection"] = "Kowé ora biså cast månterå iki mring arah iku.",
 	["notfound"] = "Undhak-undhakan not found.",
@@ -1707,7 +1707,7 @@ module.serverfeedback = {
 	["prodigy"] = "Munggah pangkat dadi Prodigy kanggo nyingkiraké portal.",
 	["traveller"] = "Munggah pangkat dadi Traveller kanggo ngupgrade platform lift.",
 	["controller"] = "Munggah pangkat dadi Controller kanggo mindahaké undhak-undhakan ora kawutuk åpå waé.",--*
-	["replica"] = "Munggah pangkat dadi Replica kanggo nggunakaké månterå iki kanggo dipisahaké.",--*
+	["replica"] = "Munggah pangkat dadi Replica kanggo nganggo månterå iki kanggo dipisahaké.",--*
 	["lich"] = "Munggah pangkat dadi Lich kanggo ngremukaké undhak-undhakan ngalang-alangi.",
 	["hijacker"] = "Munggah pangkat dadi Hijacker kanggo nyolong undhak-undhakan ora kawutuk åpå waé.",
 	["transformer"] = "Munggah pangkat dadi Transformer kanggo nyambungaké undhak-undhakan sing wis diplintir.",
@@ -1767,7 +1767,7 @@ module.serverfeedback = {
 	["unlocked"] = "Månterå saiki dibukak!",
 
 	--chameleon exceptions	
-	["chamtutorial"] = "Kowé ora biså dadi Chameleon jero latihan!",
+	["chamtutorial"] = "Kowé ora biså dadi Chameleon jero lantihan!",
 	["champossessed"] = "Kowé ora biså dadi Chameleon wektu disupatani.",
 	["chamhypnotized"] = "Kowé ora biså dadi Chameleon wektu dihipnotis.",
 	["chamspell"] = "Please execute or cancel current spell first.",
@@ -1947,23 +1947,23 @@ module.eventspells = {
 	["patronevent"] = "%s has just overloaded the tower with stairs!",
 	["patronaltevent"] = "%s has just shrunk all normal stairs!",
 
-	["jokerrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo the Flip spell!",
+	["jokerrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo månterå Walik!",
 	["jokerevent"] = "%s wis ndhelikaké kabèh undhak-undhakan biyasa!",
 	["jokeraltevent"] = "%s wis malikaké kabèh kabèh undhak-undhakan biyasa!",
 
-	["wickedrigevent"] = "%s has just rigged all normal stairs with Destroy spell!",
+	["wickedrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo månterå Remukaké!",
 	["wickedevent"] = "%s wis ngremukaké kabèh undhak-undhakan biyasa!",
 	["wickedaltevent"] = "%s wis ngremukaké KABÈH menårå!",
 
-	["keeperrigevent"] = "%s has just rigged all normal stairs with the Random Move spell!",
+	["keeperrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo the Random Move spell!",
 	["keeperevent"] = "%s has just shuffled all normal stairs!",
 	["keeperaltevent"] = "%s wis mulihaké kabèh undhak-undhakan!",
 
-	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50% chance of ghosting!",
+	["spectrerigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo a 50% chance of ghosting!",
 	["spectreevent"] = "%s has just phantom shuffled all normal stairs!",
 	["spectrealtevent"] = "%s has just ghosted all normal stairs!",
 
-	["hackerrigevent"] = "%s has just rigged all normal stairs with the Glitch spell!",
+	["hackerrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo the Glitch spell!",
 	["hackerevent"] = "%s has turned all normal stairs into Escalators!",
 	["hackeraltevent"] = "%s has turned all normal stairs into upwards Escalators!",
 
@@ -1971,7 +1971,7 @@ module.eventspells = {
 	["thiefevent"] = "%s has flattened all normal stairs!",
 	["thiefaltevent"] = "%s has created bypasses on all levels!",
 
-	["archonrigevent"] = "%s has just rigged all normal stairs with Phase spell!",
+	["archonrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo Phase spell!",
 	["archonevent"] = "%s has just randomly gated all normal stairs!",
 	["archonaltevent"] = "%s has just vertically gated all normal stairs!",
 
@@ -1979,34 +1979,34 @@ module.eventspells = {
 	["drifterevent"] = "%s has just randomly drifted all normal stairs!",
 	["drifteraltevent"] = "%s has just lifted all normal stairs!",
 
-	["hereticrigevent"] = "%s has just rigged all normal stairs with Possess spell!",
+	["hereticrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo Possess spell!",
 	["hereticevent"] = "%s has just schismatized all normal stairs!",
 	["hereticaltevent"] = "%s wis ngutuk kabèh undhak-undhakan biyasa!",
 
-	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
+	["splicerrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo Splice spell!",
 	["splicerevent"] = "%s wis nyambungaké kabèh undhak-undhakan biyasa!",
 	["spliceraltevent"] = "%s wis nyigar kabèh undhak-undhakan!",
 
-	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
+	["necromancerrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
 	["necromanceraltevent"] = "%s wis matèni kabèh undhak-undhakan biyasa!",
 
-	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotize spell!",
+	["gremlinrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo Hypnotize spell!",
 	["gremlinevent"] = "%s wis mubeng kabèh undhak-undhakan biyasa!",
 	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
 
-	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
+	["reaverrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo One-Way spell!",
 	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
 	["reaveraltevent"] = "%s has turned all normal stairs into upward One-Ways!",
 
 	["newmode"] = "%s has just switched drones into mode %s!",
 
-	["chameleonrigevent"] = "%s has just rigged all normal stairs with a Mystery spell!"
+	["chameleonrigevent"] = "%s wis manipulasi kabèh undhak-undhakan biyasa karo a Mystery spell!"
 }
 
 module.spells.extras = {
 
-	["Prompt"] = "Klik månterå ing ngisor kanggo nyinau carané nggunakakéné.",
+	["Prompt"] = "Klik månterå ing ngisor kanggo sinau carané nganggoné.",
 	["Title1"] = "Månterå dhasar",
 	["Title2"] = "Månterå pokok sing unik",
 	["Title3"] = "Månterå pokok sing dibagé",
@@ -2154,6 +2154,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
