@@ -15,7 +15,7 @@ module.gui.basic = {
 	["ok"] = "ОК",
 	["menu"] = "МЕНЮ",
 	["default"] = "ПО УМОЛЧАНИЮ",
-	["validate"] = "АКТИВИРОВАТЬ",
+	["validate"] = "ПОДТВЕРДИТЬ",
 	["play"] = "ИГРАТЬ",
 	["skip"] = "ПРОПУСТИТЬ\nОБУЧЕНИЕ",
 	["loading"] = "ИДЁТ ЗАГРУЗКА...",
@@ -180,7 +180,7 @@ module.gui.jukebox = {
 	["title"] = "ПРОИГРЫВАТЕЛЬ",
 
 	["master"] = "ОБЩИЙ ЗВУК",
-	["default"] = "(использовать общую громкость)",
+	["default"] = "(использует общую громкость)",
 	["climb"] = "МУЗЫКА ВО ВРЕМЯ ПОДЪЁМА",
 	["endgame"] = "МУЗЫКА В КОНЦЕ ИГРЫ",
 	["failed"] = "[Не удалось загрузить]",
@@ -247,7 +247,7 @@ module.spells.names = {
 	["portal"] = "Создать Портал",
 
 	["summoner"] = "Создание",
-	["patronevent"] = "Перегрузка Лестниц",
+	["patronevent"] = "Перегруз Лестниц",
 	["patronaltevent"] = "Приуменьшение",
 
 	--JOKER 
@@ -260,7 +260,7 @@ module.spells.names = {
 
 	["flipper"] = "Переворот",
 	["jokerevent"] = "Плащ-Невидимка",
-	["jokeraltevent"] = "Глобальный Переворот",
+	["jokeraltevent"] = "Низ = Верх",
 
 	--WICKED
 	["destroy"] = "Уничтожить Лестницу",
@@ -296,13 +296,13 @@ module.spells.names = {
 
 	["traveller"] = "Мерцание",
 	["spectreevent"] = "Фантомо-Становка",
-	["spectrealtevent"] = "Измерение Æther",
+	["spectrealtevent"] = "Измерение Æther'а",
 
 	--HACKER
 	["dash"] = "Рывок",
 	["blink"] = "Скачок",
 	["swap"] = "Поменяться Местами",
-	["slide"] = "Создать Эскалатор",
+	["slide"] = "Эскалатор",
 	["slideup"] = "Взломать Лестницу",
 	["glitch"] = "Глюк Лестницы",
 
@@ -320,7 +320,7 @@ module.spells.names = {
 
 	["heist"] = "Кража",
 	["thiefevent"] = "Земля Плоская",
-	["thiefaltevent"] = "Мегабход",
+	["thiefaltevent"] = "Мега-Обход",
 
 	--ARCHON
 	["splitup"] = "Создать Вертикальные Порталы",
@@ -359,9 +359,9 @@ module.spells.names = {
 	["hereticaltevent"] = "Осквернение",
 
 	--SPLICER
-	["twistup"] = "Соединить Вертикальные Лестницы",
-	["twistside"] = "Соединить Параллельные Лестницы",
-	["twistrotate"] = "Соединить Диагональные Лестницы",
+	["twistup"] = "Соединить Лестницы Вертикально",
+	["twistside"] = "Соединить Лестницы Параллельно",
+	["twistrotate"] = "Соединить Лестницы Диагонально",
 	["canceltwist"] = "Восстановить Скрученную Лестницу",
 	["split2"] = "Разделить Лестницу",
 	["splitalt"] = "Разделить Лестницу Вперёд",
@@ -433,7 +433,7 @@ module.spells.names = {
 	["archdrifter"] = "Дрейф / Лифт",
 	["archspectre"] = "Фантомная / Офантомить",
 	["archreaver"] = "Зеркало / В Один Конец",
-	["archheretic"] = "Проклясть Секцию/Лестницу",
+	["archheretic"] = "Проклясть Секцию / Лестницу",
 
 }-- " .. RankData.PATRON[7].name .. " 
 
@@ -2154,6 +2154,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
