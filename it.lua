@@ -562,11 +562,11 @@ module.spells.descriptions = {
 	["hereticrefill"] = overload,
 	["hereticunion"] =  union,
 
-	--SPLICER (continue from here)
+	--SPLICER
 	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
 	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
 	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango Transformer per poter combinare scale già unite.",
-	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo sulle piattaforme.\nSblocca il rango Mixer per rimuovere il costo di esecuzione.\nSblocca il rango Optimus per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
+	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo dalle piattaforme.\nSblocca il rango Mixer per rimuovere il costo di esecuzione.\nSblocca il rango Optimus per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
 	["split2"] = "Taglia in due la scala colpita, garantendoti accesso a tutte e quattro le piattaforme.",
 	["splitalt"] = "Divide la scala colpita, permettendoti di aggirare la scala posizionata direttamente sopra e scalarla.",
 
@@ -580,21 +580,21 @@ module.spells.descriptions = {
 
 	--NECROMANCER
 	["createdual"] = "Genera una scala per te e la tua controfigura nella direzione indicata.\nSblocca il rango Skeleton per poter ignorare scale maledette e malefici dalla parte della controfigura.\nSblocca il rango Lich per poter demolire eventuali scale in mezzo per entrambi.",
-	["copyplatform"] = "Copia le scale nella piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango Revenant per poter rimuovere le maledizioni.",
-	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Se l'incantesimo viene lanciato al centro, verrà generato un incrocio a X. Sia il ponte che l'incrocio ruoteranno automaticamente.",
-	["undeadabove"] = "Prosciuga la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale prosciugate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.",
-	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura, teletrasportandoti lì qualora ti trovassi in un piano inferiore. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale verso il punto d'appoggio (in cima).",
-	["regen"] = "Ottieni 6 Mana e offri 3 Mana a chi sta vicino alla tua controfigura.\nSblocca il rango Deathbringer per aumentare i valori a 10 e 5.",
+	["copyplatform"] = "Copia le scale dalla piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango Revenant per poter rimuovere le maledizioni.",
+	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Se lanciato sulle piattaforme centrali, verrà generato un incrocio a X. Sia il ponte che l'incrocio ruoteranno automaticamente.",
+	["undeadabove"] = "Prosciuga la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale prosciugate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.", -- todo prosciugare
+	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura. Qualora dovessi cadere ad un piano inferiore, verrai richiamato dove si trova. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale verso il punto d'appoggio (in cima).",
+	["regen"] = "Ottieni 6 Mana e offrine 3 a chi sta vicino alla tua controfigura.\nSblocca il rango Deathbringer per aumentare i valori a 10 e 5.",
 
-	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Eventuali scale in mezzo saranno sempre demolite." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name),
-	["necromancerrigevent"] = rig .. "Necromancer Rig. Quando calpestate, verranno prosciugate.",
-	["necromancerevent"] = fill ..  "Le scale generate saranno prosciugate e svaniranno dopo 60 secondi.",
-	["necromanceraltevent"] = event .. "Prosciuga Scale. Queste scale svaniranno dopo 60 secondi.",
-	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Prosciuga Scale"),
+	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Eventuali scale in mezzo verranno sempre demolite." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name),
+	["necromancerrigevent"] = rig .. "Necromancer Rig. Quando calpestate, verranno prosciugate.", --todo prosciuga
+	["necromancerevent"] = fill ..  "Le scale generate saranno prosciugate e svaniranno dopo 60 secondi.", --todo prosciuga
+	["necromanceraltevent"] = event .. "Prosciuga Scale. Queste scale svaniranno dopo 60 secondi.", --todo prosciuga
+	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Prosciuga Scale"), --todo prosciuga
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
-	--REAVER
+	--REAVER (continuare da qui)
 	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.\nSblocca il rango Poltergeist per poter demolire eventuali scale in mezzo.",
 	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano che dura 10 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli.\nSblocca il rango Presence per aumentare la durata a 15 secondi.",
 	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata che dura 6 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 10 secondi.", --TODO, Wrong value of second for the rank effect (which is also there in english version)
