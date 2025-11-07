@@ -594,13 +594,13 @@ module.spells.descriptions = {
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
-	--REAVER (continuare da qui)
-	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.\nSblocca il rango Poltergeist per poter demolire eventuali scale in mezzo.",
-	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano che dura 10 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli.\nSblocca il rango Presence per aumentare la durata a 15 secondi.",
-	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata che dura 6 secondi. Solo i giocatori uniti con la loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 10 secondi.", --TODO, Wrong value of second for the rank effect (which is also there in english version)
-	["outermirror"] = "Genera uno specchio nella direzione indicata e dalla parte opposta del piano, camminaci attraverso per teletrasportarti e unirti/separarti dalla tua controfigura. Gli specchi svaniranno dopo 60 secondi. Va lanciato sulle piattaforme perimetrali.",
-	["merge"] = "Unisciti con la tua controfigura.\nSblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.",
-	["oneway"] = "Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango Alien per diventarne immune. La tua controfigura non raccoglierà mana per conto tuo, ma sarai in grado di camminare sugli specchi.",
+	--REAVER
+	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.\nSblocca il rango Poltergeist per poter demolire eventuali scale in mezzo.",
+	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano per 10 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli se possibile.\nSblocca il rango Presence per aumentare la durata a 15 secondi.",
+	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata per 6 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 9 secondi.",
+	["outermirror"] = "Genera uno specchio sulla piattaforma colpita nella direzione indicata e dalla parte opposta del piano, camminaci attraverso per teletrasportarti e unirti/separarti dalla tua controfigura. Gli specchi svaniranno dopo 60 secondi. Va lanciato sulle piattaforme perimetrali.",
+	["merge"] = "Unisciti alla tua controfigura.\nSblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.",
+	["oneway"] = "Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango Illusion per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.",
 
 	["reflection"] = timed .. "Permette di generare specchi estesi in continuazione, per 60 secondi. Ti unirai automaticamente alla tua controfigura." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "Reaver Rig. Quando calpestate, diventeranno a senso unico casualmente (opzionale con il rango Wight sbloccato).",
@@ -611,12 +611,12 @@ module.spells.descriptions = {
 	["reaverunion"] = union,
 
 	--GREMLIN
-	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportanti indietro saltandoci sopra.\nSblocca il rango Fiend per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Avvolge la scala colpita al contrario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
-	["screwup"] = "Avvolge la scala posizionata direttamente sopra a quella colpita, rendendone la discesa un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
-	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno completamente di 180 gradi ogni breve intervallo.",
+	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango Fiend per poter richiamare i Tram dalle piattaforme.",
+	["screwdown"] = "Avvolge la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
+	["screwup"] = "Avvolge la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
+	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno verticalmente di 180 gradi ogni breve intervallo.",
 	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango Goblin per rilevarle, e il rango Diablo per diventarne immune",
-	["spinplatform"] = "Fa ruotare l'intera piattaforma di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette verranno ruotate insieme alla piattaforma.",
+	["spinplatform"] = "Fa ruotare l'intera piattaforma e le scale che partono da essa di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette possono essere ruotate in questo modo.",
 
 	["tramway"] = timed .. "Permette di generare Tram in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.GREMLIN[7].name,"Gremlins",RankData.GREMLIN[3].name), 
 	["gremlinrigevent"] = rig .. "Gremlin Rig. Chi le calpesta diventa ipnotizzato, invertendo i comandi di movimento (ignorato con il rango Hobgoblin sbloccato). I giocatori ipnotizzati si possono liberare raccogliendo Mana.",
@@ -627,15 +627,15 @@ module.spells.descriptions = {
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "Sprofonda la scala colpita di un piano.\nSblocca il rango Controller di Keeper per poter sprofondare qualsiasi scala non maledetta.",
-	["chamswap"] = "Copia la tua controfigura. Tuttavia, a differenza di Unione di Reaver, questo incantesimo è solo visivo.",
-	["chamdraw"] = "Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
-	["chamdrawabove"] = "Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile a meno che un altro gicatore non attivi il ponte levatoio dall'alto. Il rango che influenzava questo incantesimo non ha più effetto.",
-	["ditch"] = "Genera una scala nella direzione opposta a quella colpita.",
-	["warp"] = "Piega la scala colpita verso la piattaforma indietro.",
+	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango Controller di Keeper per poter sprofondare qualsiasi scala non maledetta.",
+	["chamswap"] = "Questo è un incantesimo proibito dei Necromancer. Copia la tua controfigura. Tuttavia, a differenza di Unione di Reaver, questo incantesimo è solo visivo.",
+	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
+	["chamdrawabove"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile a meno che un altro gicatore non attivi il ponte levatoio dall'alto. Il rango che influenzava questo incantesimo non ha più effetto.",
+	["ditch"] = "Questo è un incantesimo proibito dei Thief. Genera una scala nella direzione opposta a quella colpita nella stessa intersecazione, incrociandole tra loro.",
+	["warp"] = "Questo è un incantesimo proibito dei Wicked. Piega la scala colpita in modo tale da formare un collegamento verticale con la piattaforma superiore.",
 
-	["chameleonrigevent"] = rig .. "Chameleon Rig. L'effetto viene scelto in modo casuale tra quelli esistenti.",
-	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","Sorpresa!"),
+	["chameleonrigevent"] = rig .. "Chameleon Rig. L'effetto viene scelto in modo casuale tra quelli esistenti degli altri allineamenti.",
+	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","qualcosa di inaspettato"),
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
 }
