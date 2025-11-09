@@ -225,7 +225,7 @@ module.spells.names = {
 	["flipabove"] = "Ribalta Scale in Alto",
 	["fake"] = "Genera Scale Illusorie",
 	["invisible"] = "Genera Scale Invisibili",
-	["disco"] = "Scale Festose",
+	["disco"] = "Pista Da Ballo",
 	["trap"] = "Crea Botola",
 
 	["flipper"] = "Ribaltatore",
@@ -344,7 +344,7 @@ module.spells.names = {
 	["createdual"] = "Genera Scale Gemelle",
 	["copyplatform"] = "Imita Piattaforma della Controfigura",
 	["soulbridge"] = "Genera Ponte degli Inferi",
-	["undeadabove"] = "Prosciuga Scale in Alto",
+	["undeadabove"] = "Esorcizza Scale in Alto",
 	["revival"] = "Punto di Appoggio",
 	["regen"] = "Rigenera Mana",
 
@@ -366,8 +366,8 @@ module.spells.names = {
 
 	--gremlin
 	["tram"] = "Genera Tram",
-	["screwdown"] = "Avvolgi Scale",
-	["screwup"] = "Avvolgi Scale in Alto",
+	["screwdown"] = "Attorciglia Scale",
+	["screwup"] = "Attorciglia Scale in Alto",
 	["revolve"] = "Scale Girevoli",
 	["trapstairs"] = "Scale Trappola",
 	["spinplatform"] = "Rotea Piattaforma",
@@ -443,7 +443,7 @@ module.spells.descriptions = {
 	["wall"] = "Genera una barriera nella direzione indicata che blocca il passaggio per 60 secondi. Oltre essa viene generato un collegamento con la piattaforma seguente, attraversabile solo da Wicked o giocatori con il sortilegio Unione Spettrale attivo. Alcuni incantesimi sono comunque in grado di passarci attraverso.",
 
 	["bender"] = timed .. "Permette di piegare scale verso l'alto in continuazione, per 60 secondi. Se possibile, sia la scala colpita che quella sovrastante verranno piegate."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
-	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (opzionale con il rango Devil sbloccato).", --todo, si può migliorare ignorato da...
+	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (opzionale con il rango Devil sbloccato).",
 	["wickedevent"] = event .. "Demolisci Scale. Non viene attivata la rigenerazione.",
 	["wickedaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno demolite e i malefici verranno rimossi, senza eccezioni. Viene attivata la rigenerazione.",
 	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Solleva/Abbassa Ponte"),
@@ -582,15 +582,15 @@ module.spells.descriptions = {
 	["createdual"] = "Genera una scala per te e la tua controfigura nella direzione indicata.\nSblocca il rango Skeleton per poter ignorare scale maledette e malefici dalla parte della controfigura.\nSblocca il rango Lich per poter demolire eventuali scale in mezzo per entrambi.",
 	["copyplatform"] = "Copia le scale dalla piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango Revenant per poter rimuovere le maledizioni.",
 	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Se lanciato sulle piattaforme centrali, verrà generato un incrocio a X. Sia il ponte che l'incrocio ruoteranno automaticamente.",
-	["undeadabove"] = "Prosciuga la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale prosciugate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.", -- todo prosciugare
+	["undeadabove"] = "Esorcizza la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale esorcizzate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.",
 	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura. Qualora dovessi cadere ad un piano inferiore, verrai richiamato dove si trova. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale verso il punto d'appoggio (in cima).",
 	["regen"] = "Ottieni 6 Mana e offrine 3 a chi sta vicino alla tua controfigura.\nSblocca il rango Deathbringer per aumentare i valori a 10 e 5.",
 
 	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Eventuali scale in mezzo verranno sempre demolite." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name),
-	["necromancerrigevent"] = rig .. "Necromancer Rig. Quando calpestate, verranno prosciugate.", --todo prosciuga
-	["necromancerevent"] = fill ..  "Le scale generate saranno prosciugate e svaniranno dopo 60 secondi.", --todo prosciuga
-	["necromanceraltevent"] = event .. "Prosciuga Scale. Queste scale svaniranno dopo 60 secondi.", --todo prosciuga
-	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Prosciuga Scale"), --todo prosciuga
+	["necromancerrigevent"] = rig .. "Necromancer Rig. Quando calpestate, verranno esorcizzate.",
+	["necromancerevent"] = fill ..  "Le scale generate saranno esorcizzate e svaniranno dopo 60 secondi.",
+	["necromanceraltevent"] = event .. "Esorcizza Scale. Queste scale svaniranno dopo 60 secondi.",
+	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Esorcizza Scale"),
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
@@ -612,8 +612,8 @@ module.spells.descriptions = {
 
 	--GREMLIN
 	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango Fiend per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Avvolge la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
-	["screwup"] = "Avvolge la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango Daemon per mettere in pausa l'avvolgimento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
+	["screwdown"] = "Attorciglia la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
+	["screwup"] = "Attorciglia la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango Daemon per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
 	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno verticalmente di 180 gradi ogni breve intervallo.",
 	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango Goblin per rilevarle, e il rango Diablo per diventarne immune",
 	["spinplatform"] = "Fa ruotare l'intera piattaforma e le scale che partono da essa di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette possono essere ruotate in questo modo.",
@@ -641,13 +641,13 @@ module.spells.descriptions = {
 }
 
 local CommonPerksInsertALignment = {
-	[1] = "Questo è il primo rango di %s.",
+	[1] = "Questo è il rango iniziale di %s.",
 	[2] = "Il tuo contenitore Mana viene riempito regolarmente mentre i Droni sono in modalità %s.",
 }
 
 local CommonPerksInsertTimedSpell = {
 	[3] = "Il tuo contenitore Mana viene riempito completamente quando qualcuno (tu compreso) lancia il sortilegio %s.",
-	[7] = "Il sortilegio %s dura di più del 50% (90s).",
+	[7] = "Il sortilegio %s dura il 50% di più (90s).",
 }
 
 module.gui.ranks = {
@@ -676,13 +676,13 @@ module.gui.ranks = {
 		[9] = "La sfera viene richiamata più velocemente.",
 	}, 
 	["JOKER"] = { 
-		[4] = "Sei immune alle scale festose.",
+		[4] = "Sei immune alle piste da ballo.",
 		[5] = "Puoi rilevare le scale invisibili e hai l'opzione di non svelarle quando le calpesti.",
 		[6] = "Puoi rilevare le botole e le scale illusorie.",
 		[8] = "Puoi camminare sulle scale illusorie.",
 		[9] = "Ricevi 1 Mana quando qualcuno cade per le tue trappole (una volta per giocatore).",
 	},
-	["WICKED"] = {
+	["WICKED"] = { -- Continue from here
 		[4] = "Puoi camminare sulle scale frantumate.",
 		[5] = "L'incantesimo Demolisci Scale non richiede Mana per l'esecuzione.",
 		[6] = "Ottieni 1 Mana per scala alterata demolita.",
@@ -764,7 +764,7 @@ module.gui.ranks = {
 		[5] = "Puoi richiamare i Tramm dalle piattaforme.",
 		[6] = "Sei immune all'effetto Ipnotizzato.",
 		[8] = "Sei immune alle Scale Trappola.",
-		[9] = "Ottieni l'opzione per interrompere le scale a spirale (potrebbero esserci problemi con più Gremlin)", --TODO
+		[9] = "Ottieni l'opzione per interrompere le scale attorcigliate (potrebbero esserci problemi con più Gremlin)",
 	},
 	["MUGGLE"] = { 
 		[2] = "Ricarica salto ridotta di 0.125 secondi.",
@@ -1012,7 +1012,7 @@ module.gui.gameover.messages = {
 		"Vogliamo solo giocare, non spaventarti... troppo",
 		"La tua anima mi spetta di diritto",
 		"R.I.P.",
-		"Prosciugare le scale mi ridà vita",
+		"Esorcizzare le scale mi ridà vita",
 		"È giunta l'ora di collezionare le anime",
 		"I tabloid ci hanno rovinato la reputazione, colpa di Hollywood",
 		"La mia necromanzia è a vostra disposizione",
@@ -1020,7 +1020,7 @@ module.gui.gameover.messages = {
  		"Prevenire è meglio che curare",
 	},
 	["GREMLIN"] = {
-		"GIRA, AVVOLGI, E IPNOTIZZA",
+		"GIRA, ATTORCIGLIA, E IPNOTIZZA",
 		"Giochiamo insieme!",
 		"You spin me right 'round, baby, right 'round",
 		"Questa scalinata è ultra noiosa",
@@ -1133,7 +1133,7 @@ module.gui.gameover.credits = {
 	"Audio finale di Chameleon - Midnight Runner da Richard Adrian Maxwell Preston",
 	"Audio di Unione Spettrale - Amber Garden da Paul Emons, Richard Goodliff, Ian Robso",
 	"Audio Possedimento - Dark Souls da David Arkenstone",
-	"Audio scale festose di Joker - To The Disco da Gordon Zola",
+	"Audio piste da ballo di Joker - To The Disco da Gordon Zola",
 	"Audio piattaforme di Drifter - Radioactivity da Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
 	"Se sei arrivato fin qui, grazie per aver giocato!",
 }
@@ -1266,7 +1266,7 @@ module.static = {
 	["hub_4"] = "'Non si può andare sempre dritti.'\ncitazione dal nostro fondatore",
 
 	["shack_1"] = "BARACCA DI GREMLIN",
-	["shack_2"] = "LA NOSTRA MASSIMA:\nGIRA\nAVVOLGI\nE\nIPNOTIZZA",
+	["shack_2"] = "LA NOSTRA MASSIMA:\nGIRA\nATTORCIGLIA\nE\nIPNOTIZZA",
 	["shack_3"] = "PRO:\nNessun vantaggio\nSono serio\nCONTRO:\nSarai odiato da tutti\nTUTTI QUANTI",
 	["shack_4"] = "'Giochiamo insieme!'\ncitazione dal nostro fondatore",
 
@@ -1796,7 +1796,7 @@ module.switchon = {
 	["DRIFTER"] = "Immunità ai rig di Drifter attivata.",
 	["SPLICER"] = "Immunità ai rig di Splicer attivata.",
 	["REAVER"] = "Immunità ai rig di Reaver attivata.",
-	["GREMLIN"] = "Le scale avvolte nelle vicinanze saranno bloccate.",
+	["GREMLIN"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
 }
 
 module.switchoff = {
@@ -1809,7 +1809,7 @@ module.switchoff = {
 	["DRIFTER"] = "Immunità ai rig di Drifter disattivata.",
 	["SPLICER"] = "Immunità ai rig di Splicer disattivata.",
 	["REAVER"] = "Immunità ai rig di Reaver disattivata.",
-	["GREMLIN"] = "Le scale avvolte nelle vicinanze torneranno a funzionare normalmente.",
+	["GREMLIN"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
 }
 
 local timedSpell = "%s ha appena lanciato il sortilegio %s!"
@@ -1862,11 +1862,11 @@ module.eventspells = {
 	["spliceraltevent"] = "%s ha appena diviso tutte le scale normali!",
 
 	["necromancerrigevent"] = "%s ha appena alterato tutte le scale con Necromancer Rig!",
-	["necromancerevent"] = "%s ha appena riempito la torre di scale prosciugate!",
-	["necromanceraltevent"] = "%s ha appena prosciugato tutte le scale normali!",
+	["necromancerevent"] = "%s ha appena riempito la torre di scale esorcizzate!",
+	["necromanceraltevent"] = "%s ha appena esorcizzato tutte le scale normali!",
 
 	["gremlinrigevent"] = "%s ha appena alterato tutte le scale con Gremlin Rig!",
-	["gremlinevent"] = "%s ha appena avvolto tutte le scale normali!",
+	["gremlinevent"] = "%s ha appena attorcigliato tutte le scale normali!",
 	["gremlinaltevent"] = "%s ha appena riempito la torre di tram!",
 
 	["reaverrigevent"] = "%s ha appena alterato tutte le scale con Reaver Rig!",
