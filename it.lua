@@ -240,7 +240,7 @@ module.spells.names = {
 	["flatten"] = "Abbassa Ponte",
 	["wall"] = "Genera Barriera",
 
-	["bender"] = "Imperatore", --ToDo
+	["bender"] = "Manipolatore",
 	["wickedevent"] = "Evento Distruzione",
 	["wickedaltevent"] = "Evento Annientamento",
 
@@ -258,7 +258,7 @@ module.spells.names = {
 
 	--SPECTRE
 	["phantom"] = "Evoca Scale Fantasma",
-	["ghost"] = "Spettralizza Scale in Alto", --ToDo
+	["ghost"] = "Spettralizza Scale in Alto",
 	["shadow"] = "Spettralizza Scale",
 	["horizontal"] = "Scatto Fantasma",
 	["random"] = "Teletrasporto Randomico",
@@ -286,7 +286,7 @@ module.spells.names = {
 	["place"] = "Posiziona Scale",
 	["uppass"] = "Posiziona Scale a Chiocciola",
 	["sidepass"] = "Posiziona Scorciatoia",
-	["drop"] = "Posiziona Scale Piatte", --ToDo
+	["drop"] = "Posiziona Scale Piatte",
 
 	["heist"] = "Rapina",
 	["thiefevent"] = "Evento Terra Piatta",
@@ -306,14 +306,14 @@ module.spells.names = {
 
 	--DRIFTER
 	["indrift"] = "Naviga",
-	["outdrift"] = "Devia Scale", --ToDo
+	["outdrift"] = "Dirotta Scale",
 	["updrift"] = "Elevazione",
 	["diagdrift"] = "Perlustrazione",
 	["spin"] = "Rotea Scale",
 	["driftabove"] = "Solleva Scale in Alto",
 
 	["riser"] = "Ascensore",
-	["drifterevent"] = "Evento Deviazione",
+	["drifterevent"] = "Evento Dirottamento",
 	["drifteraltevent"] = "Evento Sollevamento",
 
 	--HERETIC
@@ -534,15 +534,15 @@ module.spells.descriptions = {
 	["indrift"] = "Genera una piattaforma drone sotto i tuoi piedi in grado di trasportati attraverso un'intersecazione libera nella direzione indicata",
 	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango Vagabond per aumentare la velocità della piattaforma.\nSblocca il rango Traveller per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango Strider per far raggiungere alla piattaforma un ulteriore piano (3 in totale).",
 	["diagdrift"] = "La piattaforma colpita si trasformerà in una piattaforma mobile che può muoversi in maniera diversa in base alla direzione scelta: se fuori dall'area di gioco, essa farà un giro completo intorno al perimetro della torre; altrimenti farà avanti e indietro diagonalmente tra due piattaforme per 7 volte.",
-	["spin"] = "Rotea la scala colpita di 180 gradi.\nSblocca il rango Nomad per poter roteare le scale deviate.",
-	["outdrift"] = "Devia la scala colpita verso un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Nomad per deviare scale già deviate.",
-	["driftabove"] = "Devia leggermente la scala posizionata direttamente sopra a quella colpita in modo da permetterti di passarci sotto e scalarla.",
+	["spin"] = "Rotea la scala colpita di 180 gradi.\nSblocca il rango Nomad per poter roteare le scale dirottate.",
+	["outdrift"] = "Dirotta la scala colpita verso un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Nomad per dirottare scale già dirottate.",
+	["driftabove"] = "Solleva leggermente la scala posizionata direttamente sopra a quella colpita in modo da permetterti di passarci sotto e scalarla.",
 
 	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSbloccare i ranghi Traveller e Strider ti permetterà di applicarvi i rispettivi potenziamenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifters",RankData.DRIFTER[3].name), 
 	["drifterrigevent"] = rig .. "Drifter Rig. Quando calpestate, le scale ruoteranno di 180 gradi (opzionale con il rango Voyager sbloccato).",
-	["drifterevent"] = event .. "Devia Scale.",
+	["drifterevent"] = event .. "Dirotta Scale.",
 	["drifteraltevent"] = event .. "Solleva Scale in Alto.",
-	["driftermode"] = string.format(mode,"Drifter","Drifter Rig","Devia Scale"),
+	["driftermode"] = string.format(mode,"Drifter","Drifter Rig","Dirotta Scale"),
 	["drifterrefill"] = overload,
 	["drifterunion"] = union,
 
@@ -726,7 +726,7 @@ module.gui.ranks = {
 	},
 	["DRIFTER"] = {
 		[4] = "Le piattaforme colpite dal sortilegio Ascensore e dall'incantesimo Elevazione si muovono più velocemente del 50%.",
-		[5] = "Puoi roteare e deviare scale già deviate.",
+		[5] = "Puoi roteare e dirottare scale già dirottate.",
 		[6] = "Puoi potenziare gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
 		[8] = "Ricevi l'opzione per non attivare le scale alterate da Drifter Rig quando le calpesti.",
 		[9] = "Puoi potenziare di nuovo gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
@@ -764,7 +764,7 @@ module.gui.ranks = {
 		[5] = "Puoi richiamare i Tramm dalle piattaforme.",
 		[6] = "Sei immune all'effetto Ipnotizzato.",
 		[8] = "Sei immune alle Scale Trappola.",
-		[9] = "Ottieni l'opzione per fermare le scale avvolte (potrebbero esserci problemi con più Gremlin)", --TODO
+		[9] = "Ottieni l'opzione per interrompere le scale a spirale (potrebbero esserci problemi con più Gremlin)", --TODO
 	},
 	["MUGGLE"] = { 
 		[2] = "Ricarica salto ridotta di 0.125 secondi.",
@@ -981,10 +981,10 @@ module.gui.gameover.messages = {
 		"A tutta rotta!",
 	},
 	["SPLICER"] = {
-		"DEVIA, COMBINA e DIVIDI",
+		"SEPARA, COMBINA e DIVIDI",
 		"Non si può andare sempre dritti",
 		"Che casino ho combinato!?",
-		"Le scale sono fatte per essere deviate",
+		"Le scale sono fatte per essere combinate",
 		"Gli altri lo chiamano caos, io lo chiamo arte",
 		"So combinare queste scale meglio di chiunque altro",
 		"Creare relazioni tra le scale è il mio forte",
@@ -1025,7 +1025,7 @@ module.gui.gameover.messages = {
 		"You spin me right 'round, baby, right 'round",
 		"Questa scalinata è ultra noiosa",
 		"Adesso ci metto le mani io",
-		"Che ne pensi del mio capolavoro? No? Fattelo piacere ugualmente", --ToDo
+		"Che ne pensi del mio capolavoro? No? Questo è solo l'inizio.",
 		"Il dottore mi ha prescritto di rilassarmi, e questo è il modo migliore per farlo",
 		"Prendi nota, Joker! No, ok, scherzavo... Riassumimi al circo, per favoreee!",
 		"Dov'è finita quella scala?",
@@ -1261,7 +1261,7 @@ module.static = {
 	["backdoor_4"] = "'Gioco sportivo? Fammi il piacere.'\ncitazione dal nostro fondatore",
 
 	["hub_1"] = "INTRECCIO DI SPLICER",
-	["hub_2"] = "LA NOSTRA MASSIMA:\nDEVIA\nCOMBINA\ne\nDIVIDI",
+	["hub_2"] = "LA NOSTRA MASSIMA:\nSEPARA\nCOMBINA\ne\nDIVIDI",
 	["hub_3"] = "PRO:\nVersatile\nPortato per le alleanze\nCONTRO:\nConfusionario\nBisogna prenderci l'abitudine",
 	["hub_4"] = "'Non si può andare sempre dritti.'\ncitazione dal nostro fondatore",
 
@@ -1440,8 +1440,8 @@ module.guide = {
 		["twist"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Transformer per poter rimpiazzare le giunture.",
 		["twiststr"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Transformer per poter rimpiazzare le giunture.",
 		["twistrot"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Transformer per poter rimpiazzare le giunture.",
-		["spin"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Nomad per poter roteare le scale deviate.",
-		["drift"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Nomad per poter deviare le scale già deviate.",
+		["spin"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Nomad per poter roteare le scale dirottate.",
+		["drift"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Nomad per poter dirottare le scale già dirottate.",
 		["escalator"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["oneway"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["revolve"] = "Può essere lanciato solo su scale normali o alterate da rig.",
@@ -1587,7 +1587,7 @@ module.serverfeedback = {
 	["banished"] = "Sblocca il rango Banished per poter demolire le scale maledette che bloccano il passaggio.",
 	["annihilator"] = "Sblocca il rango Annihilator per poter demolire le scale maledette.",
 	["disciple"] = "Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
-	["nomad"] = "Sblocca il rango Nomad per poter roteare le scale deviate.",
+	["nomad"] = "Sblocca il rango Nomad per poter roteare le scale dirottate.",
 	["prodigy"] = "Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
 	["traveller"] = "Sblocca il rango Traveller per poter potenziare gli ascensori.",
 	["controller"] = "Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
@@ -1850,7 +1850,7 @@ module.eventspells = {
 	["archonaltevent"] = "%s ha appena riempito la torre di portali dimensionali verso l'alto!",
 
 	["drifterrigevent"] = "%s ha appena alterato tutte le scale con Drifter Rig!",
-	["drifterevent"] = "%s ha appena deviato tutte le scale normali!",
+	["drifterevent"] = "%s ha appena dirottato tutte le scale normali!",
 	["drifteraltevent"] = "%s ha appena sollevato tutte le scale normali!",
 
 	["hereticrigevent"] = "%s ha appena alterato tutte le scale con Heretic Rig!",
