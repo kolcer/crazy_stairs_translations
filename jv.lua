@@ -66,7 +66,7 @@ module.gui.serversettings = {
 	["Tower"] = "SETÈLAN MENÅRÅ",
 	["TowerReadOnly"] = "SETÈLAN MENÅRÅ (wåcå mung)",
 	["InfMode"] = "Mode Infinit (ora biså diganti wektu mbalap utåwå mulih)",
-	["CasualPlayers"] = "Pendaki kasual biså nganggo månterå",
+	["CasualPlayers"] = "Pandaki kasual biså nganggo månterå",
 	["Regeneration"] = "Panggawéan undhak-undhakan otomatis sawisé Wicked wis nganggo månterå pokokné nyirnakaké kabèh menårå (Ora biså jero mode Infinit)",
 	["EvenLevels"] = "Tataran genep diwatesi",
 	["OrbMoves"] = "Orb endgame ngganti posisiné",
@@ -84,13 +84,13 @@ module.gui.shop = {
 
 	["title"] = "TOKO UNDHAK-UNDHAKAN ÉDAN",
 
-	["chameleon"] = "Chameleon biså ngganti kelas wektu pendakian.",
-	["spectre"] = "Spectre iku kelas teleport based nodheg kanggo mendaki dhèwèkan (solo play).",
-	["mana"] = "Expand your Mana storage capacity by 10 points.",
+	["chameleon"] = "Chameleon biså ngganti kelas wektu pandakèn.",
+	["spectre"] = "Spectre iku kelas basis teleportasi nodheg kanggo ndaki dhèwèkan (solo play).",
+	["mana"] = "Jembaraké kapasitas manamu kanthi 10 poin.",
 
-	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
-	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
-	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
+	["3tokens"] = "Mbukak siji månterå utåwå nguncalaké telu månterå pokok.",
+	["30tokens"] = "Mbukak sapuluh månterå utåwå nguncalaké telung puluh månterå pokok.",
+	["300tokens"] = "Cukup kanggo mbukak kabèh månterå kanthi siså sångång puluh telu token.",
 
 	["3TOKENS"] = "3 Multi Token (R$%d)",
 	["30TOKENS"] = "30 Multi Token (R$%d)",
@@ -110,8 +110,8 @@ module.gui.spellbar = {
 
 module.gui.stats = {
 
-	["total"] = "Gunggung pendakian: %d / Kamenangan: %d",
-	["class"] = "Pendakian minångkå %s: %d",
+	["total"] = "Gunggung pandakèn: %d / Kamenangan: %d",
+	["class"] = "Pandakèn minångkå %s: %d",
 	["best"] = "Wektu %s paling rikat: %.2f",
 	["na"] = "n/a",
 
@@ -181,7 +181,7 @@ module.gui.jukebox = {
 
 	["master"] = "VOLUME MASTER",
 	["default"] = "(nggunakaké volume master)",
-	["climb"] = "MUSIK MENDAKI",
+	["climb"] = "MUSIK NDAKI",
 	["endgame"] = "MUSIK ENDGAME",
 	["failed"] = "[gagal momot]",
 
@@ -487,7 +487,7 @@ module.spells.descriptions = {
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Munggah pangkat dadi DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "Månterå iki kanggo nggawé témbok ing platform kanggo mblokir pendaki, lan ugå kreteg menyang platform iring sasuwéné 60 detik. Mung Wicked lan memedi digabung sing biså mlaku nembus témbok lan ing kreteg.",
+	["wall"] = "Månterå iki kanggo nggawé témbok ing platform kanggo mblokir pandaki, lan ugå kreteg menyang platform iring sasuwéné 60 detik. Mung Wicked lan memedi digabung sing biså mlaku nembus témbok lan ing kreteg.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Munggah pangkat dadi Devil to walk on Wicked Rigs without triggering them.",
@@ -597,13 +597,13 @@ module.spells.descriptions = {
 	--HERETIC
 	["createcursed"] = "Månterå iki kanggo mangun undhak-undhakan kawutuk ing arah sing dipilih. Undhak-undhakan åpå waé sing ngalang-alangi ing arahmu bakal diremukaké. Munggah pangkat dadi BANISHED kanggo ngremukaké undhak-undhakan kawutuk sing ngalang-alangi.",
 	["curse"] = "Månterå iki kanggo ngutuk undhak-undhakan ngisor. Nganggo månterå manèh kanggo mbébasaké undhak-undhakan.",
-	["curseabove"] = "Månterå iki kanggo ngutuk undhak-undhakan sing ånå ing dhuwur. Dhèwèké bakal diangkat kanggo sauntårå, marengaké kowé kanggo mendaki ing ngisoré. Nganggo månterå manèh kanggo mbébasaké undhak-undhakan.",
-	["curseinter"] = "Månterå iki kanggo mlumpat menyang platform iring, yèn ora ånå undhak-undhakan ing arah. Prapatan bakal dikutuk sawisé månterå iki, saénggå pendaki liyå ora biså nganggoné manèh. Munggah pangkat dadi INFIDEL supåyå biså nganggo månterå iki ing prapatan sing wis kawutuk, lan ugå mbebasakéné.",
+	["curseabove"] = "Månterå iki kanggo ngutuk undhak-undhakan sing ånå ing dhuwur. Dhèwèké bakal diangkat kanggo sauntårå, marengaké kowé kanggo ndaki ing ngisoré. Nganggo månterå manèh kanggo mbébasaké undhak-undhakan.",
+	["curseinter"] = "Månterå iki kanggo mlumpat menyang platform iring, yèn ora ånå undhak-undhakan ing arah. Prapatan bakal dikutuk sawisé månterå iki, saénggå pandaki liyå ora biså nganggoné manèh. Munggah pangkat dadi INFIDEL supåyå biså nganggo månterå iki ing prapatan sing wis kawutuk, lan ugå mbebasakéné.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
 
 	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Pendaki disupatani ora biså nganggo månterå. Munggah pangkat dadi UNBELIEVER to gain immunity to this rig. Munggah pangkat dadi EXILED to get 1 mana each time a player is possessed.",
+	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Pandaki disupatani ora biså nganggo månterå. Munggah pangkat dadi UNBELIEVER to gain immunity to this rig. Munggah pangkat dadi EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
@@ -630,7 +630,7 @@ module.spells.descriptions = {
 	["copyplatform"] = "Månterå iki kanggo nyalin any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Munggah pangkat dadi REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "Månterå iki kanggo nggawé a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
 	["undeadabove"] = "Månterå iki kanggo remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
-	["revival"] = "Månterå iki kanggo nggawé papan “nangèni” where your ghost is. Yèn you ever fall below such point, kowé bakal diteleportasi mrono. Papan nangèni bakal dibusek sawisé digunakaké, rampung pendakian utåwå nalikå kowé nganggo another one. Panggantèn Chameleon ugå bakal mbusek papan nangèniné. Munggah pangkat dadi ACOLYTE kanggo nggåwå Orb menyang papan nangèniné, yèn kowé nganggoné ing tataran paling dhuwur.",
+	["revival"] = "Månterå iki kanggo nggawé papan “nangèni” where your ghost is. Yèn you ever fall below such point, kowé bakal diteleportasi mrono. Papan nangèni bakal dibusek sawisé digunakaké, rampung pandakèn utåwå nalikå kowé nganggo another one. Panggantèn Chameleon ugå bakal mbusek papan nangèniné. Munggah pangkat dadi ACOLYTE kanggo nggåwå Orb menyang papan nangèniné, yèn kowé nganggoné ing tataran paling dhuwur.",
 	["regen"] = "Månterå iki kanggo regenrate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Munggah pangkat dadi DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
 	
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
@@ -643,9 +643,9 @@ module.spells.descriptions = {
 
 
 	["createmirrored"] = "Månterå iki kanggo mangun undhak-undhakan nganggo pangilon ing tengahné. Sauwisé kowé mlaku nembus pangilonné, kowé bakal digabung karo memedimu. Lumaku nembus pangilonné again lan kowé bakal dipisahaké karo memedimu. Munggah pangkat dadi Poltergeist to demolish crossing stairs with this spell. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
-	["bigmirror"] = "Månterå iki kanggo nggawé pangilon gedhé ing tataran kabèh sasuwéné 10 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon gedhé bakal mbusek pangilon cilik ing tataran sing pådhå. Munggah pangkat dadi Presence to extend mirror lifetime to 15 seconds.",
-	["smallmirror"] = "Månterå iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pendaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Munggah pangkat dadi Presence to extend mirror lifetime to 10 seconds.",
-	["outermirror"] = "Månterå iki kanggo mangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung biså can only be used in outer platforms. Pendaki sing mlaku nembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menårå. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
+	["bigmirror"] = "Månterå iki kanggo nggawé pangilon gedhé ing tataran kabèh sasuwéné 10 detik. Mung pandaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Pangilon gedhé bakal mbusek pangilon cilik ing tataran sing pådhå. Munggah pangkat dadi Presence to extend mirror lifetime to 15 seconds.",
+	["smallmirror"] = "Månterå iki kanggo nggawé pangilon cilik ing arah sing dipilih sasuwéné 6 detik. Mung pandaki sing digabung karo memediné biså mlaku ing platform pangilon. Nalikå kowé ngadoh saka platform pangilon, kowé bakal dipisahaké. Munggah pangkat dadi Presence to extend mirror lifetime to 10 seconds.",
+	["outermirror"] = "Månterå iki kanggo mangun pangilon ing arah outer and twin mirror on the other side of the map. Portal jaba pangilon mung biså can only be used in outer platforms. Pandaki sing mlaku nembus pangilon bakal digabung karo memediné lan teleport to the connected mirror on the other side of menårå. Portal Jaba Pangilon bakal fade away after 60 detik. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 	["merge"] = "Månterå iki kanggo nggabung karo memedimu. Munggah pangkat dadi REPLICA kanggo nganggo månterå iki manèh kanggo dipisahaké karo memedimu. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 	["oneway"] = "Månterå iki kanggo nggawé undhak-undhakan dadi one-way passage, while merging players with their ghost, if they walk in proper direction. Kowé biså milih arah sing arep diblokir. Munggah pangkat dadi Alien to be immune to one-way stairs effect. Wektu digabung karo memedimu, kowé biså mlaku ing platform pangilon, nanging memedimu ora bakal ngumpulaké mana kanggo kowé.",
 
@@ -759,7 +759,7 @@ module.gui.ranks = {
 	["SPECTRE"] = { 
 		[4] = "Kowé bakal ngolèhaké 1 mana èkstra nalikå kowé ngumpulaké kristal karo memedimu.", 
 		[5] = "Månterå Memedèni kowé saiki dadi gratis.",
-		[6] = "Kowé saiki biså ndemèk orb ing lanté paling dhuwur karo memedimu kanggo rampung pendakian.",
+		[6] = "Kowé saiki biså ndemèk orb ing lanté paling dhuwur karo memedimu kanggo rampung pandakèn.",
 		[8] = "Kowé duwé opsi kanggo avoid triggering rig Spectre åpå waé.", 
 		[9] = "Kowé saiki biså mlaku ing undhak-undhakan sing dimemedèni.",
 	},
@@ -902,7 +902,7 @@ module.gui.settings = {
 	["rank"] = "Tampilaké pangkatmu jero papan avatar",
 	["switchback"] = "Otomatis ngganti manèh menyang månterå dhasar sawisé nganggo månterå pokok",
 	["safecancel"] = "Tampilaké window konfirmasi nalikå murungaké månterå winates",
-	["multi"] = "Tampilaké window milih Multi Token nalikå rampung pendakian",
+	["multi"] = "Tampilaké window milih Multi Token nalikå rampung pandakèn",
 	["kchoices"] = "Tampilaké window milih arah kanggo Keeper (ora nyambut gawé ing konsol)",
 	["hchoices"] = "Tampilaké window milih arah kanggo Hacker (ora nyambut gawé ing konsol)",
 	["achoices"] = "Tampilaké window milih arah kanggo Archon (ora nyambut gawé ing konsol)",
@@ -918,8 +918,8 @@ module.gui.gameover = {}
 module.gui.gameover.results = {
 
 	["class"] = "KELASMU",
-	["time"] = "WEKTU PENDAKIANMU",
-	["climbs"] = "PENDAKIAN DIOLÈHAKÉ",
+	["time"] = "WEKTU PANDAKÈNMU",
+	["climbs"] = "PANDAKÈN DIOLÈHAKÉ",
 	["tokens"] = "TOKEN DIOLÈHAKÉ",
 	["rank"] = "PANGKAT SAIKI KOWÉ",
 
@@ -1046,7 +1046,7 @@ module.gui.gameover.messages = {
 		"Aku ora iso gunakake potar Archon aku",
 		"Bolu iku apus.",
 		"There is a gate for every problem",
-		"Bingungaké kabèh pendaki lah!",
+		"Bingungaké kabèh pandaki lah!",
 	},
 	["DRIFTER"] = {
 		"SURF, RIDE, and GLIDE",
@@ -1220,17 +1220,17 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "Carané måin Undhak-undhakan Édan?",
-	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
-	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
+	["cla_1"] = "Carané måin Undhak-Undhakan Édan?",
+	["cla_2"] = "Kapisan, it is highly recommended to rampung lantihan. Yèn kowé ora wis rampung so, mangga rejoin the game, as the experience could get really confusing otherwise.",
+	["cla_3"] = "Tujuan game iki ndaki menårå, reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
 	["cla_5"] = "Carané nganggo månterå?",
 	["cla_6"] = "Saben månterå duwé biyåyå mana sing bakal be required kanggo nganggo månterå. Nalikå kowé ngumpulaké cukup mana, klik ing månterå. Tanganmu bakal miwit nyumunuar, indicating a successful cast.",
 	["cla_7"] = "Sawisé nganggo, månterå isih kudu dilakokaké. Kabèh månterå dilakokaké kanthi mlumpat. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
-	["cla_8"] = "Once kowé rampung pendakian, kowé bakal ngolèhaké 3 token, that will let you unlock one spell. Rampung pendakian manèh kanggo mbukak more spells. Kowé ora biså nganggo token from one class to unlock a spell from another.",
+	["cla_8"] = "Once kowé rampung pandakèn, kowé bakal ngolèhaké 3 token, that will let you unlock one spell. Rampung pandakèn manèh kanggo mbukak more spells. Kowé ora biså nganggo token from one class to unlock a spell from another.",
 	["cla_9"] = "Carané nganggo månterå pokok?",
 	["cla_10"] = "Kapisan kowé bakal kudu mbukak kabèh månterå dhasar kanggo ngaksès månterå pokok. Månterå ora require mbukak awaké dhéwé, nanging dhèwèké biyåyå token instead of mana nalikå nganggo.",
-	["cla_11"] = "Rampung pendakian enough times kanggo mbukak kabèh månterå dhasar. Kowé biså gelem to try to win the race kanggo ngolèhaké token èkstra. Ånå is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
+	["cla_11"] = "Rampung pandakèn enough times kanggo mbukak kabèh månterå dhasar. Kowé biså gelem to try to win the race kanggo ngolèhaké token èkstra. Ånå is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
 	["pro_1"] = "MENÅRÅ PRO",
@@ -1269,8 +1269,8 @@ module.static = {
 	["cus_8"] = "Setèlan Drone",
 	["cus_9"] = "Kowé ugå biså ngganti setèlan Drone cilik. Adjust the max count, the min count or even disable them altoghether.",
 
-	["vr_1"] = "By launching Crazy Stairs in mode VR, kowé otomatis dadi Architect.",
-	["vr_2"] = "Ora kåyå pendaki biyasa, Architect ora need to mendaki undhak-undhakan. Tujuanmu nulung utåwå ngganggu pendaki liyå sing mendaki ing menårå.",
+	["vr_1"] = "Kanthi miwiti Undhak-Undhakan Édan ing mode VR, kowé otomatis dadi Architect.",
+	["vr_2"] = "Ora kåyå pandaki biyasa, Architect ora need to ndaki undhak-undhakan. Tujuanmu nulung utåwå ngganggu pandaki liyå sing ndaki ing menårå.",
 	["vr_3"] = "The choice is yours. Will you be a menace or a saviour? Or do you simply want to mess around? Have fun!",
 	["vr_4"] = "How do I navigate?",
 	["vr_5"] = "Use your left thumbstick to move forward or backward. Tilting the left thumbstick sideways will make you move left and right instead.",
@@ -1299,27 +1299,27 @@ module.static = {
 	["guild_1"] = "PANDHELIKAN THIEF",
 	["guild_2"] = "SESANTI:\nCOLONG\nGUNAKAKÉ\nLAN\nBALÈKAKÉ",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nOra biså remukaké undhak-undhakan crossing",
-	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
+	["guild_4"] = "“It's called borrowing actually.”\nour founder's quote",
 
 	["nether_1"] = "NÅRÅKÅ SPECTRE",
 	["nether_2"] = "SESANTI:\nILANG\nDHELIK\nLAN\nTELEPORT",
 	["nether_3"] = "PROS:\nMånterå Fast\nPerfect for solo play\nCONS:\nMbutuhaké Robux\nNot recommended for teams",
-	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
+	["nether_4"] = "“Of course teleporting is safe.”\nour founder's quote (MIA)",
 
 	["study_1"] = "STUDHI ARCHON",
 	["study_2"] = "SESANTI:\nBUKAK\nPORTAL\n???\nUNTUNG",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
-	["study_4"] = ""I used to rule this staircase."\nour founder's quote",
+	["study_4"] = "“I used to rule this staircase.”\nour founder's quote",
 
 	["haven_1"] = "SWARGÅ PATRON",
 	["haven_2"] = "SESANTI:\nBIYANTU\nPROTECT\nLAN\nGAWÉ",
 	["haven_3"] = "PROS:\nPaling gampang kanggo sinau\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
-	["haven_4"] = ""Those noobs need our help!"\nour founder's quote",
+	["haven_4"] = "“Those noobs need our help!”\nour founder's quote",
 
 	["shelter_1"] = "PAPAN PANGAYOM DRIFTER",
 	["shelter_2"] = "SESANTI:\nLELÅNÅ\nTUMPAK\nLAN\nPLOROD",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
-	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
+	["shelter_4"] = "“Who needs stairs anyway? We're in space!”\nour founder's quote",
 
 	["circus_1"] = "SIRKUS JOKER",
 	["circus_2"] = "SESANTI:\nPAÈS\nBINGUNGAKÉ\nLAN\nGUYU",
@@ -1366,8 +1366,8 @@ module.static = {
 	["leader_update"] = "Disegeraké ing: ",	
 	["leader_updating"] = "Nyegeraké…",	
 	["leader_rank"] = "PANGKAT",
-	["leader_req"] = "PENDAKIAN REQ",
-	["leader_off"] = "Leaderboards ora kasadhiyå njero Menårå Custom.",
+	["leader_req"] = "PANDAKÈN REQ",
+	["leader_off"] = "Leaderboards ora kasadhiyå njero Menårå Kustom.",
 
 	--OVERALL
 	["over_title"] = "OVERALL RANKS",
@@ -1454,10 +1454,10 @@ module.tutorial = {
 	["tut_big_10"] = "Lumpat ing panah ke depan kanggo mindah undhak-undhakan.",
 	["tut_big_11"] = "Kowé bakal meruhi akèh undhak-undhakan sing mblokir ing game iki.",
 	["tut_big_12"] = "Kowé saiki dadi Wicked, use månterå iki kanggo ngremukaké undhak-undhakan sing mblokir blocking.",
-	["tut_big_13"] = "Kowé biså ngremukaké undhak-undhakan sing ånå ing dhuwur, by jumping on below ones.",
+	["tut_big_13"] = "Kowé biså ngremukaké undhak-undhakan sing ånå ing dhuwur, karo mlumpat ing sing ing ngisor.",
 	["tut_big_14"] = "Sadurungé kita miwiti, daknuduhaké kelas sing prèmium.",
-	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre iku kelas prèmium nodheg kanggo mendaki dhèwèkan.",
-	["tut_big_16"] = "Tujuanmu mènèk kanggo mendaki lan njaluk orb ing menårå. Mugå-mugå suksés! :]",
+	["tut_big_15"] = "Kowé saiki dadi Spectre, Spectre iku kelas prèmium nodheg kanggo ndaki dhèwèkan.",
+	["tut_big_16"] = "Tujuanmu mènèk kanggo ndaki lan njaluk orb ing menårå. Mugå-mugå suksés! :]",
 
 	["tut_select"] = "Pilih månterå iki.",
 
@@ -1629,7 +1629,7 @@ module.serverfeedback = {
 	["notokens"] = "Ora cukup token!",
 	["coolwait"] = "Kowé ora biså nganggo rig lan acårå saiki, njaluk ngentèni!",
 	["nomirror"] = "Kowé kudu nggamblokaké memedimu kanggo mlaku ing platform pangilon.",
-	["regenused"] = "Kowé wis nganggo Réprodhuksi Mana sapisan wektu pendakian iki.",
+	["regenused"] = "Kowé wis nganggo Réprodhuksi Mana sapisan wektu pandakèn iki.",
 
 	--failed spell (server)
 	["unknown"] = "Masalah ora dingerteni.", --this should not show for normal players, only exploiters
@@ -1780,20 +1780,20 @@ module.serverfeedback = {
 	["accepted"] = "Code accepted.",
 	
 	--free demos
-	["tryspectre"] = "Spectre unlocked for 10 minutes! Do not leave server.",
-	["endspectre"] = "Spectre demo will end in 1 minute!",
-	["trycham"] = "Chameleon unlocked for 10 minutes! Do not leave server.",
+	["tryspectre"] = "Spectre dibukak sasuwéné 10 menit! Åjå metu server iki.",
+	["endspectre"] = "Démo Spectre bakal mungkasi ing 1 menit!",
+	["trycham"] = "Chameleon dibukak sasuwéné 10 menit! Åjå metu server iki.",
 	["new20pass"] = "Mana limit increased!",
-	["newchampass"] = "You can now change alignment during climb!",
-	["newspectrepass"] = "You can now become a SPECTRE!",
-	["endcham"] = "Chameleon demo will end in 1 minute!",
-	["trymana"] = "Bigger storage unlocked for 10 minutes! Do not leave server.",
-	["endmana"] = "Bigger storage demo will end in 1 minute!",
+	["newchampass"] = "Kowé saiki biså ngganti kelas wektu pandaki!",
+	["newspectrepass"] = "Kowé saiki biså dadi SPECTRE!",
+	["endcham"] = "Démo Chameleon bakal mungkasi ing 1 menit!",
+	["trymana"] = "Kapasitas dijemberaké dibukak sasuwéné 10 menit! Åjå metu server iki.",
+	["endmana"] = "Démo kapasitas dijemberaké bakal mungkasi ing 1 menit!",
 	
 	
-	["used"] = "Code has been used already.",
-	["tooshort"] = "Your message was too short and not sent.",
-	["sent"] = "Your message was sent successfully, thank you.",
+	["used"] = "Kodhé iki wis digunakaké.",
+	["tooshort"] = "Pesenmu cendhèk banget lan ora dikirim.",
+	["sent"] = "Pesenmu saiki kasil dikirim, matur nuwun!",
 	
 	--private server moderation (might be re-implemented in the future)
 	["muted"] = "% is now muted.",
@@ -2154,6 +2154,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
