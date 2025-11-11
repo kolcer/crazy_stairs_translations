@@ -672,7 +672,7 @@ module.gui.ranks = {
 		[4] = "La durata dei collegamenti è raddoppiata (120s).",
 		[5] = "La durata dei portali è raddoppiata (120s).",
 		[6] = "Richiama Sfera richiede 2 Mana per l'esecuzione (da 3 Mana).",
-		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi eseguire un salto sopra una piattaforma per ricevere in dono 1 Mana.",
+		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per ricevere in dono 1 Mana.",
 		[9] = "La sfera viene richiamata più velocemente.",
 	}, 
 	["JOKER"] = { 
@@ -682,7 +682,7 @@ module.gui.ranks = {
 		[8] = "Puoi camminare sulle scale illusorie.",
 		[9] = "Ricevi 1 Mana quando qualcuno cade per le tue trappole (una volta per giocatore).",
 	},
-	["WICKED"] = { -- Continue from here
+	["WICKED"] = {
 		[4] = "Puoi camminare sulle scale frantumate.",
 		[5] = "L'incantesimo Demolisci Scale non richiede Mana per l'esecuzione.",
 		[6] = "Ottieni 1 Mana per scala alterata demolita.",
@@ -697,8 +697,8 @@ module.gui.ranks = {
 		[9] = "Puoi camminare sulle scale spettralizzate.",
 	},
 	["KEEPER"] = {
-		[4] = "Le scale non sprofondano più con l'incantesimo Movimento Casuale e il sortilegio Keeper Rig.",
-		[5] = "Puoi spostare qualsiasi scala che non sia maledetta.",
+		[4] = "Quando lanci l'incantesimo Movimento Casuale o attivi l'effetto Keeper Rig non corri più il rischio di far sprofondare le scale.",
+		[5] = "Puoi spostare qualsiasi scala ad eccezione di quelle maledette.",
 		[6] = "L'incantesimo Ripristina Scale non richiede Mana per l'esecuzione.",
 		[8] = "Ricevi l'opzione per non attivare le scale alterate da Keeper Rig quando le calpesti.",
 		[9] = "Puoi ripristinare le scale maledette ed i malefici.",
@@ -707,33 +707,33 @@ module.gui.ranks = {
 		[4] = "Ricevi l'opzione per non attivare le scale mobili quando le calpesti.",
 		[5] = "L'esecuzione dell'incantesimo Passaggio è più veloce del 50%.",
 		[6] = "L'esecuzione dell'incantesimo Smaterializzazione è più veloce del 50%.",
-		[8] = "Aggiunge l'opzione per non attivare le scale alterate da Hacker Rig quando le calpesti.",
-		[9] = "Quando usi l'incantesimo Scale Anomale in cima alla torre, vieni teletrasportato nelle vicinanze della sfera finale (se possibile).",
+		[8] = "Ricevi l'opzione per ignorare le scale alterate da Hacker Rig quando le calpesti.",
+		[9] = "Quando lanci l'incantesimo Scale Anomale in cima alla torre, vieni teletrasportato nelle vicinanze della sfera finale (se possibile).",
 	},
 	["THIEF"] = {
 		[4] = "Le tue Scorciatoie durano il doppio del tempo (da 60s a 120s).",
 		[5] = "Le tue scale a chiocciola durano il doppio del tempo (da 60s a 120s).",
-		[6] = "Puoi rubare qualsiasi scala che non sia maledetta.",
-		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi eseguire un salto sopra una piattaforma per rubare 1 Mana.",
-		[9] = "Puoi rubare due scale alla volta.",
+		[6] = "Puoi rubare qualsiasi scala ad eccezione di quelle maledette.",
+		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per rubare 1 Mana.",
+		[9] = "Puoi tenere due scale di scorta invece di una.",
 	},
 	["ARCHON"] = {
 		[4] = "Puoi lanciare l'incantesimo Scollega Portali Dimensionali sulle piattaforme.",
 		[5] = "L'incantesimo Scollega Portali Dimensionali non richiede Mana per l'esecuzione.",
 		[6] = "Diventi immune ai portali dimensionali che teletrasportano verso il basso.",
 		[8] = "Puoi cambiare la destinazione di un portale dimensionale già esistente.",
-		[9] = "Ricevi l'opzione per ignorare qualsiasi tipo di portale dimensionale ad eccezioni di quelli che teletrasportano verso l'alto.",
+		[9] = "Ricevi l'opzione per ignorare qualsiasi tipo di portale dimensionale ad eccezione di quelli che teletrasportano verso l'alto.",
 	},
 	["DRIFTER"] = {
 		[4] = "Le piattaforme colpite dal sortilegio Ascensore e dall'incantesimo Elevazione si muovono più velocemente del 50%.",
 		[5] = "Puoi roteare e dirottare scale già dirottate.",
 		[6] = "Puoi potenziare gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
-		[8] = "Ricevi l'opzione per non attivare le scale alterate da Drifter Rig quando le calpesti.",
-		[9] = "Puoi potenziare di nuovo gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
+		[8] = "Ricevi l'opzione per ignorare le scale alterate da Drifter Rig quando le calpesti.",
+		[9] = "Puoi potenziare ulteriormente gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
 	},
 	["HERETIC"] = {
 		[4] = "Solo ed esclusivamente quando sei a corto di Mana, puoi toccare una scala maledetta per ripristinarla e guadagnare 1 Mana.",
-		[5] = "Sei immune all'effetto Posseduto.",
+		[5] = "Non puoi più essere posseduto dalle scale alterate da Heretic Rig.",
 		[6] = "Puoi usare l'incantesimo Sorpasso D'Ombra per rimuovere malefici.",
 		[8] = "L'incantesimo Genera Scale Maledette ed il sortilegio Sciagura possono demolire eventuali scale maledette in mezzo.",
 		[9] = "Ottieni 1 Mana quando qualcuno viene Posseduto.",
@@ -741,30 +741,30 @@ module.gui.ranks = {
 	["SPLICER"] = {
 		[4] = "Puoi ripristinare le giunture dalle piattaforme.",
 		[5] = "L'incantesimo Ripristina Giuntura non richiede Mana per l'esecuzione.",
-		[6] = "Ricevi l'opzione per non attivare le scale alterate da Splicer Rig quando le calpesti.",
+		[6] = "Ricevi l'opzione per ignorare le scale alterate da Splicer Rig quando le calpesti.",
 		[8] = "Puoi combinare le scale già combinate.",
 		[9] = "Ricevi 1 Mana per giuntura ripristinata.",
 	},
 	["REAVER"] = {
 		[4] = "Puoi eseguire l'incantesimo Unione per separarti dalla tua controfigura.",
-		[5] = "I tuoi specchi durano di più del 50%. (15s esteso, 9s normale)",
-		[6] = "Ricevi l'opzione per non attivare le scale alterate da Reaver Rig quando le calpesti.",
-		[8] = "Puoi demolire eventuali scale in mezzo con l'incantesimo Genera Scale Specchiate.",
+		[5] = "I tuoi specchi durano il 50% in più. (15s esteso, 9s piccolo)",
+		[6] = "Ricevi l'opzione per ignorare le scale alterate da Reaver Rig quando le calpesti.",
+		[8] = "L'incantesimo Genera Scale Specchiate ora è in grado di demolire eventuali scale in mezzo, a patto che non siano maledette.",
 		[9] = "Diventi immune alle scale a senso unico.",
 	},
 	["NECROMANCER"] = {
 		[4] = "La tua controfigura ignora i malefici e le scale in mezzo quando esegui l'incantesimo Genera Scale Gemelle.",
-		[5] = "Attrae la Sfera Finale sulla piattaforma dove viene eseguito Punto di Appoggio (solo in cima).",
+		[5] = "Puoi usare l'incantesimo Punto di Appoggio in cima alla torre per richiamare la sfera finale verso la tua controfigura.",
 		[6] = "L'incantesimo Imita Piattaforma della Controfigura può rimuovere malefici se necessario.",
 		[8] = "Puoi demolire eventuali scale in mezzo quando esegui l'incantesimo Genera Scale Gemelle.",
-		[9] = "Rigenera Mana ripristina 10 mana invece di 6, e 5 a chi si trova vicino alla tua controfigura.",
+		[9] = "Rigenera Mana ripristina 10 Mana invece di 6, e 5 a chi si trova vicino alla tua controfigura.",
 	},
 	["GREMLIN"] = {
 		[4] = "Puoi rilevare le Scale Trappola.",
-		[5] = "Puoi richiamare i Tramm dalle piattaforme.",
-		[6] = "Sei immune all'effetto Ipnotizzato.",
+		[5] = "Puoi richiamare i Tram dalle piattaforme.",
+		[6] = "Non puoi più essere ipnotizzato dalle scale alterate da Gremlin Rig.",
 		[8] = "Sei immune alle Scale Trappola.",
-		[9] = "Ottieni l'opzione per interrompere le scale attorcigliate (potrebbero esserci problemi con più Gremlin)",
+		[9] = "Ottieni l'opzione per interrompere le scale attorcigliate. (potrebbero esserci problemi con più Gremlin)",
 	},
 	["MUGGLE"] = { 
 		[2] = "Ricarica salto ridotta di 0.125 secondi.",
@@ -778,7 +778,7 @@ module.gui.ranks = {
 	},
 	["CHAMELEON"] = {
 		[1] = "Questo è il primo rango di CHAMELEON. Gli effetti dei ranghi delle altre classi vengono applicati se sbloccati.",
-		[2] = "ATTENZIONE! Il tuo contenitore Mana viene riempito regolarmente SOLO mentre i Droni sono in modalità CHAMELEON.",
+		[2] = "Il tuo contenitore Mana viene riempito regolarmente SOLO mentre i Droni sono in modalità CHAMELEON. Le altre modalità dei droni NON ti daranno alcun Mana.",
 		[3] = "Le trasformazioni durano molto di meno.",
 		[4] = "Gli altri giocatori non sono più in grado di comprendere quale classe stai imitando quando selezioni un incantesimo.",
 		[5] = "Le scale normali e quelle illusiore sono indistinguibili.",
@@ -789,7 +789,7 @@ module.gui.ranks = {
 	},
 }
 
-module.gui.reshuffle = {
+module.gui.reshuffle = { --Continue from here
 	["title"] = "MESCOLAMENTO FORZATO?",
 
 	["body"] = "Le scale in movimento potrebbero scontrarsi con altre scale. Nel caso succeda, queste verranno distrutte. Premi NO se vuoi evitare un mescolamento forzato.",
