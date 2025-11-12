@@ -789,10 +789,10 @@ module.gui.ranks = {
 	},
 }
 
-module.gui.reshuffle = { --Continue from here
+module.gui.reshuffle = {
 	["title"] = "MESCOLAMENTO FORZATO?",
 
-	["body"] = "Le scale in movimento potrebbero scontrarsi con altre scale. Nel caso succeda, queste verranno distrutte. Premi NO se vuoi evitare un mescolamento forzato.",
+	["body"] = "Le scale in movimento potrebbero scontrarsi con altre e se ciò dovesse accadere, queste verranno distrutte. Premi NO se vuoi evitare un mescolamento forzato.",
 }
 
 module.gui.multitokens = {
@@ -806,7 +806,7 @@ module.gui.multitokens = {
 module.gui.feedback = {
 	["title"] = "FACCI SAPERE LA TUA",
 
-	["prompt"] = "Premi qui per iniziare a scrivere un messaggio, verrà poi letto dallo sviluppatore di ScaleMania! (almeno 20 caratteri richiesti)",
+	["prompt"] = "Premi qui per iniziare a scrivere un messaggio (almeno 20 caratteri richiesti), verrà poi letto dallo sviluppatore di ScaleMania! Inviare spam è punibile.",
 	["send"] = "INVIA",
 	["locked"] = "ATTENDI",
 }
@@ -860,7 +860,7 @@ module.gui.gameover.messages = {
 	["JOKER"] = {
 		"INGANNA, CONFONDI e RIDI SOTTO I BAFFI",
 		"Questa scalinata è uno scherzo",
-		"Se i Droni mi ripristinano un'altra scala illusoria...",
+		-- "Se i Droni mi ripristinano un'altra scala illusoria...",
 		"Tutta questa serietà è angosciante...",
 		"Grosse risate",
 		"Seguitemi a vostro rischio e pericolo",
@@ -887,7 +887,7 @@ module.gui.gameover.messages = {
 		"Il teletrasporto è la soluzione a tutti i problemi",
 		"Credi ancora che i fantasmi non esistano?",
 		"I problemi non si risolvono, si evitano!",
-		"State sereni, le scale non le tocco... ci pensano i miei spiriti",
+		"Tornerò prima o poi",
 		"Ci sono troppe scale spettralizzate? E dove sta il problema?",
 		"Stammi dietro se ci riesci!",
 	},
@@ -910,20 +910,19 @@ module.gui.gameover.messages = {
 		"Essere propensi al cambiamento ripaga",
 		"So prendere le mie decisioni... anche se cambio idea spesso",
 		"Hai massimizzato una classe? Spettacolare, ma io le ho tutte!",
-		"Scusate, ma perché usare solo una classe quando puoi averle tutte?",
+		"Perché usare solo una classe quando puoi averle tutte?",
 		"O caos, mio spirito guida",
 	},
 	["KEEPER"] = {
 		"MUOVI, RUOTA e SORVEGLIA",
 		"Le mie scale, NON. SI. TOCCANO!",
 		"Missione compiuta!",
-		"Avevo finito di lucidare la torre giusto ieri...",
+		"Avevo appena finito di lucidare quelle scale...",
 		"Mi piace l'ordine",
 		"Caos domato",
-		"Hai di fronte a te un modello da seguire",
+		"Un altro successo da mettere in tasca",
 		"Un giorno sistemerò questa torre per bene",
 		"Scale trattate bene sono scale felici",
-		"Un altro successo da mettere in tasca",
 	},
 	["THIEF"] = {
 		"PRENDI IN PRESTITO, USA E RESTITUISCI",
@@ -936,7 +935,7 @@ module.gui.gameover.messages = {
 		"Ma a te, se prendo una scala, ti cambia qualcosa?",
 		"Io sono una vittima delle circostanze",
 	},
-	["HACKER"] = {
+	["HACKER"] = { --Continue from here
 		"SFRUTTA, CREA ERRORI e RESETTA",
 		"Gioco sportivo? Fammi il piacere",
 		"Un momento, tutto questo è una simulazione? Qualcuno mi comanda?",
