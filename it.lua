@@ -935,7 +935,7 @@ module.gui.gameover.messages = {
 		"Ma a te, se prendo una scala, ti cambia qualcosa?",
 		"Io sono una vittima delle circostanze",
 	},
-	["HACKER"] = { --Continue from here
+	["HACKER"] = {
 		"SFRUTTA, CREA ERRORI e RESETTA",
 		"Gioco sportivo? Fammi il piacere",
 		"Un momento, tutto questo è una simulazione? Qualcuno mi comanda?",
@@ -944,7 +944,7 @@ module.gui.gameover.messages = {
 		"Sarei io quello che sta barando?",
 		"Sto semplicemente aggiungendo delle... migliorie al gioco",
 		"Ho inventato le scale mobili",
-		"Stai certo, prima o poi raggiungerò i MUGGLE",
+		"Stai certo, prima o poi supererò i MUGGLE",
 	},
 	["HERETIC"] = {
 		"TU NON PUOI PASSARE",
@@ -956,6 +956,7 @@ module.gui.gameover.messages = {
 		"Oh, sei stato posseduto? Ti sta bene",
 		"Non permetterti mai più di ripristinare le mie scale",
 		"Hai scelto l'oscurità... e non te ne pentirai",
+		"Non puoi fermarmi, mettere i bastoni tra le ruote é la mia arte",
 	},
 	["ARCHON"] = {
 		"CREA PORTALI DIMENSIONALI, ???, GUADAGNO",
@@ -966,7 +967,8 @@ module.gui.gameover.messages = {
 		"Non posso usando il mio potale dimensinale",
 		"La torta è una bugia",
 		"C'è una soluzione a tutto",
-		"Evviva i portali dimensionali!",
+		"Confusione totale!",
+		"M'illumino d'immenso",
 	},
 	["DRIFTER"] = {
 		"VOLA, VIAGGIA e VISITA",
@@ -978,6 +980,7 @@ module.gui.gameover.messages = {
 		"Continua a navigare, non c'è nessuno nei paraggi",
 		"Le piattaforme non mi deludono mai",
 		"A tutta rotta!",
+		"CHI HA COSTRUITO DELLE SCALE NEL MIO ASCENSORE?!?",
 	},
 	["SPLICER"] = {
 		"SEPARA, COMBINA e DIVIDI",
@@ -989,7 +992,7 @@ module.gui.gameover.messages = {
 		"Creare relazioni tra le scale è il mio forte",
 		"Le scale sono come le persone, hanno bisogno di essere unite",
 		"Prometto che non sono partito di testa",
-		"Combinare o dividere, questa è la questione",
+		"Combinare o dividere, questo è il dilemma",
 		"Mille grazie Markerquest, mi hai salvato",
 		"Questa torre è troppo dritta per i miei gusti",
 	},
@@ -1005,8 +1008,9 @@ module.gui.gameover.messages = {
 		"Specchio riflesso se ti muovi hai perso",
 		"Ma ti sei visto? Io posso",
 		"Non ti avvicinare di soppiatto in quel modo!",
+		"Mamma, non mi interrompere, sto riflettendo",
 	},
-	["NECROMANCER"] = {
+	["NECROMANCER"] = { --Continua da qui
 		"SEGUI, RIANIMA E RACCOGLI",
 		"Vogliamo solo giocare, non spaventarti... troppo",
 		"La tua anima mi spetta di diritto",
