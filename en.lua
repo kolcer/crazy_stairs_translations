@@ -1,4 +1,4 @@
---VERSION 4.1.x--
+--VERSION 4.1--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -889,7 +889,8 @@ module.gui.multitokens = {
 }
 
 module.gui.feedback = {
-
+	
+	["title"] = "SEND FEEDBACK",
 	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
 	["send"] = "SEND",
 	["locked"] = "LOCKED",
