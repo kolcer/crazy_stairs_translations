@@ -1010,7 +1010,7 @@ module.gui.gameover.messages = {
 		"Non ti avvicinare di soppiatto in quel modo!",
 		"Mamma, non mi interrompere, sto riflettendo",
 	},
-	["NECROMANCER"] = { --Continua da qui
+	["NECROMANCER"] = {
 		"SEGUI, RIANIMA E RACCOGLI",
 		"Vogliamo solo giocare, non spaventarti... troppo",
 		"La tua anima mi spetta di diritto",
@@ -1020,7 +1020,7 @@ module.gui.gameover.messages = {
 		"I tabloid ci hanno rovinato la reputazione, colpa di Hollywood",
 		"La mia necromanzia è a vostra disposizione",
 		"Ho bisogno di anim- MANA! Intendevo dire Mana",
- 		"Prevenire è meglio che curare",
+ 		"Non preoccuparti di cadere, ci penserò io a farti rialzare",
 	},
 	["GREMLIN"] = {
 		"GIRA, ATTORCIGLIA, E IPNOTIZZA",
@@ -1028,11 +1028,12 @@ module.gui.gameover.messages = {
 		"You spin me right 'round, baby, right 'round",
 		"Questa scalinata è ultra noiosa",
 		"Adesso ci metto le mani io",
-		"Che ne pensi del mio capolavoro? No? Questo è solo l'inizio.",
+		"Che ne pensi del mio capolavoro? No? Questo è solo l'inizio",
 		"Il dottore mi ha prescritto di rilassarmi, e questo è il modo migliore per farlo",
 		"Prendi nota, Joker! No, ok, scherzavo... Riassumimi al circo, per favoreee!",
 		"Dov'è finita quella scala?",
-		"Yippeeeeeeeeeeee!!!!!!!",
+		"Yippeeeeeee!!!!!!!",
+		"Anche a voi inizia a girare la testa o sono solo io?",
 	},
 }
 
@@ -1041,7 +1042,7 @@ module.gui.gameover.maxrank ={
 	["IT"] = "La burla, la risata, la comicità...",
 	["ANNIHILATOR"] = "Hai distrutto tutto, ma a che costo?",
 	["AETHER"] = "Benvenuto nel regno degli inferi",
-	["DABSFORLIF"] = "Incantesimi non disponibili",
+	["DABSFORLIF"] = "La magia è sopravvalutata",
 	["USURPER"] = "Mi piacciono tutti gli incantesimi",
 	["ADMIRAL"] = "Comandante in piena regola",
 	["OUTLAW"] = "L'avidità in persona",
@@ -1051,8 +1052,8 @@ module.gui.gameover.maxrank ={
 	["STRIDER"] = "Prenderò l'ascensore, grazie",
 	["DEATHBRINGER"] = "Alzati per me!",
 	["OPTIMUS"] = "Combinazione perfetta",
-	["ALIEN"] = "L'unione",
-	["DAEMON"] = "Quante dita vedi?",
+	["ALIEN"] = "L'unione fa la forza",
+	["DAEMON"] = "Giro giro tondo",
 }
 
 module.gui.gameover.credits = {
@@ -1143,11 +1144,11 @@ module.gui.gameover.credits = {
 
 module.static = {
 	["cla_1"] = "Come si gioca?",
-	["cla_2"] = "Prima di iniziare, ti consigliamo di completare il tutorial. Se non l'hai ancora fatto, esci e rientra nel server, altrimenti l’esperienza di gioco potrebbe risultare confusa.",
-	["cla_3"] = "L'obiettivo del gioco è raggiungere la cima e raccogliere la Sfera Finale. Prima di iniziare, scegli la tua classe saltando sui trasformatori al centro della mappa.",
-	["cla_4"] = "Felice con la tua scelta, puoi iniziare a scalare la torre collezionando le sfere di Mana mentre procedi; ti saranno utili per poter lanciare gli incantesimi. Fai uso della varietà di incantesimi che ogni classe offre.",
+	["cla_2"] = "Prima di iniziare, ti consigliamo di completare il tutorial. Se non l'hai ancora fatto, attivalo dal menu, altrimenti l’esperienza di gioco potrebbe risultare confusa.",
+	["cla_3"] = "L'obiettivo del gioco è raggiungere la cima e raccogliere la Sfera Finale. Prima di iniziare, scegli la tua classe saltando sui trasformatori posizionati al centro della mappa.",
+	["cla_4"] = "Felice con la tua scelta, puoi iniziare a scalare la torre collezionando i cristalli di Mana mentre procedi; ti saranno utili per poter lanciare gli incantesimi. Fai uso della varietà di incantesimi che ogni classe offre.",
 	["cla_5"] = "Come si lanciano gli incantesimi?",
-	["cla_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segno che l’incantesimo è pronto.",
+	["cla_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segnalando che l’incantesimo è pronto.",
 	["cla_7"] = "Dopo aver selezionato l’incantesimo, devi eseguirlo saltando. A seconda dell’incantesimo, dovrai saltare su scale o piattaforme. Segui le frecce guida per indicazioni.",
 	["cla_8"] = "Ogni salita completata ti darà 3 gettoni da usare per sbloccare incantesimi. Puoi scalare la torre quante volte vuoi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi.",
 	["cla_9"] = "Come si lanciano i sortilegi?",
