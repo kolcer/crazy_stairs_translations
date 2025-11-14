@@ -1110,6 +1110,19 @@ module.gui.gameover.messages = {
 		"Hova tűnt a lépcső?",
 		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
 	},
+	["NONE"] = {
+		"MINTHA ITT SE LENNÉNK",
+		"Nagyon erős leszek, ha majd százszor megmászom a tornyot.",
+		" ", --worked hard on this one
+		"A semmittevést nem lehet elhibázni.",
+		"Van értelme egyáltalán megmászni a lépcsőket?",
+		"Léteznem se kéne, mégis itt vagyok.",
+		"Választhatnál egy másik osztályt, de én azt se bánnám, ha nem.",
+		"Így kell megfelelően megmászni a lépcsőket.",
+		"Fáj a lábam.",
+		"Miért sietsz Muggle? Időnk, mint a tenger.",
+		"Én voltam itt először, mégis úgy érzem, hogy nem tartozok ide.",
+	},
 
 }
 
@@ -1996,7 +2009,6 @@ module.gui.mana = {
 
 module.gui.gameover.extras = {
 
-	["noobs"] = "Kinek kell kiképzés?",
 	["possessed"] = "Azok az idegesítő Hereticek!",
 	["hypnotised"] = "Hol vagyok?",
 	["new"] = "Új rang elérve - %s",
@@ -2075,3 +2087,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
