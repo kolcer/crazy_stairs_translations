@@ -69,7 +69,7 @@ STEP-BY-STEP GUIDE:
 22. `module.spells.manacosts` - Mana costs appearing together with spell name on mouse hover. Some are unused.
 23. `module.spells.tokencosts` - Token costs.
 24. `module.serverfeedback` - Red messages appearing on the bottom of the screen. Some may be unused.
-25. `module.serverbroadcast` - Extra server-wide chat messages. This may be scrapped or reworked in 4.1. %s is replaced with player`s name. %d is a number. Keep the %s order (%s pranked %s), so that pranker is not swapped with victim.
+25. `module.serverbroadcast` - Extra server-wide chat messages. %s is replaced with player`s name. %d is a number. Keep the %s order (%s pranked %s), so that pranker is not swapped with victim.
 26. `module.localfeedback` - Some extra red messages.
 27. `module.switchon` and module.switchoff` - Extra red messages appearing after toggling the "Z" button.
 28. local timedSpell = "%s just cast the %s spell!" - Timed spell chat message. First %s will be replaced with the player name, second with the spell name from `module.spells.names`.
