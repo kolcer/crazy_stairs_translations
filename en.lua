@@ -1137,6 +1137,19 @@ module.gui.gameover.messages = {
 		"Where did that staircase go?",
 		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
 	},
+	["NONE"] = {
+		"DON'T, CEASE and REFRAIN",
+		"Muggle betrayed us, nothing means nothing.",
+		"[insert a message here]",
+		"If you don't do anything, you cannot fail.",
+		"There is nothing on top of the staircase.",
+		"You do realise NONE was just meant to be a bug fix, right?",
+		"Jump on a morph to change your alignment. Or not - I'm just a message, not a cop.",
+		"This is the proper way to climb stairs.",
+		"My legs are killing me.",
+		"Walkspeed and Jump	power are overrated.",
+		"Technically, I am the first class created in the game.",
+	},
 
 }
 
