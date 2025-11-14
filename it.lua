@@ -1150,13 +1150,13 @@ module.static = {
 	["cla_5"] = "Come si lanciano gli incantesimi?",
 	["cla_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segnalando che l’incantesimo è pronto.",
 	["cla_7"] = "Dopo aver selezionato l’incantesimo, devi eseguirlo saltando. A seconda dell’incantesimo, dovrai saltare su scale o piattaforme. Segui le frecce guida per indicazioni.",
-	["cla_8"] = "Ogni salita completata ti darà 3 gettoni da usare per sbloccare incantesimi. Puoi scalare la torre quante volte vuoi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi.",
+	["cla_8"] = "Per ogni salita completata riceverai 3 gettoni da usare per sbloccare incantesimi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi, ad eccezione dei gettoni Multiuso",
 	["cla_9"] = "Come si lanciano i sortilegi?",
 	["cla_10"] = "Per lanciare i sortilegi devi prima sbloccare tutti gli incantesimi base. I sortilegi non vanno sbloccati, ma consumano Gettoni invece di Mana.",
-	["cla_11"] = "Per sbloccare tutti gli incantesimi di una classe, scala la torre almeno 6 volte. Puoi guadagnare Gettoni extra vincendo le gare, oppure acquistarli nel negozio. L’icona dei sortilegi si trova a sinistra degli incantesimi.",
-	["cla_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati. Annullare questi sortilegi non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle Classi.",
+	["cla_11"] = "Per ottenere i gettoni necessari a sbloccare tutti gli incantesimi di una classe è necessario scalare la torre almeno 5 volte, però è possibile ottenerne altri extra vincendo le gare o acquistandoli dal negozio. Per accedere alla lista dei sortilegi, clicca l'icona a sinistra degli incantesimi o premi il tasto 'C'.",
+	["cla_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati, ma interromperne l'effetto non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle classi.",
 
-	["pro_1"] = "TORRE PROFESSIONALE",
+	["pro_1"] = "TORRE PROFESSIONALE", --Conntinue from here
 	["pro_2"] = "Vincolo dei piani pari",
 	["pro_3"] = "Nella torre professionale, alcuni incantesimi non possono essere usati sui piani pari. Crea Trappola, Crea Portale, Emersione, Posiziona Scale a Chiocciola e altri possono essere lanciati solo sui piani dispari.",
 	["pro_4"] = "Neanche i Drifter possono usare queste piattaforme. Sono facilmente riconoscibili grazie al cerchio rosso al centro.",
