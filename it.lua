@@ -10,41 +10,24 @@ local module = {}
 module.gui = {}
 
 module.gui.basic = {
-	["yes"] = "SÌ",
-	["no"] = "NO",
-	["ok"] = "OK",
-	["menu"] = "MENU",
 	["default"] = "PREDEFINITO",
 	["validate"] = "CONFERMA",
-	["play"] = "GIOCA",
-	["skip"] = "SALTA\nTUTORIAL",
-	["loading"] = "CARICAMENTO, ATTENDI QUALCHE SECONDO...",
-	["mode"] = "MODALITÀ\n%s",
-	["cd"] = "SORTILEGIO\nIN CARICAMENTO",
-	["complete"] = "COMPLETATO",
 }
 
 module.gui.switcher = {
-	["title"] = "CAMBIA SERVER",
-
-	["public"] = "SERVER PUBBLICO",
-	["private"] = "SERVER PRIVATO",
 	["join"] = "UNISCITI",
 	["friends"] = "AMICI COLLEGATI",
 	["refresh"] = "sto aggiornando la lista...",
 	["fail"] = "IMPOSSIBILE AGGIORNARE LA LISTA!",
+	["refreshbutton"] = "AGGIORNA",
+	["failed"] = "Teletrasporto fallito!",
+	["classic"] = "Torre Classica",
+	["pro"] = "Torre Professionale",
+	["custom"] = "Torre Personalizzabile",
+	["noVR"] = "Torre Senza Architect",
 }
 
 module.gui.serversettings = {
-	["title"] = "IMPOSTAZIONI DEL TUO SERVER",
-
-	["Moderation"] = "MODERAZIONE",
-	["rules"] = "A casa tua, le regole le decidi tu.",
-	["temp"] = "Le azioni di moderazione valgono\nper la sessione attuale",
-	["kick"] = "CACCIA",
-	["ban"] = "BANDISCI",
-	["mute"] = "SILENZIA",
-
 	["Drones"] = "IMPOSTAZIONI DRONI",
 	["DronesReadOnly"] = "INFORMAZIONI DRONI (sola lettura)",
 	["DroneEnabled"] = "Droni abilitati",
@@ -73,13 +56,13 @@ module.gui.serversettings = {
 	["InfStart"] = "Intervallo tra la creazione dei vari piani nella torre senza fine (2 piani per intervallo) (secondi) ",
 	["InfReduction"] = "Riduzione di tempo per la creazione di nuovi livelli (ogni lasso di tempo dura sempre meno di...) (secondi)",
 	["InfMin"] =  "Durata intervalli minima per la creazione di nuovi piani (secondi)",
-	["Cooldown"] = "Tempo di attesa tra sortilegi eventi e rig (secondi)",
+	["CooldownTime"] = "Tempo di attesa tra sortilegi eventi e rig (secondi)",
 }
 
 module.gui.shop = {
-	["title"] = "NEGOZIO SCALEMANIA",
+	["architect"] = "Architect pass permette di diventare un Architect senza un visore VR.",
 
-	["chameleon"] = "Chameleon permette di cambiare classe durante le scalate.",
+	["chameleon"] = "Chameleon pass permette di cambiare classe durante le scalate.",
 	["spectre"] = "Gli incantesimi di Spectre si basano sul teletrasporto, meglio usato in solitaria.",
 	["mana"] = "Aumenta di 10 il limite massimo di Mana che puoi accumulare.",
 
@@ -90,43 +73,70 @@ module.gui.shop = {
 	["3TOKENS"] = "3 Gettoni Multiuso (R$%d)",
 	["30TOKENS"] = "30 Gettoni Multiuso (R$%d)",
 	["300TOKENS"] = "300 Gettoni Multiuso (R$%d)",
-	["SPECTRE PASS"] = "Pass Spectre (R$%d)",
-	["MANA PASS"] = "Contenitore Mana Migliorato (R$%d)",
-	["CHAMELEON PASS"] = "Pass Chameleon (R$%d)",
+	["SPECTRE"] = "Pass Spectre (R$%d)",
+	["MANA"] = "Contenitore Mana Migliorato (R$%d)",
+	["CHAMELEON"] = "Pass Chameleon (R$%d)",
+	["ARCHITECT"] = "Pass Architect (R$%d)",
 }
 
-module.gui.spellbar = {
-	["share"] = "CONDIVIDI\nMANA",
+module.gui.nospellsbar = {
 	["nocasual"] = "SOLO I CORRIDORI POSSONO USARE GLI INCANTESIMI",
+	["possessed"] = "POSSEDUTO! (raccogli Mana per liberarti)",
 }
 
 module.gui.stats = {
-	["total"] = "Ascese conseguite: %d / Vittorie: %d",
-	["class"] = "Scalate praticate con %s: %d",
-	["best"] = "Miglior tempo con %s: %.2f",
-	["na"] = "N/A",
+	["badges"] = "RICONOSCIMENTI",
+	["climbs"] = "ASCESE",
+	["total"] = "ASCESE/VITTORIE TOTALI",
+	["best"] = "MIGLIOR TEMPO CRONOMETRATO",
+	["norecord"] = "[no record]",
+
+	["2124486274"] = "Inganna il Creatore",
+	["1803533030753957"] = "Black Hole",
+	["2124480173"] = "Tradimento di Wicked",
+	["2124480172"] = "Trabocchetto di Joker",
+	["2124637294"] = "Viaggio di Drifter",
+	["2124517579"] = "Rapina di Thief",
+	["4464785885277417"] = "Giunzione di Splicer",
+	["2124480174"] = "Ordine di Keeper",
+	["2124637293"] = "Calcolo di Archon",
+	["2124517578"] = "Breccia di Hacker",
+	["707445818894757"] = "Capriccio di Gremlin",
+	["2124480171"] = "Orgoglio di Patron",
+	["1407551481032773"] = "Riflesso di Reaver",
+	["2124637295"] = "Maledizione di Heretic",
+	["1885715582646280"] = "Rito di Necromancer",
+	["2124480175"] = "Logica di Muggle",
+	["2124826874"] = "Cerchia Completa",
+	["2124529966"] = "Cos'è il Tutorial?",
+	["2124826880"] = "La fine del Posseduto",
+	["3731010929572663"] = "Il sogno dell'Ipnotizzato",
+	["2124913225"] = "Progetto di Architect",
+	["2124702954"] = "Devo solo premere questo pulsante...",
+	["2124702945"] = "Hai distrutto tutto, ma a che costo?",
+	["2124702946"] = "Comandante in piena regola",
+	["128721686760593"] = "Giro giro tondo...",
+	["2124702952"] = "Prenderò l'ascensore, grazie",
+	["3121101516427751"] = "Combinazione perfetta",
+	["2124702942"] = "Modello da seguire",
+	["2124702950"] = "Illuminazione divina",
+	["2124702951"] = "L'Avidità in persona",
+	["1165646024608180"] = "L'Unione fa la forza",
+	["2303731210592278"] = "Alzati per me!",
+	["2124702949"] = "Scomunica",
+	["2124702943"] = "La burla, la risata, la comicità...",
+	["2124702948"] = "La magia è sopravvalutata",
+	["2124826876"] = "Club dei 50",
+	["2124645341"] = "Riconoscimento Segreto",
+	["2126893403"] = "Riconoscimento Super Segreto",
+	["2126893411"] = "Riconoscimento Mega Segreto",
 }
 
-module.gui.timedspell = {
-	["possessed"] = "POSSEDUTO! (raccogli Mana per liberarti)",
-	["released"] = "RILASCIATO",
-	["timesup"] = "Tempo scaduto...",
-}
-
-module.gui.activatecham = {
-	["title"] = "ATTIVA CHAMELEON PASS",
-	["body"] = "Vuoi attivare il Chameleon Pass?\nResterà attivo per tutta la scalata.",
-}
-
-module.gui.caceltimed = {
-	["title"] = "INTERROMPI SORTILEGIO TEMPORANEO",
-	["body"] = "Vuoi interrompere questo sortilegio temporaneo?\nI gettoni non verranno rimborsati.",
-}
-
-module.gui.climbtimer = {
-	["prompt"] = "Sali sulle\nscale!",
-	["floor"] = "Piano",
-	["last"] = "Tempo cronometrato\nprecedente",
+module.gui.questions = {
+	["cancel"] = "Vuoi interrompere questo sortilegio temporaneo?\nI gettoni NON verranno rimborsati.",
+	["tutorial"]= "Vuoi iniziare il tutorial?",
+	["skip"] = "Vuoi terminare il tutorial?",
+	["reshuffle"] = "Vuoi evitare collisioni tra le scale in movimento? Premi NO per effettuare un mescolamento forzato.",
 }
 
 module.gui.codes = {
@@ -134,22 +144,6 @@ module.gui.codes = {
 	["body"] = "Digita il codice qui di seguito:",
 	["prompt"] = "(codice)",
 	["button"] = "CONFERMA",
-}
-
-module.gui.gauges = {
-	["prompt"] = "Esegui un salto per eseguire, premi nuovamente per annullare.",
-
-	["found"] = "%d scale trovate (%.1f%% del totale)",
-	["special"] = "%d sono alterate (%.1f%%)",
-	["affected"] = "%d scale saranno coinvolte (%.1f%%)",
-	["cursed"] = "%d malefici trovati (%.1f%%)",
-	["fill"] = "%d scale verranno generate (%.1f%%)",
-	["purge"] = "%d oggetti verranno distrutti (%.1f%%)",
-	["normal"] = "%d sono già normali (%.1f%%)",
-	["restore"] = "%d scale saranno ripristinate (%.1f%%)",
-	["bypass1"] = "%d maledizioni trovate (%.1f%%)",
-	["bypass2"] = "%d scorciatoie già esistono (%.1f%%)",
-	["bypass3"] = "%d scorciatoie verranno generate (%.1f%%)",
 }
 
 module.gui.jukebox = {
@@ -185,16 +179,6 @@ module.gui.results = {
 	[12] = "dodicesimo",
 }
 
-module.gui.racetimer = {
-	["gather"] = "Non sei\nun corridore.",
-	["race"] = "GARA\nCONCLUSA!",
-	["inf"] = "Sei fuori!",
-	["off"] = "CRONOMETRO\nCORSA",
-	["wait"] = "Prossima corsa tra",
-	["on"] = "Rango",
-}
-
-
 module.spells = {}
 
 --SPELL NAMES
@@ -204,7 +188,6 @@ local CommonSpellNames = {
 	["mode"] = "Droni in fase %s",
 	["refill"] = "Mana a Gogo (%s)",
 	["union"] = "Unione Spettrale (%s)",
-	--["event"]
 }
 
 module.spells.names = {
@@ -322,7 +305,7 @@ module.spells.names = {
 	["curseabove"] = "Maledici Scale in Alto",
 	["curseinter"] = "Sorpasso D'Ombra",
 	["autodown"] = "Innalza Scisma",
-	["autoup"] = "Abbassa Scisma",
+	["autoup"] = "Abbassa Scisma Opposto",
 
 	["malediction"] = "Sciagura",
 	["hereticevent"] = "Evento Scisma",
@@ -340,7 +323,7 @@ module.spells.names = {
 	["splicerevent"] = "Evento Combinazione",
 	["spliceraltevent"] = "Evento Divisione",
 
-	--necro
+	--NECROMANCER
 	["createdual"] = "Genera Scale Gemelle",
 	["copyplatform"] = "Imita Piattaforma della Controfigura",
 	["soulbridge"] = "Genera Ponte degli Inferi",
@@ -352,7 +335,7 @@ module.spells.names = {
 	["necromancerevent"] = "Evento Resurrezione",
 	["necromanceraltevent"] = "Evento Mietitore",
 
-	--reaver
+	--REAVER
 	["createmirrored"] = "Genera Scale Specchiate",
 	["bigmirror"] = "Genera Specchio Esteso",
 	["smallmirror"] = "Genera Specchio",
@@ -364,7 +347,7 @@ module.spells.names = {
 	["reaverevent"] = "Evento Monodirezionale",
 	["reaveraltevent"] = "Evento Sola Salita",
 
-	--gremlin
+	--GREMLIN
 	["tram"] = "Genera Tram",
 	["screwdown"] = "Attorciglia Scale",
 	["screwup"] = "Attorciglia Scale in Alto",
@@ -384,10 +367,11 @@ module.spells.names = {
 	["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
 
-	--MISC (compatibility)
-	["reg"] = "Rigenerazione in corso",
+	["mugglereg"] = "Rigenerazione in corso",
+	["mugglecd"] = "Events and Rigs Cooldown",
+	["share"] = "Share mana (requires 2 Mana minimum)",
 
-}-- " .. RankData.PATRON[7].name .. " 
+}
 
 -- common description stuff
 
@@ -1156,25 +1140,24 @@ module.static = {
 	["cla_11"] = "Per ottenere i gettoni necessari a sbloccare tutti gli incantesimi di una classe è necessario scalare la torre almeno 5 volte, però è possibile ottenerne altri extra vincendo le gare o acquistandoli dal negozio. Per accedere alla lista dei sortilegi, clicca l'icona a sinistra degli incantesimi o premi il tasto 'C'.",
 	["cla_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati, ma interromperne l'effetto non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle classi.",
 
-	["pro_1"] = "TORRE PROFESSIONALE", --Conntinue from here
+	["pro_1"] = "TORRE PROFESSIONALE",
 	["pro_2"] = "Vincolo dei piani pari",
 	["pro_3"] = "Nella torre professionale, alcuni incantesimi non possono essere usati sui piani pari. Crea Trappola, Crea Portale, Emersione, Posiziona Scale a Chiocciola e altri possono essere lanciati solo sui piani dispari.",
 	["pro_4"] = "Neanche i Drifter possono usare queste piattaforme. Sono facilmente riconoscibili grazie al cerchio rosso al centro.",
 	["pro_5"] = "Scale maledette",
-	["pro_6"] = "Nella Torre Professionale i Droni possono creare scale maledette o trasformare quelle normali in maledette con una probabilità del 20%. Le frecce guida scompaiono vicino a queste",
-	["pro_7"] = "Le scale maledette sono immuni alla maggior parte degli incantesimi, inclusi Smaterializzazione e Scatto Fantasma. In conclusione, qualsiasi incantesimo che porterebbe alla distruzione di queste scale non ha effetto.",
-	["pro_8"] = "Solo Heretic e Keeper possono ripristinare le scale maledette. Anche l'Evento Annientamento e l'Evento Restaurazione possono rispettivamente distruggere e ripristinare le scale maledette. I Droni non resteranno con le mani in mano, tuttavia.",
+	["pro_6"] = "Nella Torre Professionale i Droni possono creare scale maledette o trasformarle da quelle normali con una probabilità del 20%. Le frecce guida diventano rosse vicino a queste",
+	["pro_7"] = "Le scale maledette sono immuni alla maggior parte degli incantesimi, inclusi Smaterializzazione e Scatto Fantasma. Di norma, qualsiasi incantesimo che porterebbe alla distruzione di queste scale non ha effetto.",	["pro_8"] = "Solo Heretic e Keeper possono ripristinare le scale maledette. Anche l'Evento Annientamento e l'Evento Restaurazione possono rispettivamente distruggere e ripristinare le scale maledette. I Droni non resteranno con le mani in mano, tuttavia.",
 	["pro_9"] = "Malefici",
-	["pro_10"] = "Come se non fosse abbastanza, i Droni possono anche creare malefici. Le intersecazioni normali hanno il 20% di diventare maledette. Le frecce guida nelle vicinanze di malefici prenderanno le sembianze di una croce rossa.",
-	["pro_11"] = "I malefici inibiscono tutti gli incantesimi che vengono lanciati sulle frecce, pertanto quelli che portano alla generazione di scale o che teletrasportano l'utente su altre piattaforme non possono essere lanciati.",
+	["pro_10"] = "Come se non fosse abbastanza, i Droni possono anche creare malefici. Le intersecazioni normali hanno il 20% di diventare maledette e le frecce guida nelle vicinanze diventeranno rosse con una croce al centro.",
+	["pro_11"] = "I malefici inibiscono tutti gli incantesimi che vengono lanciati sulle frecce, pertanto quelli che portano alla generazione di scale o che teletrasportano l'utente su altre piattaforme (verso la direzione della freccia) non possono essere lanciati.",
 	["pro_12"] = "Solo Heretic, Keeper e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annientamento, tuttavia la Rigenerazione ne creerà di nuovi.",
 
 	["inf_1"] = "TORRE SENZA FINE",
 	["inf_2"] = "CORSA OBBLIGATORIA",
 	["inf_3"] = "I giocatori sono obbligati a partecipare a una gara e agli spettatori non è concesso l'uso di incantesimi (quindi non riceveranno ricompense). La sfera finale conferisce 10 Mana al tocco.",
-	["inf_4"] = "Per vincere premi in una corsa nella torre senza fine, devi restare in gioco più a lungo possibile! Riceverai eventuali ricompense in base alla tua posizione in classifica.",
+	["inf_4"] = "Per vincere premi in una corsa nella torre senza fine, devi restare in gioco il più a lungo possibile! Riceverai eventuali ricompense in base alla tua posizione in classifica.",
 	["inf_5"] = "Drone Anziano",
-	["inf_6"] = "Il Drone Anziano svolge un ruolo di maggiore importanza nella torre senza fine.",
+	["inf_6"] = "Il Drone Anziano svolge un ruolo di maggiore importanza nella torre senza fine.",--Continue after this line
 	["inf_7"] = "Durante ogni intervallo, il Drone Anziano crea 2 nuovi piani. Le piattaforme nei piani pari sono vincolate. Inoltre, è possibile che vengano generate scale maledette o malefici.",
 	["inf_8"] = "Il primo intervallo dura 20 secondi. Ogni prolungamento della torre riduce la durata degli intervalli di 0,5 secondi.",
 	["inf_9"] = "La Soglia",
