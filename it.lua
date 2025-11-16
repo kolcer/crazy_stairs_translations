@@ -154,6 +154,7 @@ module.gui.jukebox = {
 	["climb"] = "MUSICA SCALATA",
 	["endgame"] = "MUSICA FINALE",
 	["failed"] = "[caricamento fallito]",
+	["off"] = "SILENZIATO",
 }
 
 module.gui.results = {
@@ -367,8 +368,24 @@ module.spells.names = {
 	["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
 
+	--ARCHITECT
+	["archpatron"] = "Genera o Restringi Scale",
+	["archarchon"] = "Portale dimensionale su piattaforme o scale",
+	["archthief"] = "Posiziona o Ruba Scale",
+	["archnecro"] = "Genera Scale Gemelle o Esorcizza Scale",
+	["archhacker"] = "Scale Mobili o Manometti Scale",
+	["archkeeper"] = "Sposta o Ripristina Scale",
+	["archsplicer"] = "Combina o Ripristina Scale",
+	["archwicked"] = "Genera Barriera o Demolisci Scale",
+	["archgremlin"] = "Scale Girevoli o Rotea Piattaforma",
+	["archjoker"] = "Genera Scale Illusorie o Ribalta Scale",
+	["archdrifter"] = "Dirotta Scale o Elevazione",
+	["archspectre"] = "Evoca Scale Fantasma o Spettralizza Scale",
+	["archreaver"] = "Genera Scale Specchiate o Senso Unico",
+	["archheretic"] = "Crea Maledizione o Maleficio",
+
 	["mugglereg"] = "Rigenerazione in corso",
-	["mugglecd"] = "Events and Rigs Cooldown",
+	["mugglecd"] = "Fase di ricarica per eventi e rig",
 	["share"] = "Share mana (requires 2 Mana minimum)",
 
 }
@@ -622,6 +639,25 @@ module.spells.descriptions = {
 	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","qualcosa di inaspettato"),
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
+
+	--NEW
+	["share"] = "Se hai almeno 2 Mana, puoi condividere 1 Mana alla volta con un giocatore vicino a te.",
+
+	--ARCHITECT
+	["archpatron"] = "Genera una scala nella direzione indicata o restringe la scala colpita.",
+	["archarchon"] = "Crea un portale dimensionale sulla piattaforma/scala colpita verso la direzione indicata.",
+	["archthief"] = "Posiziona una scala nella direzione indicata o ruba la scala colpita.",
+	["archnecro"] = "Genera scale gemelle nella direzione indicata o esorcizza la scala colpita.",
+	["archhacker"] = "Manomette la scala nella direzione indicata o rende la scala colpita una scala mobile con direzione a tua scelta.",
+	["archkeeper"] = "Ripristina la scala nella direzione indicata o sposta la scala colpita verso una direzione a tua scelta.",
+	["archsplicer"] = "Ripristina la scala nella direzione indicata o combina la scala colpita con un'altra a tua scelta.",
+	["archwicked"] = "Genera una barriera nella direzione indicata o demolisce la scala colpita.",
+	["archgremlin"] = "Rotea la piattaforma colpita o rende la scala colpita girevole (direzione può essere scelta per entrambi gli incantesi).",
+	["archjoker"] = "Genera una scala illusoria nella direzione indicata o ribalta la scala colpita.",
+	["archdrifter"] = "Eleva la piattaforma colpita o dirotta la scala colpita in una direzione casuale.",
+	["archspectre"] = "Genera una scala fantasma nella direzione indicata o inverte lo stato di spettralizzazione della scala colpita.",
+	["archreaver"] = "Genera una scala specchiata nella direzione indicata o trasforma la scala colpita in una scala a senso unico (puoi scegliere la direzione).",
+	["archheretic"] = "Crea/rimuove maleficio nell'intersecazione indicata o maledice/rimuove la maledizione dalla scala colpita.",
 }
 
 local CommonPerksInsertALignment = {
@@ -639,8 +675,19 @@ module.gui.ranks = {
 
 	--none
 	["none_1"] = "Nessuna classe selezionata!",
-	["none_2"] = "Non puoi lanciare alcun incantesimo in questo stato.",
-	["none_3"] = "Salta sopra un trasformatore (locati al centro della mappa) per rimediare.",
+	["none_2"] = "Per lanciare incantesimi, DEVI selezionare una classe!",
+
+	["possessed_1"] = "Sei stato Posseduto!",
+	["possessed_2"] = "Raccogli Mana per liberarti.",
+	["possessed_3"] = "In questo stato, sia i tuoi incantesimi che il tuo rango sono inibiti.",
+
+	["hypnotised_1"] = "You have been Hypnotised!",
+	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
+	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+
+	["architect_1"] = "You are now an Architect!",
+	["architect_2"] = "Architects cannot acquire any ranks.",
+	["architect_3"] = "Roam the tower to wreak havoc!",
 
 	--shared
 	["higher"] = "POSSIEDI UN RANGO MIGLIORE",
@@ -1157,12 +1204,12 @@ module.static = {
 	["inf_3"] = "I giocatori sono obbligati a partecipare a una gara e agli spettatori non è concesso l'uso di incantesimi (quindi non riceveranno ricompense). La sfera finale conferisce 10 Mana al tocco.",
 	["inf_4"] = "Per vincere premi in una corsa nella torre senza fine, devi restare in gioco il più a lungo possibile! Riceverai eventuali ricompense in base alla tua posizione in classifica.",
 	["inf_5"] = "Drone Anziano",
-	["inf_6"] = "Il Drone Anziano svolge un ruolo di maggiore importanza nella torre senza fine.",--Continue after this line
-	["inf_7"] = "Durante ogni intervallo, il Drone Anziano crea 2 nuovi piani. Le piattaforme nei piani pari sono vincolate. Inoltre, è possibile che vengano generate scale maledette o malefici.",
-	["inf_8"] = "Il primo intervallo dura 20 secondi. Ogni prolungamento della torre riduce la durata degli intervalli di 0,5 secondi.",
+	["inf_6"] = "Il Drone Anziano svolge un ruolo di maggiore importanza nella torre senza fine.",
+	["inf_7"] = "Durante ogni intervallo, il Drone Anziano crea 2 nuovi piani. Le piattaforme nei piani pari sono vincolate, e inoltre, è possibile che vengano generate scale maledette o malefici.",
+	["inf_8"] = "Il primo intervallo dura 20 secondi. Gli intervalli diventeranno sempre più brevi man mano che la torre aumenta in altezza",
 	["inf_9"] = "La Soglia",
-	["inf_10"] = "La soglia si solleverà man mano che la torre viene prolungata. Cadere sotto la soglia comporta l'eliminazione; se ci tieni a rimanere in gara, stanne alla larga!",
-	["inf_11"] = "Sia il Drone Anziano che la Soglia guadagnano velocità nel tempo. Tuttavia la Soglia non arriverà mai a cancellare 2 piani alla volta.",
+	["inf_10"] = "La soglia si solleverà man mano che la torre viene prolungata. Caderne al di sotto comporta l'eliminazione; se ci tieni a rimanere in gara, stanne alla larga!",
+	["inf_11"] = "Sia il Drone Anziano che la Soglia aumentano di velocità nel tempo, tuttavia la Soglia non arriverà mai a cancellare 2 piani alla volta.", 
 	["inf_12"] = "I pezzi della torre che vengono toccati dalla Soglia svaniscono, scala la torre il più velocemente possibile senza rimanere indietro in modo da assicurarti premi migliori.",
 
 	["cus_1"] = "TORRE PERSONALIZZABILE",
@@ -1170,17 +1217,18 @@ module.static = {
 	["cus_3"] = "In questa torre puoi modificare le impostazioni a tuo piacimento.",
 	["cus_4"] = "Per una questione di correttezza, le ricompense sono dimezzate. Premi ottenibili: 1 Gettone ogni 12 piani e 1 Ascesa ogni 30 piani.",
 	["cus_5"] = "Impostazioni della torre",
-	["cus_6"] = "Puoi modellare la torre come preferisci. Genera nuovi piani, attiva vincoli oppure abilita la Torre Senza Fine.",
+	["cus_6"] =  "Puoi modellare la torre come preferisci: genera nuovi piani, attiva vincoli oppure abilita la Torre Senza Fine.",
 	["cus_7"] = "Solo il proprietario del server può modificare le impostazioni.",
 	["cus_8"] = "Impostazioni dei droni",
 	["cus_9"] = "Sfoga la tua rabbia contro i Droni qui. Puoi metterli a dormire, oppure modificare il limite minimo e massimo di scale come più ti aggrada.",
 
-	["vr_1"] = "Quando giochi a ScaleMania in Realtà Virtuale, puoi diventare Architect.",
-	["vr_2"] = "A differenza degli altri giocatori, il tuo obiettivo non è quello di scalare la torre. Ti offro una scelta: aiuta chi sta in difficoltà, oppure semina il caos.",
+	--TODO we need a VR person
+	["vr_1"] = "Quando giochi a ScaleMania in Realtà Virtuale, giocherai come Architect.",
+	["vr_2"] = "A differenza degli altri giocatori, il tuo obiettivo non è quello di scalare la torre. Puoi scegliere se aiutare gli altri giocatori o seminare caos e distruzione.",
 	["vr_3"] = "Sarai il prossimo eroe sulle copertine o il cattivo della storia? Forse vuoi solo passare il tempo? Procedi pure!",
 	["vr_4"] = "Come mi muovo?",
-	["vr_5"] = "Usa il joystick sinistro per muoverti orizzontalmente.",
-	["vr_6"] = "Usa il joystick destro per muoverti verticalmente.",
+	["vr_5"] = "Usa il controller sinistro per muoverti avanti e indietro. Inclinandolo di lato puoi muoverti a destra o a sinistra",
+	["vr_6"] = "Usa il joystick destro per muoverti in alto e basso. inclinandolo di lato puoi muovere la visuale di 90°.",
 	["vr_7"] = "Evita di rimanere tra le scale per garantire una migliore esperienza di gioco.",
 	["vr_8"] = "Come lancio gli incantesimi?",
 	["vr_9"] = "Per selezionare un incantesimo, tieni premuto il pulsante laterale del controller. Apparirà un puntatore laser con cui puoi mirare scale e piattaforme.",
