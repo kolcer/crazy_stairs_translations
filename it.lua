@@ -681,13 +681,13 @@ module.gui.ranks = {
 	["possessed_2"] = "Raccogli Mana per liberarti.",
 	["possessed_3"] = "In questo stato, sia i tuoi incantesimi che il tuo rango sono inibiti.",
 
-	["hypnotised_1"] = "You have been Hypnotised!",
-	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
-	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+	["hypnotised_1"] = "Sei stato Ipnotizzato!",
+	["hypnotised_2"] = "Raccogli Mana per liberarti.",
+	["hypnotised_3"] = "In questo stato, i tuoi comandi sono invertiti.",
 
-	["architect_1"] = "You are now an Architect!",
-	["architect_2"] = "Architects cannot acquire any ranks.",
-	["architect_3"] = "Roam the tower to wreak havoc!",
+	["architect_1"] = "Sei diventato un Architect!",
+	["architect_2"] = "Gli Architect non possiedono ranghi.",
+	["architect_3"] = "Naviga la torre e semina il panico!",
 
 	--shared
 	["higher"] = "POSSIEDI UN RANGO MIGLIORE",
@@ -807,6 +807,17 @@ module.gui.ranks = {
 		[8] = "Velocità di movimento aumentata del 30%.",
 		[9] = "Potenza del salto aumentata del 20%.",
 	},
+	["NONE"] = {
+		[1] = "None non possiede ranghi, seleziona una classe saltando sui trasformatori locati al centro della mappa.",
+		[2] = "Forse non mi hai capito, None non possiede alcun rango. Nessuno.",
+		[3] = "Lo sai, mentre sprechi il tuo tempo potevi almeno potenziare Muggle.",
+		[4] = "Sapevi che Muggle possiede ranghi che aumentano la velocità di movimento? Risparmiati la fatica.",
+		[5] = "Se pensi davvero che io possa aggiungere ranghi per None dopo tutto questo tempo, non mi conosci affatto.",
+		[6] = "O forse sono i miei commenti che ti spingono a continuare?",
+		[7] = "Raggiungere 50 Ascese non attiva alcun effetto aggiuntivo, ti hanno mentito.",
+		[8] = "Questo è il tuo ultimo avviso, lo sai che ignorare le mie avvertenze va contro il regolamento? Potrei bannare il tuo account dall'esperienza.",
+		[9] = "Dato che sei arrivato qui, mi sento in dovere di aggiungere qualcosa... Ti conferisco un'opzione per poter ignorare gli effetti delle scale alterate.",
+	},
 	["CHAMELEON"] = {
 		[1] = "Questo è il primo rango di CHAMELEON. Gli effetti dei ranghi delle altre classi vengono applicati se sbloccati.",
 		[2] = "Il tuo contenitore Mana viene riempito regolarmente SOLO mentre i Droni sono in modalità CHAMELEON. Le altre modalità dei droni NON ti daranno alcun Mana.",
@@ -820,18 +831,8 @@ module.gui.ranks = {
 	},
 }
 
-module.gui.reshuffle = {
-	["title"] = "MESCOLAMENTO FORZATO?",
-
-	["body"] = "Le scale in movimento potrebbero scontrarsi con altre e se ciò dovesse accadere, queste verranno distrutte. Premi NO se vuoi evitare un mescolamento forzato.",
-}
-
 module.gui.multitokens = {
-	["title"] = "CONVERTI I TUOI GETTONI MULTIUSO",
-
 	["info"] = "Sono necessari 3 gettoni per sbloccare un nuovo incantesimo.",
-	["notokens"] = "Hai esaurito i Gettoni Multiuso.",
-	["nopass"] = "NON POSSIEDI QUESTA CLASSE...",
 }
 
 module.gui.feedback = {
@@ -843,27 +844,27 @@ module.gui.feedback = {
 }
 
 module.gui.settings = {
-	["title"] = "IMPOSTAZIONI DI GIOCO",
+	["Gameplay"] = "IMPOSTAZIONI DI GIOCO",
+	["Interface"] = "IMPOSTAZIONI INTERFACCIA",
 
-	["ANIM"] = "IMPOSTAZIONI\nANIMAZIONE",
-	["MISC"] = "IMPOSTAZIONI\nGENERALI",
-	["INTER"] = "IMPOSTAZIONI\nINTERFACCIA",
-	["INTER2"] = "IMPOSTAZIONI\nINTERFACCIA AGGIUNTIVE",
+	["Billboard"] = "Mostra ad altri giocatori informazioni sulla tua classe",
+	["Rank"] = "Mostra ad altri giocatori il tuo ruolo",
+	["Morph"] = "Mostra animazioni di trasformazione di CHAMELEON (Deceiver/Usurper)",
 
-	["list"] = "Attiva lista giocatori animata",
-	["morph"] = "Mostra animazioni di trasformazione di CHAMELEON (Deceiver/Usurper)",
-	["billboard"] = "Mostra ad altri giocatori informazioni sulla tua classe",
-	["rank"] = "Mostra ad altri giocatori il tuo ruolo",
-	["switchback"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
-	["safecancel"] = "Mostra conferma quando vuoi interrompere un sortilegio temporaneo",
-	["multi"] = "Mostra convertitore Gettoni Multiuso al termine delle scalate",
-	["kchoices"] = "Mostra icone direzionali per KEEPER (solo PC)",
-	["hchoices"] = "Mostra icone direzionali per HACKER (solo PC)",
-	["achoices"] = "Mostra icone direzionali per ARCHON (solo PC)",
-	["rchoices"] = "Mostra icone direzionali per REAVER (solo PC)",
-	["schoices"] = "Mostra icone direzionali per SPLICER (solo PC)",
-	["gchoices"] = "Mostra icone direzionali per GREMLIN (solo PC)",
-	["stats"] = "Mostra informazioni aggiuntive quando selezioni un sortilegio",
+	["ManaLimit"] = "Riduci le dimensioni del contenitore mana",
+
+	["KChoices"] = "Mostra icone direzionali per KEEPER (solo PC)",
+	["HChoices"] = "Mostra icone direzionali per HACKER (solo PC)",
+	["AChoices"] = "Mostra icone direzionali per ARCHON (solo PC)",
+	["RChoices"] = "Mostra icone direzionali per REAVER (solo PC)",
+	["SChoices"] = "Mostra icone direzionali per SPLICER (solo PC)",
+	["GChoices"] = "Mostra icone direzionali per GREMLIN (solo PC)",
+
+	["List"] = "Attiva lista giocatori animata",
+	["SwitchBack"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
+	["SafeCancel"] = "Mostra conferma quando vuoi interrompere un sortilegio temporaneo",
+	["Multi"] = "Mostra convertitore Gettoni Multiuso al termine delle scalate",
+	["UISize"] = "Adjust the maximum width of the User Interface (%)"
 }
 
 module.gui.gameover = {}
@@ -874,6 +875,21 @@ module.gui.gameover.results = {
 	["climbs"] = "ASCESE GUADAGNATE",
 	["tokens"] = "GETTONI RICEVUTI",
 	["rank"] = "RANGO ATTUALE",
+
+	["role"] = "IL TUO RUOLO",
+	["classic"] = "RECORD TORRE CLASSICA",
+	["pro"] = "RECORD TORRE PROFESSIONALE",
+	["infinite"] = "RECORD TORRE SENZA FINE",
+	["custom"] = "RECORD TORRE PERSONALIZZABILE", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
+	["noVR"] = "RECORD TORRE CLASSICA", --this will show in noVR tower, as they share the same record
+
+	["cTime"] = "MIGLIOR TEMPO CRONOMETRATO CON %s", --%s will be replaced by the used class
+	["levels"] = "PIANI RAGGIUNTI",
+	["cClimbs"]	= "ASCESE CONSEGUITE CON %s", --%s will be replaced by the used class
+	["tClimbs"] = "ASCESE CONSEGUITE TOTALI",
+	["tTokens"] = "GETTONI PER %s",	--%s will be replaced by the used class	(or multi)
+	["spells"] = "INCANTESIMI LANCIATI", --amount
+	["rRank"] = "POSIZIONE IN GARA", --if any
 }
 
 module.gui.gameover.messages = {
@@ -1003,7 +1019,7 @@ module.gui.gameover.messages = {
 	},
 	["DRIFTER"] = {
 		"VOLA, VIAGGIA e VISITA",
-		"Piccolo dettaglio: siamo nello SPAZIO",
+		"Perché usare le scale? Stiamo nello spazio!",
 		"Le scale sono una perdita di tempo",
 		"C'è una bella pace cosmica",
 		"Assenza di gravità... che figata!",
@@ -1066,6 +1082,19 @@ module.gui.gameover.messages = {
 		"Yippeeeeeee!!!!!!!",
 		"Anche a voi inizia a girare la testa o sono solo io?",
 	},
+	["NONE"] = {
+		"NON, NEMMENO, e NEANCHE",
+		"Siamo stati traditi dai Muggle, o nulla o niente",
+		"[inserire messaggio qui]",
+		"Tecnica segreta per non falire: Non fare niente",
+		"Non c'è nulla di interessante in cima",
+		"Lo sai che None era stato inizialmente creato come risoluzione di un bug, vero?",
+		"Salta sui trasformatori locati al centro della mappa, o forse no. Non è esattamente obbligatorio",
+		"Questo è il modo corretto di scalare la torre",
+		"Le gambe mi stanno per cedere...",
+		"Velocità e potenza di salto sono sopravvalutati",
+		"Se vogliamo essere corretti, sono stato la prima classe ad essere creata",
+	},
 }
 
 module.gui.gameover.maxrank ={
@@ -1083,94 +1112,26 @@ module.gui.gameover.maxrank ={
 	["STRIDER"] = "Prenderò l'ascensore, grazie",
 	["DEATHBRINGER"] = "Alzati per me!",
 	["OPTIMUS"] = "Combinazione perfetta",
-	["ALIEN"] = "L'unione fa la forza",
+	["ILLUSION"] = "L'unione fa la forza",
 	["DAEMON"] = "Giro giro tondo",
+	["BLACK HOLE"] = "Nulla cosmico",
 }
 
 module.gui.gameover.credits = {
-	"CRAZY STAIRS",
-	"Gioco concettualizzato, progettato e sviluppato da Sleazel",
-	"Aiuto progettazione - cakegirlserina",
-	"Modelli provveduti da ZielonyLeszek",
-	"Sfondi provveduti dal generatore di @wwwtyro",
-	"Modulo di salvataggio, DataStore2, provveduto da Kampfkarren",
-	"Script originale della classifica provveduto da ThatTimothy",
-	"COLLAUDATORI:",
-	"Roloversion",
-	"Ondrik132",
-	"dabsforlif",
-	"iiBIuestar",
-	"BertValkyrie",
-	"TDtheTV",
-	"waragency",
-	"d4vvd",
-	"portalgunner",
-	"DragonMaster1707",
-	"wf_sh",
-	"Keysiries",
-	"jakmat2",
-	"blankeht",
-	"ben10beg",
-	"bash1234567888",
-	"cakegirlserina",
-	"TRADUZIONI:",
-	"English - Sleazel",
-	"Polski - Sleazel",
-	"French - Alexnumbers",
-	"Italiano - Roloversion",
-	"Nederlandse - Sanderk35_2",
-	"Romana - NoobMaster38271",
-	"= ??? - ambronium",
-	"Português - Cosmo",
-	"???? - OZEPJAH",
-	"??????? - NoobMaster38271",
-	"Ce tina - killerproXxgood",
-	"Bahasa Indonesia - echocentrical",
-	"Español - TDtheTV",
-	"Deutsch - 05_hallo",
-	"Slovensk  - Ondrik132",
-	"Bosanski - xootynator",
-	"RINGRAZIAMENTI SPECIALI PER:",
-	"kolcer",
-	"ThatTimothy",
-	"SerpentineKing",
-	"WhereDidTheSunGo",
-	"b3ntheplay3r2",
-	"TehEpix2",
-	"Narvog1",
-	"shark66655",
-	"MUSICA (catalogo APM):",
-	"Audio iniziale - Allure da Martin Albert Sponticcia",
-	"Audio finale di \"None\" - Deceived da Martin Albert Sponticcia",
-	"Audio di Muggle - Hyperdrive da Gary Leslie Scargill, Peter Nicholas Oldroyd",	
-	"Audio finale di Muggle - Reflections da Milan Pilar",
-	"Audio di Patron - Tranquilize da Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
-	"Audio finale di Patron - Dreamers da Joseph Alexander",
-	"Audio di Joker - Crosswind da Martin Albert Sponticcia",
-	"Audio finale di Joker - Fender Stab da Steven Raymond Bush",
-	"Audio di Wicked - Wicked da Daniel Jay Nielsen, Nathan Duvall",
-	"Audio finale di Wicked - Something Wicked da Cris Velasco",
-	"Audio di Spectre - Reflections da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio finale di Spectre - Cosmic Dust da Milan Pilar",
-	"Audio di Keeper - Automotion da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio finale di Keeper - Synth On The Highway da Richard Adrian Maxwell Preston",
-	"Audio di Hacker - Network da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio finale di Hacker - Descending Into Oblivion da Richard Adrian Maxwell Preston",
-	"Audio di Thief - Reaching Out da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio finale di Thief - Soaring da Richard Adrian Maxwell Preston",
-	"Audio di Archon - Aperture da Paul Emons, Richard Goodliff, Ian Robson",
-	"Audio finale di Archon - Rendezvous da Paul Emons, Richard Goodliff, Ian Robson",
-	"Audio di Drifter - Communique da Gary Leslie Scargill, Peter Nicholas Oldroyd, Richard Francis Adrian Brown",
-	"Audio finale di Drifter - Fragile da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio di Heretic - Mother da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio finale di Heretic - Being Me da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio di Chameleon - Rah da Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Audio finale di Chameleon - Midnight Runner da Richard Adrian Maxwell Preston",
-	"Audio di Unione Spettrale - Amber Garden da Paul Emons, Richard Goodliff, Ian Robso",
-	"Audio Possedimento - Dark Souls da David Arkenstone",
-	"Audio piste da ballo di Joker - To The Disco da Gordon Zola",
-	"Audio piattaforme di Drifter - Radioactivity da Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
-	"Se sei arrivato fin qui, grazie per aver giocato!",
+	["common"] = {
+		"SCALEMANIA",
+		"Gioco concettualizzato, progettato e sviluppato da Sleazel",
+		"Aiuto progettazione - cakegirlserina",
+		"Modelli provveduti da ZielonyLeszek",
+		"Sfondi provveduti dal generatore di @wwwtyro",
+		"Se sei arrivato fin qui, grazie per aver giocato!",
+	},
+	["climb"] = "Audio di %s - % da %",
+	["endgame"] = "Audio finale di %s - % da %",
+	["disco"] = "Audio piste da ballo di Joker - % da %",
+	["elevator"] = "Audio piattaforme di Drifter - % da %", --drifter platforms
+	["testers"] = "COLLAUDATORI:",
+	["thanks"] = "RINGRAZIAMENTI SPECIALI:",
 }
 
 module.static = {
@@ -1246,7 +1207,7 @@ module.static = {
 	["oasis_4"] = "'Sono troppo pigro per creare incantesimi originali.'\ncitazione dal nostro fondatore",
 
 	["nexus_1"] = "SETTA DI HERETIC",
-	["nexus_2"] = "LA NOSTRA MASSIMA:\nTU\nNON PUOI\nPASSERE",
+	["nexus_2"] = "LA NOSTRA MASSIMA:\nTU\nNON PUOI\nPASSARE",
 	["nexus_3"] = "PRO:\nUtile nella torre professionale\nNon lo puoi fermare\nCONTRO:\nNon conviene fare alleanze\nNecessita di molto mana",
 	["nexus_4"] = "'Bandire la magia nera equivale a bandire il divertimento.'\ncitazione dal nostro fondatore",
 
@@ -1260,7 +1221,7 @@ module.static = {
 	["nether_3"] = "PRO:\nIncantesimi veloci\nOttimo per giocare in solitaria\nCONTRO:\nA pagamento\nInefficace nelle alleanze",
 	["nether_4"] = "'È stato scientificamente provato che il teletrasporto è sicuro.'\ncitazione dal nostro fondatore (DISPERSO)",
 
-	["study_1"] = "STUDIO DI ARCHON",
+	["study_1"] = "LIBRERIA DI ARCHON",
 	["study_2"] = "LA NOSTRA MASSIMA:\nCREA PORTALI DIMENSIONALI\n???\nGUADAGNO",
 	["study_3"] = "PRO:\nSortilegi utili\nConfonde gli altri\nCONTRO:\nComplicato da usare\nTi fa pensare troppo",
 	["study_4"] = "'Un tempo regnavo sovrano in queste torri.'\ncitazione dal nostro fondatore",
@@ -1273,7 +1234,7 @@ module.static = {
 	["shelter_1"] = "RIFUGIO DI DRIFTER",
 	["shelter_2"] = "LA NOSTRA MASSIMA:\nVOLA\nVIAGGIA\nE\nVISITA",
 	["shelter_3"] = "PRO:\nVersatile\nPortato per le alleanze\nCONTRO:\nRichiede agilità nel movimento\nComplicato da usare nella torre professionale",
-	["shelter_4"] = "'Piccolo dettaglio: siamo nello SPAZIO.'\ncitazione dal nostro fondatore",
+	["shelter_4"] = "'Perché usare le scale? Stiamo nello spazio!'\ncitazione dal nostro fondatore",
 
 	["circus_1"] = "CIRCO DI JOKER",
 	["circus_2"] = "LA NOSTRA MASSIMA:\nINGANNA\nCONFONDI\nE\nRIDI SOTTO I BAFFI",
@@ -1302,7 +1263,7 @@ module.static = {
 
 	["shack_1"] = "BARACCA DI GREMLIN",
 	["shack_2"] = "LA NOSTRA MASSIMA:\nGIRA\nATTORCIGLIA\nE\nIPNOTIZZA",
-	["shack_3"] = "PRO:\nNessun vantaggio\nSono serio\nCONTRO:\nSarai odiato da tutti\nTUTTI QUANTI",
+	["shack_3"] = "PRO:\nNessun vantaggio\nSul serio!\nCONTRO:\nSarai odiato da tutti\nTUTTI QUANTI",
 	["shack_4"] = "'Giochiamo insieme!'\ncitazione dal nostro fondatore",
 
 	["mirror_1"] = "SPECCHIO DI REAVER",
@@ -1314,6 +1275,11 @@ module.static = {
 	["grave_2"] = "LA NOSTRA MASSIMA:\nSEGUI\nRIANIMA\nE\nRACCOGLI",
 	["grave_3"] = "PRO:\nUtile se gli altri\nseguono la tua controfigura\nPortato per le alleanze\nCONTRO:\nRichiede molto Mana\nBisogna prenderci l'abitudine",
 	["grave_4"] = "'Vogliamo solo giocare, non spaventarti... troppo.'\ncitazione dal nostro fondatore",
+
+	["studio_1"] = "STUDIO DI ARCHITECT",
+	["studio_2"] = "LA NOSTRA MASSIMA:\nDISEGNA\nOTTIMIZZA\nE\nMETTI ALLA PROVA",
+	["studio_3"] = "PRO:\nPossibilità di volare\nNon richiede Mana\nCONTRO:\nCosta Robux\nNon possiede ranghi",
+	["studio_4"] = "'Questa torre adesso mi appartiene'\ncitazione dal nostro fondatore",
 
 	--SHARED
 	["leader_pro"] = "La torre professionale conferisce 2 Ascese per completamento",
@@ -1957,7 +1923,7 @@ module.gui.mana = {
 	["circus"] = "CIRCO",
 	["shelter"] = "RIFUGIO",
 	["haven"] = "PARADISO",
-	["study"] = "STUDIO",
+	["study"] = "LIBRERIA",
 	["nether"] = "ALDILÀ",
 	["guild"] = "GILDA",
 	["nexus"] = "SETTA",
