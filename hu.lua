@@ -66,8 +66,6 @@ module.gui.serversettings = {
 
 module.gui.shop = {
 
-	["title"] = "BOLT",
-
 	["chameleon"] = "Chameleonok osztályt tudnak változtatni mászás közben.",
 	["spectre"] = "Spectre az egy teleportáláson alapuló osztály ami tökéletes ha egyedül játszól.",
 	["mana"] = "Növeld a Mana tárolási kapacitásodat 10 Manával.",
@@ -1144,6 +1142,7 @@ module.gui.gameover.maxrank ={
 	["OPTIMUS"] = "Az Összefonódás",
 	["ILLUSION"] = "Egyek 𐳔𐳙𐳪𐳎𐳀𐳮.knuygav 𐲉𐳎𐳉𐳔", --Translation: We are one but in an alien way. 
 	["DAEMON"] = "Körülöttem forog a világ.",
+	["BLACK HOLE"] = "Nincs. Semmi. Baj.",
 
 }
 
@@ -2087,4 +2086,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
