@@ -28,7 +28,7 @@ module.gui.switcher = {
 	["classic"] = "Menara Klasik",
 	["pro"] = "Menara Pro",
 	["custom"] = "Menara Kustom",
-	["noVR"] = "VR Free Tower",
+	["noVR"] = "Menara bebas VR",
 	--END NEW
 
 
@@ -36,10 +36,10 @@ module.gui.switcher = {
 
 module.gui.serversettings = {
 
-	["Drones"] = "DRONE SETTINGS",
-	["DronesReadOnly"] = "DRONE SETTINGS (read only)",
-	["DroneEnabled"] = "Drones enabled",
-	["DroneFix"] = "Drones restore stairs",
+	["Drones"] = "PENGATURAN DRONE",
+	["DronesReadOnly"] = "PENGATURAN DRONE (hanya baca)",
+	["DroneEnabled"] = "Drone diaktifkan",
+	["DroneFix"] = "Drone memulihkan tangga",
 	["DroneRemove"] = "Drones remove cursed intersections",
 	["DroneUnCurse"] = "Drones restore cursed stairs",
 	["DroneMove"] = "Drones move stairs in default mode",
@@ -51,13 +51,13 @@ module.gui.serversettings = {
 	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
 	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
 
-	["Tower"] = "TOWER SETTINGS",
-	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
+	["Tower"] = "PENGATURAN MENARA",
+	["TowerReadOnly"] = "PENGATURAN MENARA (hanya baca)",
 	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
 	["CasualPlayers"] = "Casual players allowed to cast spells",
 	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
-	["EvenLevels"] = "Even Levels Restricted",
-	["OrbMoves"] = "Endgame orb changes position",
+	["EvenLevels"] = "Tataran genap dibataskan",
+	["OrbMoves"] = "Bola akhir mengganti posisinya",
 	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
 	["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
 	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
@@ -66,7 +66,7 @@ module.gui.serversettings = {
 	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
 
 	--NEW KEY
-	["CooldownTime"] = "Event and Rig cool down period (seconds)",
+	["CooldownTime"] = "Jangka pendinginan Acara dan Rig (detik)",
 	--END NEW
 
 }
@@ -104,7 +104,7 @@ module.gui.shop = {
 module.gui.nospellsbar = {
 
 	["nocasual"] = "HANYA PEMBALAP YANG BISA MELAKUKAN MANTERA",
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
+	["possessed"] = "TERKUTUK! (cari mana kanggo kabur)",
 
 }
 
@@ -171,24 +171,24 @@ module.gui.questions = {
 
 module.gui.codes = {
 
-	["title"] = "ENTER THE CODE",
-	["body"] = "Input Your code here:",
-	["prompt"] = "(code)",
-	["button"] = "VALIDATE",
+	["title"] = "MASUKKAN KODENYA",
+	["body"] = "Masukkan kodemu di sini:",
+	["prompt"] = "(kode)",
+	["button"] = "TEBUS",
 
 }
 
 module.gui.jukebox = {
 
-	["title"] = "JUKEBOX",
+	["title"] = "KOTAK JUKE",
 
-	["master"] = "MASTER VOLUME",
-	["default"] = "(using master volume)",
-	["climb"] = "CLIMB MUSIC",
-	["endgame"] = "ENDGAME MUSIC",
-	["failed"] = "[failed to load]",
+	["master"] = "VOLUME MASTER",
+	["default"] = "(menggunakan volume master)",
+	["climb"] = "MUSIK PENDAKIAN",
+	["endgame"] = "MUSIK AKHIR GAME",
+	["failed"] = "[gagal memuat]",
 	--NEW
-	["off"] = "MUTED",
+	["off"] = "DIBISUKAN",
 	--END NEW
 }
 
@@ -222,10 +222,10 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "%s Rig",
-	["mode"] = "Drones %s Mode",
-	["refill"] = "Mana Overload (%s)",
-	["union"] = "Ghost Union (%s)",
+	["rigevent"] = "Rig %s",
+	["mode"] = "Mode %s Drone",
+	["refill"] = "Overload Mana (%s)",
+	["union"] = "Fusi Hantu (%s)",
 }
 
 module.spells.names = {
@@ -1091,25 +1091,25 @@ module.gui.gameover.messages = {
 	},
 	["SPLICER"] = {
 		"TWIST, SPLICE and CONNECT",
-		"Jangan pernah jalan lurus untuk terlalu lama",
+		"Jangan pernah jalan lurus untuk terlalu lama!",
 		"Campurkan hidupmu!",
-		"Kekacauan orang lain adalah urusan Splicer",
-		"Aku *bisa banget* nyambungin tangga itu",
+		"Kekacauan orang lain adalah urusan Splicer.",
+		"Aku *bisa banget* nyambungin tangga itu.",
 		"Terkoneksi sama orang? Nggak lah, mending terkoneksi sama tangga!",
-		"Pikiranku emang udah bengkok dari sananya",
-		"Pisah atau Sambung – itu dia pertanyaannya",
-		"Makasih Markerquest, kamu nyelamatin aku... 🥹",
+		"Pikiranku emang udah bengkok dari sananya.",
+		"Pisah atau Sambung—itu dia pertanyaannya.",
+		"Makasih Markerquest, kamu nyelamatin aku…",
 		"Tangga ini terlalu lurus.",
 	},
 	["REAVER"] = {
 		"REFLECT, REPLACE and MERGE",
 		"Cermin hanyalah pintu keluar masuk.",
-		"Tangga ini cuma ilusi",
-		"Kamu bisa melihat jiwamu di dalam cermin",
+		"Tangga ini cuma ilusi.",
+		"Kamu bisa melihat jiwamu di dalam cermin.",
 		"Kita yang mengawasi mereka, atau mereka yang mengawasi kita?",
 		"Tujuh tahun sial. Buatku, atau buat yang satunya?",
-		"Hantunya yang terjebak di balik cermin — atau kita?",
-		"Aku tak lagi melihat diriku, aku melihat masa depan",
+		"Hantunya yang terjebak di balik cermin—atau kita?",
+		"Aku tak lagi melihat diriku, aku melihat masa depan.",
 		"MAMA! Ini bukan cuma fase!!!",
 		"Jangan muncul diam-diam gitu dong!",
 	},
@@ -1120,17 +1120,17 @@ module.gui.gameover.messages = {
 		"Ikuti hantuku. Percaya deh!",
 		"Aman kok dekat hantuku. Emangnya aku bakal bohong?",
 		"Waktunya panen jiwa-jiwa!",
-		"Kita cuma punya citra buruk. Salahkan aja Hollywood",
-		"Kalau kematian itu buruk, berarti Nekromansi itu baik dong",
-		"Aku harus ngumpulin jiwa— eh maksudku Mana, aku butuh Mana",
+		"Kita cuma punya citra buruk. Salahkan aja Hollywood!",
+		"Kalau kematian itu buruk, berarti Nekromansi itu baik dong?",
+		"Aku harus ngumpulin jiwa- eh maksudku mana, aku butuh mana!",
  		"Aku nggak takut jatuh, ini mantra strategi, serius!",
 	},
 	["GREMLIN"] = {
 		"ROTATE, REVOLVE and HYPNOTISE",
 		"Mari bermain denganku!",
 		"Kamu muter-muter terus, sayang, muter terus!",
-		"Tangga ini ngebosenin banget",
-		"Biar aku benerin tangganya ya, hehehe",
+		"Tangga ini ngebosenin banget!",
+		"Biar aku benerin tangganya ya, hehehe.",
 		"Kamu suka mahakaryaku? Nggak? Sayang banget, ini baru permulaan.",
 		"Dokter nyuruh aku rileks, dan beginilah caraku rileks.",
 		"Joker, belajar dulu gih. Bercanda, tolong terima aku lagi di Sirkus!",
@@ -1268,7 +1268,7 @@ module.static = {
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "“I am too lazy to come up with my own spells.”\nour founder's quote",
 
-	["nexus_1"] = "HERETIC'S NEXUS",
+	["nexus_1"] = "PERHUBUNGAN HERETIC",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "“Banning black magic is like banning fun.”\nour founder's quote",
@@ -1303,12 +1303,12 @@ module.static = {
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
 	["circus_4"] = "“This staircase is a joke.”\nour founder's quote",
 
-	["base_1"] = "KEEPER'S BASE",
+	["base_1"] = "PANGKALAN KEEPER",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
 	["base_4"] = "“Stop messing up my staircase!”\nour founder's quote",
 
-	["chamber_1"] = "KAMAR WICKED",
+	["chamber_1"] = "RUANG WICKED",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
 	["chamber_4"] = "“I'm not evil, there are just too many stairs.”\nour founder's quote",
@@ -2034,15 +2034,15 @@ module.gui.mana = {
 	["hack"] = "HACK",
 	["stash"] = "STASH",
 	["backdoor"] = "PINTU BELAKANG",
-	["chamber"] = "KAMAR",
-	["base"] = "BASE",
+	["chamber"] = "RUANG",
+	["base"] = "PANGKALAN",
 	["circus"] = "SIRKUS",
 	["shelter"] = "TENDA",
 	["haven"] = "HAVEN",
-	["study"] = "STUDY",
+	["study"] = "TELAAH",
 	["nether"] = "NETHER",
-	["guild"] = "GUILD",
-	["nexus"] = "NEXUS",
+	["guild"] = "PERSEMBUNYIAN",
+	["nexus"] = "PERHUBUNGAN",
 	["oasis"] = "OASIS",
 	["hub"] = "HUB",
 	["mirror"] = "CERMIN",
@@ -2138,3 +2138,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
