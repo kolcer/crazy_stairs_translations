@@ -1284,10 +1284,10 @@ module.static = {
 	--SHARED
 	["leader_pro"] = "La torre professionale conferisce 2 Ascese per completamento",
 	["leader_update"] = "Aggiornamento in: ",
-	["leader_updating"] = "Sto aggiornando...",
+	["leader_updating"] = "Aggiornando le classifiche...",
 	["leader_rank"] = "RANGO",
 	["leader_req"] = "ASCESE NECESS.",
-	["leader_off"] = "La torre personalizzabile non influenza le classifiche.",
+	["leader_off"] = "Le classifiche non sono supportate nella torre personalizzabile.",
 
 	--OVERALL
 	["over_title"] = "TUTTI I RUOLI",
@@ -1302,7 +1302,7 @@ module.static = {
 	["over_group"] = "COLORE VERDE ACQUA - sei nel gruppo \n",
 	["over_mod"] = "MODERATOR - il giocatore è un moderatore",
 	["over_admin"] = "ADMIN - il giocatore è un admin",
-	["over_owner"] = "PRANK ME - il giocatore è Sleazel",
+	["over_owner"] = "PRANK ME - Sviluppatore di Scalemania (Sleazel)",
 
 	--OTHER
 	["muggle_lead"] = "MUGGLE SCALTRI",
@@ -1332,13 +1332,13 @@ module.static = {
 	["spectre_lead"] = "SPECTRE VOLANTI",
 	["spectre_ranks"] = "RANGHI DI SPECTRE",
 
-	["thief_lead"] = "THIEF SILENZIOSI",
+	["thief_lead"] = "THIEF FURTIVI",
 	["thief_ranks"] = "RANGHI DI THIEF",
 
 	["heretic_lead"] = "HERETIC SPREGEVOLI",
 	["heretic_ranks"] = "RANGHI DI HERETIC",
 
-	["necromancer_lead"] = "NECROMANCER VIVENTI",
+	["necromancer_lead"] = "NECROMANCER OCCULTI",
 	["necromancer_ranks"] = "RANGHI DI NECROMANCER",
 
 	["splicer_lead"] = "SPLICER CONTORTI",
@@ -1385,7 +1385,7 @@ module.tutorial = {
 	["tut_small_stairs"] = "Salta sulle scale",
 }
 
-module.where = {
+module.where = { --Continue from here
 	["platform"] = "Da lanciare sulle piattaforme, eccetto quelle del primo piano e quelle vincolate.",
 	["arrow"] = "Da lanciare sulle frecce delle piattaforme.",
 	["stairs"] = "Da lanciare sulle scale.",
