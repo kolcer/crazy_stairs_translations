@@ -414,20 +414,20 @@ module.spells.names = {
 	["share"] = "Share mana (requires 2 Mana minimum)",
 
 	--ARCHITECT
-	["archpatron"] = "Create or shrink",
-	["archarchon"] = "Gate stairs or platform",
-	["archthief"] = "Steal or place",
-	["archnecro"] = "Dual or Undead stairs",
-	["archhacker"] = "Esalator or Hack-in",
-	["archkeeper"] = "Move or Restore",
-	["archsplicer"] = "Splice or Restore",
-	["archwicked"] = "Wall or Destroy",
-	["archgremlin"] = "Revolve stairs or a platform",
-	["archjoker"] = "Fake or Flip stairs",
-	["archdrifter"] = "Drift or Elevator",
-	["archspectre"] = "Phantom or Ghost stairs",
-	["archreaver"] = "Mirrored or One-way stairs",
-	["archheretic"] = "Curse intersection or stairs",
+	["archpatron"] = "Bangun atau Ciutkan tangga",
+	["archarchon"] = "Buka Portal pada Tangga atau Platform",
+	["archthief"] = "Curi atau Kembali tangga",
+	["archnecro"] = "Bangun Kembar atau Bunuh tangga",
+	["archhacker"] = "Eskalator atau Hack Ttangga",
+	["archkeeper"] = "Pindah atau Pulih tangga",
+	["archsplicer"] = "Sambung atau Luruskan tangga",
+	["archwicked"] = "Blokir atau Hancurkan tangga",
+	["archgremlin"] = "Kisar Tangga atau Platform",
+	["archjoker"] = "Bangun Palsu atau Balik tangga",
+	["archdrifter"] = "Hanyutkan atau Lift",
+	["archspectre"] = "Phantom or Ghost stairs gue sedih waaa",
+	["archreaver"] = "Mirrored or One-way stairs gue mau tidur",
+	["archheretic"] = "Curse intersection or stairs gue mau kue kukis",
 
 	--END NEW
 
@@ -715,7 +715,7 @@ local CommonPerksInsertTimedSpell = {
 
 module.gui.ranks = {
 
-	["title"] = "YOUR RANK",
+	["title"] = "PERINGKATMU",
 
 	--none
 
@@ -737,9 +737,9 @@ module.gui.ranks = {
 	--END NEW
 
 	--shared
-	["higher"] = "HIGHER RANK ACQUIRED",
-	["current"] = "YOUR CURRENT RANK",
-	["lower"] = "RANK NOT ACQUIRED",
+	["higher"] = "PERINGKAT LEBIH TINGGI DIPEROLEH",
+	["current"] = "PERINGKATMU SAAT INI",
+	["lower"] = "PERINGKAT BELUM DIPEROLEH",
 
 	["more"] = "You need %d more climbs as %s to obtain this rank.",
 	["done"] = "You already own a higher rank. All lower rank effects add up to the current rank.",
@@ -909,12 +909,12 @@ module.gui.settings = {
 	["Morph"] = "Show the morph animation when using Chameleon ranked up to Deceiver or higher",
 	["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
 
-	["KChoices"] = "Show direction selection for Keeper, when using move spells",
-	["HChoices"] = "Show direction selection for Hacker, when using the escalator spell",
-	["AChoices"] = "Show direction selection for Archon, when using gate spells",
-	["RChoices"] = "Show direction selection for Reaver, when using the one-way stirs spell",
-	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
-	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell",
+	["KChoices"] = "Tunjukkan seleksi memilih arah untuk Keeper, when using move spells",
+	["HChoices"] = "Tunjukkan seleksi memilih arah untuk Hacker, when using the escalator spell",
+	["AChoices"] = "Tunjukkan seleksi memilih arah untuk Archon, when using gate spells",
+	["RChoices"] = "Tunjukkan seleksi memilih arah untuk Reaver, when using the one-way stirs spell",
+	["SChoices"] = "Tunjukkan seleksi memilih arah untuk Splicer, when using splice spells",
+	["GChoices"] = "Tunjukkan seleksi memilih arah untuk Gremlin, when using the revolve platform spell",
 
 
 	["List"] = "Show animated playerlist rather than standard Roblox Leaderboard",
@@ -949,7 +949,7 @@ module.gui.gameover.results = {
 	["cClimbs"]	= "%s PENDAKIAN", --%s will be replaced by the used class
 	["tClimbs"] = "JUMLAH PENDAKIAN",
 	["tTokens"] = "%s TOKEN",	--%s will be replaced by the used class	(or multi)
-	["spells"] = "MANTRA USED",	--amount
+	["spells"] = "MANTRA DILAKUKAN",	--amount
 	["rRank"] = "POSISI BALAP",--if any
 	--END NEW
 
@@ -1261,27 +1261,27 @@ module.static = {
 	["home_1"] = "RUMAH MUGGLE",
 	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
 	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
-	["home_4"] = "“We did not have those fancy spells in alpha stage!”\nour founder's quote",
+	["home_4"] = "“Kami belum punya mantra kayak gitu waktu gamenya masih dalam alpha!”\nkata pendiri kami",
 
-	["oasis_1"] = "CHAMELEON'S OASIS",
+	["oasis_1"] = "OASIS CHAMELEON",
 	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
-	["oasis_4"] = "“I am too lazy to come up with my own spells.”\nour founder's quote",
+	["oasis_4"] = "“Aku terlalu malas untuk membuat mantra yang baru.”\nkata pendiri kami",
 
 	["nexus_1"] = "PERHUBUNGAN HERETIC",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "“Banning black magic is like banning fun.”\nour founder's quote",
+	["nexus_4"] = "“Melarang ilmu gelap itu seperti melarang keseruan.”\nkata pendiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
 	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
-	["guild_4"] = "“It's called borrowing actually.”\nour founder's quote",
+	["guild_4"] = "“Itu sebenarnya meminjam.”\nkata pendiri kami",
 
-	["nether_1"] = "NETHER SPECTRE",
+	["nether_1"] = "NERAKA SPECTRE",
 	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
 	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
-	["nether_4"] = "“Of course teleporting is safe.”\nour founder's quote (MIA)",
+	["nether_4"] = "“Teleport itu aman dong.”\nkata pendiri kami (TIDAK HADIR)",
 
 	["study_1"] = "TELAAH ARCHON",
 	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
@@ -1318,7 +1318,7 @@ module.static = {
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "“Fair play? There's no such thing.”\nour founder's quote",
 
-	["hub_1"] = "SPLICER'S HUB",
+	["hub_1"] = "PUSAT SPLICER",
 	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
 	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
 	["hub_4"] = "“Never go in a straight line for too long.”\nour founder's quote",
@@ -1328,12 +1328,12 @@ module.static = {
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "“Come play with me.”\nour founder's quote",
 
-	["mirror_1"] = "REAVER'S MIRROR",
+	["mirror_1"] = "CERMIN REAVER",
 	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
 	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
 	["mirror_4"] = "“Mirrors are just doorways.”\nour founder's quote",
 
-	["grave_1"] = "KUBURAN NECROMANCER",
+	["grave_1"] = "PUSARA NECROMANCER",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "“We aren’t actually haunting you, we just wanna be friends.”\nour founder's quote",
@@ -1608,8 +1608,8 @@ module.spells.tokencosts = {
 module.serverfeedback = {
 
 	--failed spell (local)
-	["nomana"] = "Not enough Mana!",
-	["notokens"] = "Not enough tokens!",
+	["nomana"] = "Tidak cukup mana!",
+	["notokens"] = "Tidak cukup token!",
 	["coolwait"] = "You can't cast rigs and events now, please wait ",
 	["nomirror"] = "You need to be joined with ghost to walk on mirrors",
 	["regenused"] = "Regen already used during this climb.",
@@ -2138,5 +2138,6 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
