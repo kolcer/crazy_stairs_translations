@@ -231,38 +231,38 @@ local CommonSpellNames = {
 module.spells.names = {
 
 	--PATRON
-	["summon"] = "Create Stairs",
-	["restore"] = "Call the Orb", 
+	["summon"] = "Bangun Tangga",
+	["restore"] = "Panggil Bola", 
 	["split"] = "Rebuild Opposite",
-	["shrinkabove"] = "Shrink Above Stairs",
+	["shrinkabove"] = "Ciutkan Tangga di Atas",
 	["link"] = "Create Link",
-	["portal"] = "Create Portal",
+	["portal"] = "Buat Portal",
 
-	["summoner"] = "Summoner",
+	["summoner"] = "Pembangung",
 	["patronevent"] = "Stairs Overload",
 	["patronaltevent"] = "Shrinkage",
 
 	--JOKER 
-	["flip"] = "Flip Stairs",
-	["flipabove"] = "Flip Above Stairs",
-	["fake"] = "Create Fake Stairs",
-	["invisible"] = "Create Invisible Stairs",
-	["disco"] = "Disco Stairs",
-	["trap"] = "Create Trap",
+	["flip"] = "Balik Tangga",
+	["flipabove"] = "Balik Tangga di Atas",
+	["fake"] = "Bangun Tangga Palsu",
+	["invisible"] = "Bangun Tangga Tidak Terlihat",
+	["disco"] = "Tangga Berdisko",
+	["trap"] = "Buat Platform Jebakan",
 
-	["flipper"] = "Flipper",
+	["flipper"] = "Pembalik",
 	["jokerevent"] = "The Cloak",
 	["jokeraltevent"] = "Flip Them All",
 
 	--WICKED
-	["destroy"] = "Destroy Stairs",
-	["destroyabove"] = "Destroy Above Stairs",
-	["bend"] = "Bend Stairs Up",
+	["destroy"] = "Hancurkan Tangga",
+	["destroyabove"] = "Hancurkan Tangga di Atas",
+	["bend"] = "Bengkok Tangga ke Atas",
 	["damage"] = "Damage Above Stairs",
-	["flatten"] = "Bend Opposite Stairs Down",
-	["wall"] = "Create Wall" ,
+	["flatten"] = "Bengkok Tangga Opposite ke Bawah",
+	["wall"] = "Buat Barikade" ,
 
-	["bender"] = "Bender",
+	["bender"] = "Pembengkok",
 	["wickedevent"] = "Destruction",
 	["wickedaltevent"] = "Purge",
 
@@ -270,7 +270,7 @@ module.spells.names = {
 	["move"] = "Move Stairs",
 	["rotate"] = "Rotate Stairs",
 	["moveup"] = "Move Stairs Up",
-	["movedown"] = "Restore Stairs",
+	["movedown"] = "Pulih Tangga",
 	["moverandom"] = "Random Above Move",
 	["rig"] = "Random Move",
 
@@ -279,9 +279,9 @@ module.spells.names = {
 	["keeperaltevent"] = "Restoration",
 
 	--SPECTRE
-	["phantom"] = "Create Phantom Stairs",
-	["ghost"] = "Ghostify Above Stairs",
-	["shadow"] = "Ghostify Stairs",
+	["phantom"] = "Buat Tangga Berhantu",
+	["ghost"] = "Hantui Tangga di Atas",
+	["shadow"] = "Hantui Tangga",
 	["horizontal"] = "Horizontal Teleport",
 	["random"] = "Random Teleport",
 	["vertical"] = "Vertical Teleport",
@@ -298,51 +298,51 @@ module.spells.names = {
 	["slideup"] = "Hack In Stairs",
 	["glitch"] = "Glitch Stairs",
 
-	["hack"] = "Speed Hack",
+	["hack"] = "Operator Eskalator",
 	["hackerevent"] = "Escalation",
 	["hackeraltevent"] = "Breach",
 
 	--THIEF
-	["steal"] = "Steal Stairs",
-	["stealabove"] = "Steal Above Stairs",
-	["place"] = "Place Stairs",
+	["steal"] = "Curi Tangga",
+	["stealabove"] = "Curi Tangga di Atas",
+	["place"] = "Kembali Tangga",
 	["uppass"] = "Spiral Staircase",
 	["sidepass"] = "Create Bypass",
 	["drop"] = "Ditch Stairs",
 
 	["heist"] = "Heist",
-	["thiefevent"] = "Flat Land",
+	["thiefevent"] = "Dunia Datar",
 	["thiefaltevent"] = "Mega Bypass",
 
 	--ARCHON
-	["splitup"] = "Create Up Gate",
+	["splitup"] = "Buka Portal ke Atas",
 	["splitrotate"] = "Create Rotated Gate",
 	["splitside"] = "Create Straight Gate",
-	["splitrandom"] = "Create Random Gate",
-	["cancelsplit"] = "Destroy Gate",
-	["splitforward"] = "Create Platform Gate",
+	["splitrandom"] = "Buka Portal secara Acak",
+	["cancelsplit"] = "Tutup Portal",
+	["splitforward"] = "Buka Portal Platform",
 
 	["splitter"] = "Portalmania",
 	["archonevent"] = "StairGåte-1",
 	["archonaltevent"] = "Division",
 
 	--DRIFTER
-	["indrift"] = "Surf",
-	["outdrift"] = "Random Drift",
-	["updrift"] = "Elevator",
+	["indrift"] = "Selancar",
+	["outdrift"] = "Hanyutkan Tangga secara Acak",
+	["updrift"] = "Lift",
 	["diagdrift"] = "Diagonal Drift",
 	["spin"] = "Spin Stairs",
-	["driftabove"] = "Lift Above Stairs",
+	["driftabove"] = "Angkat Tangga di Atas",
 
 	["riser"] = "Riser",
 	["drifterevent"] = "Driftage",
 	["drifteraltevent"] = "Liftage",
 
 	--HERETIC
-	["createcursed"] = "Create Cursed Stairs",
-	["curse"] = "Curse Stairs",
-	["curseabove"] = "Curse Above Stairs",
-	["curseinter"] = "Flicker",
+	["createcursed"] = "Bangun Tangga Terkutuk",
+	["curse"] = "Kutuk Tangga",
+	["curseabove"] = "Kutuk Tangga di Atas",
+	["curseinter"] = "Lompat dan Kunci Simpang",
 	["autodown"] = "Raise Schism",
 	["autoup"] = "Schism Opposite Down",
 
@@ -358,7 +358,7 @@ module.spells.names = {
 	["split2"] = "Belah Tangga",
 	["splitalt"] = "Pisahkan Tangga",
 
-	["twister"] = "Twister",
+	["twister"] = "Pembelah",
 	["splicerevent"] = "Interweave",
 	["spliceraltevent"] = "Bisect",
 
@@ -367,7 +367,7 @@ module.spells.names = {
 	["copyplatform"] = "Salin Platform Hantumu",
 	["soulbridge"] = "Buat Penyambung Jiwa",
 	["undeadabove"] = "Bunuh Tangga di Atas",
-	["revival"] = "Point Kebangkitan",
+	["revival"] = "Titik Kebangkitan",
 	["regen"] = "Reproduksi Mana",
 
 	["duality"] = "Duality",
@@ -375,7 +375,7 @@ module.spells.names = {
 	["necromanceraltevent"] = "Soul Harvest",
 
 	--reaver
-	["createmirrored"] = "Buat Tangga Cermin",
+	["createmirrored"] = "Bangun Tangga Cermin",
 	["bigmirror"] = "Platform Cermin Besar",
 	["smallmirror"] = "Platform Cermin Kecil",
 	["outermirror"] = "Portal Cermin Luar",
@@ -388,7 +388,7 @@ module.spells.names = {
 
 
 	--gremlin
-	["tram"] = "Buat Tangga Funikular",
+	["tram"] = "Bangun Tangga Funikular",
 	["screwup"] = "Pilin Naik",
 	["revolve"] = "Kisar Tangga",
 	["trapstairs"] = "Tangga Jebakan",
@@ -396,20 +396,20 @@ module.spells.names = {
 	["spinplatform"] = "Kisar Platform",
 
 	["tramway"] = "Tram-way",
-	["gremlinevent"] = "Revolvelution",
-	["gremlinaltevent"] = "Gridlock",
+	["gremlinevent"] = "Roda Kematian",
+	["gremlinaltevent"] = "Sebabkan Kemacetan",
 
 	--CHAMELEON
 	["ditch"] = "Cross Stairs",
 	["warp"] = "Warp Stairs",
 	["chamdown"] = "Move Stairs Down",
 	["chamdraw"] = "Below Drawbridge",
-	["chamswap"] = "Copy Ghost (visual)",
+	["chamswap"] = "Jadi Hantu",
 	["chamdrawabove"] = "Above Drawbridge",
 
 	--NEW
 
-	["mugglereg"] = "Staircase is regenerating",
+	["mugglereg"] = "Menara sednag regenerasi…",
 	["mugglecd"] = "Events and Rigs Cooldown",
 	["share"] = "Share mana (requires 2 Mana minimum)",
 
@@ -2138,4 +2138,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
