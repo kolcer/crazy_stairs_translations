@@ -1972,7 +1972,7 @@ module.eventspells = {
 
 	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
 	["splicerevent"] = "%s has just spliced all normal stairs!",
-	["spliceraltevent"] = "%s has just split all normal stairs!",
+	["spliceraltevent"] = "%s telah menggunakan 1000 Degree Knife-nya untuk memisahkan semua tangga normal!",
 
 	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
