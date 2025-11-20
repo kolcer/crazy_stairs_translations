@@ -358,9 +358,9 @@ module.spells.names = {
 	["split2"] = "Belah Tangga",
 	["splitalt"] = "Pisahkan Tangga",
 
-	["twister"] = "Pembelah",
+	["twister"] = "1000 Degree Knife",
 	["splicerevent"] = "Koneksi Tangga",
-	["spliceraltevent"] = "1000 Degree Knife",
+	["spliceraltevent"] = "Bisect",
 
 	--necro
 	["createdual"] = "Buat Tangga Kembar",
@@ -1430,10 +1430,10 @@ module.tutorial = {
 	["tut_big_1"] = "Selamat datang di Tangga Gila!",
 	["tut_big_2"] = "First learn how to morph.",
 	["tut_big_3"] = "You are now a Patron, Patrons can create stairs.",
-	["tut_big_4"] = "All spells need to be executed by jumping.",
-	["tut_big_5"] = "Cool, huh? Now morph to Joker. Jokers can flip stairs.",
-	["tut_big_6"] = "You are now a Joker, use this spell to flip stairs.",
-	["tut_big_7"] = "Some spells need to be executed on stairs.",
+	["tut_big_4"] = "Semua mantra harus dilaksanakan dengan cara melompat.",
+	["tut_big_5"] = "Keren, 'kan? Sekarang ubahlah menjadi Joker. Joker dapat membalik tangga.",
+	["tut_big_6"] = "Kamu sekarang adalah seorang Joker, gunakan mantra ini untuk membalik tangga.",
+	["tut_big_7"] = "Sebagian mantra harus dilaksanakan pada tangga.",
 	["tut_big_8"] = "Now morph to Keeper. Keepers can move stairs.",
 	["tut_big_9"] = "You are now a Keeper, use this spell to move stairs.",
 	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
@@ -1500,7 +1500,7 @@ module.guide = {
 	["stairs"] ={
 
 		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
-		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
+		["all"] = "Dapat dilaksanakan pada tangga apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
 		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
 		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
@@ -1972,7 +1972,7 @@ module.eventspells = {
 
 	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
 	["splicerevent"] = "%s has just spliced all normal stairs!",
-	["spliceraltevent"] = "%s telah menggunakan 1000 Degree Knife-nya untuk memisahkan semua tangga normal!",
+	["spliceraltevent"] = "%s telah memanipulasi semua tangga normal dengan mantra split",
 
 	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
@@ -2000,7 +2000,7 @@ module.spells.extras = {
 	["ManaCost"] = "Biaya mana: %s", 
 	["TokenCost"] = "Biaya token: %s", 
 	["Special"] = "Special requirements: %s",
-	["Execution"] = "Execution: %s",
+	["Execution"] = "Pelaksanaan: %s",
 	["Description"] = "Deskripsi: %s",
 	["basic"] = "Dasar",
 	["ultimate"] = "Pokok",
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
