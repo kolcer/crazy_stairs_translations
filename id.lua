@@ -235,12 +235,12 @@ module.spells.names = {
 	["restore"] = "Panggil Bola", 
 	["split"] = "Rebuild Opposite",
 	["shrinkabove"] = "Ciutkan Tangga di Atas",
-	["link"] = "Create Link",
+	["link"] = "Buat Jembatan Energi",
 	["portal"] = "Buat Portal",
 
 	["summoner"] = "Pembangung",
-	["patronevent"] = "Stairs Overload",
-	["patronaltevent"] = "Shrinkage",
+	["patronevent"] = "Berkat Tangga",
+	["patronaltevent"] = "Penyiutan",
 
 	--JOKER 
 	["flip"] = "Balik Tangga",
@@ -251,7 +251,7 @@ module.spells.names = {
 	["trap"] = "Buat Platform Jebakan",
 
 	["flipper"] = "Pembalik",
-	["jokerevent"] = "The Cloak",
+	["jokerevent"] = "This is why we hate wizards",
 	["jokeraltevent"] = "Flip Them All",
 
 	--WICKED
@@ -263,8 +263,8 @@ module.spells.names = {
 	["wall"] = "Buat Barikade" ,
 
 	["bender"] = "Pembengkok",
-	["wickedevent"] = "Destruction",
-	["wickedaltevent"] = "Purge",
+	["wickedevent"] = "Gempa Menara",
+	["wickedaltevent"] = "Pembersihan",
 
 	--KEEPER
 	["move"] = "Move Stairs",
@@ -288,7 +288,7 @@ module.spells.names = {
 
 	["traveller"] = "Shimmering",
 	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["spectrealtevent"] = "Alam Æther",
 
 	--HACKER
 	["dash"] = "Dash",
@@ -306,8 +306,8 @@ module.spells.names = {
 	["steal"] = "Curi Tangga",
 	["stealabove"] = "Curi Tangga di Atas",
 	["place"] = "Kembali Tangga",
-	["uppass"] = "Spiral Staircase",
-	["sidepass"] = "Create Bypass",
+	["uppass"] = "Tangga Spiral",
+	["sidepass"] = "Letakkan Jalan Pintas",
 	["drop"] = "Ditch Stairs",
 
 	["heist"] = "Heist",
@@ -322,8 +322,8 @@ module.spells.names = {
 	["cancelsplit"] = "Tutup Portal",
 	["splitforward"] = "Buka Portal Platform",
 
-	["splitter"] = "Portalmania",
-	["archonevent"] = "StairGåte-1",
+	["splitter"] = "Pembuka Portal",
+	["archonevent"] = "Labirhin Portal",
 	["archonaltevent"] = "Division",
 
 	--DRIFTER
@@ -335,7 +335,7 @@ module.spells.names = {
 	["driftabove"] = "Angkat Tangga di Atas",
 
 	["riser"] = "Riser",
-	["drifterevent"] = "Driftage",
+	["drifterevent"] = "Badai Tangga",
 	["drifteraltevent"] = "Liftage",
 
 	--HERETIC
@@ -347,8 +347,8 @@ module.spells.names = {
 	["autoup"] = "Schism Opposite Down",
 
 	["malediction"] = "Malediction",
-	["hereticevent"] = "Disunion",
-	["hereticaltevent"] = "Vengeance",
+	["hereticevent"] = "Perpecahan",
+	["hereticaltevent"] = "Kutuk Menara",
 
 	--SPLICER
 	["twistup"] = "Sambung Tangga ke Atas",
@@ -359,8 +359,8 @@ module.spells.names = {
 	["splitalt"] = "Pisahkan Tangga",
 
 	["twister"] = "Pembelah",
-	["splicerevent"] = "Interweave",
-	["spliceraltevent"] = "Bisect",
+	["splicerevent"] = "Koneksi Tangga",
+	["spliceraltevent"] = "1000 Degree Knife",
 
 	--necro
 	["createdual"] = "Buat Tangga Kembar",
@@ -371,8 +371,8 @@ module.spells.names = {
 	["regen"] = "Reproduksi Mana",
 
 	["duality"] = "Duality",
-	["necromancerevent"] = "Resurrection",
-	["necromanceraltevent"] = "Soul Harvest",
+	["necromancerevent"] = "Kebangkitan Tangga",
+	["necromanceraltevent"] = "Panen Tangga",
 
 	--reaver
 	["createmirrored"] = "Bangun Tangga Cermin",
@@ -383,8 +383,8 @@ module.spells.names = {
 	["oneway"] = "Tangga Satu Arah",
 
 	["reflection"] = "Reflection",
-	["reaverevent"] = "Cross Roads",
-	["reaveraltevent"] = "Conjucture",
+	["reaverevent"] = "Arah Ketat",
+	["reaveraltevent"] = "Naik Terpaksa",
 
 
 	--gremlin
@@ -395,23 +395,23 @@ module.spells.names = {
 	["screwdown"] = "Pilin Turun",
 	["spinplatform"] = "Kisar Platform",
 
-	["tramway"] = "Tram-way",
+	["tramway"] = "Masinis",
 	["gremlinevent"] = "Roda Kematian",
 	["gremlinaltevent"] = "Sebabkan Kemacetan",
 
 	--CHAMELEON
-	["ditch"] = "Cross Stairs",
-	["warp"] = "Warp Stairs",
-	["chamdown"] = "Move Stairs Down",
+	["ditch"] = "Tangga Menyilang",
+	["warp"] = "Stair Fleksibel",
+	["chamdown"] = "Turunkan Tangga",
 	["chamdraw"] = "Below Drawbridge",
 	["chamswap"] = "Jadi Hantu",
 	["chamdrawabove"] = "Above Drawbridge",
 
 	--NEW
 
-	["mugglereg"] = "Menara sednag regenerasi…",
-	["mugglecd"] = "Events and Rigs Cooldown",
-	["share"] = "Share mana (requires 2 Mana minimum)",
+	["mugglereg"] = "Menara sedang regenerasi…",
+	["mugglecd"] = "Pendinginan Acara dan Rig",
+	["share"] = "Bagikan mana (minimum 2 mana dibutuhkan)",
 
 	--ARCHITECT
 	["archpatron"] = "Bangun atau Ciutkan tangga",
@@ -2030,7 +2030,7 @@ module.gui.mana = {
 	["possession"] = "POSSESSION",
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
-	["blessing"] = "BLESSING",
+	["blessing"] = "DIBERKATI",
 	["hack"] = "HACK",
 	["stash"] = "STASH",
 	["backdoor"] = "PINTU BELAKANG",
@@ -2038,15 +2038,15 @@ module.gui.mana = {
 	["base"] = "PANGKALAN",
 	["circus"] = "SIRKUS",
 	["shelter"] = "TENDA",
-	["haven"] = "HAVEN",
+	["haven"] = "SURGA",
 	["study"] = "TELAAH",
-	["nether"] = "NETHER",
+	["nether"] = "NERAKA",
 	["guild"] = "PERSEMBUNYIAN",
 	["nexus"] = "PERHUBUNGAN",
 	["oasis"] = "OASIS",
-	["hub"] = "HUB",
+	["hub"] = "PUSAT",
 	["mirror"] = "CERMIN",
-	["grave"] = "GRAVE",
+	["grave"] = "PUSARA",
 	["shack"] = "GUBUK",
 	["regen"] = "REPRODUKSI",
 	["optimus"] = "OPTIMUS",
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
