@@ -1379,20 +1379,20 @@ module.tutorial = {
 
 	["tut_select"] = "Seleziona questo incantesimo:",
 
-	["tut_small_init"] = "Fai un salto se vuoi iniziare il tutorial",
+	["tut_small_init"] = "Esegui un salto per iniziare il tutorial",
 	["tut_small_morph"] = "Salta sul trasformatore",
 	["tut_small_arrow"] = "Salta sulla freccia",
 	["tut_small_stairs"] = "Salta sulle scale",
 }
 
 module.where = { --Continue from here
-	["platform"] = "Da lanciare sulle piattaforme, eccetto quelle del primo piano e quelle vincolate.",
-	["arrow"] = "Da lanciare sulle frecce delle piattaforme.",
+	["platform"] = "Da lanciare sulle piattaforme, ad eccezione di quelle posizionate al primo piano e di quelle vincolate.",
+	["arrow"] = "Da lanciare sulle piattaforme.",
 	["stairs"] = "Da lanciare sulle scale.",
-	["above"] = "Colpisce la scala posizionata direttamente sopra a quella colpita (funziona sui collegamenti di Patron).",
-	["dynamic"] = "Può influenzare sia la scala colpita che quella sovrastante.",
-	["both"] = "Può essere eseguito sia sulle frecce delle piattaforme che scale.",
-	["both2"] = "Può essere eseguito sia su piattaforme che scale.",
+	["above"] = "Modifica la scala posizionata direttamente sopra a quella colpita (funziona sui collegamenti di Patron).",
+	["dynamic"] = "Può modificare sia la scala colpita che quella sovrastante.",
+	["both"] = "Può essere eseguito sia dalle frecce presenti sulle piattaforme che dalle scale",
+	["both2"] = "Può essere eseguito sia su piattaforme che su scale.",
 	["anywhere"] = "Può essere lanciato ovunque.",
 	["nowhere"] = "Questo incantesimo si attiva al momento della selezione.",
 }
@@ -1400,34 +1400,30 @@ module.where = { --Continue from here
 module.guide = {
 	--arrows
 	["arrow"] = {
-		["through"] = "Può essere lanciato in intersecazioni libere o attraverso scale tangibili.",
-		--["restore"] = "Can be executed next to.",
+		["through"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale intangibili.",
 		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango Banished per poter demolire le scale maledette.",
-		["flicker"] = "Può essere lanciato solo in intersecazioni libere (e maledette con il rango Infidel sbloccato).",
+		["flicker"] = "Può essere lanciato solo nelle intersecazioni libere (e maledette con il rango Infidel sbloccato).",
 		["any"] = "Può essere lanciato in intersecazioni senza malefici.",
 		["wall"] = "Può essere lanciato in intersecazioni senza malefici che non abbiano una barriera o un portale dimensionale.",
-		--["ghosted"] = "Can be only used on normal, rigged or ghosted stairs",
-		--["deltwists"] = "Can be only used on spliced stairs.",
-		["forced"] = "Può essere lanciato in intersecazioni libere o attraverso scale opposte non maledette.",
-		["halfsoft"] = "Può essere lanciato in intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
-		["soft"] = "Può essere lanciato solo in intersecazioni libere.",
+		["forced"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette.",
+		["halfsoft"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
+		["soft"] = "Può essere lanciato solo nelle intersecazioni libere.",
 		["flatten"] = "Può essere lanciato solo attraverso scale opposte normali o alterate da rig.",
 		["hack"] = "Può essere lanciato solo attraverso scale opposte non maledette.",
-		["sidepass"] = "Può essere lanciato in intersecazioni senza malefici e senza scorciatoie.",
+		["sidepass"] = "Può essere lanciato nelle intersecazioni senza malefici e senza scorciatoie.",
 	},
-
 	["platform"]= {
 		--platform
 		["middle"] = "Non ci sono requisiti per questo incantesimo.",
-		["diag"] = "Può essere lanciato diagonalmente su qualsiasi piattaforma.",
+		["diag"] = "Può essere lanciato diagonalmente in qualsiasi direzione.",
 		["outer"] = "Può essere lanciato solo sulle piattaforme perimetrali.",
 		["centre"] = "Questo incantesimo rimuove gli specchi piccoli presenti sul piano, ma non quelli estesi.",
 		["inner"] = "Può essere lanciato sulle piattaforme non perimetrali che non abbiano un collegamento attivo.",
-		["prevolve"] = "Può essere lanciato in direzione oraria e antioraria.",
+		["prevolve"] = "Può essere lanciato in direzione oraria o antioraria.",
 		["top"] = "Può essere lanciato solo sulla cima della torre.",
 	},
 
-	["stairs"] ={
+	["stairs"] ={ --Continue from here
 		["cursed"] = "Può essere lanciato su scale normali, alterate da rig e maledette.",
 		["all"] = "Può essere lanciato su qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
 		["steal"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
