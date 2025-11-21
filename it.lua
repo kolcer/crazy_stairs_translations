@@ -1423,14 +1423,14 @@ module.guide = {
 		["top"] = "Può essere lanciato solo sulla cima della torre.",
 	},
 
-	["stairs"] ={ --Continue from here
+	["stairs"] ={
 		["cursed"] = "Può essere lanciato su scale normali, alterate da rig e maledette.",
 		["all"] = "Può essere lanciato su qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
 		["steal"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
 		["onedirection"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
 		["straight"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
 		["rotate"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
-		["flip"]= "Può essere lanciato su scale normali, ribaltate e alterate da rig.",
+		["flip"]= "Può essere lanciato su scale normali, ribaltate o alterate da rig.",
 		["gate"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
 		["gatestr"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
 		["gaterot"] = "Può essere lanciato su scale normali o alterate da rig. Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
@@ -1446,27 +1446,27 @@ module.guide = {
 	},
 
 	["above"] = {
-		["cursed"] = "Può essere lanciato sotto a scale normali, maledette e alterate da rig.",
+		["cursed"] = "Può essere lanciato sotto a scale normali, maledette o alterate da rig.",
 		["all"] = "Può essere lanciato sotto a qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
-		["steal"] = "Può essere lanciato sotto a scale normali e alterate da rig. Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
+		["steal"] = "Può essere lanciato sotto a scale normali o alterate da rig. Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
 		["flip"]= "Può essere lanciato sotto a scale normali, ribaltate o alterate da rig.",
-		["onedirection"] = "Può essere lanciato sotto a scale normali e alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
+		["onedirection"] = "Può essere lanciato sotto a scale normali o alterate da rig. Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
 		["slide"] = "Questo incantesimo ti permette di aggirare qualsiasi scala non maledetta.",
-		["normalrig"] = "Può essere lanciato solo sotto a scale normali e alterate da rig.",
+		["normalrig"] = "Può essere lanciato solo sotto a scale normali o alterate da rig.",
 	},
 
 	["dynamic"] = {
 		--hack, twister, bender and flipper
-		["flip"] = "Può essere lanciato su o sotto scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala sovrastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
-		["normalrig"] = "Può essere lanciato su o sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe: la scala selezionata e quella sovrastante.",
+		["flip"] = "Può essere lanciato sia sopra che sotto le scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala sovrastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
+		["normalrig"] = "Può essere lanciato sia sopra che sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe le scale se possibile.",
 		["slide"] = "Può essere lanciato su scale normali o alterate da rig. Le scale non maledette che bloccano il passaggio verranno demolite.",
 	},
 
 	["both"] = {
-		['restore'] = "Principalmente da lanciare sulle scale o anche sulle frecce delle piattaforme. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
+		['restore'] = "Può essere lanciato sia sulle scale che sulle piattaforme, dove indicato dalle frecce. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
 		['deltwists'] = "Da lanciare sulle scale combinate. Sblocca il rango Combiner per poterle ripristinare direttamente dalle piattaforme.",
-		['ghosted'] = "Da lanciare su scale normali, spettralizzate o alterate da rig, oppure sulle frecce delle piattaforme.",
-	},
+		['ghosted'] = "Da lanciare su scale normali, spettralizzate, alterate da rig, oppure sulle piattaforme dove indicato dalle frecce.",
+	}, --Continue from here
 
 	['both2'] = {
 		['delsplits'] = "Può essere lanciato su scale con portali dimensionali. Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme."
