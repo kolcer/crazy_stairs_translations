@@ -18,10 +18,10 @@ module.gui.basic = {
 
 module.gui.switcher = {
 
-	["join"] = "JOIN",
-	["friends"] = "FRIENDS ONLINE",
-	["refresh"] = "refreshing...",
-	["fail"] = "FAILED TO REFRESH!",
+	["join"] = "MASUK",
+	["friends"] = "TEMAN ONLINE",
+	["refresh"] = "memperbarui…",
+	["fail"] = "GAGAL MEMPERBARUI! :[",
 	--NEW
 	["refreshbutton"] = "REFRESH",
 	["failed"] = "Teleport gagal! :[",
@@ -40,8 +40,8 @@ module.gui.serversettings = {
 	["DronesReadOnly"] = "PENGATURAN DRONE (hanya baca)",
 	["DroneEnabled"] = "Drone diaktifkan",
 	["DroneFix"] = "Drone memulihkan tangga",
-	["DroneRemove"] = "Drones remove cursed intersections",
-	["DroneUnCurse"] = "Drones restore cursed stairs",
+	["DroneRemove"] = "Drone membuka kunci simpang terkutuk",
+	["DroneUnCurse"] = "Drone membebaskan tangga terkutuk",
 	["DroneMove"] = "Drones move stairs in default mode",
 	["DroneSpin"] = "Drones spin stairs in default mode",
 	["DroneSpeed"] = "Drone travel speed (level/second)",
@@ -308,7 +308,7 @@ module.spells.names = {
 	["place"] = "Kembali Tangga",
 	["uppass"] = "Tangga Spiral",
 	["sidepass"] = "Letakkan Jalan Pintas",
-	["drop"] = "Ditch Stairs",
+	["drop"] = "Enyahkan Tangga",
 
 	["heist"] = "Heist",
 	["thiefevent"] = "Dunia Datar",
@@ -323,18 +323,18 @@ module.spells.names = {
 	["splitforward"] = "Buka Portal Platform",
 
 	["splitter"] = "Pembuka Portal",
-	["archonevent"] = "Labirhin Portal",
+	["archonevent"] = "Labirin Portal",
 	["archonaltevent"] = "Division",
 
 	--DRIFTER
 	["indrift"] = "Selancar",
 	["outdrift"] = "Hanyutkan Tangga secara Acak",
-	["updrift"] = "Lift",
-	["diagdrift"] = "Diagonal Drift",
-	["spin"] = "Spin Stairs",
+	["updrift"] = "Platform Lift",
+	["diagdrift"] = "Selancar secara Diagonal",
+	["spin"] = "Putar Tangga",
 	["driftabove"] = "Angkat Tangga di Atas",
 
-	["riser"] = "Riser",
+	["riser"] = "Operator Lift",
 	["drifterevent"] = "Badai Tangga",
 	["drifteraltevent"] = "Liftage",
 
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
