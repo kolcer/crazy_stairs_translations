@@ -162,8 +162,8 @@ module.gui.stats = {
 
 module.gui.questions = {
 	["cancel"] = "Apakah kamu mau membakalkan mantra terbatas ini? Token tidak akan dikembalikan.",
-	["tutorial"]= "Would you like to play tutorial?",
-	["skip"] = "Would you like to skip the tutorial?",
+	["tutorial"]= "Apakah kamu ingin main latihan?",
+	["skip"] = "Apakah kamu ingin melewaiti latihan?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
 }
 --END NEW
@@ -276,7 +276,7 @@ module.spells.names = {
 
 	["ascension"] = "Ascension",
 	["keeperevent"] = "Reshuffle",
-	["keeperaltevent"] = "Restoration",
+	["keeperaltevent"] = "Pemulihan",
 
 	--SPECTRE
 	["phantom"] = "Buat Tangga Berhantu",
@@ -294,13 +294,13 @@ module.spells.names = {
 	["dash"] = "Dash",
 	["blink"] = "Blink",
 	["swap"] = "Swap",
-	["slide"] = "Escalator",
-	["slideup"] = "Hack In Stairs",
-	["glitch"] = "Glitch Stairs",
+	["slide"] = "Eskalator",
+	["slideup"] = "Hack Tangga",
+	["glitch"] = "Glitch Tangga",
 
 	["hack"] = "Operator Eskalator",
-	["hackerevent"] = "Escalation",
-	["hackeraltevent"] = "Breach",
+	["hackerevent"] = "Menara Mal",
+	["hackeraltevent"] = "Eskalator Malas",
 
 	--THIEF
 	["steal"] = "Curi Tangga",
@@ -336,7 +336,7 @@ module.spells.names = {
 
 	["riser"] = "Operator Lift",
 	["drifterevent"] = "Badai Tangga",
-	["drifteraltevent"] = "Liftage",
+	["drifteraltevent"] = "Pengankatan",
 
 	--HERETIC
 	["createcursed"] = "Bangun Tangga Terkutuk",
@@ -358,7 +358,7 @@ module.spells.names = {
 	["split2"] = "Belah Tangga",
 	["splitalt"] = "Pisahkan Tangga",
 
-	["twister"] = "1000 Degree Knife",
+	["twister"] = "Pengguna 1000 Degree Knife",
 	["splicerevent"] = "Koneksi Tangga",
 	["spliceraltevent"] = "Bisect",
 
@@ -370,7 +370,7 @@ module.spells.names = {
 	["revival"] = "Titik Kebangkitan",
 	["regen"] = "Reproduksi Mana",
 
-	["duality"] = "Duality",
+	["duality"] = "Gemini",
 	["necromancerevent"] = "Kebangkitan Tangga",
 	["necromanceraltevent"] = "Panen Tangga",
 
@@ -478,7 +478,7 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "This spell destroys stairs. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
+	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti mantra lain, itu akan  will work on tangga apa pun. Naiklah ke peringkat Vile untuk cast this spell for free. Naiklah ke peringkat VICIOUS untuk mendapatkan 1 mana bonus everytime kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga… TERKUTUK ya.",
 	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
@@ -494,7 +494,7 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "This spell will move stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Mantra ini untuk memindahkan tangga secara horizontal,c |    This spell will move stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
 	["movedown"] = "This spell fixes any special stairs. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
@@ -731,8 +731,8 @@ module.gui.ranks = {
 	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
 
-	["architect_1"] = "You are now an Architect!",
-	["architect_2"] = "Architects cannot acquire any ranks.",
+	["architect_1"] = "Kamu sekarang menjadi Architect!",
+	["architect_2"] = "Architect cannot acquire any ranks.",
 	["architect_3"] = "Roam the tower to wreak havoc!",
 	--END NEW
 
@@ -1499,25 +1499,25 @@ module.guide = {
 
 	["stairs"] ={
 
-		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
+		["cursed"] = "Dapat dilaksanakan pada tangga biasa, termanipulasi atau terkutuk.",
 		["all"] = "Dapat dilaksanakan pada tangga apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
-		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
-		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
-		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
-		["rotate"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
-		["flip"]= "Can be executed on normal, flipped or rigged stairs.",
-		["gate"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates.",
-		["gatestr"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
-		["gaterot"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
-		["twist"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
-		["twiststr"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
-		["twistrot"] = "Can be executed on normal or rigged stairs. Rank up to Transformer to override splices.",
-		["spin"] = "Can be executed on normal or rigged stairs. Rank up to Nomad to spin already drifted stairs.",
-		["drift"] = "Can be executed on normal or rigged stairs. Rank up to Nomad to drift already drifted stairs.",
-		["escalator"] = "Can be executed on normal or rigged stairs only.",
-		["oneway"] = "Can be executed on normal or rigged stairs only.",
-		["revolve"] = "Can be executed on normal or rigged stairs only.",
-		["normalrig"] = "Can be executed on normal or rigged stairs only.",
+		["steal"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Hijacker untuk mencuri tangga tidak terkutuk apa pun.",
+		["onedirection"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tidak terkutuk apa pun.",
+		["straight"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tidak terkutuk apa pun.",
+		["rotate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memutar tangga tidak terkutuk apa pun.",
+		["flip"]= "Dapat dilaksanakan pada tangga biasa, terbalik atau termanipulasi.",
+		["gate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates.",
+		["gatestr"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates",
+		["gaterot"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates",
+		["twist"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Transformer to override splices.",
+		["twiststr"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Transformer to override splices.",
+		["twistrot"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Transformer to override splices.",
+		["spin"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Nomad to spin already drifted stairs.",
+		["drift"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Nomad to drift already drifted stairs.",
+		["escalator"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
+		["oneway"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
+		["revolve"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
+		["normalrig"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
 
 	},
 
@@ -1569,11 +1569,11 @@ module.guide = {
 	},
 
 	['anywhere'] = {
-		['anywhere'] = "This spell can be executed anywhere.",
+		['anywhere'] = "Mantra ini dapat dilaksanakan di manapun.",
 	},
 
 	["nowhere"] = {
-		['slide'] = "This spell does not require an execution.",
+		['slide'] = "Mantra ini tidak memerlukan perlaksanaan.",
 
 	},
 
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
