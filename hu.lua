@@ -1341,7 +1341,7 @@ module.static = {
 	["muggle_lead"] = "KITARTÓ MUGGLEÖK",
 	["muggle_ranks"] = "MUGGLE RANGOK",
 
-	["hacker_lead"] = "TITKOSÍTOT HACKEREK",
+	["hacker_lead"] = "TITKOSÍTOTT HACKEREK",
 	["hacker_ranks"] = "HACKER RANGOK",
 
 	["wicked_lead"] = "ERŐSZAKOS WICKEDEK",
@@ -2086,6 +2086,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
