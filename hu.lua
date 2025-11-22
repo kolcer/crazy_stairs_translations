@@ -1073,16 +1073,16 @@ module.gui.gameover.messages = {
 		"Megcsavarom ezt a lépcsőházat",
 	},
 	["REAVER"] = {
-		"Tükrök valójában csak átjárók.\n!𐲏𐳉𐳖𐳖𐳜", --Translation (for the runic one): Hello!
-		"Ez a lépcsőház csak egy illúzió.\n?𐲘𐳐 𐳮𐳀𐳙 𐳏𐳀 𐳘𐳐 𐳘𐳐𐳙𐳇 𐳆𐳀𐳓 𐳉𐳎 𐳐𐳖𐳖𐳫𐳯𐳐𐳜𐳓 𐳮𐳀𐳎𐳪𐳙𐳓", --Translation: What if we all are just an illusion?
-		"Láthatod a lelkedet a tükörben.\n!𐲀𐳯 𐳋𐳙 𐳮𐳀𐳎𐳛𐳓 𐳦𐳉 𐳦𐳝𐳓𐳓𐳉𐳖𐳬𐳦𐳝𐳦𐳦", --Translation: That's me you dummy!
-		"Hét évnyi balszerencse. Nekem, vagy a másiknak?\n?𐲘𐳉𐳗𐳐𐳓𐳬𐳙𐳓 𐳦𐳝𐳢𐳦𐳉 𐳉𐳖 𐳀 𐳦𐳬𐳓𐳢𐳝𐳦", --Translation: (Well) Which one of us broke the mirror?
-		"A szellemek ragadtak a tükör mögé - vagy mi?\n!𐲦𐳉𐳤𐳜 𐳤𐳐𐳉𐳤𐳤 𐳘𐳁𐳢 𐳘𐳉𐳢𐳦 𐳉𐳖 𐳌𐳛𐳍 𐳦𐳝𐳢𐳙𐳐 𐳀 𐳦𐳬𐳓𐳝𐳢", --Translation: Dude hurry up the mirror's gonna break!
-		"𐲦𐲬𐲓𐲢𐲝𐲯𐲟𐲇𐲒, 𐲆𐲉𐲢𐲋𐲖𐲇 𐲓𐲐 𐳋𐳤 𐲮𐲁𐲖𐲒 𐲉𐲎𐲂𐲉\nTÜKRÖZŐDJ, CSERÉLD KI és VÁLJ EGYBE", --Translation: the same
-		"!𐲏𐳀𐳎𐳒𐳪𐳓 𐳉𐳖 𐳉𐳯𐳦 𐳀 𐳤𐳢𐳁𐳄𐳛𐳦\nDehogy is! Biztos, hogy segíteni fog.", --Translation: Let's ditch this guy!
-		"!𐲘 𐳐𐳋𐳢𐳦 𐳏𐳑𐳮𐳒𐳁𐳔 𐳀 𐳌𐳝 𐳖𐳇𐳝 𐳙𐳓𐳑𐳮𐳬𐳖𐳐𐳦 𐳀𐳖𐳐𐳋𐳙𐳙𐳉𐳓? 𐲘 𐳉𐳢𐳦 𐳀 𐳌𐳟𐳖𐳇𐳝 𐳙 𐳙𐳉𐳘 𐳀𐳖𐳐𐳉𐳙\nLol!" --Translation: Why are aliens called aliens? Because on Earth, they don't alien! (pun)
-		".𐲉𐳯 𐳀 𐳦𐳬𐳓𐳝𐳢 𐳉𐳖 𐳌𐳛𐳍 𐳦𐳝𐳢𐳙𐳐\nEz a tükör nem fog eltörni!", --Translation: This mirror will break.
-		"?𐲘𐳐 𐳖𐳉𐳥 𐳏𐳀 𐳉𐳖𐳦𐳝𐳢𐳐𐳓 𐳀 𐳦𐳝𐳓𐳬𐳢 𐳋𐳤 𐳖𐳉𐳉𐳤𐳬𐳙𐳓\nNe ijesztgessél már!", --Translation: What will happen if the mirror breaks and we fall down?
+		"Tükrök valójában csak átjárók.\n!ólleH",
+		"Ez a lépcsőház csak egy illúzió.\n?knuygav kóizúlli yge kasc dnim nav iM", 
+		"Láthatod a lelkedet a tükörben.\n!ttötülekköt et koygav né zA",
+		"Hét évnyi balszerencse. Nekem, vagy a másiknak?\n?törküt a le etröt knükiyleM",
+		"A szellemek ragadtak a tükör mögé - vagy mi?\n!röküt a inröt gof le trem rám sseis óseT", 
+		"EBYGE JLÁV sé IK DLÉRESC ,JDŐZÖRKÜT\nTÜKRÖZŐDJ, CSERÉLD KI és VÁLJ EGYBE", 
+		"!tocárs a tze le kujdaH\nDehogy is! Biztos, hogy segíteni fog.",
+		"!neila men nödlöf a treM ?kenneila tilüvínödlöf a kájvíh tréiM\nLol!"
+		".inröt gof le röküt a zE\nEz a tükör nem fog eltörni!",
+		"?knüseel sé kirötle rüköt a ah zsel iM\nNe ijesztgessél már!",
 	},
 	["NECROMANCER"] = {
 		"KÖVESS, ÉLEDJ ÚJRA és SZEREZZ HASZNOT",
@@ -1140,7 +1140,7 @@ module.gui.gameover.maxrank ={
 	["STRIDER"] = "Én inkább megyek lifttel",
 	["DEATHBRINGER"] = "Szellemek is emberek!",
 	["OPTIMUS"] = "Az Összefonódás",
-	["ILLUSION"] = "Egyek 𐳔𐳙𐳪𐳎𐳀𐳮.knuygav 𐲉𐳎𐳉𐳔", --Translation: We are one but in an alien way. 
+	["ILLUSION"] = "Egyek knuygav.vagyunk keygE",
 	["DAEMON"] = "Körülöttem forog a világ.",
 	["BLACK HOLE"] = "Nincs. Semmi. Baj.",
 
@@ -2086,5 +2086,6 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
