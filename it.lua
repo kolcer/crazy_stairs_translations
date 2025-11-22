@@ -1466,10 +1466,25 @@ module.guide = {
 		['restore'] = "Può essere lanciato sia sulle scale che sulle piattaforme, dove indicato dalle frecce. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
 		['deltwists'] = "Da lanciare sulle scale combinate. Sblocca il rango Combiner per poterle ripristinare direttamente dalle piattaforme.",
 		['ghosted'] = "Da lanciare su scale normali, spettralizzate, alterate da rig, oppure sulle piattaforme dove indicato dalle frecce.",
-	}, --Continue from here
+
+		["archpatron"] = "Genera Scale/Restringi Scale",
+		["archarchon"] = "Portale dimensionale su piattaforme/scale",
+		["archthief"] = "Posiziona/Ruba Scale",
+		["archnecro"] = "Genera Scale Gemelle/Esorcizza Scale",
+		["archhacker"] = "Manometti Scale/Scale Mobili",
+		["archkeeper"] = "Ripristina Scale/Sposta Scale",
+		["archsplicer"] = "Ripristina Giuntura/Combina Scale",
+		["archwicked"] = "Genera Barriera/Demolisci Scale",
+		["archjoker"] = "Genera Scale Illusorie/Ribalta Scale",
+		["archspectre"] = "Evoca Scale Fantasma/Spettralizza Scale",
+		["archreaver"] = "Genera Scale Specchiate/Scale a Senso Unico",
+		["archheretic"] = "Crea Maledizione o Maleficio",
+	}, 
 
 	['both2'] = {
-		['delsplits'] = "Può essere lanciato su scale con portali dimensionali. Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme."
+		['delsplits'] = "Può essere lanciato su scale con portali dimensionali. Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
+		["archgremlin"] = "Rotea Piattaforma/Scale Girevoli",
+		["archdrifter"] = "Elevazione/Dirottamento Casuale",
 	},
 
 	['anywhere'] = {
@@ -1522,11 +1537,9 @@ module.serverfeedback = {
 	["cancelfirst"] = "Hai già un incantesimo selezionato...",
 	["stashfull"] = "Il tuo inventario è pieno.",
 	["stashempty"] = "Il tuo inventario è vuoto, ruba delle scale!",
-	["ultwait"] = "Qualcun altro ti ha preceduto. Attendi.",
+	["ultwait"] = "Qualcun altro ha lanciato un sortilegio recentemente. Attendi.",
 	["notdefault"] = "I Droni non sono in modalità di default. Attendi.",
-	["regwait"] = "Rigenerazione in corso, impossibile eseguire.",
-	["cooldownwait"] = "Sortilegio bloccato. Attendi %d secondi.",
-	["nospellsnow"] = "Non puoi lanciare incantesimi al momento.",
+
 	["noreshuffle"] = "Seleziona il tipo di mescolamento.",
 	["oneoverload"] = "Mana a Gogo è già attivo.",
 	["cursed"] = "Queste scale sono maledette.",
@@ -1535,16 +1548,15 @@ module.serverfeedback = {
 	["locked"] = "Queste scale sono bloccate.",
 	["platformlocked"] = "La piattaforma è bloccata.",
 	["normalrig"] = "La scala deve essere normale o alterata da rig.",
-	["cantblock"] = "Impossibile creare maleficio, ci sono delle scale qui (potrebbero essere invisibili).",
-	["cantblock2"] = "Impossibile creare maleficio, ci sono delle scale nella direzione opposta (potrebbero essere invisibili).",
+
 	["noway"] = "Impossibile eseguire, ci sono delle scale qui (potrebbero essere invisibili).",
 	["noway2"] = "Impossibile eseguire, ci sono delle scale nella direzione opposta (potrebbero essere invisibili).",
 	["noplatform"] = "Nessuna piattaforma rilevata nella direzione indicata.",
 	["nopass"] = "Questa scala può essere posizionata solo sulle piattaforme perimetrali.",
 	["pass"] = "Scala a Chiocciola già presente.",
 	["link"] = "Collegamento già presente.",
-	["noblink"] = "La scala posizionata direttamente sopra rilevata NON blocca il passaggio.",
-	["noblink2"] = "Impossibile eseguire. Scala piatta o piegata rilevata.",
+	["noblink"] = "La scala posizionata direttamente sopra a quella colpita NON blocca il passaggio",
+	["noblink2"] = "La scala colpita non è direttamente collegata alla piattaforma superiore!",
 	["noflip"] = "Solo le scale normali, ribaltate o alterate da rig possono essere ribaltate.",
 	["nothingtocopy"] = "Non ci sono scale da copiare, né per te né per la controfigura.",
 	["wrongdirection"] = "Prova un'altra direzione.",
@@ -1554,7 +1566,6 @@ module.serverfeedback = {
 	["noground"] = "Incantesimo non riuscito. Ti trovi al piano terra.",
 	["oddonly"] = "Incantesimo non riuscito. Il piano è vincolato.",
 	["noabove"] = "Nessuna scala posizionata direttamente sopra rilevata.",
-	["linklimit"] = "Solo gli incantesimi 'Soprastanti' possono essere lanciati qui.",
 	["lock"] = "Non puoi lanciare incantesimi al momento.",
 	["outdrift"] = "Perlustrazione può essere lanciato solo sulle piattaforme perimetrali.",
 	["cantgate"] = "Questa direzione è bloccata.",
@@ -1562,10 +1573,11 @@ module.serverfeedback = {
 	["nocurse"] = "Questa scala non è normale, maledetta o alterata da rig.",
 	["nogate"] = "Nessun portale dimesionale rilevato.",
 	["noghost"] = "Questa scala non è spettralizzata.",
-	["wrongsplit"] = "Il portale dimensionale deve essere creato all'interno dell'area di gioco.",
+	["wrongplace"] = "L'altra scala si deve trovare all'interno dell'area di gioco.",
+	["archrace"] = "Non puoi trasformarti in Architect durante una gara.",
 	["blockedplit"] = "L'intersecazione è maledetta.",
 	["cursedtarget"] = "Le scale sono maledette.",
-	["lockedsplit"] = "Le scale sono bloccate.",
+	["lockedother"] = "Le scale sono bloccate.",
 	["failedgate"] = "Incantesimo non riuscito.",
 	["notwist"] = "Queste scale non sono combinate.",
 	["wrongmove"] = "La scala deve rimanere nell'area di gioco.",
@@ -1577,7 +1589,7 @@ module.serverfeedback = {
 	["duplicatemirror"] = "Specchio già presente.",
 	["norestore"] = "Scorciatoie e Scale a Chiocciola non posso essere ripristinate.",
 
-	--higher rank required
+	--higher rank required --Continue from here
 	["admiral2"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle scale.",
 	["admiral"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle intersecazioni.",
 	["infidel"] = "Sblocca il rango Infidel per poter lanciare Sorpasso D'Ombra sui malefici e rimuovere la maledizione.",
