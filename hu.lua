@@ -66,8 +66,6 @@ module.gui.serversettings = {
 
 module.gui.shop = {
 
-	["title"] = "BOLT",
-
 	["chameleon"] = "Chameleonok osztályt tudnak változtatni mászás közben.",
 	["spectre"] = "Spectre az egy teleportáláson alapuló osztály ami tökéletes ha egyedül játszól.",
 	["mana"] = "Növeld a Mana tárolási kapacitásodat 10 Manával.",
@@ -1110,6 +1108,19 @@ module.gui.gameover.messages = {
 		"Hova tűnt a lépcső?",
 		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
 	},
+	["NONE"] = {
+		"MINTHA ITT SE LENNÉNK",
+		"Nagyon erős leszek, ha majd százszor megmászom a tornyot.",
+		" ", --worked hard on this one
+		"A semmittevést nem lehet elhibázni.",
+		"Van értelme egyáltalán megmászni a lépcsőket?",
+		"Léteznem se kéne, mégis itt vagyok.",
+		"Választhatnál egy másik osztályt, de én azt se bánnám, ha nem.",
+		"Így kell megfelelően megmászni a lépcsőket.",
+		"Fáj a lábam.",
+		"Miért sietsz Muggle? Időnk, mint a tenger.",
+		"Én voltam itt először, mégis úgy érzem, hogy nem tartozok ide.",
+	},
 
 }
 
@@ -1131,6 +1142,7 @@ module.gui.gameover.maxrank ={
 	["OPTIMUS"] = "Az Összefonódás",
 	["ILLUSION"] = "Egyek 𐳔𐳙𐳪𐳎𐳀𐳮.knuygav 𐲉𐳎𐳉𐳔", --Translation: We are one but in an alien way. 
 	["DAEMON"] = "Körülöttem forog a világ.",
+	["BLACK HOLE"] = "Nincs. Semmi. Baj.",
 
 }
 
@@ -1996,7 +2008,6 @@ module.gui.mana = {
 
 module.gui.gameover.extras = {
 
-	["noobs"] = "Kinek kell kiképzés?",
 	["possessed"] = "Azok az idegesítő Hereticek!",
 	["hypnotised"] = "Hol vagyok?",
 	["new"] = "Új rang elérve - %s",
@@ -2075,3 +2086,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
+
