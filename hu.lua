@@ -1875,7 +1875,7 @@ module.switchoff = {
 	["NONE"] = "Különleges hatásokra való immunitás kikapcsolva.",
 }
 
-local timedSpell = "%s megvarázsolta a %s varázslatot!"
+local timedSpell = "%s megvarázsolta az osztálya időzített varázslatát (%s)!"
 
 module.timedspells = {}
 
@@ -2086,6 +2086,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
