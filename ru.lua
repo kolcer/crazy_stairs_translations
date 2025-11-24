@@ -2059,6 +2059,7 @@ module.gui.mana = {
 
 module.gui.gameover.extras = {
 
+	["noobs"] = "Обучения для нубиков!",
 	["possessed"] = "Эти надоедливые Heretic'и!",
 	["hypnotized"] = "Где... я?",
 	["new"] = "Получен новый ранг - %s",
@@ -2137,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
