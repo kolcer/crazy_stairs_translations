@@ -1589,18 +1589,19 @@ module.serverfeedback = {
 	["duplicatemirror"] = "Specchio già presente.",
 	["norestore"] = "Scorciatoie e Scale a Chiocciola non posso essere ripristinate.",
 
-	--higher rank required --Continue from here
-	["admiral2"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle scale.",
-	["admiral"] = "Sblocca il rango Admiral per poter levare le maledizioni dalle intersecazioni.",
-	["infidel"] = "Sblocca il rango Infidel per poter lanciare Sorpasso D'Ombra sui malefici e rimuovere la maledizione.",
+	--higher rank required
+	["admiral2"] = "Sblocca il rango Admiral per poter rimuovere le maledizioni dalle scale.",
+	["admiral"] = "Sblocca il rango Admiral per poter rimuovere le maledizioni dalle intersecazioni.",
+	["infidel"] = "Sblocca il rango Infidel per poter rimuovere i malefici lanciando l'incantesimo Sorpasso D'Ombra.",
 	["banished"] = "Sblocca il rango Banished per poter demolire le scale maledette che bloccano il passaggio.",
 	["annihilator"] = "Sblocca il rango Annihilator per poter demolire le scale maledette.",
 	["disciple"] = "Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
 	["nomad"] = "Sblocca il rango Nomad per poter roteare le scale dirottate.",
-	["prodigy"] = "Sblocca il rango Prodigy per poter rimpiazzare i portali dimensionali.",
+	["prodigy"] = "Sblocca il rango Prodigy per poter cambiare la direzione dei portali direzionali esistenti.",
 	["traveller"] = "Sblocca il rango Traveller per poter potenziare gli ascensori.",
 	["controller"] = "Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
 	["replica"] = "Sblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo.",
+	["skeleton"] = "Sblocca il rango Skeleton per poter rimuovere i malefici con questo incantesimo",
 	["lich"] = "Sblocca il rango Lich per poter demolire le scale che bloccano il passaggio.",
 	["hijacker"] = "Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
 	["transformer"] = "Sblocca il rango Transformer per poter ricombinare le scale già combinate.",
@@ -1611,7 +1612,7 @@ module.serverfeedback = {
 	["keeperrig"] = "Le scale si stanno muovendo!",
 	["hackerrig"] = "Anomalia!",
 	["jokerrig"] = "Le scale si stanno ribaltando!",
-	["wickedrig"] = "Le scale stanno cadendo!",
+	["wickedrig"] = "Le scale stanno cedendo!",
 	["spectrerig"] = "Le scale sono diventate spettralizzate!",
 	["notspectrerig"] = "Le scale NON sono diventate spettralizzate!",
 	["patronrig"] = "Hai ricevuto 1 Mana, offerto da %s!",
@@ -1646,14 +1647,8 @@ module.serverfeedback = {
 	["received"] = "%s ha condiviso del Mana con te!",
 
 	--prompts
-	["scancel"] = "Per favore deseleziona l'incantesimo attivo.",
+	["scancel"] = "Deseleziona l'incantesimo attivo prima.",
 	["morph"] = "Salta qui per diventare %s!",
-
-	--race
-	["raceclosed"] = "La gara non accetta più partecipanti.",
-	["stay"] = "Rimani nel cerchio per partecipare alla gara!",
-	["falsestart"] = "Sei uscito troppo presto...",
-	["charreset"] = "Hai abbandonato la gara.",
 
 	--misc
 	["secret"] = "Segreto trovato, complimentoni!",
@@ -1662,10 +1657,10 @@ module.serverfeedback = {
 	--chameleon exceptions	
 	["chamtutorial"] = "Chameleon è disabilitato nel tutorial!",
 	["champossessed"] = "Devi liberarti della possessione prima.",
-	["chamhypnotized"] = "Devi liberarti dell'ipnosi prima.",
+	["chamhypnotised"] = "Devi liberarti dell'ipnosi prima.",
 	["chamspell"] = "Lancia l'incantesimo selezionato o deselezionalo.",
 	["morphpossessed"] = "Devi liberarti della possessione prima.",
-	["morphhypnotized"] = "Devi liberarti dell'ipnosi prima.",
+	["morphhypnotised"] = "Devi liberarti dell'ipnosi prima.",
 
 	--code
 	["nocode"] = "Inserisci un codice.",
@@ -1677,31 +1672,18 @@ module.serverfeedback = {
 	["sent"] = "Messaggio inviato, grazie!",
 
 	--free demos
-	["tryspectre"] = "Hai attivato Spectre per 10 minuti! Non uscire dal server.",
+	["tryspectre"] = "Hai attivato Spectre per 10 minuti! Sarà valido solo per la sessione corrente",
 	["endspectre"] = "Il pass Spectre verrà disabilitato tra 1 minuto!",
 	["newspectrepass"] = "Adesso puoi trasformarti in Spectre!",
-
-	["trycham"] = "Hai attivato Chameleon per 10 minuti! Non uscire dal server.",
+	["trycham"] = "Hai attivato Chameleon per 10 minuti! Sarà valido solo per la sessione corrente",
 	["endcham"] = "Il pass Chameleon verrà disabilitato tra 1 minuto!",
-	["newchampass"] = "Adesso puoi cambiare classe sulla torre!",
-
-	["trymana"] = "Hai attivato Contenitore Mana Migliorato per 10 minuti! Non uscire dal server.",
+	["newchampass"] = "Adesso puoi cambiare classe durante le ascese!",
+	["tryarch"] = "Hai attivato Architect per 10 minuti! Sarà valido solo per la sessione corrente",
+	["endarch"] = "Il pass Architect verrà disabilitato tra 1 minuto!",
+	["newarchpass"] = "Adesso puoi giocare come Architect!",
+	["trymana"] = "Hai attivato Contenitore Mana Migliorato per 10 minuti! Sarà valido solo per la sessione corrente",
 	["endmana"] = "Il pass Contenitore Mana Migliorato verrà disabilitato tra 1 minuto!",
 	["new20pass"] = "Limite Mana aumentato.",
-
-	--private server moderation (might be re-implemented in the future)
-	["muted"] = "% è stato mutato",
-	["unmuted"] = "%s è stato smutato.",
-	["kicked"] = "%s è stato cacciato!",
-	["banned"] = "%s è stato bandito!",
-	["mekicked"] = "%s ti ha cacciato dal server...",
-	["mebanned"] = "%s ti ha bandito dal server...",
-	["permban"] = "%s ti ha bandito dal gioco...",
-	["kick"] = "%s ti ha cacciato dal gioco...",
-	["48ban"] = "%s ti ha bandito per 48 ore...",
-	["exiled"] = "Sei stato bandito da questo server privato! (NON DAL GIOCO!)",
-	["permbanned"] = "Sei stato bandito dal gioco permanentemente.",
-	["timeout"] = "Il tuo ban terminerà tra: %02i ore e %02i minuti.",
 
 	--custom tower feedbacks
 	["notinrace"] = "Una gara senza fine è in corso!",
@@ -1763,7 +1745,6 @@ module.serverbroadcast = {
 	["won"] = "%s ha tagliato il traguardo prima di tutti!",
 	["falsestart"] = "Sei partito troppo presto!",
 	["countdown"] = "La prossima corsa avrà inizio tra %d secondi!",
-	["2min"] = "Almeno due giocatori necessari per iniziare una gara!",
 	["noplayers"] = "Nessun partecipante rilevato, la corsa senza fine è stata annullata!",
 	["nojoin"] = "Iscrizioni chiuse. Non verranno accettati altri partecipanti.",
 	["allfalse"] = "Tutti i corridori sono partiti troppo presto...",
@@ -1772,6 +1753,10 @@ module.serverbroadcast = {
 	["toolate"] = "Tempo scaduto, nessuno ha raggiunto il traguardo in tempo!",
 	["go"] = "VIA!",
 	["over"] = "Gara conclusa!",
+	["newrace"] = "%s sta scalando la torre — sfidali!",
+	["joined"] = "%s ha accettato la sfida!",
+	["2min"] = "Nessuno ha voluto gareggiare con %s!",
+	["infstart"] = "La corsa senza fine è iniziata!"
 }
 
 module.localfeedback = {
@@ -1781,11 +1766,13 @@ module.localfeedback = {
 	["unlocked"] = "Incantesimo sbloccato!",
 	["maxmana"] = "Contenitore Mana pieno!",
 	["nopurchase"] = "Non puoi acquistare Mana nel tutorial!",
-	["hascham"] = "Possiedi già Chameleon!",
-	["hasspectre"] = "Possiedi già Spectre!",
+	["limitset"] = "Per acquistare Mana, disabilita il limite che hai imposto.", --for refill mana
+	["hasarchitect"] = "Possiedi già il pass Architect!",
+	["hascham"] = "Possiedi già il pass Chameleon!",
+	["hasspectre"] = "Possiedi già il pass Spectre!",
 	["hasmana"] = "Possiedi già il Contenitore Mana Migliorato!",
-	["nomuggle"] = "Pensavi ci fossero dei sortilegi nascosti in Muggle, ma ti sbagliavi.",
-	["nonone"] = "Pensavi ci fossero dei sortilegi nascosti in None, ma ti sbagliavi.",
+	["nomuggle"] = "Pensavi che Muggle possedesse dei sortilegi nascosti, ma ti sbagliavi.",
+	["nonone"] = "Pensavi che None possedesse dei sortilegi nascosti, ma ti sbagliavi.",
 	["nounlocks"] = "Devi sbloccare tutti gli incantesimi base!",
 	["onetoken"] = "Hai ricevuto un gettone per %s!",
 	["moretokens"] = "Hai ricevuto dei gettoni per %s!",
@@ -1796,29 +1783,33 @@ module.localfeedback = {
 }
 
 module.switchon = {
-	["JOKER"] = "Non rivelerai più le scale invisibili che calpesti.",
-	["WICKED"] = "Immunità ai rig di Wicked attivata.",
-	["KEEPER"] = "Immunità ai rig di Keeper attivata.",
-	["SPECTRE"] = "Immunità ai rig di Spectre attivata.",
-	["HACKER"] = "Immunità alle scale mobili e rig di Hacker attivata.",
-	["ARCHON"] = "Puoi camminare attraverso i portali dimensionali (tranne quelli verso l'alto).",
-	["DRIFTER"] = "Immunità ai rig di Drifter attivata.",
-	["SPLICER"] = "Immunità ai rig di Splicer attivata.",
-	["REAVER"] = "Immunità ai rig di Reaver attivata.",
-	["GREMLIN"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
+	["JOKER1"] = "Non rivelerai più le scale invisibili che calpesti.",
+	["WICKED1"] = "Immunità ai rig di Wicked attivata.",
+	["KEEPER1"] = "Immunità ai rig di Keeper attivata.",
+	["SPECTRE1"] = "Immunità ai rig di Spectre attivata.",
+	["HACKER1"] = "Immunità alle scale mobili attivata.",
+	["HACKER2"] = "Immunità alle scale mobili e rig di Hacker attivata.",
+	["ARCHON1"] = "Puoi camminare attraverso i portali dimensionali (tranne quelli verso l'alto).",
+	["DRIFTER1"] = "Immunità ai rig di Drifter attivata.",
+	["SPLICER1"] = "Immunità ai rig di Splicer attivata.",
+	["REAVER1"] = "Immunità ai rig di Reaver attivata.",
+	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
+	["NONE"] = "Immunità globale attivata.",
 }
 
 module.switchoff = {
-	["JOKER"] = "Rivelerai le scale invisibili che calpesti.",
-	["WICKED"] = "Immunità ai rig di Wicked disattivata.",
-	["KEEPER"] = "Immunità ai rig di Keeper disattivata.",
-	["SPECTRE"] = "Immunità ai rig di Spectre disattivata.",
-	["HACKER"] = "Immunità alle scale mobili e rig di Hacker disattivata.",
-	["ARCHON"] = "Non puoi più camminare attraverso i portali dimensionali (tranne quelli verso il basso).",
-	["DRIFTER"] = "Immunità ai rig di Drifter disattivata.",
-	["SPLICER"] = "Immunità ai rig di Splicer disattivata.",
-	["REAVER"] = "Immunità ai rig di Reaver disattivata.",
-	["GREMLIN"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
+	["JOKER1"] = "Rivelerai le scale invisibili che calpesti.",
+	["WICKED1"] = "Immunità ai rig di Wicked disattivata.",
+	["KEEPER1"] = "Immunità ai rig di Keeper disattivata.",
+	["SPECTRE1"] = "Immunità ai rig di Spectre disattivata.",
+	["HACKER1"] = "Immunità alle scale mobili disattivata.",
+	["HACKER2"] = "Immunità alle scale mobili e rig di Hacker disattivata.",
+	["ARCHON1"] = "Non puoi più camminare attraverso i portali dimensionali (tranne quelli verso il basso).",
+	["DRIFTER1"] = "Immunità ai rig di Drifter disattivata.",
+	["SPLICER1"] = "Immunità ai rig di Splicer disattivata.",
+	["REAVER1"] = "Immunità ai rig di Reaver disattivata.",
+	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
+	["NONE"] = "Immunità globale disattivata.",
 }
 
 local timedSpell = "%s ha appena lanciato il sortilegio %s!"
