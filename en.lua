@@ -231,7 +231,7 @@ module.gui.menu = {
 	["Settings"] = "Game settings",
 	["Shop"] = "Buy game passess and tokens",
 	["Spectate"] = "Spectate other players",
-	["Stats"] = "Your badges and achievments",
+	["Stats"] = "Your badges and achievements",
 	["SwitchServer"] = "Switch Tower",
 	["Tokens"] = "Your tokens",
 	["Tutorial"] = "Play the Tutorial",
@@ -2161,3 +2161,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
