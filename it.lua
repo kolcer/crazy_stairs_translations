@@ -60,7 +60,7 @@ module.gui.serversettings = {
 }
 
 module.gui.shop = {
-	["architect"] = "Architect pass permette di diventare un Architect senza un visore VR.",
+	["architect"] = "Architect pass permette di giocare come Architect senza dover possedere un visore VR.",
 
 	["chameleon"] = "Chameleon pass permette di cambiare classe durante le scalate.",
 	["spectre"] = "Gli incantesimi di Spectre si basano sul teletrasporto, meglio usato in solitaria.",
@@ -135,7 +135,7 @@ module.gui.stats = {
 module.gui.questions = {
 	["cancel"] = "Vuoi interrompere questo sortilegio temporaneo?\nI gettoni NON verranno rimborsati.",
 	["tutorial"]= "Vuoi iniziare il tutorial?",
-	["skip"] = "Vuoi terminare il tutorial?",
+	["skip"] = "Vuoi saltare il tutorial?",
 	["reshuffle"] = "Vuoi evitare collisioni tra le scale in movimento? Premi NO per effettuare un mescolamento forzato.",
 }
 
@@ -368,6 +368,10 @@ module.spells.names = {
 	["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
 
+	["mugglereg"] = "Rigenerazione in corso",
+	["mugglecd"] = "Fase di ricarica per eventi e rig",
+	["share"] = "Condividi Mana (richiede almeno 2 Mana)",
+
 	--ARCHITECT
 	["archpatron"] = "Genera o Restringi Scale",
 	["archarchon"] = "Portale dimensionale su piattaforme o scale",
@@ -375,7 +379,7 @@ module.spells.names = {
 	["archnecro"] = "Genera Scale Gemelle o Esorcizza Scale",
 	["archhacker"] = "Scale Mobili o Manometti Scale",
 	["archkeeper"] = "Sposta o Ripristina Scale",
-	["archsplicer"] = "Combina o Ripristina Scale",
+	["archsplicer"] = "Combina Scale o Ripristina Giuntura",
 	["archwicked"] = "Genera Barriera o Demolisci Scale",
 	["archgremlin"] = "Scale Girevoli o Rotea Piattaforma",
 	["archjoker"] = "Genera Scale Illusorie o Ribalta Scale",
@@ -383,11 +387,6 @@ module.spells.names = {
 	["archspectre"] = "Evoca Scale Fantasma o Spettralizza Scale",
 	["archreaver"] = "Genera Scale Specchiate o Senso Unico",
 	["archheretic"] = "Crea Maledizione o Maleficio",
-
-	["mugglereg"] = "Rigenerazione in corso",
-	["mugglecd"] = "Fase di ricarica per eventi e rig",
-	["share"] = "Share mana (requires 2 Mana minimum)",
-
 }
 
 -- common description stuff
@@ -553,7 +552,7 @@ module.spells.descriptions = {
 	["curseabove"] = "Maledice la scala posizionata direttamente sopra a quella colpita e la solleva leggermente, permettendoti di passarci sotto e scalarla. Se la scala è già maledetta, rimuove la maledizione.",
 	["curseinter"] = "Ti fa passare attraverso l'intersecazione lasciando indietro un maleficio, a patto che non ci siano scale in mezzo.\nSblocca il rango Infidel per poter eseguire l'incantesimo su intersecazioni con malefici, rimuovendoli nel processo",
 	["autodown"] = "Solleva una copia della parte inferiore della scala colpita, permettendoti di raggiungere una nuova piattaforma. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
-	["autoup"] = "Abbassa la parte superiore della scala colpita, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
+	["autoup"] = "Abbassa la parte superiore della scala opposta, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
 
 	["malediction"] = timed .. "Permette di generare scale maledette in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
 	["hereticrigevent"] = rig .. "Heretic Rig. Chi le calpesta diventa posseduto, inibendo gli incantesimi (ignorato con il rango Unbeliever sbloccato). I giocatori posseduti si possono liberare raccogliendo Mana.\nSblocca il rango Exiled per guadagnare 1 Mana per giocatore posseduto.",
@@ -598,7 +597,7 @@ module.spells.descriptions = {
 	--REAVER
 	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.\nSblocca il rango Poltergeist per poter demolire eventuali scale in mezzo.",
 	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano per 10 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli se possibile.\nSblocca il rango Presence per aumentare la durata a 15 secondi.",
-	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata per 6 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 9 secondi.",
+	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata per 6 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 10 secondi.",
 	["outermirror"] = "Genera uno specchio sulla piattaforma colpita nella direzione indicata e dalla parte opposta del piano, camminaci attraverso per teletrasportarti e unirti/separarti dalla tua controfigura. Gli specchi svaniranno dopo 60 secondi. Va lanciato sulle piattaforme perimetrali.",
 	["merge"] = "Unisciti alla tua controfigura.\nSblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.",
 	["oneway"] = "Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango Illusion per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.",
@@ -640,7 +639,6 @@ module.spells.descriptions = {
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
 
-	--NEW
 	["share"] = "Se hai almeno 2 Mana, puoi condividere 1 Mana alla volta con un giocatore vicino a te.",
 
 	--ARCHITECT
@@ -650,7 +648,7 @@ module.spells.descriptions = {
 	["archnecro"] = "Genera scale gemelle nella direzione indicata o esorcizza la scala colpita.",
 	["archhacker"] = "Manomette la scala nella direzione indicata o rende la scala colpita una scala mobile con direzione a tua scelta.",
 	["archkeeper"] = "Ripristina la scala nella direzione indicata o sposta la scala colpita verso una direzione a tua scelta.",
-	["archsplicer"] = "Ripristina la scala nella direzione indicata o combina la scala colpita con un'altra a tua scelta.",
+	["archsplicer"] = "Ripristina la giuntura nella direzione indicata o combina la scala colpita con un'altra a tua scelta.",
 	["archwicked"] = "Genera una barriera nella direzione indicata o demolisce la scala colpita.",
 	["archgremlin"] = "Rotea la piattaforma colpita o rende la scala colpita girevole (direzione può essere scelta per entrambi gli incantesi).",
 	["archjoker"] = "Genera una scala illusoria nella direzione indicata o ribalta la scala colpita.",
@@ -864,7 +862,7 @@ module.gui.settings = {
 	["SwitchBack"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
 	["SafeCancel"] = "Mostra conferma quando vuoi interrompere un sortilegio temporaneo",
 	["Multi"] = "Mostra convertitore Gettoni Multiuso al termine delle scalate",
-	["UISize"] = "Adjust the maximum width of the User Interface (%)"
+	["UISize"] = "Modifica le dimensioni dell'Interfaccia Utente (%)"
 }
 
 module.gui.gameover = {}
@@ -907,7 +905,7 @@ module.gui.gameover.messages = {
 	["JOKER"] = {
 		"INGANNA, CONFONDI e RIDI SOTTO I BAFFI",
 		"Questa scalinata è uno scherzo",
-		-- "Se i Droni mi ripristinano un'altra scala illusoria...",
+		"Se i Droni mi ripristinano un'altra scala illusoria...",
 		"Tutta questa serietà è angosciante...",
 		"Grosse risate",
 		"Seguitemi a vostro rischio e pericolo",
@@ -1089,11 +1087,12 @@ module.gui.gameover.messages = {
 		"Tecnica segreta per non falire: Non fare niente",
 		"Non c'è nulla di interessante in cima",
 		"Lo sai che None era stato inizialmente creato come risoluzione di un bug, vero?",
-		"Salta sui trasformatori locati al centro della mappa, o forse no. Non è esattamente obbligatorio",
+		"Salta sui trasformatori locati al centro della mappa, o forse no. Non è proprio obbligatorio",
 		"Questo è il modo corretto di scalare la torre",
 		"Le gambe mi stanno per cedere...",
 		"Velocità e potenza di salto sono sopravvalutati",
 		"Se vogliamo essere corretti, sono stato la prima classe ad essere creata",
+		"Ma perchè, nonostante io non faccia niente, devo fare più lavoro degli altri?"
 	},
 }
 
@@ -1124,6 +1123,7 @@ module.gui.gameover.credits = {
 		"Aiuto progettazione - cakegirlserina",
 		"Modelli provveduti da ZielonyLeszek",
 		"Sfondi provveduti dal generatore di @wwwtyro",
+		"Modulo Datastore e ProfileStore provveduti da loleris",
 		"Se sei arrivato fin qui, grazie per aver giocato!",
 	},
 	["climb"] = "Audio di %s - % da %",
@@ -1866,7 +1866,7 @@ module.eventspells = {
 	["necromanceraltevent"] = "%s ha appena esorcizzato tutte le scale normali!",
 
 	["gremlinrigevent"] = "%s ha appena alterato tutte le scale con Gremlin Rig!",
-	["gremlinevent"] = "%s ha appena attorcigliato tutte le scale normali!",
+	["gremlinevent"] = "Grazie a %s tutte le scale normali sono diventate girevoli!",
 	["gremlinaltevent"] = "%s ha appena riempito la torre di tram!",
 
 	["reaverrigevent"] = "%s ha appena alterato tutte le scale con Reaver Rig!",
@@ -1882,7 +1882,7 @@ module.spells.extras = {
 	["Prompt"] = "Seleziona un incantesimo qui sotto per capire come usarlo",
 	["Title1"] = "Incantesimi base",
 	["Title2"] = "Sortilegi unici",
-	["Title3"] = "Sortilegi condivisi",
+	["Title3"] = "Sortilegi e incantesimi condivisi",
 	["ManaCost"] = "Mana richiesto: %s",
 	["TokenCost"] = "Gettoni richiesti: %s",
 	["Special"] = "Requisiti obbligatori: %s",
@@ -1892,6 +1892,8 @@ module.spells.extras = {
 	["ultimate"] = "Sortilegio",
 	["unlock"] = "0 (3 per sbloccare)",
 	["none"] = "Nessuno",
+	["LeftHand"] = "Mano Sinistra",
+	["RightHand"] = "Mano Destra",
 }
 
 module.gui.basic.jumpdelay = "ricarica salto"
@@ -1933,22 +1935,14 @@ module.gui.mana = {
 	["shack"] = "BARACCA",
 	["regen"] = "RIGENERAZIONE",
 	["optimus"] = "OPTIMUS",
-}
-
-module.gui.hints = {
-	["bcancel"] = "Premi B per cancellare", --xbox b
-	["acancel"] = "Premi di nuovo per cancellare",
-	["ocancel"] = "Cancella l'altro incantesimo",
+	["tutorial"] = "TUTORIAL",
 }
 
 module.gui.gameover.extras = {
 	["noobs"] = "Il tutorial è per i deboli!",
 	["possessed"] = "Mannaggia a questi Heretic!",
-	["hypnotized"] = "Dove mi trovo??",
+	["hypnotised"] = "Dove mi trovo??",
 	["new"] = "Nuovo rango sbloccato - %s",
-	["none1"] = "UN MOMENTO! COSA?",
-	["none2"] = "In questo gioco",
-	["none3"] = "Ci sono gli incantesimi?"
 }
 
 module.gui.gameover.raceplacements = {
@@ -2003,7 +1997,7 @@ end
 --fill in common spell names
 for spell, desc in pairs(CommonSpellNames) do
 
-	for class, _ in pairs(SpellData[spell].IMAGES) do
+	for class, _ in pairs(TowerData.RANKED_ALIGNMENTS) do
 
 		if class == "NONE" then continue end
 
