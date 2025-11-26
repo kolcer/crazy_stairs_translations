@@ -1,4 +1,4 @@
---VERSION 4.1--
+--VERSION 4.1.7--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -162,7 +162,7 @@ module.gui.stats = {
 
 module.gui.questions = {
 	["cancel"] = "Do you want to cancel this timed spell? Tokens will not be refunded.",
-	["tutorial"]= "Would you like to play tutorial?",
+	["tutorial"]= "Would you like to play the tutorial?",
 	["skip"] = "Would you like to skip the tutorial?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
 }
@@ -216,6 +216,29 @@ module.gui.results = {
 	[12] = "12th",
 
 }
+
+
+--NEW 
+
+module.gui.menu = {
+	
+	["Codes"] = "Code entry",
+	["Feedback"] = "Send game feedback",
+	["Language"] = "Change game language",
+	["Music"] = "Music Jukebox",
+	["RaceResults"] = "Last race results",
+	["ServerSettings"] = "Tower Settings (Custom Tower)",
+	["Settings"] = "Game settings",
+	["Shop"] = "Buy game passess and tokens",
+	["Spectate"] = "Spectate other players",
+	["Stats"] = "Your badges and achievements",
+	["SwitchServer"] = "Switch Tower",
+	["Tokens"] = "Your tokens",
+	["Tutorial"] = "Play the Tutorial",
+
+}
+
+--END NEW
 
 module.spells = {}
 
@@ -418,7 +441,7 @@ module.spells.names = {
 	["archarchon"] = "Gate stairs or platform",
 	["archthief"] = "Steal or place",
 	["archnecro"] = "Dual or Undead stairs",
-	["archhacker"] = "Esalator or Hack-in",
+	["archhacker"] = "Escalator or Hack-in",
 	["archkeeper"] = "Move or Restore",
 	["archsplicer"] = "Splice or Restore",
 	["archwicked"] = "Wall or Destroy",
@@ -696,7 +719,7 @@ module.spells.descriptions = {
 	["archwicked"] = "This spell when used on platform's arrows, will create a wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
 	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
 	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
-	["archdrifter"] = "This spell when used on platform, will turn it into an elevator. When used on normal or rigged stairs, it will drift them into a random direction.",
+	["archdrifter"] = "This spell when used on platform, will turn it into an elevator. When used on normal or rigged stairs, it will drift them into a random intersection.",
 	["archspectre"] = "This spell when used on platform's arrows, will create Phantom stairs. When used on normal, ghosted or rigged stairs, it will Ghost or un-Ghost them.",
 	["archreaver"] = "This spell when used on platform's arrows, will create Mirrored stairs. When used on normal or rigged stairs, it turn them into One-Way stairs of Your choice.",
 	["archheretic"] = "This spell when used on platform's arrows, will curse an empty intersection without flickering anyone. When used on normal, cursed or rigged stairs, it curse or un-curse them.",
@@ -863,7 +886,7 @@ module.gui.ranks = {
 		[6] = "Maybe you just like to torture yourself?",
 		[7] = "People at discord are lying, there is no secret perk at 50 climbs.",
 		[8] = "This is your final warning, stop before a total disappointment.",
-		[9] = "You persistence is admirable. You get a total toggleable immunity to special stairs.",
+		[9] = "Your persistence is admirable. You get a total toggleable immunity to special stairs.",
 	},
 
 	["CHAMELEON"] = { 
@@ -912,7 +935,7 @@ module.gui.settings = {
 	["KChoices"] = "Show direction selection for Keeper, when using move spells",
 	["HChoices"] = "Show direction selection for Hacker, when using the escalator spell",
 	["AChoices"] = "Show direction selection for Archon, when using gate spells",
-	["RChoices"] = "Show direction selection for Reaver, when using the one-way stirs spell",
+	["RChoices"] = "Show direction selection for Reaver, when using the one-way stairs spell",
 	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
 	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell",
 
@@ -1147,7 +1170,7 @@ module.gui.gameover.messages = {
 		"Jump on a morph to change your alignment. Or not - I'm just a message, not a cop.",
 		"This is the proper way to climb stairs.",
 		"My legs are killing me.",
-		"Walkspeed and Jump	power are overrated.",
+		"Walkspeed and Jumppower are overrated.",
 		"Technically, I am the first class created in the game.",
 	},
 
@@ -1358,8 +1381,8 @@ module.static = {
 	["over_desc"] = "Each acquired rank adds 1 point",
 	["over_rank"] = "RANK",
 	["over_req"] = "POINTS REQ",
-	["emperor_req"] = "* Requires Chamelon OR Spectre",
-	["overmind_req"] = "** Requires Chamelon AND Spectre",
+	["emperor_req"] = "* Requires Chameleon OR Spectre",
+	["overmind_req"] = "** Requires Chameleon AND Spectre",
 	["over_prefix"] = "PREFIX",
 	["over_passes"] = "GAME PASSES\nREQUIRED",
 	["over_notgroup"] = "OLIVE COLOR - not in group",
@@ -1471,7 +1494,7 @@ module.guide = {
 
 	--arrows
 	["arrow"] = {
-		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
+		["through"] = "Can be executed on an empty intersection or through non-blocking stairs",
 		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
 		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
 		["any"] = "Can be executed on any un-cursed intersection.",
@@ -1498,6 +1521,7 @@ module.guide = {
 	},
 
 	["stairs"] ={
+
 		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
 		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
@@ -1521,6 +1545,7 @@ module.guide = {
 	},
 
 	["above"] = {
+
 		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
 		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
 		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
@@ -1528,6 +1553,7 @@ module.guide = {
 		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
 		["slide"] = "This spell lets you bypass any un-cursed blocking stairs.",
 		["normalrig"] = "Can be executed below normal or rigged stairs only.",
+
 	},
 
 	["dynamic"] = {
@@ -1852,7 +1878,7 @@ module.serverbroadcast = {
 	["newrace"] = "%s has started climbing — race them!",
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
-	["infstart"] = "Infinite race startedlea!"
+	["infstart"] = "Infinite race started!"
 	--END NEW
 
 }
@@ -2135,3 +2161,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+

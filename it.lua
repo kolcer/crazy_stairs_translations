@@ -1,5 +1,5 @@
---VERSION 1.0--
---BRITISH ENGLISH--
+--VERSION 4.1.7--
+--ITALIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
@@ -178,6 +178,22 @@ module.gui.results = {
 	[10] = "decimo",
 	[11] = "undicesimo",
 	[12] = "dodicesimo",
+}
+
+module.gui.menu = {
+	["Codes"] = "Inserisci codici",
+	["Feedback"] = "Invia suggerimenti o segnala bug",
+	["Language"] = "Modifica lingua di gioco",
+	["Music"] = "Jukebox",
+	["RaceResults"] = "Risultati ultima gara",
+	["ServerSettings"] = "Impostazioni torre personalizzabile",
+	["Settings"] = "Impostazioni di gioco",
+	["Shop"] = "Negozio ScaleMania",
+	["Spectate"] = "Modalità Spettatore",
+	["Stats"] = "I tuoi riconoscimenti",
+	["SwitchServer"] = "Cambia Torre",
+	["Tokens"] = "Convertitore gettoni Multiuso",
+	["Tutorial"] = "Inizia Tutorial",
 }
 
 module.spells = {}
@@ -1294,8 +1310,8 @@ module.static = {
 	["over_desc"] = "Ogni ruolo sbloccato aggiunge 1 punto",
 	["over_rank"] = "RUOLO",
 	["over_req"] = "PUNTI NECESS.",
-	["emperor_req"] = "* Richiede O Chamelon O Spectre",
-	["overmind_req"] = "** Richiede SIA Chamelon CHE Spectre",
+	["emperor_req"] = "* Richiede O Chameleon O Spectre",
+	["overmind_req"] = "** Richiede SIA Chameleon CHE Spectre",
 	["over_prefix"] = "PREFISSO",
 	["over_passes"] = "PASS\nRICHIESTI",
 	["over_notgroup"] = "COLORE OLIVA - non sei nel gruppo",
