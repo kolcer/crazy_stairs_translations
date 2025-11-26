@@ -1,4 +1,4 @@
---VERSION 1.0--
+--VERSION 4.1--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -10,43 +10,31 @@ local module = {}
 module.gui = {}
 
 module.gui.basic = {
-	["yes"] = "YES",
-	["no"] = "NO",
-	["ok"] = "OK",
-	["menu"] = "MENU",
+
 	["default"] = "DEFAULT",
 	["validate"] = "VALIDATE",
-	["play"] = "PLAY",
-	["skip"] = "SKIP\nTUTORIAL",
-	["loading"] = "LOADING, PLEASE WAIT...",
-	["mode"] = "%s\nMODE",
-	["cd"] = "ULTIMATE\nCOOLDOWN",
-	["complete"] = "COMPLETE",
+
 }
 
 module.gui.switcher = {
 
-	["title"] = "SWITCH SERVER",
-
-	["public"] = "PUBLIC SERVER",
-	["private"] = "PRIVATE SERVER",
 	["join"] = "JOIN",
 	["friends"] = "FRIENDS ONLINE",
 	["refresh"] = "refreshing...",
 	["fail"] = "FAILED TO REFRESH!",
+	--NEW
+	["refreshbutton"] = "REFRESH",
+	["failed"] = "Teleport failed!",
+	["classic"] = "Classic Tower",
+	["pro"] = "Pro Tower",
+	["custom"] = "Custom Tower",
+	["noVR"] = "VR Free Tower",
+	--END NEW
+
 
 }
 
 module.gui.serversettings = {
-
-	["title"] = "OWNER SETTINGS",
-
-	["Moderation"] = "MODERATION",
-	["rules"] = "Your server, Your rules.",
-	["temp"] = "All mutes and bans are temporary",
-	["kick"] = "KICK",
-	["ban"] = "BAN",
-	["mute"] = "MUTE",
 
 	["Drones"] = "DRONE SETTINGS",
 	["DronesReadOnly"] = "DRONE SETTINGS (read only)",
@@ -76,13 +64,19 @@ module.gui.serversettings = {
 	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
 	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
 	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
-	["Cooldown"] = "Event and Rig cool down period (seconds)",
+
+	--NEW KEY
+	["CooldownTime"] = "Event and Rig cool down period (seconds)",
+	--END NEW
 
 }
 
+
 module.gui.shop = {
 
-	["title"] = "CRAZY STAIRS SHOP",
+	--NEW
+	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.",
+	--END NEW
 
 	["chameleon"] = "Chameleons can change alignment during climb.",
 	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
@@ -95,58 +89,85 @@ module.gui.shop = {
 	["3TOKENS"] = "3 Multi Tokens (R$%d)",
 	["30TOKENS"] = "30 Multi Tokens (R$%d)",
 	["300TOKENS"] = "300 Multi Tokens (R$%d)",
-	["SPECTRE PASS"] = "Spectre game pass (R$%d)",
-	["MANA PASS"] = "20 Mana Storage game pass (R$%d)",
-	["CHAMELEON PASS"] = "Chameleon game pass (R$%d)",
+
+	--NEW
+	["SPECTRE"] = "Spectre game pass (R$%d)",
+	["MANA"] = "20 Mana Storage game pass (R$%d)",
+	["CHAMELEON"] = "Chameleon game pass (R$%d)",
+	["ARCHITECT"] = "Architect game pass (R$%d)",
+
+	--END NEW
 
 }
 
-module.gui.spellbar = {
 
-	["share"] = "SHARE\nMANA",
+module.gui.nospellsbar = {
+
 	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
+	["possessed"] = "POSSESSED! (Find Mana to break free)",
 
-} 
+}
 
+--NEW
 module.gui.stats = {
 
-	["total"] = "Total climbs: %d / Wins: %d",
-	["class"] = "Climbs as %s: %d",
-	["best"] = "Best %s time: %.2f",
-	["na"] = "N/A",
+	["badges"] = "YOUR BADGES",
+	["climbs"] = "YOUR CLIMBS",
+	["total"] = "TOTAL CLIMBS/WINS",
+	["best"] = "BEST TIME OVERALL",
+	["norecord"] = "[no record]",
+
+	["2124486274"] = "Prank the Creator",
+	["1803533030753957"] = "Black Hole",
+	["2124480173"] = "Wicked's Treason",
+	["2124480172"] = "Joker's Trick",
+	["2124637294"] = "Drifter's Voyage",
+	["2124517579"] = "Thief's Heist",
+	["4464785885277417"] = "Splicer's Twist",
+	["2124480174"] = "Keeper's Order",
+	["2124637293"] = "Archon's Connection",
+	["2124517578"] = "Hacker's Exploit",
+	["707445818894757"] = "Gremlin's Spiral",
+	["2124480171"] = "Patron's Pride",
+	["1407551481032773"] = "Reaver's Reflection",
+	["2124637295"] = "Heretic's Curse",
+	["1885715582646280"] = "Necromancer's Rite",
+	["2124480175"] = "Muggle's Logic",
+	["2124826874"] = "Full Circle",
+	["2124529966"] = "Skipped The Tutorial",
+	["2124826880"] = "Possessed Fate",
+	["3731010929572663"] = "Hypnotised Dream",
+	["2124913225"] = "Architect's Design",
+	["2124702954"] = "Rootkit Installed",
+	["2124702945"] = "Destroy Everything",
+	["2124702946"] = "Order Restored",
+	["128721686760593"] = "You spin me round and round.",
+	["2124702952"] = "I'll Take The Elevator",
+	["3121101516427751"] = "The Entanglement",
+	["2124702942"] = "Leave No Noob Behind",
+	["2124702950"] = "Illuminati Confirmed",
+	["2124702951"] = "Mine, Mine All Mine",
+	["1165646024608180"] = "We are one.",
+	["2303731210592278"] = "Rise, rise, RISE!",
+	["2124702949"] = "Excommunication",
+	["2124702943"] = "Pranking Is Living",
+	["2124702948"] = "Spells Are Overrated",
+	["2124826876"] = "Perfect Circle",
+	["2124645341"] = "Secret Badge",
+	["2126893403"] = "Super Secret Badge",
+	["2126893411"] = "Mega Secret Badge",
 
 }
 
-module.gui.timedspell = {
 
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
-	["released"] = "RELEASED",
-	["timesup"] = "times up...",
-
+module.gui.questions = {
+	["cancel"] = "Do you want to cancel this timed spell? Tokens will not be refunded.",
+	["tutorial"]= "Would you like to play tutorial?",
+	["skip"] = "Would you like to skip the tutorial?",
+	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
 }
+--END NEW
 
-
-module.gui.activatecham = {
-
-	["title"] = "ACTIVATE CHAMELEON",
-	["body"] = "Do you want to activate Chameleon Mode?\nIt will stay active for the rest of the climb."
-
-}
-
-module.gui.caceltimed = {
-
-	["title"] = "CANCEL TIMED SPELL",
-	["body"] = "Do you want to cancel this timed spell? Tokens will not be refunded."
-
-}
-
-module.gui.climbtimer = {
-
-	["prompt"] = "Climb the\nstairs!",
-	["floor"] = "Floor",
-	["last"] = "Last time",
-
-}
 
 module.gui.codes = {
 
@@ -154,24 +175,6 @@ module.gui.codes = {
 	["body"] = "Input Your code here:",
 	["prompt"] = "(code)",
 	["button"] = "VALIDATE",
-
-}
-
-module.gui.gauges = {
-
-	["prompt"] = "Jump to proceed, click again to cancel.",
-
-	["found"] = "%d staircases found (%.1f%% fill)",
-	["special"] = "%d are special (%.1f%%)",
-	["affected"] = "%d staircases will be affected (%.1f%%)",
-	["cursed"] = "%d cursed intersections found (%.1f%%)",
-	["fill"] = "%d staircases will be created (%.1f%%)",
-	["purge"] = "%d objects will be destroyed (%.1f%%)",
-	["normal"] = "%d are already normal (%.1f%%)",
-	["restore"] = "%d staircases will be restored (%.1f%%)",
-	["bypass1"] = "%d curses are in the way (%.1f%%)",
-	["bypass2"] = "%d bypasses already exist (%.1f%%)",
-	["bypass3"] = "%d bypasses will be created (%.1f%%)",
 
 }
 
@@ -184,7 +187,9 @@ module.gui.jukebox = {
 	["climb"] = "CLIMB MUSIC",
 	["endgame"] = "ENDGAME MUSIC",
 	["failed"] = "[failed to load]",
-
+	--NEW
+	["off"] = "MUTED",
+	--END NEW
 }
 
 module.gui.results = {
@@ -212,18 +217,6 @@ module.gui.results = {
 
 }
 
-module.gui.racetimer = {
-
-	["gather"] = "You're not\nin the race",
-	["race"] = "RACE\nOVER",
-	["inf"] = "Eliminated",
-	["off"] = "RACE\nTIMER",
-	["wait"] = "Race in",
-	["on"] = "Rank",
-
-}
-
-
 module.spells = {}
 
 --SPELL NAMES
@@ -233,7 +226,6 @@ local CommonSpellNames = {
 	["mode"] = "Drones %s Mode",
 	["refill"] = "Mana Overload (%s)",
 	["union"] = "Ghost Union (%s)",
-	--["event"]
 }
 
 module.spells.names = {
@@ -331,7 +323,7 @@ module.spells.names = {
 	["splitforward"] = "Create Platform Gate",
 
 	["splitter"] = "Portalmania",
-	["archonevent"] = "StairGate-1",
+	["archonevent"] = "StairGåte-1",
 	["archonaltevent"] = "Division",
 
 	--DRIFTER
@@ -352,7 +344,7 @@ module.spells.names = {
 	["curseabove"] = "Curse Above Stairs",
 	["curseinter"] = "Flicker",
 	["autodown"] = "Raise Schism",
-	["autoup"] = "Lower Schism",
+	["autoup"] = "Schism Opposite Down",
 
 	["malediction"] = "Malediction",
 	["hereticevent"] = "Disunion",
@@ -362,14 +354,14 @@ module.spells.names = {
 	["twistup"] = "Splice Stairs Up",
 	["twistside"] = "Splice Parallel Stairs",
 	["twistrotate"] = "Splice Adjacent Stairs",
-	["canceltwist"] = "Restore Spliced Stairs",
+	["canceltwist"] = "Restore Twisted Stairs",
 	["split2"] = "Split Stairs",
 	["splitalt"] = "Split Stairs Forward",
 
 	["twister"] = "Twister",
 	["splicerevent"] = "Interweave",
 	["spliceraltevent"] = "Bisect",
-	
+
 	--necro
 	["createdual"] = "Create Dual Stairs",
 	["copyplatform"] = "Copy Ghost's Platform",
@@ -381,7 +373,7 @@ module.spells.names = {
 	["duality"] = "Duality",
 	["necromancerevent"] = "Resurrection",
 	["necromanceraltevent"] = "Soul Harvest",
-	
+
 	--reaver
 	["createmirrored"] = "Create Mirrored Stairs",
 	["bigmirror"] = "Giant Mirror",
@@ -393,8 +385,8 @@ module.spells.names = {
 	["reflection"] = "Reflection",
 	["reaverevent"] = "Cross Roads",
 	["reaveraltevent"] = "Conjucture",
-	
-	
+
+
 	--gremlin
 	["tram"] = "Create Tram Stairs",
 	["screwup"] = "Up Corkscrew",
@@ -415,10 +407,31 @@ module.spells.names = {
 	["chamswap"] = "Copy Ghost (visual)",
 	["chamdrawabove"] = "Above Drawbridge",
 
-	--MISC (compatibility)
-	["reg"] = "Staircase is regenerating",
+	--NEW
 
-}-- " .. RankData.PATRON[7].name .. " 
+	["mugglereg"] = "Staircase is regenerating",
+	["mugglecd"] = "Events and Rigs Cooldown",
+	["share"] = "Share mana (requires 2 Mana minimum)",
+
+	--ARCHITECT
+	["archpatron"] = "Create or shrink",
+	["archarchon"] = "Gate stairs or platform",
+	["archthief"] = "Steal or place",
+	["archnecro"] = "Dual or Undead stairs",
+	["archhacker"] = "Esalator or Hack-in",
+	["archkeeper"] = "Move or Restore",
+	["archsplicer"] = "Splice or Restore",
+	["archwicked"] = "Wall or Destroy",
+	["archgremlin"] = "Revolve stairs or a platform",
+	["archjoker"] = "Fake or Flip stairs",
+	["archdrifter"] = "Drift or Elevator",
+	["archspectre"] = "Phantom or Ghost stairs",
+	["archreaver"] = "Mirrored or One-way stairs",
+	["archheretic"] = "Curse intersection or stairs",
+
+	--END NEW
+
+}
 
 -- common description stuff
 local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
@@ -437,7 +450,7 @@ module.spells.descriptions = {
 	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
 	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
 	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
-	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangilbe from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
+	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
 	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
@@ -451,7 +464,7 @@ module.spells.descriptions = {
 	--JOKER
 	["flip"] = "This spell flips stairs around, so top will become bottom and vice versa. You may also flip such stairs back.",
 	["flipabove"] = "This spell flips above stairs, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["fake"] = "This spell allows you to create fake stairs in the choosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
+	["fake"] = "This spell allows you to create fake stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "This spell creates invisible stairs. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
 	["disco"] = "This spell turns stairs into disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
 	["trap"] = "This spell turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
@@ -500,7 +513,7 @@ module.spells.descriptions = {
 	["phantom"] = "This spell will create Phantom Stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
 	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
 	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
-	["horizontal"] = "This spell lets you teleport horizontally in the choosen direction. You can teleport through any un-cursed stairs in the way.",
+	["horizontal"] = "This spell lets you teleport horizontally in the chosen direction. You can teleport through any un-cursed stairs in the way.",
 	["random"] = "This spell will teleport you to a random platform on the same level.",
 	["vertical"] = "This spell will teleport you up, to the platform above.",
 
@@ -530,8 +543,8 @@ module.spells.descriptions = {
 
 	--THIEF
 	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the choosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
+	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
 	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
 	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
 	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
@@ -563,7 +576,7 @@ module.spells.descriptions = {
 	--DRIFTER
 	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing.  You cannot surf through blocking stairs.",
 	["updrift"] = "This spell will create an elevator using below and above platforms. The platforms will be restored after a given time period. Rank up to VAGABOND to speed up the movement. Rank up to TRAVELLER to be able to boost the lift to second level. Rank up to STRIDER to be able to boost lift again to third level.",
-	["diagdrift"] = "This spell will either: Create a horizontal elevator using below and any platform in a diagonal fashion. Such elevator will disappear after 7 return journeys. OR: If casted in outside direction, this spell will create an elevator would circle around the Tower once.",
+	["diagdrift"] = "This spell will either: Create a horizontal elevator using below and any platform in a diagonal fashion. Such elevator will disappear after 7 return journeys. OR: If cast in outside direction, this spell will create an elevator would circle around the Tower once.",
 	["spin"] = "This spell will rotate below stairs 180 degrees. Rank up to NOMAD to be able to spin drifted stairs.",
 	["outdrift"] = "This spell will drift below stairs into random orientation, towards a random empty intersection on the same level. Rank up to NOMAD to drift already drifted stairs.",
 	["driftabove"] = "This spell will drift above stairs with less randomness and within the same intersection, so that you can walk under and climb them.",
@@ -583,7 +596,7 @@ module.spells.descriptions = {
 	["curseabove"] = "This spell will curse above stairs. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "This spell will allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
-	["autoup"] = "Use this spell to create special mirrored section of upper part of the staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
+	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
 
 	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
 	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
@@ -614,8 +627,8 @@ module.spells.descriptions = {
 	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
 	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
 	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
-	["regen"] = "Use this spell to regenrate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
-	
+	["regen"] = "Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
+
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
 	["necromancerevent"] = fill ..  "Created stairs will be soul-less and will fade away after a minute.",
@@ -627,10 +640,10 @@ module.spells.descriptions = {
 
 	["createmirrored"] = "This spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. Rank up to Poltergeist to demolish crossing stairs with this spell. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["bigmirror"] = "This spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Giant mirrors will remove any small mirrors on the level. Rank up to Presence to extend mirror lifetime to 15 seconds.",
-	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Rank up to Presence to extend mirror lifetime to 10 seconds.",
+	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Rank up to Presence to extend mirror lifetime to 9 seconds.",
 	["outermirror"] = "This spell will create a mirror in the outer direction and twin mirror on the other side of the map. It can only be used in outer platforms. Players who walk through such mirror will merge with their ghost and teleport to the connected mirror on the other side of the tower. Mirror will fade away after 60 seconds. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["merge"] = "Use this spell to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["oneway"] = "This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Alien to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["oneway"] = "This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will turn into one-way stairs with random direction blocked. Rank up to WIGHT to have an option to avoid below Reaver Rigs.",
@@ -647,9 +660,9 @@ module.spells.descriptions = {
 	["revolve"] = "This spell will turn below stairs into revolving propeller on a Z axis. You can choose direction of the rotation. Stairs will stop briefly after each 180 turn.",
 	["trapstairs"] = "This spell will turn below stairs into a trap door. Stairs, once triggered, will revolve on X axis, dropping careless players below. Rank up to GOBLIN to detect Gremlin Traps. Rank up to DIABLO to be immune to Gremlin traps.",
 	["spinplatform"] = "This spell will revolve the whole platform with any adjacent stairs (including cursed ones), in the direction of your choice. Platform will pause briefly after each 90 degree turn. Once full 360 spin is achieved, platform will turn back to normal.",
-	
+
 	["tramway"] = timed .. "It allows you to cast as many Tram Stairs as you like for one minute." .. string.format(timedExtra,RankData.GREMLIN[7].name,"Gremlins",RankData.GREMLIN[3].name), 
-	["gremlinrigevent"] = rig .. "the Gremlin Rig. Stairs, once triggered, will hypnotize the triggering player. They will have to find Mana to be released. Hypnotized players have their controls reversed. Rank up to HOBGOBLIN to be immune to Gremlin Rigs.",
+	["gremlinrigevent"] = rig .. "the Gremlin Rig. Stairs, once triggered, will hypnotise the triggering player. They will have to find Mana to be released. Hypnotised players have their controls reversed. Rank up to HOBGOBLIN to be immune to Gremlin Rigs.",
 	["gremlinevent"] = event .. "the Random Revolve Stairs spell.", 
 	["gremlinaltevent"] = fill .. "Created stairs will be of Tram variety.",
 	["gremlinmode"] = string.format(mode,"Gremlin","Gremlin Rig","Random Revolve Stairs spell"),
@@ -669,6 +682,25 @@ module.spells.descriptions = {
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
 
+	--NEW
+	["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
+
+	--ARCHITECT
+	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
+	["archarchon"] = "This spell when used on platform's arrows, will create a gate between platforms. When used on stairs, it will gate them in the direction of Your choice.",
+	["archthief"] = "This spell when used on platform's arrows, will place normal stairs. When used on normal or rigged stairs it will steal them.",
+	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
+	["archhacker"] = "This spell when used on platform's arrows, will hack-in any crossing stairs. When used on normal or rigged stairs, it will turn them into an Escalator of your choice.",
+	["archkeeper"] = "This spell when used on platform's arrows, will restore adjacent stairs. When used on normal or rigged stairs, it will move them in the direction of Your choice.",
+	["archsplicer"] = "This spell when used on platform's arrows, will restore adjacent twisted stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
+	["archwicked"] = "This spell when used on platform's arrows, will create a wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
+	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
+	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
+	["archdrifter"] = "This spell when used on platform, will turn it into an elevator. When used on normal or rigged stairs, it will drift them into a random direction.",
+	["archspectre"] = "This spell when used on platform's arrows, will create Phantom stairs. When used on normal, ghosted or rigged stairs, it will Ghost or un-Ghost them.",
+	["archreaver"] = "This spell when used on platform's arrows, will create Mirrored stairs. When used on normal or rigged stairs, it turn them into One-Way stairs of Your choice.",
+	["archheretic"] = "This spell when used on platform's arrows, will curse an empty intersection without flickering anyone. When used on normal, cursed or rigged stairs, it curse or un-curse them.",
+
 }
 local CommonPerksInsertALignment = {
 	[1] = "This is Your starter %s rank.",
@@ -686,9 +718,23 @@ module.gui.ranks = {
 	["title"] = "YOUR RANK",
 
 	--none
+
 	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "You will not have access to any spells!",
-	["none_3"] = "Jump on a morph in the middle of the map to change your alignment.",
+	["none_2"] = "To cast spells, you MUST pick a class!",
+
+	--NEW
+	["possessed_1"] = "You have been Possessed!",
+	["possessed_2"] = "Find Mana or Patron Rig to break free.",
+	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
+
+	["hypnotised_1"] = "You have been Hypnotised!",
+	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
+	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+
+	["architect_1"] = "You are now an Architect!",
+	["architect_2"] = "Architects cannot acquire any ranks.",
+	["architect_3"] = "Roam the tower to wreak havoc!",
+	--END NEW
 
 	--shared
 	["higher"] = "HIGHER RANK ACQUIRED",
@@ -796,7 +842,7 @@ module.gui.ranks = {
 		[5] = "You can now jump on platform to call all adjacent Trams.",
 		[6] = "You are now immune to Gremlin Rigs.",
 		[8] = "You are now immune to Gremlin Traps.",
-		[9] = "You can now control Corkscrew Stairs via a button. This may not work if there is another Daemon nearby.",
+		[9] = "You can now control Corkscrew Stairs via a toggle. This may not work if there is another Daemon nearby.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Your jump cooldown is reduced by 0.125s.",
@@ -807,6 +853,17 @@ module.gui.ranks = {
 		[7] = "Your walkspeed is increased by 20%.",
 		[8] = "Your walkspeed is increased by 30%.",
 		[9] = "Your jump power is increased by 20%.",
+	},
+	["NONE"] = {
+		[1] = "None cannot acquire any ranks. Jump on a morph in the middle of the map to change your alignment.",
+		[2] = "I am serious, NONE does not have any rank perks.",
+		[3] = "You are just wasting your time, you could at least rank up MUGGLE instead.",
+		[4] = "MUGGLE gets walkspeed boosts, you know? None does not get anything.",
+		[5] = "If you think there is a secret rank perk at the end, you must really underestimate my laziness.",
+		[6] = "Maybe you just like to torture yourself?",
+		[7] = "People at discord are lying, there is no secret perk at 50 climbs.",
+		[8] = "This is your final warning, stop before a total disappointment.",
+		[9] = "You persistence is admirable. You get a total toggleable immunity to special stairs.",
 	},
 
 	["CHAMELEON"] = { 
@@ -824,29 +881,17 @@ module.gui.ranks = {
 
 }
 
-module.gui.reshuffle = {
-
-	["title"] = "STAIRS RESHUFFLE MODE",
-
-	["body"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
-
-}
 
 module.gui.multitokens = {
 
-	["title"] = "CHOOSE YOUR TOKENS",
-
 	["info"] = "You need 3 tokens to unlock a spell.",
-	["notokens"] = "You have no multi tokens left",
-	["nopass"] = "NO GAME PASS",
 
 }
 
 module.gui.feedback = {
-
+	
 	["title"] = "SEND FEEDBACK",
-
-	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please no spam.)",
+	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
 	["send"] = "SEND",
 	["locked"] = "LOCKED",
 
@@ -854,27 +899,30 @@ module.gui.feedback = {
 
 module.gui.settings = {
 
-	["title"] = "GAME SETTINGS",
+	--NEW
 
-	["ANIM"] = "ANIMATION\nSETTINGS",	
-	["MISC"] = "MISCELLANEOUS\nSETTINGS",
-	["INTER"] = "INTERFACE\nSETTINGS",	
-	["INTER2"] = "EXTRA INTERFACE\nSETTINGS",	
+	["Gameplay"] = "GAMEPLAY SETTINGS",
+	["Interface"] = "INTERFACE SETTINGS",
 
-	["list"] = "Show animated playerlist",
-	["morph"] = "Show morph animation when using Deceiver or Usurper",
-	["billboard"] = "Show Your own avatar billboard",
-	["rank"] = "Show Your Overall Rank in avatar billboard",
-	["switchback"] = "Auto switch back to basic spells after executed ultimate spell",
-	["safecancel"] = "Show confirmation window when cancelling a timed ultimate spell",
-	["multi"] = "Show Multi Token window selection after the climb",
-	["kchoices"] = "Show direction selection window for Keeper (won't work on consoles)",
-	["hchoices"] = "Show direction selection window for Hacker (won't work on consoles)",
-	["achoices"] = "Show direction selection window for Archon (won't work on consoles)",
-	["rchoices"] = "Show direction selection window for Reaver (won't work on consoles)",
-	["schoices"] = "Show direction selection window for Splicer (won't work on consoles)",
-	["gchoices"] = "Show direction selection window for Gremlin (won't work on consoles)",
-	["stats"] = "Show extra stats when casting Rig & Event spells",
+	["Billboard"] = "Show Your own avatar billboard",
+	["Rank"] = "Show Your Overall Rank in the avatar billboard",
+	["Morph"] = "Show the morph animation when using Chameleon ranked up to Deceiver or higher",
+	["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
+
+	["KChoices"] = "Show direction selection for Keeper, when using move spells",
+	["HChoices"] = "Show direction selection for Hacker, when using the escalator spell",
+	["AChoices"] = "Show direction selection for Archon, when using gate spells",
+	["RChoices"] = "Show direction selection for Reaver, when using the one-way stirs spell",
+	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
+	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell",
+
+
+	["List"] = "Show animated playerlist rather than standard Roblox Leaderboard",
+	["SwitchBack"] = "Auto switch back to basic spells after an executed ultimate spell",
+	["SafeCancel"] = "Show confirmation window when cancelling a timed ultimate spell",
+	["Multi"] = "Show Multi Token window selection after the climb, when you still have unspent MultiTokens",
+	["UISize"] = "Adjust the maximum width of the User Interface (%)"
+	--END NEW
 
 }
 
@@ -887,6 +935,23 @@ module.gui.gameover.results = {
 	["climbs"] = "CLIMBS AWARDED",
 	["tokens"] = "TOKENS AWARDED",
 	["rank"] = "YOUR CURRENT RANK",
+
+	--NEW
+	["role"] = "YOUR OVERALL RANK",
+	["classic"] = "CLASSIC TOWER RECORD",	
+	["pro"] = "PRO TOWER RECORD",	
+	["infinite"] = "INFINITE TOWER RECORD",
+	["custom"] = "CUSTOM TOWER RECORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
+	["noVR"] = "CLASSIC TOWER RECORD", --this will show in noVR tower, as they share the same record
+
+	["cTime"] = "%s RECORD", --%s will be replaced by the used class
+	["levels"] = "LEVELS REACHED",
+	["cClimbs"]	= "%s CLIMBS", --%s will be replaced by the used class
+	["tClimbs"] = "TOTAL CLIMBS",
+	["tTokens"] = "%s TOKENS",	--%s will be replaced by the used class	(or multi)
+	["spells"] = "SPELLS USED",	--amount
+	["rRank"] = "RACE PLACEMENT",--if any
+	--END NEW
 
 }
 
@@ -1028,7 +1093,7 @@ module.gui.gameover.messages = {
 		"TWIST, SPLICE and CONNECT",
 		"Never go in a straight line for too long",
 		"Splice up your life",
-		"Other people mess is Splicer's order",
+		"Other people's mess is Splicer's order",
 		"I can totally connect those stairs",
 		"Connect with people - nah, CONNECT WITH STAIRS!",
 		"My mind is just twisted like that",
@@ -1058,10 +1123,10 @@ module.gui.gameover.messages = {
 		"We just have a bad PR. I blame Hollywood",
 		"If death is bad, then Necromancy must be good",
 		"I need to collect sou- I mean Mana, I need mana",
- 		"I am not scared of falling, this is a strategic spell!",
+		"I am not scared of falling, this is a strategic spell!",
 	},
 	["GREMLIN"] = {
-		"ROTATE, REVOLVE and HYPNOTIZE",
+		"ROTATE, REVOLVE and HYPNOTISE",
 		"Come play with me!",
 		"You spin me right 'round, baby, right 'round",
 		"This staircase is too boring",
@@ -1071,6 +1136,19 @@ module.gui.gameover.messages = {
 		"Joker take some notes. Just kidding, hire me back in the Circus please!",
 		"Where did that staircase go?",
 		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
+	},
+	["NONE"] = {
+		"DON'T, CEASE and REFRAIN",
+		"Muggle betrayed us, nothing means nothing.",
+		"[insert a message here]",
+		"If you don't do anything, you cannot fail.",
+		"There is nothing on top of the staircase.",
+		"You do realise NONE was just meant to be a bug fix, right?",
+		"Jump on a morph to change your alignment. Or not - I'm just a message, not a cop.",
+		"This is the proper way to climb stairs.",
+		"My legs are killing me.",
+		"Walkspeed and Jump	power are overrated.",
+		"Technically, I am the first class created in the game.",
 	},
 
 }
@@ -1091,96 +1169,30 @@ module.gui.gameover.maxrank ={
 	["STRIDER"] = "I'll take the elevator",
 	["DEATHBRINGER"] = "Rise, rise, RISE!",
 	["OPTIMUS"] = "The Entanglement",
-	["ALIEN"] = "We are one",
+	["ILLUSION"] = "We are one",
 	["DAEMON"] = "You spin me round and round.",
+	["BLACK HOLE"] = "The Nothingness", 
 
 }
 
 module.gui.gameover.credits = {
 
-	"CRAZY STAIRS",
-	"Game conceptualized, designed and scripted by Sleazel",
-	"Help with design - cakegirlserina",
-	"Models by ZielonyLeszek",
-	"Skyboxes by @wwwtyro's generator",
-	"Data saving module, DataStore2, by Kampfkarren",
-	"Original leaderboard script by ThatTimothy",
-	"TESTERS:",
-	"Roloversion",
-	"Ondrik132",
-	"dabsforlif",
-	"iiBIuestar",
-	"BertValkyrie",
-	"TDtheTV",
-	"waragency",
-	"d4vvd",
-	"portalgunner",
-	"DragonMaster1707",
-	"wf_sh",
-	"Keysiries",
-	"jakmat2",
-	"blankeht",
-	"ben10beg",
-	"bash1234567888",
-	"cakegirlserina",
-	"TRANSLATIONS:",
-	"English - Sleazel",
-	"Polski - Sleazel",
-	"Fran ais - Alexnumbers",	
-	"Italiano - Roloversion",	
-	"Nederlandse - Sanderk35_2",
-	"Romana - NoobMaster38271",
-	"= ??? - ambronium",
-	"Portugu s - Cosmo",
-	"???? - OZEPJAH",
-	"??????? - NoobMaster38271",
-	"Ce tina - killerproXxgood",
-	"bahasa Indonesia - echocentrical",
-	"Espa ol - TDtheTV",
-	"Deutsch - 05_hallo",
-	"Slovensk  - Ondrik132",
-	"Bosanski - xootynator",
-	"SPECIAL THANKS TO:",
-	"kolcer",
-	"ThatTimothy",
-	"SerpentineKing",
-	"WhereDidTheSunGo",
-	"b3ntheplay3r2",
-	"TehEpix2",
-	"Narvog1",
-	"shark66655",
-	"MUSIC (APM catalog):",
-	"Intro music - Allure by Martin Albert Sponticcia",
-	"\"None\" endgame music - Deceived by Martin Albert Sponticcia",
-	"Muggle music - Hyperdrive by Gary Leslie Scargill, Peter Nicholas Oldroyd",	
-	"Muggle endgame music - Reflections by Milan Pilar",
-	"Patron music - Tranquilize by Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
-	"Patron endgame music - Dreamers by Joseph Alexander",
-	"Joker music - Crosswind by Martin Albert Sponticcia",
-	"Joker endgame music - Fender Stab by Steven Raymond Bush",
-	"Wicked music - Wicked by Daniel Jay Nielsen, Nathan Duvall",
-	"Wicked endgame music - Something Wicked by Cris Velasco",
-	"Spectre music - Reflections by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Spectre endgame music - Cosmic Dust by Milan Pilar",
-	"Keeper music - Automotion by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Keeper endgame music - Synth On The Highway by Richard Adrian Maxwell Preston",
-	"Hacker music - Network by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Hacker endgame music - Descending Into Oblivion by Richard Adrian Maxwell Preston",
-	"Thief music - Reaching Out by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Thief endgame music - Soaring by Richard Adrian Maxwell Preston",
-	"Archon music - Aperture by Paul Emons, Richard Goodliff, Ian Robson",
-	"Archon endgame music - Rendezvous by Paul Emons, Richard Goodliff, Ian Robson",
-	"Drifter music - Communique by Gary Leslie Scargill, Peter Nicholas Oldroyd, Richard Francis Adrian Brown",
-	"Drifter endgame music - Fragile by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Heretic music - Mother by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Heretic endgame music - Being Me by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Chameleon music - Rah by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Chameleon endgame music - Midnight Runner by Richard Adrian Maxwell Preston",
-	"Ghost Union music - Amber Garden by Paul Emons, Richard Goodliff, Ian Robso",
-	"Possessed music - Dark Souls by David Arkenstone",
-	"Joker's disco stairs music - To The Disco by Gordon Zola",
-	"Drifter's platform music - Radioactivity by Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
-	"Thanks for playing!",	
+	["common"] = {
+		"CRAZY STAIRS",
+		"Game conceptualized, designed and scripted by Sleazel",
+		"Help with design - cakegirlserina",
+		"Models by ZielonyLeszek",
+		"Skyboxes by @wwwtyro's generator",
+		"Datastore module, ProfileStore, by loleris",
+		"Thanks for playing!",	
+	},
+	["climb"] = "%s Climb Music - % by %",
+	["endgame"] = "%s Endgame Music - % by %",
+	["disco"] = "Disco stairs music - % by %",
+	["elevator"] = "Elevator music - % by %", --drifter platforms
+	["testers"] = "TESTERS:",
+	["thanks"] = "SPECIAL THANKS:",
+
 }
 
 module.static = {
@@ -1312,7 +1324,7 @@ module.static = {
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
 	["shack_1"] = "GREMLIN'S SHACK",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
+	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTISE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
@@ -1325,6 +1337,13 @@ module.static = {
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
 	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
+
+	--NEW (architect)
+	["studio_1"] = "ARCHITECT'S STUDIO",
+	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
+	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
+	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
+	--END NEW
 
 	--SHARED
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
@@ -1407,6 +1426,7 @@ module.static = {
 --TUTORIAL
 module.tutorial = {
 
+
 	["tut_big_1"] = "Welcome to Crazy Stairs!",
 	["tut_big_2"] = "First learn how to morph.",
 	["tut_big_3"] = "You are now a Patron, Patrons can create stairs.",
@@ -1452,13 +1472,10 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
-		--["restore"] = "Can be executed next to.",
 		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
 		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
 		["any"] = "Can be executed on any un-cursed intersection.",
 		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
-		--["ghosted"] = "Can be only used on normal, rigged or ghosted stairs",
-		--["deltwists"] = "Can be only used on spliced stairs.",
 		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
 		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
 		["soft"] = "Can be executed on an empty intersection only.",
@@ -1468,7 +1485,7 @@ module.guide = {
 	},
 
 	["platform"]= {
-		
+
 
 		--platform
 		["middle"] = "This spell has no special requirements.",
@@ -1479,9 +1496,8 @@ module.guide = {
 		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
 		["top"] = "Can be exectued on top platforms only.",
 	},
-	
+
 	["stairs"] ={
-		
 		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
 		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
@@ -1503,9 +1519,8 @@ module.guide = {
 		["normalrig"] = "Can be executed on normal or rigged stairs only.",
 
 	},
-	
+
 	["above"] = {
-		
 		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
 		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
 		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
@@ -1513,34 +1528,50 @@ module.guide = {
 		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
 		["slide"] = "This spell lets you bypass any un-cursed blocking stairs.",
 		["normalrig"] = "Can be executed below normal or rigged stairs only.",
-
 	},
-	
+
 	["dynamic"] = {
 		--hack, twister, bender and flipper
 		['flip'] = "Can be executed on or below normal, flipped or rigged stairs. If above execution fails for any reason, below stairs will be affected instead.",
 		['normalrig'] = "Can be executed on or below any normal or rigged stairs. Spell will be applied to both above and below stairs.",
 		['slide'] = "Can be executed on normal or rigged stairs. If there are blocking un-cursed stairs above, they will be removed.",
 	},
-	
+
 	["both"] = {
 		['restore'] = "Can be executed on any stairs or on platform's arrow with any adjacent stairs. Rank up to Admiral to restore cursed stairs.",
 		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
 		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
 
+		--NEW
+		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
+		["archarchon"] = "Archon's Platform Gate (when used on arrows) or Gate Stairs (when used on stairs)",
+		["archthief"] = "Thief's Place Stairs (when used on arrows) or Steal Stairs (when used on stairs)",
+		["archnecro"] = "Necromancer's Create Dual Stairs (when used on arrows) or Undead Stairs (when used on stairs)",
+		["archhacker"] = "Hacker's Hack-In Stairs (when used on arrows) or Escalator (when used on stairs)",
+		["archkeeper"] = "Keeper's Restore Stairs (when used on arrows) or Move/Rotate Stairs (when used on stairs)",
+		["archsplicer"] = "Splicer's Restore Twisted Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
+		["archwicked"] = "Wicked's Wall without a Link (when used on arrows) or Destroy Stairs (when used on stairs)",
+		["archjoker"] = "Joker's Create Fake Stairs (when used on arrows) or Flip/Unflip Stairs (when used on stairs)",
+		["archspectre"] = "Spectre's Create Phantom Stairs (when used on arrows) or Ghost/UnGhost Stairs (when used on stairs)",
+		["archreaver"] = "Reaver's Create Mirrored Stairs (when used on arrows) or One-Way Stairs (when used on stairs)",
+		["archheretic"] = "Heretic's Curse Intersection without Flicker (when used on arrows) or Curse/unCurse Stairs (when used on stairs)",
+
 	},
-	
+
 	['both2'] = {
-		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates."
+		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates.",
+
+		["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
+		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
-	
+
 	['anywhere'] = {
 		['anywhere'] = "This spell can be executed anywhere.",
 	},
-	
+
 	["nowhere"] = {
 		['slide'] = "This spell does not require an execution.",
-		
+
 	},
 
 }
@@ -1572,7 +1603,7 @@ module.spells.tokencosts = {
 }
 
 module.serverfeedback = {
-	 
+
 	--failed spell (local)
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough tokens!",
@@ -1592,9 +1623,6 @@ module.serverfeedback = {
 	["stashempty"] = "You have to steal stairs before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
-	["regwait"] = "You cannot cast rigs and events, while the Staircase is regenerating.",
-	["cooldownwait"] = "You can't cast rigs and events now, please wait %d seconds.",
-	["nospellsnow"] = "You cannot cast spells right now.",
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
 	["cursed"] = "These stairs are cursed!",
@@ -1603,16 +1631,16 @@ module.serverfeedback = {
 	["locked"] = "These stairs are locked.",
 	["platformlocked"] = "Target platform is locked.",
 	["normalrig"] = "This spell works only on normal or rigged stairs.",
-	["cantblock"] = "Cannot curse, there are stairs here. (might be invisible)",
-	["cantblock2"] = "Cannot curse, there are crossing stairs in the way. (might be invisible)",
 	["noway"] = "Stairs are in the way. (might be invisible)",
 	["noway2"] = "Crossing stairs are in the way. (might be invisible)",
 	["noplatform"] = "No platform found in that direction.",
-	["nopass"] = "Pass can only be created on the outer platforms.",
+	--NEW
+	["nopass"] = "This spell can only be cast on the edge of the staircase.",
+	--END NEW
 	["pass"] = "Pass is already here.",
 	["link"] = "Link is already here.",
 	["noblink"] = "You can only blink through blocking stairs.",
-	["noblink2"] = "You cannot blink on bridges and bent down stairs.",
+	["noblink2"] = "You cannot blink on stairs disconnected from the above stairs.",
 	["noflip"] = "Only normal, flipped or rigged stairs can be flipped.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
 	["wrongdirection"] = "You cannot cast this spell in that direction.",
@@ -1622,7 +1650,6 @@ module.serverfeedback = {
 	["noground"] = "This spell cannot be cast on the ground level.",
 	["oddonly"] = "This spell cannot be cast on this level.",
 	["noabove"] = "No stairs found directly above.",
-	["linklimit"] = "Only \"above spells\" can be executed on links.",
 	["lock"] = "You cannot cast spells now",
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
 	["cantgate"] = "This direction is blocked.",
@@ -1630,12 +1657,15 @@ module.serverfeedback = {
 	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
 	["nogate"] = "These stairs are not gated.",
 	["noghost"] = "Only ghosted stairs can be de-ghostified.",
-	["wrongsplit"] = "Other gate must be in the game area.",
+	--NEW
+	["wrongplace"] = "Other stairs must be in the game area.",
+	["archrace"] = "You cannot morph into an Architect while in the race.",
+	--END NEW
 	["blockedplit"] = "Can't create split, target intersection is cursed.",
 	["cursedtarget"] = "There are Cursed Stairs in that destination.",
-	["lockedsplit"] = "Cannot create split yet, other stairs are locked.",
+	["lockedother"] = "Cannot create stairs yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
-	["notwist"] = "Those stairs are not twisted.",--*
+	["notwist"] = "Those stairs are not twisted.",
 	["wrongmove"] = "Stairs cannot be moved out of game area.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
@@ -1648,7 +1678,7 @@ module.serverfeedback = {
 	--higher rank required
 	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
 	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel flicker on cursed intersection.", --TYPO
+	["infidel"] = "Rank up to Infidel to flicker on cursed intersection.",
 	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
 	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
 	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
@@ -1657,6 +1687,9 @@ module.serverfeedback = {
 	["traveller"] = "Rank up to Traveller to boost Elevators.",
 	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
 	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
+	--NEW
+	["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
+	--END NEW
 	["lich"] = "Rank up to Lich to demolish crossing stairs.",
 	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
 	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
@@ -1681,18 +1714,18 @@ module.serverfeedback = {
 	["splicerrig"] = "Stairs are twisting!",
 	["necrorig"] = "Stairs are fading!",
 	["reaverrig"] = "Stairs are now one way only!",
-	["gremlinrig"] = "You have been hypnotized!",
+	["gremlinrig"] = "You have been hypnotised!",
 	["reveal"] = "You have revealed invisible stairs!",
-	
+
 	--drifer lifts
 	["boosted"] = "Drift boosted!",
 	["noboost"] = "Cannot boost, no more platforms above.",
 	["noupplatform"] = "Cannot boost, no more platforms above.",
-	
+
 	--mana overload
 	["overstarted"] = "You have activated Mana Overload!",
 	["overended"] = "Mana Overload ended.",
-	
+
 	--mana share
 	["2minshare"] = "At least 2 mana required...",
 	["noshare"] = "No nearby players to receive mana...",
@@ -1700,16 +1733,10 @@ module.serverfeedback = {
 	["toomuch"] = "%s has maximum Mana!",
 	["shared"] = "Mana shared with %s!",
 	["received"] = "%s has shared some Mana with you!",
-	
+
 	--prompts
 	["scancel"] = "Cancel your spell to change alignments.",
 	["morph"] = "Jump here to become %s!",
-	
-	--race
-	["raceclosed"] = "Race is now closed.",
-	["stay"] = "Stay in the ring to take part in the race!",
-	["falsestart"] = "False Start.",
-	["charreset"] = "Character reset elimination.",
 
 	--misc
 	["secret"] = "Secret found!",
@@ -1718,46 +1745,37 @@ module.serverfeedback = {
 	--chameleon exceptions	
 	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
 	["champossessed"] = "You can't use chameleon while possessed.",
-	["chamhypnotized"] = "You can't use chameleon while hypnotized.",
+	["chamhypnotised"] = "You can't use chameleon while hypnotised.",
 	["chamspell"] = "Please execute or cancel current spell first.",
 	["morphpossessed"] = "You can't change alignment while possessed.",
-	["morphhypnotized"] = "You can't change alignment while hypnotized.",
-	
+	["morphhypnotised"] = "You can't change alignment while hypnotised.",
+
 	["nocode"] = "Please enter the code first.",
 	["invalid"] = "This code is invalid.",
 	["old"] = "This code is no longer active.",
 	["accepted"] = "Code accepted.",
-	
+
 	--free demos
 	["tryspectre"] = "Spectre unlocked for 10 minutes! Do not leave server.",
 	["endspectre"] = "Spectre demo will end in 1 minute!",
 	["trycham"] = "Chameleon unlocked for 10 minutes! Do not leave server.",
 	["new20pass"] = "Mana limit increased!",
 	["newchampass"] = "You can now change alignment during climb!",
+	--NEW
+	["newarchpass"] = "You can now become an ARCHITECT!",
+	["tryarch"] = "Non-VR Architect unlocked for 10 minutes! Do not leave server.",
+	["endarch"] = "Non-VR Architect demo will end in 1 minute!",
+	--END NEW
 	["newspectrepass"] = "You can now become a SPECTRE!",
 	["endcham"] = "Chameleon demo will end in 1 minute!",
 	["trymana"] = "Bigger storage unlocked for 10 minutes! Do not leave server.",
 	["endmana"] = "Bigger storage demo will end in 1 minute!",
-	
-	
+
+
 	["used"] = "Code has been used already.",
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
-	
-	--private server moderation (might be re-implemented in the future)
-	["muted"] = "% is now muted.", --TYPO (Missing "s" I think)
-	["unmuted"] =  "%s is now unmuted.",
-	["kicked"] = "%s has been kicked!",
-	["banned"] = "%s has been banned!",
-	["mekicked"] = "%s has kicked you from their server.",
-	["mebanned"] = "%s has banned you from their server.",
-	["permban"] = "%s has banned you from this game.",
-	["kick"] = "%s has kicked you from the game.",
-	["48ban"] = "%s has banned you for 48 hours.",
-	["exiled"] = "You are banned from this private server! THIS IS NOT A GAME BAN",
-	["permbanned"] = "You are banned from this game.",
-	["timeout"] = "Your ban will end in: %02i hours and %02i minutes.",
-	
+
 	--custom tower feedbacks
 	["notinrace"] = "You cannot switch to infinite mode during a race!",
 	["notinreg"] = "You cannot switch the infinite mode during a regeneration!",
@@ -1802,7 +1820,7 @@ module.serverfeedback = {
 	["min"] = "Minimum target staircases amount changed",
 	["curse"] = "Drone curse stairs chance changed",
 	["block"] = "Drone curse intersection chance changed",
-	
+
 
 
 }
@@ -1811,7 +1829,7 @@ module.serverbroadcast = {
 	["pranked"] = "%s pranked %s!",
 	["found"] = "%s has found %s's invisible stairs!",
 	["disco"] = "%s is enjoying %s's disco music.",
-	["trap"] = "%s has fallen for %s trap.",
+	["trap"] = "%s has fallen for %s's trap.",
 	["obby"] = "%s is attempting %s's obby.",
 	["default"] = "Drones are now back in the default mode.",
 	["reg"] = "Staircase is regenerating.",
@@ -1821,7 +1839,6 @@ module.serverbroadcast = {
 	["won"] = "%s has won the race!",
 	["falsestart"] = "False Start",
 	["countdown"] = "Race in %d seconds!",
-	["2min"] = "Minimum two players required for the classic race!",
 	["noplayers"] = "No racing players, infinite mode will not start!",
 	["nojoin"] = "Race is now closed - no new players can join.",
 	["allfalse"] = "All players have False Started!",
@@ -1830,6 +1847,13 @@ module.serverbroadcast = {
 	["toolate"] = "Nobody has reached the top in time!",
 	["go"] = "GO!",
 	["over"] = "Race over!",
+
+	--NEW
+	["newrace"] = "%s has started climbing — race them!",
+	["joined"] = "%s has joined the	race!",
+	["2min"] = "Nobody has challenged %s!",
+	["infstart"] = "Infinite race startedlea!"
+	--END NEW
 
 }
 
@@ -1841,7 +1865,11 @@ module.localfeedback = {
 	["unlocked"] = "Spell unlocked!",
 	["maxmana"] = "Your mana is already at maximum!",
 	["nopurchase"] = "You do not need to purchase mana in the tutorial!",
-	["hascham"] = "You already have the Chameleon Pass!",
+	--NEW
+	["limitset"] = "You have a mana limiter active - purchase prevented.", --for refill mana
+	["hasarchitect"] = "You already have the Architect Pass!",
+	--END NEW
+	["haschameleon"] = "You already have the Chameleon Pass!",
 	["hasspectre"] = "You already have the Spectre Pass!",
 	["hasmana"] = "You already have the Bigger Storage Pass!",
 	["nomuggle"] = "You thought there were secret ultimate spells for Muggle but there weren't.",
@@ -1856,34 +1884,41 @@ module.localfeedback = {
 
 }
 
+
+--NEW (redone)
 module.switchon = {
 
-	["JOKER"] = "You will no longer reveal invisible stairs.",
-	["WICKED"] = "You will no longer trigger below Wicked Rigs.",
-	["KEEPER"] = "You will no longer trigger below Keeper Rigs.",
-	["SPECTRE"] = "You will no longer trigger below Spectre Rigs.",
-	["HACKER"] = "Escalators and rig immunity on.",
-	["ARCHON"] = "Only upward splits will teleport you.",
-	["DRIFTER"] = "You will no longer trigger below Drifter Rigs.",
-	["SPLICER"] = "You will no longer trigger below Splicer Rigs.",
-	["REAVER"] = "You will no longer trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews locked.",
+	["JOKER1"] = "You will no longer reveal invisible stairs.",
+	["WICKED1"] = "You will no longer trigger below Wicked Rigs.",
+	["KEEPER1"] = "You will no longer trigger below Keeper Rigs.",
+	["SPECTRE1"] = "You will no longer trigger below Spectre Rigs.",
+	["HACKER1"] = "Escalators immunity on.",
+	["HACKER2"] = "Escalators and rig immunity on.",
+	["ARCHON1"] = "Only upward splits will teleport you.",
+	["DRIFTER1"] = "You will no longer trigger below Drifter Rigs.",
+	["SPLICER1"] = "You will no longer trigger below Splicer Rigs.",
+	["REAVER1"] = "You will no longer trigger below Reaver Rigs.",
+	["GREMLIN1"] = "Nearby Corkscrews locked.",
+	["NONE"] = "All special effects immunity on.",
 
 }
 
 module.switchoff = {
 
-	["JOKER"] = "You will now reveal invisible stairs.",
-	["WICKED"] = "You will now trigger below Wicked Rigs.",
-	["KEEPER"] = "You will now trigger below Keeper Rigs.",
-	["SPECTRE"] = "You will now trigger below Spectre Rigs.",
-	["HACKER"] = "Escalators and rig immunity off.",
-	["ARCHON"] = "All except down splits will teleport you.",
-	["DRIFTER"] = "You will now trigger below Drifter Rigs.",
-	["SPLICER"] = "You will now trigger below Splicer Rigs.",
-	["REAVER"] = "You will now trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews unlocked.",
+	["JOKER1"] = "You will now reveal invisible stairs.",
+	["WICKED1"] = "You will now trigger below Wicked Rigs.",
+	["KEEPER1"] = "You will now trigger below Keeper Rigs.",
+	["SPECTRE1"] = "You will now trigger below Spectre Rigs.",
+	["HACKER1"] = "Escalator immunity off.",
+	["HACKER2"] = "Escalator and rig immunity off.",
+	["ARCHON1"] = "All except down splits will teleport you.",
+	["DRIFTER1"] = "You will now trigger below Drifter Rigs.",
+	["SPLICER1"] = "You will now trigger below Splicer Rigs.",
+	["REAVER1"] = "You will now trigger below Reaver Rigs.",
+	["GREMLIN1"] = "Nearby Corkscrews unlocked.",
+	["NONE"] = "All special effects immunity off.",
 }
+--END NEW
 
 local timedSpell = "%s just cast the %s spell!"
 
@@ -1908,7 +1943,7 @@ module.eventspells = {
 	["keeperevent"] = "%s has just shuffled all normal stairs!",
 	["keeperaltevent"] = "%s has just restored all stairs!",
 
-	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50% chance of ghosting!",
+	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50%% chance of ghosting!",
 	["spectreevent"] = "%s has just phantom shuffled all normal stairs!",
 	["spectrealtevent"] = "%s has just ghosted all normal stairs!",
 
@@ -1940,7 +1975,7 @@ module.eventspells = {
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
 	["necromanceraltevent"] = "%s has just turned all normal stairs Soulless!",
 
-	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotize spell!",
+	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotise spell!",
 	["gremlinevent"] = "%s has just revolved all normal stairs!",
 	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
 
@@ -1958,7 +1993,7 @@ module.spells.extras = {
 	["Prompt"] = "Click a spell below, to learn how to use it",
 	["Title1"] = "Basic spells",
 	["Title2"] = "Unique ultimate spells",
-	["Title3"] = "Shared ultimate spells",
+	["Title3"] = "Shared ultimate and basic spells",
 	["ManaCost"] = "Mana Cost: %s", 
 	["TokenCost"] = "Token Cost: %s", 
 	["Special"] = "Special requirements: %s",
@@ -1968,10 +2003,12 @@ module.spells.extras = {
 	["ultimate"] = "Ultimate",
 	["unlock"] = "0 (3 to unlock)",
 	["none"] = "No special requirements",
-}
 
-module.gui.basic.jumpdelay = "jump delay"
-module.gui.basic.dancetime = "DANCE TIME!"
+	--NEW
+	["LeftHand"] = "Left Hand",
+	["RightHand"] = "Right Hand",
+
+}
 
 module.gui.mana = {
 
@@ -2010,24 +2047,19 @@ module.gui.mana = {
 	["shack"] = "SHACK",
 	["regen"] = "REGENERATE",
 	["optimus"] = "OPTIMUS",
+	--NEW
+	["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial
+	--END NEW
 
 }
 
-module.gui.hints = {
-	["bcancel"] = "Press B to cancel", --xbox b
-	["acancel"] = "Click again to cancel",
-	["ocancel"] = "Cancel other spell first", 
-}
 
 module.gui.gameover.extras = {
 
 	["noobs"] = "Tutorials are for noobs!",
 	["possessed"] = "Those annoying Heretics!",
-	["hypnotized"] = "Where am I?",
+	["hypnotised"] = "Where am I?",
 	["new"] = "New rank acquired - %s",
-	["none1"] = "WAIT! WHAT?",
-	["none2"] = "Does this game",
-	["none3"] = "have spells?"
 
 }
 
@@ -2083,7 +2115,7 @@ end
 --fill in common spell names
 for spell, desc in pairs(CommonSpellNames) do
 
-	for class, _ in pairs(SpellData[spell].IMAGES) do
+	for class, _ in pairs(TowerData.RANKED_ALIGNMENTS) do
 
 		if class == "NONE" then continue end
 
