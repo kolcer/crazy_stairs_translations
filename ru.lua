@@ -1,4 +1,4 @@
---VERSION 4.1--
+--VERSION 4.1.7--
 --RUSSIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -91,9 +91,9 @@ module.gui.shop = {
 	["300TOKENS"] = "300 Multi-Токенов (R$%d)",
 
 	--NEW
-	["SPECTRE PASS"] = "Пропуск Spectre (R$%d)",
-	["MANA PASS"] = "Пропуск +10 маны (R$%d)",
-	["CHAMELEON PASS"] = "Пропуск Chameleon (R$%d)",
+	["SPECTRE"] = "Пропуск Spectre (R$%d)",
+	["MANA"] = "Пропуск +10 маны (R$%d)",
+	["CHAMELEON"] = "Пропуск Chameleon (R$%d)",
 	["ARCHITECT"] = "Пропуск Architect (R$%d)",
 
 	--END NEW
@@ -101,7 +101,7 @@ module.gui.shop = {
 }
 
 
-module.gui.spellbar = {
+module.gui.nospellbar = {
 
 	["nocasual"] = "ТОЛЬКО УЧАСТНИКИ ГОНКИ МОГУТ ИСПОЛЬЗОВАТЬ ЗАКЛИНАНИЯ",
 	["possessed"] = "ТЫ ОДЕРЖИМ(А)! (Найди ману, чтобы освободиться)",
@@ -216,6 +216,29 @@ module.gui.results = {
 	[12] = "12-ОЕ",
 
 }
+
+
+--NEW 
+
+module.gui.menu = {
+	
+	["Codes"] = "Ввод кода",
+	["Feedback"] = "Обратная связь",
+	["Language"] = "Сменить язык",
+	["Music"] = "Проигрыватель музыки",
+	["RaceResults"] = "Результаты последней гонки",
+	["ServerSettings"] = "Настройки башни (Своя Башня)",
+	["Settings"] = "Настройки игры",
+	["Shop"] = "Магазин",
+	["Spectate"] = "Наблюдать",
+	["Stats"] = "Значки и достижения",
+	["SwitchServer"] = "Switch Tower",
+	["Tokens"] = "Токены",
+	["Tutorial"] = "Обучение",
+
+}
+
+--END NEW
 
 module.spells = {}
 
@@ -1601,7 +1624,7 @@ module.spells.tokencosts = {
 	"2 Токена",
 	"3 Токена",
 
-	["chameleonrigevent"] = "2 Мульти-Токена",
+	["chameleonrigevent"] = "2 Multi-Токена",
 	["unlock"] = "(разблокировать за 3 токена)",
 }
 
@@ -1902,7 +1925,7 @@ module.switchon = {
 	["SPLICER1"] = "Теперь ты игнорируешь Splicer Rig'и под собой.",
 	["REAVER1"] = "Теперь ты игнорируешь Reaver Rig'и под собой.",
 	["GREMLIN1"] = "Ближайшие Закрученные Лестницы остановлены.",
-	["NONE"] = "Иммунитет ото всех особых эффектов включён.",
+	["NONE"] = "Иммунитет ко всем особым эффектам включён.",
 
 }
 
@@ -2138,6 +2161,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
