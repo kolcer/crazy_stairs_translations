@@ -233,12 +233,12 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Bangun Tangga",
 	["restore"] = "Panggil Bola", 
-	["split"] = "Rebuild Opposite",
+	["split"] = "Bangun Ulang Tangga Terbalik",
 	["shrinkabove"] = "Ciutkan Tangga di Atas",
 	["link"] = "Buat Jembatan Energi",
 	["portal"] = "Buat Portal",
 
-	["summoner"] = "Pembangung",
+	["summoner"] = "Pembangun",
 	["patronevent"] = "Berkat Tangga",
 	["patronaltevent"] = "Penyiutan",
 
@@ -251,14 +251,14 @@ module.spells.names = {
 	["trap"] = "Buat Platform Jebakan",
 
 	["flipper"] = "Pembalik",
-	["jokerevent"] = "This is why we hate wizards",
-	["jokeraltevent"] = "Flip Them All",
+	["jokerevent"] = "Sihir Persembunyian Gila",
+	["jokeraltevent"] = "Kesalahan Pisang (Balik Semua Tangga)",
 
 	--WICKED
 	["destroy"] = "Hancurkan Tangga",
 	["destroyabove"] = "Hancurkan Tangga di Atas",
 	["bend"] = "Bengkok Tangga ke Atas",
-	["damage"] = "Damage Above Stairs",
+	["damage"] = "Cacati Tangga di Atas",
 	["flatten"] = "Bengkok Tangga Opposite ke Bawah",
 	["wall"] = "Buat Barikade" ,
 
@@ -267,40 +267,40 @@ module.spells.names = {
 	["wickedaltevent"] = "Pembersihan",
 
 	--KEEPER
-	["move"] = "Move Stairs",
+	["move"] = "Pindah Tangga",
 	["rotate"] = "Rotate Stairs",
 	["moveup"] = "Move Stairs Up",
 	["movedown"] = "Pulih Tangga",
 	["moverandom"] = "Random Above Move",
 	["rig"] = "Random Move",
 
-	["ascension"] = "Ascension",
-	["keeperevent"] = "Reshuffle",
+	["ascension"] = "Penaik",
+	["keeperevent"] = "Blender Menara WKWKWKWKWKWKKWK",
 	["keeperaltevent"] = "Pemulihan",
 
 	--SPECTRE
 	["phantom"] = "Buat Tangga Berhantu",
 	["ghost"] = "Hantui Tangga di Atas",
 	["shadow"] = "Hantui Tangga",
-	["horizontal"] = "Horizontal Teleport",
-	["random"] = "Random Teleport",
-	["vertical"] = "Vertical Teleport",
+	["horizontal"] = "Teleport ke Atas",
+	["random"] = "Teleport secara Acak",
+	["vertical"] = "Teleport secara Vertikal",
 
 	["traveller"] = "Shimmering",
-	["spectreevent"] = "Phantom Shuffle",
+	["spectreevent"] = "Phantom Shuffle pee",
 	["spectrealtevent"] = "Alam Æther",
 
 	--HACKER
-	["dash"] = "Dash",
-	["blink"] = "Blink",
-	["swap"] = "Swap",
+	["dash"] = "Flyhack",
+	["blink"] = "Noclip menembus Tangga di Atas",
+	["swap"] = "Teleport ke Hantumu",
 	["slide"] = "Eskalator",
 	["slideup"] = "Hack Tangga",
 	["glitch"] = "Glitch Tangga",
 
 	["hack"] = "Operator Eskalator",
 	["hackerevent"] = "Menara Mal",
-	["hackeraltevent"] = "Eskalator Malas",
+	["hackeraltevent"] = "Eskalator Arus",
 
 	--THIEF
 	["steal"] = "Curi Tangga",
@@ -310,9 +310,9 @@ module.spells.names = {
 	["sidepass"] = "Letakkan Jalan Pintas",
 	["drop"] = "Enyahkan Tangga",
 
-	["heist"] = "Heist",
+	["heist"] = "Pencuri",
 	["thiefevent"] = "Dunia Datar",
-	["thiefaltevent"] = "Mega Bypass",
+	["thiefaltevent"] = "Mega Bypass pee",
 
 	--ARCHON
 	["splitup"] = "Buka Portal ke Atas",
@@ -324,7 +324,7 @@ module.spells.names = {
 
 	["splitter"] = "Pembuka Portal",
 	["archonevent"] = "Labirin Portal",
-	["archonaltevent"] = "Division",
+	["archonaltevent"] = "Naik Turun",
 
 	--DRIFTER
 	["indrift"] = "Selancar",
@@ -343,24 +343,24 @@ module.spells.names = {
 	["curse"] = "Kutuk Tangga",
 	["curseabove"] = "Kutuk Tangga di Atas",
 	["curseinter"] = "Lompat dan Kunci Simpang",
-	["autodown"] = "Raise Schism",
-	["autoup"] = "Schism Opposite Down",
+	["autodown"] = "Pêcah Tangga Naik",
+	["autoup"] = "Pêcah Tangga Opposite Bawah",
 
-	["malediction"] = "Malediction",
-	["hereticevent"] = "Pêrpêcahan",
+	["malediction"] = "Pêmbuat",
+	["hereticevent"] = "Skisma",
 	["hereticaltevent"] = "Kutuk Mênara",
 
 	--SPLICER
 	["twistup"] = "Sambung Tangga ke Atas",
-	["twistside"] = "Splice Parallel Stairs",
-	["twistrotate"] = "Splice Adjacent Stairs",
+	["twistside"] = "Sambung Tangga ke Parallel",
+	["twistrotate"] = "Sambung Tangga ke Adjacent",
 	["canceltwist"] = "Luruskan Tangga Terplintir",
 	["split2"] = "Belah Tangga",
 	["splitalt"] = "Pisahkan Tangga",
 
-	["twister"] = "Pengguna 1000 Degree Knife",
+	["twister"] = "1000 Degree Knife",
 	["splicerevent"] = "Koneksi Tangga",
-	["spliceraltevent"] = "Bisect",
+	["spliceraltevent"] = "Perpisahan",
 
 	--necro
 	["createdual"] = "Buat Tangga Kembar",
@@ -382,7 +382,7 @@ module.spells.names = {
 	["merge"] = "Gabung Reaver",
 	["oneway"] = "Tangga Satu Arah",
 
-	["reflection"] = "Reflection",
+	["reflection"] = "Pencermin",
 	["reaverevent"] = "Arah Ketat",
 	["reaveraltevent"] = "Naik Terpaksa",
 
@@ -401,11 +401,11 @@ module.spells.names = {
 
 	--CHAMELEON
 	["ditch"] = "Tangga Menyilang",
-	["warp"] = "Stair Fleksibel",
+	["warp"] = "Tangga Fleksibel",
 	["chamdown"] = "Turunkan Tangga",
-	["chamdraw"] = "Below Drawbridge",
+	["chamdraw"] = "Jembatan Angkat Turun",
 	["chamswap"] = "Jadi Hantu",
-	["chamdrawabove"] = "Above Drawbridge",
+	["chamdrawabove"] = "Jembatan Angkat Naik",
 
 	--NEW
 
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
