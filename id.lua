@@ -1107,7 +1107,7 @@ module.gui.gameover.messages = {
 		"Keep surfing",
 	},
 	["SPLICER"] = {
-		"TWIST, SPLICE and CONNECT",
+		"PELINTIR, SAMBUNG dan BELAH",
 		"Jangan pernah jalan lurus untuk terlalu lama!",
 		"Campurkan hidupmu!",
 		"Kekacauan orang lain adalah urusan Splicer.",
@@ -1119,7 +1119,7 @@ module.gui.gameover.messages = {
 		"Tangga ini terlalu lurus.",
 	},
 	["REAVER"] = {
-		"REFLECT, REPLACE and MERGE",
+		"PANTUL, GANTI dan GABUNG",
 		"Cermin hanyalah pintu keluar masuk.",
 		"Tangga ini cuma ilusi.",
 		"Kamu bisa melihat jiwamu di dalam cermin.",
@@ -1131,7 +1131,7 @@ module.gui.gameover.messages = {
 		"Jangan muncul diam-diam gitu dong!",
 	},
 	["NECROMANCER"] = {
-		"FOLLOW, REVIVE and BENEFIT",
+		"IKUT, BANGKIT dan UNTUNG",
 		"Kita sebenarnya bukan menghantuimu, Kita hanya ingin bersahabat saja.",
 		"Jiwamu MILIKKU!",
 		"Ikuti hantuku. Percaya deh!",
@@ -1143,7 +1143,7 @@ module.gui.gameover.messages = {
  		"Aku nggak takut jatuh, ini mantra strategi, serius!",
 	},
 	["GREMLIN"] = {
-		"ROTATE, REVOLVE and HYPNOTISE",
+		"PUTAR, KISAR dan HIPNOTIS",
 		"Mari bermain denganku!",
 		"Kamu muter-muter terus, sayang, muter terus!",
 		"Tangga ini ngebosenin banget!",
@@ -1152,7 +1152,7 @@ module.gui.gameover.messages = {
 		"Dokter nyuruh aku rileks, dan beginilah caraku rileks.",
 		"Joker, belajar dulu gih. Bercanda, tolong terima aku lagi di Sirkus!",
 		"Tangga itu ke mana tadi?",
-		"WAAAAAAAAAAAAAAAHHH!!!",
+		"HORÉÉÉÉÉÉÉÉÉÉÉÉ!!!",
 	},
 	["NONE"] = {
 		"DON'T, CEASE and REFRAIN",
@@ -1276,88 +1276,88 @@ module.static = {
 	["vr_11"] = "To change an alingment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
 
 	["home_1"] = "RUMAH MUGGLE",
-	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
+	["home_2"] = "MOTO KAMI:\nWALK\nJUMP\nAND\nFALL",
 	["home_3"] = "PRO:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nKONTRA:\nNo spells\nGets stuck easily",
 	["home_4"] = "“Kami belum punya mantra kayak gitu waktu gamenya masih dalam alpha!”\nkata pendiri kami",
 
 	["oasis_1"] = "OASIS CHAMELEON",
-	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
+	["oasis_2"] = "MOTO KAMI:\nCOPY\nIMITATE\nAND\nSURPRISE",
 	["oasis_3"] = "PRO:\nCan change alignments anywhere, anytime\nKONTRA:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "“Aku terlalu malas untuk membuat mantra yang baru.”\nkata pendiri kami",
 
 	["nexus_1"] = "PERHUBUNGAN HERETIC",
-	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
+	["nexus_2"] = "MOTO KAMI:\nYOU\nSHALL\nNOT\nPASS",
 	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "“Melarang ilmu gelap itu seperti melarang keseruan.”\nkata pendiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
-	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
+	["guild_2"] = "MOTO KAMI:\nBORROW\nUSE\nAND\nRETURN",
 	["guild_3"] = "PRO:\nMana efficient\nVersatile\nKONTRA:\nNeeds to steal stairs\nCannot destroy crossing stairs",
 	["guild_4"] = "“Itu sebenarnya meminjam.”\nkata pendiri kami",
 
 	["nether_1"] = "NERAKA SPECTRE",
-	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
+	["nether_2"] = "MOTO KAMI:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
 	["nether_3"] = "PRO:\nFast spells\nPerfect for solo play\nKONTRA:\nCosts Robux\nNot recommended for teams",
 	["nether_4"] = "“Teleport itu aman dong.”\nkata pendiri kami (TIDAK HADIR)",
 
 	["study_1"] = "TELAAH ARCHON",
-	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
+	["study_2"] = "MOTO KAMI:\nOPEN\nPORTAL\n???\nPROFIT",
 	["study_3"] = "PRO:\nUseful Rig\nConfuses opponents\nKONTRA:\nHardest to learn\nRequires planning",
 	["study_4"] = "“I used to rule this staircase.”\nkata pendiri kami",
 
 	["haven_1"] = "SURGA PATRON",
-	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
+	["haven_2"] = "MOTO KAMI:\nHELP\nPROTECT\nAND\nCREATE",
 	["haven_3"] = "PRO:\nEasiest to learn\nTeam player\nKONTRA:\nUses a lot of Mana\nMay attract leechers",
 	["haven_4"] = "“Those noobs need our help!”\nkata pendiri kami",
 
 	["shelter_1"] = "TENDA DRIFTER",
-	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
+	["shelter_2"] = "MOTO KAMI:\nSURF\nRIDE\nAND\nGLIDE",
 	["shelter_3"] = "PRO:\nVersatile\nTeam player\nKONTRA:\nRequires some parkour skills\nTricky in pro towers",
 	["shelter_4"] = "“Who needs stairs anyway? We're in space!”\nkata pendiri kami",
 
 	["circus_1"] = "SIRKUS JOKER",
-	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
+	["circus_2"] = "MOTO KAMI:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
 	["circus_3"] = "PRO:\nMade for trolling\nFlips are very useful\nKONTRA:\nExpensive spells\nYou may ruin friendships",
 	["circus_4"] = "“This staircase is a joke.”\nkata pendiri kami",
 
 	["base_1"] = "PANGKALAN KEEPER",
-	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
+	["base_2"] = "MOTO KAMI:\nMOVE\nROTATE\nAND\nCONTROL",
 	["base_3"] = "PRO:\nCan restore stairs\nCan reuse stairs\nKONTRA:\nRequires parkour to use correctly\nUseless without stairs",
 	["base_4"] = "“Stop messing up my staircase!”\nkata pendiri kami",
 
 	["chamber_1"] = "RUANG WICKED",
-	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
+	["chamber_2"] = "MOTO KAMI:\nPREVENT\nBLOCK\nAND\nDESTROY",
 	["chamber_3"] = "PRO:\nCan destroy any stairs\nCan purge whole staircase\nKONTRA:\nOver-reliant on stairs",
 	["chamber_4"] = "“I'm not evil, there are just too many stairs.”\nkata pendiri kami",
 
 	["backdoor_1"] = "PINTU BELAKANG HACKER",
-	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
+	["backdoor_2"] = "MOTO KAMI:\nEXPLOIT\nGLITCH\nAND\nBREAK",
 	["backdoor_3"] = "PRO:\nFastest alignment\nHard to follow\nKONTRA:\nOver-reliant on stairs\nUseless in teams",
 	["backdoor_4"] = "“Fair play? There's no such thing.”\nkata pendiri kami",
 
 	["hub_1"] = "PUSAT SPLICER",
-	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
+	["hub_2"] = "MOTO KAMI:\PELINTIR\nSAMBUNG\nDAN\nBELAH",
 	["hub_3"] = "PRO:\nVersatil;\nCocok untuk berkelompok.\nKONTRA:\nAgak membingungkan;\nMembutuhkan waktu untuk dipelajari.",
 	["hub_4"] = "“Jangan pernah jalan lurus untuk terlalu lama.”\nkata pendiri kami",
 
 	["shack_1"] = "GUBUK GREMLIN",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTISE",
+	["shack_2"] = "MOTO KAMI:\nPUTAR\nKISAR\nDAN\nHIPNOTIS",
 	["shack_3"] = "PRO:\nTidak ada;\nSerius, jangan dipakai.\nKONTRA:\nSemuanya akan membencimu;\nSEMUANYA.",
 	["shack_4"] = "“Mari bermain denganku.”\nkata pendiri kami",
 
 	["mirror_1"] = "CERMIN REAVER",
-	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
+	["mirror_2"] = "MOTO KAMI:\nPANTUL\nGANTI\nDAN\nGABUNG",
 	["mirror_3"] = "PRO:\nCermin dapat digunakan pendaki lain.\nKONTRA:\nMekanik gabung dan pisah mungkin membingungkan.",
 	["mirror_4"] = "“Cermin hanyalah pintu keluar masuk.”\nkata pendiri kami",
 
 	["grave_1"] = "PUSARA NECROMANCER",
-	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
+	["grave_2"] = "MOTO KAMI:\nIKUT\nBANGKIT\nDAN\UNTUNG",
 	["grave_3"] = "PRO:\nBerfungsi dengan baik jika pendaki lain mengikuti hantumu;\nMantra membantumu dan pendaki lain juga.\nKONTRA:\nKelas paling boros mana;\nRumit dalam mengamati dan mengikuti hantumu.",
 	["grave_4"] = "“Kami sebenarnya bukan menghantuimu, kami hanya ingin bersahabat saja.”\nkata pendiri kami",
 
 	--NEW (architect)
 	["studio_1"] = "STUDIO ARCHITECT",
-	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
+	["studio_2"] = "MOTO KAMI:\nDESIGN\nIMPLEMENT\nAND\nTEST",
 	["studio_3"] = "PRO:\nAbility to Fly\nDoes not use Mana\nKONTRA:\nCost Robux\nCannot acquire climbs",
 	["studio_4"] = "“Now I rule this staircase!”\nkata pendiri kami",
 	--END NEW
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
