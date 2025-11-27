@@ -217,6 +217,23 @@ module.gui.results = {
 
 }
 
+module.gui.menu = {
+
+
+	["Codes"] = "Entri Kode",
+	["Feedback"] = "Kirim Masukan Game",
+	["Language"] = "Penerjemahan Game",
+	["Music"] = "Kotak Juke",
+	["RaceResults"] = "Hasil Balapan Terakhir",
+	["ServerSettings"] = "Pengaturan Menara (Menara Kustom)",
+	["Settings"] = "Pengaturan Game",
+	["Shop"] = "Toko Tangga Gila",
+	["Spectate"] = "Tonton Pendaki Lain",
+	["Stats"] = "Lencana dan Pencapaianmu",
+	["SwitchServer"] = "Ubah Menara",
+	["Tokens"] = "Simpanan Tokenmu",
+	["Tutorial"] = "Main Latihan",
+
 module.spells = {}
 
 --SPELL NAMES
@@ -268,14 +285,14 @@ module.spells.names = {
 
 	--KEEPER
 	["move"] = "Pindah Tangga",
-	["rotate"] = "Rotate Stairs",
-	["moveup"] = "Move Stairs Up",
+	["rotate"] = "Putar Tangga",
+	["moveup"] = "Pindah Tangga ke Atas",
 	["movedown"] = "Pulih Tangga",
 	["moverandom"] = "Gerak Tangga di Atas secara Acak",
 	["rig"] = "Gerak Tangga secara Acak",
 
 	["ascension"] = "Penaik",
-	["keeperevent"] = "Blender Menara WKWKWKWKWKWKKWK",
+	["keeperevent"] = "Blender Menara",
 	["keeperaltevent"] = "Pemulihan",
 
 	--SPECTRE
@@ -286,7 +303,7 @@ module.spells.names = {
 	["random"] = "Teleport secara Acak",
 	["vertical"] = "Teleport secara Vertikal",
 
-	["traveller"] = "Shimmering",
+	["traveller"] = "Penjelajah",
 	["spectreevent"] = "Imaginasi Tangga",
 	["spectrealtevent"] = "Alam Æther",
 
@@ -352,8 +369,8 @@ module.spells.names = {
 
 	--SPLICER
 	["twistup"] = "Sambung Tangga ke Atas",
-	["twistside"] = "Sambung Tangga ke Parallel",
-	["twistrotate"] = "Sambung Tangga ke Adjacent",
+	["twistside"] = "Sambung Tangga ke Sejajar",
+	["twistrotate"] = "Sambung Tangga ke Sebelah",
 	["canceltwist"] = "Luruskan Tangga Terpelintir",
 	["split2"] = "Belah Tangga",
 	["splitalt"] = "Pisahkan Tangga",
@@ -402,7 +419,7 @@ module.spells.names = {
 	--CHAMELEON
 	["ditch"] = "Tangga Menyilang",
 	["warp"] = "Tangga Fleksibel",
-	["chamdown"] = "Turunkan Tangga",
+	["chamdown"] = "Pindah Tangga ke Bawah",
 	["chamdraw"] = "Jembatan Angkat Turun",
 	["chamswap"] = "Jadi Hantu",
 	["chamdrawabove"] = "Jembatan Angkat Naik",
@@ -418,16 +435,16 @@ module.spells.names = {
 	["archarchon"] = "Buka Portal pada Tangga atau Platform",
 	["archthief"] = "Curi atau Kembali tangga",
 	["archnecro"] = "Bangun Kembar atau Bunuh tangga",
-	["archhacker"] = "Eskalator atau Hack Ttangga",
+	["archhacker"] = "Eskalator atau Hack tangga",
 	["archkeeper"] = "Pindah atau Pulih tangga",
 	["archsplicer"] = "Sambung atau Luruskan tangga",
-	["archwicked"] = "Blokir atau Hancurkan tangga",
+	["archwicked"] = "Blokir atau Hancurkan",
 	["archgremlin"] = "Kisar Tangga atau Platform",
-	["archjoker"] = "Bangun Palsu atau Balik tangga",
+	["archjoker"] = "Palsu atau Balik",
 	["archdrifter"] = "Hanyutkan atau Lift",
-	["archspectre"] = "Phantom or Ghost stairs gue sedih waaa",
-	["archreaver"] = "Mirrored or One-way stairs gue mau tidur",
-	["archheretic"] = "Curse intersection or stairs gue mau kue kukis",
+	["archspectre"] = "Berhantu atau Hantui Tangga ",
+	["archreaver"] = "Tangga Cermin atau Satu Arah",
+	["archheretic"] = "Kutuk Tangga atau Simpang",
 
 	--END NEW
 
@@ -457,7 +474,7 @@ module.spells.descriptions = {
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
 	["patronevent"] = fill ..  "Created stairs will be normal.",
 	["patronaltevent"] = event .. "the Shrink spell.",
-	["patronmode"] = string.format(mode,"Patron","Patron Rig","Shrink Spell"),
+	["patronmode"] = string.format(mode,"Patron","Rig Mana","Shrink Spell"),
 	["patronrefill"] = overload,
 	["patronunion"] = union,
 
@@ -473,7 +490,7 @@ module.spells.descriptions = {
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
 	["jokerevent"] = event .. "the Invisiblity.",
 	["jokeraltevent"] = event .. "the Flip spell.",
-	["jokermode"] = string.format(mode,"Joker","Joker Rig","Invisible Spell"),
+	["jokermode"] = string.format(mode,"Joker","Rig Balik","Invisible Spell"),
 	["jokerrefill"] = overload,
 	["jokerunion"] = union,
 
@@ -489,7 +506,7 @@ module.spells.descriptions = {
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
 	["wickedevent"] = event .. "the Destroy spell. Regeneration will not be triggered.",
 	["wickedaltevent"] = "This is an Event spell. It will destroy all the stairs and curses in the game. No exceptions. Regeneration will be triggered.",
-	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Bend Spell"),
+	["wickedmode"] =  string.format(mode,"Wicked","Rig Runtuh","Bend Spell"),
 	["wickedrefill"] = overload,
 	["wickedunion"] = union,
 
@@ -505,7 +522,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to Operator, for any rigs that you trigger to never go down. Rank up to Sentinel to have an option not to trigger them.",
 	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
 	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["keepermode"] =  string.format(mode,"Keeper","Rig Gerak","Random Move Spell"),
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -521,7 +538,7 @@ module.spells.descriptions = {
 	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to Vision to have an option to walk on Spectre Rigs without triggering them.",
 	["spectreevent"] = event .. "the Ghosted Random Move spell. Before executing you can choose soft ghosted or forced ghosted mode. In soft ghosted mode this spell will move or rotate normal stairs in random direction, without destroying anything in the process. In forced ghost mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
 	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to Aether to walk on ghostified stairs. Ghost Union can also be used to walk on ghostified stairs.",
-	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Soft Ghosted Random Move Spell"),
+	["spectremode"] = string.format(mode,"Spectre","Rig 50% Hantu","Soft Ghosted Random Move Spell"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
@@ -537,7 +554,7 @@ module.spells.descriptions = {
 	["hackerrigevent"] = rig .. "the Hacker Rig. Stairs, once triggered it will teleport player and stairs to a different spot on the same level. Only one player will be teleported. Rank up to REAPER to have an option to walk on Hacker Rigs without triggering them.",
 	["hackerevent"] = event .. "the Random Escalator spell.",
 	["hackeraltevent"] = event ..  "the Upward Escalator spell.",
-	["hackermode"] =  string.format(mode,"Hacker","Hacker Rig","Random Escalator spell"),
+	["hackermode"] =  string.format(mode,"Hacker","Rig Glitch","Random Escalator spell"),
 	["hackerrefill"] = overload,
 	["hackerunion"] =  union,
 
@@ -553,7 +570,7 @@ module.spells.descriptions = {
 	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
 	["thiefevent"] = event .. "the Flatten Stairs spell.",
 	["thiefaltevent"] = "This is an Event spell. It will create bypass in each inward north and south intersection. If the intersection is cursed, bypass will not be created.",
-	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Steal or Place spell"),
+	["thiefmode"] = string.format(mode,"Thief","Rig Dicuri","Steal or Place spell"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
 
@@ -569,7 +586,7 @@ module.spells.descriptions = {
 	["archonrigevent"] = rig .. "the Archon Rig. Stairs, once triggered, will teleport the player to the direction they were walking in, crossing any blocking un-cursed stairs. After triggering, stairs will become normal again.",
 	["archonevent"] = event .. "the Random Gate spell.",
 	["archonaltevent"] = event .. "the Upward Gate spell.",
-	["archonmode"] = string.format(mode,"Archon","Archon Rig","Random Gate spell"),
+	["archonmode"] = string.format(mode,"Archon","Rig Fase","Random Gate spell"),
 	["archonrefill"] = overload,
 	["archonunion"] =  union,
 
@@ -585,7 +602,7 @@ module.spells.descriptions = {
 	["drifterrigevent"] = rig .. "the Drifter Rig. Stairs, once triggered, will spin around in random direction. Rank up to VOYAGER to gain immunity to this rig.",
 	["drifterevent"] = event .. "the Random Drift spell.",
 	["drifteraltevent"] = event .. "the Lift Above Stairs spell.",
-	["driftermode"] = string.format(mode,"Drifter","Drifter Rig","Random Drift spell"),
+	["driftermode"] = string.format(mode,"Drifter","Rig Putar","Random Drift spell"),
 	["drifterrefill"] = overload,
 	["drifterunion"] = union,
 
@@ -602,7 +619,7 @@ module.spells.descriptions = {
 	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
-	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
+	["hereticmode"] = string.format(mode,"Heretic","Rig Kutuk","Random Schism spell"),
 	["hereticrefill"] = overload,
 	["hereticunion"] =  union,
 
@@ -618,7 +635,7 @@ module.spells.descriptions = {
 	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
 	["splicerevent"] = event .. "the Random Splice spell.",
 	["spliceraltevent"] = event .. "the Split Stairs spell.",
-	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
+	["splicermode"] = string.format(mode,"Splicer","Rig Sambung","Random Splice spell"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
@@ -633,7 +650,7 @@ module.spells.descriptions = {
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
 	["necromancerevent"] = fill ..  "Created stairs will be soul-less and will fade away after a minute.",
 	["necromanceraltevent"] = event .. "the Remove Soul spell. Such stairs will fade away after a minute.",
-	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Remove Soul spell"),
+	["necromancermode"] = string.format(mode,"Necromancer","Rig Bunuh","Remove Soul spell"),
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
@@ -649,7 +666,7 @@ module.spells.descriptions = {
 	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will turn into one-way stairs with random direction blocked. Rank up to WIGHT to have an option to avoid below Reaver Rigs.",
 	["reaverevent"] = event .. "the Random One-Way Stairs spell.",
 	["reaveraltevent"] = event .. "the Upward One-Way Stairs spell.",
-	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Random One-Way Stairs spell."),
+	["reavermode"] = string.format(mode,"Reaver","Rig Satu Arah","Random One-Way Stairs spell."),
 	["reaverrefill"] = overload,
 	["reaverunion"] = union,
 
@@ -665,7 +682,7 @@ module.spells.descriptions = {
 	["gremlinrigevent"] = rig .. "the Gremlin Rig. Stairs, once triggered, will hypnotise the triggering player. They will have to find Mana to be released. Hypnotised players have their controls reversed. Rank up to HOBGOBLIN to be immune to Gremlin Rigs.",
 	["gremlinevent"] = event .. "the Random Revolve Stairs spell.", 
 	["gremlinaltevent"] = fill .. "Created stairs will be of Tram variety.",
-	["gremlinmode"] = string.format(mode,"Gremlin","Gremlin Rig","Random Revolve Stairs spell"),
+	["gremlinmode"] = string.format(mode,"Gremlin","Rig Hipnotis","Random Revolve Stairs spell"),
 	["gremlinrefill"] = overload,
 	["gremlinunion"] = union,
 
@@ -856,9 +873,9 @@ module.gui.ranks = {
 	},
 	["NONE"] = {
 		[1] = "None cannot acquire any ranks. Jump on a morph in the middle of the map to change your alignment.",
-		[2] = "I am serious, NONE does not have any rank perks.",
+		[2] = "Serius, NONE tidak punya perk peringkat apa pun.",
 		[3] = "You are just wasting your time, you could at least rank up MUGGLE instead.",
-		[4] = "MUGGLE gets walkspeed boosts, you know? None does not get anything.",
+		[4] = "Muggle dapat boost walkspeed, kan? None tak dapat apa saja.",
 		[5] = "If you think there is a secret rank perk at the end, you must really underestimate my laziness.",
 		[6] = "Maybe you just like to torture yourself?",
 		[7] = "People at discord are lying, there is no secret perk at 50 climbs.",
@@ -884,7 +901,7 @@ module.gui.ranks = {
 
 module.gui.multitokens = {
 
-	["info"] = "You need 3 tokens to unlock a spell.",
+	["info"] = "Kamu butuh 3 token untuk membuka sebuah mantra.",
 
 }
 
@@ -1712,7 +1729,7 @@ module.serverfeedback = {
 	["notthiefrig"] = "%s is no longer a thief - no mana stolen.",
 	["leftthiefrig"] = "Thief has left the game -  no mana stolen.",
 	["hereticrig"] = "Kamu menjadi kesurupan!",
-	["archonrig"] = "Phase teleport!",
+	["archonrig"] = "Fase teleport!",
 	["drifterrig"] = "Tangga ini sekarang diputar!",
 	["splicerrig"] = "Tangga ini sekarang dipelintir!",
 	["necrorig"] = "Stairs are fading!",
@@ -2138,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
