@@ -354,7 +354,7 @@ module.spells.names = {
 	["twistup"] = "Sambung Tangga ke Atas",
 	["twistside"] = "Sambung Tangga ke Parallel",
 	["twistrotate"] = "Sambung Tangga ke Adjacent",
-	["canceltwist"] = "Luruskan Tangga Terplintir",
+	["canceltwist"] = "Luruskan Tangga Terpelintir",
 	["split2"] = "Belah Tangga",
 	["splitalt"] = "Pisahkan Tangga",
 
@@ -817,32 +817,32 @@ module.gui.ranks = {
 		[9] = "You will get 1 extra Mana everytime someone is possessed.",
 	},
 	["SPLICER"] = {
-		[4] = "You can now restore disconnected stairs from platform.",
-		[5] = "Your Restore Twist spell is now free.",
-		[6] = "You have the option to avoid below Splicer Rigs.",
-		[8] = "You can now splice already spliced stairs.",
-		[9] = "You will get 1 Mana everytime you restore a Splice.",
+		[4] = "Kamu bisa meluruskan tangga terputus dari sebuah platform.",
+		[5] = "Mantra LURUSKAN TANGGA TERSAMBUNG kamu sekarang menjadi gratis.",
+		[6] = "Kamu punya pilihan untuk menghindar memicu di bawah Rig Splicer.",
+		[8] = "Kamu bisa menyambung tangga yang sudah terpelintir.",
+		[9] = "Kamu akan dapat bonus mana setiap kali kamu meluruskan tangga yang tersambung.",
 	},
 	["REAVER"] = {
-		[4] = "You can now use your Merge spell to unmerge.",
-		[5] = "Your floor mirrors will last 50% longer. (15s big, 9s small)",
-		[6] = "You have the option to avoid below Reaver Rigs.",
-		[8] = "You can now demolish crossing stairs, while casting Mirrored Stairs.",
-		[9] = "You are now immune to one-way stairs.",
+		[4] = "Kamu bisa dapat menggunakan mantra gabung untuk memisah.",
+		[5] = "Platform cermin kamu akan berlangsung 50% lebih lama. (15d besar, 9d kecil)",
+		[6] = "Kamu sekarang memiliki opsi untuk mengabaikan Rig Reaver yang ada di bawah kamu.",
+		[8] = "Kamu bisa menghancurkan tangga berhalangan, ketika menggunakan mantra Buat Tangga Cermin..",
+		[9] = "Tangga satu arah tidak akan mempengaruhimu.",
 	},
 	["NECROMANCER"] = {
-		[4] = "Create Dual Stairs will ignore cursed intersections and stairs on ghost's platform.",
-		[5] = "If you use a Revival Point on the top floor, it will bring the orb to where the point is placed.",
-		[6] = "Copy Platform spell will remove curses if it needs to.",
-		[8] = "You can demolish crossing stairs, while casting Dual Stairs.",
-		[9] = "Regenerate restores 10 mana instead of 6, and will restore 5 mana to those nearby your ghost.",
+		[4] = "Mantra BUAT TANGGA KEMBAR akan mengabaikan tangga terkutuk dan tangga lain pada platform hantu kamu.",
+		[5] = "Jika kamu memakai Titik Kebangkitan pada lantai teratas, Orb akan berpindah ke lokasi Titik Kebangkitan tersebut.",
+		[6] = "Mantra SALIN PLATFORM HANTUMU akan menghapus kutukan jika dibutuhkan.",
+		[8] = "Kamu bisa menghancurkan tangga berhalangan, ketika memakai mantra Buat Tangga Kembar.",
+		[9] = "Mantra REPRODUKSI memberikan 10 mana dibandingkan 6, dan akan memberi 5 mana kepada pemain di sekitar hantu kamu.",
 	},
 	["GREMLIN"] = {
-		[4] = "You can now see all Gremlin Traps.",
-		[5] = "You can now jump on platform to call all adjacent Trams.",
-		[6] = "You are now immune to Gremlin Rigs.",
-		[8] = "You are now immune to Gremlin Traps.",
-		[9] = "You can now control Corkscrew Stairs via a toggle. This may not work if there is another Daemon nearby.",
+		[4] = "Kamu bisa mendeteksi Jebakan Gremlin.",
+		[5] = "Kamu bisa melompat pada platform ke memanggil Funikular berdekatan.",
+		[6] = "Kamu telah menjadi kebal terhadap Rig Gremlin.",
+		[8] = "Kamu telah menjadi kebal terhadap Jebakan Gremlin.",
+		[9] = "Kamu bisa mengendalikan Tangga Pilin menggunakan sebuah tombol. Namun, ini mungkin tidak dapat berfungsi jika ada Daemon lain di sekitar.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Your jump cooldown is reduced by 0.125s.",
@@ -1260,89 +1260,89 @@ module.static = {
 
 	["home_1"] = "RUMAH MUGGLE",
 	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
-	["home_3"] = "PROS:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nCONS:\nNo spells\nGets stuck easily",
+	["home_3"] = "PRO:\nWalkspeed and jump power bonus at higher ranks\nBragging rights\nKONTRA:\nNo spells\nGets stuck easily",
 	["home_4"] = "“Kami belum punya mantra kayak gitu waktu gamenya masih dalam alpha!”\nkata pendiri kami",
 
 	["oasis_1"] = "OASIS CHAMELEON",
 	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
-	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
+	["oasis_3"] = "PRO:\nCan change alignments anywhere, anytime\nKONTRA:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "“Aku terlalu malas untuk membuat mantra yang baru.”\nkata pendiri kami",
 
 	["nexus_1"] = "PERHUBUNGAN HERETIC",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
-	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
+	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "“Melarang ilmu gelap itu seperti melarang keseruan.”\nkata pendiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
 	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
-	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
+	["guild_3"] = "PRO:\nMana efficient\nVersatile\nKONTRA:\nNeeds to steal stairs\nCannot destroy crossing stairs",
 	["guild_4"] = "“Itu sebenarnya meminjam.”\nkata pendiri kami",
 
 	["nether_1"] = "NERAKA SPECTRE",
 	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
-	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
+	["nether_3"] = "PRO:\nFast spells\nPerfect for solo play\nKONTRA:\nCosts Robux\nNot recommended for teams",
 	["nether_4"] = "“Teleport itu aman dong.”\nkata pendiri kami (TIDAK HADIR)",
 
 	["study_1"] = "TELAAH ARCHON",
 	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
-	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
-	["study_4"] = "“I used to rule this staircase.”\nour founder's quote",
+	["study_3"] = "PRO:\nUseful Rig\nConfuses opponents\nKONTRA:\nHardest to learn\nRequires planning",
+	["study_4"] = "“I used to rule this staircase.”\nkata pendiri kami",
 
 	["haven_1"] = "SURGA PATRON",
 	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
-	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
-	["haven_4"] = "“Those noobs need our help!”\nour founder's quote",
+	["haven_3"] = "PRO:\nEasiest to learn\nTeam player\nKONTRA:\nUses a lot of Mana\nMay attract leechers",
+	["haven_4"] = "“Those noobs need our help!”\nkata pendiri kami",
 
 	["shelter_1"] = "TENDA DRIFTER",
 	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
-	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
-	["shelter_4"] = "“Who needs stairs anyway? We're in space!”\nour founder's quote",
+	["shelter_3"] = "PRO:\nVersatile\nTeam player\nKONTRA:\nRequires some parkour skills\nTricky in pro towers",
+	["shelter_4"] = "“Who needs stairs anyway? We're in space!”\nkata pendiri kami",
 
 	["circus_1"] = "SIRKUS JOKER",
 	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
-	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
-	["circus_4"] = "“This staircase is a joke.”\nour founder's quote",
+	["circus_3"] = "PRO:\nMade for trolling\nFlips are very useful\nKONTRA:\nExpensive spells\nYou may ruin friendships",
+	["circus_4"] = "“This staircase is a joke.”\nkata pendiri kami",
 
 	["base_1"] = "PANGKALAN KEEPER",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
-	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
-	["base_4"] = "“Stop messing up my staircase!”\nour founder's quote",
+	["base_3"] = "PRO:\nCan restore stairs\nCan reuse stairs\nKONTRA:\nRequires parkour to use correctly\nUseless without stairs",
+	["base_4"] = "“Stop messing up my staircase!”\nkata pendiri kami",
 
 	["chamber_1"] = "RUANG WICKED",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
-	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
-	["chamber_4"] = "“I'm not evil, there are just too many stairs.”\nour founder's quote",
+	["chamber_3"] = "PRO:\nCan destroy any stairs\nCan purge whole staircase\nKONTRA:\nOver-reliant on stairs",
+	["chamber_4"] = "“I'm not evil, there are just too many stairs.”\nkata pendiri kami",
 
 	["backdoor_1"] = "PINTU BELAKANG HACKER",
 	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
-	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
-	["backdoor_4"] = "“Fair play? There's no such thing.”\nour founder's quote",
+	["backdoor_3"] = "PRO:\nFastest alignment\nHard to follow\nKONTRA:\nOver-reliant on stairs\nUseless in teams",
+	["backdoor_4"] = "“Fair play? There's no such thing.”\nkata pendiri kami",
 
 	["hub_1"] = "PUSAT SPLICER",
 	["hub_2"] = "OUR MOTTO:\nTWIST\nSPLICE\nAND\nCONNECT",
-	["hub_3"] = "PROS:\nVersatile\nGood in teams\nCONS:\nBit confusing.\nTakes time to learn",
-	["hub_4"] = "“Never go in a straight line for too long.”\nour founder's quote",
+	["hub_3"] = "PRO:\nVersatil;\nCocok untuk berkelompok.\nKONTRA:\nAgak membingungkan;\nMembutuhkan waktu untuk dipelajari.",
+	["hub_4"] = "“Jangan pernah jalan lurus untuk terlalu lama.”\nkata pendiri kami",
 
 	["shack_1"] = "GUBUK GREMLIN",
 	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTISE",
-	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
-	["shack_4"] = "“Come play with me.”\nour founder's quote",
+	["shack_3"] = "PRO:\nTidak ada;\nSerius, jangan dipakai.\nKONTRA:\nSemuanya akan membencimu;\nSEMUANYA.",
+	["shack_4"] = "“Mari bermain denganku.”\nkata pendiri kami",
 
 	["mirror_1"] = "CERMIN REAVER",
 	["mirror_2"] = "OUR MOTTO:\nREFLECT\nREPLACE\nAND\nMERGE",
-	["mirror_3"] = "PROS:\nMirrors can be used by other players\nCONS:\nMerge and unmerge mechanic may be confusing.",
-	["mirror_4"] = "“Mirrors are just doorways.”\nour founder's quote",
+	["mirror_3"] = "PRO:\nCermin dapat digunakan pendaki lain.\nKONTRA:\nMekanik gabung dan pisah mungkin membingungkan.",
+	["mirror_4"] = "“Cermin hanyalah pintu keluar masuk.”\nkata pendiri kami",
 
 	["grave_1"] = "PUSARA NECROMANCER",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
-	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "“We aren’t actually haunting you, we just wanna be friends.”\nour founder's quote",
+	["grave_3"] = "PRO:\nBerfungsi dengan baik jika pendaki lain mengikuti hantumu;\nMantra membantumu dan pendaki lain juga.\nKONTRA:\nKelas paling boros mana;\nRumit dalam mengamati dan mengikuti hantumu.",
+	["grave_4"] = "“Kami sebenarnya bukan menghantuimu, kami hanya ingin bersahabat saja.”\nkata pendiri kami",
 
 	--NEW (architect)
 	["studio_1"] = "STUDIO ARCHITECT",
 	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
-	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
-	["studio_4"] = "“Now I rule this staircase!”\nour founder's quote",
+	["studio_3"] = "PRO:\nAbility to Fly\nDoes not use Mana\nKONTRA:\nCost Robux\nCannot acquire climbs",
+	["studio_4"] = "“Now I rule this staircase!”\nkata pendiri kami",
 	--END NEW
 
 	--SHARED
@@ -1714,7 +1714,7 @@ module.serverfeedback = {
 	["hereticrig"] = "Kamu menjadi kesurupan!",
 	["archonrig"] = "Phase teleport!",
 	["drifterrig"] = "Tangga ini sekarang diputar!",
-	["splicerrig"] = "Tangga ini sekarang diplintir!",
+	["splicerrig"] = "Tangga ini sekarang dipelintir!",
 	["necrorig"] = "Stairs are fading!",
 	["reaverrig"] = "Stairs are now one way only!",
 	["gremlinrig"] = "Kamu menjadi dihipnotis!",
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
