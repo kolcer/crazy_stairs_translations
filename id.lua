@@ -271,8 +271,8 @@ module.spells.names = {
 	["rotate"] = "Rotate Stairs",
 	["moveup"] = "Move Stairs Up",
 	["movedown"] = "Pulih Tangga",
-	["moverandom"] = "Random Above Move",
-	["rig"] = "Random Move",
+	["moverandom"] = "Gerak Tangga di Atas secara Acak",
+	["rig"] = "Gerak Tangga secara Acak",
 
 	["ascension"] = "Penaik",
 	["keeperevent"] = "Blender Menara WKWKWKWKWKWKKWK",
@@ -287,7 +287,7 @@ module.spells.names = {
 	["vertical"] = "Teleport secara Vertikal",
 
 	["traveller"] = "Shimmering",
-	["spectreevent"] = "Phantom Shuffle pee",
+	["spectreevent"] = "Imaginasi Tangga",
 	["spectrealtevent"] = "Alam Æther",
 
 	--HACKER
@@ -312,12 +312,12 @@ module.spells.names = {
 
 	["heist"] = "Pencuri",
 	["thiefevent"] = "Dunia Datar",
-	["thiefaltevent"] = "Mega Bypass pee",
+	["thiefaltevent"] = "Mega-Pintasan",
 
 	--ARCHON
 	["splitup"] = "Buka Portal ke Atas",
-	["splitrotate"] = "Create Rotated Gate",
-	["splitside"] = "Create Straight Gate",
+	["splitrotate"] = "Buka Portal ke Sebelah",
+	["splitside"] = "Buka Portal ke Samping",
 	["splitrandom"] = "Buka Portal secara Acak",
 	["cancelsplit"] = "Tutup Portal",
 	["splitforward"] = "Buka Portal Platform",
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
