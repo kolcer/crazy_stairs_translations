@@ -11,8 +11,8 @@ module.gui = {}
 
 module.gui.basic = {
 
-	["default"] = "DEFAULT",
-	["validate"] = "VALIDATE",
+	["default"] = "ASALI",
+	["validate"] = "TEBUS",
 
 }
 
@@ -339,7 +339,7 @@ module.spells.names = {
 	["drifteraltevent"] = "Pengankatan",
 
 	--HERETIC
-	["createcursed"] = "Bangun Tangga Terkutuk",
+	["createcursed"] = "Bangun Tangga Têrkutuk",
 	["curse"] = "Kutuk Tangga",
 	["curseabove"] = "Kutuk Tangga di Atas",
 	["curseinter"] = "Lompat dan Kunci Simpang",
@@ -347,8 +347,8 @@ module.spells.names = {
 	["autoup"] = "Schism Opposite Down",
 
 	["malediction"] = "Malediction",
-	["hereticevent"] = "Perpecahan",
-	["hereticaltevent"] = "Kutuk Menara",
+	["hereticevent"] = "Pêrpêcahan",
+	["hereticaltevent"] = "Kutuk Mênara",
 
 	--SPLICER
 	["twistup"] = "Sambung Tangga ke Atas",
@@ -591,9 +591,9 @@ module.spells.descriptions = {
 
 
 	--HERETIC
-	["createcursed"] = "This spell allows you to create cursed stairs in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
-	["curse"] = "This spell will curse below stairs. Use this spell again to uncurse stairs.",
-	["curseabove"] = "This spell will curse above stairs. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
+	["createcursed"] = "Mantra ini mêmpêrbolèhkan kamu untuk mêmbangun tangga têrkutuk di arah yang têlah ditêntukan. Tangga yang bêrhalangan akan dihancurkan. Naiklah kê pêringkat Banished untuk mênghancurkan tangga têrkutuk yang bêrhalangan.",
+	["curse"] = "Mantra untuk mêngutuk tangga yang bêrada di bawah. Mênggunakannya lagi untuk mêmbébaskan tangga yang têrkutuk.",
+	["curseabove"] = "Mantra untuk mêngutuk tangga yang bêrada di atas. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "This spell will allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
@@ -1582,27 +1582,27 @@ module.guide = {
 
 
 module.spells.manacosts = {
-	"0 mana",
-	"1 mana",
-	"2 mana",
-	"3 mana",
-	"4 mana", 
-	"0 mana + tangga",
-	"1 mana + tangga",
-	"2 mana + tangga",
-	"3 mana + tangga", 
+	"0 Mana",
+	"1 Mana",
+	"2 Mana",
+	"3 Mana",
+	"4 Mana", 
+	"0 Mana + Tangga",
+	"1 Mana + Tangga",
+	"2 Mana + Tangga",
+	"3 Mana + Tangga", 
 	"", 
-	"10 mana" 
+	"10 Mana" 
 }
 
 module.spells.tokencosts = {
 
-	"1 token",
-	"2 token",
-	"3 token",
+	"1 Token",
+	"2 Token",
+	"3 Token",
 
-	["chameleonrigevent"] = "2 multitoken",
-	["unlock"] = "(unlock for 3 tokens)",
+	["chameleonrigevent"] = "2 Multitoken",
+	["unlock"] = "(buka dengan 3 token)",
 }
 
 module.serverfeedback = {
@@ -2138,6 +2138,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
