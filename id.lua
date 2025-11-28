@@ -23,7 +23,7 @@ module.gui.switcher = {
 	["refresh"] = "memperbarui…",
 	["fail"] = "GAGAL MEMPERBARUI! :[",
 	--NEW
-	["refreshbutton"] = "REFRESH",
+	["refreshbutton"] = "PERBARUI",
 	["failed"] = "Teleport gagal! :[",
 	["classic"] = "Menara Klasik",
 	["pro"] = "Menara Pro",
@@ -42,28 +42,28 @@ module.gui.serversettings = {
 	["DroneFix"] = "Drone memulihkan tangga",
 	["DroneRemove"] = "Drone membuka kunci simpang terkutuk",
 	["DroneUnCurse"] = "Drone membebaskan tangga terkutuk",
-	["DroneMove"] = "Drones move stairs in default mode",
-	["DroneSpin"] = "Drones spin stairs in default mode",
-	["DroneSpeed"] = "Drone travel speed (level/second)",
-	["DroneDelay"] = "Drone spin duration (seconds)",
-	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
-	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
-	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
+	["DroneMove"] = "Drone memindahkan tangga dalam mode umum",
+	["DroneSpin"] = "Drone memutar tangga dalam mode umum",
+	["DroneSpeed"] = "Kecepatan Drone (tataran/detik)",
+	["DroneDelay"] = "Durasi putaran Drone (detik)",
+	["DroneMax"] = "Jumlah tangga maksimum (Drone akan menghancur secara eksklusif di atas batas ini)",
+	["DroneMin"] = "Jumlah tangga minimum (Drone akan membuat secara eksklusif di bawah batas ini)",
+	["DroneBlock"] = "Kemungkinan simpang terkunci untuk setiap adanya simpang kosong (persen)",
+	["DroneCurse"] = "Kemungkinan tangga terkutuk untuk adanya tangga biasa dan pembuat (persen)",
 
 	["Tower"] = "PENGATURAN MENARA",
 	["TowerReadOnly"] = "PENGATURAN MENARA (hanya baca)",
-	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
-	["CasualPlayers"] = "Casual players allowed to cast spells",
-	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
+	["InfMode"] = "Modê Infinit (tidak dapat diganti saat balapan atau régénêrasi)",
+	["CasualPlayers"] = "Pendaki kasual dapat melakukan mantra",
+	["Regeneration"] = "Pembuatan tangga otomatis setelah Pembersihan dilaksanakan seorang Wicked (tidak dapat bekerja dalam mode Infinit)",
 	["EvenLevels"] = "Tataran genap dibataskan",
 	["OrbMoves"] = "Bola akhir mengganti posisinya",
-	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
-	["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
-	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
-	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
-	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
+	["InfRegeneration"] = "Pembuatan tangga otomatis dalam server baru, tataran menara diganti dan setelah balap Infinit",
+	["TowerLevels"] = "Tataran menara (atau tataran aktif dalam mode Infinit). Tidak dapat diganti saat balap atau regenerasi",
+	["RaceDuration"] = "Durasi balap maksimum. Tidak akan mempengaruhi balapan yang sedang berjalan. (detik)",
+	["InfStart"] = "Interval pertama ronde mode Infinit (2 tataran akan dibuat setiap ronde) (detik)",
+	["InfReduction"] = "Pengurangan interval mode Infinit (setiap ronde akan dikurangi dengan) (detik)",
+	["InfMin"] = "Durasi interval minimum mode Infinit (detik)",
 
 	--NEW KEY
 	["CooldownTime"] = "Jangka pendinginan Acara dan Rig (detik)",
@@ -921,24 +921,24 @@ module.gui.settings = {
 	["Gameplay"] = "PENGATURAN GAMEPLAY",
 	["Interface"] = "PENGATURAN ANTARMUKA",
 
-	["Billboard"] = "Show Your own avatar billboard",
-	["Rank"] = "Show Your Overall Rank in the avatar billboard",
-	["Morph"] = "Show the morph animation when using Chameleon ranked up to Deceiver or higher",
-	["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
+	["Billboard"] = "Tunjukkan papan avatar diri sendiri",
+	["Rank"] = "Tunjukkan peringkatmu dalam papan avatar",
+	["Morph"] = "Tunjukkan animasi pergantian ketika menggunakan Chameleon peringkat hingga Deceiver+",
+	["ManaLimit"] = "Kurangi kapasitas mana kamu untuk tantangan ekstra",
 
-	["KChoices"] = "Tunjukkan seleksi memilih arah untuk Keeper, when using move spells",
-	["HChoices"] = "Tunjukkan seleksi memilih arah untuk Hacker, when using the escalator spell",
-	["AChoices"] = "Tunjukkan seleksi memilih arah untuk Archon, when using gate spells",
-	["RChoices"] = "Tunjukkan seleksi memilih arah untuk Reaver, when using the one-way stirs spell",
-	["SChoices"] = "Tunjukkan seleksi memilih arah untuk Splicer, when using splice spells",
-	["GChoices"] = "Tunjukkan seleksi memilih arah untuk Gremlin, when using the revolve platform spell",
+	["KChoices"] = "Tunjukkan seleksi memilih arah untuk Keeper, ketika menggunakan mantra Gerak",
+	["HChoices"] = "Tunjukkan seleksi memilih arah untuk Hacker, ketika menggunakan mantra Eskalator",
+	["AChoices"] = "Tunjukkan seleksi memilih arah untuk Archon, ketika menggunakan mantra Portal",
+	["RChoices"] = "Tunjukkan seleksi memilih arah untuk Reaver, ketika menggunakan mantra Satu Arah",
+	["SChoices"] = "Tunjukkan seleksi memilih arah untuk Splicer, ketika menggunakan mantra Sambung",
+	["GChoices"] = "Tunjukkan seleksi memilih arah untuk Gremlin, ketika menggunakan mantra Kisar",
 
 
-	["List"] = "Show animated playerlist rather than standard Roblox Leaderboard",
-	["SwitchBack"] = "Auto switch back to basic spells after an executed ultimate spell",
-	["SafeCancel"] = "Show confirmation window when cancelling a timed ultimate spell",
-	["Multi"] = "Show multitoken window selection after the climb, when you still have unspent MultiTokens",
-	["UISize"] = "Adjust the maximum width of the User Interface (%)"
+	["List"] = "Tunjukkan daftar pemain animasi",
+	["SwitchBack"] = "Otomatis ganti lagi ke mantra dasar sesudah melaksanakan mantra pokok",
+	["SafeCancel"] = "Tunjukkan window konfirmasi ketika membatalkan mantra pokok timed",
+	["Multi"] = "Tunjukkan window memilih Multitoken setelah mendaki, kalau kamu masih memiliki Multitoken yang belum terpakai",
+	["UISize"] = "Sesuaikan lebar maksimum Antarmuka (%)"
 	--END NEW
 
 }
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
