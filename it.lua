@@ -681,7 +681,7 @@ local CommonPerksInsertALignment = {
 
 local CommonPerksInsertTimedSpell = {
 	[3] = "Il tuo contenitore Mana viene riempito completamente quando qualcuno (tu compreso) lancia il sortilegio %s.",
-	[7] = "Il sortilegio %s dura il 50% di più (90s).",
+	[7] = "Il sortilegio %s dura il 50%% di più (90s).",
 }
 
 module.gui.ranks = {
