@@ -1,4 +1,4 @@
---VERSION 4.1--
+--VERSION 4.1.7--
 --HUNGARIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -198,6 +198,25 @@ module.gui.results = {
 	[12] = "12.",
 
 }
+
+module.gui.menu = {
+	
+	["Codes"] = "Kód érvényesítése",
+	["Feedback"] = "Visszajelzés küldése",
+	["Language"] = "Nyelvek",
+	["Music"] = "Zenedoboz",
+	["RaceResults"] = "Előző verseny eredménye",
+	["ServerSettings"] = "Torony beállításai (Custom Tower)",
+	["Settings"] = "Játék beállításai",
+	["Shop"] = "Bolt",
+	["Spectate"] = "Másik játékosok megfigyelése",
+	["Stats"] = "Statisztikáid és teljesítményeid",
+	["SwitchServer"] = "Torony váltása",
+	["Tokens"] = "Zsetonjaid",
+	["Tutorial"] = "Kiképzés",
+
+}
+
 
 module.spells = {}
 
@@ -1013,7 +1032,7 @@ module.gui.gameover.messages = {
 		"Csak ne lépj rá a lopás rigekre, nem kell egy lángelme ehhez",
 		"Láttád te egyáltalán hogy loptam valamit?",
 		"Olyan vagyok, mint Robin Hood - A gazdagoktól lopok és a pénzt magamnak adom",
-		"Nem minthogyha valaki észrevenné, ha hiányzik egy lépcső",
+		"Nem mintha bárki is észrevenné, ha hiányzik egy lépcső",
 		"A lépcsők újraelosztása megakadályozza az anarchiát",
 	},
 	["HACKER"] = {
@@ -1341,7 +1360,7 @@ module.static = {
 	["muggle_lead"] = "KITARTÓ MUGGLEÖK",
 	["muggle_ranks"] = "MUGGLE RANGOK",
 
-	["hacker_lead"] = "TITKOSÍTOT HACKEREK",
+	["hacker_lead"] = "TITKOSÍTOTT HACKEREK",
 	["hacker_ranks"] = "HACKER RANGOK",
 
 	["wicked_lead"] = "ERŐSZAKOS WICKEDEK",
@@ -1875,7 +1894,7 @@ module.switchoff = {
 	["NONE"] = "Különleges hatásokra való immunitás kikapcsolva.",
 }
 
-local timedSpell = "%s megvarázsolta a %s varázslatot!"
+local timedSpell = "%s megvarázsolta az osztálya időzített varázslatát (%s)!"
 
 module.timedspells = {}
 
@@ -2086,6 +2105,9 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
+
+
 
 
 
