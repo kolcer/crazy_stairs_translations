@@ -105,7 +105,7 @@ module.gui.stats = {
 	["2124480172"] = "Joker Trükkje",
 	["2124637294"] = "Drifter Útja",
 	["2124517579"] = "Thief Rablása",
-	["4464785885277417"] = "Splicer Csavarja",
+	["4464785885277417"] = "Splicer Csavara",
 	["2124480174"] = "Keeper Rendje",
 	["2124637293"] = "Archon Kapcsolata",
 	["2124517578"] = "Hacker Kihasználása",
@@ -206,7 +206,7 @@ module.gui.menu = {
 	["Language"] = "Nyelvek",
 	["Music"] = "Zenedoboz",
 	["RaceResults"] = "Előző verseny eredménye",
-	["ServerSettings"] = "Torony beállításai (Custom Tower)",
+	["ServerSettings"] = "Torony beállításai (Csak az Egyedi Toronyban működik.)",
 	["Settings"] = "Játék beállításai",
 	["Shop"] = "Bolt",
 	["Spectate"] = "Másik játékosok megfigyelése",
@@ -2105,6 +2105,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
