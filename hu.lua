@@ -23,7 +23,7 @@ module.gui.switcher = {
 	["fail"] = "NEM SIKERÜLT ÚJRA TÖLTENI!",
 	["refreshbutton"] = "ÚJRATÖLTÉS",
 	["failed"] = "A teleportálás sikertelen!",
-	["classic"] = "Klasszikus Tower",
+	["classic"] = "Klasszikus Torony",
 	["pro"] = "Profi Torony",
 	["custom"] = "Egyedi Torony",
 	["noVR"] = "VR Nélküli Torony",
@@ -2105,6 +2105,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
