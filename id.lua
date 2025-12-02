@@ -53,7 +53,7 @@ module.gui.serversettings = {
 
 	["Tower"] = "PENGATURAN MENARA",
 	["TowerReadOnly"] = "PENGATURAN MENARA (hanya baca)",
-	["InfMode"] = "Modê Infinit (tidak dapat diganti saat balapan atau régénêrasi)",
+	["InfMode"] = "Mode Infinit (tidak dapat diganti saat balapan atau regenerasi)",
 	["CasualPlayers"] = "Pendaki kasual dapat melakukan mantra",
 	["Regeneration"] = "Pembuatan tangga otomatis setelah Pembersihan dilaksanakan seorang Wicked (tidak dapat bekerja dalam mode Infinit)",
 	["EvenLevels"] = "Tataran genap dibataskan",
@@ -276,7 +276,7 @@ module.spells.names = {
 	["destroyabove"] = "Hancurkan Tangga di Atas",
 	["bend"] = "Bengkok Tangga ke Atas",
 	["damage"] = "Cacati Tangga di Atas",
-	["flatten"] = "Bengkok Tangga Opposite ke Bawah",
+	["flatten"] = "Bengkok Tangga Terbalik ke Bawah",
 	["wall"] = "Buat Barikade" ,
 
 	["bender"] = "Pembengkok",
@@ -353,7 +353,7 @@ module.spells.names = {
 
 	["riser"] = "Operator Lift",
 	["drifterevent"] = "Badai Tangga",
-	["drifteraltevent"] = "Pengankatan",
+	["drifteraltevent"] = "Pengangkatan",
 
 	--HERETIC
 	["createcursed"] = "Bangun Tangga Têrkutuk",
@@ -361,7 +361,7 @@ module.spells.names = {
 	["curseabove"] = "Kutuk Tangga di Atas",
 	["curseinter"] = "Lompat dan Kunci Simpang",
 	["autodown"] = "Pêcah Tangga Naik",
-	["autoup"] = "Pêcah Tangga Opposite Bawah",
+	["autoup"] = "Pêcah Tangga Têrbalik Bawah",
 
 	["malediction"] = "Pêmbuat",
 	["hereticevent"] = "Skisma",
@@ -377,7 +377,7 @@ module.spells.names = {
 
 	["twister"] = "1000 Degree Knife",
 	["splicerevent"] = "Koneksi Tangga",
-	["spliceraltevent"] = "Perpisahan",
+	["spliceraltevent"] = "Katana Instan", --- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
 
 	--necro
 	["createdual"] = "Buat Tangga Kembar",
@@ -1074,15 +1074,15 @@ module.gui.gameover.messages = {
 		"Escalators for life",
 	},
 	["HERETIC"] = {
-		"YOU SHALL NOT PASS",
-		"Banning black magic is like banning fun",
-		"Possess people. Keep the Overmind satiated",
-		"Death and decay",
-		"Dark ritual complete",
-		"We should not restrict ourselves",
-		"Get possessed",
-		"Choose the dark side - It's easier than Illumination",
-		"Why would I care if people get stranded?",
+		"KAMU TAK DAPAT LÉWAT",
+		"Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruan.",
+		"Rasuki orang. Pêrtahankan dalam mêlayani Overmind.",
+		"Kêmatian dan mêmbusuk.",
+		"Ritual kêlam sêlêsai.",
+		"Kita tidak harus mêmbatasi kita.",
+		"Mampus kêrasukan!",
+		"Pilihlah sisi yang gêlap—ini lêbih gampang dari Iluminasi.",
+		"Kênapa aku harus pêduli kêtika orang lagi têrsêsat?",
 	},
 	["ARCHON"] = {
 		"OPEN PORTAL, ???, PROFIT",
@@ -1152,7 +1152,7 @@ module.gui.gameover.messages = {
 		"Dokter nyuruh aku rileks, dan beginilah caraku rileks.",
 		"Joker, belajar dulu gih. Bercanda, tolong terima aku lagi di Sirkus!",
 		"Tangga itu ke mana tadi?",
-		"HORÉÉÉÉÉÉÉÉÉÉÉÉ!!!",
+		"HOREEEEEEEEEEEE!!!",
 	},
 	["NONE"] = {
 		"DON'T, CEASE and REFRAIN",
@@ -1286,9 +1286,9 @@ module.static = {
 	["oasis_4"] = "“Aku terlalu malas untuk membuat mantra yang baru.”\nkata pendiri kami",
 
 	["nexus_1"] = "PERHUBUNGAN HERETIC",
-	["nexus_2"] = "MOTO KAMI:\nYOU\nSHALL\nNOT\nPASS",
+	["nexus_2"] = "MOTO KAMI:\nKAMU\nTAK\nDAPAT\nLÉWAT",
 	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "“Melarang ilmu gelap itu seperti melarang keseruan.”\nkata pendiri kami",
+	["nexus_4"] = "“Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruan.”\nkata pendiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
 	["guild_2"] = "MOTO KAMI:\nBORROW\nUSE\nAND\nRETURN",
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
