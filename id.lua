@@ -28,7 +28,7 @@ module.gui.switcher = {
 	["classic"] = "Menara Klasik",
 	["pro"] = "Menara Pro",
 	["custom"] = "Menara Kustom",
-	["noVR"] = "Menara bebas VR",
+	["noVR"] = "Menara Bebas VR",
 	--END NEW
 
 
@@ -75,26 +75,26 @@ module.gui.serversettings = {
 module.gui.shop = {
 
 	--NEW
-	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.",
+	["architect"] = "Pas Architect memperbolehkan kamu untuk menjadi Architect tanpa perangkat jemala VR.",
 	--END NEW
 
-	["chameleon"] = "Chameleons can change alignment during climb.",
-	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
-	["mana"] = "Expand your Mana storage capacity by 10 points.",
+	["chameleon"] = "Chameleon bisa menganti kelas saat pendakian.",
+	["spectre"] = "Spectre adalah sebuah kelas berbasis teleportasi, terbaik buat solo play.",
+	["mana"] = "Luaskan kapasitas manamu dengan 10 poin",
 
-	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
-	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
-	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
+	["3tokens"] = "Buka sebuah mantra atau laksanakan hingga 3 mantra pokok.",
+	["30tokens"] = "Buka 10 mantra atau laksanakan hingga 30 mantra pokok.",
+	["300tokens"] = "Cukup untuk membuka semua mantra dengan sisa 93 token.",
 
 	["3TOKENS"] = "3 Multitoken (R$%d)",
 	["30TOKENS"] = "30 Multitoken (R$%d)",
 	["300TOKENS"] = "300 Multitoken (R$%d)",
 
 	--NEW
-	["SPECTRE"] = "Spectre game pass (R$%d)",
-	["MANA"] = "20 Mana Storage game pass (R$%d)",
-	["CHAMELEON"] = "Chameleon game pass (R$%d)",
-	["ARCHITECT"] = "Architect game pass (R$%d)",
+	["SPECTRE"] = "Pas Spectre (R$%d)",
+	["MANA"] = "Pas Kapasitas Mana 20 (R$%d)",
+	["CHAMELEON"] = "Pas Chameleon (R$%d)",
+	["ARCHITECT"] = "Pas Architect (R$%d)",
 
 	--END NEW
 
@@ -162,8 +162,8 @@ module.gui.stats = {
 
 module.gui.questions = {
 	["cancel"] = "Apakah kamu mau membakalkan mantra terbatas ini? Token tidak akan dikembalikan.",
-	["tutorial"]= "Apakah kamu ingin main latihan?",
-	["skip"] = "Apakah kamu ingin melewaiti latihan?",
+	["tutorial"]= "Apakah kamu ingin belajar di latihan?",
+	["skip"] = "Apakah kamu ingin melewati latihan?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
 }
 --END NEW
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
