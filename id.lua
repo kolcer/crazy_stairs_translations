@@ -1386,25 +1386,25 @@ module.static = {
 	["over_owner"] = "PRANK ME berarti adalah pembuat Tangga Gila (Sleazel)",
 
 	--OTHER
-	["muggle_lead"] = "HASTY MUGGLES",
+	["muggle_lead"] = "MUGGLE TERCEPAT",
 	["muggle_ranks"] = "PERINGKAT MUGGLE",
 
 	["hacker_lead"] = "ENCRYPTED HACKERS",
 	["hacker_ranks"] = "PERINGKAT HACKER",
 
-	["wicked_lead"] = "VIOLENT WICKEDS",
+	["wicked_lead"] = "WICKED TERKASAR",
 	["wicked_ranks"] = "PERINGKAT WICKED",
 
-	["keeper_lead"] = "PREPARED KEEPERS",
+	["keeper_lead"] = "KEEPER TERSIAGA",
 	["keeper_ranks"] = "PERINGKAT KEEPER",
 
-	["joker_lead"] = "CRAZY JOKERS",
+	["joker_lead"] = "JOKER TERGILA",
 	["joker_ranks"] = "PERINGKAT JOKER",
 
 	["drifter_lead"] = "RAPID DRIFTERS",
 	["drifter_ranks"] = "PERINGKAT DRIFTER",
 
-	["patron_lead"] = "NOBLE PATRONS",
+	["patron_lead"] = "PATRON TERHORMAT",
 	["patron_ranks"] = "PERINGKAT PATRON",
 
 	["archon_lead"] = "AGILE ARCHONS",
@@ -1413,25 +1413,25 @@ module.static = {
 	["spectre_lead"] = "FLYING SPECTRES",
 	["spectre_ranks"] = "PERINGKAT SPECTRE",
 
-	["thief_lead"] = "STEALTHY THIEVES",
+	["thief_lead"] = "THIEF PALING TERSEMBUNYI",
 	["thief_ranks"] = "PERINGKAT THIEF",
 
-	["heretic_lead"] = "RUTHLESS HERETICS",
-	["heretic_ranks"] = "PERINGKAT HERETIC",
+	["heretic_lead"] = "HERETIC TÊRKÊJAM",
+	["heretic_ranks"] = "PÊRINGKAT HERETIC",
 
-	["necromancer_lead"] = "UNDEAD NECROMANCERS",
+	["necromancer_lead"] = "NECROMANCER PALING TERBANGKIT",
 	["necromancer_ranks"] = "PERINGKAT NECROMANCER",
 
-	["splicer_lead"] = "TWISTED SPLICERS",
+	["splicer_lead"] = "SPLICER PALING TEKNIS",
 	["splicer_ranks"] = "PERINGKAT SPLICER",
 
-	["reaver_lead"] = "REFLECTED REAVERS",
+	["reaver_lead"] = "REAVER TERDALAM",
 	["reaver_ranks"] = "PERINGKAT REAVER",
 
-	["gremlin_lead"] = "LUCKY GREMLINS",
+	["gremlin_lead"] = "GREMLIN TERBAHAGIA",
 	["gremlin_ranks"] = "PERINGKAT GREMLIN",
 
-	["chameleon_lead"] = "SWIFT CHAMELEONS",
+	["chameleon_lead"] = "CHAMELEON TERLAJU",
 	["chameleon_ranks"] = "PERINGKAT CHAMELEON",
 
 	["dailies"] = "REKOR HARI INI",
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
