@@ -377,7 +377,7 @@ module.spells.names = {
 
 	["twister"] = "1000 Degree Knife",
 	["splicerevent"] = "Koneksi Tangga",
-	["spliceraltevent"] = "Katana Instan", --- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
+	["spliceraltevent"] = "Katana Instan", -- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
 
 	--necro
 	["createdual"] = "Buat Tangga Kembar",
@@ -1996,8 +1996,8 @@ module.eventspells = {
 	["necromanceraltevent"] = "%s has just turned all normal stairs Soulless!",
 
 	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotise spell!",
-	["gremlinevent"] = "%s has just revolved all normal stairs!",
-	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
+	["gremlinevent"] = "%s baru saja mengisarkan semua tangga biasa!",
+	["gremlinaltevent"] = "%s baru saja memanggil macet Funikular dalam menara!",
 
 	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
 	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
@@ -2043,7 +2043,7 @@ module.gui.mana = {
 	["steal"] = "MENCURI",
 	["gift"] = "DIBERI HADIAH",
 	["share"] = "DIBAGI",
-	["prank"] = "MENGEPRANK",
+	["prank"] = "NGEPRANK",
 	["possession"] = "POSSESSION",
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
@@ -2068,7 +2068,7 @@ module.gui.mana = {
 	["regen"] = "REPRODUKSI",
 	["optimus"] = "OPTIMUS",
 	--NEW
-	["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial
+	["tutorial"] = "LATIHAN",--player mana is drained upon starting tutorial
 	--END NEW
 
 }
@@ -2076,15 +2076,15 @@ module.gui.mana = {
 
 module.gui.gameover.extras = {
 
-	["noobs"] = "Tutorials are for noobs!",
-	["possessed"] = "Those annoying Heretics!",
-	["hypnotised"] = "Where am I?",
+	["noobs"] = "Latihan hanya buat pendaki cupu!",
+	["possessed"] = "Anjir, Heretic sih nyêbêlin itu!",
+	["hypnotised"] = "Eh, dimana aku?",
 	["new"] = "Peringkat baru dicapai - %s",
 
 }
 
 module.gui.gameover.raceplacements = {
-	"YOU HAVE WON THE RACE!",
+	"KAMU TELAH MENANG BALAP!!!",
 	"SECOND PLACE!",
 	"THIRD PLACE!",
 	"You have placed fourth.",
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
