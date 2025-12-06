@@ -1779,7 +1779,7 @@ module.serverfeedback = {
 	["droneuncurse"] = "Drónok helyre fognak állítani átkozott lépcsőket!",
 	["nodroneuncurse"] = "Drónok nem fognak helyreállítani átkozott lépcsőket!",
 	["dronemove"] = "Drónok meg fognak mozgatni lépcsőket alap módban!",
-	["nodronemove"] = "Drónok nem fognak megmozgatni és  lépcsőket alap módban!",
+	["nodronemove"] = "Drónok nem fognak megmozgatni és lépcsőket alap módban!",
 	["dronespin"] = "Drónok meg fognak forgatni 180 fokban lépcsőket alap módban!",
 	["nodronespin"] = "Drónok nem fognak megforgatni 180 fokban lépcsőket alap módban!",
 	["noinput"] = "Adjál meg egy értéket!",
@@ -2097,3 +2097,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
