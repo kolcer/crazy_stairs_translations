@@ -1031,9 +1031,9 @@ module.gui.gameover.messages = {
 		"Legalább a felületeket nem lopom el",
 		"Nem akarlak meglopni téged, de ha már így hagyod magadat, akkor miért is ne?",
 		"Van bármilyen kézzelfogható bizonyítékod arra, hogy loptam bármit is?",
-		"Olyan vagyok, mint Robin Hood - A gazdagoktól lopok és a pénzt magamnak adom",
+		"Olyan vagyok, mint Robin Hood - A gazdagoktól lopok és azt magamnak adom",
 		"Nem mintha bárki is észrevenné, ha hiányzik egy lépcső",
-		"Majd úgy is vissza rakom azt a lépcsőt",
+		"Majd úgy is vissza rakom a lépcsőt",
 	},
 	["HACKER"] = {
 		"HASZNÁLD KI, HIBÁSÍTSD MEG és TÖRD SZÉT",
@@ -1608,7 +1608,7 @@ module.serverfeedback = {
 	["onlyracers"] = "Csak versenyzők varázsolhatnak.",
 	["cancelfirst"] = "Előbb szüntesd meg a jelenlegi varázslatot...",
 	["stashfull"] = "Tele van a leltárad.",
-	["stashempty"] = "El kell lopnod egy lépcsőt mielőtt megvarázsolnád ezt a varázslatot.",
+	["stashempty"] = "El kell lopnod egy lépcsőt mielőtt megvarázsolhatnád ezt a varázslatot.",
 	["ultwait"] = "Egy másik különleges varázslat van folyamatban. Kérlek várj.",
 	["notdefault"] = "A Drónoknak előbb vissza kell váltaniuk alap módba. Kérlek várj.",
 	["noreshuffle"] = "Előbb válaszd meg az átrendezésnek a módját!",
@@ -1635,7 +1635,7 @@ module.serverfeedback = {
 	["nostairs"] = "Nincsen itt lépcső.",
 	["noground"] = "Ezt a varázslatot nem lehet végrehajtani a földszinten.",
 	["oddonly"] = "Ezt a varázslatot nem lehet végrehajtani ezen a szinten.",
-	["noabove"] = "Nincsen közvetlenül feletted lépcső.",
+	["noabove"] = "Nincs közvetlenül feletted lépcső.",
 	["lock"] = "Most nem használhatsz varázslatokat.",
 	["outdrift"] = "A külső lifteket csak a torony külső felületein lehet létrehozni.",
 	["cantgate"] = "Ez az irány le van zárva.",
@@ -2097,4 +2097,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
