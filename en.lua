@@ -1,4 +1,4 @@
---VERSION 4.1.7--
+--VERSION 4.1.10--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -59,7 +59,9 @@ module.gui.serversettings = {
 	["EvenLevels"] = "Even Levels Restricted",
 	["OrbMoves"] = "Endgame orb changes position",
 	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
-	["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
+	--deprecated
+	--["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
+	["TowerSize"] = "Tower grid size (experimental)",
 	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
 	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
 	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
@@ -1907,6 +1909,11 @@ module.localfeedback = {
 	["nomusic"] = "Music failed to load.",
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
+	
+	--NEW
+	["raceon"] = "You will now participate in races!",
+	["raceoff"] = "You will no longer participate in races!",
+	--END NEW
 
 }
 
@@ -2161,4 +2168,3 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
-
