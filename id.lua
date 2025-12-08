@@ -257,7 +257,7 @@ module.spells.names = {
 
 	["summoner"] = "Pembangun",
 	["patronevent"] = "Berkat Tangga",
-	["patronaltevent"] = "Penyiutan",
+	["patronaltevent"] = "Penyiutan", -- < Needs another better name for 'Shrinkage/Ciutkan Semua Tangga'
 
 	--JOKER 
 	["flip"] = "Balik Tangga",
@@ -268,8 +268,8 @@ module.spells.names = {
 	["trap"] = "Buat Platform Jebakan",
 
 	["flipper"] = "Pembalik",
-	["jokerevent"] = "Sihir Persembunyian Gila",
-	["jokeraltevent"] = "Kesalahan Pisang (Balik Semua Tangga)",
+	["jokerevent"] = "Sihir Persembunyian Gila", -- < Needs another better name for 'The Cloak /Selubung Semua Tangga'
+	["jokeraltevent"] = "Kesalahan Pisang (Balik Semua Tangga)", -- < Needs another better name for 'Flip Em All/Balik Semua Tangga'
 
 	--WICKED
 	["destroy"] = "Hancurkan Tangga",
@@ -292,7 +292,7 @@ module.spells.names = {
 	["rig"] = "Gerak Tangga secara Acak",
 
 	["ascension"] = "Penaik",
-	["keeperevent"] = "Blender Menara",
+	["keeperevent"] = "Blender Menara", -- < Needs another better name for 'Reshuffle/Rombak Kembali'
 	["keeperaltevent"] = "Pemulihan",
 
 	--SPECTRE
@@ -353,7 +353,7 @@ module.spells.names = {
 
 	["riser"] = "Operator Lift",
 	["drifterevent"] = "Badai Tangga",
-	["drifteraltevent"] = "Pengangkatan",
+	["drifteraltevent"] = "Pengangkatan", -- < Needs another better name for 'Liftage/Angkat Semua Tangga'
 
 	--HERETIC
 	["createcursed"] = "Bangun Tangga Têrkutuk",
@@ -365,7 +365,7 @@ module.spells.names = {
 
 	["malediction"] = "Pêmbuat",
 	["hereticevent"] = "Skisma",
-	["hereticaltevent"] = "Kutuk Mênara",
+	["hereticaltevent"] = "Kutuk Mênara", -- < Needs another better name for 'Vengeance/Kutuk Semua Tangga'
 
 	--SPLICER
 	["twistup"] = "Sambung Tangga ke Atas",
@@ -414,7 +414,7 @@ module.spells.names = {
 
 	["tramway"] = "Masinis",
 	["gremlinevent"] = "Roda Kematian",
-	["gremlinaltevent"] = "Sebabkan Kemacetan",
+	["gremlinaltevent"] = "Macet",
 
 	--CHAMELEON
 	["ditch"] = "Tangga Menyilang",
@@ -1073,7 +1073,7 @@ module.gui.gameover.messages = {
 		"Speed is all that matters",
 		"Escalators for life",
 	},
-	["HERETIC"] = {
+	["HERETIC"] = { --- All reused old Heretic's quotes should probably be rewritten ▼
 		"KAMU TAK DAPAT LÉWAT",
 		"Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruan.",
 		"Rasuki orang. Pêrtahankan dalam mêlayani Overmind.",
@@ -2155,6 +2155,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
