@@ -1,4 +1,4 @@
---VERSION 4.1.7--
+--VERSION 4.1.10--
 --HUNGARIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -55,7 +55,9 @@ module.gui.serversettings = {
 	["EvenLevels"] = "Páros Szintek Lezárása",
 	["OrbMoves"] = "Legfelső Szinten Lévő Gömb Pozíciót Változtat",
 	["InfRegeneration"] = "Lépcsőház Azonnali újraépítése egy új szerveren, torony szintjeinek változtatása és egy végtelen verseny után.",
-	["TowerLevels"] = "Torony mérete (kísérlet)",
+	--depricated
+	--["TowerLevels"] = "Torony szintjei (vagy aktív szintek végtelen módban). Nem változtathatod meg egy verseny vagy újraépítés közben.",
+	["TowerSize"] = "Torony mérete (kísérlet)",
 	["RaceDuration"] = "Verseny Maximális Időtartalma. Nem folyásólja be a mostani versenyt. (másodperc)",
 	["InfStart"] = "Végtelen mód Legelső intervalluma. (2 szint jön létre egy intervallumban) (másodperc)",
 	["InfReduction"] = "Végtelem mód intervallum csökkentése. (minden egyes intervallum ennyivel rövidebb) (másodperc)",
@@ -805,7 +807,7 @@ module.gui.ranks = {
 		[5] = "Meg tudsz forgatni sodródott lépcsőket.",
 		[6] = "Fel tudsz emelni lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
 		[8] = "Van választásod arra, hogy ne aktiváld a Drifter Rigeket.",
-		[9] = "Kétszer tudsz felemelni lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
+		[9] = "Fel tudsz emelni kétszer lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
 	},
 	["HERETIC"] = {
 		[4] = "Amikor elfogy a Manád, érj hozzá egy átkozott lépcsőhöz, hogy eltüntesd róla az átkot és kapj egy Manát.",
@@ -938,10 +940,10 @@ module.gui.gameover.results = {
 	["cTime"] = "REKORDOD %s-KÉNT", --%s will be replaced by the used class
 	["levels"] = "ELÉRT SZINTEK",
 	["cClimbs"] = "ENNYI MÁSZÁSOD VAN %s-KÉNT", --%s will be replaced by the used class
-	["tClimbs"] = "ENNYI MÁSZÁSOD VAN ÖSSZEVONVA",
-	["tTokens"] = "ENNYI %s ZSETONOD VAN", --%s will be replaced by the used class (or multi)
-	["spells"] = "ENNYI VARÁZSLATOT HASZNÁLTÁL", --amount
-	["rRank"] = "HELYEZÉSED VERSENYBEN",--if any
+	--["tClimbs"] = "ENNYI MÁSZÁSOD VAN ÖSSZEVONVA",
+	--["tTokens"] = "ENNYI %s ZSETONOD VAN", %s will be replaced by the used class (or multi)
+	--["spells"] = "ENNYI VARÁZSLATOT HASZNÁLTÁL", amount
+	--["rRank"] = "HELYEZÉSED VERSENYBEN",if any
 }
 
 module.gui.gameover.messages = {
@@ -1853,6 +1855,8 @@ module.localfeedback = {
 	["nomusic"] = "Nem sikerült betölteni a zenét.",
 	["noteleport"] = "Teleportálás sikertelen!", 
 	["norefresh"] = "Még nem tudsz újratölteni.",
+	["raceon"] = "Részt fogsz venni versenyekben!",
+    ["raceoff"] = "Nem fogsz részt venni versenyekben!",
 
 }
 
@@ -1922,7 +1926,7 @@ module.eventspells = {
 
 	["thiefrigevent"] = "%s az összes normális lépcsőre rárakott Theif Riget!",
 	["thiefevent"] = "%s az összes normális lépcsőt kilapította!",
-	["thiefaltevent"] = "%s létrehozott egy kitérést az összes szinten!",
+	["thiefaltevent"] = "%s létrehozott kitéréseket az összes szinten!",
 
 	["archonrigevent"] = "%s az összes normális lépcsőre rárakott Archon Riget!",
 	["archonevent"] = "%s az összes normális lépcsőre rárakott egy véletlenszerű kaput!",
@@ -2097,5 +2101,6 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
