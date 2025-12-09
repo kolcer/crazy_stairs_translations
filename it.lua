@@ -413,7 +413,7 @@ local timed = "Questo è un sortilegio temporaneo. "  -- do not remove space
 local rig = "Questo è un sortilegio Rig. Tutte le scale normali verranno alterate una alla volta da " -- do not remove space
 local event = "Questo è un sortilegio Evento. Tutte le scale normali verranno alterate una alla volta dall'incantesimo " -- do not remove space
 local fill = "Questo è un sortilegio Culmine. Verranno generate scale in tutte le intersecazioni libere e senza malefici. " -- do not remove spaces
-local mode = "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in fase %s. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: %s e %s, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
+local mode = "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in modalità %s. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: %s e %s, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
 local timedExtra = " Raggiungi il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
 
 module.spells.descriptions = {
@@ -1400,11 +1400,11 @@ module.tutorial = {
 	["tut_small_stairs"] = "Salta sulle scale",
 }
 
-module.where = { --Continue from here
+module.where = {
 	["platform"] = "Da lanciare sulle piattaforme, ad eccezione di quelle posizionate al primo piano e di quelle vincolate.",
 	["arrow"] = "Da lanciare sulle piattaforme.",
 	["stairs"] = "Da lanciare sulle scale.",
-	["above"] = "Modifica la scala posizionata direttamente sopra a quella colpita (funziona sui collegamenti di Patron).",
+	["above"] = "Interagisce con la scala posizionata direttamente sopra a quella colpita (funziona sui collegamenti di Patron).",
 	["dynamic"] = "Può modificare sia la scala colpita che quella sovrastante.",
 	["both"] = "Può essere eseguito sia dalle frecce presenti sulle piattaforme che dalle scale",
 	["both2"] = "Può essere eseguito sia su piattaforme che su scale.",
@@ -1794,7 +1794,9 @@ module.localfeedback = {
 	["music"] = "Audio modificato correttamente.",
 	["nomusic"] = "Impossibile modificare l'audio.",
 	["noteleport"] = "Errore!",
-	["norefresh"] = "Non puoi aggiornare la lista ancora.",
+	["norefresh"] = "Non puoi ancora aggiornare la lista.",
+	["raceon"] = "Da adesso puoi partecipare alle gare.",
+	["raceoff"] = "Da adesso sei esentato dalle gare.",
 }
 
 module.switchon = {
