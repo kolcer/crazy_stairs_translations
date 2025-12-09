@@ -1285,13 +1285,13 @@ module.static = {
 	["oasis_3"] = "PRO:\nCan change alignments anywhere, anytime\nKONTRA:\nCosts Robux\nRanking up all classes takes time",
 	["oasis_4"] = "“Aku terlalu malas untuk membuat mantra yang baru.”\nkata pendiri kami",
 
-	["nexus_1"] = "PERHUBUNGAN HERETIC",
+	["nexus_1"] = "PÊRHUBUNGAN HERETIC",
 	["nexus_2"] = "MOTO KAMI:\nKAMU\nTAK\nDAPAT\nLÉWAT",
 	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
 	["nexus_4"] = "“Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruan.”\nkata pendiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
-	["guild_2"] = "MOTO KAMI:\nBORROW\nUSE\nAND\nRETURN",
+	["guild_2"] = "MOTO KAMI:\nCURI\nGUNAKAN\nDAN\g",
 	["guild_3"] = "PRO:\nMana efficient\nVersatile\nKONTRA:\nNeeds to steal stairs\nCannot destroy crossing stairs",
 	["guild_4"] = "“Itu sebenarnya meminjam.”\nkata pendiri kami",
 
@@ -1728,7 +1728,7 @@ module.serverfeedback = {
 	["mythiefrig"] = "You have stolen 1 mana from %s",
 	["notthiefrig"] = "%s is no longer a thief - no mana stolen.",
 	["leftthiefrig"] = "Thief has left the game -  no mana stolen.",
-	["hereticrig"] = "Kamu menjadi kesurupan!",
+	["hereticrig"] = "Kamu mênjadi kêsurupan!",
 	["archonrig"] = "Fase teleport!",
 	["drifterrig"] = "Tangga ini sekarang diputar!",
 	["splicerrig"] = "Tangga ini sekarang dipelintir!",
@@ -1897,10 +1897,12 @@ module.localfeedback = {
 	["nounlocks"] = "Unlock all basic spells to access ultimate spells!",
 	["onetoken"] = "You have been awarded one %s Spell Token!",
 	["moretokens"] = "You have been awarded some %s Spell Tokens!",
-	["music"] = "Music changed successfully.",
-	["nomusic"] = "Music failed to load.",
+	["music"] = "Musik berhasil diganti!",
+	["nomusic"] = "Musik gagal dimuat…",
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
+    ["raceon"] = "You will now participate in races!",
+    ["raceoff"] = "You will no longer participate in races!",
 
 }
 
@@ -1908,35 +1910,35 @@ module.localfeedback = {
 --NEW (redone)
 module.switchon = {
 
-	["JOKER1"] = "You will no longer reveal invisible stairs.",
+	["JOKER1"] = "Kamu sekarang tidak akan mendeteksi tangga tidak terlihat.",
 	["WICKED1"] = "You will no longer trigger below Wicked Rigs.",
 	["KEEPER1"] = "You will no longer trigger below Keeper Rigs.",
 	["SPECTRE1"] = "You will no longer trigger below Spectre Rigs.",
-	["HACKER1"] = "Escalators immunity on.",
-	["HACKER2"] = "Escalators and rig immunity on.",
-	["ARCHON1"] = "Only upward splits will teleport you.",
+	["HACKER1"] = "Eskalator sekarang tidak akan mengangkutmu.",
+	["HACKER2"] = "Imunitas eskalator dan rig sekarang diaktifkan.",
+	["ARCHON1"] = "Hanya portal ke atas akan berteleportasimu.",
 	["DRIFTER1"] = "You will no longer trigger below Drifter Rigs.",
 	["SPLICER1"] = "You will no longer trigger below Splicer Rigs.",
 	["REAVER1"] = "You will no longer trigger below Reaver Rigs.",
-	["GREMLIN1"] = "Nearby Corkscrews locked.",
-	["NONE"] = "All special effects immunity on.",
+	["GREMLIN1"] = "Pilin terdekatmu sekarang dijedakan.",
+	["NONE"] = "Imunitas semua efek spesial sekarang diaktifkan.",
 
 }
 
 module.switchoff = {
 
-	["JOKER1"] = "You will now reveal invisible stairs.",
+	["JOKER1"] = "Kamu sekarang akan mendeteksi tangga tidak terlihat.",
 	["WICKED1"] = "You will now trigger below Wicked Rigs.",
 	["KEEPER1"] = "You will now trigger below Keeper Rigs.",
 	["SPECTRE1"] = "You will now trigger below Spectre Rigs.",
-	["HACKER1"] = "Escalator immunity off.",
-	["HACKER2"] = "Escalator and rig immunity off.",
+	["HACKER1"] = "Eskalator sekarang akan dapat mengangkutmu.",
+	["HACKER2"] = "Imunitas eskalator dan rig sekarang dinonaktifkan.",
 	["ARCHON1"] = "All except down splits will teleport you.",
 	["DRIFTER1"] = "You will now trigger below Drifter Rigs.",
 	["SPLICER1"] = "You will now trigger below Splicer Rigs.",
 	["REAVER1"] = "You will now trigger below Reaver Rigs.",
-	["GREMLIN1"] = "Nearby Corkscrews unlocked.",
-	["NONE"] = "All special effects immunity off.",
+	["GREMLIN1"] = "Pilin terdekatmu sekarang diputarkan.",
+	["NONE"] = "Imunitas semua efek spesial sekarang dinonaktifkan.",
 }
 --END NEW
 
@@ -1983,13 +1985,13 @@ module.eventspells = {
 	["drifterevent"] = "%s has just randomly drifted all normal stairs!",
 	["drifteraltevent"] = "%s has just lifted all normal stairs!",
 
-	["hereticrigevent"] = "%s has just rigged all normal stairs with Possess spell!",
-	["hereticevent"] = "%s has just schismatized all normal stairs!",
-	["hereticaltevent"] = "%s has just cursed all normal stairs!",
+	["hereticrigevent"] = "%s baru saja mêmanipulasi sêmua tangga dêngan mantra kutuk!",
+	["hereticevent"] = "%s baru saja mêmêcah sêmua tangga biasa!",
+	["hereticaltevent"] = "%s baru saja baru saja mêngutuki sêmua tangga biasa!",
 
-	["splicerrigevent"] = "%s has just rigged all normal stairs with Splice spell!",
-	["splicerevent"] = "%s has just spliced all normal stairs!",
-	["spliceraltevent"] = "%s telah memanipulasi semua tangga normal dengan mantra split",
+	["splicerrigevent"] = "%s baru saja memanipulasi semua tangga normal dengan mantra sambung!",
+	["splicerevent"] = "%s baru saja menyambung semua tangga biasa!",
+	["spliceraltevent"] = "%s baru saja memisahkan semua tangga biasa!",
 
 	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
@@ -2044,7 +2046,7 @@ module.gui.mana = {
 	["gift"] = "DIBERI HADIAH",
 	["share"] = "DIBAGI",
 	["prank"] = "NGEPRANK",
-	["possession"] = "POSSESSION",
+	["possession"] = "MÊNYURUPI",
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
 	["blessing"] = "DIBERKATI",
@@ -2059,7 +2061,7 @@ module.gui.mana = {
 	["study"] = "TELAAH",
 	["nether"] = "NERAKA",
 	["guild"] = "PERSEMBUNYIAN",
-	["nexus"] = "PERHUBUNGAN",
+	["nexus"] = "PÊRHUBUNGAN",
 	["oasis"] = "OASIS",
 	["hub"] = "PUSAT",
 	["mirror"] = "CERMIN",
@@ -2155,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
