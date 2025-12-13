@@ -1,4 +1,4 @@
---VERSION 4.1.7--
+--VERSION 4.1.10--
 --HUNGARIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -23,7 +23,7 @@ module.gui.switcher = {
 	["fail"] = "NEM SIKERÜLT ÚJRA TÖLTENI!",
 	["refreshbutton"] = "ÚJRATÖLTÉS",
 	["failed"] = "A teleportálás sikertelen!",
-	["classic"] = "Klasszikus Tower",
+	["classic"] = "Klasszikus Torony",
 	["pro"] = "Profi Torony",
 	["custom"] = "Egyedi Torony",
 	["noVR"] = "VR Nélküli Torony",
@@ -38,8 +38,8 @@ module.gui.serversettings = {
 	["DroneFix"] = "Drónok helyreállíthatnak lépcsőket.",
 	["DroneRemove"] = "Drónok eltávolíthatnak átkozott kereszteződéseket.",
 	["DroneUnCurse"] = "Drónok helyreállíthatnak átkozott lépcsőket.",
-	["DroneMove"] = "Drónok mozgathatnak lépcsőket alap módban.",
-	["DroneSpin"] = "Drónok forgathatnak lépcsőket alap módban.",
+	["DroneMove"] = "Drónok mozgathatnak és forghatnak 90 fokkal lépcsőket alap módban.",
+	["DroneSpin"] = "Drónok forgathatnak lépcsőket 180 fokkal alap módban.",
 	["DroneSpeed"] = "Drónok sebessége (szint/másodperc)",
 	["DroneDelay"] = "Drónok forgásának időtartalma (másodperc)",
 	["DroneMax"] = "Maximum lépcsők száma (a drónok csak el fognak pusztítani lépcsőket, ha ennél több lépcső van)",
@@ -55,7 +55,9 @@ module.gui.serversettings = {
 	["EvenLevels"] = "Páros Szintek Lezárása",
 	["OrbMoves"] = "Legfelső Szinten Lévő Gömb Pozíciót Változtat",
 	["InfRegeneration"] = "Lépcsőház Azonnali újraépítése egy új szerveren, torony szintjeinek változtatása és egy végtelen verseny után.",
-	["TowerLevels"] = "Torony szintjei (vagy aktív szintek végtelen módban). Nem változtathatod meg egy verseny vagy újraépítés közben.",
+	--depricated
+	--["TowerLevels"] = "Torony szintjei (vagy aktív szintek végtelen módban). Nem változtathatod meg egy verseny vagy újraépítés közben.",
+	["TowerSize"] = "Torony mérete (kísérlet)",
 	["RaceDuration"] = "Verseny Maximális Időtartalma. Nem folyásólja be a mostani versenyt. (másodperc)",
 	["InfStart"] = "Végtelen mód Legelső intervalluma. (2 szint jön létre egy intervallumban) (másodperc)",
 	["InfReduction"] = "Végtelem mód intervallum csökkentése. (minden egyes intervallum ennyivel rövidebb) (másodperc)",
@@ -68,7 +70,7 @@ module.gui.shop = {
 
 	["chameleon"] = "Chameleonok osztályt tudnak változtatni mászás közben.",
 	["spectre"] = "Spectre az egy teleportáláson alapuló osztály ami tökéletes ha egyedül játszól.",
-	["mana"] = "Növeld a Mana tárolási kapacitásodat 10 Manával.",
+	["mana"] = "Tízzel növeli a tárolható Mana mennyiségét.",
 	["architect"] = "Ezzel átváltozhatsz egy Architectté akkor is, ha nem használsz VR szemüveget.",
 	["3tokens"] = "Szerezz meg egy varázslatot vagy varázsolj akár 3 különleges varázslatot.",
 	["30tokens"] = "Szerezz meg tíz varázslatot vagy varázsolj akár 30 különleges varázslatot.",
@@ -105,11 +107,11 @@ module.gui.stats = {
 	["2124480172"] = "Joker Trükkje",
 	["2124637294"] = "Drifter Útja",
 	["2124517579"] = "Thief Rablása",
-	["4464785885277417"] = "Splicer Csavarja",
+	["4464785885277417"] = "Splicer Csavara",
 	["2124480174"] = "Keeper Rendje",
-	["2124637293"] = "Archon Kapcsolata",
-	["2124517578"] = "Hacker Kihasználása",
-	["707445818894757"] = "Gremlin's Spiral",
+	["2124637293"] = "Archon Kapuja",
+	["2124517578"] = "Hacker Csalása",
+	["707445818894757"] = "Gremlin Spirálja",
 	["2124480171"] = "Patron Büszkesége",
 	["1407551481032773"] = "Reaver Tükörképe",
 	["2124637295"] = "Heretic Átka",
@@ -117,19 +119,19 @@ module.gui.stats = {
 	["2124480175"] = "Muggle Logikája",
 	["2124826874"] = "Teljes Kör",
 	["2124529966"] = "Átugrottad A Kiképzést",
-	["2124826880"] = "Megszálott Sors",
+	["2124826880"] = "Megszállott Sors",
 	["3731010929572663"] = "Hypnotizált Álom",
 	["2124913225"] = "Architect Terve",
 	["2124702954"] = "Rootkit Letöltve",
 	["2124702945"] = "Pusztíts El Mindent",
 	["2124702946"] = "Rend Helyreállítva",
 	["128721686760593"] = "Körülöttem Forog A Világ.",
-	["2124702952"] = "Én Inkább Megyek Lifttel",
+	["2124702952"] = "Inkább Megyek Lifttel",
 	["3121101516427751"] = "Az Összefonódás",
 	["2124702942"] = "Senkit Se Hagyok Hátra",
-	["2124702950"] = "Illuminati Megerősítve",
+	["2124702950"] = "Megvilágosodtam",
 	["2124702951"] = "Minden Az Enyém",
-	["1165646024608180"] = "Egyek Vagyunk.",
+	["1165646024608180"] = "Egységben az erő.",
 	["2303731210592278"] = "Szellemek Is Emberek!",
 	["2124702949"] = "Kiközösítve",
 	["2124702943"] = "Szívatás Az Életem",
@@ -144,8 +146,8 @@ module.gui.stats = {
 module.gui.questions = {
 
 	["cancel"] = "Abba akarod hagyni ezt a varázslatot? A zsetonokat nem kapod vissza."
-	["tutorial"] = "Szeretnéd elvégezni a kiképzést?",
-	["skip"] = "Szeretnéd átugrani a kiképzést?",
+	["tutorial"] = "El szeretnéd végezni a kiképzést?",
+	["skip"] = "Át szeretnéd ugrani a kiképzést?",
 	["reshuffle"] = "El akarod kerülni a lépcsők ütközését? Ha nem, akkor az útban álló lépcsők el lesznek pusztítva.",
 
 }
@@ -205,13 +207,13 @@ module.gui.menu = {
 	["Feedback"] = "Visszajelzés küldése",
 	["Language"] = "Nyelvek",
 	["Music"] = "Zenedoboz",
-	["RaceResults"] = "Előző verseny eredménye",
-	["ServerSettings"] = "Torony beállításai (Custom Tower)",
+	["RaceResults"] = "Előző verseny végeredménye",
+	["ServerSettings"] = "Torony beállításai (Csak az Egyedi Toronyban működik.)",
 	["Settings"] = "Játék beállításai",
 	["Shop"] = "Bolt",
 	["Spectate"] = "Másik játékosok megfigyelése",
 	["Stats"] = "Statisztikáid és teljesítményeid",
-	["SwitchServer"] = "Torony váltása",
+	["SwitchServer"] = "Torony váltó",
 	["Tokens"] = "Zsetonjaid",
 	["Tutorial"] = "Kiképzés",
 
@@ -235,7 +237,7 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Lépcső Létrehozása",
 	["restore"] = "Gömb Hívása", 
-	["split"] = "Szemben Lévő Lépcső Újraépítése",
+	["split"] = "Szemben Álló Lépcső Újraépítése",
 	["shrinkabove"] = "Feletted Lévő Lépcső Zsugorítása",
 	["link"] = "Kapocs Létrehozása",
 	["portal"] = "Portál Létrehozása",
@@ -249,7 +251,7 @@ module.spells.names = {
 	["flipabove"] = "Feletted Lévő Lépcső Megfordítása",
 	["fake"] = "Hamis Lépcső Létrehozása",
 	["invisible"] = "Láthatatlan Lépcső Létrehozása",
-	["disco"] = "Diszkó Lépcső",
+	["disco"] = "Zenés Lépcső",
 	["trap"] = "Csapda Létrehozása",
 
 	["flipper"] = "Fordító",
@@ -309,12 +311,12 @@ module.spells.names = {
 	["stealabove"] = "Feletted Lévő Lépcső Ellopása",
 	["place"] = "Lépcső Lerakása",
 	["uppass"] = "Csigalépcső",
-	["sidepass"] = "Kitérő Létrehozása",
-	["drop"] = "Lépcső Elhagyása",
+	["sidepass"] = "Kitérő Lerakása",
+	["drop"] = "Lapos Lépcső Lerakása",
 
 	["heist"] = "Rablás",
-	["thiefevent"] = "Lapos Föld",
-	["thiefaltevent"] = "Kitérő Az Összes Lépcső Mellé",
+	["thiefevent"] = "Lapítás",
+	["thiefaltevent"] = "Kitérők",
 
 	--ARCHON
 	["splitup"] = "Felfelé Vezető Kapu Létrehozása",
@@ -332,7 +334,7 @@ module.spells.names = {
 	["indrift"] = "Szörf",
 	["outdrift"] = "Lépcső Véletlenszerű Sodorítása",
 	["updrift"] = "Lift",
-	["diagdrift"] = "Felület Átlósan Megmozgósítása",
+	["diagdrift"] = "Felület Átlós Mozgatása",
 	["spin"] = "Lépcső Megforgatása",
 	["driftabove"] = "Feletted Lévő Lépcső Megemelése",
 
@@ -346,7 +348,7 @@ module.spells.names = {
 	["curseabove"] = "Feletted Lévő Lépcső Elátkozása",
 	["curseinter"] = "Villogás",
 	["autodown"] = "Szakadás Felemelése",
-	["autoup"] = "Szemben Lévő Lépcső Szakadásának Leemelése",
+	["autoup"] = "Szemben Álló Lépcső Szakadásának Leemelése",
 
 	["malediction"] = "Átkozódás",
 	["hereticevent"] = "Szétszakadás",
@@ -365,12 +367,12 @@ module.spells.names = {
 	["spliceraltevent"] = "Kettéválasztás",
 	
 	--NECROMANCER
-	["createdual"] = "Kettős Lépcső Létrehozása",
+	["createdual"] = "Kettős Lépcsők Létrehozása",
 	["copyplatform"] = "Szellem Felületének Lemásolása",
-	["soulbridge"] = "Lélek Híd Létrehozása",
+	["soulbridge"] = "Lélek Hidak Létrehozása",
 	["undeadabove"] = "Feletted Lévő Lépcső Ellélektelenítése",
 	["revival"] = "Újraéledő Pont",
-	["regen"] = "Mana Regeneráció",
+	["regen"] = "Mana Regenerálása",
 
 	["duality"] = "Kettőség",
 	["necromancerevent"] = "Újraélesztés",
@@ -414,7 +416,7 @@ module.spells.names = {
 	["share"] = "Mana Megosztása (legalább 2 Mana szükséges)",
 
 	--ARCHITECT
-	["archpatron"] = "Létrehozás vagy Zsugorítás",
+	["archpatron"] = "Létrehozás Vagy Zsugorítás",
 	["archarchon"] = "Kapu Létrehozása Lépcsőre Vagy Felületre",
 	["archthief"] = "Lopás Vagy Lerakás",
 	["archnecro"] = "Kettős Vagy Lélektelen Lépcső",
@@ -422,7 +424,7 @@ module.spells.names = {
 	["archkeeper"] = "Mozgatás Vagy Helyreállítás",
 	["archsplicer"] = "Összekapcsolás Vagy Helyreállítás",
 	["archwicked"] = "Fal Vagy Pusztítás",
-	["archgremlin"] = "Lépcső Vagy Egy Felület Pörgetése",
+	["archgremlin"] = "Lépcső Vagy Felület Pörgetése",
 	["archjoker"] = "Hamis Vagy Megfordított Lépcső",
 	["archdrifter"] = "Sodorítás Vagy Lift",
 	["archspectre"] = "Fantom Vagy Szellemesített Lépcső",
@@ -438,14 +440,14 @@ local timed = "Ez a varázslat időzített. "  -- do not remove space
 local rig = "Ez egy Riges varázslat. Az összes normális lépcsőre egyesével rárak " -- do not remove space
 local event = "Ez egy Esemény varázslat. Az összes normális " -- do not remove space
 local fill = "Ez egy Kitöltő varázslat. Az összes üres nem átkozott kereszteződésben létre fog hozni egy lépcsőt. ", -- do not remove spaces
-local mode = "Ez egy drón varázslat. Átváltoztatja a drónokat %s módba. Ebben a módban a drónok véletlenszerűen normális lépcsőkre ráraknak %s vagy %s. A különleges lépcsőket pedig helyreállítja. Ha lépcsők számai határokon kívül van, akkor a drónok létrehoznak vagy elpusztítanak lépcsőket."
+local mode = "Ez egy drón varázslat. Átváltoztatja a drónokat %s módba. Ebben a módban a drónok véletlenszerű normális lépcsőkre ráraknak %s vagy %s. A különleges lépcsőket pedig helyreállítja. Ha lépcsők száma határokon kívül van, akkor a drónok létrehoznak vagy elpusztítanak lépcsőket."
 local timedExtra = " Ha rendelkezel %s ranggal, akkor ez a varázslat 90 másodpercig fog tartani. Ez a varázslat visszatölti minden olyan %s a Manáját amelyek rendelkeznek %s ranggal." -- do not remove leading space
 
 module.spells.descriptions = {
 
 	--PATRON
 	["summon"] = "Ez a varázslat létrehoz egy lépcsőt az általad választott irányban. Ha van útban egy lépcső, akkor az a lépcső elpusztul.",
-	["restore"] = "Ez a varázslat odahívja a legfelső szinten lévő gömböt a választott felületre. Ha rendelkezel DEFENDER ranggal, akkor ez a varázslat 2 Manába fog kerülni. Ha rendelkezel SAVIOUR ranggal, akkor a gömb kétszer olyan gyorsan fog feléd jönni.",
+	["restore"] = "Ez a varázslat odahívja a legfelső szinten lévő gömböt a felületedhez. Ha rendelkezel DEFENDER ranggal, akkor ez a varázslat 2 Manába fog kerülni. Ha rendelkezel SAVIOUR ranggal, akkor a gömb kétszer olyan gyorsan fog feléd jönni.",
 	["split"] = "Ez a varázslat újraépíti az alattad lévő lépcsőt a másik irányba. Az újraépített lépcső normális lesz attól függetlenül, hogy milyen volt az eredeti lépcső.",
 	["shrinkabove"] = "Ez a varázslat összezsugorítja a feletted lévő lépcsőt, így simán meg tudod kerülni és utána fel tudsz rá menni.",
 	["link"] = "Ez a varázslat létrehoz egy energiahidat két felület között 60 másodpercig. A kapocs alján át lehet menni. Ha rendelkezel CREATOR ranggal, akkor a kapocs 120 másodpercig fog tartani.",
@@ -462,12 +464,12 @@ module.spells.descriptions = {
 	--JOKER
 	["flip"] = "Ez a varázslat megfordítja az alattad lévő lépcsőt, így az alja a teteje lesz és fordítva. Az ilyen lépcsőket vissza lehet fordítani.",
 	["flipabove"] = "Ez a varázslat megfordítja a feletted lévő lépcsőt, így az alja a teteje lesz és fordítva. Az ilyen lépcsőket vissza lehet fordítani.",
-	["fake"] = "Ez a varázslat létrehoz egy hamis lépcsőt az általad választott irányban. Ha van útban egy lépcső, akkor az a lépcső elpusztul. Ha egy játékos (beleértve téged) megpróbál felmenni rajta, akkor az a játékos leesik, kivéve TRICKSTERek, ITek és Szellem Unió módban lévő játékosok.",
-	["invisible"] =  "Ez a varázslat létrehoz egy láthatatlan lépcsőt az általad választott irányban. Azonban ez nem tud lépcsőket elpusztítani, tehát egy szabad kereszteződésbe kell raknod. Ha rendelkezel JESTER ranggal, akkor láthatod az összes láthatatlan lépcsőt, és lesz választásod, hogy ne fedd fel azokat.",
-	["disco"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy diszkós lépcsővé. Ha egy játékos (beleértve téged) rálép, akkor megáll (általában kétszer) és táncol 5 másodpercig. Ha rendelkezel COMIC ranggal, akkor immunis leszel diszkó lépcsőkre.",
+	["fake"] = "Ez a varázslat létrehoz egy hamis lépcsőt az általad választott irányban. Ha van útban egy lépcső, akkor az a lépcső elpusztul. Ha egy játékos (beleértve téged) megpróbál felmenni rajta, akkor az a játékos leesik, kivéve ha az a játékos egy TRICKSTER, IT vagy Szellem Unió módban van.",
+	["invisible"] =  "Ez a varázslat létrehoz egy láthatatlan lépcsőt az általad választott irányban. Ha rendelkezel JESTER ranggal, akkor láthatod az összes láthatatlan lépcsőt, és lesz választásod, hogy ne fedd fel azokat.",
+	["disco"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy diszkós lépcsővé. Ha egy játékos (beleértve téged) rálép, akkor megáll és táncol 5 másodpercig (általában kétszer). Ha rendelkezel COMIC ranggal, akkor immunis leszel diszkó lépcsőkre.",
 	["trap"] = "Ez a varázslat átváltoztatja az alattad lévő felületet egy csapóajtóvá 60 másodpercig. Ha egy játékos (beleértve téged) rálép, akkor az a játékos leesik az alatta lévő felületre. Ha rendelkezel JOKESTER ranggal, akkor láthatod hogy hol vannak csapdák. Ha rendelkezel TRICKSTER ranggal, akkor immunis leszel csapdákra.",
 
-	["flipper"] = timed ..  "Ezzel bármennyiszer megfordíthatsz lépcsőket egy percig. Mindig a feletted lévő lépcső fordul meg. Ha nem lehet megfordítani, akkor az alattad lévő lépcső fordul meg."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokernek",RankData.JOKER[3].name),
+	["flipper"] = timed ..  "Ezzel bármennyiszer megfordíthatsz lépcsőket egy percig. Mindig a feletted lévő lépcső fordul meg, kivéve ha nem lehet megfordítani, mert akkor az alattad lévő lépcső fordul meg."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokernek",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "Joker Riget. Ha aktiválják, akkor a lépcső átfordul.",
 	["jokerevent"] = event .. "lépcsőt láthatatlanná változtatja.",
 	["jokeraltevent"] = event .. "lépcsőt megfordítja.",
@@ -479,8 +481,8 @@ module.spells.descriptions = {
 	["destroy"] = "Ez a varázslat elpusztítja azt a lépcsőt, amin állsz. A többi varázslattal szemben, ez bármilyen lépcsőn működik. Ha rendelkezel VILE ranggal, akkor ez a varázslat ingyenes lesz. Ha rendelkezel VICIOUS ranggal, akkor kapsz 1 Manát amikor elpusztítasz bármilyen különleges lépcsőt. Ha rendelkezel ANNIHILATOR ranggal, akkor elpusztíthatsz átkozott lépcsőket.",
 	["destroyabove"] = "Ez a varázslat elpusztítja a feletted lévő lépcsőt. A többi varázslattal szemben, ez bármilyen lépcsőn működik. Ha rendelkezel VICIOUS ranggal, akkor kapsz 1 Manát amikor elpusztítasz bármilyen különleges lépcsőt. Ha rendelkezel ANNIHILATOR ranggal, akkor elpusztíthatsz átkozott lépcsőket.",
 	["bend"] = "Ez a varázslat felhajlítja az alattad lévő lépcsőt. Ezt arra lehet használni, hogy eljuss a feletted lévő felületre.",
-	["damage"] = "Ez a varázslat átváltoztatja a feletted lévő lépcsőt egy obbivá, úgy hogy eltávolítja a lépcsőfokok többségét. Mielőtt meg próbálnád csinálni, emlékezz, hogy minden ugrás után várni kell. Ha rendelkezel DESTROYER ranggal, akkor tudsz sétálni obbikon.",
-	["flatten"] = "Ez a varázslat lehajlítja a szemben lévő lépcsőt. Ezt arra lehet használni, hogy eljuss a szemben lévő felületre.",
+	["damage"] = "Ez a varázslat átváltoztatja a feletted lévő lépcsőt egy obbivá, úgy hogy eltávolítja a lépcsőfokok többségét. Mielőtt meg próbálnád csinálni, emlékezz, hogy minden ugrás után várnod kell. Ha rendelkezel DESTROYER ranggal, akkor tudsz sétálni obbikon.",
+	["flatten"] = "Ez a varázslat lehajlítja a szemben álló lépcsőt. Ezt arra lehet használni, hogy eljuss a szemben lévő felületre.",
 	["wall"] = "Ez a varázslat létrehoz egy falat meg egy kapcsot, amelyek 60 másodpercig tartanak. A falon átmenni és a kapocsra rámenni csak Wickedek és Szellem Unióban lévő játékosok tudnak.",
 
 	["bender"] = timed .. "Ezzel bármennyiszer hajlíthatsz fel lépcsőket egy percig. A feletted és az alattad lévő lépcsők egyszere fognak felhajolódni, ha megvannak hozzá a feltételek."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickednek",RankData.WICKED[3].name),
@@ -492,8 +494,8 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Ez a varázslat megmozgatja vízszintesen az alattad lévő lépcsőt, és elpusztítja az útban álló lépcsőt. Varázslás után, nyilak jelennek meg lépcsőkön, a választási irányokat mutatva. Ha rendelkezel CONTROLLER ranggal, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
-	["rotate"] = "Ez a varázslat megforgatja vízszintesen az alattad lévő lépcsőt és elpusztítja az útban álló lépcsőt. Varázslás után, nyilak jelennek meg lépcsőkön, a választási irányokat mutatva. Ha rendelkezel CONTROLLER ranggal, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
+	["move"] = "Ez a varázslat megmozgatja vízszintesen az alattad lévő lépcsőt, és elpusztítja az útban álló lépcsőt. Ha rendelkezel CONTROLLER ranggal, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
+	["rotate"] = "Ez a varázslat megforgatja vízszintesen az alattad lévő lépcsőt és elpusztítja az útban álló lépcsőt. Ha rendelkezel CONTROLLER ranggal, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
 	["moveup"] = "Ez a varázslat megmozgatja az alattad lévő lépcsőt felfelé, és elpusztítja az útban álló lépcsőt. Ha rendelkezel CONTROLLER ranggal, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
 	["movedown"] = "Ez a varázslat helyreállít bármilyen különleges lépcsőt. Ha a lépcső már normális, akkor ez a varázslat nem fog működni. Ha rendelkezel CAPTAIN ranggal, akkor ez a varázslat ingyenes lesz. Ha rendelkezel ADMIRAL ranggal, akkor helyre tudsz állítani Átkozott Lépcsőket és Átkozott Kereszteződéseket.",
 	["rig"] = "Ez a varázslat egy véletlenszerű irányba mozgatja vagy forgatja a feletted lévő lépcsőt, és elpusztítja az útban álló lépcsőt. Ha rendelkezel OPERATOR ranggal, akkor a lépcsők nem mehetnek lefelé. Ha rendelkezel CONTROLLER ranggal, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
@@ -517,21 +519,21 @@ module.spells.descriptions = {
 
 	["traveller"] = timed ..  "Ezzel bármennyiszer elteleportálhatsz vízszintesen egy percig."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectrének",RankData.SPECTRE[3].name),
 	["spectrerigevent"] = rig .. "Spectre Riget. Ha aktiválják, akkor a lépcsőnek 50% esélye van, hogy megszellemesedik. Ha rendelkezel VISION ranggal, akkor tudsz Spectre rigeken járni, anélkül, hogy aktiválnád.",
-	["spectreevent"] = event .. "lépcsőt véletlenszerűen megmozgatja szellemesen. Mielőtt végrehajtanád, lehet választani puha és erőltetett mód között. Puha módban, ez a varázslat véletlenszerű irányba mozgatja a lépcsőket, anélkül hogy elpusztítana bármit is. Mozgás közben a lépcsők megszellemesednek. Erőltetett módban viszont az útban álló lépcsők elpusztúlnak.",
+	["spectreevent"] = event .. "lépcsőt véletlenszerűen megmozgatja szellemesen. Mielőtt végrehajtanád, lehet választani puha és erőltetett mód között. Puha módban, ez a varázslat véletlenszerű irányba mozgatja a lépcsőket, anélkül hogy elpusztítana bármit is. Erőltetett módban viszont az útban álló lépcsők elpusztúlnak. Mindkettő módban a lépcsők mozgás közben megszellemesednek.",
 	["spectrealtevent"] = "Ez egy esemény varázslat. Ez a varázslat megszellemesíti az összes normális lépcsőt. Ha rendelkezel AETHER ranggal, akkor rá tudsz menni szellemesített lépcsőkre. Szellem Unióval is rá tudsz menni szellemesített lépcsőkre.",
-	["spectremode"] = string.format(mode,"Spectre","Spectre Riget","véletlenszerűen megmozgatja puhán és szellemesen"),
+	["spectremode"] = string.format(mode,"Spectre","Spectre Riget","véletlenszerűen megmozgatja puhán és megszellemesítve"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
 	--HACKER
 	["dash"] = "Ez a varázslat elteleportál téged az általad választott irányba. Nem tudsz lépcsőkön keresztül teleportálni. Ha rendelkezel CRACKER ranggal, akkor 50%-kal gyorsabb lesz a varázslat.",
 	["blink"] = "Ez a varázslat körbe teleportál téged egy olyan útban álló lépcsőn, ami nem átkozott. Ha a feletted lévő lépcső nem állja el az utadat, akkor ez a varázslat nem fog működni. Ha rendelkezel EXPLOITER ranggal, akkor 50%-kal gyorsabb lesz a varázslat.",
-	["swap"] = "Ez a varázslat odateleportál téged, ahol a szellemed van. A legtöbb alapvető varázslattal szemben, ezt bárhol végre lehet hajtani.",
-	["slide"] = "Ez a varázslat átváltoztatja a lépcsőt egy mozgólépcsővé. Választhatsz Felfelé vagy Lefelé mozgólépcsők közül. Ha rendelkezel SCRIPTER ranggal, akkor lesz választásod arra, hogy immunis legyél a mozgólépcsőkre.",
-	["slideup"] = "Ez a varázslat becsal egy lépcsőt az általad választott irányban. Csak akkor fog a varázslat működni, ha a varázslás irányában van egy másik irányba álló lépcső. Becsalt lépcső lehet bármilyen nem átkozott lépcső és helyre fog állni amikor becsalod.",
+	["swap"] = "Ez a varázslat odateleportál téged, ahol a szellemed van.",
+	["slide"] = "Ez a varázslat átváltoztatja a lépcsőt egy mozgólépcsővé. Választhatsz Felfelé vagy Lefelé haladó mozgólépcsők közül. Ha rendelkezel SCRIPTER ranggal, akkor lesz választásod arra, hogy immunis legyél a mozgólépcsőkre.",
+	["slideup"] = "Ez a varázslat becsal egy lépcsőt az általad választott irányban. Csak akkor fog működni, ha a varázslás irányában van egy útban álló lépcső. Becsalt lépcső lehet bármilyen nem átkozott lépcső és helyre fog állni amikor becsalod.",
 	["glitch"] = "Ez a varázslat meghibásítja a lépcsőt, és elteleportál téged és a lépcsőt egy másik helyre ugyanazon a szinten. Ha rendelkezel ZERO ranggal, akkor ha a legfelső szinten használod ezt a varázslatot, akkor a lépcső a gömb mellé fog teleportálódni.",
 
-	["hack"] = timed .. "Ezzel bármennyiszer átváltoztathatsz lépcsőket felfelé vagy lefelé mozgólépcsőkké egy percig. Ha van felette nem átkozott útban álló lépcső, akkor az a lépcső elpusztul." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackernek",RankData.HACKER[3].name),
+	["hack"] = timed .. "Ezzel bármennyiszer átváltoztathatsz lépcsőket felfelé vagy lefelé mozgólépcsőkké egy percig. Ha van felette nem átkozott lépcső, akkor az a lépcső elpusztul." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackernek",RankData.HACKER[3].name),
 	["hackerrigevent"] = rig .. "Hacker Riget. Ha aktiválják, akkor a rálépett játékos és a lépcső elteleportálódik egy másik helyre ugyanazon a szinten. Csak egy játékost teleportál el. Ha rendelkezel REAPER ranggal, akkor tudsz Hacker rigeken járni, anélkül, hogy aktiválnád.",
 	["hackerevent"] = event .. "lépcsőt átváltoztatja felfelé vagy lefelé mozgólépcsővé.",
 	["hackeraltevent"] = event ..  "lépcsőt átváltoztatja felfelé mozgólépcsővé",
@@ -542,15 +544,15 @@ module.spells.descriptions = {
 	--THIEF
 	["steal"] = "Ez a varázslat ellopja az alattad lévő lépcsőt. A többi nem lopós alapvető varázslat varázsolásához el kell lopnod egy lépcsőt. Ha rendelkezel HIJACKER ranggal, akkor bármilyen nem átkozott lépcsőt el tudsz lopni. Ha rendelkezel OUTLAW ranggal, akkor egyszerre 2 lépcső lehet nálad.",
 	["stealabove"] = "Ez a varázslat ellopja a feletted lévő lépcsőt. A többi nem lopós alapvető varázslat varázsolásához el kell lopnod egy lépcsőt. Ha rendelkezel HIJACKER ranggal, akkor bármilyen nem átkozott lépcsőt el tudsz lopni. Ha rendelkezel OUTLAW ranggal, akkor egyszerre 2 lépcső lehet nálad.",
-	["place"] = "Ez a varázslat visszarakja a lépcsőt az általad választott irányban. Azonban ez nem pusztítja el az útban álló lépcsőt, tehát csak szabad kereszteződésekbe rakhatsz lépcsőket.",
-	["uppass"] = "Ez a varázslat létrehoz egy csigalépcsőt egy lopott lépcsőből. Csak külső felületeken lehet létrehozni és ottmarad egy percig. Ha rendelkezel BANDIT ranggal, akkor a csigalépcső két percig marad ott.",
+	["place"] = "Ez a varázslat visszarakja a lépcsőt az általad választott irányban.",
+	["uppass"] = "Ez a varázslat létrehoz egy csigalépcsőt egy lopott lépcsőből. Csak a torony szélén lehet létrehozni és ottmarad egy percig. Ha rendelkezel BANDIT ranggal, akkor a csigalépcső két percig marad ott.",
 	["sidepass"] = "Ez a varázslat létrehoz egy kitérőt egy lopott lépcsőből. Az általad választott irányban létrejön, és ottmarad egy percig. Ha rendelkezel ROBBER ranggal, akkor a kitérő két percig marad ott.",
-	["drop"] = "Ez a varázslat elhagy lépcsőket ingyen. De ehhez kell egy szabad kereszteződés. Az elhagyott lépcsők laposak.",
+	["drop"] = "Ez a varázslat lerak egy lapos lépcsőt az általad választott irányba.",
 
 	["heist"] = timed .. "Ezzel bármennyiszer rakhatsz le lépcsőket egy percig. A sima lerakás varázslattal szemben, ez a varázslat elpusztítja a keresztező lépcsőket, mert ebben a módban automatikusan lopod el a lépcsőket." .. string.format(timedExtra,RankData.THIEF[7].name,"Thiefnek",RankData.THIEF[3].name),
-	["thiefrigevent"] = rig .. "Thief Riget. Ha aktiválják, a rálépett játékostól ellopsz egy manát, amit te megkapsz. Ha te tele vagy Manával, akkor nem kapsz Manát. Akkor se kapsz Manát, ha osztályt váltasz.",
+	["thiefrigevent"] = rig .. "Thief Riget. Ha aktiválják, a rálépett játékostól ellopsz egy manát. Ha tele vagy Manával, akkor nem kapsz Manát. Akkor se kapsz Manát, ha osztályt váltasz.",
 	["thiefevent"] = event .. "lépcsőt kilapítja.",
-	["thiefaltevent"] = "Ez egy Esemény varázslat. Ez létrehoz egy kitérést az összes belső északi és déli kereszteződésben. Ha a kereszteződésben van egy átok, akkor ott nem jön létre kitérés.",
+	["thiefaltevent"] = "Ez egy Esemény varázslat. Létrehoz egy kitérést az összes belső északi és déli kereszteződésben. Ha a kereszteződésben van egy átok, akkor ott nem jön létre kitérés.",
 	["thiefmode"] = string.format(mode,"Thief","Thief Riget","ellop és lerak lépcsőket"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
@@ -572,14 +574,14 @@ module.spells.descriptions = {
 	["archonunion"] =  union,
 
 	--DRIFTER
-	["indrift"] = "Ez a varázslat létrehoz egy átmeneti szörfdeszkát, ami átvisz téged és másokat egy felületre egy általad választod irányban. Nem lehet útban álló lépcsőkön keresztül szörfölni.",
-	["updrift"] = "Ez a varázslat létrehoz egy liftet az alattad és a feletted lévő felületek között. A felületek egy idő után helyreállnak. Ha rendelkezel VAGABOND ranggal, akkor a liftek felgyorsulnak. Ha rendelkezel TRAVELLER ranggal, akkor fel tudod emelni a liftet a második szintre. Ha rendelkezel STRIDER ranggal, akkor fel tudod emelni a liftet a harmadik szintre.",
-	["diagdrift"] = "Ennek a varázslatnak kettő módja van: Létrehoz egy mozgó felületet az alattad lévő felület és az általad választott átlósan szomszédos felület között. Az ilyen felületek helyreállnak 7 kör után. VAGY: Ha a játékterületen kívülre varázsolod, ez a varázslat létrehoz egy mozgó felületet ami tesz egy kört a Torony körül.",
+	["indrift"] = "Ez a varázslat létrehoz egy átmeneti szörfdeszkát, ami átvisz téged és másokat egy felületre egy általad választod irányban.",
+	["updrift"] = "Ez a varázslat létrehoz egy liftet az alattad és a feletted lévő felületek között. A felületek egy idő után helyreállnak. Ha rendelkezel VAGABOND ranggal, akkor a liftek felgyorsulnak. Ha rendelkezel TRAVELLER ranggal, akkor fel tudsz emelni lifteket a második szintre. Ha rendelkezel STRIDER ranggal, akkor fel tudsz emelni lifteket a harmadik szintre.",
+	["diagdrift"] = "Ez a varázslat létrehoz egy mozgó felületet az alattad lévő felület és az általad választott átlósan szomszédos felület között. Az ilyen felületek helyreállnak 7 kör után. VAGY: Ha a játékterületen kívülre varázsolod, ez a varázslat létrehoz egy mozgó felületet ami tesz egy kört a Torony körül.",
 	["spin"] = "Ez a varázslat megforgatja az alattad lévő lépcsőt 180 fokkal. Ha rendelkezel NOMAD ranggal, akkor képes leszel megforgatni sodródott lépcsőket.",
 	["outdrift"] = "Ez a varázslat véletlenszerűen elsodorítja az alattad lévő lépcsőt, és elkezd haladni egy azonos szinten lévő véletlenszerű üres kereszteződés felé. Ha rendelkezel NOMAD ranggal, akkor képes leszel megforgatni sodródott lépcsőket.",
 	["driftabove"] = "Ez a varázslat elsodorítja a feletted lévő lépcsőt. Ez nem annyira véletlenszerű mint az előző varázslat, és nem is megy el egy másik kereszteződésbe. Miután el lett sodorítva, át mehetsz alata és utána rámehetsz.",
 
-	["riser"] = timed .. "Ezzel bármennyiszer csinálhatsz lifteket egy percig. Meg is emelheted a lifteket ha elég nagy a rangod." .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifternek",RankData.DRIFTER[3].name), 
+	["riser"] = timed .. "Ezzel bármennyiszer csinálhatsz lifteket egy percig. Meg is emelheted a lifteket ha elég magas a rangod." .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifternek",RankData.DRIFTER[3].name), 
 	["drifterrigevent"] = rig .. "Drifter Riget. Ha aktiválják, akkor a lépcső megfordul. Ha rendelkezel VOYAGER ranggal, akkor tudsz Drifter rigeken járni, anélkül, hogy aktiválnád.",
 	["drifterevent"] = event .. "lépcsőt véletlenszerűen elsodorítja.",
 	["drifteraltevent"] = event .. "lépcsőt megemeli.",
@@ -591,9 +593,9 @@ module.spells.descriptions = {
 	["createcursed"] = "Ez a varázslat létrehoz egy átkozott lépcsőt egy általad választott irányban. Ha van útban egy lépcső, akkor az a lépcső elpusztul. Ha rendelkezel BANISHED ranggal, akkor elpusztíthatsz útban álló átkozott lépcsőket.",
 	["curse"] = "Ez a varázslat megátkozza az alattad lévő lépcsőt. Ha egy átkozott lépcsőn használod ezt a varázslatot, akkor az a lépcső normális lesz.",
 	["curseabove"] = "Ez a varázslat megátkozza a feletted lévő lépcsőt. A lépcső felemelkedik egy pillanatra, hogy át tudj menni alatta. Ha egy átkozott lépcsőn használod ezt a varázslatot, akkor az a lépcső normális lesz.",
-	["curseinter"] = "Ezzel a varázslattal átvilloghatsz egy szomszédos felületre, ha nincsen az utadban lépcső. A varázslás után a kereszteződés megátkozódik, tehát a többi játékos nem tudja használni. Ha rendelkezel INDIFEL ranggal, akkor használhatod ezt a varázslatot egy már átkozott kereszteződésben, és eltünteti róla az átkot.",
+	["curseinter"] = "Ezzel a varázslattal átvilloghatsz egy szomszédos felületre, ha nincs az utadban lépcső. A varázslás után a kereszteződés megátkozódik, tehát a többi játékos nem tudja használni. Ha rendelkezel INDIFEL ranggal, akkor használhatod ezt a varázslatot egy már átkozott kereszteződésben, és eltünteti róla az átkot.",
 	["autodown"] = "Ez a varázslat létrehoz és megemel egy különleges tükrözött szakaszt a lépcső alsó részéből. Csak szellem uniók és Hereticek mehetnek rá arra a szakaszra.",
-	["autoup"] = "Ez a varázslat létrehoz egy különleges tükrözött szakaszt a szemben lévő lépcső felső részéből. A normális fokok le lesznek eresztve. Csak szellem uniók és Hereticek mehetnek rá arra a szakaszra.",
+	["autoup"] = "Ez a varázslat létrehoz egy különleges tükrözött szakaszt a szemben álló lépcső felső részéből. A normális fokok le lesznek eresztve. Csak szellem uniók és Hereticek mehetnek rá arra a szakaszra.",
 
 	["malediction"] = timed .. "Ezzel bármennyiszer hozhatsz létre átkozott lépcsőket egy percig." .. string.format(timedExtra,RankData.HERETIC[7].name,"Hereticnek",RankData.HERETIC[3].name), 
 	["hereticrigevent"] = rig .. "Heretic Riget. Ha aktiválják, a rálépett játékos meg lesz szállva. A játékosnak Manát kell találnia, hogy fel legyen szabadítva. A megszállott játékosok nem tudnak varázsolni. Ha rendelkezel UNBELIEVER ranggal, akkor immunis leszel erre a rigre. Ha rendelkezel EXILED ranggal, akkor kapsz 1 Manát amikor egy játékost megszállnak.",
@@ -608,11 +610,11 @@ module.spells.descriptions = {
 	["twistrotate"] = "Ez a varázslat megcsavarja a lépcsőt egy forgatott irányban, és összekötteti az ott lévő lépcsővel. Ha a választott irányban nincs lépcső, akkor létrejön egy. Ha rendelkezel TRANSFORMER ranggal, akkor használhatod ezt a varázslatot már megcsavart lépcsőkön.",
 	["twistup"] = "Ez a varázslat megcsavarja a feletted lévő lépcsőt meg nagy eséllyel az alattad lévőt is (ha normális vagy riges), és lesz belőlük egy 2 szintes csigalépcső. Ha rendelkezel TRANSFORMER ranggal, akkor használhatod ezt a varázslatot már megcsavart lépcsőkön.",
 	["canceltwist"] = "Ez a varázslat helyreállít bármilyen csavart lépcsőt. Ha rendelkezel COMBINER ranggal, akkor ezt a varázslatot használhatod arra, hogy helyreállíts a felülethez nem kapcsolódó lépcsőket. Ha rendelkezel MIXER ranggal, akkor ez a varázslat ingyenes lesz. Ha rendelkezel OPTIMUS ranggal, akkor kapsz 1 Manát amikor helyreállítasz egy csavart lépcsőt.",
-	["split2"] = "Ez a varázslat széthasítja a lépcsőt kettő szemben álló lépcsőkké, így elérve négy felületet.",
-	["splitalt"] = "Ez a varázslat széthasítja a lépcsőt kettő elválasztott lépcsőkké, így könnyen ki tudod kerülni az útban álló lépcsőt - még akkor is, ha a lépcső átkozott.",
+	["split2"] = "Ez a varázslat széthasítja a lépcsőt kettő egymással ellentétesen álló lépcsőkké.",
+	["splitalt"] = "Ez a varázslat széthasítja a lépcsőt kettő előrefelé elválasztott lépcsőkké, így könnyen ki tudod kerülni az útban álló lépcsőt - még akkor is, ha a lépcső átkozott.",
 
 	["twister"] = timed .. "Ezzel bárminnyiszer széthasíthatsz lépcsőket egy percig. A hasítás típusa automatikusan a leghasznosabb hasítástípus lesz." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicernek",RankData.SPLICER[3].name), 
-	["splicerrigevent"] = rig .. "Splicer Riget. Ha aktiválják, akkor összeköttetődik egy véletlen irányban lévő lépcsővel. Ha rendelkezel ASSEMBLER ranggal, akkor tudsz Splicer rigeken járni, anélkül, hogy aktiválnád.",
+	["splicerrigevent"] = rig .. "Splicer Riget. Ha aktiválják, akkor összeköttetődik egy véletlenszerű irányban lévő lépcsővel. Ha rendelkezel ASSEMBLER ranggal, akkor tudsz Splicer rigeken járni, anélkül, hogy aktiválnád.",
 	["splicerevent"] = event .. "lépcsőt véletlenszerűen összekötteti.",
 	["spliceraltevent"] = event .. "lépcsőt kétirányba kettéhasítja.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Riget","véletlenszerűen összekötteti"),
@@ -622,26 +624,26 @@ module.spells.descriptions = {
 	--NECROMANCER
 	["createdual"] = "Ez a varázslat létrehoz egy lépcsőt nálad és a szellemednél, hogy a szellemedhez közel álló játékosok is tudják használni. Ha rendelkezel SKELETON ranggal, akkor a szellemed figyelmen kívül hadja az átkozott lépcsőket és kereszteződéseket. Ha rendelkezel LICH ranggal, akkor el tudsz pusztítani útban álló lépcsőket.",
 	["copyplatform"] = "Ez a varázslat rámásolja a szellemed felületéről a lépcsőket a tiédre és fordítva. A lépcsők tükrözve lesznek másolva és normálisak. Ha rendelkezel REVENANT ranggal, akkor ez a varázslat eltávolít átkokat ha kell.",
-	["soulbridge"] = "Ez a varázslat létrehoz egy forgó kapcsot az alattad lévő felület és az általad választott átlósan szomszédos felület között. A te szellemed is létrehoz egy kapcsot az ellentétes irányban. Necromancer kapcsok automatikusan forognak. Ha a pálya közepén hozol létre egy kapcsot, akkor a másik kapoccsal alakít egy 'X' formát.",
-	["undeadabove"] = "Ez a varázslat elveszi a feletted lévő és a szellemed felett lévő lépcsőnek a lelkét. Ha a szellemed felett nincs lépcső, akkor létrejön egy. Ezeken a lépcsőkön keresztül lehet menni és utána fel lehet menni rajtuk, de elhalványulnak és eltűnnek egy perc után.",
-	["revival"] = "Ez a varázslat létrehoz egy 'újraéledési' pontot ahol a szellemed van. Ha a pont alá esnél, akkor a ponthoz fogsz teleportálódni. Ez a pont eltűnik, ha elhasználod, befejezel egy mászást, leraksz egy másik pontot vagy ha osztályt váltasz Chameleonként. Ha rendelkezel ACOLYTE ranggal, akkor ha a legfelső szinten leraksz egy pontot, akkor a gömb ahhoz a ponthoz fog menni.",
-	["regen"] = "Ez a varázslat ad neked Manát egy mászásban egyszer. 6 manát fogsz kapni, ha elhasználod. A szellemedhez közel álló játékosok is kapnak 3 Manát. Ha rendelkezel DEATHBRINGER ranggal, akkor te 10 Manát kapsz és a szellemedhez közel álló játékosok pedig 5 Manát kapnak.", 
+	["soulbridge"] = "Ez a varázslat létrehoz egy forgó kapcsot az alattad lévő felület és az általad választott átlósan szomszédos felület között. A te szellemed is létrehoz egy kapcsot az ellentétes irányban. Necromancer kapcsok automatikusan forognak. Ha a pálya közepén hozol létre egy kapcsot, akkor a másik kapoccsal alakít egy X formát.",
+	["undeadabove"] = "Ez a varázslat elveszi a feletted lévő és a szellemed felett lévő lépcsőknek a lelkét. Ha a szellemed felett nincs lépcső, akkor létrejön egy. Ezeken a lépcsőkön keresztül lehet menni és utána fel lehet menni rajtuk, de elhalványulnak és eltűnnek két perc után.",
+	["revival"] = "Ez a varázslat létrehoz egy újraéledési pontot ahol a szellemed van. Ha a pont alá esnél, akkor a ponthoz fogsz teleportálódni. Ez a pont eltűnik, ha elhasználod, befejezel egy mászást, leraksz egy másik pontot vagy ha osztályt váltasz Chameleonként. Ha rendelkezel ACOLYTE ranggal, akkor ha a legfelső szinten leraksz egy pontot, akkor a gömb ahhoz a ponthoz fog menni.",
+	["regen"] = "Ez a varázslat ad neked 6 Manát egy mászásban egyszer. A szellemedhez közel álló játékosok is kapnak 3 Manát. Ha rendelkezel DEATHBRINGER ranggal, akkor te 10 Manát kapsz és a szellemedhez közel álló játékosok pedig 5 Manát kapnak.", 
 	
-	["duality"] = timed .. "Ezzel bármennyiszer hozhatsz létre Kettős Lépcsőket egy percig. Az útban álló lépcsők el lesznek pusztítva rangtól függetlenül." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancernek",RankData.NECROMANCER[3].name), 
+	["duality"] = timed .. "Ezzel bármennyiszer hozhatsz létre Kettős Lépcsőket egy percig. Az útban álló lépcsők el lesznek pusztítva még akkor is, ha nem elég magas a rangod." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancernek",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "Necromancer Riget. Ha aktiválják, akkor a lépcső elveszíti a lelkét és egy idő után eltűnik.",
-	["necromancerevent"] = fill ..  "A létrehozott lépcsőknek nincs lelkük, és eltűnnek egy perc után.",
-	["necromanceraltevent"] = event .. "lépcsőnek elveszi a lelkét. Az ilyen lépcsők eltűnnek egy perc után.",
+	["necromancerevent"] = fill ..  "A létrehozott lépcsőknek nincs lelkük, és eltűnnek két perc után.",
+	["necromanceraltevent"] = event .. "lépcsőnek elveszi a lelkét. Az ilyen lépcsők eltűnnek két perc után.",
 	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Riget","elveszi a lelkét"),
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
 	--REAVER
-	["createmirrored"] = "Ez a varázslat létrehoz egy lépcsőt egy tükörrel a közepében. Ha átmész a tükrön, akkor egybeválsz a Szellemeddel. Ha még egyszer átmész a tükrön, akkor szétválsz a szellemeddel. Ha rendelkezel POLTERGEIST ranggal, akkor el tudsz pusztítani útban álló lépcsőket. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
+	["createmirrored"] = "Ez a varázslat létrehoz egy lépcsőt egy tükörrel a közepében. Ha átmész a tükrön, akkor egybeválsz a szellemeddel. Ha még egyszer átmész a tükrön, akkor szétválsz a szellemeddel. Ha rendelkezel POLTERGEIST ranggal, akkor el tudsz pusztítani útban álló lépcsőket. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
 	["bigmirror"] = "Ez a varázslat létrehoz egy hatalmas tükröt ez egész szinten 10 másodpercig. Csak olyan játékosok léphetnek rá, amelyek egybeváltak a szellemükkel. Ha elmész a tükörtől, akkor szétválsz a szellemedtől. El fog távolítani minden kicsi tükröt a szintről. Ha rendelkezel PRESENCE ranggal, akkor a tükör 15 másodpercig fog tartani.",
 	["smallmirror"] = "Ez a varázslat létrehoz egy kicsi tükröt az általad választott irányban 6 másodpercig. Csak olyan játékosok léphetnek rá, amelyek egybeváltak a szellemükkel. Ha elmész a tükörtől, akkor szétválsz a szellemedtől. Ha rendelkezel PRESENCE ranggal, akkor a tükör 9 másodpercig fog tartani.",
-	["outermirror"] = "Ez a varázslat létrehoz egy tükröt a külső irányban egy tükörpárral a pálya másik oldalán. Csak külső felületeken lehet használni. Játékosok, amelyek átmennek a tükrön egybeválnak a szellemükkel és átteleportálódnak a torony másik felén lévő tükörhöz. A tükör eltűnik 1 perc után. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
+	["outermirror"] = "Ez a varázslat összekötteti az alattad lévő felületet és a torony másik felében lévő felületet egy tükörpárral. Játékosok, amelyek átmennek a tükrön egybeválnak a szellemükkel és átteleportálódnak a torony másik felén lévő tükörhöz. A tükör eltűnik 1 perc után. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
 	["merge"] = "Ezzel a varázslattal manuálisan egybeválhatsz a Szellemeddel. Ha rendelkezel REPLICA ranggal, akkor ezzel a varázslattal szétválhatsz a szellemeddel. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
-	["oneway"] = "Ez a varázslat átváltoztatja a lépcsőt egy egyirányú átjáróvá, és közben egyesíti a játékosokat a szellemükkel, ha jó irányba haladnak. Megválaszthatod, hogy melyik irányt zárod le. Ha rendelkezel ILLUSION ranggal, akkor átmehetsz a lezárt oldalon is. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
+	["oneway"] = "Ez a varázslat átváltoztatja a lépcsőt egy egyirányú átjáróvá, ami közben egyesíti a játékosokat a szellemükkel. Megválaszthatod, hogy melyik irányt zárod le. Ha rendelkezel ILLUSION ranggal, akkor átmehetsz a lezárt oldalon is. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
 
 	["reflection"] = timed .. "Ezzel bármennyiszer hozhatsz létre Hatalmas Tükröket egy percig. A szellemeddel automatikusan egybe fogsz válni." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavernek",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "Reaver Riget. Ha aktiválják, akkor a lépcső átváltozik egy egyirányú lépcsővé, amelynek véletlenszerűen le van zárva az egyik oldala. Ha rendelkezel WIGHT ranggal, akkor tudsz Reaver rigeken járni, anélkül, hogy aktiválnád.",
@@ -652,10 +654,10 @@ module.spells.descriptions = {
 	["reaverunion"] = union,
 
 	--GREMLIN
-	["tram"] = "Ez a varázslat létrehoz egy Villamos Lépcsőt az általad választott irányban. A Villamos lépcső csak fele olyan hosszú mint egy normális lépcső, és miután létrehozod automatikusan elutazik a célba vett felületre. A lépcső vissza fog utazni, ha ráugrasz varázslat varázslása nélkül. Ha rendelkezel FIEND ranggal, akkor visszahozhatsz Villamosokat úgy, hogy ráugrasz a hozzá tartozó felületre.",
-	["screwdown"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy lefelé irányuló dugóhúzóvá. Szinte lehetetlen felmenni az ilyen lépcsőkön. Ha rendelkezel DAEMON ranggal, akkor egy kapcsolóval tudod beállítani, hogy forogjon-e a dugóhúzó. (nem fog működni, ha van egy másik Daemon a közelben).",
-	["screwup"] = "Ez a varázslat átváltoztatja a feletted lévő lépcsőt egy felfelé irányuló dugóhúzóvá. Szinte lehetetlen lemenni az ilyen lépcsőkön. Ha rendelkezel DAEMON ranggal, akkor egy kapcsolóval tudod beállítani, hogy forogjon-e a dugóhúzó. (nem fog működni, ha van egy másik Daemon a közelben).",
-	["revolve"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy pörgő lépcsővé. A lépcső a Z tengelyen fog pörögni. Megválaszthatod a pörgetés irányát. A lépcső megáll mindegyik 180 fokos fordulat után.", 
+	["tram"] = "Ez a varázslat létrehoz egy Villamos Lépcsőt az általad választott irányban. A Villamos lépcső csak fele olyan hosszú mint egy normális lépcső, és miután létrehozod automatikusan elindul. A lépcső vissza fog utazni, ha ráugrasz varázslat varázslása nélkül. Ha rendelkezel FIEND ranggal, akkor visszahozhatsz Villamosokat úgy, hogy ráugrasz a hozzá tartozó felületre.",
+	["screwdown"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy lefelé irányuló dugóhúzóvá. Szinte lehetetlen felmenni az ilyen lépcsőkön. Ha rendelkezel DAEMON ranggal, akkor egy kapcsolóval be tudod állítani, hogy forogjon-e a dugóhúzó. (nem fog működni, ha van egy másik Daemon a közelben).",
+	["screwup"] = "Ez a varázslat átváltoztatja a feletted lévő lépcsőt egy felfelé irányuló dugóhúzóvá. Szinte lehetetlen lemenni az ilyen lépcsőkön. Ha rendelkezel DAEMON ranggal, akkor egy kapcsolóval be tudod állítani, hogy forogjon-e a dugóhúzó. (nem fog működni, ha van egy másik Daemon a közelben).",
+	["revolve"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy pörgő lépcsővé. A lépcső a Z tengelyen fog pörögni. Megválaszthatod a pörgetés irányát. A lépcső megáll minden egyes 180 fokos fordulat után.", 
 	["trapstairs"] = "Ez a varázslat átváltoztatja az alattad lévő lépcsőt egy csapóajtóvá. Ha aktiválják, akkor el kezd forogni az X tengelyen, és leejti magáról az összes figyelmetlen játékost. Ha rendelkezel GOBLIN ranggal, akkor láthatod hogy hol vannak Gremlin csapdák. Ha rendelkezel DIABLO ranggal, akkor immunis leszel a Gremlin csapdákra.",
 	["spinplatform"] = "Ez a varázslat megpörgeti az egész felületet és a rajta lévő összes lépcsőt (beleértve az átkozott lépcsőket is), az általad választott irányban. A felület megáll minden egyes 90 fokos fordulat után. A felület megint normális lesz, miután tesz egy teljes 360 fokos kört.",
 	
@@ -670,7 +672,7 @@ module.spells.descriptions = {
 	--CHAMELEON
 	["chamdown"] = "Ez régebben egy Keeper varázslat volt, mielőtt el lett utasítva. Ez a varázslat egy normális vagy Riges lépcsőt lejjebb visz egy szinttel. Ha megvan a Keepernek a Captain rang, akkor tudsz mozgatni bármilyen nem átkozott lépcsőt.",
 	["chamswap"] = "Ez régebben egy Necromancer varázslat volt, mielőtt el lett utasítva. Ez a varázslat lemásolja a szellemedet, de a Reaver egybeválássával ellentétben a te szellemed aktív marad. Ez a varázslat nincs befejezve és haszontalan.",
-	["chamdraw"] = "Ez régebben egy Heretic varázslat volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt egy felvonóhíddá, tehát így lehetetlen lemenni a lépcsőn kivéve ha egy másik játékos aktiválja a hidat a lépcső aljáról.",
+	["chamdraw"] = "Ez régebben egy Heretic varázslat volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt egy felvonóhíddá, tehát lehetetlen lesz lemenni a lépcsőn kivéve ha egy másik játékos aktiválja a hidat a lépcső aljáról.",
 	["ditch"] = "Ez régebben egy Theif varázslat volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt két kereszteződő lépcsőkké.",
 	["chamdrawabove"] = "Ez régebben egy Heretic varázslat volt, mielőtt el let utasítva. Ez a varázslat átváltoztatja a feletted lévő lépcsőt egy felvonóhíddá, ezért utána átmehetsz alattuk. Felmenni rajta lehetetlen, kivéve ha egy másik játékos aktiválja a hidat a lépcső tetejéről. A régi Unbeliever rang már nem aktív és az automatikus hídleengedés sem lehetséges.",
 	["warp"] = "Ez régebben egy Wicked varázslat volt. Ez a varázslat meggörbít egy normális vagy riges lépcsőt vissza a felületre.",
@@ -692,7 +694,7 @@ module.spells.descriptions = {
 	["archkeeper"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor a hozzá tartozó lépcsőt helyre fogja állítani. Ha egy normális vagy riges lépcsőn használod, akkor az meg fog mozdulni az általad választott irányban.",
 	["archsplicer"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor a hozzá tartozó csavart lépcsőt helyre fogja állítani. Ha egy normális vagy riges lépcsőn használod, az meg fog csavaródni az általad választott irányban.",
 	["archwicked"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor ez létre fog hozni egy kapocs nélküli Wicked falat. Ha egy bármilyen nem átkozott lépcsőn használod, akkor az el fog pusztulni.",
-	["archgremlin"] = "Ezt a varázsigét ha egy felületen használod, akkor azt a felületet meg fogja pörgetni az általad választott irányban. Ha egy normális vagy riges lépcsőn használod, akkor azt átváltoztatja egy abban az irányban pörgő lépcsőve.",
+	["archgremlin"] = "Ezt a varázsigét ha egy felületen használod, akkor azt a felületet meg fogja pörgetni az általad választott irányban. Ha egy normális vagy riges lépcsőn használod, akkor azt átváltoztatja egy általad választott irányban pörgő lépcsőve.",
 	["archjoker"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor ez létre fog hozni egy hamis lépcsőt. Ha egy normális, megfordított vagy riges lépcsőn használod, akkor azt megfordítja vagy visszafordítja.",
 	["archdrifter"] = "Ezt a varázsigét ha egy felületen használod, akkor az át fog változni egy liftté. Ha egy normális vagy riges lépcsőn használod, akkor azt egy véletlenszerű irányba el fogja sodorítani.",
 	["archspectre"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor ez létre fog hozni egy fantom lépcsőt. Ha egy normális, szellemesített vagy riges lépcsőn használod, akkor azt meg fogja szellemesíti vagy helyre fogja állítani.",
@@ -706,7 +708,7 @@ local CommonPerksInsertALignment = {
 }
 local CommonPerksInsertTimedSpell = {
 	[3] = "Ha valaki varázsol egy %s varázslatot, akkor a Manád újratöltődik.",
-	[7] = "Az időzített varázslatod (%s) 50%%-kal tovább tart (90s).",
+	[7] = "Az időzített varázslatod (%s) 50%%-kal tovább tart (90mp).",
 }
 
 
@@ -753,126 +755,126 @@ module.gui.ranks = {
 	}, 
 	["JOKER"] = { 
 		[4] = "Diszkó lépcsők nincsenek rád hatással.",
-		[5] = "Mostantól látod az összes láthatatlan lépcsőt. Van rá választásod, hogy ne fedd fel őket.",
-		[6] = "Mostantól felismered a csapdákat és a hamis lépcsőket.",
-		[8] = "Mostantól rá tudsz menni hamis lépcsőkre és csapdákra.", 
+		[5] = "Látod az összes láthatatlan lépcsőt. Van választásod arra, hogy ne fedd fel őket.",
+		[6] = "Felismered a csapdákat és a hamis lépcsőket.",
+		[8] = "Rá tudsz menni hamis lépcsőkre és csapdákra.", 
 		[9] = "Kapsz bónusz Manát, amikor egy játékos aktivál egy átverést. (1 Mana egy játékos átveréséért)",
 	},
 	["WICKED"] = {
-		[4] = "Mostantól tudsz obbikon sétálni mintha egy normális lépcső lenne.",
-		[5] = "A Lépcső Elpusztítása varázslatod monstantól ingyenes.",
+		[4] = "Tudsz obbikon sétálni mintha egy normális lépcső lenne.",
+		[5] = "A Lépcső Elpusztítása varázslatod ingyenes.",
 		[6] = "Kapsz 1 bónusz Manát minden egyes általad elpusztított különleges lépcsőért.",
 		[8] = "Van választásod arra, hogy ne aktiváld a Wicked Rigeket.",
-		[9] = "Mostantól el tudsz pusztítani átkozott lépcsőket.",
+		[9] = "El tudsz pusztítani átkozott lépcsőket.",
 	},
 	["SPECTRE"] = { 
 		[4] = "Kapsz egy bónusz Manát amikor a szellemed vesz fel egy kristályt.", 
-		[5] = "A Lépcső Szellemesítése varázslatod mostantól ingyenes.",
-		[6] = "Mostantól akkor is nyerni fogsz, amikor a szellemed ér hozzá a gömbhöz.",
+		[5] = "A Lépcső Szellemesítése varázslatod ingyenes.",
+		[6] = "Akkor is nyerni fogsz, amikor a szellemed ér hozzá a gömbhöz.",
 		[8] = "Van választásod arra, hogy ne aktiváld a Spectre Rigeket.", 
-		[9] = "Mostantól rá tudsz menni szellemesített lépcsőkre.",
+		[9] = "Rá tudsz menni szellemesített lépcsőkre.",
 	},
 	["KEEPER"] = {
-		[4] = "A Véletlenszerű Mozgás varázslatok és a Keeper Rigek amiket te aktiválsz mostantól nem mozoghatnak lefelé.",
-		[5] = "Mostantól mozgathatsz bármilyen nem átkozott lépcsőt.",
-		[6] = "A Helyreállítás varázslatod mostantól ingyenes.", 
+		[4] = "A Véletlenszerű Mozgás varázslatok és a Keeper Rigek amiket te aktiválsz nem mozoghatnak lefelé.",
+		[5] = "Mozgathatsz bármilyen nem átkozott lépcsőt.",
+		[6] = "A Helyreállítás varázslatod ingyenes.", 
 		[8] = "Van választásod arra, hogy ne aktiváld a Keeper Rigeket.",
-		[9] = "Mostantól helyreállíthatsz átkozott lépcsőket és átkozott kereszteződéseket.",
+		[9] = "Helyreállíthatsz átkozott lépcsőket és kereszteződéseket.",
 	},
 	["HACKER"] = { 
 		[4] = "Van választásod arra, hogy immunis legyél mozgólépcsőkre.",
-		[5] = "A Lendület varázslatod mostantól 50%-kal gyorsabb.",
-		[6] = "A Villanás varázslatod mostontól 50%-kal gyorsabb.", 
+		[5] = "A Lendület varázslatod 50%-kal gyorsabb.",
+		[6] = "A Villanás varázslatod 50%-kal gyorsabb.", 
 		[8] = "Van választásod arra, hogy ne aktiváld a Hacker Rigeket. (egybevál a Mozgólépcső kapcsolójával)",
 		[9] = "Ha van legalább egy szabad kereszteződés, akkor a Hibás Lépcső varázslatod a legfelső szinten lévő a lépcsőt a gömbhöz viszi.", 
 	},
 	["THIEF"] = {
 		[4] = "A kikerüléseid kétszer addig tartanak (120mp).",
 		[5] = "A csigalépcsőid kétszer addig tartanak (120mp).",
-		[6] = "Mostantól az összes nem átkozott lépcsőt el tudod lopni.",
+		[6] = "Az összes nem átkozott lépcsőt el tudod lopni.",
 		[8] = "Ha elfogyott a Manád, ugorj rá egy felületre, hogy elővegyél 1 Manát a leltáradból.", 
-		[9] = "Mostantól egyszerre 2 lopott lépcsőt tudsz magadnál tartani.",
+		[9] = "Egyszerre 2 lopott lépcsőt tudsz magadnál tartani.",
 	},
 	["ARCHON"] = {
-		[4] = "Mostantól tudod használni a Kapu Eltávolítása varázslatot felületeken, hogy elpusztítsd a rajta lévő kapukat.",
-		[5] = "A Kapu Eltávolítása varázslatod mostantól ingyenes.",
-		[6] = "A kapuk mostantól nem teleportálnak téged lefelé.",
-		[8] = "Mostantól létrehozhatsz Kapukat olyan lépcsőkön, amelyeken már van egy Kapu.",
+		[4] = "Használhatod a Kapu Eltávolítása varázslatot felületeken, hogy elpusztítsd a rajta lévő kapukat.",
+		[5] = "A Kapu Eltávolítása varázslatod ingyenes.",
+		[6] = "A kapuk nem teleportálnak téged lefelé.",
+		[8] = "Létrehozhatsz Kapukat olyan lépcsőkön, amelyeken már van egy Kapu.",
 		[9] = "Van választásod arra, hogy csak felfelé vezető Kapuk teleportáljanak el.", 
 	},
 	["DRIFTER"] = {
 		[4] = "A felfelé haladó liftjeid gyorsabban jelennek meg és 50%-kal gyorsabban haladnak.",
-		[5] = "Mostantól megtudsz forgatni sodródott lépcsőket.",
-		[6] = "Mostantól fel tudod emelni a lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
+		[5] = "Meg tudsz forgatni sodródott lépcsőket.",
+		[6] = "Fel tudsz emelni lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
 		[8] = "Van választásod arra, hogy ne aktiváld a Drifter Rigeket.",
-		[9] = "Mostantól kétszer tudod felemelni a lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
+		[9] = "Fel tudsz emelni kétszer lifteket a Liftezés és a Lift varázslatokkal. Az emelt liftek nem gyorsabbak.",
 	},
 	["HERETIC"] = {
-		[4] = "Amikor elfogy a Manád, akkor hozzáérhetsz egy átkozott lépcsőhöz, hogy eltüntesd róla az átkot és kapj egy Manát.",
-		[5] = "Mostantól immunis vagy a megszállásra.",
-		[6] = "Mostantól végrehajthatod a Villogás varázslatodat átkozott kereszteződésekben.",
-		[8] = "Az Átkozott Lépcső Létrehozása és az Átkozódás varázslataid mostantól el tudnak pusztítani útban álló átkozott lépcsőket.",
+		[4] = "Amikor elfogy a Manád, érj hozzá egy átkozott lépcsőhöz, hogy eltüntesd róla az átkot és kapj egy Manát.",
+		[5] = "Immunis vagy a Heretic Rigekre.",
+		[6] = "Végrehajthatod a Villogás varázslatodat átkozott kereszteződésekben.",
+		[8] = "Az Átkozott Lépcső Létrehozása és az Átkozódás varázslataid el tudnak pusztítani útban álló átkozott lépcsőket.",
 		[9] = "Kapsz 1 bónusz Manát amikor valakit megszállnak.",
 	},
 	["SPLICER"] = {
-		[4] = "Mostantól helyre tudsz állítani a felülethez nem kapcsolódó lépcsőket.",
+		[4] = "Helyre tudsz állítani a felülethez nem kapcsolódó lépcsőket.",
 		[5] = "Az Elcsavart Lépcső Helyreállítása varázslatod mostantól ingyenes.",
 		[6] = "Van választásod arra, hogy ne aktiváld a Splicer Rigeket.",
-		[8] = "Mostantól meg tudsz csavarni már megcsavart lépcsőket.",
+		[8] = "Felül tudsz írni már megcsavart lépcsőket.",
 		[9] = "Kapsz 1 bónusz Manát amikor helyreállítasz egy csavart lépcsőt.",
 	},
 	["REAVER"] = {
-		[4] = "Mostantól használhatod az Egyesülés varázslatot, hogy szétválj a szellemeddel.",
-		[5] = "A tükreid 50%-kal tovább fognak tartani. (15mp-ig a hatalmas, 9mp-ig a Kicsi)",
+		[4] = "Használhatod az Egyesülés varázslatot, hogy szétválj a szellemeddel.",
+		[5] = "A tükreid 50%-kal továb tartanak. (15mp-ig a hatalmas, 9mp-ig a Kicsi)",
 		[6] = "Van választásod arra, hogy ne aktiváld a Reaver Rigeket.",
-		[8] = "Mostantól el tudsz pusztítani keresztező lépcsőket a Tükrös Lépcső varázslatoddal.",
-		[9] = "Mostantól immunis vagy az egyirányú lépcsőkre.",
+		[8] = "El tudsz pusztítani keresztező lépcsőket a Tükrös Lépcső varázslatoddal.",
+		[9] = "Immunis vagy az egyirányú lépcsőkre.",
 	},
 	["NECROMANCER"] = {
-		[4] = "Kettős Lépcsők varázslatból a szellemed lépcsője figyelem kívül fogja hagyni az átkozott lépcsőket és kereszteződéseket. ",
+		[4] = "Kettős Lépcsők varázslatból a szellemed lépcsője figyelem kívül hagyja az átkozott lépcsőket és kereszteződéseket.",
 		[5] = "Ha használod az Újraéledő Pont varázslatot a legfelső szinten, akkor a gömb a ponthoz fog menni.",
 		[6] = "A Felület Másolása varázslatod ha kell, eltávolítja az átkokat.",
-		[8] = "Mostantól el tudsz pusztítani keresztező lépcsőket a Kettős Lépcsők varázslatoddal.",
+		[8] = "El tudsz pusztítani keresztező lépcsőket a Kettős Lépcsők varázslatoddal.",
 		[9] = "A Regeneráció varázslatod 10 Manát ad 6 helyett, és aki a szellemedhez közel áll az 5 Manát kap.",
 	},
 	["GREMLIN"] = {
-		[4] = "Mostantól látod az összes Gremlin Csapdát.",
-		[5] = "Mostantól rá tudsz ugrani a felületre, hogy magadhoz hívd az összes hozzá tartozó villamost.",
-		[6] = "Mostantól immunis vagy a Gremlin Rigekre.",
-		[8] = "Mostantól immunis vagy a Gremlin Csapdákra.",
-		[9] = "Mostantól be/ki-tudod kapcsolni a Dugóhúzó Lépcsőket egy kapcsolóval. Nem fog működni, ha van egy másik Daemon a közelben.",
+		[4] = "Látod az összes Gremlin Csapdát.",
+		[5] = "Rá tudsz ugrani a felületre, hogy magadhoz hívd az összes ahhoz tartozó villamost.",
+		[6] = "Immunis vagy a Gremlin Rigekre.",
+		[8] = "Immunis vagy a Gremlin Csapdákra.",
+		[9] = "Be/ki-tudod kapcsolni a Dugóhúzó Lépcsőket egy kapcsolóval. Nem fog működni, ha van egy másik Daemon a közelben.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Az ugrásod visszatöltődési ideje 0.125 másodperccel rövidebb.",
 		[3] = "Az ugrásod visszatöltődési ideje 0.25 másodperccel rövidebb.",
 		[4] = "Az ugrásod visszatöltődési ideje 0.375 másodperccel rövidebb.",
 		[5] = "Az ugrásod visszatöltődési ideje 0.5 másodperccel rövidebb.",
-		[6] = "Mostantól 10%-kal gyorsabb vagy.",
-		[7] = "Mostantól 20%-kal gyorsabb vagy.",
-		[8] = "Mostantól 30%-kal gyorsabb vagy.",
-		[9] = "Mostantól 20%-kal nagyobbat ugrasz.",
+		[6] = "10%-kal gyorsabb vagy.",
+		[7] = "20%-kal gyorsabb vagy.",
+		[8] = "30%-kal gyorsabb vagy.",
+		[9] = "20%-kal nagyobbat ugrasz.",
 	},
 	["NONE"] = {
 		[1] = "Ez az osztály nem tud rangokat szerezni. Ugorj egy körre a pálya közepén hogy osztályt változtass.",
 		[2] = "De most komolyan, ennek az osztálynak a rangjai nem csinálnak semmit.",
 		[3] = "Csak az idődet vesztegeted, inkább fejleszd fel a MUGGLE-t.",
-		[4] = "MUGGLE-el lehetnél gyorsabb meg ugorhatnál magasabbra. NONE az meg egy haszontalan \"osztály\" ami nem csinál semmit.",
+		[4] = "MUGGLE-el lehetnél gyorsabb meg ugorhatnál magasabbra. NONE az csak meg egy haszontalan \"osztály\" ami nem csinál semmit.",
 		[5] = "Ha azt hiszed, hogy lesz egy titkos ranghatás a végen, akkor alábecsülöd a lustaságomat.",
-		[6] = "Vagy talán csak szereted magadat kínozni?",
-		[7] = "Ha valaki mondta, hogy van egy titkos ranghatás 50 mászás után, akkor ő hazudott.",
-		[8] = "Ez az utolsó figyelmeztetésed. Ha ezt nem fejezed be, akkor nagyot fogsz csalódni.",
+		[6] = "Vagy talán csak ennyire unatkozol?",
+		[7] = "Ha azt mondták, hogy van egy titkos ranghatás 50 mászás után, akkor neked hazudtak",
+		[8] = "Ez az utolsó figyelmeztetésed. Ha ezt nem fejezed be, akkor komoly következmények lesznek.",
 		[9] = "A kitartásod felettébb méltó. Kapsz egy kapcsolót, amivel immunis lehetsz bármilyen különleges lépcsőre.",
 	},
 	["CHAMELEON"] = { 
-		[1] = "Ez a kezdő CHAMELEON rangod. A többi osztály ranggal járó előnye is érvényes rád.",
+		[1] = "Ez a kezdő CHAMELEON rangod. A többi osztály ranghatásai is érvényes rád.",
 		[2] = "CSAK AKKOR Kapsz bónusz Manát, amikor a drónok CHAMELEON módban vannak.",
-		[3] = "Az osztály változtatási animáció mostantól sokkal gyorsabb.",
-		[4] = "A kezeid mostantól rózsaszínül világítanak, tehát a többi játékos nem tudja, hogy melyik osztályt használod.",
-		[5] = "A Hamis Lépcső és a Lépcső Létrehozása varázslatok mostantól rózsaszínül világítanak.",
-		[6] = "Mostantól meg tudsz varázsolni 4 varázslatot, amelyek el lettek utasítva a játék fejlesztése közben.",
-		[7] = "Mostantól meg tudsz varázsolni 2 másik varázslatot, amelyek el lettek utasítva a játék fejlesztése közben.",
+		[3] = "Az osztály változtatási animáció sokkal gyorsabb.",
+		[4] = "A kezeid rózsaszínül világítanak, tehát a többi játékos nem tudja, hogy melyik osztályt használod.",
+		[5] = "A Hamis Lépcső és a Lépcső Létrehozása varázslatok rózsaszínül világítanak.",
+		[6] = "Meg tudsz varázsolni 4 varázslatot, amelyek el lettek utasítva a játék fejlesztése közben.",
+		[7] = "Meg tudsz varázsolni 2 másik varázslatot, amelyek el lettek utasítva a játék fejlesztése közben.",
 		[8] = "Amikor osztályt váltasz annak nincs animációja, tehát a többi játékos nem látja mikor váltasz osztályt. Ki lehet kapcsolni a beállításokban.",
-		[9] = "Mostantól meg tudod varázsolni a Chameleon Rig varázslatot multi zsetonokkal.",
+		[9] = "Meg tudod varázsolni a Chameleon Rig varázslatot 2 multi zsetonnal.",
 	},
 
 
@@ -907,14 +909,14 @@ module.gui.settings = {
 	["Hchoices"] = "Irányválasztási ablak megjelenítése Hackerként, amikor a Mozgólépcső varázslatot használod",
 	["Achoices"] = "Irányválasztási ablak megjelenítése Archonként, amikor az Egyenes vagy Forgatott Kapu létrehozása varázslatokat használod",
 	["Rchoices"] = "Irányválasztási ablak megjelenítése Reaverként, amikor az Egyirányú Lépcső varázslatot használod",
-	["Schoices"] = "Irányválasztási ablak megjelenítése Splicerként, amikor a Szomszédos vagy Párhuzamos Lépcsők Összeköttetése varázslatokat használod ",
+	["Schoices"] = "Irányválasztási ablak megjelenítése Splicerként, amikor a Szomszédos vagy Párhuzamos Lépcsők Összeköttetése varázslatokat használod",
 	["Gchoices"] = "Irányválasztási ablak megjelenítése Gremlinként, amikor a Felület vagy Lépcső Pörgetése varázslatokat használod",
 
 	["List"] = "Animált játékoslista megjelenítése a sima Robloxos játéklista helyett",
 	["SwitchBack"] = "Automatikus visszaváltás átlagos varázslatokra egy különleges varázslat végrehajtása után",
 	["SafeCancel"] = "Megerősítési ablak megjelenítése amikor egy időzített varázslatot abbahagysz",
 	["Multi"] = "Multi Zseton ablak megjelenítése mászások után, ha van még el nem használt Multi Zsetonod",
-	["UISize"] = "Állítsd a felhasználói grafikus ablak szélességet (%-ban)",
+	["UISize"] = "Felhasználói grafikus ablak szélessége (%-ban)",
 
 }
 
@@ -938,10 +940,10 @@ module.gui.gameover.results = {
 	["cTime"] = "REKORDOD %s-KÉNT", --%s will be replaced by the used class
 	["levels"] = "ELÉRT SZINTEK",
 	["cClimbs"] = "ENNYI MÁSZÁSOD VAN %s-KÉNT", --%s will be replaced by the used class
-	["tClimbs"] = "ENNYI MÁSZÁSOD VAN ÖSSZEVONVA",
-	["tTokens"] = "ENNYI %s ZSETONOD VAN", --%s will be replaced by the used class (or multi)
-	["spells"] = "ENNYI VARÁZSLATOT HASZNÁLTÁL", --amount
-	["rRank"] = "HELYEZÉSED VERSENYBEN",--if any
+	--["tClimbs"] = "ENNYI MÁSZÁSOD VAN ÖSSZEVONVA",
+	--["tTokens"] = "ENNYI %s ZSETONOD VAN", %s will be replaced by the used class (or multi)
+	--["spells"] = "ENNYI VARÁZSLATOT HASZNÁLTÁL", amount
+	--["rRank"] = "HELYEZÉSED VERSENYBEN",if any
 }
 
 module.gui.gameover.messages = {
@@ -950,7 +952,7 @@ module.gui.gameover.messages = {
 		"SEGÍTS, VÉDJ és TEREMTS",
 		"Csak mi segíthetünk bajba jutott társainkon",
 		"Patronok nélkül nem lenne remény",
-		"A kedvességem egy 1-től 10-es skálán 11-es",
+		"Kedvességem határtalan",
 		"Osztozkodni öröm",
 		"Sosem lehet túl sok lépcsőd",
 		"Minden csapatba kell egy Patron",
@@ -963,7 +965,7 @@ module.gui.gameover.messages = {
 		"Miért vagy ilyen komoly?",
 		"HE HE HE HAW!",
 		"Lazulj és nézd, hogy esnek le",
-		"Nincsen bizonyítékod arra, hogy ez a lépcső hamis",
+		"Nincs bizonyítékod arra, hogy ez a lépcső hamis",
 		"Táncolj bolond, táncolj!",
 		"Unalmas lenne a játék nélkülem",
 		"A hamis lépcsők valójában igaziak",
@@ -989,7 +991,7 @@ module.gui.gameover.messages = {
 		"Meg tudod oldani az összes problémádat teleportálással",
 		"Ha egyszer elkezdesz teleportálni, nem fogsz tudni leállni",
 		"Legalább én nem rakok a lépcsőkre teleportálókat. Ki tenne olyasmit?",
-		"Tudnátok tartani a tempót?",
+		"Kövess, ha tudsz!",
 	},
 	["MUGGLE"] = {
 		"FUSS, UGORJ és ESS",
@@ -1026,14 +1028,14 @@ module.gui.gameover.messages = {
 	},
 	["THIEF"] = {
 		"\"KÖLCSÖNÖZZ\", HASZNÁLD és KÜLDD VISSZA",
-		"Tulajdonképpen ezt úgy hívják, hogy kölcsönzés",
-		"Nincsenek az űrben rendőrök, tehát lopás elleni törvény sincs",
+		"Én nem lopok, csak kölcsönzök",
+		"Nincs az űrben rendőr, tehát lopás elleni törvény sincs",
 		"Legalább a felületeket nem lopom el",
-		"Csak ne lépj rá a lopás rigekre, nem kell egy lángelme ehhez",
-		"Láttád te egyáltalán hogy loptam valamit?",
-		"Olyan vagyok, mint Robin Hood - A gazdagoktól lopok és a pénzt magamnak adom",
+		"Nem akarlak meglopni téged, de ha már így hagyod magadat, akkor miért is ne?",
+		"Van bármilyen kézzelfogható bizonyítékod arra, hogy loptam bármit is?",
+		"Olyan vagyok, mint Robin Hood - A gazdagoktól lopok és azt magamnak adom",
 		"Nem mintha bárki is észrevenné, ha hiányzik egy lépcső",
-		"A lépcsők újraelosztása megakadályozza az anarchiát",
+		"Majd úgy is vissza rakom a lépcsőt",
 	},
 	["HACKER"] = {
 		"HASZNÁLD KI, HIBÁSÍTSD MEG és TÖRD SZÉT",
@@ -1054,7 +1056,7 @@ module.gui.gameover.messages = {
 		"Az a lényeg hogy nekem jó legyen, a többi ember meg nem fontos",
 		"Nem kéne korlátozni magunkat",
 		"Ami másoknak átok, az nekünk áldás. Leginkább azért, mert másoknak az átok",
-		"A sötet oldal nagyon jó",
+		"A sötet oldalt választottad. Ez volt életed legjobb döntése",
 		"Miért érdekelne engem, ha emberek elakadnak?",
 	},
 	["ARCHON"] = {
@@ -1065,7 +1067,7 @@ module.gui.gameover.messages = {
 		"Ne hagyd, hogy mások lemásolják a házidat",
 		"Men tud'm has nzálni a Arcon potát¡",
 		"Mindenre fel kell készülnöd",
-		"Van egy kapu minden problémára",
+		"Minden problémát meg lehet oldani kapukkal",
 		"Mindenkit megzavartam!",
 	},
 	["DRIFTER"] = {
@@ -1075,18 +1077,18 @@ module.gui.gameover.messages = {
 		"Csak sodródj az árral",
 		"Az űrben nincs lefelé - nincs miért aggódni",
 		"Sodródj a győzelem felé",
-		"Ne állj meg - sodródj tovább",
-		"Szeretek liftezni",
+		"Teljes gőzzel előre!",
+		"A lifteim nagyon Őrültek",
 		"Szörfölj tovább",
 	},
 	["SPLICER"] = {
 		"CSAVARJ, KAPCSOLD ÖSSZE és EGYESÍTS",
-		"Soha ne menj egy egyenes vonalon túl sokáig",
+		"Nem lehet mindig egyenesen menni",
 		"Az élet tele van csavarokkal",
 		"Másoknak káosz, nekünk rend",
-		"Jól összekötöttem azokat a lépcsőket",
+		"A lépcsők arra valók, hogy összekapcsoljam",
 		"Ne kapcsolódj emberekkel, inkább KAPCSOLÓDJ LÉPCSŐKKEL!",
-		"Ha elég lépcsőt kötök össze, akkor előbb utóbb nyerni fogok",
+		"Ha elég lépcsőt kapcsolok össze, akkor előbb utóbb nyerni fogok",
 		"Együtt erősebbek a lépcsők",
 		"Köszönöm Markerquest, megmentettél",
 		"Megcsavarom ezt a lépcsőházat",
@@ -1099,7 +1101,7 @@ module.gui.gameover.messages = {
 		"A szellemek ragadtak a tükör mögé - vagy mi?\n!röküt a inröt gof le trem rám sseis óseT", 
 		"EBYGE JLÁV sé IK DLÉRESC ,JDŐZÖRKÜT\nTÜKRÖZŐDJ, CSERÉLD KI és VÁLJ EGYBE", 
 		"!tocárs a tze le kujdaH\nDehogy is! Biztos, hogy segíteni fog.",
-		"!neila men nödlöf a treM ?kenneila tilüvínödlöf a kájvíh tréiM\nLol!"
+		"!tréőtzselÉ ?abtlob a mellezs a tnem tréiM\nLol!"
 		".inröt gof le röküt a zE\nEz a tükör nem fog eltörni!",
 		"?knüseel sé kirötle rüköt a ah zsel iM\nNe ijesztgessél már!",
 	},
@@ -1118,7 +1120,7 @@ module.gui.gameover.messages = {
 	["GREMLIN"] = {
 		"FORGASS, PÖRGESS és HIPNOTIZÁLJ",
 		"Gyere játssz velem!",
-		"Mi a baj? Elszédültél? Bocsánat, azt hittem, hogy ennél jobb vagy",
+		"Jaj, csak nem elszédültél?,
 		"Ez a lépcsőház nagyon unalmas",
 		"Hadd javítsam meg azt a lépcsőt, heheh",
 		"Tetszik a remekművem? Nem? Milyen kár, pedig csak most kezdtem.",
@@ -1128,10 +1130,10 @@ module.gui.gameover.messages = {
 		"Wheeeeeeeeeeeeeeeeeeee!!!!!!!",
 	},
 	["NONE"] = {
-		"MINTHA ITT SE LENNÉNK",
-		"Nagyon erős leszek, ha majd százszor megmászom a tornyot.",
+		"MINTHA ITT SE LENNÉK",
+		"Nincs. Semmi. Baj.",
 		" ", --worked hard on this one
-		"A semmittevést nem lehet elhibázni.",
+		"Nem csinálok semmit, de azt legalább hibátlanul.",
 		"Van értelme egyáltalán megmászni a lépcsőket?",
 		"Léteznem se kéne, mégis itt vagyok.",
 		"Választhatnál egy másik osztályt, de én azt se bánnám, ha nem.",
@@ -1145,23 +1147,23 @@ module.gui.gameover.messages = {
 
 module.gui.gameover.maxrank ={
 
-	["SAVIOUR"] = "Senkit se hagyok hátra",
+	["SAVIOUR"] = "Senkit sem hagyok hátra",
 	["IT"] = "Szívatás az életem", 
 	["ANNIHILATOR"] = "Pusztíts el mindent!",
-	["AETHER"] = "Beléptem az alvilágba", 
+	["AETHER"] = "Üdvözöljük az alvilágban", 
 	["DABSFORLIF"] = "A varázslatok túlértékeltek",
 	["USURPER"] = "Én csak szeretem az összes varázslatot",
 	["ADMIRAL"] = "Rend helyreállítva",
 	["OUTLAW"] = "Minden az enyém!",
 	["ZERO"] = "Rootkit letöltve",
 	["EXILED"] = "Kiközösítve",
-	["ILLUMINATI"] = "Illuminati megerősítve",
-	["STRIDER"] = "Én inkább megyek lifttel",
+	["ILLUMINATI"] = "Megvilágosodtam",
+	["STRIDER"] = "Inkább megyek lifttel",
 	["DEATHBRINGER"] = "Szellemek is emberek!",
 	["OPTIMUS"] = "Az Összefonódás",
-	["ILLUSION"] = "Egyek knuygav.vagyunk keygE",
+	["ILLUSION"] = "Egységben őre za.az erő nebgésygE",
 	["DAEMON"] = "Körülöttem forog a világ.",
-	["BLACK HOLE"] = "Nincs. Semmi. Baj.",
+	["BLACK HOLE"] = "Első lépés teljesítve.",
 
 }
 
@@ -1171,13 +1173,13 @@ module.gui.gameover.credits = {
 		"Játékot kitalálta, tervezte és kódolta: Sleazel",
 		"Tervezésben segített: cakegirlserina",
 		"Modellek csinálta: ZielonyLeszek",
-		"Skyboxok @wwwtyro generátorával",
+		"A hátterek @wwwtyro generátora segítségével jöttek létre",
 		"Adat tároló modult (ProfileSore-t) készítette: loleris",
-		"Köszönjük, hogy játszottál a játékkal!",	
+		"Köszönjük, hogy játszottál a játékkal!",
 	},
 	["climb"] = "%s Mászás Zenéje - % alkotta: %",
 	["endgame"] = "%s Győzelmi Zenéje - % alkotta: %",
-	["disco"] = "Diszkó Lépcső Zenéje - % alkotta: %",
+	["disco"] = "Zenés Lépcső Zenéje - % alkotta: %",
 	["elevator"] = "Lift Zenéje - % alkotta: %", --drifter platforms
 	["testers"] = "VIZSGÁLÓK:",
 	--["translations"] = "FORDÍTÁSOK:",
@@ -1188,43 +1190,43 @@ module.gui.gameover.credits = {
 module.static = {
 
 	["cla_1"] = "Hogyan kell játszani?",
-	["cla_2"] = "Először is én azt ajánlanám, hogy csináld meg a kiképzést. Hogyha te ezt még nem tetted meg, legyen szíves lépj ki és lépj be újra, különben ez a játék nagyon összezavaró lehet.",
-	["cla_3"] = "A játék az a célja, hogy feljuss a legfelső szintre és megszerezd a lebegő Energikus Gömböt. Először válassz egy osztályt úgy, hogy ráugrasz egy villogó körre a pálya közepén.",
-	["cla_4"] = "Miután megelégedtél a választásoddal, mászd meg a lépcsőket. Gyűjts lebegő formákat, hogy feltöltsd a Manádat. Használd az osztályod varázslatáit, hogy segítsen rajtad a mászásban.",
+	["cla_2"] = "Először is azt javasolnám, hogy csináld meg a kiképzést. Hogyha te ezt még nem tetted meg, akkor kezd el a kiképzést a menüben lévő gombbal, különben ez a játék nagyon összezavaró lehet.",
+	["cla_3"] = "A játéknak az a célja, hogy feljuss a legfelső szintre és megszerezd a lebegő Energikus Gömböt. Először válassz egy osztályt úgy, hogy ráugrasz egy pálya közepén levő körre.",
+	["cla_4"] = "Miután megelégedtél a választásoddal, mászd meg a lépcsőket. Gyűjts lebegő kristályokat, hogy feltöltsd a Manádat. Használd az osztályod varázslatáit, hogy segítsen rajtad a mászásban.",
 	["cla_5"] = "Hogyan kell varázsolni?",
-	["cla_6"] = "Minden varázslat kerül valamennyi Manába, hogy megvarázsold. Hogyha van elég Manád, nyomd meg a varázslatot. A kezeid elkezdenek világítani azt jelezve, hogy sikeres tudtál varázsolni.",
-	["cla_7"] = "Miután sikerült varázsolni, a varázslatot végre kell hajtani. Az összes varázslatot ugrással kell végrehajtani. A varázslattól függően felületeken vagy lépcsőkön kell végrehajtani az adott varázslatot. Világító nyilak jelennek meg, hogy segítsenek a végrehajtásban.",
-	["cla_8"] = "Amikor befejezted a mászást, kapsz 3 varázs zsetont, amivel kinyithatsz egy új varázslatot. Fejezz be még több mászást, hogy még több varázslatokat szerezz meg. Nem lehet zsetont az egyik osztályból arra használni, hogy egy másik osztályban lévő varázslatot szerezz meg.",
+	["cla_6"] = "Mindegyik varázslat kerül valamennyi Manába. Hogyha van elég Manád, akkor nyomd meg a varázslatot. A kezeid elkezdenek világítani azt jelezve, hogy sikeresen tudtál varázsolni.",
+	["cla_7"] = "Kiválasztás után, a varázslatot végre kell hajtani. Az összes varázslatot ugrással kell végrehajtani. A varázslattól függően felületeken vagy lépcsőkön kell végrehajtani az adott varázslatot. Világító nyilak jelennek meg, hogy segítsenek a végrehajtásban.",
+	["cla_8"] = "Minden befejeztett mászásért kapsz 3 varázs zsetont, amivel kinyithatsz új varázslatokat Nem lehet zsetont az egyik osztályból arra használni, hogy egy másik osztályban lévő varázslatot szerezz meg.",
 	["cla_9"] = "Hogyan varázsolok különleges varázslatokat?",
 	["cla_10"] = "Először az összes alapvető varázslatot meg kell szerezned, hogy használhass különleges varázslatokat. Ezeket nem kell kinyitni, de Mana helyett Zsetont használnak el.",
-	["cla_11"] = "Fejezd be a mászást elégszer, hogy megszerezd az összes alapvető varázslatot. Érdemes versenyeket nyerni, mert bónusz Zsetonokat szerezhetsz. Vagy vehetsz zsetonokat. Amikor az megvan, nyomd meg a legbaloldalibb gombot vagy a 'C' billentyűt.",
-	["cla_12"] = "Néhány különleges varázslat időzített, és nem kell végrehajtani. Légyszíves olvasd el a további információkat az Osztálynak a Szentélyében, hogy többet tudjon az adott különleges varázslatról mielőtt megvarázsolnád. Egy időzített különleges varázslat megszüntetése után nem kapod vissza a zsetonokat.",
+	["cla_11"] = "Mászd meg a tornyot legalább ötszőr, hogy szerezz elegendő zsetont, de hamarabb is elérheted ezt, ha nyersz versenyeket vagy ha veszel zsetonokat. Amikor az megvan, nyomd meg a legbaloldalibb gombot vagy a 'C' billentyűt.",
+	["cla_12"] = "Néhány különleges varázslat időzített, és nem kell ugrással végrehajtani, de megszüntetése után nem kapod vissza a zsetonokat. Légyszíves olvasd el a további információkat az Osztálynak a Szentélyében, hogy többet tudjon az adott különleges varázslatról mielőtt megvarázsolnád.",
 
 	["pro_1"] = "PROFI TORONY",
-	["pro_2"] = "Páros szintek korlátozásai",
+	["pro_2"] = "Páros szintek korlátozása",
 	["pro_3"] = "A Profi Toronyban néhány felület varázslatot nem lehet megvarázsolni páros szinteken. A Csapda, Portál Létrehozása, Függőleges Teleportálás, Csigalépcső, és Véletlenszerű Teleportálás varázslatokat csak páratlan szinteken lehet végrehajtani.",
-	["pro_4"] = "Drifterek se tudnak lifteket létrehozni azokon a felületeken. Az érintett felületek jelezve vannak egy piros körrel.", --amelynek a közepében van egy X
+	["pro_4"] = "Drifterek se tudnak lifteket létrehozni azokon a felületeken. Az érintett felületek jelezve vannak egy piros körrel.", 
 	["pro_5"] = "Átkozott Lépcsők",
-	["pro_6"] = "A Profi Toronyban, Drónok véletlenszerűen létrehoznak Átkozott Lépcsőket vagy megátkoznak egy normális lépcsőt. 20% esély van arra, hogy megjelenjen egy Átkozott Lépcső. Segítő nyilak nem jelennek meg Átkozott Lépcsők közelében.",
-	["pro_7"] = "Az Átkozott Lépcsők immunisak a legtöbb varázslatokra. Nem tudsz átteleportálni rajtuk és használni a Hacker Villanás varázslatot. Továbbá, az összes varázslat, ami érintene egy Átkozott Lépcsőt se fog működni (például Keepernek a Lépcső Mozgatása).",
-	["pro_8"] = "Csak Hereticek és Admirálok tudnak helyreállítani Átkozott Lépcsőket. Tisztítás és Helyreállítás események is eltüntetik az átkozott lépcsőket. Azonban a Drónok mindig létrehoznak újakat a Profi toronyban.",
+	["pro_6"] = "A Profi Toronyban a Drónok véletlenszerűen létrehoznak Átkozott Lépcsőket vagy megátkoznak egy normális lépcsőt. 20% esély van arra, hogy megjelenjen egy Átkozott Lépcső. Segítő nyilak nem jelennek meg Átkozott Lépcsők közelében.",
+	["pro_7"] = "Az Átkozott Lépcsők immunisak a legtöbb varázslatra. Nem tudsz átteleportálni rajtuk Spectre Teleportálásával vagy Hacker Villanásával. Továbbá, az összes varázslat, ami érintene egy Átkozott Lépcsőt se fog működni (például Keepernek a Lépcső Mozgatása).",
+	["pro_8"] = "Csak Hereticek és Admirálok tudnak helyreállítani Átkozott Lépcsőket. Tisztítás és Helyreállítás események is eltüntetik az átkozott lépcsőket, azonban a Drónok mindig létrehoznak újakat a Profi toronyban.",
 	["pro_9"] = "Átkozott Kereszteződések",
 	["pro_10"] = "A Profi Toronyban Drónok véletlenszerűen létrehoznak Átkozott Kereszteződéseket is. Amikor egy drón talál egy üres Kereszteződést, akkor 20% esélye van arra, hogy megátkozza. A Segítő Nyilakon megjelenik egy x, ami megjelöli a kereszteződést.",
 	["pro_11"] = "Az Átkozott Kereszteződések megakadályozzák az összes olyan felület varázslatokat, amiket nyilakon kell végrehajtani. Nem tudsz létrehozni lépcsőket, kapcsokat vagy átteleportálni az Átkozott Kereszteződéseken.",
-	["pro_12"] = "Csak Hereticek, Admirálok és Drónok tudnak helyreállítani Átkozott Kereszteződéseket. Úgy mint az Átkozott Lépcsőknél, Wicked Tisztítás Eseménye elpusztítja az összes átkot, de újraépítés közben új átkok jönnek létre.",
+	["pro_12"] = "Csak Hereticek, Admirálok és Drónok tudnak helyreállítani Átkozott Kereszteződéseket. Wicked Tisztítás Eseménye elpusztítja az összes átkozott kereszteződést is, de újraépítés közben létre jönnek újjak.",
 
 	["inf_1"] = "VÉGTELEN TORONY",
 	["inf_2"] = "VERSENYEZNI KÖTELEZŐ",
-	["inf_3"] = "A végtelen toronyban, a versenyben részt venni kötelező. Nem versenyző játékosok nem varázsolhatnak és nem kapnak jutalmat. Ha hozzáérsz a gömbhöz, akkor csak kapsz 10 Manát.",
-	["inf_4"] = "Ahhoz hogy 'nyerj' a végtelen toronyban, be kell lépned egy versenyben és a lehető legtöbb ideig kell a tornyon maradni. A jutalmakat megkapod (ha szeresztél) miután kiestél.",
-	["inf_5"] = "Leesett Drón",
-	["inf_6"] = "A klasszikus és a profi toronnyal ellentétben, A Leesett Drónnak van egy különleges feladata a végtelen toronyban.",
-	["inf_7"] = "Mindig, amikor feljebb megy az intervallum, A Leesett Drón csinál 2 új szintet. Az összes páros szint le lesz zárva. Ezen felül, még néhány lépcső és kereszteződés lehet, hogy meg van átkozva.",
-	["inf_8"] = "Ez első intervallum 20 másodpercig tart. Minden egyes növelés csökkenti az intervallumot fél másodperccel. Addig fog az intervallum csökkeni, ameddig a szintek gyorsabban jönnek létre, mint ahogy azt meg lehetne mászni.",
+	["inf_3"] = "A végtelen toronyban versenyezni kötelező. Nem versenyző játékosok nem varázsolhatnak és nem kapnak jutalmat. Ha hozzáérsz a gömbhöz, akkor csak kapsz 10 Manát.",
+	["inf_4"] = "Ahhoz hogy jutalmat nyerj a végtelen toronyban, be kell lépned egy versenybe és a lehető legtöbb ideig kell a tornyon maradni. A jutalmakat megkapod (ha szeresztél) miután kiestél.",
+	["inf_5"] = "Nagy Drón",
+	["inf_6"] = "A klasszikus és a profi toronnyal ellentétben, A Nagy Drónnak van egy különleges feladata a végtelen toronyban.",
+	["inf_7"] = "Mindig, amikor feljebb megy az intervallum, A Nagy Drón csinál 2 új szintet. Az összes páros szint le lesz zárva. Ezen felül, még néhány lépcső és kereszteződés lehet, hogy meg van átkozva.",
+	["inf_8"] = "Ez első intervallum 20 másodpercig tart. Minél tovább tart a verseny, annál rövidebb lesz az intervallum.",
 	["inf_9"] = "Radír",
-	["inf_10"] = "A Radír az egy különleges erőtér, ami együtt növekszik a toronnyal és eltávolítja az alsó szinteket. Ha utolér a radír, akkor kiestél a versenyből. Ez olyan, mint egy növekvő láva másik játékokban.",
-	["inf_11"] = "A radír fel fog gyorsulni, mint a Leesett Drón. De a drónnal ellentétben, a radír fokozatosan gyorsul, és nem radíroz ki 2 szintet egyszerre.",
-	["inf_12"] = "A lépcsők és a felületek amik hozzáérnek a radírhoz eltűnnek. Kerüld el a radírt a lehető legtöbb ideig, hogy 'nyerj'.",
+	["inf_10"] = "A Radír az egy különleges erőtér, ami együtt növekszik a toronnyal és eltávolítja az alsó szinteket. Ha utolér a radír, akkor kiestél a versenyből.",
+	["inf_11"] = "A radír fel fog gyorsulni, mint a Nagy Drón. De a drónnal ellentétben, a radír fokozatosan gyorsul, és nem radíroz ki 2 szintet egyszerre.",
+	["inf_12"] = "A lépcsők és a felületek amik hozzáérnek a radírhoz eltűnnek. Kerüld el a radírt a lehető legtöbb ideig, hogy minél több jutalmat szerezz.",
 
 	["cus_1"] = "EGYEDI TORONY",
 	["cus_2"] = "TE DÖNTESZ!
@@ -1232,25 +1234,25 @@ module.static = {
 	["cus_4"] = "A jutalmak az Egyedi Toronyban meg vannak felezve. Kapsz egy zsetont minden 12. szintért és egy mászást minden 30. szintért.",
 	["cus_5"] = "Torony Beállításai",
 	["cus_6"] = "Beállíthatod a tornyot úgy, ahogy akarod. Beállíthatod a szintek számát, lezárhatod a páros szinteket vagy bekapcsolhatod a végtelen módot.",
-	["cus_7"] = "Csak a szerver tulajdonosa állíthatja be a tornyot.", --Nyilvános szervereken csak az a játékos állíthatja be a tornyot, amelyik a legtöbb időt töltött el a szerverben.
+	["cus_7"] = "Csak a szerver tulajdonosa állíthatja be a tornyot.",
 	["cus_8"] = "Drón Beállításai",
-	["cus_9"] = "Meg tudod változtatni a kis drónok beállításait is. Beállíthatod a lépcsők számát, az esélyt átkozott lépcsőkre és kereszteződésekre, vagy akár ki is kapcsolhatod a drónokat.",
+	["cus_9"] = "Meg tudod változtatni a kis drónok beállításait is. Beállíthatod a lépcsők számát, az átkozott lépcsők és kereszteződések megjelenésének esélyét, vagy akár ki is kapcsolhatod a drónokat.",
 
-	["vr_1"] = "Mivel a játékot VR-ban indítottad el, ezért automatikusan egy Architect lettél.",
-	["vr_2"] = "Normális játékosokkal ellentétben, neked nem kell megmászni a tornyot. A te célod, hogy megsegítsd vagy megszívasd a többi játékost.",
+	["vr_1"] = "Mivel a játékot egy VR szemüvegben indítottad el, ezért automatikusan egy Architect lettél.",
+	["vr_2"] = "Normális játékosokkal ellentétben, neked nem kell megmászni a tornyot. A célod, hogy megsegítsd vagy megszívasd a többi játékost.",
 	["vr_3"] = "Te döntés a te kezedben van. Egy gazember leszel, vagy egy megmentő? Vagy csak a kedvedre formálod a lépcsőházat? Érezd jól magad!",
 	["vr_4"] = "Hogyan mozgok?",
 	["vr_5"] = "Használd a bal joysticket, hogy előre meg hátra menj. Billentsd a bal joysticket oldalra, hogy jobbra vagy balra menj.",
 	["vr_6"] = "Használd a jobb joysticket, hogy fel meg le menj. Billentsd a jobb joysticket jobbra vagy balra, hogy 'hirtelen' fordítsd a kamerát.",
 	["vr_7"] = "Próbálj meg a lépcsőházon kívül lenni, hogy jól belásd a tornyot és hogy könnyebb legyen célozni.",
 	["vr_8"] = "Hogyan varázsolok varázslatokat?",
-	["vr_9"] = "Nyomd össze varázs gömböt a markolat gombbal. Megjelenik egy lézersugár, ami segít célba venni lépcsőket és felületeket.",
-	["vr_10"] = "Hajtsd végre a varázslatot a ravasszal, miközben le nyomva tartod a markolatot. Minden osztálynak kettő varázslata van VR-ban. Egy felületen és egy lépcsőn. A célponttól függően ki lesz választva a megfelelő varázslat.",
-	["vr_11"] = "Hogy osztályt válts VR módban, ahhoz nyomd meg hosszan a ravaszt anélül, hogy megnyomnád a markolatot. Osztályt tudsz váltani a kézzel megegyező oldalú joystickkel.",
+	["vr_9"] = "Nyomd össze varázs gömböt a markolat gombbal. Megjelenik egy lézersugár, amivel célba vehetsz lépcsőket és felületeket.",
+	["vr_10"] = "Hajtsd végre a varázslatot a ravasszal, miközben nyomva tartod a markolatot. Minden osztálynak kettő varázslata van VR-ban. Egy felületen és egy lépcsőn. A célponttól függően lesz kiválasztva a megfelelő varázslat.",
+	["vr_11"] = "Hogy osztályt válts VR módban, ahhoz nyomd meg hosszan a ravaszt anélül, hogy megnyomnád a markolatot. Tudsz váltani osztályt a kézzel megegyező oldalú joystickkel.",
 
 	["home_1"] = "MUGGLE OTTHONA",
 	["home_2"] = "JELMONDATUNK:\nFUSS\nUGORJ\nÉS\nESS",
-	["home_3"] = "ELŐNYÖK:\nGyorsabb és nagyobbat ugor magasabb rangoknál\nHÁTRÁNYOK:\nNincsenek varázslatai\nKönnyen elakad",
+	["home_3"] = "ELŐNYÖK:\nGyorsabb és nagyobbat ugor magasabb rangoknál\nHÁTRÁNYOK:\nNincs varázslata\nKönnyen elakad",
 	["home_4"] = "„Bezzeg az én időmben nem voltak ilyen puccos varázslatok!”\nalapítónk idézete",
 
 	["oasis_1"] = "CHAMELEON OÁZISA",
@@ -1266,11 +1268,11 @@ module.static = {
 	["guild_1"] = "THIEF REJTEKHELYE",
 	["guild_2"] = "JELMONDATUNK:\nKÖLCSÖNÖZZ\nHASZNÁLD\nÉS\nKÜLDD VISSZA",
 	["guild_3"] = "ELŐNYÖK:\nNem használ sok manát\nSokoldalú\nHÁTRÁNYOK:\nLépcsőt kell lopnia\nNem tud elpusztítani útban álló lépcsőket.",
-	["guild_4"] = "„Tulajdonképpen ezt úgy hívják, hogy kölcsönzés.”\nalapítónk idézete",
+	["guild_4"] = "„Én nem lopok, csak kölcsönzök.”\nalapítónk idézete",
 
 	["nether_1"] = "SPECTRE ALVILÁGA",
 	["nether_2"] = "JELMONDATUNK:\nTŰNJ EL\nBÚJJ EL\nÉS\nTELEPORTÁLJ",
-	["nether_3"] = "ELŐNYÖK:\nGyors varázslatok\nTökéletes ha egyedül játszol\nHÁTRÁNYOK:\nRobuxba kerül\nNem ajánlott csapatokban",
+	["nether_3"] = "ELŐNYÖK:\nGyors varázslatok\nTökéletes ha egyedül játszol\nHÁTRÁNYOK:\nRobuxba kerül\nCsapatokban nem ajánlott",
 	["nether_4"] = "„Mi baj lehet a teleportálással?”\nalapítónk idézete (MIA)", 
 
 	["study_1"] = "ARCHON TANULÓHELYE",
@@ -1285,7 +1287,7 @@ module.static = {
 
 	["shelter_1"] = "DRIFTER MENEDÉKE",
 	["shelter_2"] = "JELMONDATUNK:\nSZÖRFÖLJ\nLOVAGOLJ\nÉS\nSODRÓDJ",
-	["shelter_3"] = "ELŐNYÖK:\nSokoldalú\nCsapatjátékos\nHÁTRÁNYOK:\nKell hozzá parkúr tudás\nNem annyira hasznos Profi toronyban",
+	["shelter_3"] = "ELŐNYÖK:\nSokoldalú\nCsapatjátékos\nHÁTRÁNYOK:\nKell hozzá parkúr tudás\nNem annyira hasznos a Profi toronyban",
 	["shelter_4"] = "„Kinek kell lépcső, amikor az űrben vagyunk?”\nalapítónk idézete",
 
 	["circus_1"] = "JOKER CIRKUSZA",
@@ -1295,7 +1297,7 @@ module.static = {
 
 	["base_1"] = "KEEPER BÁZISA",
 	["base_2"] = "JELMONDATUNK:\nMOZGASS\nFORGASS\nÉS\nIRÁNYÍTS",
-	["base_3"] = "ELŐNYÖK:\nHelyre tudja állítani a lépcsőket\nMeg tudja mozgatni a lépcsőket\nHÁTRÁNYOK:\nKell hozzá parkúr, hogy jól használd\nHaszontalan lépcsők nélkül",
+	["base_3"] = "ELŐNYÖK:\nHelyre tudja állítani a lépcsőket\nMeg tudja mozgatni a lépcsőket\nHÁTRÁNYOK:\nKell hozzá parkúr, hogy jól használd\nLépcsők nélkül haszontalan",
 	["base_4"] = "„Ne tedd tönkre a lépcsőházamat!”\nalapítónk idézete",
 
 	["chamber_1"] = "WICKED KAMRÁJA",
@@ -1303,15 +1305,15 @@ module.static = {
 	["chamber_3"] = "ELŐNYÖK:\nEl tud pusztítani bármilyen lépcsőt\nVagy akár egyszerre az összeset\nHÁTRÁNYOK:\nTúlzottan támaszkodik lépcsőkre",
 	["chamber_4"] = "„Nem vagyok gonosz, csak túl sok a lépcső.”\nalapítónk idézete",
 
-	["backdoor_1"] = "HACKER HÁTSÓ AJTAJA",
+	["backdoor_1"] = "HACKER MÁTRIXA",
 	["backdoor_2"] = "JELMONDATUNK:\nHASZNÁLD KI\nHIBÁSÍTSD MEG\nÉS\nTÖRD SZÉT",
-	["backdoor_3"] = "ELŐNYÖK:\nLeggyorsabb osztály\nNehéz követni\nHÁTRÁNYOK:\nTúlzottan támaszkodik lépcsőkre\nHaszontalan csapatokban",
+	["backdoor_3"] = "ELŐNYÖK:\nLeggyorsabb osztály\nNehéz követni\nHÁTRÁNYOK:\nTúlzottan támaszkodik lépcsőkre\nCsapatokban haszontalan",
 	["backdoor_4"] = "„Igazságos játszma? Olyan nem létezik.”\nalapítónk idézete",
 
 	["hub_1"] = "SPLICER KÖZPONTJA",
 	["hub_2"] = "JELMONDATUNK:\nCSAVARJ\nKAPCSOLJ ÖSSZE\nÉS\nEGYESÍTS",
 	["hub_3"] = "ELŐNYÖK:\nSokoldalú\nJó csapatokban\nHÁTRÁNYOK:\nPicit összezavaró\nSok idő elsajátítani",
-	["hub_4"] = "„Soha ne menj egy egyenes vonalon túl sokáig.”\nalapítónk idézete",
+	["hub_4"] = "„Nem lehet mindig egyenesen menni.”\nalapítónk idézete",
 
 	["shack_1"] = "GREMLIN KUNYHÓJA",
 	["shack_2"] = "JELMONDATUNK:\nFORGASS\nPÖRGESS\nÉS\nHIPNOTIZÁLJ",
@@ -1334,27 +1336,27 @@ module.static = {
 	["studio_4"] = "„Most viszont én uralom a lépcsőházat!”\nalapítónk idézete",
 
 	--SHARED
-	["leader_pro"] = "Profi Torony 2 mászást ad",	
-	["leader_update"] = "Következő Frissítés: ",	
+	["leader_pro"] = "Profi Torony 2 mászást ad",
+	["leader_update"] = "Következő Frissítés:",	
 	["leader_updating"] = "Frissítés...",	
 	["leader_rank"] = "RANG",
 	["leader_req"] = "SZÜKSÉGES MÁSZÁSOK", 
-	["leader_off"] = "Egyedi torony nem támogatja a ranglistákat.",
+	["leader_off"] = "Egyedi toronyban nincsenek ranglisták.",
 
 	--OVERALL
 	["over_title"] = "ÖSSZEFOGLALÓ RANGOK",
-	["over_desc"] = "Minden szerzett rang ad 1 pontot",
+	["over_desc"] = "Minden egyes szerzett rang ad 1 pontot",
 	["over_rank"] = "RANG",
 	["over_req"] = "SZÜKSÉGES PONTOK",
-	["emperor_req"] = "* Szükséges Chameleon VAGY Spectre",
-	["overmind_req"] = "** Szükséges Chameleon ÉS Spectre ",
+	["emperor_req"] = "* Ehhez kell Chameleon VAGY Spectre",
+	["overmind_req"] = "** Ehhez kell Chameleon ÉS Spectre",
 	["over_prefix"] = "ELŐTAG",
-	["over_passes"] = "SZÜKSÉGES\nTERMÉKEK",
+	["over_passes"] = "SZÜKSÉGES\nÖRÖK TERMÉKEK",
 	["over_notgroup"] = "OLIVA SZÍNŰ - nincs benne a csoportban", 
 	["over_group"] = "ZÖLDESKÉK SZÍNŰ - benne van a csoportban",
 	["over_mod"] = "MODERATOR - ez a játékos egy moderator",
 	["over_admin"] = "ADMIN - ez a játékos egy admin", --pls sleazel uwu
-	["over_owner"] = "PRANK ME - Játék készítője (sleazel)",
+	["over_owner"] = "PRANK ME - Játék készítője (Sleazel)",
 
 	--OTHER
 	["muggle_lead"] = "KITARTÓ MUGGLEÖK",
@@ -1406,23 +1408,23 @@ module.static = {
 	["chameleon_ranks"] = "CHAMELEON RANGOK",
 
 	["dailies"] = "MAI REKORDOK",
-	["most_climbs"] = "LEGTÖBB MÁSZÁS",
-	["most_wins"] = "LEGTÖBB VERSENYGYŐZELEM",  
+	["most_climbs"] = "LEGJOBB MÁSZÓK",
+	["most_wins"] = "LEGJOBB VERSENYZŐK",  
 }
 
 --TUTORIAL
 module.tutorial = {
 
 	["tut_big_1"] = "Üdvözöljük az Őrült Lépcsőkben!",
-	["tut_big_2"] = "Először tanuld meg hogyan változz át.",
+	["tut_big_2"] = "Először tanuld meg hogyan változtass osztályt.",
 	["tut_big_3"] = "Te most egy Patron vagy. Patronok létre tudnak hozni lépcsőket.",
 	["tut_big_4"] = "Az összes varázslatot ugrással kell végrehajtani.",
 	["tut_big_5"] = "Menő, ugye? Most változz át Jokerré. Jokerek meg tudják fordítani a lépcsőket.",
 	["tut_big_6"] = "Te most egy Joker vagy, használd ezt a varázslatot, hogy megfordíts a lépcsőt.",
-	["tut_big_7"] = "Néhány varázslatot lépcsőkön kell végrehajtani.",
+	["tut_big_7"] = "Néhány varázslatot egy lépcsőn kell végrehajtani.",
 	["tut_big_8"] = "Most változz át Keeperré. Keeperek tudnak mozgatni lépcsőket.",
 	["tut_big_9"] = "Te most egy Keeper vagy, használd ezt a varázslatot, hogy megmozgasd a lépcsőt.",
-	["tut_big_10"] = "Ugorj az előre álló nyílra, hogy megmozgasd a lépcsőt.",
+	["tut_big_10"] = "Ugorj az előre mutató nyílra, hogy megmozgasd a lépcsőt.",
 	["tut_big_11"] = "Sok útban álló lépcsővel fogsz találkozni ebben a játékban.",
 	["tut_big_12"] = "Te most egy Wicked vagy, használd ezt a varázslatot, hogy elpusztítsd az utadban álló lépcsőt.",
 	["tut_big_13"] = "El tudsz pusztítani feletted lévő lépcsőket úgy, hogy ráugrasz az alattuk lévőre.",
@@ -1457,24 +1459,24 @@ module.guide = {
 
 	--arrows
 	["arrow"] = {
-		["through"] = "Végre lehet hajtani üres kereszteződésekben vagy útban nem álló lépcsőkön keresztűl.",
-		["superforced"] = "Végre lehet hajtani üres kereszteződésekben, vagy útban álló lépcsőkön keresztűl. Ha rendelkezel BANISHED ranggal, akkor elpusztíthatsz útban lévő átkozott lépcsőket.",
-		["flicker"] = "Végre lehet hajtani üres kereszteződésekben. Ha rendelkezel INDIFEL ranggal, akkor végre hajthatod átkozott kereszteződésekben is.",
-		["any"] = "Végre lehet hajtani bármilyen nem átkozott kereszteződésben.",
-		["wall"] = "Végre lehet hajtani bármilyen nem átkozott kereszteződésben, amelyben nincsen egy Fal vagy Kapu.",
+		["through"] = "Végre lehet hajtani üres kereszteződésekben, vagy útban nem álló lépcsőkön keresztűl.",
+		["superforced"] = "Végre lehet hajtani üres kereszteződésekben, vagy útban álló lépcsőkön keresztűl.",
+		["flicker"] = "Végre lehet hajtani üres kereszteződésekben.",
+		["any"] = "Végre lehet hajtani nem átkozott kereszteződésekben.",
+		["wall"] = "Csak olyan nem átkozott kereszteződésekben lehet végrehajtani, amelyben nincsen egy Fal vagy Kapu.",
 		["forced"] = "Végre lehet hajtani üres kereszteződésekben, vagy nem átkozott útban álló lépcsőkön keresztűl.",
 		["halfsoft"] = "Végre lehet hajtani üres kereszteződésekben, vagy nem átkozott útban álló lépcsőkön keresztűl magasabb rangokon.",
 		["soft"] = "Csak üres kereszteződésekben lehet végrehajtani.",
 		["flatten"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy útban álló normális vagy riges lépcső.",
 		["hack"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy útban álló nem átkozott lépcső.
-		["sidepass"] = "Végre lehet hajtani bármilyen nem átkozott kereszteződésben, amelyben nincs egy Kitérő.",
+		["sidepass"] = "Csak olyan nem átkozott kereszteződésekben lehet végrehajtani, amelyben nincsen egy Kitérő.",
 	},
 
 	["platform"]= {
 		
 
 		--platform
-		["middle"] = "Ennek a varázslatnak nincsen különleges feltétele.",
+		["middle"] = "Ennek a varázslatnak nincs különleges feltétele.",
 		["diag"] = "Végre lehet hajtani a torony külső és belső felületein átlós irányban.",
 		["outer"] = "Csak a torony külső felületein lehet végrehajtani.",
 		["centre"] = "Ez a varázslat összetöri az összes kicsi tükröt ezen a szinten, de a hatalmasat nem.",
@@ -1486,20 +1488,20 @@ module.guide = {
 	["stairs"] ={
 		
 		["cursed"] = "Végre lehet hajtani normális, riges vagy átkozott lépcsőkön.",
-		["all"] = "Végre lehet hajtani bármilyen lépcsőn. Ha rendelkezel Annihilator ranggal, akkor elpusztíthatsz átkozott lépcsőket.",
-		["steal"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Hijacker ranggal, akkor ellophatsz bármilyen nem átkozott lépcsőt.",
-		["onedirection"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Controller ranggal, akkor megmozgathatsz bármilyen nem átkozott lépcsőt.",
-		["straight"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Controller ranggal, akkor megmozgathatsz bármilyen nem átkozott lépcsőt.",
-		["rotate"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Controller ranggal, akkor megmozgathatsz bármilyen nem átkozott lépcsőt.",
+		["all"] = "Végre lehet hajtani bármilyen lépcsőn.",
+		["steal"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["onedirection"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["straight"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["rotate"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["flip"]= "Végre lehet hajtani normális, riges vagy megfordított lépcsőkön.",
-		["gate"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Prodigy ranggal, akkor felülírhatsz kapukat.",
-		["gatestr"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Prodigy ranggal, akkor felülírhatsz kapukat.",
-		["gaterot"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Prodigy ranggal, akkor felülírhatsz kapukat.",
-		["twist"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Transformer ranggal, akkor felülírhatsz csavart lépcsőket.",
-		["twiststr"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Transformer ranggal, akkor felülírhatsz csavart lépcsőket.",
-		["twistrot"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Transformer ranggal, akkor felülírhatsz csavart lépcsőket.",
-		["spin"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Nomad ranggal, akkor megforgathatsz sodródott lépcsőket.",
-		["drift"] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha rendelkezel Nomad ranggal, akkor megforgathatsz sodródott lépcsőket.",
+		["gate"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["gatestr"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["gaterot"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["twist"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["twiststr"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["twistrot"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["spin"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["drift"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["escalator"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["oneway"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["revolve"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
@@ -1510,10 +1512,10 @@ module.guide = {
 	["above"] = {
 		
 		["cursed"] = "Végre lehet hajtani egy normális, riges vagy átkozott lépcső alatt.",
-		["all"] = "Végre lehet hajtani bármilyen lépcső alatt. Ha rendelkezel Annihilator ranggal, akkor elpusztíthatsz átkozott lépcsőket.",
-		["steal"] = "Végre lehet hajtani egy normális vagy riges lépcső alatt. Ha rendelkezel Hijacker ranggal, akkor ellophatsz bármilyen nem átkozott lépcsőt.",
+		["all"] = "Végre lehet hajtani bármilyen lépcső alatt.",
+		["steal"] = "Végre lehet hajtani egy normális vagy riges lépcső alatt.",
 		["flip"]= "Végre lehet hajtani egy normális, riges vagy megfordított lépcső alatt.",
-		["onedirection"] = "Végre lehet hajtani egy normális vagy riges lépcső alatt. Ha rendelkezel Controller ranggal, akkor megmozgathatsz bármilyen nem átkozott lépcsőt.",
+		["onedirection"] = "Végre lehet hajtani egy normális vagy riges lépcső alatt.",
 		["slide"] = "Ezzel a varázslattal átjuthatsz bármilyen nem átkozott lépcsőn.",
 		["normalrig"] = "Végre lehet hajtani egy normális vagy riges lépcső alatt.",
 
@@ -1522,13 +1524,13 @@ module.guide = {
 	["dynamic"] = {
 		--hack, twister, bender and flipper
 		['flip'] = "Végre lehet hajtani egy normális, riges vagy megfordított lépcsőn vagy egy olyan lépcső alatt. Ha valamiért nem tudod a feletted lévő lépcsőt megfordítani, akkor helyette megfordítod az alattad lévő lépcsőt.",
-		['normalrig'] = "Végre lehet hajtani egy normális vagy riges lépcsőn vagy egy olyan lépcső alatt alatt. A varázslat egyszerre hathat az alattad és a feletted lévő lépcsőkre.",
-		['slide'] = "Végre lehet hajtani egy normális vagy riges lépcsőn. Ha van feletted egy nem átkozott lépcső, akkor az a lépcső elpusztul.",
+		['normalrig'] = "Végre lehet hajtani egy normális vagy riges lépcsőn vagy egy olyan lépcső alatt. A varázslat egyszerre hathat az alattad és a feletted lévő lépcsőkre.",
+		['slide'] = "Végre lehet hajtani normális vagy riges lépcsőkön. Ha van feletted egy nem átkozott lépcső, akkor az a lépcső elpusztul.",
 	},
 	
 	["both"] = {
-		['restore'] = "Végre lehet hajtani bármilyen lépcsőn vagy egy felületnek a nyilán ami mellet van egy lépcső. Ha rendelkezel Admiral ranggal, akkor helyreállíthatsz átkozott lépcsőket.",
-		['deltwists'] = "Végre lehet hajtani csavart lépcsőkön vagy egy felületnek a nyilán ami mellet van egy csavart lépcső. Ha rendelkezel Combiner ranggal, akkor helyreállíthatsz a felülethez nem kapcsolódó lépcsőket.",
+		['restore'] = "Végre lehet hajtani bármilyen lépcsőn vagy egy felületnek a nyilán ami mellet van egy lépcső.",
+		['deltwists'] = "Végre lehet hajtani csavart lépcsőkön vagy egy felületnek a nyilán ami mellet van egy csavart lépcső.",
 		['ghosted'] = "Végre lehet hajtani normális, riges vagy szellemesített lépcsőn vagy egy felületnek a nyilán ami mellet van egy normális, riges vagy szellemesített lépcső.",
 
 		["archpatron"] = "Patron Lépcső Létrehozása (ha egy nyílon használod) vagy Lépcső Zsugorítása (ha egy lépcsőn használod)",
@@ -1546,7 +1548,7 @@ module.guide = {
 	},
 	
 	['both2'] = {
-		['delsplits'] = "Csak kapuzott lépcsőkön lehet végrehajtani. Ha rendelkezel Disciple ranggal, akkor a Felületeknek a kapuját is el tudod tüntetni.",
+		['delsplits'] = "Csak olyan lépcsőkön lehet végrehajtani, amelyeken van egy kapu.",
 
 		["archgremlin"] = "Gremlin Felület Pörgetése (ha egy felületen használod) vagy Lépcső Pörgetése (ha egy lépcsőn használod)",
 		["archdrifter"] = "Drifter Liftje (ha egy felületen használod) vagy Lépcső Véletlenszerű Sodorítása (ha egy lépcsőn használod)",
@@ -1608,34 +1610,34 @@ module.serverfeedback = {
 	["onlyracers"] = "Csak versenyzők varázsolhatnak.",
 	["cancelfirst"] = "Előbb szüntesd meg a jelenlegi varázslatot...",
 	["stashfull"] = "Tele van a leltárad.",
-	["stashempty"] = "El kell lopnod egy lépcsőt mielőtt megvarázsolnád ezt a varázslatot.",
+	["stashempty"] = "El kell lopnod egy lépcsőt mielőtt megvarázsolhatnád ezt a varázslatot.",
 	["ultwait"] = "Egy másik különleges varázslat van folyamatban. Kérlek várj.",
 	["notdefault"] = "A Drónoknak előbb vissza kell váltaniuk alap módba. Kérlek várj.",
 	["noreshuffle"] = "Előbb válaszd meg az átrendezésnek a módját!",
 	["oneoverload"] = "Nem lehet egyszerre több Mana Túltöltésed aktív.",
 	["cursed"] = "Ez a lépcső átkozott!",
-	["cursed2"] = "Átkozott lépcső van az utadban!",
+	["cursed2"] = "A szembem álló lépcső átkozott!",
 	["blocked"] = "Ez a kereszteződés átkozott.",
 	["locked"] = "Ez a lépcső le van zárva.",
-	["platformlocked"] = "Célba vett felület le van zárva.",
+	["platformlocked"] = "Ez, vagy a célba vett felület le van zárva.",
 	["normalrig"] = "Ez a varázslat csak normális vagy riges lépcsőkön működik.",
-	["noway"] = "Van egy lépcső abban az irányban. (lehet, hogy láthatatlan)",
-	["noway2"] = "Van egy keresztező lépcső abban az irányban. (lehet, hogy láthatatlan)",
-	["noplatform"] = "Nincs felület abban az irányban.",
+	["noway"] = "Van egy lépcső ebben az irányban. (lehet, hogy láthatatlan)",
+	["noway2"] = "Van egy keresztező lépcső ebben az irányban. (lehet, hogy láthatatlan)",
+	["noplatform"] = "Nincs felület ebben az irányban.",
 	["nopass"] = "Ezt a varázslatot csak a torony szélén lehet végrehajtani.",
 	["pass"] = "Már van itt egy kitérés.",
 	["link"] = "Már van itt egy kapocs.",
 	["noblink"] = "Csak útban álló lépcsőkön lehet átvillanni.",
-	["noblink2"] = "Csak olyan lépcsőkön tudod végrehajtani ezt a varázslatot, amelyeknek a teteje hozzá ér az útban álló lépcsőhöz.", 
+	["noblink2"] = "Csak olyan lépcsőkön tudod végrehajtani ezt a varázslatot, amelyeknek a teteje hozzá ér a felülethez.",
 	["noflip"] = "Csak normális, megfordított vagy riges lépcsőket lehet megfordítani.",
-	["nothingtocopy"] = "Nincsenek itt lépcsők, amelyeket te vagy a szellemed le tudna másolni.",
-	["wrongdirection"] = "Nem tudod ezt a varázslatot végrehajtani abban az irányban.",
+	["nothingtocopy"] = "Nincs itt lépcső, amelyet te vagy a szellemed le tudna másolni.",
+	["wrongdirection"] = "Nem tudod ezt a varázslatot végrehajtani ebben az irányban.",
 	["notfound"] = "Nem található itt lépcső.",
 	["nocursedblink"] = "Nem tudsz átkozott lépcsőkön átvillanni.",
-	["nostairs"] = "Nincsen itt lépcső.",
+	["nostairs"] = "Nincs itt lépcső.",
 	["noground"] = "Ezt a varázslatot nem lehet végrehajtani a földszinten.",
 	["oddonly"] = "Ezt a varázslatot nem lehet végrehajtani ezen a szinten.",
-	["noabove"] = "Nincsen közvetlenül feletted lépcső.",
+	["noabove"] = "Nincs közvetlenül feletted lépcső.",
 	["lock"] = "Most nem használhatsz varázslatokat.",
 	["outdrift"] = "A külső lifteket csak a torony külső felületein lehet létrehozni.",
 	["cantgate"] = "Ez az irány le van zárva.",
@@ -1646,24 +1648,24 @@ module.serverfeedback = {
 	["wrongplace"] = "A másik lépcsőnek a játék területen belül kell lennie.",
 	["archrace"] = "Nem változhatsz át Architectté miközben egy versenyben vagy.",
 	["blockedplit"] = "Nem lehet kaput létrehozni, a célba vett irányban van egy átok.",
-	["cursedtarget"] = "Átkozott Lépcső van abban az irányban.",
-	["lockedother"] = "Még nem tudod létrehozni a lépcsőt, a másik lépcső le van zárva.",
+	["cursedtarget"] = "Átkozott Lépcső van ebben az irányban.",
+	["lockedother"] = "Még nem tudod végrehajtani ezt a varázslatot, a másik lépcső le van zárva.",
 	["failedgate"] = "Nem sikerült kapukat létrehozni.",
 	["notwist"] = "Ez a lépcső nem csavart.",
 	["wrongmove"] = "Nem lehet a lépcsőt a játék területen kívülre mozgatni.",
-	["blockedmove"] = "Nem lehet a lépcsőt mozgatni, mert átok van abban az irányban.",
+	["blockedmove"] = "Nem lehet a lépcsőt mozgatni, mert ez a kereszteződés átkozott.",
 	["lockedmove"] = "Még nem lehet a lépcsőt mozgatni, mert az útban álló lépcső le van zárva.",
-	["normal"] = "Ez a lépcső már normális.",
+	["normal"] = "Ez a lépcső normális.",
 	["lockedinter"] = "Ez a kereszteződés le van zárva.",
-	["toponly"] = "A 'Gömb Hívása' varázslatot csak a legfelső szinten lehet megvarázsolni.",
+	["toponly"] = "Ezt a varázslatot csak a legfelső szinten lehet megvarázsolni.",
 	["duplicatemirror"] = "Már van egy tükör ezen a szinten.",
-	["norestore"] = "Nem tudod helyreállítani a kitéréseket és a csigalépcsőket.",
+	["norestore"] = "Nem tudsz helyreállítani kitéréseket és csigalépcsőket.",
 
 	--higher rank required
 	["admiral2"] = "Csak akkor állíthatsz helyre átkozott lépcsőket, ha rendelkezel Admiral ranggal.",
 	["admiral"] = "Csak akkor állíthatsz helyre átkozott kereszteződéseket, ha rendelkezel Admiral ranggal.",
 	["infidel"] = "Csak akkor használhatod ezt a varázslatot átkozott kereszteződésekben, ha rendelkezel Infidel ranggal.",
-	["banished"] = "Csak akkor pusztíthatsz el útban álló Átkozott Lépcsőket, ha rendelkezel Banished ranggal. ",
+	["banished"] = "Csak akkor pusztíthatsz el útban álló Átkozott Lépcsőket, ha rendelkezel Banished ranggal.",
 	["annihilator"] = "Csak akkor pusztíthatsz el átkozott lépcsőket, ha rendelkezel Annihilator ranggal.",
 	["disciple"] = "Csak akkor pusztíthatsz el Felületen lévő Kapukat, ha rendelkezel Disciple ranggal.",
 	["nomad"] = "Csak akkor forgathatsz meg sodródott lépcsőket, ha rendelkezel Nomad ranggal.",
@@ -1671,9 +1673,10 @@ module.serverfeedback = {
 	["traveller"] = "Csak akkor emelhetsz fel lifteket, ha rendelkezel Traveller ranggal.",
 	["controller"] = "Csak akkor mozgathatsz meg bármilyen nem átkozott lépcsőt, ha rendelkezel Controller ranggal.",--*
 	["replica"] = "Csak akkor válhatsz szét a szellemeddel ezzel a varázslattal, ha rendelkezel Replica ranggal.",--*
+	["skeleton"] = "Csak akkor távolíthatsz el átkokat ezzel a varázslattal, ha rendelkezel Skeleton ranggal.",
 	["lich"] = "Csak akkor pusztíthatsz el keresztező lépcsőket, ha rendelkezel Lich ranggal.",
 	["hijacker"] = "Csak akkor lophatsz el bármilyen nem átkozott lépcsőt, ha rendelkezel Hijacker ranggal.",
-	["transformer"] = "Csak akkor csavarhatsz meg megcsavart lépcsőket, ha rendelkezel Transformer ranggal.",
+	["transformer"] = "Csak akkor írhatsz felül megcsavart lépcsőket, ha rendelkezel Transformer ranggal.",
 	["strider"] = "Csak akkor emelhetsz meg mégegyszer lifteket, ha rendelkezel Strider ranggal.",
 	["poltergeist"] = "Csak akkor pusztíthatsz el keresztező lépcsőket, ha rendelkezel Poltergeist ranggal.",
 
@@ -1687,7 +1690,7 @@ module.serverfeedback = {
 	["patronrig"] = "%s adott neked ajándékba 1 Manát!",
 	["thiefrig"] = "%s ellopott tőled 1 Manát!",
 	["mythiefrig"] = "Elloptál egy Manát ettől a játékostól: %s",
-	["notthiefrig"] = "%s már nem egy thief - mana nem lett ellopva.",
+	["notthiefrig"] = "%s már nem egy Thief - mana nem lett ellopva.",
 	["leftthiefrig"] = "Thief elhagyta a játékot - mana nem lett ellopva.",
 	["hereticrig"] = "Meg lettél szállva!",
 	["archonrig"] = "Teleportálódsz!",
@@ -1700,19 +1703,19 @@ module.serverfeedback = {
 	
 	--drifer lifts
 	["boosted"] = "Lift megemelve!",
-	["noboost"] = "Nem lehet emelni, nincs feletted felület.",
-	["noupplatform"] = "Nem lehet emelni, nincs feletted felület.",
+	["noboost"] = "Nem lehet a liftet emelni, nincs feletted felület.",
+	["noupplatform"] = "Nem lehet a liftet emelni, nincs feletted felület.",
 	
 	--mana overload
-	["overstarted"] = "Bekapcsoltad a Mana Túltöltést!",
+	["overstarted"] = "Aktiváltad a Mana Túltöltést!",
 	["overended"] = "Mana Túltöltés befejezve",
 	
 	--mana share
 	["2minshare"] = "Legalább 2 Mana szükséges a megosztáshoz.",
-	["noshare"] = "Nincsen közelben játékos, aki Manát kaphatna...",
+	["noshare"] = "Nincs közeledben játékos...",
 	["noinf"] = "Nem tudsz megosztani végtelen Manát!",
 	["toomuch"] = "%s tele van Manával!",
-	["shared"] = "Megosztottál Manát ezzel a játékossal: %s!",
+	["shared"] = "Megosztottál Manát %s nevű játékossal!",
 	["received"] = "%s megosztotta veled a Manáját!",
 	
 	--prompts
@@ -1731,9 +1734,9 @@ module.serverfeedback = {
 	["morphpossessed"] = "Nem változtathatsz osztályt miközben meg vagy szállva.",
 	["morphhypnotized"] = "Nem változtathatsz osztályt miközben hipnotizálva vagy.",
 	
-	["nocode"] = "Légyszíves előbb írd be a kódot.",
+	["nocode"] = "Légyszíves előbb írj be egy kódot.",
 	["invalid"] = "Ez a kód nem érvényes.",
-	["old"] = "Ez a kód már nem aktív.",
+	["old"] = "Ez a kód nem aktív.",
 	["accepted"] = "Kód elfogadva.",
 	
 	--free demos
@@ -1741,37 +1744,34 @@ module.serverfeedback = {
 	["endspectre"] = "Spectre demó 1 perc múlva véget ér!",
 	["trycham"] = "Chameleon feloldva 10 percig! Ne hagyd el a szervert.",
 	["new20pass"] = "Mana tárhely megnövelve!",
-	["newchampass"] = "Most már változtathatsz osztályt mászás közben!",
-
+	["newchampass"] = "Most változtathatsz osztályt mászás közben!",
 	["tryarch"] = "VR-nélküli Architect feloldva 10 percig! Ne hagyd el a szervert.",
-	["newarchpass"] = "Most már lehetsz ARCHITECT!",
+	["newarchpass"] = "Most lehetsz ARCHITECT!",
 	["endarch"] = "VR-nélküli Architect demó 1 perc múlva véget ér!",
-
-	["newspectrepass"] = "Most már lehetsz SPECTRE!",
+	["newspectrepass"] = "Most lehetsz SPECTRE!",
 	["endcham"] = "Chameleon demó 1 perc múlva véget ér!",
 	["trymana"] = "Nagyobb tárhely feloldva 10 percig! Ne hagyd el a szervert.",
 	["endmana"] = "Nagyobb tárhely demó 1 perc múlva véget ér!",
 
-	
-	["used"] = "Ezt a kódot már elhasználtad.",
+	["used"] = "Ezt a kódot elhasználtad.",
 	["tooshort"] = "Az üzeneted túl rövid volt és nem lett elküldve.",
 	["sent"] = "Az üzeneted sikeresen el lett küldve, köszönjük.",
 
 	--custom tower feedbacks
-	["notinrace"] = "Nem állíthatod át a végtelen módot egy verseny közben!",
-	["notinreg"] = "Nem állíthatod át a végtelen módot miközben a lépcsőház újraépül!",
-	["infinite"] = "A szerver most végtelen módban van!",
-	["classic"] = "A szerver most klasszikus módban van!",
+	["notinrace"] = "Nem állíthatod át a torony módját egy verseny közben!",
+	["notinreg"] = "Nem állíthatod át a torony módját miközben a lépcsőház újraépül!",
+	["infinite"] = "A szervert átállították végtelen módba!",
+	["classic"] = "A szervert átállították klasszikus módba!",
 	["casual"] = "Átlagos játékosok most varázsolhatnak!",
 	["nocasual"] = "Átlagos játékosok most nem varázsolhatnak!",
-	["purge"] = "Tisztítás most okoz regenerálást klasszikus módban!",
-	["nopurge"] = "Tisztítás most nem okoz regenerálást klasszikus módban!",
+	["purge"] = "Tisztítás okozni fog regenerálást klasszikus módban!",
+	["nopurge"] = "Tisztítás nem fog okozni regenerálást klasszikus módban!",
 	["noevens"] = "Páros szintek most le vannak zárva!",
 	["evens"] = "Páros szintek most nincsenek lezárva!",
-	["orbmoves"] = "Legfelső Szinti Gömb most véletlenszerűen mozog magától!",
-	["orbstopped"] = "Legfelső Szinti Gömb most nem mozog magától!",
-	["infreg"] = "A lépcsőház most újra fog épülni magától egy végtelen verseny után!",
-	["noinfreg"] = "A lépcsőház most nem fog magától újraépülni egy végtelen verseny után!",
+	["orbmoves"] = "Legfelső Szinti Gömb véletlenszerűen fog mozogni magától!",
+	["orbstopped"] = "Legfelső Szinti Gömb nem fog mozogni magától!",
+	["infreg"] = "A lépcsőház újra fog épülni magától egy végtelen verseny után!",
+	["noinfreg"] = "A lépcsőház nem fog magától újraépülni egy végtelen verseny után!",
 	["drones"] = "Kicsi Drónok bekapcsolva!",
 	["nodrones"] = "Kicsi Drónok kikapcsolva!",
 	["dronefix"] = "Drónok helyre fognak állítani lépcsőket!",
@@ -1781,55 +1781,54 @@ module.serverfeedback = {
 	["droneuncurse"] = "Drónok helyre fognak állítani átkozott lépcsőket!",
 	["nodroneuncurse"] = "Drónok nem fognak helyreállítani átkozott lépcsőket!",
 	["dronemove"] = "Drónok meg fognak mozgatni lépcsőket alap módban!",
-	["nodronemove"] = "Drónok nem fognak megmozgatni lépcsőket alap módban!",
-	["dronespin"] = "Drónok meg fognak forgatni lépcsőket alap módban!",
-	["nodronespin"] = "Drónok nem fognak megforgatni lépcsőket alap módban!",
+	["nodronemove"] = "Drónok nem fognak megmozgatni és lépcsőket alap módban!",
+	["dronespin"] = "Drónok meg fognak forgatni 180 fokban lépcsőket alap módban!",
+	["nodronespin"] = "Drónok nem fognak megforgatni 180 fokban lépcsőket alap módban!",
 	["noinput"] = "Adjál meg egy értéket!",
 	["nonumber"] = "Adjál meg egy számot!",
 	["notrace"] = "Nem állíthatod át a toronynak a szintjeit egy verseny közben!",
 	["notultimate"] = "Nem állíthatod át a toronynak a szintjeit miközben egy különleges varázslat folyamatban van!",
 	["notregen"] = "Nem állíthatod át a toronynak a szintjeit miközben a lépcsőház újraépül!",
 	["wait"] = "A torony szintjei változnak, légyszíves várj...",
-	["duration"] = "Verseny időtartalma megváltozotatva (a jelenlegi versenyt nem befolyásolja)",
-	["init"] = "Legelső Végtelen mód intervallum megváltoztatva",
-	["reduction"] = "Végtelen mód Intervallum csökkentési ideje megváltoztatva",
-	["mininf"] = "Legrövidebb végtelen mód intervallum megváltoztatva",
-	["cooldown"] = "Esemény és Rig visszatöltődési ideje megváltoztatva",
-	["speed"] = "Kicsi drónok sebessége megváltoztatva",
-	["spin"] = "Kicsi drónok varázslási ideje megváltoztatva",
-	["max"] = "Maximális lépcső szám megváltoztatva",
-	["min"] = "Minimális lépcső szám megváltoztatva",
-	["curse"] = "Drónok lépcsők megátkozásának esélye megváltoztatva",
-	["block"] = "Drónok kereszteződések megátkozásának esélye megváltoztatva",
+	["duration"] = "Verseny időtartalma meg lett változtatva (a jelenlegi versenyt nem befolyásolja)",
+	["init"] = "Legelső Végtelen mód intervallum meg lett változtatva.",
+	["reduction"] = "Végtelen mód Intervallum csökkentési ideje meg lett változtatva",
+	["mininf"] = "Legrövidebb végtelen mód intervallum meg lett változtatva",
+	["cooldown"] = "Esemény és Rig visszatöltődési ideje meg lett változtatva",
+	["speed"] = "Kicsi drónok sebessége meg lett változtatva",
+	["spin"] = "Kicsi drónok varázslási ideje meg lett változtatva",
+	["max"] = "Maximális lépcső szám meg lett változtatva",
+	["min"] = "Minimális lépcső szám meg lett változtatva",
+	["curse"] = "Drónok lépcsők megátkozásának esélye meg lett változtatva",
+	["block"] = "Drónok kereszteződések megátkozásának esélye meg lett változtatva",
 	
 }
 
 module.serverbroadcast = {
 	["pranked"] = "%s átverésének áldozata lett %s!",
 	["found"] = "%s megtalálta %s láthatatlan lépcsőjét!",
-	["disco"] = "%s élvezi %s diszkó zenéjét.",
+	["disco"] = "%s élvezi %s zenéjét.",
 	["trap"] = "%s beleesett %s csapdájába.",
-	["obby"] = "%s megpróbálja megcsinálni %s obbiját.",
+	["obby"] = "%s próbálja megcsinálni %s obbiját.",
 	["default"] = "Drónok visszaváltottak alap módba.",
 	["reg"] = "A lépcsőház újraépül.",
-	["done"] = "Lépcsőház újraépítése be lett fejezve.",
+	["done"] = "A lépcsőház újraépült.",
 	["union"] = "%s egybevált a szellemével!",
 	["eliminated"] = "%s kiesett a versenyből.",
-	["won"] = "%s megnyerte a versenyt!",
+	["won"] = "%s nyerte meg a versenyt!",
 	["falsestart"] = "Érvénytelen Indulás",
 	["countdown"] = "Verseny %d másodperc múlva!",
 	["noplayers"] = "Senki sem versenyzik, végtelen mód nem fog elindulni!",
-	["nojoin"] = "A verseny bezárult - új játékosok már nem szállhatnak be.",
+	["nojoin"] = "A versenybe további játékosok már nem szállhatnak be.",
 	["allfalse"] = "Az összes játékos Túl Korán indult el!",
 	["safety"] = "Toronynak a szintjei megváltoztak, ez a verseny nem fog elindulni.",
 	["leader"] = "%s vezet!",
 	["toolate"] = "Senki sem nyert időben",
 	["go"] = "INDULÁS!",
 	["over"] = "Versenynek vége!",
-
 	["newrace"] = "%s elkezdte megmászni a tornyot - versenyezz ellene!",
 	["joined"] = "%s beszállt a versenybe!",
-	["2min"] = "%s olyan jó a játékban, hogy senki se hívta ki!",
+	["2min"] = "Senki sem akart %s ellen versenyezni!",
 	["infstart"] = "Végtelen verseny elkezdődött!",
 
 }
@@ -1838,14 +1837,12 @@ module.localfeedback = {
 
 	["cancel"] = "Előbb szüntesd meg a mostani varázslatodat!",
 	["nomana"] = "Nincs elég Manád!",
-	["notokens"] = "Nincsen elég Zsetonod!",
+	["notokens"] = "Nincs elég Zsetonod!",
 	["unlocked"] = "Varázslat feloldva!",
 	["maxmana"] = "Már tele vagy Manával!",
-	["nopurchase"] = "Nem kell Manát venned a kiképzésben!",
-
+	["nopurchase"] = "Nem lehet Manát venni a kiképzésben!",
 	["limitset"] = "Be van kapcsolva a Mana határoló - vásárlás megakadályozva.", --for refill mana
 	["hasarchitect"] = "Már megvan az Architect osztály!",
-
 	["haschameleon"] = "Már megvan a Chameleon osztály!",
 	["hasspectre"] = "Már megvan a Spectre osztály!",
 	["hasmana"] = "Már megvan a Nagyobb Tárhely!",
@@ -1858,12 +1855,14 @@ module.localfeedback = {
 	["nomusic"] = "Nem sikerült betölteni a zenét.",
 	["noteleport"] = "Teleportálás sikertelen!", 
 	["norefresh"] = "Még nem tudsz újratölteni.",
+	["raceon"] = "Részt fogsz venni versenyekben!",
+    ["raceoff"] = "Nem fogsz részt venni versenyekben!",
 
 }
 
 module.switchon = {
 
-	["JOKER1"] = "Nem fogsz láthatatlan lépcsőket felfedni.",
+	["JOKER1"] = "Nem fogsz felfedni láthatatlan lépcsőket.",
 	["WICKED1"] = "Nem fogsz aktiválni Wicked Rigeket.",
 	["KEEPER1"] = "Nem fogsz aktiválni Keeper Rigeket.",
 	["SPECTRE1"] = "Nem fogsz aktiválni Spectre Rigeket.",
@@ -1894,72 +1893,72 @@ module.switchoff = {
 	["NONE"] = "Különleges hatásokra való immunitás kikapcsolva.",
 }
 
-local timedSpell = "%s megvarázsolta az osztálya időzített varázslatát (%s)!"
+local timedSpell = "%s megvarázsolt egy időzített varázslatot (%s)!"
 
 module.timedspells = {}
 
 
 module.eventspells = {
 
-	["patronrigevent"] = "%s rárakott az összes normális lépcsőre Patron Riget!",
+	["patronrigevent"] = "%s az összes normális lépcsőre rárakott Patron Riget!",
 	["patronevent"] = "%s túlterhelte a tornyot lépcsőkkel!",
 	["patronaltevent"] = "%s az összes normális lépcsőt összezsugorította!",
 
-	["jokerrigevent"] = "%s rárakott az összes normális lépcsőre Joker Riget!",
+	["jokerrigevent"] = "%s az összes normális lépcsőre rárakott Joker Riget!",
 	["jokerevent"] = "%s az összes normális lépcsőt elrejtette!",
 	["jokeraltevent"] = "%s az összes normális lépcsőt megfordította!",
 
-	["wickedrigevent"] = "%s rárakott az összes normális lépcsőre Wicked Riget!",
+	["wickedrigevent"] = "%s az összes normális lépcsőre rárakott Wicked Riget!",
 	["wickedevent"] = "%s az összes normális lépcsőt elpusztította!",
 	["wickedaltevent"] = "%s az ÖSSZES lépcsőt elpusztította!",
 
-	["keeperrigevent"] = "%s rárakott az összes normális lépcsőre Keeper Riget!",
+	["keeperrigevent"] = "%s az összes normális lépcsőre rárakott Keeper Riget!",
 	["keeperevent"] = "%s az összes normális lépcsőt átrendezte!",
 	["keeperaltevent"] = "%s az összes lépcsőt helyreállította!",
 
-	["spectrerigevent"] = "%s rárakott az összes normális lépcsőre Spectre Riget!",
+	["spectrerigevent"] = "%s az összes normális lépcsőre rárakott Spectre Riget!",
 	["spectreevent"] = "%s az összes normális lépcsőt szellemesen átrendezte!",
 	["spectrealtevent"] = "%s az összes normális lépcsőt megszellemesítette!",
 
-	["hackerrigevent"] = "%s rárakott az összes normális lépcsőre Hacker Riget!",
+	["hackerrigevent"] = "%s az összes normális lépcsőre rárakott Hacker Riget!",
 	["hackerevent"] = "%s az összes normális lépcsőt átváltoztatta Mozgólépcsővé!",
 	["hackeraltevent"] = "%s az összes normális lépcsőt átváltoztatta Felfelé haladó Mozgólépcsővé!",
 
-	["thiefrigevent"] = "%s rárakott az összes normális lépcsőre Theif Riget!",
+	["thiefrigevent"] = "%s az összes normális lépcsőre rárakott Theif Riget!",
 	["thiefevent"] = "%s az összes normális lépcsőt kilapította!",
-	["thiefaltevent"] = "%s létrehozott egy kitérést az összes szinten!",
+	["thiefaltevent"] = "%s létrehozott kitéréseket az összes szinten!",
 
-	["archonrigevent"] = "%s rárakott az összes normális lépcsőre Archon Riget!",
+	["archonrigevent"] = "%s az összes normális lépcsőre rárakott Archon Riget!",
 	["archonevent"] = "%s az összes normális lépcsőre rárakott egy véletlenszerű kaput!",
 	["archonaltevent"] = "%s az összes normális lépcsőre rárakott egy függőleges kaput!",
 
-	["drifterrigevent"] = "%s rárakott az összes normális lépcsőre Drifter Riget!",
+	["drifterrigevent"] = "%s az összes normális lépcsőre rárakott Drifter Riget!",
 	["drifterevent"] = "%s az összes normális lépcsőt véletlenszerűen megsodorta!",
 	["drifteraltevent"] = "%s az összes normális lépcsőt megemelte!",
 
-	["hereticrigevent"] = "%s rárakott az összes normális lépcsőre Heretic Riget!",
+	["hereticrigevent"] = "%s az összes normális lépcsőre rárakott Heretic Riget!",
 	["hereticevent"] = "%s az összes normális lépcsőt szétszakította!",
 	["hereticaltevent"] = "%s az összes normális lépcsőt megátkozta!",
 
-	["splicerrigevent"] = "%s rárakott az összes normális lépcsőre Splicer Riget!",
+	["splicerrigevent"] = "%s az összes normális lépcsőre rárakott Splicer Riget!",
 	["splicerevent"] = "%s az összes normális lépcsőt összekapcsolta!",
 	["spliceraltevent"] = "%s az összes normális lépcsőt szétválasztotta!",
 
-	["necromancerrigevent"] = "%s rárakott az összes normális lépcsőre Necromancer Riget!",
+	["necromancerrigevent"] = "%s az összes normális lépcsőre rárakott Necromancer Riget!",
 	["necromancerevent"] = "%s túlterhelte a tornyot Lelketlen lépcsőkkel!",
 	["necromanceraltevent"] = "%s az összes normális lépcsőnek elvette a lelkét!",
 
-	["gremlinrigevent"] = "%s rárakott az összes normális lépcsőre Gremlin Riget",
+	["gremlinrigevent"] = "%s az összes normális lépcsőre rárakott Gremlin Riget",
 	["gremlinevent"] = "%s az összes normális lépcsőt átváltoztatta pörgő lépcsővé!",
 	["gremlinaltevent"] = "%s túlterhelte a tornyot Villamos lépcsőkkel!",
 
-	["reaverrigevent"] = "%s rárakott az összes normális lépcsőre Reaver Riget!",
+	["reaverrigevent"] = "%s az összes normális lépcsőre rárakott Reaver Riget!",
 	["reaverevent"] = "%s az összes normális lépcsőt átváltoztatta véletlen irányban lezárt Egyirányú Lépcsővé!",
 	["reaveraltevent"] = "%s az összes normális lépcsőt átváltoztatta fentről lezárt Egyirányú Lépcsővé!",
 
 	["newmode"] = "%s átváltotta a drónokat %s módra!",
 
-	["chameleonrigevent"] = "%s rárakott az összes normális lépcsőre Chameleon Riget!"
+	["chameleonrigevent"] = "%s az összes normális lépcsőre rárakott Chameleon Riget!"
 }
 
 module.spells.extras = {
@@ -1976,13 +1975,10 @@ module.spells.extras = {
 	["basic"] = "Átlagos",
 	["ultimate"] = "Különleges",
 	["unlock"] = "0 (3 a megszerzéshez)",
-	["none"] = "Nincsen különleges feltétele",
+	["none"] = "Nincs különleges feltétele",
 	["LeftHand"] = "Bal Kéz",
 	["RightHand"] = "Jobb Kéz",
 }
-
-module.gui.basic.jumpdelay = "ugrás visszatöltődik"
-module.gui.basic.dancetime = "ITT AZ IDEJE TÁNCOLNI!"
 
 module.gui.mana = {
 
@@ -2004,7 +2000,7 @@ module.gui.mana = {
 	["blessing"] = "ÁLDÁS",
 	["hack"] = "CSALÁS",
 	["stash"] = "LELTÁR",
-	["backdoor"] = "HÁTSÓ AJTÓ",
+	["backdoor"] = "MÁTRIX",
 	["chamber"] = "KAMRA",
 	["base"] = "BÁZIS",
 	["circus"] = "CIRKUSZ",
@@ -2027,7 +2023,7 @@ module.gui.mana = {
 
 module.gui.gameover.extras = {
 
-	["possessed"] = "Azok az idegesítő Hereticek!",
+	["possessed"] = "Tele van a hócipőm ezekkel a Heretickekkel!",
 	["hypnotised"] = "Hol vagyok?",
 	["new"] = "Új rang elérve - %s",
 
@@ -2105,9 +2101,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
-
-
-
-
 
 
