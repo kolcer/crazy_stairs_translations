@@ -918,7 +918,7 @@ module.gui.settings = {
 
 	--NEW
 
-	["Gameplay"] = "PENGATURAN GAMEPLAY",
+	["Gameplay"] = "PENGATURAN JALAN MAIN",
 	["Interface"] = "PENGATURAN ANTARMUKA",
 
 	["Billboard"] = "Tunjukkan papan avatar diri sendiri",
@@ -962,7 +962,7 @@ module.gui.gameover.results = {
 	["noVR"] = "REKOR MENARA KLASIK", --this will show in noVR tower, as they share the same record
 
 	["cTime"] = "REKOR %s", --%s will be replaced by the used class
-	["levels"] = "TATARAN REACHED",
+	["levels"] = "TATARAN DICAPAI",
 	["cClimbs"]	= "%s PENDAKIAN", --%s will be replaced by the used class
 	["tClimbs"] = "JUMLAH PENDAKIAN",
 	["tTokens"] = "%s TOKEN",	--%s will be replaced by the used class	(or multi)
@@ -979,7 +979,7 @@ module.gui.gameover.messages = {
 		"Those noobs need our help",
 		"There would be no hope without us Patrons",
 		"11 out of 10, on the scale of niceness",
-		"Sharing is caring",
+		"Berbagi adalah Peduli!", -- translated by Batcansqueak
 		"You can never have too many stairs",
 		"There is no I in Team, but there is definitely a Patron",
 		"You cannot have a staircase without stairs",
@@ -988,11 +988,11 @@ module.gui.gameover.messages = {
 	["JOKER"] = {
 		"DECEIVE, CONFUSE and LAUGH",
 		"This staircase is a joke",
-		"Why so serious?",
-		"HAHAHAHAHA!!!",
+		"Kok serius?", -- translated by Batcansqueak?
+		"WKWKWKWKWKWKWK!", -- / translated by Batcansqueak
 		"Relax and watch them fall",
-		"You mad bro?",
-		"You know the rules and so do I",
+		"BANG, MARAH LU YA?", -- U MAD BRO? / translated by Batcansqueak
+		"♪ Kau tahu aturannya, begitu pun diriku ♪", -- 'You know the rules and so do I' (just plagiarised from rickroll lyrics in indo) / translated by Batcansqueak
 		"It would be boring without me",
 		"Fake stairs are real",
 	},
@@ -1003,7 +1003,7 @@ module.gui.gameover.messages = {
 		"Watch the world burn",
 		"This staircase looks better without stairs",
 		"I will destroy your mind, soul and body (and stairs)",
-		"1)Make an obby 2)Watch noobs struggle 3)Enjoy",
+		"1. Buat obby.\n2. Lihat pendaki kesusahan.\n3. Nikmatilah~", -- translated by Batcansqueak
 		"All things die eventually",
 		"Clear your mind - but first clear the staircase",
 	},
@@ -1066,14 +1066,14 @@ module.gui.gameover.messages = {
 		"EXPLOIT, GLITCH and BREAK",
 		"Fair play? There's no such thing",
 		"Wait! This staircase is not real... Are we living in a simulated Roblox experience?",
-		"01000011 01010010 01000001 01011010 01011001 00100000 01010011 01010100 01000001 01001001 01010010 01010011",
+		"01010100 01000001 01001110 01000111 01000111 01000001 00100000 01000111 01001001 01001100 01000001", -- translated by Batcansqueak
 		"Have you seen any rules posted anywhere here?",
 		"I'm cheating? Everybody here is",
 		"I mean few tweaks here and there - Hardly an exploit",
 		"Speed is all that matters",
 		"Escalators for life",
 	},
-	["HERETIC"] = { --- All reused old Heretic's quotes should probably be rewritten ▼
+	["HERETIC"] = { --- All quotes are reused from old Indonesian translation ▼ they should probably be rewritten ▼
 		"KAMU TAK DAPAT LÉWAT",
 		"Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruan.",
 		"Rasuki orang. Pêrtahankan dalam mêlayani Overmind.",
@@ -1106,7 +1106,7 @@ module.gui.gameover.messages = {
 		"I love to ride platforms",
 		"Keep surfing",
 	},
-	["SPLICER"] = {
+	["SPLICER"] = { -- ▼ all quotes translated by aceblade_ thx :)
 		"PELINTIR, SAMBUNG dan BELAH",
 		"Jangan pernah jalan lurus untuk terlalu lama!",
 		"Campurkan hidupmu!",
@@ -1118,7 +1118,7 @@ module.gui.gameover.messages = {
 		"Makasih Markerquest, kamu nyelamatin aku…",
 		"Tangga ini terlalu lurus.",
 	},
-	["REAVER"] = {
+	["REAVER"] = { -- ▼ all quotes translated by aceblade_ thx :)
 		"PANTUL, GANTI dan GABUNG",
 		"Cermin hanyalah pintu keluar masuk.",
 		"Tangga ini cuma ilusi.",
@@ -1130,7 +1130,7 @@ module.gui.gameover.messages = {
 		"MAMA! Ini bukan cuma fase!!!",
 		"Jangan muncul diam-diam gitu dong!",
 	},
-	["NECROMANCER"] = {
+	["NECROMANCER"] = { -- ▼ all quotes translated by aceblade_ thx :)
 		"IKUT, BANGKIT dan UNTUNG",
 		"Kita sebenarnya bukan menghantuimu, Kita hanya ingin bersahabat saja.",
 		"Jiwamu MILIKKU!",
@@ -1142,7 +1142,7 @@ module.gui.gameover.messages = {
 		"Aku harus ngumpulin jiwa- eh maksudku mana, aku butuh mana!",
  		"Aku nggak takut jatuh, ini mantra strategi, serius!",
 	},
-	["GREMLIN"] = {
+	["GREMLIN"] = { -- ▼ all quotes translated by aceblade_ thx :)
 		"PUTAR, KISAR dan HIPNOTIS",
 		"Mari bermain denganku!",
 		"Kamu muter-muter terus, sayang, muter terus!",
@@ -1214,28 +1214,28 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "How do I play?",
+	["cla_1"] = "Bagaimana cara bermain?",
 	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
 	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
-	["cla_5"] = "How do I cast spells?",
+	["cla_5"] = "Bagaimana cara menggunakan mantra?",
 	["cla_6"] = "Every spell has a mana cost that will be required to cast the spell. When you collect enough Mana click on the spell. Your hands will start to glow, indicating a successful cast.",
 	["cla_7"] = "After casting, the spell still needs to be executed. All spells are executed by jumping. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
 	["cla_8"] = "Once you complete the climb, you will receive 3 spell tokens, that will let you unlock one spell. Complete the climb again to unlock more spells. You can't use tokens from one class to unlock a spell from another.",
-	["cla_9"] = "How do I cast ultimate spells?",
+	["cla_9"] = "Bagaimana cara menggunakan mantra pokok?",
 	["cla_10"] = "First you will need to unlock all basic spells to access the ultimate spells. Ultimate spells do not require unlocking themself, but they use Tokens instead of Mana when cast.",
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
 	["pro_1"] = "MENARA PRO",
-	["pro_2"] = "Even levels restrictions",
+	["pro_2"] = "Batasan tataran genap",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
-	["pro_5"] = "Cursed Stairs",
+	["pro_5"] = "Tangga Terkutuk",
 	["pro_6"] = "In the Pro Tower Drones will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
 	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
 	["pro_8"] = "Only Heretics and Admirals can restore Cursed Stairs. Purge Event and Restoration will get rid of all cursed stairs too. However Drones will always create new ones in Pro Tower.",
-	["pro_9"] = "Cursed Intersections",
+	["pro_9"] = "Simpang Terkunci",
 	["pro_10"] = "In the Pro Tower Drones will randomly create Cursed Intersections too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
@@ -1248,7 +1248,7 @@ module.static = {
 	["inf_6"] = "Unlike classic and pro towers, Fallen Drone has a special task in the infinite tower.",
 	["inf_7"] = "Each 'raise interval', Fallen Drone will create 2 new levels. Each even level will be restricted. On top of that, some stairs or intersections may even become cursed.",
 	["inf_8"] = "First interval lasts for 20 seconds. Each raise will reduce the interval by half second, until the levels are created faster than they could be climbed.",
-	["inf_9"] = "Eraser",
+	["inf_9"] = "Penghapus",
 	["inf_10"] = "Eraser is a special force field that will rise together with tower and remove bottom levels. Falling behind the eraser eliminates players from the round. This is similar to rising lava in other games.",
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
@@ -2157,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
