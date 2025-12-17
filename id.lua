@@ -356,16 +356,16 @@ module.spells.names = {
 	["drifteraltevent"] = "Pengangkatan", -- < Needs another better name for 'Liftage/Angkat Semua Tangga'
 
 	--HERETIC
-	["createcursed"] = "Bangun Tangga Têrkutuk",
-	["curse"] = "Kutuk Tangga",
-	["curseabove"] = "Kutuk Tangga di Atas",
-	["curseinter"] = "Lompat dan Kunci Simpang",
-	["autodown"] = "Pêcah Tangga Naik",
-	["autoup"] = "Pêcah Tangga Têrbalik Bawah",
+	["createcursed"] = "Bangoen Tangga Têrkoetoek", --Bangun Tangga Terkutuk
+	["curse"] = "Koetoek Tangga", --Kutuk Tangga
+	["curseabove"] = "Koetoek Tangga di Atas", --Kutuk Tangga di Atas
+	["curseinter"] = "Lompat dan Koentji Simpang", -- Lompat dan Kunci Simpang
+	["autodown"] = "Pêtjah Tangga Naik", -- Pecah Tangga Naik
+	["autoup"] = "Pêtjah Tangga Têrbalik Bawah", --Pecah Tangga Terbalik Bawah
 
-	["malediction"] = "Pêmbuat",
+	["malediction"] = "Pêmboeat", --Pembuat
 	["hereticevent"] = "Skisma",
-	["hereticaltevent"] = "Kutuk Mênara", -- < Needs another better name for 'Vengeance/Kutuk Semua Tangga'
+	["hereticaltevent"] = "Koetoek Mênara", -- < Needs another better name for 'Vengeance/Kutuk Semua Tangga' --Kutuk Menara
 
 	--SPLICER
 	["twistup"] = "Sambung Tangga ke Atas",
@@ -2157,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
