@@ -36,18 +36,18 @@ module.gui.switcher = {
 
 module.gui.serversettings = {
 
-	["Drones"] = "PENGATURAN DRONE",
-	["DronesReadOnly"] = "PENGATURAN DRONE (hanya baca)",
-	["DroneEnabled"] = "Drone diaktifkan",
-	["DroneFix"] = "Drone memulihkan tangga",
-	["DroneRemove"] = "Drone membuka kunci simpang terkutuk",
-	["DroneUnCurse"] = "Drone membebaskan tangga terkutuk",
-	["DroneMove"] = "Drone memindahkan tangga dalam mode umum",
-	["DroneSpin"] = "Drone memutar tangga dalam mode umum",
-	["DroneSpeed"] = "Kecepatan Drone (tataran/detik)",
-	["DroneDelay"] = "Durasi putaran Drone (detik)",
-	["DroneMax"] = "Jumlah tangga maksimum (Drone akan menghancur secara eksklusif di atas batas ini)",
-	["DroneMin"] = "Jumlah tangga minimum (Drone akan membuat secara eksklusif di bawah batas ini)",
+	["Drones"] = "PENGATURAN DRON",
+	["DronesReadOnly"] = "PENGATURAN DRON (hanya baca)",
+	["DroneEnabled"] = "Dron diaktifkan",
+	["DroneFix"] = "Dron memulihkan tangga",
+	["DroneRemove"] = "Dron membuka kunci simpang terkutuk",
+	["DroneUnCurse"] = "Dron membebaskan tangga terkutuk",
+	["DroneMove"] = "Dron memindahkan tangga dalam mode umum",
+	["DroneSpin"] = "Dron memutar tangga dalam mode umum",
+	["DroneSpeed"] = "Kecepatan Dron (tataran/detik)",
+	["DroneDelay"] = "Durasi putaran Dron (detik)",
+	["DroneMax"] = "Jumlah tangga maksimum (Dron akan menghancur secara eksklusif di atas batas ini)",
+	["DroneMin"] = "Jumlah tangga minimum (Dron akan membuat secara eksklusif di bawah batas ini)",
 	["DroneBlock"] = "Kemungkinan simpang terkunci untuk setiap adanya simpang kosong (persen)",
 	["DroneCurse"] = "Kemungkinan tangga terkutuk untuk adanya tangga biasa dan pembuat (persen)",
 
@@ -240,7 +240,7 @@ module.spells = {}
 
 local CommonSpellNames = {
 	["rigevent"] = "Rig %s",
-	["mode"] = "Mode %s Drone",
+	["mode"] = "Mode %s Dron",
 	["refill"] = "Overload Mana (%s)",
 	["union"] = "Fusi Hantu (%s)",
 }
@@ -1244,7 +1244,7 @@ module.static = {
 	["inf_2"] = "RACE MANDATORY",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
-	["inf_5"] = "Fallen Drone",
+	["inf_5"] = "Dron Gede", --Fallen Drone
 	["inf_6"] = "Unlike classic and pro towers, Fallen Drone has a special task in the infinite tower.",
 	["inf_7"] = "Each 'raise interval', Fallen Drone will create 2 new levels. Each even level will be restricted. On top of that, some stairs or intersections may even become cursed.",
 	["inf_8"] = "First interval lasts for 20 seconds. Each raise will reduce the interval by half second, until the levels are created faster than they could be climbed.",
@@ -1260,7 +1260,7 @@ module.static = {
 	["cus_5"] = "Tower Settings",
 	["cus_6"] = "By changing the tower settings you can have it your way. Choose levels, restrict even levels or even set the tower to the infinite mode.",
 	["cus_7"] = "Only server owner can adjust the settings.",
-	["cus_8"] = "Pengaturan Drone",
+	["cus_8"] = "Pengaturan Dron",
 	["cus_9"] = "You can also change the small drone setting. Adjust the max count, the min count or even disable them altoghether.",
 
 	["vr_1"] = "By launching Crazy Stairs in VR mode you automatically become an Architect.",
@@ -2157,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
