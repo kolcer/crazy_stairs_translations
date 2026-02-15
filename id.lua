@@ -359,7 +359,7 @@ module.spells.names = {
 	["createcursed"] = "Bangoen Tangga Têrkoetoek", --Bangun Tangga Terkutuk
 	["curse"] = "Koetoek Tangga", --Kutuk Tangga
 	["curseabove"] = "Koetoek Tangga di Atas", --Kutuk Tangga di Atas
-	["curseinter"] = "Lompat dan Koentji Simpang", -- Lompat dan Kunci Simpang
+	["curseinter"] = "Salto", -- Salto
 	["autodown"] = "Pêtjah Tangga Naik", -- Pecah Tangga Naik
 	["autoup"] = "Pêtjah Tangga Têrbalik Bawah", --Pecah Tangga Terbalik Bawah
 
@@ -611,7 +611,7 @@ module.spells.descriptions = {
 	["createcursed"] = "Mantra ini mêmpêrbolèhkan kamu untuk mêmbangun tangga têrkutuk di arah yang têlah ditêntukan. Tangga yang bêrhalangan akan dihancurkan. Naiklah kê pêringkat Banished untuk mênghancurkan tangga têrkutuk yang bêrhalangan.",
 	["curse"] = "Mantra untuk mêngutuk tangga yang bêrada di bawah. Mênggunakannya lagi untuk mêmbébaskan tangga yang têrkutuk.",
 	["curseabove"] = "Mantra untuk mêngutuk tangga yang bêrada di atas. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
-	["curseinter"] = "This spell will allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
+	["curseinter"] = "Mantra ini oentoek bêrsalto mênjêbêrang kê platform bêrhadapan, kalaoe tidak ada tangga di arah. Sêsoedah mênggoenakan mantra ini, simpangnja akan têrkoetoek. Soepaja pêndaki lain tidak bisa mênggoenakannja lagi. Naiklah kê pêringkat Infidel oentoek bêrsalto di sêbêrang simpang jang têrkoetoek, mêmboeka koentjinja dalam prosès.", --Mantra ini untuk bersalto menyeberang ke platform berhadapan, kalau tidak ada tangga di arah. Sesudah menggunakan mantra ini, simpangnya akan terkutuk. Supaya pendaki lain tidak bisa menggunakannya lagi. Naiklah ke peringkat Infidel untuk bersalto di seberang simpang yang terkutuk, membuka kuncinya dalam proses.
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
 
@@ -624,10 +624,10 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistside"] = "Mantra ini untuk menyambungkan tangga ke arah kiri atau kanan, menyambungkannya     This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. Jika tidak ada tangga di arah dipilih, itu akan dibuat. Naiklah ke peringkat Transformer untuk menyambungkan tangga yang sudah disambung.",
 	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "This spell will twist above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
+	["canceltwist"] = "Mantra ini untuk meluruskan tangga yang disambung apa saja. Naiklah ke peringkat Combiner untuk    Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "This spell splits stairs into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "This spell splits stairs into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
 
@@ -1689,17 +1689,17 @@ module.serverfeedback = {
 	["wrongmove"] = "Stairs cannot be moved out of game area.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
-	["normal"] = "These stairs are normal.",
+	["normal"] = "Tangga itulah normal.",
 	["lockedinter"] = "This intersection is locked.",
 	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
 	["duplicatemirror"] = "There is already a mirror on this level.",
 	["norestore"] = "Thief bypasses and spirals cannot be restored.",
 
 	--higher rank required
-	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
-	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel to flicker on cursed intersection.",
-	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
+	["admiral2"] = "Naiklah ke peringkat Admiral untuk membebaskan tangga terkutuk.",
+	["admiral"] = "Naiklah ke peringkat Admiral untuk membuka kunci simpang terkutuk.",
+	["infidel"] = "Naiklah ke peringkat Infidel untuk flicker on cursed intersection.",
+	["banished"] = "Naiklah ke peringkat Banished untuk to destroy crossing Cursed Stairs.",
 	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
 	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
 	["nomad"] = "Rank up to Nomad to spin already drifted stairs.",
@@ -1847,7 +1847,7 @@ module.serverfeedback = {
 
 module.serverbroadcast = {
 	["pranked"] = "%s pranked %s!",
-	["found"] = "%s has found %s's invisible stairs!",
+	["found"] = "%s menemukan tangga tersembunyi %s!",
 	["disco"] = "%s is enjoying %s's disco music.",
 	["trap"] = "%s has fallen for %s's trap.",
 	["obby"] = "%s is attempting %s's obby.",
@@ -1856,7 +1856,7 @@ module.serverbroadcast = {
 	["done"] = "Staircase regeneration complete.",
 	["union"] = "%s has merged with their ghost!",
 	["eliminated"] = "%s has been eliminated.",
-	["won"] = "%s has won the race!",
+	["won"] = "%s menang balapan!",
 	["falsestart"] = "Awalan palsu",
 	["countdown"] = "Race in %d seconds!",
 	["noplayers"] = "No racing players, infinite mode will not start!",
@@ -1869,7 +1869,7 @@ module.serverbroadcast = {
 	["over"] = "Race over!",
 
 	--NEW
-	["newrace"] = "%s has started climbing — race them!",
+	["newrace"] = "%s baru mulai  climbing — race them!",
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
 	["infstart"] = "Infinite race startedlea!"
@@ -1894,15 +1894,15 @@ module.localfeedback = {
 	["hasmana"] = "You already have the Bigger Storage Pass!",
 	["nomuggle"] = "You thought there were secret ultimate spells for Muggle but there weren't.",
 	["nonone"] = "You thought there were secret ultimate spells for None but there weren't.",
-	["nounlocks"] = "Unlock all basic spells to access ultimate spells!",
+	["nounlocks"] = "Dapatlah semua mantra dasar untuk mengakses mantra pokok!",
 	["onetoken"] = "You have been awarded one %s Spell Token!",
 	["moretokens"] = "You have been awarded some %s Spell Tokens!",
 	["music"] = "Musik berhasil diganti!",
 	["nomusic"] = "Musik gagal dimuat…",
-	["noteleport"] = "Teleport failed!", 
+	["noteleport"] = "Berteleportasi gagal!!", 
 	["norefresh"] = "You cannot refresh yet.",
-    ["raceon"] = "You will now participate in races!",
-    ["raceoff"] = "You will no longer participate in races!",
+    ["raceon"] = "Kamu sekarang akan berpartisipasi dalam balapan!",
+    ["raceoff"] = "Kamu sekarang tidak akan lagi berpartisipasi dalam balapan!",
 
 }
 
@@ -1911,15 +1911,15 @@ module.localfeedback = {
 module.switchon = {
 
 	["JOKER1"] = "Kamu sekarang tidak akan mendeteksi tangga tidak terlihat.",
-	["WICKED1"] = "You will no longer trigger below Wicked Rigs.",
-	["KEEPER1"] = "You will no longer trigger below Keeper Rigs.",
-	["SPECTRE1"] = "You will no longer trigger below Spectre Rigs.",
+	["WICKED1"] = "Kamu sekarang tidak akan lagi mengaktifkan Wicked Rig di bawah.",
+	["KEEPER1"] = "Kamu sekarang tidak akan lagi mengaktifkan Keeper Rig di bawah.",
+	["SPECTRE1"] = "Kamu sekarang tidak akan lagi mengaktifkan Spectre Rig di bawah.",
 	["HACKER1"] = "Eskalator sekarang tidak akan mengangkutmu.",
 	["HACKER2"] = "Imunitas eskalator dan rig sekarang diaktifkan.",
 	["ARCHON1"] = "Hanya portal ke atas akan berteleportasimu.",
-	["DRIFTER1"] = "You will no longer trigger below Drifter Rigs.",
-	["SPLICER1"] = "You will no longer trigger below Splicer Rigs.",
-	["REAVER1"] = "You will no longer trigger below Reaver Rigs.",
+	["DRIFTER1"] = "Kamu sekarang tidak akan lagi mengaktifkan Drifter Rig di bawah.",
+	["SPLICER1"] = "Kamu sekarang tidak akan lagi mengaktifkan Splicer Rig di bawah.",
+	["REAVER1"] = "Kamu sekarang tidak akan lagi mengaktifkan Reaver Rig di bawah.",
 	["GREMLIN1"] = "Pilin terdekatmu sekarang dijedakan.",
 	["NONE"] = "Imunitas semua efek spesial sekarang diaktifkan.",
 
@@ -1928,15 +1928,15 @@ module.switchon = {
 module.switchoff = {
 
 	["JOKER1"] = "Kamu sekarang akan mendeteksi tangga tidak terlihat.",
-	["WICKED1"] = "You will now trigger below Wicked Rigs.",
-	["KEEPER1"] = "You will now trigger below Keeper Rigs.",
-	["SPECTRE1"] = "You will now trigger below Spectre Rigs.",
+	["WICKED1"] = "Kamu sekarang akan mengaktifkan Wicked Rig di bawah.",
+	["KEEPER1"] = "Kamu sekarang akan mengaktifkan Keeper Rig di bawah.",
+	["SPECTRE1"] = "Kamu sekarang akan mengaktifkan Spectre Rig di bawah.",
 	["HACKER1"] = "Eskalator sekarang akan dapat mengangkutmu.",
 	["HACKER2"] = "Imunitas eskalator dan rig sekarang dinonaktifkan.",
-	["ARCHON1"] = "All except down splits will teleport you.",
-	["DRIFTER1"] = "You will now trigger below Drifter Rigs.",
-	["SPLICER1"] = "You will now trigger below Splicer Rigs.",
-	["REAVER1"] = "You will now trigger below Reaver Rigs.",
+	["ARCHON1"] = "Semua portal kecuali yang ke bawah sekarang akan berteleportasimu.",
+	["DRIFTER1"] = "Kamu sekarang akan mengaktifkan Drifter Rig di bawah.",
+	["SPLICER1"] = "Kamu sekarang akan mengaktifkan Splicer Rig di bawah.",
+	["REAVER1"] = "Kamu sekarang akan mengaktifkan Reaver Rig di bawah.",
 	["GREMLIN1"] = "Pilin terdekatmu sekarang diputarkan.",
 	["NONE"] = "Imunitas semua efek spesial sekarang dinonaktifkan.",
 }
@@ -2157,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
