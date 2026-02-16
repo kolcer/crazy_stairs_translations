@@ -1286,9 +1286,9 @@ module.static = {
 	["oasis_4"] = "“Aku terlalu malas untuk membuat mantra yang baru.”\nkata pendiri kami",
 
 	["nexus_1"] = "PÊRHUBUNGAN HERETIC",
-	["nexus_2"] = "MOTO KAMI:\nKAMU\nTAK\nDAPAT\nLÉWAT",
+	["nexus_2"] = "MOTO KAMI:\nKAMOE\nTAK\nDAPAT\nLÉWAT",
 	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "“Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruan.”\nkata pendiri kami",
+	["nexus_4"] = "“Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruän.”\nkata pendiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
 	["guild_2"] = "MOTO KAMI:\nCURI\nGUNAKAN\nDAN\g",
@@ -1699,22 +1699,22 @@ module.serverfeedback = {
 	["admiral2"] = "Naiklah ke peringkat Admiral untuk membebaskan tangga terkutuk.",
 	["admiral"] = "Naiklah ke peringkat Admiral untuk membuka kunci simpang terkutuk.",
 	["infidel"] = "Naiklah ke peringkat Infidel untuk flicker on cursed intersection.",
-	["banished"] = "Naiklah ke peringkat Banished untuk to destroy crossing Cursed Stairs.",
-	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
-	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
-	["nomad"] = "Rank up to Nomad to spin already drifted stairs.",
-	["prodigy"] = "Rank up to Prodigy, to override Gates.",
-	["traveller"] = "Rank up to Traveller to boost Elevators.",
-	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
-	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
+	["banished"] = "Naiklah kê pêringkat Banished oentoek mênghantjoerkan tangga têrkoetoek jang bêrhalangan.",
+	["annihilator"] = "Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
+	["disciple"] = "Naiklah ke peringkat Disciple untuk menutup portal platform.",
+	["nomad"] = "Naiklah ke peringkat Nomad untuk memutarkan tangga yang terlayang.",
+	["prodigy"] = "Naiklah ke peringkat Prodigy untuk mengesampingkan portal.",
+	["traveller"] = "Naiklah ke peringkat Traveller untuk menaikkan lift.",
+	["controller"] = "Naiklah ke peringkat Controller untuk memindahkan tangga yang tak terkutuk apa pun.",--*
+	["replica"] = "Naiklah ke peringkat Replica untuk menggunakan mantra ini lagi untuk memutuskan.",--*
 	--NEW
-	["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
+	["skeleton"] = "Naiklah ke peringkat Skeleton untuk menghapuskan kutukan saat menggunakan mantra ini.",
 	--END NEW
-	["lich"] = "Rank up to Lich to demolish crossing stairs.",
-	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
-	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
-	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
-	["poltergeist"] = "Rank up to Poltergeist to demolish crossing stairs.",
+	["lich"] = "Naiklah ke peringkat Lich buat menghancurkan tangga yang berhalangan.",
+	["hijacker"] = "Naiklah ke peringkat Hijacker untuk mencuri tangga yang tak terkutuk apa pun.",
+	["transformer"] = "Naiklah ke peringkat Transformer untuk menyambungkan tangga yang sudah disambung.",
+	["strider"] = "Naiklah ke peringkat Strider untuk menaikkan lift dua kali lipat.",
+	["poltergeist"] = "Naiklah ke peringkat Poltergeist untuk menghancurkan tangga yang berhalangan.",
 
 	--rig activation
 	["keeperrig"] = "Tangga ini sekarang dipindahkan!",
@@ -2157,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
