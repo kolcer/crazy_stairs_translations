@@ -1,4 +1,4 @@
---VERSION 4.1.10--
+--VERSION 4.2--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -22,6 +22,7 @@ module.gui.switcher = {
 	["friends"] = "FRIENDS ONLINE",
 	["refresh"] = "refreshing...",
 	["fail"] = "FAILED TO REFRESH!",
+
 	--NEW
 	["refreshbutton"] = "REFRESH",
 	["failed"] = "Teleport failed!",
@@ -30,7 +31,6 @@ module.gui.switcher = {
 	["custom"] = "Custom Tower",
 	["noVR"] = "VR Free Tower",
 	--END NEW
-
 
 }
 
@@ -107,6 +107,10 @@ module.gui.nospellsbar = {
 
 	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
 	["possessed"] = "POSSESSED! (Find Mana to break free)",
+	--NEW
+	["permanent"] = "POSSESSED! (permanent mode)",
+	["cancelled"] = "CANCELLED...", --timed spell cancelled
+	--END NEW
 
 }
 
@@ -136,24 +140,25 @@ module.gui.stats = {
 	["1885715582646280"] = "Necromancer's Rite",
 	["2124480175"] = "Muggle's Logic",
 	["2124826874"] = "Full Circle",
-	["2124529966"] = "Skipped The Tutorial",
+	["2124529966"] = "Skipped the Tutorial",
 	["2124826880"] = "Possessed Fate",
 	["3731010929572663"] = "Hypnotised Dream",
+	["840574993122888"] = "Reflected Destiny",
 	["2124913225"] = "Architect's Design",
 	["2124702954"] = "Rootkit Installed",
 	["2124702945"] = "Destroy Everything",
 	["2124702946"] = "Order Restored",
-	["128721686760593"] = "You spin me round and round.",
-	["2124702952"] = "I'll Take The Elevator",
+	["128721686760593"] = "You Spin me Round and Round.",
+	["2124702952"] = "I'll Take the Elevator",
 	["3121101516427751"] = "The Entanglement",
-	["2124702942"] = "Leave No Noob Behind",
+	["2124702942"] = "Leave no Noob Behind",
 	["2124702950"] = "Illuminati Confirmed",
-	["2124702951"] = "Mine, Mine All Mine",
-	["1165646024608180"] = "We are one.",
-	["2303731210592278"] = "Rise, rise, RISE!",
+	["2124702951"] = "Mine, Mine all MINE!",
+	["1165646024608180"] = "We are One.",
+	["2303731210592278"] = "Rise, Rise, RISE!",
 	["2124702949"] = "Excommunication",
-	["2124702943"] = "Pranking Is Living",
-	["2124702948"] = "Spells Are Overrated",
+	["2124702943"] = "Pranking is Living",
+	["2124702948"] = "Spells are Overrated",
 	["2124826876"] = "Perfect Circle",
 	["2124645341"] = "Secret Badge",
 	["2126893403"] = "Super Secret Badge",
@@ -167,8 +172,28 @@ module.gui.questions = {
 	["tutorial"]= "Would you like to play the tutorial?",
 	["skip"] = "Would you like to skip the tutorial?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
+
+	--new
+	["gift"] = "Do you want to gift %s Game Pass to another player?",
+	["choose"] = "Choose a player to receive %s Game Pass", 
+	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
+	["received"] = "You have received %s Game Pass, courtesy of %s!",
+
+	["architect"] = "Architect",
+	["mana"] = "+10 Mana Storage",
+	["spectre"] = "Spectre",
+	["chameleon"] = "Chameleon",
+
+	--end new
+	--new
+	["race"] = "Join race?",
+	["racein"] = "Race in:",
+	["go"] = "GO!",
+	["raceoff"] = "Race cancelled",
+	--end new
 }
 --END NEW
+
 
 
 module.gui.codes = {
@@ -223,7 +248,7 @@ module.gui.results = {
 --NEW 
 
 module.gui.menu = {
-	
+
 	["Codes"] = "Code entry",
 	["Feedback"] = "Send game feedback",
 	["Language"] = "Change game language",
@@ -231,12 +256,22 @@ module.gui.menu = {
 	["RaceResults"] = "Last race results",
 	["ServerSettings"] = "Tower Settings (Custom Tower)",
 	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passess and tokens",
+	["Shop"] = "Buy game passes and tokens",
 	["Spectate"] = "Spectate other players",
 	["Stats"] = "Your badges and achievements",
 	["SwitchServer"] = "Switch Tower",
 	["Tokens"] = "Your tokens",
 	["Tutorial"] = "Play the Tutorial",
+
+}
+
+--NEW
+--end screen tutorial
+module.gui.tutorial = {
+
+	["complete"] = "CLIMB COMPLETED!",
+	["choose"] = "Please choose your first alignment!",
+	["difficulty"] = "Difficulty:",
 
 }
 
@@ -387,7 +422,7 @@ module.spells.names = {
 	["splicerevent"] = "Interweave",
 	["spliceraltevent"] = "Bisect",
 
-	--necro
+	--NECROMANCER
 	["createdual"] = "Create Dual Stairs",
 	["copyplatform"] = "Copy Ghost's Platform",
 	["soulbridge"] = "Create Soul Bridge",
@@ -399,20 +434,20 @@ module.spells.names = {
 	["necromancerevent"] = "Resurrection",
 	["necromanceraltevent"] = "Soul Harvest",
 
-	--reaver
+	--REAVER
 	["createmirrored"] = "Create Mirrored Stairs",
 	["bigmirror"] = "Giant Mirror",
 	["smallmirror"] = "Small Mirror",
 	["outermirror"] = "Outer Mirror",
 	["merge"] = "Reaver Merge",
-	["oneway"] = "One-Way Stairs",
+	["oneway"] = "Glass Stairs",
 
 	["reflection"] = "Reflection",
 	["reaverevent"] = "Cross Roads",
 	["reaveraltevent"] = "Conjucture",
 
 
-	--gremlin
+	--GREMLIN
 	["tram"] = "Create Tram Stairs",
 	["screwup"] = "Up Corkscrew",
 	["revolve"] = "Revolve Stairs",
@@ -424,13 +459,22 @@ module.spells.names = {
 	["gremlinevent"] = "Revolvelution",
 	["gremlinaltevent"] = "Gridlock",
 
+	--TUTORIAL
+	["tcreate"] = "Create Stairs",
+	["tflip"] = "Flip Stairs",
+	["tdestroy"] = "Destroy Above Stairs",
+	["tmove"] = "Move Stairs",
+	["tdash"] = "Dash",
+	["trestore"] = "Restore Stairs",
+
 	--CHAMELEON
 	["ditch"] = "Cross Stairs",
 	["warp"] = "Warp Stairs",
 	["chamdown"] = "Move Stairs Down",
 	["chamdraw"] = "Below Drawbridge",
-	["chamswap"] = "Copy Ghost (visual)",
+	--["chamswap"] = "Copy Ghost (visual)",
 	["chamdrawabove"] = "Above Drawbridge",
+	["oneways"] = "One-Way Stairs",
 
 	--NEW
 
@@ -507,7 +551,7 @@ module.spells.descriptions = {
 	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
 	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
 	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
-	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
+	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform. It can also be used on below stairs for trolling purposes.",
 	["wall"] = "This spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Only Wickeds and Ghost Unions can go through such wall and on the link.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
@@ -527,7 +571,7 @@ module.spells.descriptions = {
 	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
 
 	["ascension"] = timed .. "It allows you to cast as many move up spells as you like for one minute."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
-	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to Operator, for any rigs that you trigger to never go down. Rank up to Sentinel to have an option not to trigger them.",
+	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to OPERATOR, for any rigs that you trigger to never go down. Rank up to SENTINEL to have an option not to trigger them.",
 	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
 	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
 	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
@@ -538,14 +582,14 @@ module.spells.descriptions = {
 	["phantom"] = "This spell will create Phantom Stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
 	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
 	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
-	["horizontal"] = "This spell lets you teleport horizontally in the chosen direction. You can teleport through any un-cursed stairs in the way.",
+	["horizontal"] = "This spell will teleport you in the chosen direction. You can teleport through any un-cursed stairs in the way.",
 	["random"] = "This spell will teleport you to a random platform on the same level.",
 	["vertical"] = "This spell will teleport you up, to the platform above.",
 
 	["traveller"] = timed ..  "It allows you to cast as many Horizontal Teleport spells, as you like for one minute."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
-	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to Vision to have an option to walk on Spectre Rigs without triggering them.",
+	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to VISION to have an option to walk on Spectre Rigs without triggering them.",
 	["spectreevent"] = event .. "the Ghosted Random Move spell. Before executing you can choose soft ghosted or forced ghosted mode. In soft ghosted mode this spell will move or rotate normal stairs in random direction, without destroying anything in the process. In forced ghost mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
-	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to Aether to walk on ghostified stairs. Ghost Union can also be used to walk on ghostified stairs.",
+	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to AETHER to walk on ghostified stairs. Ghost Union can also be used to walk on ghostified stairs.",
 	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Soft Ghosted Random Move Spell"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
@@ -602,7 +646,7 @@ module.spells.descriptions = {
 	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing.  You cannot surf through blocking stairs.",
 	["updrift"] = "This spell will create an elevator using below and above platforms. The platforms will be restored after a given time period. Rank up to VAGABOND to speed up the movement. Rank up to TRAVELLER to be able to boost the lift to second level. Rank up to STRIDER to be able to boost lift again to third level.",
 	["diagdrift"] = "This spell will either: Create a horizontal elevator using below and any platform in a diagonal fashion. Such elevator will disappear after 7 return journeys. OR: If cast in outside direction, this spell will create an elevator would circle around the Tower once.",
-	["spin"] = "This spell will rotate below stairs 180 degrees. Rank up to NOMAD to be able to spin drifted stairs.",
+	["spin"] = "This spell will rotate below stairs 180 degrees. Rank up to NOMAD to be able to spin any uncursed stairs.",
 	["outdrift"] = "This spell will drift below stairs into random orientation, towards a random empty intersection on the same level. Rank up to NOMAD to drift already drifted stairs.",
 	["driftabove"] = "This spell will drift above stairs with less randomness and within the same intersection, so that you can walk under and climb them.",
 
@@ -614,16 +658,15 @@ module.spells.descriptions = {
 	["drifterrefill"] = overload,
 	["drifterunion"] = union,
 
-
 	--HERETIC
 	["createcursed"] = "This spell allows you to create cursed stairs in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
 	["curse"] = "This spell will curse below stairs. Use this spell again to uncurse stairs.",
 	["curseabove"] = "This spell will curse above stairs. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "This spell will allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
-	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.",
+	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.  It can also be used on below stairs for trolling purposes.",
 
-	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
+	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute. Rank up to BANISHED to destroy crossing cursed stairs." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
 	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
@@ -647,38 +690,39 @@ module.spells.descriptions = {
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
-	["createdual"] = "This spell will Create Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing stairs with this spell.",
+	--NECROMANCER
+	["createdual"] = "This spell will Create Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing cursed stairs with this spell.",
 	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
-	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links spin automatically. If you create a link in the middle of the map, 2 links will create an 'X' shape.",
-	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after a minute.",
-	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to Acolyte to bring Orb to this point, if you cast it on the top level.",
+	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links will spin when a player jumps on them.",
+	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after two minutes.",
+	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to ACOLYTE to bring Orb to this point, if you cast it on the top level.",
 	["regen"] = "Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
 
-	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Crossing stairs will be demolished regradless of rank." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
+	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Rank up to LICH to demolish crossing cursed stairs with this spell." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
-	["necromancerevent"] = fill ..  "Created stairs will be soul-less and will fade away after a minute.",
-	["necromanceraltevent"] = event .. "the Remove Soul spell. Such stairs will fade away after a minute.",
+	["necromancerevent"] = fill ..  "Created stairs will be soulless and will fade away after two minutes.",
+	["necromanceraltevent"] = event .. "the Remove Soul spell. Such stairs will fade away after two minutes.",
 	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Remove Soul spell"),
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
-
-	["createmirrored"] = "This spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. Rank up to Poltergeist to demolish crossing stairs with this spell. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["bigmirror"] = "This spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Giant mirrors will remove any small mirrors on the level. Rank up to Presence to extend mirror lifetime to 15 seconds.",
-	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. When you step away from mirror, you will become unmerged. Rank up to Presence to extend mirror lifetime to 9 seconds.",
-	["outermirror"] = "This spell will create a mirror in the outer direction and twin mirror on the other side of the map. It can only be used in outer platforms. Players who walk through such mirror will merge with their ghost and teleport to the connected mirror on the other side of the tower. Mirror will fade away after 60 seconds. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["merge"] = "Use this spell to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["oneway"] = "This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	--REAVER
+	["createmirrored"] = "This spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["bigmirror"] = "This spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. Giant mirrors will remove any small mirrors on the level. Rank up to PRESENCE to extend mirror lifetime to 15 seconds.",
+	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. Rank up to PRESENCE to extend mirror lifetime to 9 seconds.",
+	["outermirror"] = "This spell will create a mirror in the outer direction and twin mirror on the other side of the map. It can only be used in outer platforms. Players who walk through such mirror will merge with their ghost and teleport to the connected mirror on the other side of the tower. Mirror will disappear after 60 seconds. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["merge"] = "Use this spell to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. Rank up to POLTERGEIST to merge/unmerge nearby players. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["oneway"] = "This spell will turn above stairs into Glass Stairs, allowing you to walk through them. Only players merged with ghost can walk on Glass Stairs.",
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
-	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will turn into one-way stairs with random direction blocked. Rank up to WIGHT to have an option to avoid below Reaver Rigs.",
-	["reaverevent"] = event .. "the Random One-Way Stairs spell.",
-	["reaveraltevent"] = event .. "the Upward One-Way Stairs spell.",
+	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will Reflect the triggering player. They would have to find Mana to break free. Reflected players must control their characters from their ghost perspective. Reflected players are unaffected by Reaver mirrors. Rank up to WIGHT to get Reaver Rig immunity.",
+	["reaverevent"] = event .. "the Random One-Way Stairs spell. One-Way stairs work like Mirrored Stairs, but can be only used in one direction. Rank up to ILLUSION, to circumvent this effect.",
+	["reaveraltevent"] = event .. "the Glass Stairs spell.",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Random One-Way Stairs spell."),
 	["reaverrefill"] = overload,
 	["reaverunion"] = union,
 
-
+	--GREMLIN
 	["tram"] = "This spell will create Tram Stairs in the chosen direction. Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
 	["screwdown"] = "This spell will turn below stairs into downwards corkscrew. It will be near to impossible to ascend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
 	["screwup"] = "This spell will turn above stairs into upwards corkscrew, allowing you to pass. It will be near to impossible to descend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
@@ -694,13 +738,14 @@ module.spells.descriptions = {
 	["gremlinrefill"] = overload,
 	["gremlinunion"] = union,
 
+
 	--CHAMELEON
 	["chamdown"] = "This used to be a Keeper spell, before it got rejected. It will move any normal or rigged stairs down. If you have ranked Keeper to Captain, you may also move any un-cursed stairs.",
-	["chamswap"] = "This used to be a Necromancer spell, before it got rejected. It will copy your ghost, but unlike Reaver merge, your ghost is still active. This spell was unfinished and it is purely visual now.",
 	["chamdraw"] = "This used to be a Heretic spell, before it got rejected. It will turn stairs into drawbridge, making descent impossible unless other player activates bridge from below.",
+	["oneways"] = "This used to be a Reaver spell, before it got rejected. This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["ditch"] = "This used to be a thief spell, before it got rejected. It will turn stairs into a crossed staircase.",
 	["chamdrawabove"] = "This used to be a Heretic spell, before it got rejected. It will turn above stairs into drawbridge, allowing you to pass. Ascend is impossible unless other player activates bridge from above. Old Unbeliever rank is no longer active and auto draw from below is no longer possible.",
-	["warp"] = "This used to be a wicked spell. It will warp stairs back to the platform.",
+	["warp"] = "This used to be a wicked spell, before it got rejected. It will warp stairs back to the platform.",
 
 	["chameleonrigevent"] = rig .. "the Chameleon Rig. Stairs once triggered, will execute random effect from all other rigs.",
 	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","random spell from all other modes"),
@@ -749,16 +794,24 @@ module.gui.ranks = {
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
-	["possessed_2"] = "Find Mana or Patron Rig to break free.",
 	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
 
 	["hypnotised_1"] = "You have been Hypnotised!",
-	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+
+	["reflected_1"] = "You have been Reflected!",
+	["reflected_3"] = "As Reflected, you control your ghost instead!",
+
+	["findmana"] = "Find Mana or Patron Rig to break free.",
+	["permanent"] = "Permanent mode - Complete climb or visit santcuary to de-morph.",
 
 	["architect_1"] = "You are now an Architect!",
 	["architect_2"] = "Architects cannot acquire any ranks.",
 	["architect_3"] = "Roam the tower to wreak havoc!",
+
+	["tutorial_1"] = "You are in the tutorial!",
+	["tutorial_2"] = "Collect Mana and use spells to climb the tower.",
+	["tutorial_3"] = "Make sure to catch the White Orb at the top!",
 	--END NEW
 
 	--shared
@@ -782,7 +835,7 @@ module.gui.ranks = {
 		[4] = "Disco stairs have no effect on you.",
 		[5] = "You can now see all invisible stairs. You have the option to not reveal them.",
 		[6] = "You can now detect platform traps and fake stairs.",
-		[8] = "You can now walk on fake stairs.", 
+		[8] = "You can now walk on fake stairs and traps.", 
 		[9] = "You will get bonus Mana when someone triggers any prank. (1 mana per player pranked)",
 	},
 	["WICKED"] = {
@@ -829,7 +882,7 @@ module.gui.ranks = {
 	},
 	["DRIFTER"] = {
 		[4] = "Your upward platform drifts will appear and move 50% faster.",
-		[5] = "You can now spin and drift already drifted stairs.",
+		[5] = "You can now spin any uncursed stairs and drift already drifted stairs.",
 		[6] = "You can now boost Elevators with both Riser and Elevator spells. Vagabond perk does not apply to boosted Elevators.",
 		[8] = "You have the option to avoid triggering any Drifter Rigs.",
 		[9] = "You can now boost Elevators twice, with both Riser and Elevator spells. Vagabond perk does not apply to boosted Elevators.",
@@ -851,15 +904,15 @@ module.gui.ranks = {
 	["REAVER"] = {
 		[4] = "You can now use your Merge spell to unmerge.",
 		[5] = "Your floor mirrors will last 50% longer. (15s big, 9s small)",
-		[6] = "You have the option to avoid below Reaver Rigs.",
-		[8] = "You can now demolish crossing stairs, while casting Mirrored Stairs.",
+		[6] = "You are now immune to Reaver Rigs.",
+		[8] = "Using merge spell will also affect nearby players.",
 		[9] = "You are now immune to one-way stairs.",
 	},
 	["NECROMANCER"] = {
 		[4] = "Create Dual Stairs will ignore cursed intersections and stairs on ghost's platform.",
 		[5] = "If you use a Revival Point on the top floor, it will bring the orb to where the point is placed.",
 		[6] = "Copy Platform spell will remove curses if it needs to.",
-		[8] = "You can demolish crossing stairs, while casting Dual Stairs.",
+		[8] = "You can demolish cursed stairs, while casting Dual Stairs.",
 		[9] = "Regenerate restores 10 mana instead of 6, and will restore 5 mana to those nearby your ghost.",
 	},
 	["GREMLIN"] = {
@@ -888,7 +941,7 @@ module.gui.ranks = {
 		[6] = "Maybe you just like to torture yourself?",
 		[7] = "People at discord are lying, there is no secret perk at 50 climbs.",
 		[8] = "This is your final warning, stop before a total disappointment.",
-		[9] = "Your persistence is admirable. You get a total toggleable immunity to special stairs.",
+		[9] = "Your persistence is admirable. You get a total toggleable immunity to special stairs and an ability to pass through blocking stairs.",
 	},
 
 	["CHAMELEON"] = { 
@@ -914,7 +967,7 @@ module.gui.multitokens = {
 }
 
 module.gui.feedback = {
-	
+
 	["title"] = "SEND FEEDBACK",
 	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
 	["send"] = "SEND",
@@ -937,9 +990,11 @@ module.gui.settings = {
 	["KChoices"] = "Show direction selection for Keeper, when using move spells",
 	["HChoices"] = "Show direction selection for Hacker, when using the escalator spell",
 	["AChoices"] = "Show direction selection for Archon, when using gate spells",
-	["RChoices"] = "Show direction selection for Reaver, when using the one-way stairs spell",
 	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
 	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell",
+	--new
+	["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
+	--endnew
 
 
 	["List"] = "Show animated playerlist rather than standard Roblox Leaderboard",
@@ -1140,7 +1195,7 @@ module.gui.gameover.messages = {
 	},
 	["NECROMANCER"] = {
 		"FOLLOW, REVIVE and BENEFIT",
-		"We aren’t actually haunting you, we just wanna be friends",
+		"We aren't actually haunting you, we just wanna be friends",
 		"Your soul is MINE!",
 		"Follow my ghost. Trust me!",
 		"It is safe near my ghost. Why would I lie?",
@@ -1180,22 +1235,22 @@ module.gui.gameover.messages = {
 
 module.gui.gameover.maxrank ={
 
-	["SAVIOUR"] = "Leave no noob behind",
-	["IT"] = "Pranking is living",
-	["ANNIHILATOR"] = "Destroy everything!",
-	["AETHER"] = "Enter the nether realm",
-	["DABSFORLIF"] = "Spells are overrated",
-	["USURPER"] = "I just like all the spells",
-	["ADMIRAL"] = "Order restored",
+	["SAVIOUR"] = "Leave no Noob Behind",
+	["IT"] = "Pranking is Living",
+	["ANNIHILATOR"] = "Destroy Everything!",
+	["AETHER"] = "Enter the Nether Realm",
+	["DABSFORLIF"] = "Spells are Overrated",
+	["USURPER"] = "I just like all the Spells",
+	["ADMIRAL"] = "Order Restored",
 	["OUTLAW"] = "Mine, mine all MINE!",
-	["ZERO"] = "Rootkit installed",
+	["ZERO"] = "Rootkit Installed",
 	["EXILED"] = "Excommunication",
-	["ILLUMINATI"] = "Illuminati confirmed",
-	["STRIDER"] = "I'll take the elevator",
-	["DEATHBRINGER"] = "Rise, rise, RISE!",
+	["ILLUMINATI"] = "Illuminati Confirmed",
+	["STRIDER"] = "I'll take the Elevator",
+	["DEATHBRINGER"] = "Rise, Rise, RISE!",
 	["OPTIMUS"] = "The Entanglement",
-	["ILLUSION"] = "We are one",
-	["DAEMON"] = "You spin me round and round.",
+	["ILLUSION"] = "We are ONE",
+	["DAEMON"] = "You spin me Round and Round.",
 	["BLACK HOLE"] = "The Nothingness", 
 
 }
@@ -1361,7 +1416,7 @@ module.static = {
 	["grave_1"] = "NECROMANCER'S GRAVE",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren’t actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'We aren�t actually haunting you, we just wanna be friends.'\nour founder's quote",
 
 	--NEW (architect)
 	["studio_1"] = "ARCHITECT'S STUDIO",
@@ -1448,33 +1503,39 @@ module.static = {
 
 }
 
---TUTORIAL
+--TUTORIAL (new)
 module.tutorial = {
 
 
 	["tut_big_1"] = "Welcome to Crazy Stairs!",
-	["tut_big_2"] = "First learn how to morph.",
-	["tut_big_3"] = "You are now a Patron, Patrons can create stairs.",
+	["tut_big_2"] = "First, collect some Mana.",
+	["tut_big_3"] = "You can create stairs with this spell.",
 	["tut_big_4"] = "All spells need to be executed by jumping.",
-	["tut_big_5"] = "Cool, huh? Now morph to Joker. Jokers can flip stairs.",
-	["tut_big_6"] = "You are now a Joker, use this spell to flip stairs.",
+	["tut_big_5"] = "Collect this Mana:",
+	["tut_big_6"] = "You can flip stairs with this spell.",
 	["tut_big_7"] = "Some spells need to be executed on stairs.",
-	["tut_big_8"] = "Now morph to Keeper. Keepers can move stairs.",
-	["tut_big_9"] = "You are now a Keeper, use this spell to move stairs.",
+	["tut_big_8"] = "Collect this Mana:",
+	["tut_big_9"] = "You can move stairs with this spell.",
 	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
 	["tut_big_11"] = "You will encounter many blocking stairs in this game.",
-	["tut_big_12"] = "You are now a Wicked, use this spell to destroy blocking stairs.",
+	["tut_big_12"] = "Use this spell to destroy blocking stairs.",
 	["tut_big_13"] = "You can destroy above stairs, by jumping on below ones.",
-	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
-	["tut_big_15"] = "You are now a Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
+	["tut_big_14"] = "Collect this Mana:",
+	["tut_big_15"] = "Use this spell to teleport across platforms.",
+	["tut_big_16"] = "Jump on arrow to teleport.",
+	["tut_big_17"] = "You may find that some stairs are impossible to ascend.",
+	["tut_big_18"] = "Use this spell to fix them.",
+	["tut_big_19"] = "Restore can be cast either on stairs or on adjacent arrow.",
+	["tut_big_20"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
 
 	["tut_select"] = "Select this spell.",
 
 	["tut_small_init"] = "Jump to spawn tutorial",
-	["tut_small_morph"] = "Jump on morph.",
-	["tut_small_arrow"] = "Jump on arrow.",
-	["tut_small_stairs"] = "Jump on stairs.",
+	["tut_small_collect"] = "Collect Mana",
+	["tut_small_arrow"] = "Jump on arrow",
+	["tut_small_stairs"] = "Jump on stairs",
+	["tut_small_pellet"] = "Collect the Orb",
+	--end new
 
 }
 
@@ -1497,7 +1558,10 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Can be executed on an empty intersection or through non-blocking stairs",
-		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
+		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Banished to demolish crossing cursed stairs.",
+		--new
+		["superforcednecro"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Lich to demolish crossing cursed stairs.",
+		--end new
 		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
 		["any"] = "Can be executed on any un-cursed intersection.",
 		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
@@ -1635,8 +1699,13 @@ module.serverfeedback = {
 	--failed spell (local)
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough tokens!",
-	["coolwait"] = "You can't cast rigs and events now, please wait ",
-	["nomirror"] = "You need to be joined with ghost to walk on mirrors",
+	["coolwait"] = "You can't cast rigs and events now, please wait.",
+	["nomirror"] = "You need to be joined with ghost to walk on mirrors.",
+	--new
+	["noreflected"] = "This spell cannot be used when you are Reflected.",
+	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected",
+	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected",
+	--end new
 	["regenused"] = "Regen already used during this climb.",
 
 	--failed spell (server)
@@ -1646,7 +1715,7 @@ module.serverfeedback = {
 	["spelllock"] = "You cannot cast spells now",
 	["nothere"] = "You can't use this spell in the tutorial.",
 	["onlyracers"] = "Only racing players can cast spells.",
-	["cancelfirst"] = "You need to cancel current spell first...",
+	--["cancelfirst"] = "You need to cancel current spell first...", --removed
 	["stashfull"] = "Your stairs stash is full.",
 	["stashempty"] = "You have to steal stairs before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
@@ -1679,17 +1748,19 @@ module.serverfeedback = {
 	["oddonly"] = "This spell cannot be cast on this level.",
 	["noabove"] = "No stairs found directly above.",
 	["lock"] = "You cannot cast spells now",
-	["outdrift"] = "Outside drift can only be created on the outer platforms.",
+	--["outdrift"] = "Outside drift can only be created on the outer platforms.", --removed
 	["cantgate"] = "This direction is blocked.",
 	["wall"] = "Wall is already here.",
 	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
 	["nogate"] = "These stairs are not gated.",
-	["noghost"] = "Only ghosted stairs can be de-ghostified.",
 	--NEW
+	["noghost"] = "This spell only works on normal, rigged and ghosted stairs.",
 	["wrongplace"] = "Other stairs must be in the game area.",
-	["archrace"] = "You cannot morph into an Architect while in the race.",
+	["archrace"] = "Architects cannot race!",
+	["noobrace"] = "You cannot race in the tutorial!",
+	["toolate"] = "A race is already in progress, try again later.",
+	["blockedplit"] = "Target intersection is cursed.",
 	--END NEW
-	["blockedplit"] = "Can't create split, target intersection is cursed.",
 	["cursedtarget"] = "There are Cursed Stairs in that destination.",
 	["lockedother"] = "Cannot create stairs yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
@@ -1710,7 +1781,10 @@ module.serverfeedback = {
 	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
 	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
 	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
-	["nomad"] = "Rank up to Nomad to spin already drifted stairs.",
+	--NEW
+	["nomad1"] = "Rank up to Nomad to spin any uncursed stairs.",
+	["nomad2"] = "Rank up to Nomad to drift already drifted stairs.",
+	--END NEW
 	["prodigy"] = "Rank up to Prodigy, to override Gates.",
 	["traveller"] = "Rank up to Traveller to boost Elevators.",
 	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
@@ -1718,11 +1792,10 @@ module.serverfeedback = {
 	--NEW
 	["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
 	--END NEW
-	["lich"] = "Rank up to Lich to demolish crossing stairs.",
 	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
 	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
 	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
-	["poltergeist"] = "Rank up to Poltergeist to demolish crossing stairs.",
+	["lich"] = "Rank up to Lich to demolish crossing cursed stairs.",
 
 	--rig activation
 	["keeperrig"] = "Stairs are moving!",
@@ -1741,7 +1814,7 @@ module.serverfeedback = {
 	["drifterrig"] = "Stairs are spinning!",
 	["splicerrig"] = "Stairs are twisting!",
 	["necrorig"] = "Stairs are fading!",
-	["reaverrig"] = "Stairs are now one way only!",
+	["reaverrig"] = "You have been reflected!",
 	["gremlinrig"] = "You have been hypnotised!",
 	["reveal"] = "You have revealed invisible stairs!",
 
@@ -1763,8 +1836,10 @@ module.serverfeedback = {
 	["received"] = "%s has shared some Mana with you!",
 
 	--prompts
-	["scancel"] = "Cancel your spell to change alignments.",
+	--["scancel"] = "Cancel your spell to change alignments.", --removed
 	["morph"] = "Jump here to become %s!",
+	["race"] = "Jump here to intiate a new race.",
+	["norace"] = "Race is automatic in the infinite mode.",
 
 	--misc
 	["secret"] = "Secret found!",
@@ -1774,9 +1849,11 @@ module.serverfeedback = {
 	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
 	["champossessed"] = "You can't use chameleon while possessed.",
 	["chamhypnotised"] = "You can't use chameleon while hypnotised.",
-	["chamspell"] = "Please execute or cancel current spell first.",
+	["chamreflected"] = "You can't use chameleon while reflected.",
+	--["chamspell"] = "Please execute or cancel current spell first.", --removed
 	["morphpossessed"] = "You can't change alignment while possessed.",
 	["morphhypnotised"] = "You can't change alignment while hypnotised.",
+	["morphreflected"] = "You can't change alignment while reflected.",
 
 	["nocode"] = "Please enter the code first.",
 	["invalid"] = "This code is invalid.",
@@ -1803,6 +1880,19 @@ module.serverfeedback = {
 	["used"] = "Code has been used already.",
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
+
+	--NEW
+	['noobteleport'] = "You cannot switch towers in the tutorial!",
+	['noobmorph'] = "Complete the tutorial to be able to morph!",
+	['noobnocode'] = "Complete the tutorial to be able to use codes!",
+	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
+
+	--GIFTING
+	['notingame'] = "Player has left the game, you cannot give the game pass!",
+	['alreadyowns'] = "Player already owns this game pass.",
+	['gotit'] = "You have received %s game pass, courtesy of %s",
+	['given'] = "%s has received %s game pass!",
+	--END NEW
 
 	--custom tower feedbacks
 	["notinrace"] = "You cannot switch to infinite mode during a race!",
@@ -1865,29 +1955,30 @@ module.serverbroadcast = {
 	["union"] = "%s has merged with their ghost!",
 	["eliminated"] = "%s has been eliminated.",
 	["won"] = "%s has won the race!",
-	["falsestart"] = "False Start",
-	["countdown"] = "Race in %d seconds!",
-	["noplayers"] = "No racing players, infinite mode will not start!",
+	--["falsestart"] = "False Start", --removed
+	--["countdown"] = "Race in %d seconds!", --removed
+	--["noplayers"] = "No racing players, infinite mode will not start!", --removed
 	["nojoin"] = "Race is now closed - no new players can join.",
-	["allfalse"] = "All players have False Started!",
+	--["allfalse"] = "All players have False Started!", --removed
 	["safety"] = "Tower levels have changed, this race will not start.",
 	["leader"] = "%s has taken the lead!",
 	["toolate"] = "Nobody has reached the top in time!",
-	["go"] = "GO!",
+	--["go"] = "GO!", --removed
 	["over"] = "Race over!",
 
 	--NEW
-	["newrace"] = "%s has started climbing — race them!",
+	["newrace"] = "%s initiated a race - join them!",
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
 	["infstart"] = "Infinite race started!"
+
 	--END NEW
 
 }
 
 module.localfeedback = {
 
-	["cancel"] = "Cancel other spell first!",
+	--["cancel"] = "Cancel other spell first!", --removed
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough Tokens!",
 	["unlocked"] = "Spell unlocked!",
@@ -1909,10 +2000,10 @@ module.localfeedback = {
 	["nomusic"] = "Music failed to load.",
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
-	
+
 	--NEW
-	["raceon"] = "You will now participate in races!",
-	["raceoff"] = "You will no longer participate in races!",
+	["failedjoin"] = "Failed to join the race.",
+	["nounion"] = "You can't use Ghost Union right now.",
 	--END NEW
 
 }
@@ -1930,7 +2021,7 @@ module.switchon = {
 	["ARCHON1"] = "Only upward splits will teleport you.",
 	["DRIFTER1"] = "You will no longer trigger below Drifter Rigs.",
 	["SPLICER1"] = "You will no longer trigger below Splicer Rigs.",
-	["REAVER1"] = "You will no longer trigger below Reaver Rigs.",
+	--["REAVER1"] = "You will no longer trigger below Reaver Rigs.", --removed
 	["GREMLIN1"] = "Nearby Corkscrews locked.",
 	["NONE"] = "All special effects immunity on.",
 
@@ -1947,7 +2038,7 @@ module.switchoff = {
 	["ARCHON1"] = "All except down splits will teleport you.",
 	["DRIFTER1"] = "You will now trigger below Drifter Rigs.",
 	["SPLICER1"] = "You will now trigger below Splicer Rigs.",
-	["REAVER1"] = "You will now trigger below Reaver Rigs.",
+	--["REAVER1"] = "You will now trigger below Reaver Rigs.", --removed
 	["GREMLIN1"] = "Nearby Corkscrews unlocked.",
 	["NONE"] = "All special effects immunity off.",
 }
@@ -2012,9 +2103,9 @@ module.eventspells = {
 	["gremlinevent"] = "%s has just revolved all normal stairs!",
 	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
 
-	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
+	["reaverrigevent"] = "%s has just rigged all normal stairs with Reflect spell!",
 	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
-	["reaveraltevent"] = "%s has turned all normal stairs into upward One-Ways!",
+	["reaveraltevent"] = "%s has turned all normal stairs into Glass Stairs!",
 
 	["newmode"] = "%s has just switched drones into %s mode!",
 
@@ -2061,7 +2152,7 @@ module.gui.mana = {
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
 	["blessing"] = "BLESSING",
-	["hack"] = "HACK",
+	--["hack"] = "HACK", --removed
 	["stash"] = "STASH",
 	["backdoor"] = "BACKDOOR",
 	["chamber"] = "CHAMBER",
@@ -2080,18 +2171,19 @@ module.gui.mana = {
 	["shack"] = "SHACK",
 	["regen"] = "REGENERATE",
 	["optimus"] = "OPTIMUS",
-	--NEW
 	["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial
-	--END NEW
 
 }
 
 
 module.gui.gameover.extras = {
 
-	["noobs"] = "Tutorials are for noobs!",
+	--["noobs"] = "Tutorials are for noobs!", --removed
 	["possessed"] = "Those annoying Heretics!",
 	["hypnotised"] = "Where am I?",
+	--NEW
+	["reflected"] = "Let me out!",
+	--END NEW
 	["new"] = "New rank acquired - %s",
 
 }
