@@ -263,7 +263,7 @@ module.spells.names = {
 	["flip"] = "Balik Tangga",
 	["flipabove"] = "Balik Tangga di Atas",
 	["fake"] = "Bangun Tangga Palsu",
-	["invisible"] = "Bangun Tangga Tidak Terlihat",
+	["invisible"] = "Bangun Tangga Tak Terlihat",
 	["disco"] = "Tangga Berdisko",
 	["trap"] = "Buat Platform Jebakan",
 
@@ -1518,10 +1518,10 @@ module.guide = {
 
 		["cursed"] = "Dapat dilaksanakan pada tangga biasa, termanipulasi atau terkutuk.",
 		["all"] = "Dapat dilaksanakan pada tangga apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
-		["steal"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Hijacker untuk mencuri tangga tidak terkutuk apa pun.",
-		["onedirection"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tidak terkutuk apa pun.",
-		["straight"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tidak terkutuk apa pun.",
-		["rotate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memutar tangga tidak terkutuk apa pun.",
+		["steal"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Hijacker untuk mencuri tangga tak terkutuk apa pun.",
+		["onedirection"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+		["straight"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+		["rotate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memutar tangga tak terkutuk apa pun.",
 		["flip"]= "Dapat dilaksanakan pada tangga biasa, terbalik atau termanipulasi.",
 		["gate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates.",
 		["gatestr"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates",
@@ -1910,7 +1910,7 @@ module.localfeedback = {
 --NEW (redone)
 module.switchon = {
 
-	["JOKER1"] = "Kamu sekarang tidak akan mendeteksi tangga tidak terlihat.",
+	["JOKER1"] = "Kamu sekarang tidak akan mendeteksi tangga tak terlihat.",
 	["WICKED1"] = "Kamu sekarang tidak akan lagi mengaktifkan Wicked Rig di bawah.",
 	["KEEPER1"] = "Kamu sekarang tidak akan lagi mengaktifkan Keeper Rig di bawah.",
 	["SPECTRE1"] = "Kamu sekarang tidak akan lagi mengaktifkan Spectre Rig di bawah.",
@@ -1927,7 +1927,7 @@ module.switchon = {
 
 module.switchoff = {
 
-	["JOKER1"] = "Kamu sekarang akan mendeteksi tangga tidak terlihat.",
+	["JOKER1"] = "Kamu sekarang akan mendeteksi tangga tak terlihat.",
 	["WICKED1"] = "Kamu sekarang akan mengaktifkan Wicked Rig di bawah.",
 	["KEEPER1"] = "Kamu sekarang akan mengaktifkan Keeper Rig di bawah.",
 	["SPECTRE1"] = "Kamu sekarang akan mengaktifkan Spectre Rig di bawah.",
@@ -2157,6 +2157,7 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
 
