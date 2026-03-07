@@ -1,4 +1,4 @@
---VERSION 4.1.7--
+--VERSION 4.2--
 --ITALIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -82,6 +82,8 @@ module.gui.shop = {
 module.gui.nospellsbar = {
 	["nocasual"] = "SOLO I CORRIDORI POSSONO USARE GLI INCANTESIMI",
 	["possessed"] = "POSSEDUTO! (raccogli Mana per liberarti)",
+	["permanent"] = "POSSEDUTO! (permanente)",
+	["cancelled"] = "RILASCIATO...",
 }
 
 module.gui.stats = {
@@ -92,7 +94,7 @@ module.gui.stats = {
 	["norecord"] = "[no record]",
 
 	["2124486274"] = "Inganna il Creatore",
-	["1803533030753957"] = "Black Hole",
+	["1803533030753957"] = "Buco Nero",
 	["2124480173"] = "Tradimento di Wicked",
 	["2124480172"] = "Trabocchetto di Joker",
 	["2124637294"] = "Viaggio di Drifter",
@@ -109,23 +111,24 @@ module.gui.stats = {
 	["2124480175"] = "Logica di Muggle",
 	["2124826874"] = "Cerchia Completa",
 	["2124529966"] = "Cos'è il Tutorial?",
-	["2124826880"] = "La fine del Posseduto",
-	["3731010929572663"] = "Il sogno dell'Ipnotizzato",
+	["2124826880"] = "La Fine del Posseduto",
+	["3731010929572663"] = "Il Sogno dell'Ipnotizzato",
+	["840574993122888"] = "Il Distacco dell'Estraniato",
 	["2124913225"] = "Progetto di Architect",
-	["2124702954"] = "Devo solo premere questo pulsante...",
-	["2124702945"] = "Hai distrutto tutto, ma a che costo?",
-	["2124702946"] = "Comandante in piena regola",
-	["128721686760593"] = "Giro giro tondo...",
-	["2124702952"] = "Prenderò l'ascensore, grazie",
-	["3121101516427751"] = "Intreccio perfetto",
-	["2124702942"] = "Modello da seguire",
-	["2124702950"] = "Illuminazione divina",
-	["2124702951"] = "L'Avidità in persona",
-	["1165646024608180"] = "L'Unione fa la forza",
-	["2303731210592278"] = "Alzati per me!",
+	["2124702954"] = "Devo Solo Premere Questo Pulsante...",
+	["2124702945"] = "Hai Distrutto Tutto, Ma a Che Costo?",
+	["2124702946"] = "Comandante in Piena Regola",
+	["128721686760593"] = "Giro Giro Tondo...",
+	["2124702952"] = "Prenderò l'Ascensore, Grazie",
+	["3121101516427751"] = "Intreccio Perfetto",
+	["2124702942"] = "Modello da Seguire",
+	["2124702950"] = "Illuminazione Divina",
+	["2124702951"] = "L'Avidità in Persona",
+	["1165646024608180"] = "L'Unione Fa la Forza",
+	["2303731210592278"] = "Alzati per Me!",
 	["2124702949"] = "Scomunica",
-	["2124702943"] = "La burla, la risata, la comicità...",
-	["2124702948"] = "La magia è sopravvalutata",
+	["2124702943"] = "La Burla, la Risata, la Comicità...",
+	["2124702948"] = "La Magia è Sopravvalutata",
 	["2124826876"] = "Club dei 50",
 	["2124645341"] = "Riconoscimento Segreto",
 	["2126893403"] = "Riconoscimento Super Segreto",
@@ -137,6 +140,18 @@ module.gui.questions = {
 	["tutorial"]= "Vuoi iniziare il tutorial?",
 	["skip"] = "Vuoi saltare il tutorial?",
 	["reshuffle"] = "Vuoi evitare collisioni tra le scale in movimento? Premi NO per effettuare un mescolamento forzato.",
+	["gift"] = "Vuoi regalare il Pass %s a qualcuno?",
+	["choose"] = "Seleziona il giocatore che riceverà il Pass %s", 
+	["confirm"] = "Confermi di voler donare il Pass %s al giocatore %s?", --second %s is the chosen player
+	["received"] = "Hai ricevuto in dono il Pass %s da %s!",
+	["architect"] = "Architect",
+	["mana"] = "+10 Contenitore Mana",
+	["spectre"] = "Spectre",
+	["chameleon"] = "Chameleon",
+	["race"] = "Vuoi entrare in gara?",
+	["racein"] = "Gara tra:",
+	["go"] = "VIA!",
+	["raceoff"] = "Gara annullata",
 }
 
 module.gui.codes = {
@@ -194,6 +209,12 @@ module.gui.menu = {
 	["SwitchServer"] = "Cambia Torre",
 	["Tokens"] = "Convertitore gettoni Multiuso",
 	["Tutorial"] = "Inizia Tutorial",
+}
+
+module.gui.tutorial = {
+	["complete"] = "ASCESA COMPLETATA!",
+	["choose"] = "Seleziona la tua prima classe!",
+	["difficulty"] = "Difficoltà:",
 }
 
 module.spells = {}
@@ -358,7 +379,7 @@ module.spells.names = {
 	["smallmirror"] = "Genera Specchio",
 	["outermirror"] = "Specchio Perimetrale",
 	["merge"] = "Unione",
-	["oneway"] = "Scale a Senso Unico",
+	["oneway"] = "Scale Riflettenti",
 
 	["reflection"] = "Specchio Riflesso",
 	["reaverevent"] = "Evento Monodirezionale",
@@ -376,13 +397,22 @@ module.spells.names = {
 	["gremlinevent"] = "Evento Tutti Giù per Terra",
 	["gremlinaltevent"] = "Evento Capolinea",
 
+	--TUTORIAL
+	["tcreate"] = "Genera Scale",
+	["tflip"] = "Ribalta Scale",
+	["tdestroy"] = "Demolisci Scale in Alto",
+	["tmove"] = "Muovi Scale",
+	["tdash"] = "Passaggio",
+	["trestore"] = "Ripristina Scale",
+
 	--CHAMELEON
 	["ditch"] = "Incrocia Scale",
 	["warp"] = "Distorci Scale",
 	["chamdown"] = "Sprofonda Scale",
 	["chamdraw"] = "Ponte Levatoio in Basso",
-	["chamswap"] = "Copia Controfigura (solo visivo)",
+	-- ["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
+	["oneways"] = "Scale a Senso Unico",
 
 	["mugglereg"] = "Rigenerazione in corso",
 	["mugglecd"] = "Fase di ricarica per eventi e rig",
@@ -420,11 +450,11 @@ module.spells.descriptions = {
 
 	--PATRON
 	["summon"] = "Genera una scala normale nella direzione indicata, distruggendo eventuali scale in mezzo.",
-	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango Defender per ridurre il costo a 2 Mana.\nSblocca il rango Saviour per velocizzare il processo.",
+	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango DEFENDER per ridurre il costo a 2 Mana.\nSblocca il rango SAVIOUR per velocizzare il processo.",
 	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
-	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango Creator per raddoppiare la durata.",
-	["portal"] = "Apre un portale sulla piattaforma colpita per 60 secondi, in grado di teletrasportare chiunque lo calpesti sulla piattaforma sovrastante.\nSblocca il rango Protector per raddoppiarne la durata",
+	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per raddoppiare la durata.",
+	["portal"] = "Apre un portale sulla piattaforma colpita per 60 secondi, in grado di teletrasportare chiunque lo calpesti sulla piattaforma sovrastante.\nSblocca il rango PROTECTOR per raddoppiarne la durata",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patron",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."Patron Rig. Quando calpestate, conferiscono 1 Mana (l'effetto non si attiva se il contenitore Mana è pieno). In seguito all'attivazione, tornano ad essere scale normali.",
@@ -437,10 +467,10 @@ module.spells.descriptions = {
 	--JOKER
 	["flip"] = "Ribalta la scala colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
 	["flipabove"] = "Ribalta la scala posizionata direttamente sopra a quella colpita, invertendo alto e basso. Può essere ribaltata di nuovo.",
-	["fake"] = "Genera una scala illusoria nella direzione indicata, distruggendo eventuali scale in mezzo. Non può essere scalata, se non da altri Joker con rango Trickster sbloccato e giocatori con il sortilegio Unione Spettrale attivo.",
-	["invisible"] =  "Genera una scala invisibile nella direzione indicata, se l'intersecazione è libera. Quando calpestata, diventa visibile a tutti (opzionale se il rango Jester è sbloccato).",
-	["disco"] = "Trasforma la scala colpita in una pista da ballo. Chi la calpesterà, non potrà fare a meno di ballare!\nSblocca il rango Comic per diventarne immune.",
-	["trap"] = "Sostituisce la piattaforma colpita con una trappola per 60 secondi. I malcapitati che ci passeranno sopra cadranno al piano di sotto.\nSblocca il rango Jokester per essere in grado di individuarle.\nSblocca il rango Trickster per diventarne immune.",
+	["fake"] = "Genera una scala illusoria nella direzione indicata, distruggendo eventuali scale in mezzo. Non può essere scalata, se non da altri Joker con rango TRICKSTER sbloccato e giocatori con il sortilegio Unione Spettrale attivo.",
+	["invisible"] =  "Genera una scala invisibile nella direzione indicata, se l'intersecazione è libera. Quando calpestata, diventa visibile a tutti (opzionale se il rango JESTER è sbloccato).",
+	["disco"] = "Trasforma la scala colpita in una pista da ballo. Chi la calpesterà, non potrà fare a meno di ballare!\nSblocca il rango COMIC per diventarne immune.",
+	["trap"] = "Sostituisce la piattaforma colpita con una trappola per 60 secondi. I malcapitati che ci passeranno sopra cadranno al piano di sotto.\nSblocca il rango JOKESTER per essere in grado di individuarle.\nSblocca il rango TRICKSTER per diventarne immune.",
 
 	["flipper"] = timed ..  "Permette di ribaltare scale in continuazione, per 60 secondi. Le scale direttamente al di sopra di quella colpita avranno la priorità. In caso esse non siano presenti, ribalta la scala sottostante."  .. string.format(timedExtra,RankData.JOKER[7].name,"Joker",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "Joker Rig. Quando calpestate, si ribaltano invertendo alto e basso.",
@@ -451,15 +481,15 @@ module.spells.descriptions = {
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "Distrugge la scala colpita a patto che essa non sia maledetta.\nSblocca il rango Vile per rimuovere il costo di esecuzione.\nSblocca il rango Vicious per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango Annihilator per poter distruggere le scale maledette.",
-	["destroyabove"] = "Distrugge la scala posizionata direttamente sopra a quella colpita a patto che essa non sia maledetta.\nSblocca il rango Vicious per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango Annihilator per poter distruggere le scale maledette.",
+	["destroy"] = "Distrugge la scala colpita a patto che essa non sia maledetta.\nSblocca il rango VILE per rimuovere il costo di esecuzione.\nSblocca il rango VICIOUS per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango ANNIHILATOR per poter distruggere le scale maledette.",
+	["destroyabove"] = "Distrugge la scala posizionata direttamente sopra a quella colpita a patto che essa non sia maledetta.\nSblocca il rango VICIOUS per guadagnare 1 Mana quando distruggi una scala alterata.\nSblocca il rango ANNIHILATOR per poter distruggere le scale maledette.",
 	["bend"] = "Piega la scala colpita verso l'alto formando un ponte tra le piattaforme sovrastanti",
-	["damage"] = "Frantuma la scala posizionata direttamente sopra a quella colpita, lasciando indietro solo alcuni gradini. Prima di metterti alla prova, fai attenzione alla ricarica del salto.\nSblocca il rango Destroyer per poterci camminare come se fosse una scala normale.",
-	["flatten"] = "Piega verso il basso la scala opposta, collegando l'estremità superiore alla tua piattaforma.",
+	["damage"] = "Frantuma la scala posizionata direttamente sopra a quella colpita, lasciando indietro solo alcuni gradini. Prima di metterti alla prova, fai attenzione alla ricarica del salto.\nSblocca il rango DESTROYER per poterci camminare come se fosse una scala normale.",
+	["flatten"] = "Piega verso il basso la scala opposta, collegandone l'estremità superiore alla tua piattaforma. Può anche essere lanciato direttamente sulle scale.",
 	["wall"] = "Genera una barriera nella direzione indicata che blocca il passaggio per 60 secondi. Oltre essa viene generato un collegamento con la piattaforma seguente, attraversabile solo da Wicked o giocatori con il sortilegio Unione Spettrale attivo. Alcuni incantesimi sono comunque in grado di passarci attraverso.",
 
 	["bender"] = timed .. "Permette di piegare scale verso l'alto in continuazione, per 60 secondi. Se possibile, sia la scala colpita che quella sovrastante verranno piegate."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wicked",RankData.WICKED[3].name),
-	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (opzionale con il rango Devil sbloccato).",
+	["wickedrigevent"] = rig .. "Wicked Rig. Quando calpestate, si attiva il processo di auto-distruzione (opzionale con il rango DEVIL sbloccato).",
 	["wickedevent"] = event .. "Demolisci Scale. Non viene attivata la rigenerazione.",
 	["wickedaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno demolite e i malefici verranno rimossi, senza eccezioni. Viene attivata la rigenerazione.",
 	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Solleva/Abbassa Ponte"),
@@ -467,15 +497,15 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Sposta la scala in una direzione orizzontale a scelta, distruggendo eventuali scale in mezzo. Non puoi spostare la scala al di fuori dall'area di gioco.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
-	["rotate"] = "Ruota la scala colpita, a destra o a sinistra, distruggendo eventuali scale in mezzo. Non puoi ruotare la scala al di fuori dall'area di gioco.\nSblocca il rango Controller per poter ruotare qualunque scala ad eccezione di quelle maledette.",
-	["moveup"] = "Innalza la scala colpita di un piano, distruggendo eventuali scale in mezzo.\nSblocca il rango Controller per poter innalzare qualunque scala ad eccezione di quelle maledette.",
-	["movedown"] = "Ripristina la scala colpita, riportandola alla normalità. Se la scala colpita non è alterata, l'incantesimo non viene eseguito.\nSblocca il rango Captain per rimuovere il costo di esecuzione.\nSblocca il rango Admiral per poter ripristinare le scale maledette ed i malefici.",
-	["rig"] = "Sposta o ruota la scala colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango Operator per assicurati che la scala non sprofondi.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
-	["moverandom"] = "Sposta o ruota la scala sovrastante a quella colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango Operator per assicurati che la scala non sprofondi.\nSblocca il rango Controller per poter spostare qualunque scala ad eccezione di quelle maledette.",
+	["move"] = "Sposta la scala in una direzione orizzontale a scelta, distruggendo eventuali scale in mezzo. Non puoi spostare la scala al di fuori dall'area di gioco.\nSblocca il rango CONTROLLER per poter spostare qualunque scala ad eccezione di quelle maledette.",
+	["rotate"] = "Ruota la scala colpita, a destra o a sinistra, distruggendo eventuali scale in mezzo. Non puoi ruotare la scala al di fuori dall'area di gioco.\nSblocca il rango CONTROLLER per poter ruotare qualunque scala ad eccezione di quelle maledette.",
+	["moveup"] = "Innalza la scala colpita di un piano, distruggendo eventuali scale in mezzo.\nSblocca il rango CONTROLLER per poter innalzare qualunque scala ad eccezione di quelle maledette.",
+	["movedown"] = "Ripristina la scala colpita, riportandola alla normalità. Se la scala colpita non è alterata, l'incantesimo non viene eseguito.\nSblocca il rango CAPTAIN per rimuovere il costo di esecuzione.\nSblocca il rango ADMIRAL per poter ripristinare le scale maledette ed i malefici.",
+	["rig"] = "Sposta o ruota la scala colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango OPERATOR per assicurati che la scala non sprofondi.\nSblocca il rango CONTROLLER per poter spostare qualunque scala ad eccezione di quelle maledette.",
+	["moverandom"] = "Sposta o ruota la scala sovrastante a quella colpita verso una direzione casuale, distruggendo eventuali scale in mezzo.\nSblocca il rango OPERATOR per assicurati che la scala non sprofondi.\nSblocca il rango CONTROLLER per poter spostare qualunque scala ad eccezione di quelle maledette.",
 
 	["ascension"] = timed .. "Permette di innalzare scale in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keeper",RankData.KEEPER[3].name),
-	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango Operator per assicurati che la scala non sprofondi.",
+	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango OPERATOR per assicurati che la scala non sprofondi.",
 	["keeperevent"] = event .. "Movimento Casuale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
 	["keeperaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno ripristinate, senza eccezioni. A differenza dell'Evento Annientamento, i malefici saranno ignorati.",
 	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Movimento Casuale"),
@@ -484,8 +514,8 @@ module.spells.descriptions = {
 
 	--SPECTRE
 	["phantom"] = "Evoca una scala fantasma nella direzione indicata, distruggendo eventuali scale in mezzo. La scala svanirà dopo un breve periodo.",
-	["ghost"] = "Spettralizza la scala posizionata direttamente sopra a quella colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango Aether per poterci camminare sopra.",
-	["shadow"] = "Spettralizza la scala colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango Aether per poterci camminare sopra.\nSblocca il rango Phantom per rimuovere il costo di esecuzione.",
+	["ghost"] = "Spettralizza la scala posizionata direttamente sopra a quella colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango AETHER per poterci camminare sopra.",
+	["shadow"] = "Spettralizza la scala colpita, rendendola intangibile. Lancia di nuovo per riportare la scala alla normalità.\nSblocca il rango AETHER per poterci camminare sopra.\nSblocca il rango Phantom per rimuovere il costo di esecuzione.",
 	["horizontal"] = "Ti teletrasporta sulla piattaforma indicata, attraversando eventuali scale in mezzo (tranne quelle maledette).",
 	["random"] = "Ti teletrasporta su una piattaforma casuale, sempre sullo stesso piano.",
 	["vertical"] = "Ti teletrasporta sulla piattaforma posizionata direttamente sopra a quella colpita.",
@@ -493,21 +523,21 @@ module.spells.descriptions = {
 	["traveller"] = timed ..  "Permette di effettuari scatti fantasma in continuazione, per 60 secondi."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectre",RankData.SPECTRE[3].name),
 	["spectrerigevent"] = rig .. "Spectre Rig. Quando calpestate, hanno il 50% di probabilità di diventare spettralizate (opzionale con il rango Vision sbloccato).",
 	["spectreevent"] = event .. "Mescolamento Spettrale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
-	["spectrealtevent"] = "Questo è un sortilegio Evento. Tutte le scale normali verranno spettralizzate.\nLancia il sortilegio Unione Spettrale o sblocca il rango Aether per poterci camminare sopra.",
+	["spectrealtevent"] = "Questo è un sortilegio Evento. Tutte le scale normali verranno spettralizzate.\nLancia il sortilegio Unione Spettrale o sblocca il rango AETHER per poterci camminare sopra.",
 	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Mescolamento Spettrale Leggero"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "Ti teletrasporta sulla piattaforma indicata, se l'intersecazione è libera.\nSblocca il rango Cracker per velocizzare il processo del 50%.",
-	["blink"] = "Ti permette di aggirare una scala che blocca il passaggio, se non è maledetta.\nSblocca il rango Exploiter per velocizzare il priocesso del 50%.",
+	["dash"] = "Ti teletrasporta sulla piattaforma indicata, se l'intersecazione è libera.\nSblocca il rango CRACKER per velocizzare il processo del 50%.",
+	["blink"] = "Ti permette di aggirare una scala che blocca il passaggio, se non è maledetta.\nSblocca il rango EXPLOITER per velocizzare il priocesso del 50%.",
 	["swap"] = "Ti teletrasporta nella posizione in cui si trova la tua controfigura. Può essere eseguito ovunque.",
-	["slide"] = "Transforma la scala colpita in una scala mobile. Puoi scegliere se farla salire o scendere.\nSblocca il rango Scripter per avere l'opzione di diventare immune alle scale mobili.",
+	["slide"] = "Transforma la scala colpita in una scala mobile. Puoi scegliere se farla salire o scendere.\nSblocca il rango SCRIPTER per avere l'opzione di diventare immune alle scale mobili.",
 	["slideup"] = "Inverte la direzione della scala di fronte a patto che essa non sia maledetta. Se la scala è alterata verrà ripristinata nel processo",
-	["glitch"] = "Ti teletrasporta insieme alla scala colpita in un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Zero per poter garantire il teletrasporto affianco alla sfera finale, se possibile.",
+	["glitch"] = "Ti teletrasporta insieme alla scala colpita in un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango ZERO per poter garantire il teletrasporto affianco alla sfera finale, se possibile.",
 
 	["hack"] = timed .. "Permette di trasformare scale mobili ascendenti in continuazione, per 60 secondi. Se ci sono scale che bloccano il passaggio, queste verranno demolite (tranne quelle maledette)." .. string.format(timedExtra,RankData.HACKER[7].name,"Hacker",RankData.HACKER[3].name),
-	["hackerrigevent"] = rig .. "Hacker Rig. Quando calpestate, ti teletrasportano insieme alla scala in un'intersecazione libera sullo stesso piano (opzionale con il rango Reaper sbloccato). Solo una persona può essere teletrasportata.",
+	["hackerrigevent"] = rig .. "Hacker Rig. Quando calpestate, ti teletrasportano insieme alla scala in un'intersecazione libera sullo stesso piano (opzionale con il rango REAPER sbloccato). Solo una persona può essere teletrasportata.",
 	["hackerevent"] = event .. "Scale Mobili Randomiche.",
 	["hackeraltevent"] = event ..  "Scale Mobili Ascendenti.",
 	["hackermode"] =  string.format(mode,"Hacker","Hacker Rig","Scale Mobili Randomiche"),
@@ -515,11 +545,11 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter trasportare 2 scale alla volta.",
-	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango Hijacker per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango Outlaw per poter trasportare 2 scale alla volta.",
+	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango OUTLAW per poter trasportare 2 scale alla volta.",
+	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango OUTLAW per poter trasportare 2 scale alla volta.",
 	["place"] = "Posiziona una scala rubata nella direzione indicata, se l'intersecazione è libera.",
-	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango Bandit per raddoppiare la durata.",
-	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango Robber per raddoppiare la durata.",
+	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango BANDIT per raddoppiare la durata.",
+	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango ROBBER per raddoppiare la durata.",
 	["drop"] = "Posiziona una scala piatta nella direzione indicata, se l'intersecazione è libera.",
 
 	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Eventuali scale che bloccano il passaggio verranno rubate automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thief",RankData.THIEF[3].name),
@@ -531,12 +561,12 @@ module.spells.descriptions = {
 	["thiefunion"] = union,
 
 	--ARCHON
-	["splitside"] = "Collega con un portale dimensionale la scala colpita ad un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitrotate"] = "Collega con un portale dimensionale la scala colpita ad un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitup"] = "Collega la scala colpita a quella sovrastante con un portale dimensionale. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Sage per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
-	["cancelsplit"] = "Rimuove tutti i portali dimensionali collegati alla scala colpita.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Scholar per rimuovere il costo di esecuzione.",
-	["splitrandom"] = "Collega con un portale dimensionale la scala colpita ad un'altra sullo stesso piano in modo casuale. Se viene scelta un'intersecazione libera, verrà generata una scala nuova.\nSblocca il rango Prodigy per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
-	["splitforward"] = "Crea un portale dimensionale che collega la piattaforma colpita con quella nella direzione scelta, ignorando eventuali scale in mezzo.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango Illuminati per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitside"] = "Collega con un portale dimensionale la scala colpita ad un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango PRODIGY per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango ILLUMINATI per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitrotate"] = "Collega con un portale dimensionale la scala colpita ad un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango PRODIGY per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango ILLUMINATI per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitup"] = "Collega la scala colpita a quella sovrastante con un portale dimensionale. Se non vi sono scale nella destinazione del portale, ne verrà generata una nuova.\nSblocca il rango PRODIGY per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango SAGE per poter ignorare i portali dimensionali che teletrasportano verso il basso.",
+	["cancelsplit"] = "Rimuove tutti i portali dimensionali collegati alla scala colpita.\nSblocca il rango DISCIPLE per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango SCHOLAR per rimuovere il costo di esecuzione.",
+	["splitrandom"] = "Collega con un portale dimensionale la scala colpita ad un'altra sullo stesso piano in modo casuale. Se viene scelta un'intersecazione libera, verrà generata una scala nuova.\nSblocca il rango PRODIGY per poter cambiare direzione dei portali dimensionali esistenti.\nSblocca il rango ILLUMINATI per poter camminare attraverso i portali dimensionali orizzontali.",
+	["splitforward"] = "Crea un portale dimensionale che collega la piattaforma colpita con quella nella direzione scelta, ignorando eventuali scale in mezzo.\nSblocca il rango Disciple per poter rimuovere i portali dimensionali dalle piattaforme.\nSblocca il rango ILLUMINATI per poter camminare attraverso i portali dimensionali orizzontali.",
 
 	["splitter"] = timed .. "Permette di creare portali dimensionali su piattaforme in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.ARCHON[7].name,"Archon",RankData.ARCHON[3].name), 
 	["archonrigevent"] = rig .. "Archon Rig. Quando calpestate, ti teletrasportano verso la direzione in cui stavi camminando (attraversando eventuali scale non maledette che bloccano il passaggio).",
@@ -548,14 +578,14 @@ module.spells.descriptions = {
 
 	--DRIFTER
 	["indrift"] = "Genera una piattaforma drone sotto i tuoi piedi in grado di trasportati attraverso un'intersecazione libera nella direzione indicata",
-	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango Vagabond per aumentare la velocità della piattaforma.\nSblocca il rango Traveller per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango Strider per far raggiungere alla piattaforma un ulteriore piano (3 in totale).",
+	["updrift"] = "Trasforma la piattaforma colpita in un ascensore che si muove tra due piani per un breve periodo.\nSblocca il rango VAGABOND per aumentare la velocità della piattaforma.\nSblocca il rango TRAVELLER per far raggiungere alla piattaforma un altro piano (2 in totale).\nSblocca il rango STRIDER per far raggiungere alla piattaforma un ulteriore piano (3 in totale).",
 	["diagdrift"] = "La piattaforma colpita si trasformerà in una piattaforma mobile che può muoversi in maniera diversa in base alla direzione scelta: se fuori dall'area di gioco, essa farà un giro completo intorno al perimetro della torre; altrimenti farà avanti e indietro diagonalmente tra due piattaforme per 7 volte.",
-	["spin"] = "Rotea la scala colpita di 180 gradi.\nSblocca il rango Nomad per poter roteare le scale dirottate.",
-	["outdrift"] = "Dirotta la scala colpita verso un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango Nomad per dirottare scale già dirottate.",
+	["spin"] = "Rotea la scala colpita di 180 gradi.\nSblocca il rango NOMAD per poter roteare qualsiasi scala non maledetta.",
+	["outdrift"] = "Dirotta la scala colpita verso un'intersecazione libera casuale sullo stesso piano.\nSblocca il rango NOMAD per dirottare scale già dirottate.",
 	["driftabove"] = "Solleva leggermente la scala posizionata direttamente sopra a quella colpita in modo da permetterti di passarci sotto e scalarla.",
 
-	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSbloccare i ranghi Traveller e Strider ti permetterà di applicarvi i rispettivi potenziamenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifter",RankData.DRIFTER[3].name), 
-	["drifterrigevent"] = rig .. "Drifter Rig. Quando calpestate, le scale ruoteranno di 180 gradi (opzionale con il rango Voyager sbloccato).",
+	["riser"] = timed .. "Permette di generare ascensori in continuazione, per 60 secondi.\nSbloccare i ranghi TRAVELLER e STRIDER ti permetterà di applicarvi i rispettivi potenziamenti.\n" .. string.format(timedExtra,RankData.DRIFTER[7].name,"Drifter",RankData.DRIFTER[3].name), 
+	["drifterrigevent"] = rig .. "Drifter Rig. Quando calpestate, le scale ruoteranno di 180 gradi (opzionale con il rango VOYAGER sbloccato).",
 	["drifterevent"] = event .. "Dirotta Scale.",
 	["drifteraltevent"] = event .. "Solleva Scale in Alto.",
 	["driftermode"] = string.format(mode,"Drifter","Drifter Rig","Dirotta Scale"),
@@ -563,15 +593,15 @@ module.spells.descriptions = {
 	["drifterunion"] = union,
 
 	--HERETIC
-	["createcursed"] = "Genera una scala maledetta nella direzione indicata, distruggendo eventuali scale in mezzo a patto che non maledette.\nSblocca il rango Banished per poter rimuovere questa limitazione.",
+	["createcursed"] = "Genera una scala maledetta nella direzione indicata, distruggendo eventuali scale in mezzo a patto che non maledette.\nSblocca il rango BANISHED per poter rimuovere questa limitazione.",
 	["curse"] = "Maledice la scala colpita se non lo è già, altrimenti rimuove la maledizione.",
 	["curseabove"] = "Maledice la scala posizionata direttamente sopra a quella colpita e la solleva leggermente, permettendoti di passarci sotto e scalarla. Se la scala è già maledetta, rimuove la maledizione.",
-	["curseinter"] = "Ti fa passare attraverso l'intersecazione lasciando indietro un maleficio, a patto che non ci siano scale in mezzo.\nSblocca il rango Infidel per poter eseguire l'incantesimo su intersecazioni con malefici, rimuovendoli nel processo",
+	["curseinter"] = "Ti fa passare attraverso l'intersecazione lasciando indietro un maleficio, a patto che non ci siano scale in mezzo.\nSblocca il rango INFIDEL per poter eseguire l'incantesimo su intersecazioni con malefici, rimuovendoli nel processo",
 	["autodown"] = "Solleva una copia della parte inferiore della scala colpita, permettendoti di raggiungere una nuova piattaforma. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
-	["autoup"] = "Abbassa la parte superiore della scala opposta, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo.",
+	["autoup"] = "Abbassa la parte superiore della scala opposta, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo. Può anche essere lanciato direttamente sulla scala.",
 
-	["malediction"] = timed .. "Permette di generare scale maledette in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretic",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "Heretic Rig. Chi le calpesta diventa posseduto, inibendo gli incantesimi (ignorato con il rango Unbeliever sbloccato). I giocatori posseduti si possono liberare raccogliendo Mana.\nSblocca il rango Exiled per guadagnare 1 Mana per giocatore posseduto.",
+	["malediction"] = timed .. "Permette di generare scale maledette in continuazione, per 60 secondi. Sblocca il rango BANISHED per poter demolire le scale maledette che bloccano il passaggio." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretic",RankData.HERETIC[3].name), 
+	["hereticrigevent"] = rig .. "Heretic Rig. Chi le calpesta diventa posseduto, inibendo gli incantesimi (ignorato con il rango UNBELIEVER sbloccato). I giocatori posseduti si possono liberare raccogliendo Mana.\nSblocca il rango EXILED per guadagnare 1 Mana per giocatore posseduto.",
 	["hereticevent"] = event .. "Scisma Randomico.",
 	["hereticaltevent"] = event .. "Maledici Scale.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Scisma Randomico"),
@@ -579,15 +609,15 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
-	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango Transformer per poter combinare scale già unite.",
-	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango Transformer per poter combinare scale già unite.",
-	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo dalle piattaforme.\nSblocca il rango Mixer per rimuovere il costo di esecuzione.\nSblocca il rango Optimus per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
+	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
+	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
+	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
+	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo dalle piattaforme.\nSblocca il rango MIXER per rimuovere il costo di esecuzione.\nSblocca il rango OPTIMUS per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
 	["split2"] = "Taglia in due la scala colpita, garantendoti accesso a tutte e quattro le piattaforme.",
 	["splitalt"] = "Divide la scala colpita, permettendoti di aggirare la scala posizionata direttamente sopra e scalarla.",
 
 	["twister"] = timed .. "Permette di combinare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicer",RankData.SPLICER[3].name), 
-	["splicerrigevent"] = rig .. "Splicer Rig. Quando calpestate, si combineranno con altre scale in modo casuale (opzionale con il rango Assembler sbloccato).",
+	["splicerrigevent"] = rig .. "Splicer Rig. Quando calpestate, si combineranno con altre scale in modo casuale (opzionale con il rango ASSEMBLER sbloccato).",
 	["splicerevent"] = event .. "Combina Scale a Caso.",
 	["spliceraltevent"] = event .. "Taglia Scale.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Combina Scale a Caso"),
@@ -595,47 +625,47 @@ module.spells.descriptions = {
 	["splicerunion"] = union,
 
 	--NECROMANCER
-	["createdual"] = "Genera una scala per te e la tua controfigura nella direzione indicata.\nSblocca il rango Skeleton per poter ignorare scale maledette e malefici dalla parte della controfigura.\nSblocca il rango Lich per poter demolire eventuali scale in mezzo per entrambi.",
-	["copyplatform"] = "Copia le scale dalla piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango Revenant per poter rimuovere le maledizioni.",
-	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Se lanciato sulle piattaforme centrali, verrà generato un incrocio a X. Sia il ponte che l'incrocio ruoteranno automaticamente.",
-	["undeadabove"] = "Esorcizza la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale esorcizzate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 60 secondi.",
-	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura. Qualora dovessi cadere ad un piano inferiore, verrai richiamato dove si trova. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango Acolyte per poter chiamare la sfera finale verso il punto d'appoggio (in cima).",
-	["regen"] = "Ottieni 6 Mana e offrine 3 a chi sta vicino alla tua controfigura.\nSblocca il rango Deathbringer per aumentare i valori a 10 e 5.",
+	["createdual"] = "Genera una scala per te e la tua controfigura nella direzione indicata.\nSblocca il rango SKELETON per poter ignorare scale maledette e malefici dalla parte della controfigura.\nSblocca il rango LICH per poter demolire eventuali scale in mezzo per entrambi.",
+	["copyplatform"] = "Copia le scale dalla piattaforma della tua controfigura sulla tua, e vice versa. Le scale copiate saranno normali.\nSblocca il rango REVENANT per poter rimuovere le maledizioni.",
+	["soulbridge"] = "Genera un ponte nella direzione indicata, collegando due piattaforme diagonalmente. Saltaci sopra per farlo ruotare.",
+	["undeadabove"] = "Esorcizza la scala posizionata direttamente sopra a quella colpita. Lo stesso vale per la controfigura, ma in assenza di scale ne verrà generata una nuova. Le scale esorcizzate non bloccano il passaggio e possono essere scalate, ma svaniscono dopo 120 secondi.",
+	["revival"] = "Crea un punto d'appoggio sulla piattaforma della tua controfigura. Qualora dovessi cadere ad un piano inferiore, verrai richiamato dove si trova. Il punto d'appoggio svanisce dopo l'utilizzo, quando completi una scalata, quando ne crei uno nuovo e quando usufruisci di Chameleon.\nSblocca il rango ACOLYTE per poter chiamare la sfera finale verso il punto d'appoggio (in cima).",
+	["regen"] = "Ottieni 6 Mana e offrine 3 a chi sta vicino alla tua controfigura.\nSblocca il rango DEATHBRINGER per aumentare i valori a 10 e 5.",
 
-	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Eventuali scale in mezzo verranno sempre demolite." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancer",RankData.NECROMANCER[3].name),
+	["duality"] = timed .. "Permette di generare scale gemelle in continuazione, per 60 secondi. Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancer",RankData.NECROMANCER[3].name),
 	["necromancerrigevent"] = rig .. "Necromancer Rig. Quando calpestate, verranno esorcizzate.",
-	["necromancerevent"] = fill ..  "Le scale generate saranno esorcizzate e svaniranno dopo 60 secondi.",
-	["necromanceraltevent"] = event .. "Esorcizza Scale. Queste scale svaniranno dopo 60 secondi.",
+	["necromancerevent"] = fill ..  "Le scale generate saranno esorcizzate e svaniranno dopo 120 secondi.",
+	["necromanceraltevent"] = event .. "Esorcizza Scale. Queste scale svaniranno dopo 120 secondi.",
 	["necromancermode"] = string.format(mode,"Necromancer","Necromancer Rig","Esorcizza Scale"),
 	["necromancerrefill"] = overload,
 	["necromancerunion"] = union,
 
 	--REAVER
-	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.\nSblocca il rango Poltergeist per poter demolire eventuali scale in mezzo.",
-	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano per 10 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli se possibile.\nSblocca il rango Presence per aumentare la durata a 15 secondi.",
-	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata per 6 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra.\nSblocca il rango Presence per aumentare la durata a 10 secondi.",
+	["createmirrored"] = "Genera una scala provvista di uno specchio nella direzione indicata, camminaci attraverso per unirti o separarti dalla tua controfigura. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
+	["bigmirror"] = "Genera uno specchio che si estende sull'intero piano per 10 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra. Gli specchi estesi sostituiscono quelli piccoli se possibile.\nSblocca il rango PRESENCE per aumentare la durata a 15 secondi.",
+	["smallmirror"] = "Genera un piccolo specchio nella direzione indicata per 6 secondi. Solo i giocatori uniti alla loro controfigura possono camminarci sopra.\nSblocca il rango PRESENCE per aumentare la durata a 10 secondi.",
 	["outermirror"] = "Genera uno specchio sulla piattaforma colpita nella direzione indicata e dalla parte opposta del piano, camminaci attraverso per teletrasportarti e unirti/separarti dalla tua controfigura. Gli specchi svaniranno dopo 60 secondi. Va lanciato sulle piattaforme perimetrali.",
-	["merge"] = "Unisciti alla tua controfigura.\nSblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.",
-	["oneway"] = "Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango Illusion per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sugli specchi.",
+	["merge"] = "Unisciti alla tua controfigura.\nSblocca il rango POLTERGEIST per unire/separare giocatori vicino a te alla/dalla loro controfigura.\nSblocca il rango REPLICA per poterti separare dalla tua controfigura con questo incantesimo.\nDurante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
+	["oneway"] = "Trasforma la scala soprastante a quella colpita in una scala riflettente, permettendoti di passarci attraverso. Solo i giocatori uniti con la propria controfigura possono scalarla.",
 
 	["reflection"] = timed .. "Permette di generare specchi estesi in continuazione, per 60 secondi. Ti unirai automaticamente alla tua controfigura." .. string.format(timedExtra,RankData.REAVER[7].name,"Reaver",RankData.REAVER[3].name), 
-	["reaverrigevent"] = rig .. "Reaver Rig. Quando calpestate, diventeranno a senso unico casualmente (opzionale con il rango Wight sbloccato).",
+	["reaverrigevent"] = rig .. "Reaver Rig. Chi le calpesta diventa estraniato (ignorato con il rango WIGTH sbloccato). I giocatori estraniati dovranno proseguire la scalata dal punto di vista della loro controfigura e si possono liberare raccogliendo Mana.",
 	["reaverevent"] = event .. "Scale a Senso Unico.",
-	["reaveraltevent"] = event .. "Scale a Senso Unico (Sola Salita).",
-	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Scale a Senso Unico"),
+	["reaveraltevent"] = event .. "Scale Riflettenti.",
+	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Scale a Senso Unico"), --To change
 	["reaverrefill"] = overload,
 	["reaverunion"] = union,
 
 	--GREMLIN
-	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango Fiend per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Attorciglia la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango Daemon per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
-	["screwup"] = "Attorciglia la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango Daemon per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri Daemon).",
+	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango FIEND per poter richiamare i Tram dalle piattaforme.",
+	["screwdown"] = "Attorciglia la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango DAEMON per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri DAEMON).",
+	["screwup"] = "Attorciglia la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango DAEMON per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri DAEMON).",
 	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno verticalmente di 180 gradi ogni breve intervallo.",
-	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango Goblin per rilevarle, e il rango Diablo per diventarne immune",
+	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango GOBLIN per rilevarle, e il rango DIABLO per diventarne immune",
 	["spinplatform"] = "Fa ruotare l'intera piattaforma e le scale che partono da essa di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette possono essere ruotate in questo modo.",
 
 	["tramway"] = timed .. "Permette di generare Tram in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.GREMLIN[7].name,"Gremlin",RankData.GREMLIN[3].name), 
-	["gremlinrigevent"] = rig .. "Gremlin Rig. Chi le calpesta diventa ipnotizzato, invertendo i comandi di movimento (ignorato con il rango Hobgoblin sbloccato). I giocatori ipnotizzati si possono liberare raccogliendo Mana.",
+	["gremlinrigevent"] = rig .. "Gremlin Rig. Chi le calpesta diventa ipnotizzato, invertendo i comandi di movimento (ignorato con il rango HOBGOBLIN sbloccato). I giocatori ipnotizzati si possono liberare raccogliendo Mana.",
 	["gremlinevent"] = event .. "Scale Girevoli.",
 	["gremlinaltevent"] = fill .. "Le scale generate saranno dei Tram.",
 	["gremlinmode"] = string.format(mode,"Gremlin","Gremlin Rig","Scale Girevoli"),
@@ -643,9 +673,10 @@ module.spells.descriptions = {
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango Controller di Keeper per poter sprofondare qualsiasi scala non maledetta.",
-	["chamswap"] = "Questo è un incantesimo proibito dei Necromancer. Copia la tua controfigura. Tuttavia, a differenza di Unione di Reaver, questo incantesimo è solo visivo.",
+	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",
+	-- ["chamswap"] = "Questo è un incantesimo proibito dei Necromancer. Copia la tua controfigura. Tuttavia, a differenza di Unione di Reaver, questo incantesimo è solo visivo.",
 	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
+	["oneways"] = "Questo è un incantesimo proibito dei Reaver. Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango ILLUSION per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
 	["chamdrawabove"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile a meno che un altro gicatore non attivi il ponte levatoio dall'alto. Il rango che influenzava questo incantesimo non ha più effetto.",
 	["ditch"] = "Questo è un incantesimo proibito dei Thief. Genera una scala nella direzione opposta a quella colpita nella stessa intersecazione, incrociandole tra loro.",
 	["warp"] = "Questo è un incantesimo proibito dei Wicked. Piega la scala colpita in modo tale da formare un collegamento verticale con la piattaforma superiore.",
@@ -692,16 +723,24 @@ module.gui.ranks = {
 	["none_2"] = "Per lanciare incantesimi, DEVI selezionare una classe!",
 
 	["possessed_1"] = "Sei stato Posseduto!",
-	["possessed_2"] = "Raccogli Mana per liberarti.",
 	["possessed_3"] = "In questo stato, sia i tuoi incantesimi che il tuo rango sono inibiti.",
 
 	["hypnotised_1"] = "Sei stato Ipnotizzato!",
-	["hypnotised_2"] = "Raccogli Mana per liberarti.",
 	["hypnotised_3"] = "In questo stato, i tuoi comandi sono invertiti.",
+
+	["reflected_1"] = "Sei stato Estraniato!",
+	["reflected_3"] = "In questo stato, controlli il tuo personaggio dal punto di vista della tua controfigura.",
+
+	["findmana"] = "Raccogli Mana per liberarti.",
+	["permanent"] = "Stato permanente - Completa l'ascesa o visita un santuario per liberarti.",
 
 	["architect_1"] = "Sei diventato un Architect!",
 	["architect_2"] = "Gli Architect non possiedono ranghi.",
 	["architect_3"] = "Naviga la torre e semina il panico!",
+
+	["tutorial_1"] = "Hai iniziato il tutorial!",
+	["tutorial_2"] = "Raccogli Mana e lancia incantesimi per farti strada nella torre.",
+	["tutorial_3"] = "Raggiungi la cima della torre e tocca la Sfera Finale!",
 
 	--shared
 	["higher"] = "POSSIEDI UN RANGO MIGLIORE",
@@ -724,7 +763,7 @@ module.gui.ranks = {
 		[4] = "Sei immune alle piste da ballo.",
 		[5] = "Puoi rilevare le scale invisibili e hai l'opzione di non svelarle quando le calpesti.",
 		[6] = "Puoi rilevare le botole e le scale illusorie.",
-		[8] = "Puoi camminare sulle scale illusorie.",
+		[8] = "Puoi camminare sia sulle scale illusorie che sulle botole.",
 		[9] = "Ricevi 1 Mana quando qualcuno cade per le tue trappole (una volta per giocatore).",
 	},
 	["WICKED"] = {
@@ -766,12 +805,12 @@ module.gui.ranks = {
 		[4] = "Puoi lanciare l'incantesimo Scollega Portali Dimensionali sulle piattaforme.",
 		[5] = "L'incantesimo Scollega Portali Dimensionali non richiede Mana per l'esecuzione.",
 		[6] = "Diventi immune ai portali dimensionali che teletrasportano verso il basso.",
-		[8] = "Puoi cambiare la destinazione di un portale dimensionale già esistente.",
+		[8] = "Puoi usare l'incantesimo Unione per unire/separare altri giocatori nelle vicinanze alle/dalle proprie controfigure",
 		[9] = "Ricevi l'opzione per ignorare qualsiasi tipo di portale dimensionale ad eccezione di quelli che teletrasportano verso l'alto.",
 	},
 	["DRIFTER"] = {
 		[4] = "Le piattaforme colpite dal sortilegio Ascensore e dall'incantesimo Elevazione si muovono più velocemente del 50%.",
-		[5] = "Puoi roteare e dirottare scale già dirottate.",
+		[5] = "Puoi roteare qualsiasi scala non maledetta e dirottare scale già dirottate.",
 		[6] = "Puoi potenziare gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
 		[8] = "Ricevi l'opzione per ignorare le scale alterate da Drifter Rig quando le calpesti.",
 		[9] = "Puoi potenziare ulteriormente gli ascensori con il sortilegio Ascensore e l'incantesimo Elevazione. Il rango Vagabond non viene applicato.",
@@ -793,15 +832,15 @@ module.gui.ranks = {
 	["REAVER"] = {
 		[4] = "Puoi eseguire l'incantesimo Unione per separarti dalla tua controfigura.",
 		[5] = "I tuoi specchi durano il 50% in più. (15s esteso, 9s piccolo)",
-		[6] = "Ricevi l'opzione per ignorare le scale alterate da Reaver Rig quando le calpesti.",
-		[8] = "L'incantesimo Genera Scale Specchiate ora è in grado di demolire eventuali scale in mezzo, a patto che non siano maledette.",
+		[6] = "Non puoi più essere estraniato dalle scale alterate da Reaver Rig.",
+		[8] = "Puoi unire o separare giocatori nelle vicinanze alle/dalle loro controfigure.",
 		[9] = "Diventi immune alle scale a senso unico.",
 	},
 	["NECROMANCER"] = {
 		[4] = "La tua controfigura ignora i malefici e le scale in mezzo quando esegui l'incantesimo Genera Scale Gemelle.",
 		[5] = "Puoi usare l'incantesimo Punto di Appoggio in cima alla torre per richiamare la sfera finale verso la tua controfigura.",
 		[6] = "L'incantesimo Imita Piattaforma della Controfigura può rimuovere malefici se necessario.",
-		[8] = "Puoi demolire eventuali scale in mezzo quando esegui l'incantesimo Genera Scale Gemelle.",
+		[8] = "Puoi demolire eventuali scale maledette in mezzo quando esegui l'incantesimo Genera Scale Gemelle.",
 		[9] = "Rigenera Mana ripristina 10 Mana invece di 6, e 5 a chi si trova vicino alla tua controfigura.",
 	},
 	["GREMLIN"] = {
@@ -830,7 +869,7 @@ module.gui.ranks = {
 		[6] = "O forse sono i miei commenti che ti spingono a continuare?",
 		[7] = "Raggiungere 50 Ascese non attiva alcun effetto aggiuntivo, ti hanno mentito.",
 		[8] = "Questo è il tuo ultimo avviso, lo sai che ignorare le mie avvertenze va contro il regolamento? Potrei bannare il tuo account dall'esperienza.",
-		[9] = "Dato che sei arrivato qui, mi sento in dovere di aggiungere qualcosa... Ti conferisco un'opzione per poter ignorare gli effetti delle scale alterate.",
+		[9] = "Dato che sei arrivato qui, mi sento in dovere di aggiungere qualcosa... Ti conferisco un'opzione per poter camminare attraverso le scale che bloccano il passaggio e di ignorare gli effetti delle scale alterate.",
 	},
 	["CHAMELEON"] = {
 		[1] = "Questo è il primo rango di CHAMELEON. Gli effetti dei ranghi delle altre classi vengono applicati se sbloccati.",
@@ -873,6 +912,8 @@ module.gui.settings = {
 	["RChoices"] = "Mostra icone direzionali per REAVER (solo PC)",
 	["SChoices"] = "Mostra icone direzionali per SPLICER (solo PC)",
 	["GChoices"] = "Mostra icone direzionali per GREMLIN (solo PC)",
+	-- ["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
+	["CChoices"] = "Mostra icone direzionali per CHAMELEON (Scale a Senso Unico)",
 
 	["List"] = "Attiva lista giocatori animata",
 	["SwitchBack"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
@@ -1113,23 +1154,23 @@ module.gui.gameover.messages = {
 }
 
 module.gui.gameover.maxrank ={
-	["SAVIOUR"] = "Modello da seguire",
-	["IT"] = "La burla, la risata, la comicità...",
-	["ANNIHILATOR"] = "Hai distrutto tutto, ma a che costo?",
-	["AETHER"] = "Benvenuto nel regno degli inferi",
-	["DABSFORLIF"] = "La magia è sopravvalutata",
-	["USURPER"] = "Mi piacciono tutti gli incantesimi",
-	["ADMIRAL"] = "Comandante in piena regola",
-	["OUTLAW"] = "L'avidità in persona",
-	["ZERO"] = "Devo solo premere questo pulsante...",
+	["SAVIOUR"] = "Modello da Seguire",
+	["IT"] = "La Burla, la Risata, la Comicità...",
+	["ANNIHILATOR"] = "Hai Distrutto Tutto, Ma a Che Costo?",
+	["AETHER"] = "Benvenuto nel Regno degli Inferi",
+	["DABSFORLIF"] = "La Magia è Sopravvalutata",
+	["USURPER"] = "Mi Piacciono Tutti gli Incantesimi",
+	["ADMIRAL"] = "Comandante in Piena Regola",
+	["OUTLAW"] = "L'Avidità in Persona",
+	["ZERO"] = "Devo Solo Premere Questo Pulsante...",
 	["EXILED"] = "Scomunica",
-	["ILLUMINATI"] = "L'illuminazione divina",
-	["STRIDER"] = "Prenderò l'ascensore, grazie",
-	["DEATHBRINGER"] = "Alzati per me!",
-	["OPTIMUS"] = "Intreccio perfetto",
-	["ILLUSION"] = "L'unione fa la forza",
-	["DAEMON"] = "Giro giro tondo",
-	["BLACK HOLE"] = "Nulla cosmico",
+	["ILLUMINATI"] = "L'Illuminazione Divina",
+	["STRIDER"] = "Prenderò l'Ascensore, Grazie",
+	["DEATHBRINGER"] = "Alzati per Me!",
+	["OPTIMUS"] = "Intreccio Perfetto",
+	["ILLUSION"] = "L'Unione Fa la Forza",
+	["DAEMON"] = "Giro Giro Tondo",
+	["BLACK HOLE"] = "Nulla Cosmico",
 }
 
 module.gui.gameover.credits = {
@@ -1376,28 +1417,40 @@ module.static = {
 --TUTORIAL
 module.tutorial = {
 	["tut_big_1"] = "Benvenuto in ScaleMania!",
-	["tut_big_2"] = "Prima di tutto, impara a cambiare classe.",
-	["tut_big_3"] = "La classe Patron è in grado di generare scale. Seleziona l'incantesimo Genera Scale.",
+	["tut_big_2"] = "Prima di tutto, colleziona quel cristallo di Mana.",
+	["tut_big_3"] = "Seleziona l'incantesimo Genera Scale.",
 	["tut_big_4"] = "Tutti gli incantesimi si lanciano saltando.",
-	["tut_big_5"] = "Notevole, vero? Adesso trasformati in Joker per poter ribaltare le scale.",
-	["tut_big_6"] = "Il giallo ti dona. Ora, seleziona l'incantesimo Ribalta Scale per proseguire.",
+	["tut_big_5"] = "Notevole, vero? Adesso colleziona quest'altro cristallo di Mana:",
+	["tut_big_6"] = "Ora, seleziona l'incantesimo Ribalta Scale per proseguire.",
 	["tut_big_7"] = "Alcuni incantesimi vengono eseguiti saltando sopra le scale.",
-	["tut_big_8"] = "Ci stai prendendo la mano. Trasformati in Keeper per poter spostare le scale.",
+	["tut_big_8"] = "Ci stai prendendo la mano. Raccogli questo cristallo di Mana:",
 	["tut_big_9"] = "Ben fatto, ora seleziona l'incantesimo Muovi Scale per continuare.",
 	["tut_big_10"] = "Salta sulla freccia che indica in avanti per spostare la scala.",
 	["tut_big_11"] = "Troverai molte scale che ostacoleranno il tuo passaggio.",
 	["tut_big_12"] = "Stai andando bene! Seleziona l'incantesimo Demolisci Scale in Alto per procedere.",
 	["tut_big_13"] = "Alcuni incantesimi interagiscono con le scale situate in alto, prova con questo.",
-	["tut_big_14"] = "Prima di lasciarci, permettimi di mostrarti le classi a pagamento.",
-	["tut_big_15"] = "Magnifico, vero? Spectre si ottiene acquistando il suo Pass. È utile anche per giocare in solitaria.",
-	["tut_big_16"] = "Il tuo obiettivo? Raggiungi la cima della torre e tocca la sfera in movimento. Alla prossima!",
+	-- ["tut_big_14"] = "Collect this Mana:",
+	-- ["tut_big_15"] = "Use this spell to teleport across platforms.",
+	-- ["tut_big_16"] = "Jump on arrow to teleport.",
+	["tut_big_14"] = "Assumi questo cristallo di Mana:",
+	["tut_big_15"] = "Seleziona l'incantesimo Passaggio per teletrasportati di piattaforma.",
+	["tut_big_16"] = "Salta sulla freccia per eseguire l'incantesimo!",
+	-- ["tut_big_17"] = "You may find that some stairs are impossible to ascend.",
+	-- ["tut_big_18"] = "Use this spell to fix them.",
+	-- ["tut_big_19"] = "Restore can be cast either on stairs or on adjacent arrow.",
+	-- ["tut_big_20"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
+	["tut_big_17"] = "Alcune scale potrebbero non essere ospitali ed impedirti di proseguire il passaggio.",
+	["tut_big_18"] = "Seleziona questo incantesimo per sistemarle.",
+	["tut_big_19"] = "Questo incantesimo può essere lanciato sia sulle scale che sulle frecce.",
+	["tut_big_20"] = "Il tuo obiettivo? Raggiungi la cima della torre e tocca la Sfera Finale in movimento. Alla prossima!",
 
 	["tut_select"] = "Seleziona questo incantesimo:",
 
 	["tut_small_init"] = "Esegui un salto per iniziare il tutorial",
-	["tut_small_morph"] = "Salta sul trasformatore",
+	["tut_small_collect"] = "Colleziona Mana",
 	["tut_small_arrow"] = "Salta sulla freccia",
 	["tut_small_stairs"] = "Salta sulle scale",
+	["tut_small_pellet"] = "Tocca la Sfera Finale",
 }
 
 module.where = {
@@ -1416,8 +1469,10 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale intangibili.",
-		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango Banished per poter demolire le scale maledette.",
-		["flicker"] = "Può essere lanciato solo nelle intersecazioni libere (e maledette con il rango Infidel sbloccato).",
+		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango BANISHED per poter demolire le scale maledette.",
+		-- ["superforcednecro"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Lich to demolish crossing cursed stairs.",
+		["superforcednecro"] = "Può essere lanciato nelle intersecazioni libere e senza malefici. Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
+		["flicker"] = "Può essere lanciato solo nelle intersecazioni libere (e maledette con il rango INFIDEL sbloccato).",
 		["any"] = "Può essere lanciato in intersecazioni senza malefici.",
 		["wall"] = "Può essere lanciato in intersecazioni senza malefici che non abbiano una barriera o un portale dimensionale.",
 		["forced"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette.",
@@ -1538,8 +1593,14 @@ module.serverfeedback = {
 	--failed spell (local)
 	["nomana"] = "Mana insufficiente!",
 	["notokens"] = "Gettoni insufficienti!",
-	["coolwait"] = "Impossibile eseguire in questo momento, attendi ",
-	["nomirror"] = "Devi unirti alla tua controfigura per poter camminare sugli specchi",
+	["coolwait"] = "I sortilegi Eventi e Rig non sono disponibili, attendi.",
+	["nomirror"] = "Devi unirti alla tua controfigura per poter camminare sugli specchi.",
+	-- ["noreflected"] = "This spell cannot be used when you are Reflected.",
+	-- ["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected",
+	-- ["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected",
+	["noreflected"] = "Incantesimo non disponibile mentre sei Estraniato.",
+	["noflyarch"] = "Raccogli Mana per poter usufruire del Pass Architect",
+	["noblackhole"] = "Raccogli Mana per poter usufruire dei pregi del rango Buco Nero.",
 	["regenused"] = "Hai già usato l'incantesimo Rigenera Mana durante questa scalata.",
 
 	--failed spell (server)
@@ -1549,7 +1610,7 @@ module.serverfeedback = {
 	["spelllock"] = "Non puoi lanciare incantesimi al momento.",
 	["nothere"] = "Seleziona l'incantesimo mostrato nel tutorial!",
 	["onlyracers"] = "Solo i corridori possono usare gli incantesimi.",
-	["cancelfirst"] = "Hai già un incantesimo selezionato...",
+	-- ["cancelfirst"] = "Hai già un incantesimo selezionato...", -- Rimosso
 	["stashfull"] = "Il tuo inventario è pieno.",
 	["stashempty"] = "Il tuo inventario è vuoto, ruba delle scale!",
 	["ultwait"] = "Qualcun altro ha lanciato un sortilegio recentemente. Attendi.",
@@ -1582,14 +1643,18 @@ module.serverfeedback = {
 	["oddonly"] = "Incantesimo non riuscito. Il piano è vincolato.",
 	["noabove"] = "Nessuna scala posizionata direttamente sopra rilevata.",
 	["lock"] = "Non puoi lanciare incantesimi al momento.",
-	["outdrift"] = "Perlustrazione può essere lanciato solo sulle piattaforme perimetrali.",
+	-- ["outdrift"] = "Perlustrazione può essere lanciato solo sulle piattaforme perimetrali.", -- Rimosso
 	["cantgate"] = "Questa direzione è bloccata.",
 	["wall"] = "Barriera già presente.",
 	["nocurse"] = "Questa scala non è normale, maledetta o alterata da rig.",
 	["nogate"] = "Nessun portale dimesionale rilevato.",
-	["noghost"] = "Questa scala non è spettralizzata.",
+	["noghost"] = "Questo incantesimo può essere lanciato solo su scale normali, alterate da rig o spettralizzate.",
 	["wrongplace"] = "L'altra scala si deve trovare all'interno dell'area di gioco.",
-	["archrace"] = "Non puoi trasformarti in Architect durante una gara.",
+	["archrace"] = "Che gara sarebbe con un Architect come partecipante?!",
+	-- ["noobrace"] = "You cannot race in the tutorial!",
+	["noobrace"] = "Concludi il Tutorial per poter unirti alla gara!",
+	-- ["toolate"] = "A race is already in progress, try again later.",
+	["toolate"] = "Una gara è attualmente in corso, ritenta più tardi.",
 	["blockedplit"] = "L'intersecazione è maledetta.",
 	["cursedtarget"] = "Le scale sono maledette.",
 	["lockedother"] = "Le scale sono bloccate.",
@@ -1605,23 +1670,25 @@ module.serverfeedback = {
 	["norestore"] = "Scorciatoie e Scale a Chiocciola non posso essere ripristinate.",
 
 	--higher rank required
-	["admiral2"] = "Sblocca il rango Admiral per poter rimuovere le maledizioni dalle scale.",
-	["admiral"] = "Sblocca il rango Admiral per poter rimuovere le maledizioni dalle intersecazioni.",
-	["infidel"] = "Sblocca il rango Infidel per poter rimuovere i malefici lanciando l'incantesimo Sorpasso D'Ombra.",
-	["banished"] = "Sblocca il rango Banished per poter demolire le scale maledette che bloccano il passaggio.",
-	["annihilator"] = "Sblocca il rango Annihilator per poter demolire le scale maledette.",
-	["disciple"] = "Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
-	["nomad"] = "Sblocca il rango Nomad per poter roteare le scale dirottate.",
-	["prodigy"] = "Sblocca il rango Prodigy per poter cambiare la direzione dei portali direzionali esistenti.",
-	["traveller"] = "Sblocca il rango Traveller per poter potenziare gli ascensori.",
-	["controller"] = "Sblocca il rango Controller per poter spostare qualsiasi scala non maledetta.",
-	["replica"] = "Sblocca il rango Replica per poterti separare dalla tua controfigura con questo incantesimo.",
-	["skeleton"] = "Sblocca il rango Skeleton per poter rimuovere i malefici con questo incantesimo",
-	["lich"] = "Sblocca il rango Lich per poter demolire le scale che bloccano il passaggio.",
-	["hijacker"] = "Sblocca il rango Hijacker per poter rubare qualsiasi scala non maledetta.",
-	["transformer"] = "Sblocca il rango Transformer per poter ricombinare le scale già combinate.",
-	["strider"] = "Sblocca il rango Strider per poter potenziare gli ascensori due volte.",
-	["poltergeist"] = "Sblocca il rango Poltergeist per poter demolire le scale che bloccano il passaggio.",
+	["admiral2"] = "Sblocca il rango ADMIRAL per poter rimuovere le maledizioni dalle scale.",
+	["admiral"] = "Sblocca il rango ADMIRAL per poter rimuovere le maledizioni dalle intersecazioni.",
+	["infidel"] = "Sblocca il rango INFIDEL per poter rimuovere i malefici lanciando l'incantesimo Sorpasso D'Ombra.",
+	["banished"] = "Sblocca il rango BANISHED per poter demolire le scale maledette che bloccano il passaggio.",
+	["annihilator"] = "Sblocca il rango ANNIHILATOR per poter demolire le scale maledette.",
+	["disciple"] = "Sblocca il rango DISCIPLE per poter rimuovere i portali dimensionali sulle piattaforme.",
+	-- ["nomad1"] = "Rank up to Nomad to spin any uncursed stairs.",
+	-- ["nomad2"] = "Rank up to Nomad to drift already drifted stairs.",
+	["nomad1"] = "Sblocca il rango NOMAD per poter roteare le scale non maledette.",
+	["nomad2"] = "Sblocca il rango NOMAD per poter dirottare le scale già dirottate.",
+	["prodigy"] = "Sblocca il rango PRODIGY per poter cambiare la direzione dei portali direzionali esistenti.",
+	["traveller"] = "Sblocca il rango TRAVELLER per poter potenziare gli ascensori.",
+	["controller"] = "Sblocca il rango CONTROLLER per poter spostare qualsiasi scala non maledetta.",
+	["replica"] = "Sblocca il rango REPLICA per poterti separare dalla tua controfigura con questo incantesimo.",
+	["skeleton"] = "Sblocca il rango SKELETON per poter rimuovere i malefici con questo incantesimo",
+	["hijacker"] = "Sblocca il rango HIJACKER per poter rubare qualsiasi scala non maledetta.",
+	["transformer"] = "Sblocca il rango TRANSFORMER per poter ricombinare le scale già combinate.",
+	["strider"] = "Sblocca il rango STRIDER per poter potenziare gli ascensori due volte.",
+	["lich"] = "Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
 
 	--rig activation
 	["keeperrig"] = "Le scale si stanno muovendo!",
@@ -1635,13 +1702,13 @@ module.serverfeedback = {
 	["mythiefrig"] = "Hai rubato 1 Mana da %s!",
 	["notthiefrig"] = "%s ha cambiato classe - il tuo Mana rimane invariato.",
 	["leftthiefrig"] = "Il Thief ha abbandonato l'esperienza - il tuo Mana rimane invariato.",
-	["hereticrig"] = "Sei stato posseduto!",
+	["hereticrig"] = "Sei stato Posseduto!",
 	["archonrig"] = "Teletrasporto!",
 	["drifterrig"] = "Le scale stanno roteando!",
 	["splicerrig"] = "Le scale si stanno combinando!",
 	["necrorig"] = "Le scale stanno svanendo!",
-	["reaverrig"] = "Le scale sono diventate a senso unico!",
-	["gremlinrig"] = "Sei stato ipnotizzato!",
+	["reaverrig"] = "Sei stato Estraniato!",
+	["gremlinrig"] = "Sei stato Ipnotizzato!",
 	["reveal"] = "Hai svelato una scala invisibile!",
 
 	--drifer lifts
@@ -1662,8 +1729,12 @@ module.serverfeedback = {
 	["received"] = "%s ha condiviso del Mana con te!",
 
 	--prompts
-	["scancel"] = "Deseleziona l'incantesimo attivo prima.",
+	-- ["scancel"] = "Deseleziona l'incantesimo attivo prima.", -- Rimosso
 	["morph"] = "Salta qui per diventare %s!",
+	-- ["race"] = "Jump here to intiate a new race.",
+	-- ["norace"] = "Race is automatic in the infinite mode.",
+	["race"] = "Salta qui per cominciare una gara.",
+	["norace"] = "Le gare partono in automatico nella Torre Senza Fine.",
 
 	--misc
 	["secret"] = "Segreto trovato, complimentoni!",
@@ -1671,11 +1742,15 @@ module.serverfeedback = {
 
 	--chameleon exceptions	
 	["chamtutorial"] = "Chameleon è disabilitato nel tutorial!",
-	["champossessed"] = "Devi liberarti della possessione prima.",
-	["chamhypnotised"] = "Devi liberarti dell'ipnosi prima.",
-	["chamspell"] = "Lancia l'incantesimo selezionato o deselezionalo.",
-	["morphpossessed"] = "Devi liberarti della possessione prima.",
-	["morphhypnotised"] = "Devi liberarti dell'ipnosi prima.",
+	["champossessed"] = "Devi liberarti della Possessione prima.",
+	["chamhypnotised"] = "Devi liberarti dell'Ipnosi prima.",
+	-- ["chamspell"] = "Lancia l'incantesimo selezionato o deselezionalo.", -- Rimosso
+	-- ["chamreflected"] = "You can't use chameleon while reflected.",
+	["chamreflected"] = "Devi liberarti dell'Estraneamento prima.",
+	["morphpossessed"] = "Devi liberarti della Possessione prima.",
+	["morphhypnotised"] = "Devi liberarti dell'Ipnosi prima.",
+	-- ["morphreflected"] = "You can't change alignment while reflected.",
+	["morphreflected"] = "Devi liberarti dall'Estraniamento prima.",
 
 	--code
 	["nocode"] = "Inserisci un codice.",
@@ -1685,6 +1760,27 @@ module.serverfeedback = {
 	["used"] = "Questo codice è già stato usato.",
 	["tooshort"] = "Messaggio troppo corto.",
 	["sent"] = "Messaggio inviato, grazie!",
+
+	-- ['noobteleport'] = "You cannot switch towers in the tutorial!",
+	-- ['noobmorph'] = "Complete the tutorial to be able to morph!",
+	-- ['noobnocode'] = "Complete the tutorial to be able to use codes!",
+	-- ['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
+	['noobteleport'] = "Non puoi cambiare torre nel Tutorial!",
+	['noobmorph'] = "Concludi il Tutorial per cambiare classe!",
+	['noobnocode'] = "Concludi il Tutorial per poter usare i codici!",
+	['noobchameleon'] = "Concludi il Tutorial per poter usufruire del Pass Chameleon!",
+
+	-- --GIFTING
+	-- ['notingame'] = "Player has left the game, you cannot give the game pass!",
+	-- ['alreadyowns'] = "Player already owns this game pass.",
+	-- ['gotit'] = "You have received %s game pass, courtesy of %s",
+	-- ['given'] = "%s has received %s game pass!",
+
+	--GIFTING
+	['notingame'] = "Il giocatore ha abbandonato l'esperienza, non possono ricevere il tuo regalo!",
+	['alreadyowns'] = "Il giocatore possiede già il Pass.",
+	['gotit'] = "Hai ricevuto in dono il Pass %s da %s!",
+	['given'] = "Il giocatore %s ha ricevuto il Pass %s!",
 
 	--free demos
 	["tryspectre"] = "Hai attivato Spectre per 10 minuti! Sarà valido solo per la sessione corrente",
@@ -1758,24 +1854,24 @@ module.serverbroadcast = {
 	["union"] = "%s ha attivato il sortilegio Unione Spettrale!",
 	["eliminated"] = "%s è fuori dai giochi.",
 	["won"] = "%s ha tagliato il traguardo prima di tutti!",
-	["falsestart"] = "Sei partito troppo presto!",
-	["countdown"] = "La prossima corsa avrà inizio tra %d secondi!",
-	["noplayers"] = "Nessun partecipante rilevato, la corsa senza fine è stata annullata!",
+	-- ["falsestart"] = "Sei partito troppo presto!", -- Rimosso
+	-- ["countdown"] = "La prossima corsa avrà inizio tra %d secondi!", -- Rimosso
+	-- ["noplayers"] = "Nessun partecipante rilevato, la corsa senza fine è stata annullata!", -- Rimosso
 	["nojoin"] = "Iscrizioni chiuse. Non verranno accettati altri partecipanti.",
-	["allfalse"] = "Tutti i corridori sono partiti troppo presto...",
+	-- ["allfalse"] = "Tutti i corridori sono partiti troppo presto...", -- Rimosso
 	["safety"] = "Il numero dei piani è stato alterato, la gara è stata annullata.",
 	["leader"] = "%s è in testa!",
 	["toolate"] = "Tempo scaduto, nessuno ha raggiunto il traguardo in tempo!",
-	["go"] = "VIA!",
+	-- ["go"] = "VIA!", -- Rimosso
 	["over"] = "Gara conclusa!",
-	["newrace"] = "%s sta scalando la torre — sfidali!",
+	["newrace"] = "%s sta cercando sfidanti — gareggiali!",
 	["joined"] = "%s ha accettato la sfida!",
 	["2min"] = "Nessuno ha voluto gareggiare con %s!",
 	["infstart"] = "La corsa senza fine è iniziata!"
 }
 
 module.localfeedback = {
-	["cancel"] = "Cancella l'altro incantesimo prima!",
+	-- ["cancel"] = "Cancella l'altro incantesimo prima!", -- Rimosso
 	["nomana"] = "Mana insufficiente!",
 	["notokens"] = "Gettoni insufficienti!",
 	["unlocked"] = "Incantesimo sbloccato!",
@@ -1795,8 +1891,10 @@ module.localfeedback = {
 	["nomusic"] = "Impossibile modificare l'audio.",
 	["noteleport"] = "Errore!",
 	["norefresh"] = "Non puoi ancora aggiornare la lista.",
-	["raceon"] = "Da adesso puoi partecipare alle gare.",
-	["raceoff"] = "Da adesso sei esentato dalle gare.",
+	-- ["failedjoin"] = "Failed to join the race.",
+	-- ["nounion"] = "You can't use Ghost Union right now.",
+	["failedjoin"] = "Non è stato possibile aggiungerti alla gara.",
+	["nounion"] = "Il sortilegio Unione Spettrale è fuori uso al momento.",
 }
 
 module.switchon = {
@@ -1809,7 +1907,7 @@ module.switchon = {
 	["ARCHON1"] = "Puoi camminare attraverso i portali dimensionali (tranne quelli verso l'alto).",
 	["DRIFTER1"] = "Immunità ai rig di Drifter attivata.",
 	["SPLICER1"] = "Immunità ai rig di Splicer attivata.",
-	["REAVER1"] = "Immunità ai rig di Reaver attivata.",
+	-- ["REAVER1"] = "Immunità ai rig di Reaver attivata.", -- Rimosso
 	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
 	["NONE"] = "Immunità globale attivata.",
 }
@@ -1824,7 +1922,7 @@ module.switchoff = {
 	["ARCHON1"] = "Non puoi più camminare attraverso i portali dimensionali (tranne quelli verso il basso).",
 	["DRIFTER1"] = "Immunità ai rig di Drifter disattivata.",
 	["SPLICER1"] = "Immunità ai rig di Splicer disattivata.",
-	["REAVER1"] = "Immunità ai rig di Reaver disattivata.",
+	-- ["REAVER1"] = "Immunità ai rig di Reaver disattivata.", -- Rimosso
 	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
 	["NONE"] = "Immunità globale disattivata.",
 }
@@ -1888,7 +1986,7 @@ module.eventspells = {
 
 	["reaverrigevent"] = "%s ha appena alterato tutte le scale con Reaver Rig!",
 	["reaverevent"] = "%s ha appena reso tutte le scale normali a senso unico casualmente!",
-	["reaveraltevent"] = "%s ha appena reso tutte le scale normali a senso unico verso l'alto!",
+	["reaveraltevent"] = "%s ha appena trasformato tutte le scale normali in scale riflettenti!",
 
 	["newmode"] = "%s ha appena portato i Droni in modalità %s!",
 
@@ -1933,7 +2031,7 @@ module.gui.mana = {
 	["ritual"] = "RITUALE",
 	["purge"] = "ANNIENTAMENTO",
 	["blessing"] = "BENEDIZIONE",
-	["hack"] = "HACK",
+	-- ["hack"] = "HACK", -- Rimosso
 	["stash"] = "BOTTINO",
 	["backdoor"] = "METAVERSO",
 	["chamber"] = "OBLIO",
@@ -1952,13 +2050,14 @@ module.gui.mana = {
 	["shack"] = "BARACCA",
 	["regen"] = "RIGENERAZIONE",
 	["optimus"] = "OPTIMUS",
-	["tutorial"] = "TUTORIAL",
+	["tutorial"] = "TUTORIAL", --player mana is drained upon starting tutorial
 }
 
 module.gui.gameover.extras = {
-	["noobs"] = "Il tutorial è per i deboli!",
+	-- ["noobs"] = "Il tutorial è per i deboli!", -- Rimosso
 	["possessed"] = "Mannaggia a questi Heretic!",
 	["hypnotised"] = "Dove mi trovo??",
+	["reflected"] = "Sono stanco di questa prospettiva ingannevole",
 	["new"] = "Nuovo rango sbloccato - %s",
 }
 
