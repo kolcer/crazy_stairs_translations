@@ -800,7 +800,7 @@ module.gui.ranks = {
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
 	
 	["reflected_1"] = "You have been Reflected!",
-	["reflected_3"] = "As Reflected, you control yourself from your ghost prespective!",
+	["reflected_3"] = "As Reflected, you control yourself from your ghost perspective!",
 	
 	["findmana"] = "Find Mana or Patron Rig to break free.",
 	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
@@ -2260,4 +2260,5 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
