@@ -256,7 +256,7 @@ module.gui.menu = {
 	["RaceResults"] = "Last race results",
 	["ServerSettings"] = "Tower Settings (Custom Tower)",
 	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passess and tokens",
+	["Shop"] = "Buy game passes and tokens",
 	["Spectate"] = "Spectate other players",
 	["Stats"] = "Your badges and achievements",
 	["SwitchServer"] = "Switch Tower",
@@ -2260,3 +2260,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
