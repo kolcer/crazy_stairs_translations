@@ -172,13 +172,13 @@ module.gui.questions = {
 	["tutorial"]= "Would you like to play the tutorial?",
 	["skip"] = "Would you like to skip the tutorial?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
-
+	
 	--new
 	["gift"] = "Do you want to gift %s Game Pass to another player?",
 	["choose"] = "Choose a player to receive %s Game Pass", 
 	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
 	["received"] = "You have received %s Game Pass, courtesy of %s!",
-
+	
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Storage",
 	["spectre"] = "Spectre",
@@ -190,7 +190,7 @@ module.gui.questions = {
 	["racein"] = "Race in:",
 	["go"] = "GO!",
 	["raceoff"] = "Race cancelled",
-	--end new
+ 	--end new
 }
 --END NEW
 
@@ -248,7 +248,7 @@ module.gui.results = {
 --NEW 
 
 module.gui.menu = {
-
+	
 	["Codes"] = "Code entry",
 	["Feedback"] = "Send game feedback",
 	["Language"] = "Change game language",
@@ -256,7 +256,7 @@ module.gui.menu = {
 	["RaceResults"] = "Last race results",
 	["ServerSettings"] = "Tower Settings (Custom Tower)",
 	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passes and tokens",
+	["Shop"] = "Buy game passess and tokens",
 	["Spectate"] = "Spectate other players",
 	["Stats"] = "Your badges and achievements",
 	["SwitchServer"] = "Switch Tower",
@@ -268,11 +268,11 @@ module.gui.menu = {
 --NEW
 --end screen tutorial
 module.gui.tutorial = {
-
+	
 	["complete"] = "CLIMB COMPLETED!",
 	["choose"] = "Please choose your first alignment!",
 	["difficulty"] = "Difficulty:",
-
+	
 }
 
 --END NEW
@@ -444,7 +444,7 @@ module.spells.names = {
 
 	["reflection"] = "Reflection",
 	["reaverevent"] = "Cross Roads",
-	["reaveraltevent"] = "Conjucture",
+	["reaveraltevent"] = "Vitrification",
 
 
 	--GREMLIN
@@ -458,7 +458,7 @@ module.spells.names = {
 	["tramway"] = "Tram-way",
 	["gremlinevent"] = "Revolvelution",
 	["gremlinaltevent"] = "Gridlock",
-
+	
 	--TUTORIAL
 	["tcreate"] = "Create Stairs",
 	["tflip"] = "Flip Stairs",
@@ -489,7 +489,7 @@ module.spells.names = {
 	["archnecro"] = "Dual or Undead stairs",
 	["archhacker"] = "Escalator or Hack-in",
 	["archkeeper"] = "Move or Restore",
-	["archsplicer"] = "Splice or Restore",
+	["archsplicer"] = "Splice or Split",
 	["archwicked"] = "Wall or Destroy",
 	["archgremlin"] = "Revolve stairs or a platform",
 	["archjoker"] = "Fake or Flip stairs",
@@ -695,7 +695,7 @@ module.spells.descriptions = {
 	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links will spin when a player jumps on them.",
 	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after two minutes.",
-	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to ACOLYTE to bring Orb to this point, if you cast it on the top level.",
+	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to ACOLYTE to bring the Orb to this point, if you cast it on the top level.",
 	["regen"] = "Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
 
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Rank up to LICH to demolish crossing cursed stairs with this spell." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
@@ -762,7 +762,7 @@ module.spells.descriptions = {
 	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
 	["archhacker"] = "This spell when used on platform's arrows, will hack-in any crossing stairs. When used on normal or rigged stairs, it will turn them into an Escalator of your choice.",
 	["archkeeper"] = "This spell when used on platform's arrows, will restore adjacent stairs. When used on normal or rigged stairs, it will move them in the direction of Your choice.",
-	["archsplicer"] = "This spell when used on platform's arrows, will restore adjacent twisted stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
+	["archsplicer"] = "This spell when used on platform's arrows, will split crossing stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
 	["archwicked"] = "This spell when used on platform's arrows, will create a wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
 	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
 	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
@@ -798,17 +798,17 @@ module.gui.ranks = {
 
 	["hypnotised_1"] = "You have been Hypnotised!",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
-
+	
 	["reflected_1"] = "You have been Reflected!",
-	["reflected_3"] = "As Reflected, you control your ghost instead!",
-
+	["reflected_3"] = "As Reflected, you control yourself from your ghost prespective!",
+	
 	["findmana"] = "Find Mana or Patron Rig to break free.",
-	["permanent"] = "Permanent mode - Complete climb or visit santcuary to de-morph.",
+	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
 
 	["architect_1"] = "You are now an Architect!",
 	["architect_2"] = "Architects cannot acquire any ranks.",
 	["architect_3"] = "Roam the tower to wreak havoc!",
-
+	
 	["tutorial_1"] = "You are in the tutorial!",
 	["tutorial_2"] = "Collect Mana and use spells to climb the tower.",
 	["tutorial_3"] = "Make sure to catch the White Orb at the top!",
@@ -912,7 +912,7 @@ module.gui.ranks = {
 		[4] = "Create Dual Stairs will ignore cursed intersections and stairs on ghost's platform.",
 		[5] = "If you use a Revival Point on the top floor, it will bring the orb to where the point is placed.",
 		[6] = "Copy Platform spell will remove curses if it needs to.",
-		[8] = "You can demolish cursed stairs, while casting Dual Stairs.",
+		[8] = "You can demolish crossing cursed stairs, while casting Dual Stairs.",
 		[9] = "Regenerate restores 10 mana instead of 6, and will restore 5 mana to those nearby your ghost.",
 	},
 	["GREMLIN"] = {
@@ -967,7 +967,7 @@ module.gui.multitokens = {
 }
 
 module.gui.feedback = {
-
+	
 	["title"] = "SEND FEEDBACK",
 	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
 	["send"] = "SEND",
@@ -1416,7 +1416,7 @@ module.static = {
 	["grave_1"] = "NECROMANCER'S GRAVE",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren�t actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'We aren't actually haunting you, we just wanna be friends.'\nour founder's quote",
 
 	--NEW (architect)
 	["studio_1"] = "ARCHITECT'S STUDIO",
@@ -1641,7 +1641,7 @@ module.guide = {
 		["archnecro"] = "Necromancer's Create Dual Stairs (when used on arrows) or Undead Stairs (when used on stairs)",
 		["archhacker"] = "Hacker's Hack-In Stairs (when used on arrows) or Escalator (when used on stairs)",
 		["archkeeper"] = "Keeper's Restore Stairs (when used on arrows) or Move/Rotate Stairs (when used on stairs)",
-		["archsplicer"] = "Splicer's Restore Twisted Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
+		["archsplicer"] = "Splicer's Split Opposite Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
 		["archwicked"] = "Wicked's Wall without a Link (when used on arrows) or Destroy Stairs (when used on stairs)",
 		["archjoker"] = "Joker's Create Fake Stairs (when used on arrows) or Flip/Unflip Stairs (when used on stairs)",
 		["archspectre"] = "Spectre's Create Phantom Stairs (when used on arrows) or Ghost/UnGhost Stairs (when used on stairs)",
@@ -1703,8 +1703,8 @@ module.serverfeedback = {
 	["nomirror"] = "You need to be joined with ghost to walk on mirrors.",
 	--new
 	["noreflected"] = "This spell cannot be used when you are Reflected.",
-	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected",
-	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected",
+	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected.",
+	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected.",
 	--end new
 	["regenused"] = "Regen already used during this climb.",
 
@@ -1715,7 +1715,7 @@ module.serverfeedback = {
 	["spelllock"] = "You cannot cast spells now",
 	["nothere"] = "You can't use this spell in the tutorial.",
 	["onlyracers"] = "Only racing players can cast spells.",
-	--["cancelfirst"] = "You need to cancel current spell first...", --removed
+	["cancelfirst"] = "You need to cancel current spell first...",
 	["stashfull"] = "Your stairs stash is full.",
 	["stashempty"] = "You have to steal stairs before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
@@ -1880,13 +1880,13 @@ module.serverfeedback = {
 	["used"] = "Code has been used already.",
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
-
+	
 	--NEW
 	['noobteleport'] = "You cannot switch towers in the tutorial!",
 	['noobmorph'] = "Complete the tutorial to be able to morph!",
 	['noobnocode'] = "Complete the tutorial to be able to use codes!",
 	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
-
+	
 	--GIFTING
 	['notingame'] = "Player has left the game, you cannot give the game pass!",
 	['alreadyowns'] = "Player already owns this game pass.",
@@ -1970,8 +1970,8 @@ module.serverbroadcast = {
 	["newrace"] = "%s initiated a race - join them!",
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
-	["infstart"] = "Infinite race started!"
-
+	["infstart"] = "Infinite race started!",
+	
 	--END NEW
 
 }
@@ -2000,10 +2000,10 @@ module.localfeedback = {
 	["nomusic"] = "Music failed to load.",
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
-
+	["nounion"] = "You can't use Ghost Union right now.",
+	
 	--NEW
 	["failedjoin"] = "Failed to join the race.",
-	["nounion"] = "You can't use Ghost Union right now.",
 	--END NEW
 
 }
