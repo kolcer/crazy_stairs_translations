@@ -456,7 +456,7 @@ module.spells.names = {
 	["archnecro"] = "Kettős Vagy Lélektelen Lépcső",
 	["archhacker"] = "Mozgólépcső Vagy Becsalás",
 	["archkeeper"] = "Mozgatás Vagy Helyreállítás",
-	["archsplicer"] = "Összekapcsolás Vagy Helyreállítás",
+	["archsplicer"] = "Összekapcsolás Vagy Szétválasztás",
 	["archwicked"] = "Fal Vagy Pusztítás",
 	["archgremlin"] = "Lépcső Vagy Felület Pörgetése",
 	["archjoker"] = "Hamis Vagy Megfordított Lépcső",
@@ -726,7 +726,7 @@ module.spells.descriptions = {
 	["archnecro"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor ez létre fog hozni kettős lépcsőket. Ha egy normális vagy riges lépcsőn használod, akkor az át fog változni lélektelen lépcsővé.",
 	["archhacker"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor be fogsz csalni egy lépcsőt, ha van ott egy keresztező lépcső. Ha egy normális vagy riges lépcsőn használod, akkor az át fog változni egy mozgólépcsővé, ami az általad választott irányban halad.",
 	["archkeeper"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor a hozzá tartozó lépcsőt helyre fogja állítani. Ha egy normális vagy riges lépcsőn használod, akkor az meg fog mozdulni az általad választott irányban.",
-	["archsplicer"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor a hozzá tartozó csavart lépcsőt helyre fogja állítani. Ha egy normális vagy riges lépcsőn használod, az meg fog csavarodni az általad választott irányban.",
+	["archsplicer"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor az ahhoz tartozó keresztező lépcsőt szét fogod választani. Ha egy normális vagy riges lépcsőn használod, az meg fog csavarodni az általad választott irányban.",
 	["archwicked"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor ez létre fog hozni egy kapocs nélküli Wicked falat. Ha egy bármilyen nem átkozott lépcsőn használod, akkor az el fog pusztulni.",
 	["archgremlin"] = "Ezt a varázsigét ha egy felületen használod, akkor azt a felületet meg fogja pörgetni az általad választott irányban. Ha egy normális vagy riges lépcsőn használod, akkor azt átváltoztatja egy általad választott irányban pörgő lépcsőve.",
 	["archjoker"] = "Ezt a varázsigét ha egy felületnek a nyilán használod, akkor ez létre fog hozni egy hamis lépcsőt. Ha egy normális, megfordított vagy riges lépcsőn használod, akkor azt megfordítja vagy visszafordítja.",
@@ -765,7 +765,7 @@ module.gui.ranks = {
 
 	--reflected
 	["reflected_1"] = "A tükörképeddé váltál!",
-	["reflected_3"] = "Tükörképként a szellemedet irányítod.",
+	["reflected_3"] = "Tükörképként a szellemedet szemszögéből irányítod magadat.",
 
 	["findmana"] = "Találj Manát hogy felszabadulj.",
 	["permanent"] = "Állandó mód - Fejezd be a mászást vagy látogass meg egy szentélyt hogy felszabadulj.",
@@ -781,12 +781,12 @@ module.gui.ranks = {
 	["tutorial_3"] = "Ne feledd, a célod, hogy megszerezd a legfelső szinten lévő fehér gömböt!",
 
 	--shared
-	["higher"] = "VAN ENNÉL NAGYOBB RANGOD",
+	["higher"] = "VAN ENNÉL MAGASABB RANGOD",
 	["current"] = "JELENLEGI RANGOD",
 	["lower"] = "NINCS MEGSZEREZVE EZ A RANG",
 
 	["more"] = "Kell még %d mászás %s-ként, hogy megszerezd ezt a rangot.",
-	["done"] = "Neked már van nagyobb rangod. Az összes alacsonyabb ranghatás hozzá van adva a jelenlegi rangodhoz.",
+	["done"] = "Neked már van magasabb rangod. Az összes alacsonyabb ranghatás hozzá van adva a jelenlegi rangodhoz.",
 	["max"] = "Elérted a legmagasabb rangot. %d mászást szereztél %s-ként.",
 	["next"] = "Ha rányomsz a jobb nyílra, akkor meg tudod nézni, hogy mennyi mászás kell a következő ranghoz.",
 
@@ -812,10 +812,10 @@ module.gui.ranks = {
 		[9] = "Elpusztíthatsz átkozott lépcsőket.",
 	},
 	["SPECTRE"] = { 
-		[4] = "Kapsz egy bónusz Manát amikor a szellemed vesz fel egy kristályt.", 
+		[4] = "Kapsz egy bónusz Manát amikor a szellemed vesz fel egy kristályt.",
 		[5] = "A Lépcső Szellemesítése varázslatod ingyenes.",
 		[6] = "Akkor is nyerni fogsz, amikor a szellemed ér hozzá a gömbhöz.",
-		[8] = "Van választásod arra, hogy ne aktiváld a Spectre Rigeket.", 
+		[8] = "Van választásod arra, hogy ne aktiváld a Spectre Rigeket.",
 		[9] = "Rámehetsz szellemesített lépcsőkre.",
 	},
 	["KEEPER"] = {
@@ -1482,7 +1482,7 @@ module.tutorial = {
 
 	["tut_select"] = "Válaszd ki ezt a varázslatot.",
 
-	["tut_small_init"] = "Ugorj, hogy elkezd a kiképzést",
+	["tut_small_init"] = "Ugorj, hogy elkezdd a kiképzést",
 	["tut_small_collect"] = "Gyűjts Manát",
 	["tut_small_arrow"] = "Ugorj a nyílra",
 	["tut_small_stairs"] = "Ugorj a lépcsőre",
@@ -1589,7 +1589,7 @@ module.guide = {
 		["archnecro"] = "Necromancer Kettős Lépcső Létrehozása (ha egy nyílon használod) vagy Lélektelen Lépcsője (ha egy lépcsőn használod).",
 		["archhacker"] = "Hacker Lépcső Becsalása (ha egy nyílon használod) vagy Mozgólépcsője (ha egy lépcsőn használod).",
 		["archkeeper"] = "Keeper Lépcső Helyreállítása (ha egy nyílon használod) vagy Lépcső Mozgatása/Forgatása (ha egy lépcsőn használod).",
-		["archsplicer"] = "Splicer Csavart Lépcső Helyreállítása (ha egy nyílon használod) vagy Lépcső Megcsavarása (ha egy lépcsőn használod).",
+		["archsplicer"] = "Splicer Szemben Álló Lépcső Szétválasztása (ha egy nyílon használod) vagy Lépcső Megcsavarása (ha egy lépcsőn használod).",
 		["archwicked"] = "Wicked Fala (ha egy nyílon használod) vagy Lépcső Elpusztítása (ha egy lépcsőn használod).",
 		["archjoker"] = "Joker Hamis Lépcső Létrehozása (ha egy nyílon használod) vagy Lépcső Megfordítása/Visszafordítása (ha egy lépcsőn használod).",
 		["archspectre"] = "Spectre Fantom Lépcső Létrehozása (ha egy nyílon használod) Vagy Lépcső Megszellemesítése/Szellemesített Lépcső Helyreállítása (ha egy lépcsőn használod).",
@@ -1649,7 +1649,7 @@ module.serverfeedback = {
 	["notokens"] = "Nincs elég Zsetonod!",
 	["coolwait"] = "Most nem lehet eseményeket és rigeket varázsolni, kérlek várj ",
 	["nomirror"] = "Előbb válj egybe a szellemeddel!",
-	["noreflected"] = "Ezt a varázsigét nem lehet használni tükröződve vagy.",
+	["noreflected"] = "Ezt a varázsigét nem lehet használni tükröződöttként.",
 	["noflyarch"] = "Nem repülhetsz megszállottként, hipnotizáltként, vagy tükröződöttként.",
 	["noblackhole"] = "Nem használhatod a fekete lyukat megszállottként, hipnotizáltként, vagy tükröződöttként.",
 	["regenused"] = "Ebben a mászásban már regeneráltál.",
@@ -1661,6 +1661,7 @@ module.serverfeedback = {
 	["spelllock"] = "Most nem használhatsz varázslatokat.",
 	["nothere"] = "Ezt a varázslatot nem használhatod a kiképzésben.",
 	["onlyracers"] = "Csak versenyzők varázsolhatnak.",
+	["cancelfirst"] = "Előbb szüntesd meg a jelenlegi varázslatot...",
 	["stashfull"] = "Tele van a leltárad.",
 	["stashempty"] = "El kell lopnod egy lépcsőt mielőtt megvarázsolhatnád ezt a varázslatot.",
 	["ultwait"] = "Egy másik különleges varázslat van folyamatban. Kérlek várj.",
