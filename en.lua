@@ -1568,7 +1568,6 @@ module.guide = {
 		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
 		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
 		["soft"] = "Can be executed on an empty intersection only.",
-		["flatten"] = "Can be executed on an intersection with normal or rigged crossing stairs only.",
 		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
 		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
 	},
@@ -1634,6 +1633,7 @@ module.guide = {
 		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
 		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
 
+		["flatten"] = "Can be executed on an intersection with normal or rigged opposite stairs. Can be executed on stairs too.",
 		--NEW
 		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
 		["archarchon"] = "Archon's Platform Gate (when used on arrows) or Gate Stairs (when used on stairs)",
@@ -2260,5 +2260,6 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
 
 
