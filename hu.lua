@@ -1517,7 +1517,6 @@ module.guide = {
 		["wall"] = "Csak olyan nem átkozott kereszteződésekben lehet végrehajtani, amelyben nincsen egy fal vagy kapu.",
 		["forced"] = "Végre lehet hajtani üres kereszteződésekben, vagy ha van egy nem átkozott szemben álló lépcső.",
 		["soft"] = "Csak üres kereszteződésekben lehet végrehajtani.",
-		["flatten"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy szemben álló normális vagy riges lépcső.",
 		["hack"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy szemben álló nem átkozott lépcső.",
 		["sidepass"] = "Csak olyan nem átkozott kereszteződésekben lehet végrehajtani, amelyben nincsen egy kitérő.",
 	},
@@ -1582,6 +1581,7 @@ module.guide = {
 		['restore'] = "Végre lehet hajtani bármilyen lépcsőn vagy egy felületnek a nyilán ami mellet van egy lépcső.",
 		['deltwists'] = "Végre lehet hajtani csavart lépcsőkön vagy egy felületnek a nyilán ami mellet van egy csavart lépcső.",
 		['ghosted'] = "Végre lehet hajtani normális, riges vagy szellemesített lépcsőn vagy egy felületnek a nyilán ami mellet van egy normális, riges vagy szellemesített lépcső.",
+  ["flatten"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy szemben álló normális vagy riges lépcső. Végrehajtható lépcsőkön is.",
 
 		["archpatron"] = "Patron Lépcső Létrehozása (ha egy nyílon használod) vagy Lépcső Zsugorítása (ha egy lépcsőn használod).",
 		["archarchon"] = "Archon Felület Kapuja (ha egy nyílon használod) vagy Lépcső Kapuja (ha egy lépcsőn használod).",
@@ -1965,11 +1965,11 @@ module.eventspells = {
 
 	["jokerrigevent"] = "%s az összes normális lépcsőre rárak Joker Riget!",
 	["jokerevent"] = "%s az összes normális lépcsőt elrejti!",
-	["jokeraltevent"] = "%s az összes normális lépcsőt megfordítotja!",
+	["jokeraltevent"] = "%s az összes normális lépcsőt megfordítja!",
 
 	["wickedrigevent"] = "%s az összes normális lépcsőre rárak Wicked Riget!",
-	["wickedevent"] = "%s az összes normális lépcsőt elpusztította!",
-	["wickedaltevent"] = "%s az ÖSSZES lépcsőt elpusztította!",
+	["wickedevent"] = "%s az összes normális lépcsőt elpusztíjta!",
+	["wickedaltevent"] = "%s az ÖSSZES lépcsőt elpusztítja!",
 
 	["keeperrigevent"] = "%s az összes normális lépcsőre rárak Keeper Riget!",
 	["keeperevent"] = "%s az összes normális lépcsőt átrendezi!",
