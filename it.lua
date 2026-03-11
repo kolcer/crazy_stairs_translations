@@ -1469,7 +1469,6 @@ module.guide = {
 		["forced"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette.",
 		["halfsoft"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
 		["soft"] = "Può essere lanciato solo nelle intersecazioni libere.",
-		["flatten"] = "Può essere lanciato solo attraverso scale opposte normali o alterate da rig.",
 		["hack"] = "Può essere lanciato solo attraverso scale opposte non maledette.",
 		["sidepass"] = "Può essere lanciato nelle intersecazioni senza malefici e senza scorciatoie.",
 	},
@@ -1483,7 +1482,7 @@ module.guide = {
 		["prevolve"] = "Può essere lanciato in direzione oraria o antioraria.",
 		["top"] = "Può essere lanciato solo sulla cima della torre.",
 	},
-
+	
 	["stairs"] ={
 		["cursed"] = "Può essere lanciato su scale normali, alterate da rig e maledette.",
 		["all"] = "Può essere lanciato su qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
@@ -1505,7 +1504,7 @@ module.guide = {
 		["revolve"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["normalrig"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 	},
-
+	
 	["above"] = {
 		["cursed"] = "Può essere lanciato sotto a scale normali, maledette o alterate da rig.",
 		["all"] = "Può essere lanciato sotto a qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
@@ -1515,19 +1514,20 @@ module.guide = {
 		["slide"] = "Questo incantesimo ti permette di aggirare qualsiasi scala non maledetta.",
 		["normalrig"] = "Può essere lanciato solo sotto a scale normali o alterate da rig.",
 	},
-
+	
 	["dynamic"] = {
 		--hack, twister, bender and flipper
 		["flip"] = "Può essere lanciato sia sopra che sotto le scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala sovrastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
 		["normalrig"] = "Può essere lanciato sia sopra che sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe le scale se possibile.",
 		["slide"] = "Può essere lanciato su scale normali o alterate da rig. Le scale non maledette che bloccano il passaggio verranno demolite.",
 	},
-
+	
 	["both"] = {
 		['restore'] = "Può essere lanciato sia sulle scale che sulle piattaforme, dove indicato dalle frecce. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
 		['deltwists'] = "Da lanciare sulle scale combinate. Sblocca il rango Combiner per poterle ripristinare direttamente dalle piattaforme.",
 		['ghosted'] = "Da lanciare su scale normali, spettralizzate, alterate da rig, oppure sulle piattaforme dove indicato dalle frecce.",
-
+		["flatten"] = "Può essere lanciato sulle scale normali o alterate da rig oppure sulle piattaforme dove indicato dalle frecce dove sono presenti scale opposte.",
+		
 		["archpatron"] = "Genera Scale/Restringi Scale",
 		["archarchon"] = "Portale dimensionale su piattaforme/scale",
 		["archthief"] = "Posiziona/Ruba Scale",
