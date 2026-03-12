@@ -3,14 +3,11 @@ Crazy Stairs + VR (Roblox game) translations repository.
 RULES:
 1. All translations have to be created from the English original (en.lua)
 2. Current version of the English file is:
-   4.1
-3. Please provide the version your translation uses so we can keep track of outdated files.
-4. To avoid having too many versions of the original, only I (sleazel) will be making bulk updates to the original. Let me know if anything needs to be fixed. Use GitHub to keep track of changes.
-5. Version provided in the Discord thread (pin) is to be considered as 0.0 version and is now outdated.
-6. Translations are provided free of charge.
-7. Collaborations are very welcome.
-8. To become a translator, contact me on Discord. I reserve the right to reject any application without giving a reason.
-9. Files are manually added to the game, so let me know when your translation is ready/updated.
+   4.2
+3. Version provided in the Discord thread (pin) is to be considered as 0.0 version and is now outdated.
+4. Translations are provided free of charge.
+5. Collaborations are very welcome.
+6. Files are manually added to the game, so let me know when your translation is ready/updated.
 
 GENERAL TRANSLATION GUIDELINES:
 1. Do not translate class names (Patron, Joker, etc.)
