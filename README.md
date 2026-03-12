@@ -8,6 +8,7 @@ RULES:
 4. Translations are provided free of charge.
 5. Collaborations are very welcome.
 6. Files are manually added to the game, so let me know when your translation is ready/updated.
+7. Do not edit English, Russian, Italian, or Hungarian files; those have dedicated maintainers.
 
 GENERAL TRANSLATION GUIDELINES:
 1. Do not translate class names (Patron, Joker, etc.)
