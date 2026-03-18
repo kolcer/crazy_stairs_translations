@@ -49,7 +49,7 @@ module.gui.serversettings = {
 	["DroneMax"] = "Jumlah tangga maksimum (Dron akan menghancur secara eksklusif di atas batas ini)",
 	["DroneMin"] = "Jumlah tangga minimum (Dron akan membuat secara eksklusif di bawah batas ini)",
 	["DroneBlock"] = "Kemungkinan simpang terkunci untuk setiap adanya simpang kosong (persen)",
-	["DroneCurse"] = "Kemungkinan tangga terkutuk untuk adanya tangga biasa dan pembuat (persen)",
+	["DroneCurse"] = "Kemungkinan tangga terkutuk untuk adanya tangga normal dan pembuat (persen)",
 
 	["Tower"] = "PENGATURAN MENARA",
 	["TowerReadOnly"] = "PENGATURAN MENARA (hanya baca)",
@@ -164,7 +164,7 @@ module.gui.questions = {
 	["cancel"] = "Apakah kamu mau membakalkan mantra terbatas ini? Token tidak akan dikembalikan.",
 	["tutorial"]= "Apakah kamu ingin belajar di latihan?",
 	["skip"] = "Apakah kamu ingin melewati latihan?",
-	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
+	["reshuffle"] = "Apakah kamu ingin tangga untuk menghindari tabrakan saat bergerak? Jika tidak, tangga apa pun yang menghalangi akan dihancurkan.",
 }
 --END NEW
 
@@ -203,17 +203,17 @@ module.gui.results = {
 	["rank"] = "PERINGKAT",
 	["not"] = "N/A",
 	[1] = "PEMENANG!",
-	[2] = "ke-2",
-	[3] = "ke-3",
-	[4] = "ke-4",
-	[5] = "ke-5",
-	[6] = "ke-6",
-	[7] = "ke-7",
-	[8] = "ke-8",
-	[9] = "ke-9",
-	[10] = "ke-10",
-	[11] = "ke-11",
-	[12] = "ke-12",
+	[2] = "ke‑2",
+	[3] = "ke‑3",
+	[4] = "ke‑4",
+	[5] = "ke‑5",
+	[6] = "ke‑6",
+	[7] = "ke‑7",
+	[8] = "ke‑8",
+	[9] = "ke‑9",
+	[10] = "ke‑10",
+	[11] = "ke‑11",
+	[12] = "ke‑12",
 
 }
 
@@ -292,7 +292,7 @@ module.spells.names = {
 	["rig"] = "Gerak Tangga secara Acak",
 
 	["ascension"] = "Penaik",
-	["keeperevent"] = "Blender Menara", -- < Needs another better name for 'Reshuffle/Rombak Kembali'
+	["keeperevent"] = "Rombak Kembali", -- < Needs another better name for 'Reshuffle/Rombak Kembali'
 	["keeperaltevent"] = "Pemulihan",
 
 	--SPECTRE
@@ -300,8 +300,8 @@ module.spells.names = {
 	["ghost"] = "Hantui Tangga di Atas",
 	["shadow"] = "Hantui Tangga",
 	["horizontal"] = "Teleport ke Atas",
-	["random"] = "Teleport secara Acak",
-	["vertical"] = "Teleport secara Vertikal",
+	["random"] = "Teleportasi secara Acak",
+	["vertical"] = "Teleportasi secara Vertikal",
 
 	["traveller"] = "Penjelajah",
 	["spectreevent"] = "Imaginasi Tangga",
@@ -310,7 +310,7 @@ module.spells.names = {
 	--HACKER
 	["dash"] = "Flyhack",
 	["blink"] = "Noclip menembus Tangga di Atas",
-	["swap"] = "Teleport ke Hantumu",
+	["swap"] = "Teleportasi ke Hantumu",
 	["slide"] = "Eskalator",
 	["slideup"] = "Hack Tangga",
 	["glitch"] = "Glitch Tangga",
@@ -1008,7 +1008,7 @@ module.gui.gameover.messages = {
 		"Clear your mind - but first clear the staircase",
 	},
 	["SPECTRE"] = {
-		"DISAPPEAR, HIDE and TELEPORT",
+		"HILANG, SEMBUNYI dan TELEPORTASI",
 		"Of course teleporting is safe",
 		"You can't catch me",
 		"The beauty of ghosted stairs is unparalleled",
@@ -1128,7 +1128,7 @@ module.gui.gameover.messages = {
 		"Hantunya yang terjebak di balik cermin—atau kita?",
 		"Aku tak lagi melihat diriku, aku melihat masa depan.",
 		"MAMA! Ini bukan cuma fase!!!",
-		"Jangan muncul diam-diam gitu dong!",
+		"Jangan muncul diam‑diam gitu dong!",
 	},
 	["NECROMANCER"] = { -- ▼ all quotes translated by aceblade_ thx :)
 		"IKUT, BANGKIT dan UNTUNG",
@@ -1136,16 +1136,16 @@ module.gui.gameover.messages = {
 		"Jiwamu MILIKKU!",
 		"Ikuti hantuku. Percaya deh!",
 		"Aman kok dekat hantuku. Emangnya aku bakal bohong?",
-		"Waktunya panen jiwa-jiwa!",
+		"Waktunya panen jiwa‑jiwa!",
 		"Kita cuma punya citra buruk. Salahkan aja Hollywood!",
 		"Kalau kematian itu buruk, berarti Nekromansi itu baik dong?",
-		"Aku harus ngumpulin jiwa- eh maksudku mana, aku butuh mana!",
+		"Aku harus ngumpulin jiwa-eh maksudku mana, aku butuh mana!",
  		"Aku nggak takut jatuh, ini mantra strategi, serius!",
 	},
 	["GREMLIN"] = { -- ▼ all quotes translated by aceblade_ thx :)
 		"PUTAR, KISAR dan HIPNOTIS",
 		"Mari bermain denganku!",
-		"Kamu muter-muter terus, sayang, muter terus!",
+		"Kamu muter‑muter terus, sayang, muter terus!",
 		"Tangga ini ngebosenin banget!",
 		"Biar aku benerin tangganya ya, hehehe.",
 		"Kamu suka mahakaryaku? Nggak? Sayang banget, ini baru permulaan.",
@@ -1357,9 +1357,9 @@ module.static = {
 
 	--NEW (architect)
 	["studio_1"] = "STUDIO ARCHITECT",
-	["studio_2"] = "MOTO KAMI:\nDESIGN\nIMPLEMENT\nAND\nTEST",
-	["studio_3"] = "PRO:\nAbility to Fly\nDoes not use Mana\nKONTRA:\nCost Robux\nCannot acquire climbs",
-	["studio_4"] = "“Now I rule this staircase!”\nkata pendiri kami",
+	["studio_2"] = "MOTO KAMI:\nDESAIN\nLAKSANA\nDAN\nTES",
+	["studio_3"] = "PRO:\nBisa terbang\nTidak menggunakan mana\nKONTRA:\nMemerlukan Robux\nTidak bisa memperoleh pendakian",
+	["studio_4"] = "“Saya sekarang menguasai menaranya!”\nkata pendiri kami",
 	--END NEW
 
 	--SHARED
@@ -1472,15 +1472,15 @@ module.tutorial = {
 
 module.where = {
 
-	["platform"] = "Must be executed on platform. Won't work on bottom nor even levels in pro towers.",
-	["arrow"] = "Must be executed on platform's arrows.",
-	["stairs"] = "Must be executed on stairs.",
+	["platform"] = "Harus dilaksanakan pada platform. Won't work on bottom nor even levels in pro towers.",
+	["arrow"] = "Harus dilaksanakan pada panah platform.",
+	["stairs"] = "Harus dilaksanakan pada tangga.",
 	["above"] = "Must be executed on below stairs, to affect the above stairs. Works on links too.",
 	["dynamic"] = "May affect both below and above stairs.",
 	["both"] = "Can be executed on either platform's arrows or stairs.",
 	["both2"] = "Can be executed on either platform or stairs.",
-	["anywhere"] = "Can be executed anywhere.",
-	["nowhere"] = "This spell does not require an execution.",
+	["anywhere"] = "Dapat dilaksanakan di mana pun.",
+	["nowhere"] = "Mantra ini tidak memerlukan perlaksanaan.",
 
 }
 
@@ -1516,37 +1516,37 @@ module.guide = {
 
 	["stairs"] ={
 
-		["cursed"] = "Dapat dilaksanakan pada tangga biasa, termanipulasi atau terkutuk.",
+		["cursed"] = "Dapat dilaksanakan pada tangga normal, termanipulasi atau terkutuk.",
 		["all"] = "Dapat dilaksanakan pada tangga apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
-		["steal"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Hijacker untuk mencuri tangga tak terkutuk apa pun.",
-		["onedirection"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
-		["straight"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
-		["rotate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Naiklah ke peringkat Controller untuk memutar tangga tak terkutuk apa pun.",
-		["flip"]= "Dapat dilaksanakan pada tangga biasa, terbalik atau termanipulasi.",
-		["gate"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates.",
-		["gatestr"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates",
-		["gaterot"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Prodigy to override gates",
-		["twist"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Transformer to override splices.",
-		["twiststr"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Transformer to override splices.",
-		["twistrot"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Transformer to override splices.",
-		["spin"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Nomad to spin already drifted stairs.",
-		["drift"] = "Dapat dilaksanakan pada tangga biasa atau termanipulasi. Rank up to Nomad to drift already drifted stairs.",
-		["escalator"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
-		["oneway"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
-		["revolve"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
-		["normalrig"] = "Dapat dilaksanakan hanya pada tangga biasa atau termanipulasi.",
+		["steal"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Naiklah ke peringkat Hijacker untuk mencuri tangga tak terkutuk apa pun.",
+		["onedirection"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+		["straight"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+		["rotate"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Naiklah ke peringkat Controller untuk memutar tangga tak terkutuk apa pun.",
+		["flip"]= "Dapat dilaksanakan pada tangga normal, terbalik atau termanipulasi.",
+		["gate"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Prodigy to override gates.",
+		["gatestr"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Prodigy to override gates",
+		["gaterot"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Prodigy to override gates",
+		["twist"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Transformer to override splices.",
+		["twiststr"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Transformer to override splices.",
+		["twistrot"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Transformer to override splices.",
+		["spin"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Nomad to spin already drifted stairs.",
+		["drift"] = "Dapat dilaksanakan pada tangga normal atau termanipulasi. Rank up to Nomad to drift already drifted stairs.",
+		["escalator"] = "Dapat dilaksanakan hanya pada tangga normal atau termanipulasi.",
+		["oneway"] = "Dapat dilaksanakan hanya pada tangga normal atau termanipulasi.",
+		["revolve"] = "Dapat dilaksanakan hanya pada tangga normal atau termanipulasi.",
+		["normalrig"] = "Dapat dilaksanakan hanya pada tangga normal atau termanipulasi.",
 
 	},
 
 	["above"] = {
 
-		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
-		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
-		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
-		["flip"]= "Can be executed below normal, flipped or rigged stairs.",
-		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
+		["cursed"] = "Dapat dilaksanakan di bawah tangga normal, termanipulasi atau terkutuk.",
+		["all"] = "Dapat dilaksanakan di bawah tangga apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk di atas.",
+		["steal"] = "Dapat dilaksanakan di bawah tangga normal atau termanipulasi. Naiklah ke peringkat Hijacker untuk mencuri tangga apa pun tak terkutuk di atas.",
+		["flip"]= "Dapat dilaksanakan di bawah tangga normal, terbalik atau termanipulasi.",
+		["onedirection"] = "Dapat dilaksanakan di bawah tangga normal atau termanipulasi. Naiklah ke peringkat Controller untuk memindahkan tangga apa pun tak terkutuk.",
 		["slide"] = "This spell lets you bypass any un-cursed blocking stairs.",
-		["normalrig"] = "Can be executed below normal or rigged stairs only.",
+		["normalrig"] = "Hanya dapat dilaksanakan di bawah tangga normal atau termanipulasi.",
 
 	},
 
@@ -1579,14 +1579,14 @@ module.guide = {
 	},
 
 	['both2'] = {
-		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates.",
+		['delsplits'] = "Hanya dapat dilaksanakan pada tangga dengan portal. Naiklah ke peringkat Disciple untuk menggunakan mantra ini untuk menutup portal platform..",
 
-		["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
+		["archgremlin"] = "Platform Berkisar (ketika digunakan pada platform) atau Tangga Berkisar (ketika digunakan pada tangga)",
 		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
 
 	['anywhere'] = {
-		['anywhere'] = "Mantra ini dapat dilaksanakan di manapun.",
+		['anywhere'] = "Mantra ini dapat dilaksanakan di mana pun.",
 	},
 
 	["nowhere"] = {
@@ -1645,7 +1645,7 @@ module.serverfeedback = {
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
-	["cursed"] = "These stairs are cursed!",
+	["cursed"] = "Tangga ini terkutuk!!",
 	["cursed2"] = "Cursed stairs are in the way!",
 	["blocked"] = "This intersection is cursed.",
 	["locked"] = "These stairs are locked.",
@@ -1674,18 +1674,18 @@ module.serverfeedback = {
 	["outdrift"] = "Outside drift can only be created on the outer platforms.",
 	["cantgate"] = "This direction is blocked.",
 	["wall"] = "Wall is already here.",
-	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
-	["nogate"] = "These stairs are not gated.",
-	["noghost"] = "Only ghosted stairs can be de-ghostified.",
+	["nocurse"] = "Tangga normal, terkutuk atau termanipulasi hanya bisa terkutuk/dibebaskan.",
+	["nogate"] = "Tidak ada portal pada tangga ini.",
+	["noghost"] = "Tangga terhantui hanya bisa dimaterialisasi.",
 	--NEW
 	["wrongplace"] = "Other stairs must be in the game area.",
-	["archrace"] = "You cannot morph into an Architect while in the race.",
+	["archrace"] = "Kamu tidak bisa berubah menjadi Architect sementara membalap.",
 	--END NEW
 	["blockedplit"] = "Can't create split, target intersection is cursed.",
 	["cursedtarget"] = "There are Cursed Stairs in that destination.",
 	["lockedother"] = "Cannot create stairs yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
-	["notwist"] = "Those stairs are not twisted.",
+	["notwist"] = "Tangga itu tidak ter     Those stairs are not twisted.",
 	["wrongmove"] = "Stairs cannot be moved out of game area.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
@@ -1749,8 +1749,8 @@ module.serverfeedback = {
 	--mana share
 	["2minshare"] = "At least 2 mana required...",
 	["noshare"] = "No nearby players to receive mana...",
-	["noinf"] = "You cannot share infinite mana!",
-	["toomuch"] = "%s has maximum Mana!",
+	["noinf"] = "Kamu tidak bisa membagi mana infinit!",
+	["toomuch"] = "Kapasitas mana %s penuh!",
 	["shared"] = "Mana shared with %s!",
 	["received"] = "%s has shared some Mana with you!",
 
@@ -1846,7 +1846,7 @@ module.serverfeedback = {
 }
 
 module.serverbroadcast = {
-	["pranked"] = "%s pranked %s!",
+	["pranked"] = "%s nge‑prank %s!",
 	["found"] = "%s menemukan tangga tersembunyi %s!",
 	["disco"] = "%s is enjoying %s's disco music.",
 	["trap"] = "%s has fallen for %s's trap.",
@@ -1986,19 +1986,19 @@ module.eventspells = {
 	["drifteraltevent"] = "%s has just lifted all normal stairs!",
 
 	["hereticrigevent"] = "%s baru saja mêmanipulasi sêmua tangga dêngan mantra kutuk!",
-	["hereticevent"] = "%s baru saja mêmêcah sêmua tangga biasa!",
-	["hereticaltevent"] = "%s baru saja baru saja mêngutuki sêmua tangga biasa!",
+	["hereticevent"] = "%s baru saja mêmêcah sêmua tangga normal!",
+	["hereticaltevent"] = "%s baru saja baru saja mêngutuki sêmua tangga normal!",
 
 	["splicerrigevent"] = "%s baru saja memanipulasi semua tangga normal dengan mantra sambung!",
-	["splicerevent"] = "%s baru saja menyambung semua tangga biasa!",
-	["spliceraltevent"] = "%s baru saja memisahkan semua tangga biasa!",
+	["splicerevent"] = "%s baru saja menyambung semua tangga normal!",
+	["spliceraltevent"] = "%s baru saja memisahkan semua tangga normal!",
 
 	["necromancerrigevent"] = "%s has just rigged all normal stairs with Soulless spell!",
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
 	["necromanceraltevent"] = "%s has just turned all normal stairs Soulless!",
 
 	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotise spell!",
-	["gremlinevent"] = "%s baru saja mengisarkan semua tangga biasa!",
+	["gremlinevent"] = "%s baru saja mengisarkan semua tangga normal!",
 	["gremlinaltevent"] = "%s baru saja memanggil macet Funikular dalam menara!",
 
 	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
