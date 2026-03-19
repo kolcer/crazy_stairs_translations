@@ -794,7 +794,7 @@ module.gui.ranks = {
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
-	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
+	["possessed_3"] = "As Possessed, you cannot use spells, your rank perks are inactive and you cannot jump.",
 
 	["hypnotised_1"] = "You have been Hypnotised!",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
