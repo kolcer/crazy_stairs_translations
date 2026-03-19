@@ -667,7 +667,7 @@ module.spells.descriptions = {
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.  It can also be used on below stairs for trolling purposes.",
 
 	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute. Rank up to BANISHED to destroy crossing cursed stairs." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
+	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells and they cannot jump. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
@@ -685,7 +685,7 @@ module.spells.descriptions = {
 	["twister"] = timed .. "It allows you to cast as many Split Stairs Spells as you like for one minute. Split spell variety will be chosen automatically for Your benefit." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
 	["splicerevent"] = event .. "the Random Splice spell.",
-	["spliceraltevent"] = event .. "the Split Stairs spell.",
+	["spliceraltevent"] = event .. "the Split Stairs Forward spell.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
