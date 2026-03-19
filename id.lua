@@ -164,7 +164,7 @@ module.gui.questions = {
 	["cancel"] = "Apakah kamu mau membakalkan mantra terbatas ini? Token tidak akan dikembalikan.",
 	["tutorial"]= "Apakah kamu ingin belajar di latihan?",
 	["skip"] = "Apakah kamu ingin melewati latihan?",
-	["reshuffle"] = "Apakah kamu ingin tangga untuk menghindari tabrakan saat bergerak? Jika tidak, tangga apa pun yang menghalangi akan dihancurkan.",
+	["reshuffle"] = "Apakah kamu ingin tangga untuk menghindari tabrakan saat bergerak? Jika tidak, tangga apa pun yang berhalangan akan dihancurkan.",
 }
 --END NEW
 
@@ -377,7 +377,7 @@ module.spells.names = {
 
 	["twister"] = "1000 Degree Knife",
 	["splicerevent"] = "Koneksi Tangga",
-	["spliceraltevent"] = "Katana Instan", -- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
+	["spliceraltevent"] = "Pisakhan Semua Tangga", -- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
 
 	--necro
 	["createdual"] = "Buat Tangga Kembar",
@@ -479,12 +479,12 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "This spell flips stairs around, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["flipabove"] = "This spell flips above stairs, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["fake"] = "This spell allows you to create fake stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
-	["invisible"] =  "This spell creates invisible stairs. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
-	["disco"] = "This spell turns stairs into disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
-	["trap"] = "This spell turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
+	["flip"] = "Mantra ini untuk membalikkan tangga, sehingga bagian atas menjadi bagian bawah dan sebaliknya. Kamu bisa juga membalikkan tangganya kembali.",
+	["flipabove"] = "Mantra ini untuk membalikkan tangga di atas, sehingga bagian atas menjadi bagian bawah dan sebaliknya. Kamu bisa juga membalikkan tangganya kembali.",
+	["fake"] = "Mantra ini untuk membangun tangga palsu di arah dipilih. Jika ada terdapat tangga menyilang yang berhalangan di arahnya, tangga tersebut akan dihancurkan. Siapa pun (termasukmu) yang berusaha untuk naik akan jatuh, kecuali Trickster, It dan pendaki dalam mode Fusi Hantu.",
+	["invisible"] =  "Mantra ini untuk membangun tangga tak terlihat. Namun, ini tidak bisa menghancurkan tangga menyilang yang berhalangan, jadi hanya dibangun di simpang kosong. Naiklah ke peringkat Jester untuk mendeteksi semua tangga tak terlihat dan punya opsi untuk tidak menunjukkannya.",
+	["disco"] = "Mantra ini untuk membuatkan tangga jadi berdisko. Siapa pun (termasukmu) akan berhenti dan menari selama 5 detik (biasanya dua kali) ketika menginjaknya. Naiklah ke peringkat Comic untuk menjadi kebal terhadap tangga berdisko.",
+	["trap"] = "Mantra ini untuk membuatkan platform jadi jebakan selama 60 detik. Siapa pun (termasukmu) yang berjalan dalam jebakan tersebut akan jatuh ke platform di bawahnya. Naiklah ke peringkat Jokester untuk mendeteksi platform jebakan. Naiklah ke peringkat Trickster untuk menjadi kebal terhadap platform jebakan.",
 
 	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
@@ -608,7 +608,7 @@ module.spells.descriptions = {
 
 
 	--HERETIC
-	["createcursed"] = "Mantra ini mêmpêrbolèhkan kamu untuk mêmbangun tangga têrkutuk di arah yang têlah ditêntukan. Tangga yang bêrhalangan akan dihancurkan. Naiklah kê pêringkat Banished untuk mênghancurkan tangga têrkutuk yang bêrhalangan.",
+	["createcursed"] = "Mantra ini oentoek mêmbangoen tangga têrkoetoek di arah yang têlah ditêntukan. Tangga mênjilang jang bêrhalangan akan dihantjoerkan. Naiklah kê pêringkat Banished untuk mênghantjoerkan tangga têrkoetoek jang bêrhalangan.",
 	["curse"] = "Mantra untuk mêngutuk tangga yang bêrada di bawah. Mênggunakannya lagi untuk mêmbébaskan tangga yang têrkutuk.",
 	["curseabove"] = "Mantra untuk mêngutuk tangga yang bêrada di atas. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "Mantra ini oentoek bêrsalto mênjêbêrang kê platform bêrhadapan, kalaoe tidak ada tangga di arah. Sêsoedah mênggoenakan mantra ini, simpangnja akan têrkoetoek. Soepaja pêndaki lain tidak bisa mênggoenakannja lagi. Naiklah kê pêringkat Infidel oentoek bêrsalto di sêbêrang simpang jang têrkoetoek, mêmboeka koentjinja dalam prosès.", --Mantra ini untuk bersalto menyeberang ke platform berhadapan, kalau tidak ada tangga di arah. Sesudah menggunakan mantra ini, simpangnya akan terkutuk. Supaya pendaki lain tidak bisa menggunakannya lagi. Naiklah ke peringkat Infidel untuk bersalto di seberang simpang yang terkutuk, membuka kuncinya dalam proses.
