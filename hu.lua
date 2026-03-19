@@ -757,7 +757,7 @@ module.gui.ranks = {
 
 	--possessed
 	["possessed_1"] = "Meg lettél Szállva!",
-	["possessed_3"] = "Megszállottként nincsenek varázslataid és ranghatásaid.",
+	["possessed_3"] = "Megszállottként nincsenek varázslataid, ranghatásaid és nem ugorhatsz.",
 
 	--hypnotised
 	["hypnotised_1"] = "Meg lettél Hipnotizálva!",
@@ -778,7 +778,7 @@ module.gui.ranks = {
 	--tutorial
 	["tutorial_1"] = "A kiképzésben vagy!",
 	["tutorial_2"] = "Gyűjts Manát és használj varázsigéket a torony megmászásához.",
-	["tutorial_3"] = "Ne feledd, a célod, hogy megszerezd a legfelső szinten lévő fehér gömböt!",
+	["tutorial_3"] = "A célod, hogy megszerezd a legfelső szinten lévő fehér gömböt!",
 
 	--shared
 	["higher"] = "VAN ENNÉL MAGASABB RANGOD",
