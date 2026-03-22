@@ -1,5 +1,5 @@
 --VERSION 4.2--
---BRITISH ENGLISH--
+--HINDI/INDIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
@@ -11,14 +11,14 @@ module.gui = {}
 
 module.gui.basic = {
 
-	["default"] = "DEFAULT",
-	["validate"] = "VALIDATE",
+	["default"] = "मानक",
+	["validate"] = "पुष्टि करना",
 
 }
 
 module.gui.switcher = {
 
-	["join"] = "JOIN",
+	["join"] = "शामिल",
 	["friends"] = "FRIENDS ONLINE",
 	["refresh"] = "refreshing...",
 	["fail"] = "FAILED TO REFRESH!",
