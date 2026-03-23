@@ -19,33 +19,33 @@ module.gui.basic = {
 module.gui.switcher = {
 
 	["join"] = "शामिल",
-	["friends"] = "FRIENDS ONLINE",
-	["refresh"] = "refreshing...",
-	["fail"] = "FAILED TO REFRESH!",
+	["friends"] =  मित्र ऑनलाइन",
+	["refresh"] = रीफ्रेशीगं...",
+	["fail"] = "रीफ्रेश करने में विफल",
 
 	--NEW
-	["refreshbutton"] = "REFRESH",
-	["failed"] = "Teleport failed!",
-	["classic"] = "Classic Tower",
-	["pro"] = "Pro Tower",
-	["custom"] = "Custom Tower",
-	["noVR"] = "VR Free Tower",
+	["refreshbutton"] = "रीफ्रेश",
+	["failed"] = "टेलीपोर्ट विफल!",
+	["classic"] = "क्लासिक टावर",
+	["pro"] = "प्रो टावर",
+	["custom"] = "कस्टम टावर",
+	["noVR"] = "वीआर फ्री टावर",
 	--END NEW
 
 }
 
 module.gui.serversettings = {
 
-	["Drones"] = "DRONE SETTINGS",
-	["DronesReadOnly"] = "DRONE SETTINGS (read only)",
-	["DroneEnabled"] = "Drones enabled",
-	["DroneFix"] = "Drones restore stairs",
-	["DroneRemove"] = "Drones remove cursed intersections",
-	["DroneUnCurse"] = "Drones restore cursed stairs",
-	["DroneMove"] = "Drones move stairs in default mode",
-	["DroneSpin"] = "Drones spin stairs in default mode",
-	["DroneSpeed"] = "Drone travel speed (level/second)",
-	["DroneDelay"] = "Drone spin duration (seconds)",
+	["Drones"] = "ड्रोन सेटिंग्स",
+	["DronesReadOnly"] = "ड्रोन सेटिंग्स (केवल पढ़ने योग्य)",
+	["DroneEnabled"] = "ड्रोन सक्षम",
+	["DroneFix"] = "ड्रोन सीढ़ियों की मरम्मत करते हैं",
+	["DroneRemove"] = "ड्रोन शापित चौराहों को हटाते हैं",
+	["DroneUnCurse"] = "ड्रोन शापित सीढ़ियों को पुनर्स्थापित करते हैं",
+	["DroneMove"] = "ड्रोन डिफ़ॉल्ट मोड में सीढ़ियों को हिलाते हैं",
+	["DroneSpin"] = "ड्रोन डिफ़ॉल्ट मोड में सीढ़ियों को घुमाते हैं",
+	["DroneSpeed"] = "ड्रोन की यात्रा गति (स्तर/सेकंड)",
+	["DroneDelay"] = "ड्रोन के घूमने का समय (सेकंड में)",
 	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
 	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
 	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
