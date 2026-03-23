@@ -19,8 +19,8 @@ module.gui.basic = {
 module.gui.switcher = {
 
 	["join"] = "शामिल",
-	["friends"] =  मित्र ऑनलाइन",
-	["refresh"] = रीफ्रेशीगं...",
+	["friends"] =  "मित्र ऑनलाइन",
+	["refresh"] = "रीफ्रेशीगं...",
 	["fail"] = "रीफ्रेश करने में विफल",
 
 	--NEW
