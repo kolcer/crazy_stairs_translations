@@ -48,51 +48,73 @@ module.gui.serversettings = {
 	["DroneDelay"] = "ड्रोन के घूमने का समय (सेकंड में)",
 	-- DRONE SETTINGS
 ["DroneMax"] = "सीढ़ियों की अधिकतम संख्या (इस सीमा के ऊपर ड्रोन केवल सीढ़ियाँ नष्ट करेंगे)", 
--- अधिकतम सीढ़ियों की संख्या।
--- यदि सीढ़ियाँ > इस मान → ड्रोन केवल नष्ट करेंगे।
+-- Maximum number of stairs allowed.
+-- If stairs > this value → drones ONLY destroy stairs.
+
 ["DroneMin"] = "सीढ़ियों की न्यूनतम संख्या (इस सीमा के नीचे ड्रोन केवल सीढ़ियाँ बनाएंगे)", 
--- न्यूनतम सीढ़ियों की संख्या।
--- यदि सीढ़ियाँ < इस मान → ड्रोन केवल बनाएंगे।
+-- Minimum number of stairs.
+-- If stairs < this value → drones ONLY create stairs.
+
 ["DroneBlock"] = "हर खाली इंटरसेक्शन मिलने पर श्रापित इंटरसेक्शन बनने की संभावना (प्रतिशत)", 
--- % संभावना कि ड्रोन खाली जगह पर श्रापित इंटरसेक्शन बनाएंगे।
+-- % chance that drones create a CURSED intersection when finding an empty spot.
+
 ["DroneCurse"] = "सीढ़ियाँ बनाने या सामान्य सीढ़ियों के मिलने पर उनके श्रापित होने की संभावना (प्रतिशत)", 
--- % संभावना कि बनी हुई या मिली सीढ़ियाँ श्रापित हो जाएँ।
+-- % chance that created or encountered stairs become CURSED.
+
+
 -- TOWER SETTINGS
 ["Tower"] = "टॉवर सेटिंग्स", 
--- सेक्शन शीर्षक (UI लेबल)
+-- Section title (UI label)
+
 ["TowerReadOnly"] = "टॉवर सेटिंग्स (केवल पढ़ने के लिए)", 
--- वही सेटिंग्स लेकिन बदली नहीं जा सकती
+-- Same as above but locked (cannot edit)
+
 ["InfMode"] = "इन्फिनिट मोड (रेस या रीजनरेशन के दौरान बदला नहीं जा सकता)", 
--- इन्फिनिट टॉवर मोड चालू करता है
+-- Enables infinite tower mode (locked during gameplay events)
+
 ["CasualPlayers"] = "कैज़ुअल खिलाड़ी स्पेल्स का उपयोग कर सकते हैं", 
--- नॉन-रेसर खिलाड़ी स्पेल्स इस्तेमाल कर सकते हैं
+-- Allows non-racer players to cast spells
+
 ["Regeneration"] = "Wicked's Purge के बाद सीढ़ियाँ अपने आप बनेंगी (इन्फिनिट मोड में काम नहीं करेगा)", 
--- पर्ज के बाद ऑटो रीबिल्ड
+-- Automatically rebuilds stairs after a purge event
+
 ["EvenLevels"] = "केवल सम (Even) लेवल्स की अनुमति", 
--- सिर्फ even लेवल्स में खेल सीमित
+-- Restricts gameplay to even-numbered levels only
+
 ["OrbMoves"] = "एंडगेम ऑर्ब अपनी जगह बदलता है", 
--- ऑर्ब फिक्स नहीं रहेगा, मूव करेगा
+-- Orb moves instead of staying fixed at the top
+
 ["InfRegeneration"] = "नए सर्वर, लेवल बदलने और इन्फिनिट रेस के बाद सीढ़ियाँ अपने आप बनेंगी", 
--- ऑटो रीजनरेशन:
--- - नया सर्वर
--- - लेवल बदलना
--- - इन्फिनिट रेस खत्म
+-- Auto regeneration when:
+-- - new server starts
+-- - levels change
+-- - infinite race ends
+
+
 -- deprecated
 --["TowerLevels"] = "टॉवर लेवल्स (या इन्फिनिट मोड में सक्रिय लेवल्स)। रेस या रीजनरेशन के दौरान बदला नहीं जा सकता",
--- पुरानी सेटिंग (अब उपयोग में नहीं)
+-- Old setting (no longer used)
+
+
 ["TowerSize"] = "टॉवर ग्रिड का आकार (प्रयोगात्मक)", 
--- टॉवर का साइज बदलता है (स्टेबल नहीं हो सकता)
+-- Changes the tower grid size (may be unstable)
+
 ["RaceDuration"] = "रेस की अधिकतम अवधि (चल रही रेस पर असर नहीं पड़ेगा) (सेकंड)", 
--- भविष्य की रेस के लिए समय सीमा
+-- Maximum race duration (does not affect current race)
+
 ["InfStart"] = "इन्फिनिट मोड की शुरुआत का इंटरवल (हर राउंड में 2 लेवल बनते हैं) (सेकंड)", 
--- शुरुआती देरी
+-- Starting delay between infinite rounds
+
 ["InfReduction"] = "इन्फिनिट मोड इंटरवल में कमी (हर राउंड छोटा होगा) (सेकंड)", 
--- हर राउंड तेज होता जाएगा
+-- Amount of time reduced each round (game speeds up)
+
 ["InfMin"] = "इन्फिनिट मोड का न्यूनतम इंटरवल (सेकंड)", 
--- सबसे कम देरी की सीमा
+-- Minimum interval limit (prevents it from becoming too fast)
+
+
 -- NEW KEY
 ["CooldownTime"] = "इवेंट और रिग के बीच कूलडाउन समय (सेकंड)", 
--- इवेंट/रिग के बीच इंतज़ार का समय
+-- Cooldown time between events and rigs
 
 -- END NEW
 
@@ -102,28 +124,52 @@ module.gui.serversettings = {
 module.gui.shop = {
 
 	--NEW
-	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.",
-	--END NEW
+module.gui.shop = {
 
-	["chameleon"] = "Chameleons can change alignment during climb.",
-	["spectre"] = "Spectre is a teleport based alignment best for solo play.",
-	["mana"] = "Expand your Mana storage capacity by 10 points.",
+	["architect"] = "Architect गेम पास आपको VR हेडसेट के बिना Architect बनने की अनुमति देता है।",
+	-- Allows player to use Architect role without VR
 
-	["3tokens"] = "Unlock one spell or cast up to 3 ultimate spells.",
-	["30tokens"] = "Unlock ten spells or cast up to 30 ultimate spells.",
-	["300tokens"] = "Enough to unlock all spells with 93 tokens left.",
+	["chameleon"] = "Chameleon चढ़ाई के दौरान alignment बदल सकता है।",
+	-- Can switch alignment mid-climb
+
+	["spectre"] = "Spectre एक teleport आधारित alignment है, जो solo खेलने के लिए सबसे अच्छा है।",
+	-- Teleport-focused class for solo gameplay
+
+	["mana"] = "अपनी Mana स्टोरेज क्षमता को 10 पॉइंट से बढ़ाएँ।",
+	-- Increases mana capacity
+
+	["3tokens"] = "एक spell अनलॉक करें या 3 ultimate spells कास्ट करें।",
+	-- Small token bundle usage
+
+	["30tokens"] = "दस spells अनलॉक करें या 30 ultimate spells कास्ट करें।",
+	-- Medium token bundle usage
+
+	["300tokens"] = "सभी spells अनलॉक करने के लिए पर्याप्त, 93 tokens बचेंगे।",
+	-- Large token bundle (full unlock)
 
 	["3TOKENS"] = "3 Multi Tokens (R$%d)",
+	-- Purchase label
+
 	["30TOKENS"] = "30 Multi Tokens (R$%d)",
+	-- Purchase label
+
 	["300TOKENS"] = "300 Multi Tokens (R$%d)",
+	-- Purchase label
 
-	--NEW
-	["SPECTRE"] = "Spectre game pass (R$%d)",
-	["MANA"] = "20 Mana Storage game pass (R$%d)",
-	["CHAMELEON"] = "Chameleon game pass (R$%d)",
-	["ARCHITECT"] = "Architect game pass (R$%d)",
+	["SPECTRE"] = "Spectre गेम पास (R$%d)",
+	-- Gamepass purchase
 
-	--END NEW
+	["MANA"] = "20 Mana Storage गेम पास (R$%d)",
+	-- Gamepass purchase
+
+	["CHAMELEON"] = "Chameleon गेम पास (R$%d)",
+	-- Gamepass purchase
+
+	["ARCHITECT"] = "Architect गेम पास (R$%d)",
+	-- Gamepass purchase
+
+}
+--END NEW
 
 }
 
