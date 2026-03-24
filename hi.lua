@@ -46,30 +46,55 @@ module.gui.serversettings = {
 	["DroneSpin"] = "ड्रोन डिफ़ॉल्ट मोड में सीढ़ियों को घुमाते हैं",
 	["DroneSpeed"] = "ड्रोन की यात्रा गति (स्तर/सेकंड)",
 	["DroneDelay"] = "ड्रोन के घूमने का समय (सेकंड में)",
-	["DroneMax"] = "Max staircases amount (drones will exclusively destroy above this limit)",
-	["DroneMin"] = "Min staircases amount (drones will exclusively create below this limit)",
-	["DroneBlock"] = "Cursed intersection chance for every empty intersection encounter (percent)",
-	["DroneCurse"] = "Cursed stairs chance for creation and normal stairs encounter (percent)",
+	-- DRONE SETTINGS
+["DroneMax"] = "सीढ़ियों की अधिकतम संख्या (इस सीमा के ऊपर ड्रोन केवल सीढ़ियाँ नष्ट करेंगे)", 
+-- अधिकतम सीढ़ियों की संख्या।
+-- यदि सीढ़ियाँ > इस मान → ड्रोन केवल नष्ट करेंगे।
+["DroneMin"] = "सीढ़ियों की न्यूनतम संख्या (इस सीमा के नीचे ड्रोन केवल सीढ़ियाँ बनाएंगे)", 
+-- न्यूनतम सीढ़ियों की संख्या।
+-- यदि सीढ़ियाँ < इस मान → ड्रोन केवल बनाएंगे।
+["DroneBlock"] = "हर खाली इंटरसेक्शन मिलने पर श्रापित इंटरसेक्शन बनने की संभावना (प्रतिशत)", 
+-- % संभावना कि ड्रोन खाली जगह पर श्रापित इंटरसेक्शन बनाएंगे।
+["DroneCurse"] = "सीढ़ियाँ बनाने या सामान्य सीढ़ियों के मिलने पर उनके श्रापित होने की संभावना (प्रतिशत)", 
+-- % संभावना कि बनी हुई या मिली सीढ़ियाँ श्रापित हो जाएँ।
+-- TOWER SETTINGS
+["Tower"] = "टॉवर सेटिंग्स", 
+-- सेक्शन शीर्षक (UI लेबल)
+["TowerReadOnly"] = "टॉवर सेटिंग्स (केवल पढ़ने के लिए)", 
+-- वही सेटिंग्स लेकिन बदली नहीं जा सकती
+["InfMode"] = "इन्फिनिट मोड (रेस या रीजनरेशन के दौरान बदला नहीं जा सकता)", 
+-- इन्फिनिट टॉवर मोड चालू करता है
+["CasualPlayers"] = "कैज़ुअल खिलाड़ी स्पेल्स का उपयोग कर सकते हैं", 
+-- नॉन-रेसर खिलाड़ी स्पेल्स इस्तेमाल कर सकते हैं
+["Regeneration"] = "Wicked's Purge के बाद सीढ़ियाँ अपने आप बनेंगी (इन्फिनिट मोड में काम नहीं करेगा)", 
+-- पर्ज के बाद ऑटो रीबिल्ड
+["EvenLevels"] = "केवल सम (Even) लेवल्स की अनुमति", 
+-- सिर्फ even लेवल्स में खेल सीमित
+["OrbMoves"] = "एंडगेम ऑर्ब अपनी जगह बदलता है", 
+-- ऑर्ब फिक्स नहीं रहेगा, मूव करेगा
+["InfRegeneration"] = "नए सर्वर, लेवल बदलने और इन्फिनिट रेस के बाद सीढ़ियाँ अपने आप बनेंगी", 
+-- ऑटो रीजनरेशन:
+-- - नया सर्वर
+-- - लेवल बदलना
+-- - इन्फिनिट रेस खत्म
+-- deprecated
+--["TowerLevels"] = "टॉवर लेवल्स (या इन्फिनिट मोड में सक्रिय लेवल्स)। रेस या रीजनरेशन के दौरान बदला नहीं जा सकता",
+-- पुरानी सेटिंग (अब उपयोग में नहीं)
+["TowerSize"] = "टॉवर ग्रिड का आकार (प्रयोगात्मक)", 
+-- टॉवर का साइज बदलता है (स्टेबल नहीं हो सकता)
+["RaceDuration"] = "रेस की अधिकतम अवधि (चल रही रेस पर असर नहीं पड़ेगा) (सेकंड)", 
+-- भविष्य की रेस के लिए समय सीमा
+["InfStart"] = "इन्फिनिट मोड की शुरुआत का इंटरवल (हर राउंड में 2 लेवल बनते हैं) (सेकंड)", 
+-- शुरुआती देरी
+["InfReduction"] = "इन्फिनिट मोड इंटरवल में कमी (हर राउंड छोटा होगा) (सेकंड)", 
+-- हर राउंड तेज होता जाएगा
+["InfMin"] = "इन्फिनिट मोड का न्यूनतम इंटरवल (सेकंड)", 
+-- सबसे कम देरी की सीमा
+-- NEW KEY
+["CooldownTime"] = "इवेंट और रिग के बीच कूलडाउन समय (सेकंड)", 
+-- इवेंट/रिग के बीच इंतज़ार का समय
 
-	["Tower"] = "TOWER SETTINGS",
-	["TowerReadOnly"] = "TOWER SETTINGS (read only)",
-	["InfMode"] = "Infinite Mode (cannot be changed during a race or a regeneration)",
-	["CasualPlayers"] = "Casual players allowed to cast spells",
-	["Regeneration"] = "Auto Staircase generation after a Wicked's Purge (will not work in the infinite mode)",
-	["EvenLevels"] = "Even Levels Restricted",
-	["OrbMoves"] = "Endgame orb changes position",
-	["InfRegeneration"] = "Auto Staircase generation on new server, tower levels change and after the infinite race",
-	--deprecated
-	--["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
-	["TowerSize"] = "Tower grid size (experimental)",
-	["RaceDuration"] = "Maximum Race Duration. Will not affect current race. (seconds)",
-	["InfStart"] = "Initial Infinite mode round interval (2 levels are created each round) (seconds)",
-	["InfReduction"] = "Infinite mode interval reduction (each round is shorter by) (seconds)",
-	["InfMin"] = "Infinite mode minimum interval duration (seconds)",
-
-	--NEW KEY
-	["CooldownTime"] = "Event and Rig cool down period (seconds)",
-	--END NEW
+-- END NEW
 
 }
 
