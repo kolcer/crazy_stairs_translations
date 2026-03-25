@@ -147,13 +147,13 @@ module.gui.shop = {
 	["300tokens"] = "सभी spells अनलॉक करने के लिए पर्याप्त, 93 tokens बचेंगे।",
 	-- Large token bundle (full unlock)
 
-	["3TOKENS"] = "3 Multi Tokens (R$%d)",
+	["3TOKENS"] = "3 मलटी टोकेन्स R$%d)",
 	-- Purchase label
 
-	["30TOKENS"] = "30 Multi Tokens (R$%d)",
+	["30TOKENS"] = "30 मलटी टोकेन्स (R$%d)",
 	-- Purchase label
 
-	["300TOKENS"] = "300 Multi Tokens (R$%d)",
+	["300TOKENS"] = "300 मलटी टोकेन्स (R$%d)",
 	-- Purchase label
 
 	["SPECTRE"] = "Spectre गेम पास (R$%d)",
@@ -176,92 +176,91 @@ module.gui.shop = {
 
 module.gui.nospellsbar = {
 
-	["nocasual"] = "ONLY RACERS CAN CAST SPELLS",
-	["possessed"] = "POSSESSED! (Find Mana to break free)",
-	--NEW
-	["permanent"] = "POSSESSED! (permanent mode)",
-	["cancelled"] = "CANCELLED...", --timed spell cancelled
-	--END NEW
+	["nocasual"] = "सिर्फ रेसर ही spells कास्ट कर सकते हैं",
+	["possessed"] = "POSSESSED! (आज़ाद होने के लिए Mana ढूँढें)",
+
+	["permanent"] = "POSSESSED! (स्थायी मोड)",
+	["cancelled"] = "रद्द किया गया...",
 
 }
+
 
 --NEW
 module.gui.stats = {
 
-	["badges"] = "YOUR BADGES",
-	["climbs"] = "YOUR CLIMBS",
-	["total"] = "TOTAL CLIMBS/WINS",
-	["best"] = "BEST TIME OVERALL",
-	["norecord"] = "[no record]",
+	["badges"] = "आपके बैज",
+	["climbs"] = "आपकी चढ़ाइयाँ",
+	["total"] = "कुल चढ़ाइयाँ/जीत",
+	["best"] = "अब तक का सबसे अच्छा समय",
+	["norecord"] = "[कोई रिकॉर्ड नहीं]",
 
-	["2124486274"] = "Prank the Creator",
-	["1803533030753957"] = "Black Hole",
-	["2124480173"] = "Wicked's Treason",
-	["2124480172"] = "Joker's Trick",
-	["2124637294"] = "Drifter's Voyage",
-	["2124517579"] = "Thief's Heist",
-	["4464785885277417"] = "Splicer's Twist",
-	["2124480174"] = "Keeper's Order",
-	["2124637293"] = "Archon's Connection",
-	["2124517578"] = "Hacker's Exploit",
-	["707445818894757"] = "Gremlin's Spiral",
-	["2124480171"] = "Patron's Pride",
-	["1407551481032773"] = "Reaver's Reflection",
-	["2124637295"] = "Heretic's Curse",
-	["1885715582646280"] = "Necromancer's Rite",
-	["2124480175"] = "Muggle's Logic",
-	["2124826874"] = "Full Circle",
-	["2124529966"] = "Skipped the Tutorial",
-	["2124826880"] = "Possessed Fate",
-	["3731010929572663"] = "Hypnotised Dream",
-	["840574993122888"] = "Perspective Reflected",
-	["2124913225"] = "Architect's Design",
-	["2124702954"] = "Rootkit Installed",
-	["2124702945"] = "Destroy Everything",
-	["2124702946"] = "Order Restored",
-	["128721686760593"] = "You Spin me Round and Round.",
-	["2124702952"] = "I'll Take the Elevator",
+	["2124486274"] = "Creator को प्रैंक करें",
+	["1803533030753957"] = "ब्लैक होल",
+	["2124480173"] = "Wicked का विश्वासघात",
+	["2124480172"] = "Joker की चाल",
+	["2124637294"] = "Drifter की यात्रा",
+	["2124517579"] = "Thief की चोरी",
+	["4464785885277417"] = "Splicer का ट्विस्ट",
+	["2124480174"] = "Keeper का आदेश",
+	["2124637293"] = "Archon का कनेक्शन",
+	["2124517578"] = "Hacker का एक्सप्लॉइट",
+	["707445818894757"] = "Gremlin का स्पाइरल",
+	["2124480171"] = "Patron का गर्व",
+	["1407551481032773"] = "Reaver का प्रतिबिंब",
+	["2124637295"] = "Heretic का श्राप",
+	["1885715582646280"] = "Necromancer की विधि",
+	["2124480175"] = "Muggle का लॉजिक",
+	["2124826874"] = "पूर्ण चक्र",
+	["2124529966"] = "ट्यूटोरियल स्किप किया",
+	["2124826880"] = "Possessed भाग्य",
+	["3731010929572663"] = "Hypnotised सपना",
+	["840574993122888"] = "परावर्तित दृष्टिकोण",
+	["2124913225"] = "Architect का डिज़ाइन",
+	["2124702954"] = "Rootkit इंस्टॉल हुआ",
+	["2124702945"] = "सब कुछ नष्ट करो",
+	["2124702946"] = "व्यवस्था बहाल",
+	["128721686760593"] = "तुम मुझे बार-बार घुमाते हो।",
+	["2124702952"] = "मैं लिफ्ट लूँगा",
 	["3121101516427751"] = "The Entanglement",
-	["2124702942"] = "Leave no Noob Behind",
-	["2124702950"] = "Illuminati Confirmed",
-	["2124702951"] = "Mine, Mine all MINE!",
-	["1165646024608180"] = "We are One.",
-	["2303731210592278"] = "Rise, Rise, RISE!",
-	["2124702949"] = "Excommunication",
-	["2124702943"] = "Pranking is Living",
-	["2124702948"] = "Spells are Overrated",
-	["2124826876"] = "Perfect Circle",
-	["2124645341"] = "Secret Badge",
-	["2126893403"] = "Super Secret Badge",
-	["2126893411"] = "Mega Secret Badge",
+	["2124702942"] = "कोई नोब पीछे न छूटे",
+	["2124702950"] = "Illuminati की पुष्टि",
+	["2124702951"] = "मेरा, सब मेरा!",
+	["1165646024608180"] = "हम एक हैं",
+	["2303731210592278"] = "उठो, उठो, उठो!",
+	["2124702949"] = "बहिष्कार",
+	["2124702943"] = "प्रैंक करना ही जीवन है",
+	["2124702948"] = "Spells ज़्यादा जरूरी नहीं",
+	["2124826876"] = "परफेक्ट सर्कल",
+	["2124645341"] = "सीक्रेट बैज",
+	["2126893403"] = "सुपर सीक्रेट बैज",
+	["2126893411"] = "मेगा सीक्रेट बैज",
 
 }
+--END NEW
 
 
 module.gui.questions = {
-	["cancel"] = "Do you want to cancel this timed spell? Tokens will not be refunded.",
-	["tutorial"]= "Would you like to play the tutorial?",
-	["skip"] = "Would you like to skip the tutorial?",
-	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
-	
-	--new
-	["gift"] = "Do you want to gift %s Game Pass to another player?",
-	["choose"] = "Choose a player to receive %s Game Pass", 
-	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
-	["received"] = "You have received %s Game Pass, courtesy of %s!",
-	
+
+	["cancel"] = "क्या आप इस timed spell को रद्द करना चाहते हैं? Tokens वापस नहीं मिलेंगे।",
+	["tutorial"]= "क्या आप ट्यूटोरियल खेलना चाहते हैं?",
+	["skip"] = "क्या आप ट्यूटोरियल छोड़ना चाहते हैं?",
+	["reshuffle"] = "क्या आप चाहते हैं कि stairs चलते समय टकराव से बचें? अगर नहीं, तो रास्ते में आने वाली कोई भी stairs नष्ट हो जाएंगी।",
+
+	["gift"] = "क्या आप %s Game Pass किसी अन्य खिलाड़ी को देना चाहते हैं?",
+	["choose"] = "%s Game Pass पाने के लिए एक खिलाड़ी चुनें",
+	["confirm"] = "क्या आप %s Game Pass %s को देना चाहते हैं?",
+	["received"] = "आपको %s Game Pass मिला है, %s की ओर से!",
+
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Storage",
 	["spectre"] = "Spectre",
 	["chameleon"] = "Chameleon",
 
-	--end new
-	--new
-	["race"] = "Join race?",
-	["racein"] = "Race in:",
-	["go"] = "GO!",
-	["raceoff"] = "Race cancelled",
- 	--end new
+	["race"] = "रेस में शामिल हों?",
+	["racein"] = "रेस शुरू होने में:",
+	["go"] = "शुरू!",
+	["raceoff"] = "रेस रद्द हो गई",
+
 }
 --END NEW
 
@@ -269,70 +268,74 @@ module.gui.questions = {
 
 module.gui.codes = {
 
-	["title"] = "ENTER THE CODE",
-	["body"] = "Input Your code here:",
-	["prompt"] = "(code)",
-	["button"] = "VALIDATE",
+	["title"] = "कोड दर्ज करें",
+	["body"] = "अपना कोड यहाँ दर्ज करें:",
+	["prompt"] = "(कोड)",
+	["button"] = "सत्यापित करें",
 
 }
+
 
 module.gui.jukebox = {
 
-	["title"] = "JUKEBOX",
+	["title"] = "ज्यूकबॉक्स",
 
-	["master"] = "MASTER VOLUME",
-	["default"] = "(using master volume)",
-	["climb"] = "CLIMB MUSIC",
-	["endgame"] = "ENDGAME MUSIC",
-	["failed"] = "[failed to load]",
+	["master"] = "मास्टर वॉल्यूम",
+	["default"] = "(मास्टर वॉल्यूम का उपयोग हो रहा है)",
+	["climb"] = "चढ़ाई का संगीत",
+	["endgame"] = "एंडगेम संगीत",
+	["failed"] = "[लोड करने में विफल]",
+
 	--NEW
-	["off"] = "MUTED",
+	["off"] = "म्यूट",
 	--END NEW
+
 }
+
 
 module.gui.results = {
 
-	["title"] = "RACE RESULTS",
+	["title"] = "रेस परिणाम",
 
-	["place"] = "PLACE",
-	["name"] = "NAME",
-	["level"] = "MAX LEVEL",
-	["time"] = "TIME",
-	["rank"] = "RANK",
+	["place"] = "स्थान",
+	["name"] = "नाम",
+	["level"] = "अधिकतम स्तर",
+	["time"] = "समय",
+	["rank"] = "रैंक",
 	["not"] = "N/A",
-	[1] = "WINNER",
-	[2] = "2nd",
-	[3] = "3rd",
-	[4] = "4th",
-	[5] = "5th",
-	[6] = "6th",
-	[7] = "7th",
-	[8] = "8th",
-	[9] = "9th",
-	[10] = "10th",
-	[11] = "11th",
-	[12] = "12th",
+
+	[1] = "विजेता",
+	[2] = "दूसरा",
+	[3] = "तीसरा",
+	[4] = "चौथा",
+	[5] = "पाँचवाँ",
+	[6] = "छठा",
+	[7] = "सातवाँ",
+	[8] = "आठवाँ",
+	[9] = "नौवाँ",
+	[10] = "दसवाँ",
+	[11] = "ग्यारहवाँ",
+	[12] = "बारहवाँ",
 
 }
 
 
---NEW 
-
+--NEW
 module.gui.menu = {
 	
-	["Codes"] = "Code entry",
-	["Feedback"] = "Send game feedback",
-	["Language"] = "Change game language",
-	["Music"] = "Music Jukebox",
-	["RaceResults"] = "Last race results",
-	["ServerSettings"] = "Tower Settings (Custom Tower)",
-	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passes and tokens",
-	["Spectate"] = "Spectate other players",
-	["Stats"] = "Your badges and achievements",
-	["SwitchServer"] = "Switch Tower",
-	["Tokens"] = "Your tokens",
-	["Tutorial"] = "Play the Tutorial",
+	["Codes"] = "कोड दर्ज करें",
+	["Feedback"] = "गेम फीडबैक भेजें",
+	["Language"] = "गेम भाषा बदलें",
+	["Music"] = "म्यूजिक ज्यूकबॉक्स",
+	["RaceResults"] = "पिछली रेस के परिणाम",
+	["ServerSettings"] = "टॉवर सेटिंग्स (कस्टम टॉवर)",
+	["Settings"] = "गेम सेटिंग्स",
+	["Shop"] = "गेम पास और टोकन खरीदें",
+	["Spectate"] = "अन्य खिलाड़ियों को देखें",
+	["Stats"] = "आपके बैज और उपलब्धियाँ",
+	["SwitchServer"] = "टॉवर बदलें",
+	["Tokens"] = "आपके टोकन",
+	["Tutorial"] = "ट्यूटोरियल खेलें",
 
 }
 
@@ -340,12 +343,11 @@ module.gui.menu = {
 --end screen tutorial
 module.gui.tutorial = {
 	
-	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment!",
-	["difficulty"] = "Difficulty:",
-	
-}
+	["complete"] = "चढ़ाई पूरी हुई!",
+	["choose"] = "कृपया अपना पहला alignment चुनें!",
+	["difficulty"] = "कठिनाई:",
 
+}
 --END NEW
 
 module.spells = {}
