@@ -534,169 +534,168 @@ module.spells.names = {
 }
 	
 	--TUTORIAL
-	["tcreate"] = "Create Stairs",
-	["tflip"] = "Flip Stairs",
-	["tdestroy"] = "Destroy Above Stairs",
-	["tmove"] = "Move Stairs",
-	["tdash"] = "Dash",
-	["trestore"] = "Restore Stairs",
+	["tcreate"] = "सीढ़ियाँ बनाओ",
+	["tflip"] = "उल्टा करो",
+	["tdestroy"] = "ऊपर नष्ट करो",
+	["tmove"] = "हिलाओ",
+	["tdash"] = "डैश",
+	["trestore"] = "ठीक करो",
 
 	--CHAMELEON
-	["ditch"] = "Cross Stairs",
-	["warp"] = "Warp Stairs",
-	["chamdown"] = "Move Stairs Down",
-	["chamdraw"] = "Below Drawbridge",
-	--["chamswap"] = "Copy Ghost (visual)",
-	["chamdrawabove"] = "Above Drawbridge",
-	["oneways"] = "One-Way Stairs",
+	["ditch"] = "पार करो",
+	["warp"] = "वार्प करो",
+	["chamdown"] = "नीचे ले जाओ",
+	["chamdraw"] = "नीचे पुल बनाओ",
+	["chamdrawabove"] = "ऊपर पुल बनाओ",
+	["oneways"] = "एकतरफा सीढ़ियाँ",
 
 	--NEW
-
-	["mugglereg"] = "Staircase is regenerating",
-	["mugglecd"] = "Events and Rigs Cooldown",
-	["share"] = "Share mana (requires 2 Mana minimum)",
+	["mugglereg"] = "सीढ़ियाँ फिर बन रही हैं",
+	["mugglecd"] = "इवेंट और रिग कूलडाउन",
+	["share"] = "माना शेयर करो",
 
 	--ARCHITECT
-	["archpatron"] = "Create or shrink",
-	["archarchon"] = "Gate stairs or platform",
-	["archthief"] = "Steal or place",
-	["archnecro"] = "Dual or Undead stairs",
-	["archhacker"] = "Escalator or Hack-in",
-	["archkeeper"] = "Move or Restore",
-	["archsplicer"] = "Splice or Split",
-	["archwicked"] = "Wall or Destroy",
-	["archgremlin"] = "Revolve stairs or a platform",
-	["archjoker"] = "Fake or Flip stairs",
-	["archdrifter"] = "Drift or Elevator",
-	["archspectre"] = "Phantom or Ghost stairs",
-	["archreaver"] = "Mirrored or One-way stairs",
-	["archheretic"] = "Curse intersection or stairs",
+	["archpatron"] = "सीढ़ी बना या छोटा कर",
+["archarchon"] = "गेट सीढ़ी या प्लेटफॉर्म बना",
+["archthief"] = "चुरा या सीढ़ी रख",
+["archnecro"] = "ड्यूल या अनडेड सीढ़ी बना",
+["archhacker"] = "एस्केलेटर या हैक-इन कर",
+["archkeeper"] = "सीढ़ी मूव कर या रिस्टोर कर",
+["archsplicer"] = "स्प्लाइस या स्प्लिट कर",
+["archwicked"] = "दीवार बना या सीढ़ी तोड़",
+["archgremlin"] = "सीढ़ी घुमा या प्लेटफॉर्म घुमा",
+["archjoker"] = "फेक या फ्लिप सीढ़ी बना",
+["archdrifter"] = "ड्रिफ्ट कर या एलिवेटर यूज़ कर",
+["archspectre"] = "फैंटम या घोस्ट सीढ़ी बना",
+["archreaver"] = "मिरर सीढ़ी या वन-वे बना",
+["archheretic"] = "कर्स्ड इंटरसेक्शन या सीढ़ी बना",
 
 	--END NEW
 
 }
 
 -- common description stuff
-local union = "This is a timed Ghost Union spell. Once in Ghost Union Mode, you can clip through blocking stairs and walk on ghost, obby, and fake stairs. Special stairs will have no effect on you, and you will not trigger rigs. However, you cannot cast spells in this mode."
-local overload = "This is an Overload spell. It will grant you one Mana every 6 seconds for the next minute (10 in total). You can have only one overload active at a time."
-local timed = "This spell is timed. "  -- do not remove space
-local rig = "This is a Rig spell. It will Rig all normal stairs, one by one, with " -- do not remove space
-local event = "This is an Event spell. It will affect all normal stairs with " -- do not remove space
-local fill = "This is a Fill spell. It will create stairs in every empty uncursed intersection in a random direction. " -- do not remove spaces
-local mode = "This is a Drone spell. It will change the drone mode to %s. In this mode drones will cast randomly either %s or %s on normal stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively."
-local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this spell will also refill Mana for all %s with at least %s Rank." -- do not remove leading space
+local union = "यह एक timed Ghost Union spell है। Ghost Union mode में तुम blocking सीढ़ियों के अंदर से निकल सकते हो और ghost, obby, और fake सीढ़ियों पर चल सकते हो। Special सीढ़ियों का तुम पर कोई effect नहीं होगा, और तुम rigs trigger नहीं करोगे। लेकिन इस mode में तुम spells cast नहीं कर सकते।"
+local overload = "यह एक Overload spell है। यह तुम्हें अगले 1 minute तक हर 6 seconds में 1 mana देगा (total 10)। एक समय में सिर्फ एक overload active हो सकता है।"
+local timed = "यह spell timed है। "
+local rig = "यह एक Rig spell है। यह सभी normal सीढ़ियों को एक-एक करके "
+local event = "यह एक Event spell है। यह सभी normal सीढ़ियों को "
+local fill = "यह एक Fill spell है। यह हर खाली और uncursed intersection में random direction में सीढ़ियाँ बनाएगा। "
+local mode = "यह एक Drone spell है। यह drone mode को %s में बदल देगा। इस mode में drones randomly %s या %s use करेंगे normal सीढ़ियों पर। Special सीढ़ियाँ restore होंगी। Limits के बाहर drones create या destroy करेंगे।"
+local timedExtra = " Rank %s तक बढ़ाओ ताकि limit 90s हो जाए। यह spell cast करने पर सभी %s जिनका rank कम से कम %s है उनका mana भी refill होगा।" -- do not remove leading space
 
 module.spells.descriptions = {
 
 	--PATRON
-	["summon"] = "This spell allows you to create stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
-	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
-	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
-	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
-	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
-	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
+	["summon"] = "यह spell तुम्हें chosen direction में सीढ़ी बनाने देता है। अगर बीच में कोई crossing सीढ़ी होगी तो वो destroy हो जाएगी।",
+	["restore"] = "यह spell top level वाले orb को तुम्हारे platform पर बुलाता है। DEFENDER rank पर mana cost 2 हो जाती है। SAVIOUR rank पर orb की speed double हो जाती है।",
+	["split"] = "यह spell नीचे की सीढ़ियों को opposite direction में recreate करता है। Recreated सीढ़ियाँ हमेशा normal होंगी, original type matter नहीं करेगा।",
+	["shrinkabove"] = "यह spell ऊपर की सीढ़ियों को छोटा कर देता है ताकि तुम उनके आसपास चल सको।",
+	["link"] = "यह spell platforms के बीच 60 seconds के लिए energy bridge बनाता है। Links नीचे से intangible होते हैं। CREATOR rank पर time 120 seconds हो जाता है।",
+	["portal"] = "यह spell portal बनाता है जो सभी players को एक platform ऊपर teleport करता है। Portal 60 seconds तक रहता है। PROTECTOR rank पर time 120 seconds हो जाता है।",
 
-	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
-	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
-	["patronevent"] = fill ..  "Created stairs will be normal.",
-	["patronaltevent"] = event .. "the Shrink spell.",
+	["summoner"] = timed .. "यह तुम्हें 1 minute तक unlimited stairs create करने देता है। Arrows पर jump करते रहो और stairs बनाते रहो।" .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
+	["patronrigevent"] = rig .. "Patron Rig। Trigger होने पर player को 1 mana मिलता है। अगर mana full है तो trigger नहीं होगा। Trigger के बाद stairs normal हो जाती हैं।",
+	["patronevent"] = fill .. "बनी हुई सीढ़ियाँ normal होंगी।",
+	["patronaltevent"] = event .. "Shrink spell।",
 	["patronmode"] = string.format(mode,"Patron","Patron Rig","Shrink Spell"),
 	["patronrefill"] = overload,
 	["patronunion"] = union,
 
-	--JOKER
-	["flip"] = "This spell flips stairs around, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["flipabove"] = "This spell flips above stairs, so top will become bottom and vice versa. You may also flip such stairs back.",
-	["fake"] = "This spell allows you to create fake stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
-	["invisible"] =  "This spell creates invisible stairs. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
-	["disco"] = "This spell turns stairs into disco mode. Any player (including you) will stop and dance on them for 5 seconds (usually twice). Ranks COMIC and up are immune to disco stairs.",
-	["trap"] = "This spell turns platform into a trap door for 60 seconds. Any player (including you) that will walk on the trap will fall to the platform below. Rank up to JOKESTER to be able to detect platform traps. Rank up to TRICKSTER to be immune to such traps.",
+	--JOKER 
+	["flip"] = "यह spell सीढ़ियों को flip करता है, ऊपर नीचे और नीचे ऊपर हो जाता है। तुम इसे फिर से use करके वापस भी कर सकते हो।",
+	["flipabove"] = "यह spell ऊपर की सीढ़ियों को flip करता है, ऊपर नीचे और नीचे ऊपर हो जाता है। तुम इसे फिर से use करके वापस भी कर सकते हो।",
+	["fake"] = "यह spell chosen direction में fake सीढ़ियाँ बनाता है। अगर बीच में crossing सीढ़ी होगी तो वो destroy हो जाएगी। जो भी player (तुम भी) इन पर चढ़ेगा वो गिर जाएगा, TRICKSTERS, ITS और Ghost Union mode वाले players को छोड़कर।",
+	["invisible"] = "यह spell invisible सीढ़ियाँ बनाता है। यह crossing सीढ़ियाँ destroy नहीं करता, इसलिए सिर्फ empty intersection में ही रख सकते हो। JESTER rank पर सभी invisible सीढ़ियाँ दिखेंगी और उन्हें hide करने का option मिलेगा।",
+	["disco"] = "यह spell सीढ़ियों को disco mode में डाल देता है। जो भी player (तुम भी) इन पर जाएगा वो 5 seconds तक नाचेगा। COMIC rank और ऊपर वाले immune होते हैं।",
+	["trap"] = "यह spell platform को 60 seconds के लिए trap door बना देता है। जो भी player (तुम भी) इस पर चलेगा वो नीचे गिर जाएगा। JOKESTER rank पर traps detect कर सकते हो, TRICKSTER rank पर immune हो जाते हो।",
 
-	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
-	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
-	["jokerevent"] = event .. "the Invisiblity.",
-	["jokeraltevent"] = event .. "the Flip spell.",
+	["flipper"] = timed .. "यह तुम्हें 1 minute तक unlimited flip spells cast करने देता है। हमेशा ऊपर की सीढ़ियाँ flip होंगी, अगर नहीं मिली तो नीचे वाली होंगी।" .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
+	["jokerrigevent"] = rig .. "Joker Rig। Trigger होने पर stairs automatically flip हो जाती हैं।",
+	["jokerevent"] = event .. "Invisibility spell।",
+	["jokeraltevent"] = event .. "Flip spell।",
 	["jokermode"] = string.format(mode,"Joker","Joker Rig","Invisible Spell"),
 	["jokerrefill"] = overload,
 	["jokerunion"] = union,
 
 	--WICKED
-	["destroy"] = "This spell destroys stairs. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
-	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
-	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform. It can also be used on below stairs for trolling purposes.",
-	["wall"] = "This spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Only Wickeds and Ghost Unions can go through such wall and on the link.",
+	["destroy"] = "यह spell सीढ़ियों को destroy करता है। यह किसी भी type की सीढ़ी पर काम करता है। VILE rank पर यह free हो जाता है। VICIOUS rank पर special सीढ़ी destroy करने पर 1 mana मिलता है। ANNIHILATOR rank पर cursed सीढ़ियाँ भी destroy कर सकते हो।",
+	["destroyabove"] = "यह spell ऊपर की सीढ़ियों को destroy करता है। यह किसी भी type की सीढ़ी पर काम करता है। VICIOUS rank पर special सीढ़ी destroy करने पर 1 mana मिलता है। ANNIHILATOR rank पर cursed सीढ़ियाँ भी destroy कर सकते हो।",
+	["bend"] = "यह spell सीढ़ियों को ऊपर bend करता है। इससे तुम ऊपर वाले platform तक पहुँच सकते हो।",
+	["damage"] = "यह spell ऊपर की सीढ़ियों को obby बना देता है, ज्यादातर steps हटा देता है। Use करने से पहले jump cooldown याद रखना। DESTROYER rank पर obby पर भी normal सीढ़ियों की तरह चल सकते हो।",
+	["flatten"] = "यह spell opposite सीढ़ियों को नीचे bend करता है। इससे opposite platform तक जा सकते हो। नीचे वाली सीढ़ियों पर troll करने के लिए भी use कर सकते हो।",
+	["wall"] = "यह spell platform पर energy wall बनाता है और opposite platform तक link देता है 60 seconds के लिए। सिर्फ Wickeds और Ghost Union वाले इस wall के अंदर जा सकते हैं।",
 
-	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
-	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
-	["wickedevent"] = event .. "the Destroy spell. Regeneration will not be triggered.",
-	["wickedaltevent"] = "This is an Event spell. It will destroy all the stairs and curses in the game. No exceptions. Regeneration will be triggered.",
-	["wickedmode"] =  string.format(mode,"Wicked","Wicked Rig","Bend Spell"),
+	["bender"] = timed .. "यह तुम्हें 1 minute तक unlimited bend spells cast करने देता है। अगर possible हुआ तो नीचे और ऊपर दोनों सीढ़ियाँ एक साथ bend होंगी।" .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
+	["wickedrigevent"] = rig .. "Wicked Rig। Trigger होने पर stairs automatically destroy हो जाती हैं। DEVIL rank पर तुम इन पर चल सकते हो बिना trigger किए।",
+	["wickedevent"] = event .. "Destroy spell। Regeneration trigger नहीं होगा।",
+	["wickedaltevent"] = "यह एक Event spell है। यह game की सभी सीढ़ियाँ और curses destroy कर देता है। कोई exception नहीं। Regeneration trigger होगा।",
+	["wickedmode"] = string.format(mode,"Wicked","Wicked Rig","Bend Spell"),
 	["wickedrefill"] = overload,
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "This spell will move stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["rotate"] = "This spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["moveup"] = "This spell will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["movedown"] = "This spell fixes any special stairs. If stairs are already normal, this spell will not execute. Rank up to CAPTAIN to cast this spell for free. Rank up to ADMIRAL to be able to fix Cursed Stairs and Cursed Intersections.",
-	["rig"] = "This spell will move or rotate stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["moverandom"] = "This spell will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "यह spell सीढ़ियों को horizontal direction में move करता है और रास्ते में आने वाली सीढ़ियों को destroy कर देता है। Cast करने के बाद arrows दिखेंगे direction choose करने के लिए। सीढ़ियाँ game area के बाहर नहीं जा सकतीं। CONTROLLER rank पर uncursed सीढ़ियाँ भी move कर सकते हो।",
+	["rotate"] = "यह spell सीढ़ियों को rotate करता है और रास्ते में आने वाली सीढ़ियों को destroy कर देता है। Cast के बाद arrows आएंगे direction choose करने के लिए। सीढ़ियाँ game area के बाहर rotate नहीं होंगी। CONTROLLER rank पर uncursed सीढ़ियाँ move कर सकते हो।",
+	["moveup"] = "यह spell सीढ़ियों को ऊपर move करता है और रास्ते में आने वाली सीढ़ियों को destroy करता है। सीढ़ियाँ top level के ऊपर नहीं जा सकतीं। CONTROLLER rank पर uncursed सीढ़ियाँ move कर सकते हो।",
+	["movedown"] = "यह spell special सीढ़ियों को fix करता है। अगर सीढ़ी पहले से normal है तो spell काम नहीं करेगा। CAPTAIN rank पर यह free हो जाता है। ADMIRAL rank पर cursed सीढ़ियाँ और intersections भी fix कर सकते हो।",
+	["rig"] = "यह spell सीढ़ियों को random direction में move या rotate करता है और रास्ते में आने वाली सीढ़ियों को destroy करता है। OPERATOR rank पर stairs नीचे नहीं जाएँगी। CONTROLLER rank पर uncursed सीढ़ियाँ move कर सकते हो।",
+	["moverandom"] = "यह spell ऊपर की सीढ़ियों को random direction में move या rotate करता है और रास्ते में आने वाली सीढ़ियों को destroy करता है। OPERATOR rank पर stairs नीचे नहीं जाएँगी। CONTROLLER rank पर uncursed सीढ़ियाँ move कर सकते हो।",
 
-	["ascension"] = timed .. "It allows you to cast as many move up spells as you like for one minute."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
-	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to OPERATOR, for any rigs that you trigger to never go down. Rank up to SENTINEL to have an option not to trigger them.",
-	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
-	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["ascension"] = timed .. "यह तुम्हें 1 minute तक unlimited move up spells cast करने देता है।" .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
+	["keeperrigevent"] = rig .. "Keeper Rig। Trigger होने पर stairs random direction में move या rotate होंगी। OPERATOR rank पर तुम्हारे trigger किए rigs कभी नीचे नहीं जाएँगे। SENTINEL rank पर trigger न करने का option मिलता है।",
+	["keeperevent"] = event .. "Random Move spell। Execute करने से पहले soft या forced mode चुन सकते हो। Soft में कुछ destroy नहीं होगा, forced में रास्ते की सभी सीढ़ियाँ destroy होंगी।",
+	["keeperaltevent"] = "यह एक Event spell है। यह game की सभी सीढ़ियाँ restore कर देता है, cursed वाली भी। लेकिन cursed intersections नहीं हटते।",
+	["keepermode"] = string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "This spell will create Phantom Stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
-	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
-	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
-	["horizontal"] = "This spell will teleport you in the chosen direction. You can teleport through any un-cursed stairs in the way.",
-	["random"] = "This spell will teleport you to a random platform on the same level.",
-	["vertical"] = "This spell will teleport you up, to the platform above.",
+	["phantom"] = "यह spell chosen direction में Phantom सीढ़ियाँ बनाता है। अगर बीच में crossing सीढ़ी होगी तो वो destroy हो जाएगी। Phantom सीढ़ियाँ जल्दी fade होकर गायब हो जाती हैं।",
+	["ghost"] = "यह spell ऊपर की सीढ़ियों को ghost बना देता है। तुम इनके अंदर से जा सकते हो लेकिन उन पर चल नहीं सकते जब तक AETHER rank न हो। दुबारा use करके normal कर सकते हो।",
+	["shadow"] = "यह spell सीढ़ियों को ghost बना देता है। तुम इनके अंदर से जा सकते हो लेकिन उन पर चल नहीं सकते जब तक AETHER rank न हो। PHANTOM rank पर यह free हो जाता है। दुबारा use करके normal कर सकते हो।",
+	["horizontal"] = "यह spell तुम्हें chosen direction में teleport करता है। तुम रास्ते की uncursed सीढ़ियों के अंदर से जा सकते हो।",
+	["random"] = "यह spell तुम्हें same level के किसी random platform पर teleport करता है।",
+	["vertical"] = "यह spell तुम्हें ऊपर वाले platform पर teleport करता है।",
 
-	["traveller"] = timed ..  "It allows you to cast as many Horizontal Teleport spells, as you like for one minute."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
-	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to VISION to have an option to walk on Spectre Rigs without triggering them.",
-	["spectreevent"] = event .. "the Ghosted Random Move spell. Before executing you can choose soft ghosted or forced ghosted mode. In soft ghosted mode this spell will move or rotate normal stairs in random direction, without destroying anything in the process. In forced ghost mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
-	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to AETHER to walk on ghostified stairs. Ghost Union can also be used to walk on ghostified stairs.",
-	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Soft Ghosted Random Move Spell"),
+	["traveller"] = timed .. "यह तुम्हें 1 minute तक unlimited horizontal teleport spells cast करने देता है।" .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
+	["spectrerigevent"] = rig .. "Spectre Rig। Trigger होने पर 50% chance है कि stairs ghost हो जाएँ। VISION rank पर तुम इन पर चल सकते हो बिना trigger किए।",
+	["spectreevent"] = event .. "Phantom Shuffle।",
+	["spectrealtevent"] = event .. "Æther Realm।",
+	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Ghost Spell"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "This spell will teleport you in the chosen direction. You cannot teleport through blocking stairs. Rank up to CRACKER to speed up this spell by 50%.",
-	["blink"] = "This spell will teleport you around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Rank up to EXPLOITER to speed up this spell by 50%.",
-	["swap"] = "This spell will teleport you to the spot where your ghost is. Unlike other basic spells, Swap can be cast anywhere.",
-	["slide"] = "This spell will turn stairs into an Escalator. You can choose either Up or Down Escalator. Rank up to SCRIPTER to have an option to be immune to Escalators.",
-	["slideup"] = "This spell will hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
-	["glitch"] = "This spell will glitch stairs, teleporting you and themselves to a different spot on the same level. Rank up to ZERO, to teleport stairs next to the orb, if you already are on the top level.",
+	["dash"] = "यह spell तुम्हें तेजी से आगे dash करने देता है, जिससे तुम जल्दी distance cover कर सकते हो और obstacles avoid कर सकते हो।",
+	["blink"] = "यह spell तुम्हें instantly छोटी दूरी तक teleport करता है। यह quick movement और tight situations से निकलने के लिए useful है।",
+	["swap"] = "यह spell तुम्हें किसी दूसरे player के साथ position swap करने देता है। सही timing पर use करके opponents को confuse या नीचे गिरा सकते हो।",
+	["slide"] = "यह spell stairs को escalator में बदल देता है, जो players को automatically ऊपर ले जाती हैं। इससे fast climbing possible होता है।",
+	["slideup"] = "यह spell stairs के अंदर hack करके ऊपर जाने का रास्ता बनाता है, जिससे hidden movement मिलता है और तुम दूसरों को surprise कर सकते हो।",
+	["glitch"] = "यह spell stairs को glitch कर देता है जिससे उनका behavior unstable हो जाता है और players के लिए climb करना मुश्किल हो सकता है।",
 
-	["hack"] = timed .. "It allows you to cast as many Upwards Escalators as you like for one minute. If there are blocking un-cursed stairs above, they will be demolished." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
-	["hackerrigevent"] = rig .. "the Hacker Rig. Stairs, once triggered it will teleport player and stairs to a different spot on the same level. Only one player will be teleported. Rank up to REAPER to have an option to walk on Hacker Rigs without triggering them.",
-	["hackerevent"] = event .. "the Random Escalator spell.",
-	["hackeraltevent"] = event ..  "the Upward Escalator spell.",
-	["hackermode"] =  string.format(mode,"Hacker","Hacker Rig","Random Escalator spell"),
+	["hack"] = timed .. "यह तुम्हें 1 minute के लिए speed boost देता है जिससे तुम्हारी movement काफी fast हो जाती है और तुम जल्दी climb कर सकते हो।" .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
+	["hackerrigevent"] = rig .. "Hacker Rig। Trigger होने पर stairs escalator की तरह behave करती हैं और players को ऊपर ले जाती हैं।",
+	["hackerevent"] = event .. "Escalation effect, जिससे stairs movement-based हो जाती हैं और gameplay fast हो जाता है।",
+	["hackeraltevent"] = event .. "Breach effect, जिससे movement mechanics ज्यादा chaotic और unpredictable हो जाते हैं।",
+	["hackermode"] = string.format(mode,"Hacker","Hacker Rig","Escalator Spell"),
 	["hackerrefill"] = overload,
-	["hackerunion"] =  union,
+	["hackerunion"] = union,
+
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
-	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
-	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
-	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
+	["steal"] = "यह spell stairs को चुरा लेता है और उन्हें तुम्हारे storage में रखता है ताकि तुम बाद में उन्हें use कर सको।",
+	["stealabove"] = "यह spell ऊपर की stairs को चुरा लेता है, जिससे ऊपर का रास्ता हट जाता है और तुम उन्हें store कर सकते हो।",
+	["place"] = "यह spell तुम्हें stored stairs को chosen direction में place करने देता है। अगर रास्ते में crossing stairs होंगी तो वो destroy हो जाएँगी।",
+	["uppass"] = "यह spell stolen stairs से spiral staircase बनाता है। इसे outer platforms पर cast किया जा सकता है और यह 60 seconds तक रहता है। BANDIT rank पर duration 120 seconds हो जाता है।",
+	["sidepass"] = "यह spell stolen stairs से side में bypass बनाता है जिससे तुम obstacles avoid कर सकते हो। यह temporary path create करता है।",
+	["drop"] = "यह spell stored stairs को गिरा देता है, जिससे नीचे रास्ता बन सकता है या दूसरे players गिर सकते हैं।",
 
-	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast through crossing stairs, as stairs will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
-	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
-	["thiefevent"] = event .. "the Flatten Stairs spell.",
-	["thiefaltevent"] = "This is an Event spell. It will create bypass in each inward north and south intersection. If the intersection is cursed, bypass will not be created.",
-	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Steal or Place spell"),
+	["heist"] = timed .. "यह तुम्हें 1 minute तक unlimited steal spells cast करने देता है, जिससे तुम लगातार stairs चुरा सकते हो।" .. string.format(timedExtra,RankData.THIEF[7].name,"Thiefs",RankData.THIEF[3].name),
+	["thiefrigevent"] = rig .. "Thief Rig। Trigger होने पर stairs automatically चुरा ली जाती हैं और remove हो जाती हैं।",
+	["thiefevent"] = event .. "Flat Land effect, जिससे stairs हटकर flat layout बन जाता है।",
+	["thiefaltevent"] = event .. "Mega Bypass effect, जिससे बड़े bypass paths बनते हैं।",
+	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Steal Spell"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
 
