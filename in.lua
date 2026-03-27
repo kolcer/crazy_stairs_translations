@@ -813,36 +813,36 @@ module.spells.descriptions = {
 
 
 	--CHAMELEON
-	["chamdown"] = "This used to be a Keeper spell, before it got rejected. It will move any normal or rigged stairs down. If you have ranked Keeper to Captain, you may also move any un-cursed stairs.",
-	["chamdraw"] = "This used to be a Heretic spell, before it got rejected. It will turn stairs into drawbridge, making descent impossible unless other player activates bridge from below.",
-	["oneways"] = "This used to be a Reaver spell, before it got rejected. This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["ditch"] = "This used to be a thief spell, before it got rejected. It will turn stairs into a crossed staircase.",
-	["chamdrawabove"] = "This used to be a Heretic spell, before it got rejected. It will turn above stairs into drawbridge, allowing you to pass. Ascend is impossible unless other player activates bridge from above. Old Unbeliever rank is no longer active and auto draw from below is no longer possible.",
-	["warp"] = "This used to be a wicked spell, before it got rejected. It will warp stairs back to the platform.",
+["chamdown"] = "यह पहले Keeper spell था, reject होने से पहले। यह normal या rigged stairs को नीचे की तरफ ले जाता है। अगर तुमने Keeper को Captain rank तक upgrade किया है, तो तुम uncursed stairs को भी नीचे ले जा सकते हो।",
+["chamdraw"] = "यह पहले Heretic spell था, reject होने से पहले। यह stairs को drawbridge में बदल देता है, जिससे नीचे उतरना तब तक possible नहीं होता जब तक कोई दूसरा player नीचे से bridge activate न करे।",
+["oneways"] = "यह पहले Reaver spell था, reject होने से पहले। यह spell नीचे वाले stairs को one-way रास्ता बना देता है, और सही दिशा में चलने पर player अपने ghost के साथ merge हो जाता है। तुम choose कर सकते हो कि कौनसी दिशा block करनी है। Rank up to Illusion करने पर तुम one-way stairs के effect से immune हो जाते हो। Ghost के साथ merge होने पर तुम floor mirrors use कर सकते हो लेकिन तुम्हारा ghost तुम्हारे लिए Mana collect नहीं करेगा।",
+["ditch"] = "यह पहले Thief spell था, reject होने से पहले। यह stairs को crossed staircase में बदल देता है।",
+["chamdrawabove"] = "यह पहले Heretic spell था, reject होने से पहले। यह ऊपर वाले stairs को drawbridge में बदल देता है जिससे तुम pass कर सकते हो। ऊपर जाना तब तक possible नहीं होता जब तक कोई player ऊपर से bridge activate न करे। Old Unbeliever rank अब active नहीं है और नीचे से auto draw अब possible नहीं है।",
+["warp"] = "यह पहले Wicked spell था, reject होने से पहले। यह stairs को वापस platform पर warp कर देता है।",
 
-	["chameleonrigevent"] = rig .. "the Chameleon Rig. Stairs once triggered, will execute random effect from all other rigs.",
-	["chameleonmode"] =  string.format(mode,"Chameleon","Chameleon Rig","random spell from all other modes"),
-	["chameleonrefill"] = overload,
-	["chameleonunion"] = union,
+["chameleonrigevent"] = rig .. "the Chameleon Rig। Stairs trigger होने पर बाकी सभी rigs में से कोई एक random effect apply होता है।",
+["chameleonmode"] = string.format(mode,"Chameleon","Chameleon Rig","बाकी सभी modes में से random spell"),
+["chameleonrefill"] = overload,
+["chameleonunion"] = union,
 
-	--NEW
-	["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
+--NEW
+["share"] = "इस spell से तुम अपना Mana पास के player के साथ share कर सकते हो। एक बार में सिर्फ एक Mana दे सकते हो और इसके लिए तुम्हारे पास कम से कम दो Mana होना जरूरी है।",
 
-	--ARCHITECT
-	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
-	["archarchon"] = "This spell when used on platform's arrows, will create a gate between platforms. When used on stairs, it will gate them in the direction of Your choice.",
-	["archthief"] = "This spell when used on platform's arrows, will place normal stairs. When used on normal or rigged stairs it will steal them.",
-	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
-	["archhacker"] = "This spell when used on platform's arrows, will hack-in any crossing stairs. When used on normal or rigged stairs, it will turn them into an Escalator of your choice.",
-	["archkeeper"] = "This spell when used on platform's arrows, will restore adjacent stairs. When used on normal or rigged stairs, it will move them in the direction of Your choice.",
-	["archsplicer"] = "This spell when used on platform's arrows, will split crossing stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
-	["archwicked"] = "This spell when used on platform's arrows, will create a wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
-	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
-	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
-	["archdrifter"] = "This spell when used on platform, will turn it into an elevator. When used on normal or rigged stairs, it will drift them into a random intersection.",
-	["archspectre"] = "This spell when used on platform's arrows, will create Phantom stairs. When used on normal, ghosted or rigged stairs, it will Ghost or un-Ghost them.",
-	["archreaver"] = "This spell when used on platform's arrows, will create Mirrored stairs. When used on normal or rigged stairs, it turn them into One-Way stairs of Your choice.",
-	["archheretic"] = "This spell when used on platform's arrows, will curse an empty intersection without flickering anyone. When used on normal, cursed or rigged stairs, it curse or un-curse them.",
+--ARCHITECT
+["archpatron"] = "यह spell platform के arrows पर use करने पर normal stairs बनाता है। Normal या rigged stairs पर use करने पर उन्हें shrink कर देता है।",
+["archarchon"] = "यह spell platform के arrows पर use करने पर platforms के बीच gate बनाता है। Stairs पर use करने पर उन्हें तुम्हारी चुनी हुई दिशा में gate कर देता है।",
+["archthief"] = "यह spell platform के arrows पर use करने पर normal stairs place करता है। Normal या rigged stairs पर use करने पर उन्हें steal कर लेता है।",
+["archnecro"] = "यह spell platform के arrows पर use करने पर Dual stairs बनाता है। Normal या rigged stairs पर use करने पर उन्हें Undead Stairs में बदल देता है।",
+["archhacker"] = "यह spell platform के arrows पर use करने पर crossing stairs को hack-in करता है। Normal या rigged stairs पर use करने पर उन्हें तुम्हारी पसंद का Escalator बना देता है।",
+["archkeeper"] = "यह spell platform के arrows पर use करने पर पास वाले stairs को restore करता है। Normal या rigged stairs पर use करने पर उन्हें तुम्हारी चुनी हुई दिशा में move करता है।",
+["archsplicer"] = "यह spell platform के arrows पर use करने पर crossing stairs को split करता है। Normal या rigged stairs पर use करने पर उन्हें तुम्हारी चुनी हुई दिशा में twist करता है।",
+["archwicked"] = "यह spell platform के arrows पर use करने पर बिना link के wicked wall बनाता है। किसी भी uncursed stairs पर use करने पर उन्हें destroy कर देता है।",
+["archgremlin"] = "यह spell platform पर use करने पर platform को तुम्हारी चुनी हुई दिशा में घुमाता है। Normal या rigged stairs पर use करने पर उन्हें भी उसी दिशा में घुमाता है।",
+["archjoker"] = "यह spell platform के arrows पर use करने पर fake stairs बनाता है। Normal, flipped या rigged stairs पर use करने पर उन्हें flip या un-flip करता है।",
+["archdrifter"] = "यह spell platform पर use करने पर उसे elevator बना देता है। Normal या rigged stairs पर use करने पर उन्हें random intersection में drift करता है।",
+["archspectre"] = "यह spell platform के arrows पर use करने पर Phantom stairs बनाता है। Normal, ghosted या rigged stairs पर use करने पर उन्हें ghost या un-ghost करता है।",
+["archreaver"] = "यह spell platform के arrows पर use करने पर Mirrored stairs बनाता है। Normal या rigged stairs पर use करने पर उन्हें तुम्हारी पसंद के One-Way stairs में बदल देता है।",
+["archheretic"] = "यह spell platform के arrows पर use करने पर empty intersection को बिना flicker के curse करता है। Normal, cursed या rigged stairs पर use करने पर उन्हें curse या un-curse करता है।",
 
 }
 local CommonPerksInsertALignment = {
