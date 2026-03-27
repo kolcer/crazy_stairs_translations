@@ -700,20 +700,21 @@ module.spells.descriptions = {
 	["thiefunion"] = union,
 
 	--ARCHON
-	["splitside"] = "This spell will connect below stairs to another in a horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to ILLUMINATI to be able to walk through horizontal portals.",
-	["splitrotate"] = "This spell will connect below stairs to another in a rotated horizontal direction of your choosing with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to ILLUMINATI to be able to walk through horizontal portals.",
-	["splitup"] = "This spell will connect below stairs to stairs above with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to SAGE to ignore downward connections.",
-	["cancelsplit"] = "This spell will discard any Gates on stairs. Rank up to DISCIPLE to be able to remove platform Gates. Rank up to SCHOLAR to cast this spell for free.",
-	["splitrandom"] = "This spell will connect below stairs to any valid intersection on the same floor with a Gate. If there are no stairs, they will be created. Rank up to PRODIGY to override an existing connection. Rank up to ILLUMINATI to be able to walk through horizontal portals.",
-	["splitforward"] = "This spell will connect two platforms in a horizontal direction of your choosing with a Gate. Rank up to DISCIPLE to be able to remove platform splits. Occupying stairs won't block the connection. Rank up to ILLUMINATI to be able to walk through such portals.",
+["splitup"] = "यह spell एक Up Gate बनाता है जो तुम्हें ऊपर वाले platform पे teleport करता है। Gate use करते ही instant movement मिलता है और climb fast हो जाता है।",
+["splitrotate"] = "यह spell rotated gate बनाता है जो side या angled direction में teleport करता है। Smart positioning के लिए useful है।",
+["splitside"] = "यह spell straight gate बनाता है जो same level पर adjacent platform पे ले जाता है। Horizontal movement के लिए best है।",
+["splitrandom"] = "यह spell random gate बनाता है जो किसी भी direction में teleport कर सकता है। Risky है लेकिन clutch भी हो सकता है।",
+["cancelsplit"] = "यह spell existing gates को destroy करता है। Use करो control लेने के लिए या दूसरों के paths block करने के लिए।",
+["splitforward"] = "यह spell platform gate बनाता है जो आगे वाले platform पे direct ले जाता है। Fast progress के लिए useful है।",
 
-	["splitter"] = timed .. "It allows you to create as many platform splits as you like for one minute." .. string.format(timedExtra,RankData.ARCHON[7].name,"Archons",RankData.ARCHON[3].name), 
-	["archonrigevent"] = rig .. "the Archon Rig. Stairs, once triggered, will teleport the player to the direction they were walking in, crossing any blocking un-cursed stairs. After triggering, stairs will become normal again.",
-	["archonevent"] = event .. "the Random Gate spell.",
-	["archonaltevent"] = event .. "the Upward Gate spell.",
-	["archonmode"] = string.format(mode,"Archon","Archon Rig","Random Gate spell"),
-	["archonrefill"] = overload,
-	["archonunion"] =  union,
+
+["splitter"] = timed .. "यह तुम्हें एक minute के लिए unlimited gates create करने देता है। Rapid movement और control के लिए best है।" .. string.format(timedExtra,RankData.ARCHON[7].name,"Archons",RankData.ARCHON[3].name),
+["archonrigevent"] = rig .. "the Archon Rig। Stairs trigger होने पर random gates spawn हो सकते हैं जो players को teleport करते हैं।",
+["archonevent"] = event .. "the StairGåte-1 spell। सारे normal stairs gate-based movement में convert हो जाते हैं।",
+["archonaltevent"] = event .. "the Division spell। यह event multiple gates create करता है जो paths को split और confuse करते हैं।",
+["archonmode"] = string.format(mode,"Archon","Archon Rig","Gate Spell"),
+["archonrefill"] = overload,
+["archonunion"] = union,
 
 	--DRIFTER
 	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing.  You cannot surf through blocking stairs.",
