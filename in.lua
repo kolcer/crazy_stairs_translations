@@ -1330,19 +1330,21 @@ module.gui.gameover.credits = {
 
 	["common"] = {
 		"CRAZY STAIRS",
-		"Game conceptualized, designed and scripted by Sleazel",
-		"Design में मदद - cakegirlserina",
-		"Models by ZielonyLeszek",
-		"Skyboxes by @wwwtyro's generator",
-		"Datastore module, ProfileStore, by loleris",
-		"Thanks for playing!",	
+		"गेम की अवधारणा, डिज़ाइन और स्क्रिप्ट: Sleazel",
+		"डिज़ाइन में मदद – cakegirlserina",
+		"मॉडल्स: ZielonyLeszek",
+		"स्काईबॉक्स: @wwwtyro का जनरेटर",
+		"Datastore मॉड्यूल, ProfileStore: loleris",
+		"खेलने के लिए धन्यवाद!",
 	},
-	["climb"] = "%s Climb Music - % by %",
-	["endgame"] = "%s Endgame Music - % by %",
-	["disco"] = "Disco stairs music - % by %",
-	["elevator"] = "Elevator music - % by %", --drifter platforms
-	["testers"] = "TESTERS:",
-	["thanks"] = "SPECIAL THANKS:",
+
+	["climb"] = "%s क्लाइम्ब म्यूज़िक - % by %",
+	["endgame"] = "%s एंडगेम म्यूज़िक - % by %",
+	["disco"] = "डिस्को स्टेयर्स म्यूज़िक - % by %",
+	["elevator"] = "एलेवेटर म्यूज़िक - % by %",
+	--drifter platforms
+	["testers"] = "टेस्टर्स:",
+	["thanks"] = "विशेष धन्यवाद:",
 
 }
 
@@ -1408,6 +1410,11 @@ module.static = {
 	["vr_9"] = "Grip button से magic orb पकड़ो, laser pointer target करने में help करेगा।",
 	["vr_10"] = "Trigger button से spell execute करो। हर alignment के 2 spells होते हैं (platform + stairs)।",
 	["vr_11"] = "Trigger hold करके alignment change कर सकते हो।",
+
+["home_1"] = "MUGGLE'S HOME",
+["home_2"] = "हमारा मंत्र:\nचलो\nकूदो\nऔर\nगिरो",
+["home_3"] = "फायदे:\nउच्च रैंक पर चलने की गति और कूदने की शक्ति बढ़ती है\nशेखी बघारने का अधिकार\nनुकसान:\nकोई स्पेल नहीं\nआसानी से फँस जाते हैं",
+["home_4"] = "'अल्फा स्टेज में हमारे पास ये फैंसी स्पेल्स नहीं थे!'\nहमारे संस्थापक का कथन",
 
 	["oasis_1"] = "CHAMELEON'S OASIS",
 ["oasis_2"] = "हमारा मंत्र:\nकॉपी\nनकल करें\nऔर\nचौंकाएँ",
