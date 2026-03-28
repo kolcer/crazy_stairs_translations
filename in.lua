@@ -78,8 +78,7 @@ module.gui.serversettings = {
 ["Regeneration"] = "Wicked's Purge के बाद सीढ़ियाँ अपने आप बनेंगी (इन्फिनिट मोड में काम नहीं करेगा)", 
 -- Automatically rebuilds stairs after a purge event
 
-["EvenLevels"] = "केवल सम (Even) लेवल्स की अनुमति", 
--- Restricts gameplay to even-numbered levels only
+["EvenLevels"] = "सम प्रतिबंधित हैं", 
 
 ["OrbMoves"] = "एंडगेम ऑर्ब अपनी जगह बदलता है", 
 -- Orb moves instead of staying fixed at the top
@@ -132,19 +131,19 @@ module.gui.shop = {
 	["chameleon"] = "Chameleon चढ़ाई के दौरान alignment बदल सकता है।",
 	-- Can switch alignment mid-climb
 
-	["spectre"] = "Spectre एक teleport आधारित alignment है, जो solo खेलने के लिए सबसे अच्छा है।",
+	["spectre"] = "Spectre एक टेलीपोर्ट आधारित alignment है, जो एकल  खेलने के लिए सबसे अच्छा है।",
 	-- Teleport-focused class for solo gameplay
 
 	["mana"] = "अपनी Mana स्टोरेज क्षमता को 10 पॉइंट से बढ़ाएँ।",
 	-- Increases mana capacity
 
-	["3tokens"] = "एक spell अनलॉक करें या 3 ultimate spells कास्ट करें।",
+	["3tokens"] = "एक स्पेल अनलॉक करें या 3 अल्टीमेट स्पेल कास्ट करें।",
 	-- Small token bundle usage
 
-	["30tokens"] = "दस spells अनलॉक करें या 30 ultimate spells कास्ट करें।",
+	["30tokens"] = "दस स्पेल अनलॉक करें या 30 अल्टीमेट spells कास्ट करें।",
 	-- Medium token bundle usage
 
-	["300tokens"] = "सभी spells अनलॉक करने के लिए पर्याप्त, 93 tokens बचेंगे।",
+	["300tokens"] = "सभी स्पेल अनलॉक करने के लिए पर्याप्त, 93 टोकन बचेंगे।",
 	-- Large token bundle (full unlock)
 
 	["3TOKENS"] = "3 मलटी टोकेन्स R$%d)",
@@ -159,7 +158,7 @@ module.gui.shop = {
 	["SPECTRE"] = "Spectre गेम पास (R$%d)",
 	-- Gamepass purchase
 
-	["MANA"] = "20 Mana Storage गेम पास (R$%d)",
+	["MANA"] = "20 Mana  गेम पास (R$%d)",
 	-- Gamepass purchase
 
 	["CHAMELEON"] = "Chameleon गेम पास (R$%d)",
