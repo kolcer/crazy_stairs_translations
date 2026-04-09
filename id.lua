@@ -720,8 +720,8 @@ module.spells.descriptions = {
 
 }
 local CommonPerksInsertALignment = {
-	[1] = "This is Your starter %s rank.",
-	[2] = "You will get bonus Mana when drones are in %s mode.",
+	[1] = "Inilah peringkat %s pemulamu.",
+	[2] = "Kamu akan mendapatkan mana bonus ketika dron berada dalam mode %s.",
 }
 local CommonPerksInsertTimedSpell = {
 	[3] = "If someone casts a %s spell, your Mana will be refilled.",
@@ -736,17 +736,17 @@ module.gui.ranks = {
 
 	--none
 
-	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "To cast spells, you MUST pick a class!",
+	["none_1"] = "Kamu belum memilih sebuah kelas!",
+	["none_2"] = "To cast spells, kamu HARUS memilih kelas apa saja!",
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
 	["possessed_2"] = "Find Mana or Patron Rig to break free.",
 	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
 
-	["hypnotised_1"] = "You have been Hypnotised!",
-	["hypnotised_2"] = "Find Mana or Patron Rig to break free.",
-	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+	["hypnotised_1"] = "Kamu telah dihipnotis!",
+	["hypnotised_2"] = "Carilah mana atau rig Patron untuk kabur!",
+	["hypnotised_3"] = "Sebagai Hypnotised, kontrolmu terbalik!!",
 
 	["architect_1"] = "Kamu sekarang menjadi Architect!",
 	["architect_2"] = "Architect cannot acquire any ranks.",
@@ -831,7 +831,7 @@ module.gui.ranks = {
 		[5] = "You are now immune to being possessed.",
 		[6] = "You can now cast the Flicker spell on a cursed intersection.",
 		[8] = "Your Create Cursed Stairs and Malediction spells can now destroy blocking cursed stairs.",
-		[9] = "You will get 1 extra Mana everytime someone is possessed.",
+		[9] = "Kamu akan dapat mana bonus setiap pendaki             You will get 1 extra Mana everytime someone is possessed.",
 	},
 	["SPLICER"] = {
 		[4] = "Kamu bisa meluruskan tangga terputus dari sebuah platform.",
@@ -1009,8 +1009,8 @@ module.gui.gameover.messages = {
 	},
 	["SPECTRE"] = {
 		"HILANG, SEMBUNYI dan TELEPORTASI",
-		"Of course teleporting is safe",
-		"You can't catch me",
+		"Teleportasi itu aman dong.", -- reused from old ID translation
+		"♪ Kau tak bisa menangkapku sekarang ♪", -- translated by Batcansqueak
 		"The beauty of ghosted stairs is unparalleled",
 		"People falling? Why should I care?",
 		"You can solve all your problems with teleporting",
@@ -1023,7 +1023,7 @@ module.gui.gameover.messages = {
 		"We did not have those fancy spells in alpha stage",
 		"I swear those Drones are rigged",
 		"There is always a path",
-		"Stairjumping is a talent",
+		"Peny‑stairjump‑an tuh bakat.", -- translated by Batcansqueak
 		"My secret? Stop and think",
 		"I don't believe in magic",
 		"Sometimes you need to wait for a drone - Like in real life",
@@ -1111,7 +1111,7 @@ module.gui.gameover.messages = {
 		"Jangan pernah jalan lurus untuk terlalu lama!",
 		"Campurkan hidupmu!",
 		"Kekacauan orang lain adalah urusan Splicer.",
-		"Aku *bisa banget* nyambungin tangga itu.",
+		"Aku <b>bisa banget</b> nyambungin tangga itu.",
 		"Terkoneksi sama orang? Nggak lah, mending terkoneksi sama tangga!",
 		"Pikiranku emang udah bengkok dari sananya.",
 		"Pisah atau Sambung—itu dia pertanyaannya.",
@@ -1288,7 +1288,7 @@ module.static = {
 	["nexus_1"] = "PÊRHUBUNGAN HERETIC",
 	["nexus_2"] = "MOTO KAMI:\nKAMOE\nTAK\nDAPAT\nLÉWAT",
 	["nexus_3"] = "PRO:\nBest in pro tower\nCannot be stopped\nKONTRA:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "“Mêlarang ilmu hitam itu sêpêrti mêlarang kêsêruän.”\nkata pendiri kami",
+	["nexus_4"] = "“Mêlarang ilmoe hitam itoe sêpêrti mêlarang kêsêroeän.”\nkata pêndiri kami",
 
 	["guild_1"] = "PERSEMBUNYIAN THIEF",
 	["guild_2"] = "MOTO KAMI:\nCURI\nGUNAKAN\nDAN\g",
@@ -1416,7 +1416,7 @@ module.static = {
 	["thief_lead"] = "THIEF PALING TERSEMBUNYI",
 	["thief_ranks"] = "PERINGKAT THIEF",
 
-	["heretic_lead"] = "HERETIC TÊRKÊJAM",
+	["heretic_lead"] = "HERETIC TÊRKÊDJAM",
 	["heretic_ranks"] = "PÊRINGKAT HERETIC",
 
 	["necromancer_lead"] = "NECROMANCER PALING TERBANGKIT",
@@ -1436,7 +1436,7 @@ module.static = {
 
 	["dailies"] = "REKOR HARI INI",
 	["most_climbs"] = "PENDAKIAN TERBANYAK",
-	["most_wins"] = "KEMENANGAN BALAPN TERBANYAK", 
+	["most_wins"] = "KEMENANGAN BALAPAN TERBANYAK", 
 
 }
 
