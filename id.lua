@@ -72,7 +72,7 @@ module.gui.serversettings = {
 }
 
 
-module.gui.shop = {
+module.gui.shop = { --completed
 
 	--NEW
 	["architect"] = "Pas Architect memperbolehkan kamu untuk menjadi Architect tanpa perangkat jemala VR.",
@@ -101,10 +101,10 @@ module.gui.shop = {
 }
 
 
-module.gui.nospellsbar = {
+module.gui.nospellsbar = { --completed
 
-	["nocasual"] = "HANYA PEMBALAP YANG BISA MELAKUKAN MANTERA",
-	["possessed"] = "TERKUTUK! (cari mana kanggo kabur)",
+	["nocasual"] = "HANYA PEMBALAP YANG BISA MELAKUKAN MANTRA",
+	["possessed"] = "TERKUTUK! (cari mana untuk kabur)",
 
 }
 
@@ -160,7 +160,7 @@ module.gui.stats = {
 }
 
 
-module.gui.questions = {
+module.gui.questions = { --completed
 	["cancel"] = "Apakah kamu mau membakalkan mantra terbatas ini? Token tidak akan dikembalikan.",
 	["tutorial"]= "Apakah kamu ingin belajar di latihan?",
 	["skip"] = "Apakah kamu ingin melewati latihan?",
@@ -169,7 +169,7 @@ module.gui.questions = {
 --END NEW
 
 
-module.gui.codes = {
+module.gui.codes = { --completed
 
 	["title"] = "MASUKKAN KODENYA",
 	["body"] = "Masukkan kodemu di sini:",
@@ -178,7 +178,7 @@ module.gui.codes = {
 
 }
 
-module.gui.jukebox = {
+module.gui.jukebox = { --completed
 
 	["title"] = "KOTAK JUKE",
 
@@ -192,7 +192,7 @@ module.gui.jukebox = {
 	--END NEW
 }
 
-module.gui.results = {
+module.gui.results = { --completed
 
 	["title"] = "🏁 HASIL BALAP 🏁",
 
@@ -217,7 +217,7 @@ module.gui.results = {
 
 }
 
-module.gui.menu = {
+module.gui.menu = { --completed
 
 
 	["Codes"] = "Entri Kode",
@@ -247,7 +247,7 @@ local CommonSpellNames = {
 
 module.spells.names = {
 
-	--PATRON
+	--PATRON --completed
 	["summon"] = "Bangun Tangga",
 	["restore"] = "Panggil Bola", 
 	["split"] = "Bangun Ulang Tangga Terbalik",
@@ -259,7 +259,7 @@ module.spells.names = {
 	["patronevent"] = "Berkat Tangga",
 	["patronaltevent"] = "Penyiutan", -- < Needs another better name for 'Shrinkage/Ciutkan Semua Tangga'
 
-	--JOKER 
+	--JOKER --completed
 	["flip"] = "Balik Tangga",
 	["flipabove"] = "Balik Tangga di Atas",
 	["fake"] = "Bangun Tangga Palsu",
@@ -271,7 +271,7 @@ module.spells.names = {
 	["jokerevent"] = "Sihir Persembunyian Gila", -- < Needs another better name for 'The Cloak /Selubung Semua Tangga'
 	["jokeraltevent"] = "Kesalahan Pisang (Balik Semua Tangga)", -- < Needs another better name for 'Flip Em All/Balik Semua Tangga'
 
-	--WICKED
+	--WICKED --completed
 	["destroy"] = "Hancurkan Tangga",
 	["destroyabove"] = "Hancurkan Tangga di Atas",
 	["bend"] = "Bengkok Tangga ke Atas",
@@ -283,7 +283,7 @@ module.spells.names = {
 	["wickedevent"] = "Gempa Menara",
 	["wickedaltevent"] = "Pembersihan",
 
-	--KEEPER
+	--KEEPER --completed
 	["move"] = "Pindah Tangga",
 	["rotate"] = "Putar Tangga",
 	["moveup"] = "Pindah Tangga ke Atas",
@@ -295,7 +295,7 @@ module.spells.names = {
 	["keeperevent"] = "Rombak Kembali", -- < Needs another better name for 'Reshuffle/Rombak Kembali'
 	["keeperaltevent"] = "Pemulihan",
 
-	--SPECTRE
+	--SPECTRE --completed
 	["phantom"] = "Buat Tangga Berhantu",
 	["ghost"] = "Hantui Tangga di Atas",
 	["shadow"] = "Hantui Tangga",
@@ -307,7 +307,7 @@ module.spells.names = {
 	["spectreevent"] = "Imaginasi Tangga",
 	["spectrealtevent"] = "Alam Æther",
 
-	--HACKER
+	--HACKER --completed
 	["dash"] = "Flyhack",
 	["blink"] = "Noclip menembus Tangga di Atas",
 	["swap"] = "Teleportasi ke Hantumu",
@@ -319,7 +319,7 @@ module.spells.names = {
 	["hackerevent"] = "Menara Mal",
 	["hackeraltevent"] = "Eskalator Arus",
 
-	--THIEF
+	--THIEF --completed
 	["steal"] = "Curi Tangga",
 	["stealabove"] = "Curi Tangga di Atas",
 	["place"] = "Kembali Tangga",
@@ -331,7 +331,7 @@ module.spells.names = {
 	["thiefevent"] = "Dunia Datar",
 	["thiefaltevent"] = "Mega-Pintasan",
 
-	--ARCHON
+	--ARCHON --completed
 	["splitup"] = "Buka Portal ke Atas",
 	["splitrotate"] = "Buka Portal ke Sebelah",
 	["splitside"] = "Buka Portal ke Samping",
@@ -343,7 +343,7 @@ module.spells.names = {
 	["archonevent"] = "Labirin Portal",
 	["archonaltevent"] = "Naik Turun",
 
-	--DRIFTER
+	--DRIFTER --completed
 	["indrift"] = "Selancar",
 	["outdrift"] = "Hanyutkan Tangga secara Acak",
 	["updrift"] = "Platform Lift",
@@ -355,7 +355,7 @@ module.spells.names = {
 	["drifterevent"] = "Badai Tangga",
 	["drifteraltevent"] = "Pengangkatan", -- < Needs another better name for 'Liftage/Angkat Semua Tangga'
 
-	--HERETIC
+	--HERETIC --completed
 	["createcursed"] = "Bangoen Tangga Têrkoetoek", --Bangun Tangga Terkutuk
 	["curse"] = "Koetoek Tangga", --Kutuk Tangga
 	["curseabove"] = "Koetoek Tangga di Atas", --Kutuk Tangga di Atas
@@ -367,7 +367,7 @@ module.spells.names = {
 	["hereticevent"] = "Skisma",
 	["hereticaltevent"] = "Koetoek Mênara", -- < Needs another better name for 'Vengeance/Kutuk Semua Tangga' --Kutuk Menara
 
-	--SPLICER
+	--SPLICER --completed
 	["twistup"] = "Sambung Tangga ke Atas",
 	["twistside"] = "Sambung Tangga ke Sejajar",
 	["twistrotate"] = "Sambung Tangga ke Sebelah",
@@ -379,7 +379,7 @@ module.spells.names = {
 	["splicerevent"] = "Koneksi Tangga",
 	["spliceraltevent"] = "Pisakhan Semua Tangga", -- PLZ NEED ANOTHER BETTER NAME FOR 'Bisect' (Splice All Normal Stairs Forward)
 
-	--necro
+	--necro --completed
 	["createdual"] = "Buat Tangga Kembar",
 	["copyplatform"] = "Salin Platform Hantumu",
 	["soulbridge"] = "Buat Penyambung Jiwa",
@@ -391,7 +391,7 @@ module.spells.names = {
 	["necromancerevent"] = "Kebangkitan Tangga",
 	["necromanceraltevent"] = "Panen Tangga",
 
-	--reaver
+	--reaver --completed
 	["createmirrored"] = "Bangun Tangga Cermin",
 	["bigmirror"] = "Platform Cermin Besar",
 	["smallmirror"] = "Platform Cermin Kecil",
@@ -404,7 +404,7 @@ module.spells.names = {
 	["reaveraltevent"] = "Naik Terpaksa",
 
 
-	--gremlin
+	--gremlin --completed
 	["tram"] = "Bangun Tangga Funikular",
 	["screwup"] = "Pilin Naik",
 	["revolve"] = "Kisar Tangga",
@@ -416,7 +416,7 @@ module.spells.names = {
 	["gremlinevent"] = "Roda Kematian",
 	["gremlinaltevent"] = "Macet",
 
-	--CHAMELEON
+	--CHAMELEON --completed
 	["ditch"] = "Tangga Menyilang",
 	["warp"] = "Tangga Fleksibel",
 	["chamdown"] = "Pindah Tangga ke Bawah",
@@ -424,13 +424,13 @@ module.spells.names = {
 	["chamswap"] = "Jadi Hantu",
 	["chamdrawabove"] = "Jembatan Angkat Naik",
 
-	--NEW
+	--NEW --completed
 
 	["mugglereg"] = "Menara sedang regenerasi…",
 	["mugglecd"] = "Pendinginan Acara dan Rig",
 	["share"] = "Bagikan mana (minimum 2 mana dibutuhkan)",
 
-	--ARCHITECT
+	--ARCHITECT  --completed
 	["archpatron"] = "Bangun atau Ciutkan tangga",
 	["archarchon"] = "Buka Portal pada Tangga atau Platform",
 	["archthief"] = "Curi atau Kembali tangga",
@@ -444,7 +444,7 @@ module.spells.names = {
 	["archdrifter"] = "Hanyutkan atau Lift",
 	["archspectre"] = "Berhantu atau Hantui Tangga ",
 	["archreaver"] = "Tangga Cermin atau Satu Arah",
-	["archheretic"] = "Kutuk Tangga atau Simpang",
+	["archheretic"] = "Koetoek Tangga ataoe Simpang",
 
 	--END NEW
 
@@ -946,21 +946,21 @@ module.gui.settings = {
 module.gui.gameover = {}
 
 module.gui.gameover.results = {
-
+ --completed
 	["class"] = "KELASMU",
 	["time"] = "WAKTU PENDAKIANMU",
 	["climbs"] = "PENDAKIAN DIDAPATKAN",
 	["tokens"] = "TOKEN DIDAPATKAN",
 	["rank"] = "PERINGKATMU SAAT INI",
 
-	--NEW
+	--NEW --completed
 	["role"] = "PERINGKAT KESEMUAANMU",
 	["classic"] = "REKOR MENARA KLASIK",	
 	["pro"] = "REKOR MENARA PRO",	
 	["infinite"] = "REKOR MENARA INFINIT",
 	["custom"] = "REKOR MENARA KUSTOM", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
 	["noVR"] = "REKOR MENARA KLASIK", --this will show in noVR tower, as they share the same record
-
+--completed
 	["cTime"] = "REKOR %s", --%s will be replaced by the used class
 	["levels"] = "TATARAN DICAPAI",
 	["cClimbs"]	= "%s PENDAKIAN", --%s will be replaced by the used class
@@ -1193,7 +1193,7 @@ module.gui.gameover.maxrank ={
 }
 
 module.gui.gameover.credits = {
-
+--completed
 	["common"] = {
 		"TANGGA GILA",
 		"Game dikonseptualisasikan, dirancang dan dikodekan by Sleazel",
@@ -1202,7 +1202,7 @@ module.gui.gameover.credits = {
 		"Skybox dibuat generator @wwwtyro",
 		"Datastore module, ProfileStore, by loleris",
 		"Terima kasih sudah bermain! :]",	
-	},
+	}, 
 	["climb"] = "Musik pendakian %s - % by %",
 	["endgame"] = "Musik endgame %s - % by %",
 	["disco"] = "Musik tangga berdisko - % by %",
@@ -1385,11 +1385,11 @@ module.static = {
 	["over_admin"] = "ADMIN berarti pendaki adalah admin", -- pwease sleazel uwu
 	["over_owner"] = "PRANK ME berarti adalah pembuat Tangga Gila (Sleazel)",
 
-	--OTHER
+	--OTHER --completed
 	["muggle_lead"] = "MUGGLE TERCEPAT",
 	["muggle_ranks"] = "PERINGKAT MUGGLE",
 
-	["hacker_lead"] = "ENCRYPTED HACKERS",
+	["hacker_lead"] = "HACKER TERAMAN",
 	["hacker_ranks"] = "PERINGKAT HACKER",
 
 	["wicked_lead"] = "WICKED TERKASAR",
@@ -1401,28 +1401,28 @@ module.static = {
 	["joker_lead"] = "JOKER TERGILA",
 	["joker_ranks"] = "PERINGKAT JOKER",
 
-	["drifter_lead"] = "RAPID DRIFTERS",
+	["drifter_lead"] = "DRIFTER TEREKSPRES",
 	["drifter_ranks"] = "PERINGKAT DRIFTER",
 
 	["patron_lead"] = "PATRON TERHORMAT",
 	["patron_ranks"] = "PERINGKAT PATRON",
 
-	["archon_lead"] = "AGILE ARCHONS",
+	["archon_lead"] = "ARCHON TERLINCAH",
 	["archon_ranks"] = "PERINGKAT ARCHON",
 
-	["spectre_lead"] = "FLYING SPECTRES",
+	["spectre_lead"] = "SPECTRE TERPESAT",
 	["spectre_ranks"] = "PERINGKAT SPECTRE",
 
-	["thief_lead"] = "THIEF PALING TERSEMBUNYI",
+	["thief_lead"] = "THIEF TERSEMBUNYI²",
 	["thief_ranks"] = "PERINGKAT THIEF",
 
 	["heretic_lead"] = "HERETIC TÊRKÊDJAM",
 	["heretic_ranks"] = "PÊRINGKAT HERETIC",
 
-	["necromancer_lead"] = "NECROMANCER PALING TERBANGKIT",
+	["necromancer_lead"] = "NECROMANCER TERKUAT",
 	["necromancer_ranks"] = "PERINGKAT NECROMANCER",
 
-	["splicer_lead"] = "SPLICER PALING TEKNIS",
+	["splicer_lead"] = "SPLICER TERTEKNIS",
 	["splicer_ranks"] = "PERINGKAT SPLICER",
 
 	["reaver_lead"] = "REAVER TERDALAM",
@@ -1460,9 +1460,9 @@ module.tutorial = {
 	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
 	["tut_big_15"] = "You are now a Spectre, Spectre is a premium alignment best for solo play.",
 	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
-
+--completed
 	["tut_select"] = "Pilih mantra ini.",
-
+--completed
 	["tut_small_init"] = "Lompat untuk memulai latihan!",
 	["tut_small_morph"] = "Lompat pada morph.",
 	["tut_small_arrow"] = "Lompat pada panah.",
@@ -1585,11 +1585,11 @@ module.guide = {
 		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
 
-	['anywhere'] = {
+	['anywhere'] = { --completed
 		['anywhere'] = "Mantra ini dapat dilaksanakan di mana pun.",
 	},
 
-	["nowhere"] = {
+	["nowhere"] = { --completed
 		['slide'] = "Mantra ini tidak memerlukan perlaksanaan.",
 
 	},
@@ -1598,7 +1598,7 @@ module.guide = {
 
 
 
-module.spells.manacosts = {
+module.spells.manacosts = { --completed
 	"0 Mana",
 	"1 Mana",
 	"2 Mana",
@@ -1612,7 +1612,7 @@ module.spells.manacosts = {
 	"10 Mana" 
 }
 
-module.spells.tokencosts = {
+module.spells.tokencosts = { --completed
 
 	"1 Token",
 	"2 Token",
@@ -1925,7 +1925,7 @@ module.switchon = {
 
 }
 
-module.switchoff = {
+module.switchoff = { --completed
 
 	["JOKER1"] = "Kamu sekarang akan mendeteksi tangga tak terlihat.",
 	["WICKED1"] = "Kamu sekarang akan mengaktifkan Wicked Rig di bawah.",
@@ -2077,7 +2077,7 @@ module.gui.mana = {
 
 
 module.gui.gameover.extras = {
-
+--completed
 	["noobs"] = "Latihan hanya buat pendaki cupu!",
 	["possessed"] = "Anjir, Heretic sih nyêbêlin itu!",
 	["hypnotised"] = "Eh, dimana aku?",
