@@ -644,7 +644,7 @@ module.spells.descriptions = {
 	["archonunion"] =  union,
 
 	--DRIFTER
-	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing.  You cannot surf through blocking stairs.",
+	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing. You cannot surf through blocking stairs.",
 	["updrift"] = "This spell will create an elevator using below and above platforms. The platforms will be restored after a given time period. Rank up to VAGABOND to speed up the movement. Rank up to TRAVELLER to be able to boost the lift to second level. Rank up to STRIDER to be able to boost lift again to third level.",
 	["diagdrift"] = "This spell will either: Create a horizontal elevator using below and any platform in a diagonal fashion. Such elevator will disappear after 7 return journeys. OR: If cast in outside direction, this spell will create an elevator would circle around the Tower once.",
 	["spin"] = "This spell will rotate below stairs 180 degrees. Rank up to NOMAD to be able to spin any uncursed stairs.",
@@ -668,7 +668,7 @@ module.spells.descriptions = {
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.  It can also be used on below stairs for trolling purposes.",
 
 	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute. Rank up to BANISHED to destroy crossing cursed stairs." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
+	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells and they cannot jump. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
@@ -678,7 +678,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistup"] = "This spell will twist above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistup"] = "This spell will twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "This spell splits stairs into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "This spell splits stairs into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
@@ -686,7 +686,7 @@ module.spells.descriptions = {
 	["twister"] = timed .. "It allows you to cast as many Split Stairs Spells as you like for one minute. Split spell variety will be chosen automatically for Your benefit." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
 	["splicerevent"] = event .. "the Random Splice spell.",
-	["spliceraltevent"] = event .. "the Split Stairs spell.",
+	["spliceraltevent"] = event .. "the Split Stairs Forward spell.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
@@ -795,7 +795,7 @@ module.gui.ranks = {
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
-	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
+	["possessed_3"] = "As Possessed, you cannot use spells, your rank perks are inactive and you cannot jump.",
 
 	["hypnotised_1"] = "You have been Hypnotised!",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
