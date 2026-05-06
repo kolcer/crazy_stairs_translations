@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -172,13 +172,13 @@ module.gui.questions = {
 	["tutorial"]= "Would you like to play the tutorial?",
 	["skip"] = "Would you like to skip the tutorial?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
-	
+
 	--new
 	["gift"] = "Do you want to gift %s Game Pass to another player?",
 	["choose"] = "Choose a player to receive %s Game Pass", 
 	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
 	["received"] = "You have received %s Game Pass, courtesy of %s!",
-	
+
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Storage",
 	["spectre"] = "Spectre",
@@ -190,7 +190,7 @@ module.gui.questions = {
 	["racein"] = "Race in:",
 	["go"] = "GO!",
 	["raceoff"] = "Race cancelled",
- 	--end new
+	--end new
 }
 --END NEW
 
@@ -248,7 +248,7 @@ module.gui.results = {
 --NEW 
 
 module.gui.menu = {
-	
+
 	["Codes"] = "Code entry",
 	["Feedback"] = "Send game feedback",
 	["Language"] = "Change game language",
@@ -268,11 +268,12 @@ module.gui.menu = {
 --NEW
 --end screen tutorial
 module.gui.tutorial = {
-	
+
 	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment!",
+	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
+	["collect"] = "COLLECT THE ORB TO CONTINUE"
 	["difficulty"] = "Difficulty:",
-	
+
 }
 
 --END NEW
@@ -458,7 +459,7 @@ module.spells.names = {
 	["tramway"] = "Tram-way",
 	["gremlinevent"] = "Revolvelution",
 	["gremlinaltevent"] = "Gridlock",
-	
+
 	--TUTORIAL
 	["tcreate"] = "Create Stairs",
 	["tflip"] = "Flip Stairs",
@@ -667,7 +668,7 @@ module.spells.descriptions = {
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.  It can also be used on below stairs for trolling purposes.",
 
 	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute. Rank up to BANISHED to destroy crossing cursed stairs." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells and they cannot jump. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
+	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
@@ -677,7 +678,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistup"] = "This spell will twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistup"] = "This spell will twist above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "This spell splits stairs into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "This spell splits stairs into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
@@ -685,7 +686,7 @@ module.spells.descriptions = {
 	["twister"] = timed .. "It allows you to cast as many Split Stairs Spells as you like for one minute. Split spell variety will be chosen automatically for Your benefit." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
 	["splicerevent"] = event .. "the Random Splice spell.",
-	["spliceraltevent"] = event .. "the Split Stairs Forward spell.",
+	["spliceraltevent"] = event .. "the Split Stairs spell.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
@@ -794,21 +795,21 @@ module.gui.ranks = {
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
-	["possessed_3"] = "As Possessed, you cannot use spells, your rank perks are inactive and you cannot jump.",
+	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
 
 	["hypnotised_1"] = "You have been Hypnotised!",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
-	
+
 	["reflected_1"] = "You have been Reflected!",
 	["reflected_3"] = "As Reflected, you control yourself from your ghost perspective!",
-	
+
 	["findmana"] = "Find Mana or Patron Rig to break free.",
 	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
 
 	["architect_1"] = "You are now an Architect!",
 	["architect_2"] = "Architects cannot acquire any ranks.",
 	["architect_3"] = "Roam the tower to wreak havoc!",
-	
+
 	["tutorial_1"] = "You are in the tutorial!",
 	["tutorial_2"] = "Collect Mana and use spells to climb the tower.",
 	["tutorial_3"] = "Make sure to catch the White Orb at the top!",
@@ -967,7 +968,7 @@ module.gui.multitokens = {
 }
 
 module.gui.feedback = {
-	
+
 	["title"] = "SEND FEEDBACK",
 	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
 	["send"] = "SEND",
@@ -1880,13 +1881,13 @@ module.serverfeedback = {
 	["used"] = "Code has been used already.",
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
-	
+
 	--NEW
 	['noobteleport'] = "You cannot switch towers in the tutorial!",
 	['noobmorph'] = "Complete the tutorial to be able to morph!",
 	['noobnocode'] = "Complete the tutorial to be able to use codes!",
 	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
-	
+
 	--GIFTING
 	['notingame'] = "Player has left the game, you cannot give the game pass!",
 	['alreadyowns'] = "Player already owns this game pass.",
@@ -1971,7 +1972,7 @@ module.serverbroadcast = {
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
 	["infstart"] = "Infinite race started!",
-	
+
 	--END NEW
 
 }
@@ -2001,7 +2002,7 @@ module.localfeedback = {
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
 	["nounion"] = "You can't use Ghost Union right now.",
-	
+
 	--NEW
 	["failedjoin"] = "Failed to join the race.",
 	--END NEW
@@ -2260,6 +2261,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
-
-
 
