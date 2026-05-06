@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --HUNGARIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -240,7 +240,8 @@ module.gui.menu = {
 module.gui.tutorial = {
 	
 	["complete"] = "NYERTÉL!",
-	["choose"] = "Válassz egy osztályt!",
+	["choose"] = "Válassz egy osztályt!\n(ugorj rá egy körre)",
+	["collect"] = "A FOJTATÁSHOZ ÉRINTSD MEG A GÖMBÖT"
 	["difficulty"] = "Nehézsége:",
 	
 }
