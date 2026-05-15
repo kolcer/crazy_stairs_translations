@@ -575,7 +575,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to OPERATOR, for any rigs that you trigger to never go down. Rank up to SENTINEL to have an option not to trigger them.",
 	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
 	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["keepermode"] =  "This is a Drone spell. It will change the drone mode to Keeper. In this mode drones will cast randomly either Keeper Rig on normal stairs or Random Move Spell on any un-cursed stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively."
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
