@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --RUSSIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -1258,21 +1258,25 @@ module.gui.gameover.maxrank ={
 
 module.gui.gameover.credits = {
 
-	["common"] = {
-		"CRAZY STAIRS",
-		"Автор идеи, дизайна и кода игры - Sleazel",
-		"Помощь с дизайном - cakegirlserina",
-		"Модели сделал ZielonyLeszek",
-		"Скайбоксы сделал генератор от @wwwtyro",
-		"Модуль сохранения данных, ProfileStore, от loleris",
-		"Спасибо за игру!",	
-	},
-	["climb"] = "Музыка подъёма %s'а - % от %",
-	["endgame"] = "Музыка в конце игры %s'а - % от %",
-	["disco"] = "Музыка Диско-Лестницы - % от %",
-	["elevator"] = "Музыка лифта - % от %", --drifter platforms
+	["crazy"] = "CRAZY",
+	["stairs"] = "STAIRS",
+	["game"] = "Игра:",
+	["models"] = "Модели:",
+	["icons"] = "Иконки заклинаний:",
+	["boxes"] = "Скайбоксы:",
+	["data"] = "Модуль хранения данных:",
+	["translators"] = "ПЕРЕВОДЧИКИ:",
 	["testers"] = "ТЕСТЕРЫ:",
 	["thanks"] = "ОТДЕЛЬНЫЕ БЛАГОДАРНОСТИ:",
+	["music"] = "МУЗЫКА:",
+
+	
+	["climb"] = "Музыка подъёма",
+	["endgame"] = "Музыка в конце игры",
+	["ghost"] = "Музыка Призрачного Союза",
+	["disco"] = "Музыка Диско-Лестницы",
+	["elevator"] = "Музыка лифта", --drifter platforms
+	["finish"] = "Спасибо за игру!",
 
 }
 
