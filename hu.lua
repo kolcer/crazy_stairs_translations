@@ -540,7 +540,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "Keeper Riget. Ha aktiválják, akkor a lépcső egy véletlenszerű irányba elmozdul vagy elfordul. Ha rendelkezel OPERATOR ranggal, akkor lépcsők, amiket te aktiválsz nem mehetnek lefelé. Ha rendelkezel SENTINEL ranggal, akkor járhatsz Keeper Rigeken anélkül, hogy aktiválnád.",
 	["keeperevent"] = event .. "lépcsőt véletlenszerűen megmozgatja. Mielőtt végrehajtanád, lehet választani puha és erőltetett mód között. Puha módban, ez a varázslat véletlenszerű irányba mozgatja a lépcsőket, anélkül hogy elpusztítana egy lépcsőt is. Erőltetett módban viszont az útban álló lépcsők elpusztúlnak.",
 	["keeperaltevent"] = "Ez a varázslat az összes különleges lépcsőt helyreállítja, még az átkozottakat is. A Tisztítással ellentétben ez nem fogja eltávolítani az átkozott kereszteződéseket.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Riget","véletlenszerűen megmozgatják"),
+	["keepermode"] =  "Ez a varázslat átváltja a drónokat Keeper módba. Ebben a módban a drónok véletlenszerű normális lépcsőkre ráraknak Keeper Riget, vagy bármilyen nem átkozott lépcsőt véletlenszerűen megmozgatnak. A különleges lépcsőket pedig helyreállítja. Ha lépcsők száma határokon kívül van, akkor a drónok létrehoznak vagy elpusztítanak lépcsőket.",
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
