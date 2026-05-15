@@ -1258,21 +1258,25 @@ module.gui.gameover.maxrank ={
 
 module.gui.gameover.credits = {
 
-	["common"] = {
-		"CRAZY STAIRS",
-		"Game conceptualized, designed and scripted by Sleazel",
-		"Help with design - cakegirlserina",
-		"Models by ZielonyLeszek",
-		"Skyboxes by @wwwtyro's generator",
-		"Datastore module, ProfileStore, by loleris",
-		"Thanks for playing!",	
-	},
-	["climb"] = "%s Climb Music - % by %",
-	["endgame"] = "%s Endgame Music - % by %",
-	["disco"] = "Disco stairs music - % by %",
-	["elevator"] = "Elevator music - % by %", --drifter platforms
+	["crazy"] = "CRAZY",
+	["stairs"] = "STAIRS",
+	["game"] = "A game by:",
+	["models"] = "Models by:",
+	["icons"] = "Spell Icons by:",
+	["boxes"] = "Skyboxes by:",
+	["data"] = "Datastore module by:",
+	["translators"] = "TRANSLATORS:",
 	["testers"] = "TESTERS:",
 	["thanks"] = "SPECIAL THANKS:",
+	["music"] = "MUSIC:",
+
+
+	["climb"] = "Climb music",
+	["endgame"] = "Endgame music",
+	["ghost"] = "Ghost Union music",
+	["disco"] = "Disco Stairs music",
+	["elevator"] = "Elevator music", --drifter platforms
+	["finish"] = "Thanks for playing!",
 
 }
 
