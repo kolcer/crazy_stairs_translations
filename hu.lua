@@ -1213,23 +1213,25 @@ module.gui.gameover.maxrank ={
 }
 
 module.gui.gameover.credits = {
-	["common"] = {
-		"ŐRÜLT LÉPCSŐK",
-		"Játékot kitalálta, tervezte és kódolta: Sleazel",
-		"Tervezésben segített: cakegirlserina",
-		"Modellek csinálta: ZielonyLeszek",
-		"A hátterek @wwwtyro generátora segítségével jöttek létre",
-		"Adat tároló modult (ProfileSore-t) készítette: loleris",
-		"Köszönjük, hogy játszottál a játékkal!",
-	},
-	["climb"] = "%s Mászás Zenéje - % alkotta: %",
-	["endgame"] = "%s Győzelmi Zenéje - % alkotta: %",
-	["disco"] = "Zenés Lépcső Zenéje - % alkotta: %",
-	["elevator"] = "Lift Zenéje - % alkotta: %", --drifter platforms
+	["crazy"] = "ŐRÜLT",
+	["stairs"] = "LÉPCSŐK",
+	["game"] = "Készítette:",
+	["models"] = "Modellezte:",
+	["icons"] = "Varázsigék ikonjait csinálta:",
+	["boxes"] = "Skyboxokat csinálta:",
+	["data"] = "Datastore modult csinálta:",
+	["translators"] = "FORDÍTÓK:",
 	["testers"] = "VIZSGÁLÓK:",
-	--["translations"] = "FORDÍTÁSOK:",
 	["thanks"] = "KÜLÖN KÖSZÖNET:",
-	--["music"] = "ZENE (APM catalog):",
+	["music"] = "ZENE:",
+
+	
+	["climb"] = "Mászás Zenéje,
+	["endgame"] = "Győzelmi Zenéje",
+	["ghost"] = "Szellem Únió Zenéje",
+	["disco"] = "Zenés Lépcső Zenéje",
+	["elevator"] = "Lift Zenéje", --drifter platforms
+	["finish"] = "Köszönjük, hogy játszottál a játékkal!",
 }
 
 module.static = {
