@@ -39,7 +39,7 @@ local Credits = {
 		bottom = "Wortox_SzM",
 	},
 	{
-		top = "???????",
+		top = "РУССКИЙ",
 		bottom = "Lapuskus86, Arnie_skunk & v01d_1ncept10n",
 	},
 	{
