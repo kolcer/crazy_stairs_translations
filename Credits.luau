@@ -83,7 +83,7 @@ local Credits = {
 		bottom = "bash1234567888",
 	},
 	{
-		top = "levthelioin123",
+		top = "levthelion123",
 		bottom = "EclipseCashier",
 	},
 	{
