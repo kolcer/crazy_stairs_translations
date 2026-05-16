@@ -950,11 +950,11 @@ module.gui.settings = {
 	["Morph"] = "Átváltozási animáció megjelenítése Deceiverként vagy Usurperként",
 	["ManaLimit"] = "Csökkentsd a Mana tárolási kapacitásodat ha szeretnéd megnehezíteni a játékot.",
 
-	["Kchoices"] = "Irányválasztási ablak megjelenítése Keeperként",
-	["Hchoices"] = "Irányválasztási ablak megjelenítése Hackerként",
-	["Achoices"] = "Irányválasztási ablak megjelenítése Archonként",
-	["Schoices"] = "Irányválasztási ablak megjelenítése Splicerként",
-	["Gchoices"] = "Irányválasztási ablak megjelenítése Gremlinként",
+	["KChoices"] = "Irányválasztási ablak megjelenítése Keeperként",
+	["HChoices"] = "Irányválasztási ablak megjelenítése Hackerként",
+	["AChoices"] = "Irányválasztási ablak megjelenítése Archonként",
+	["SChoices"] = "Irányválasztási ablak megjelenítése Splicerként",
+	["GChoices"] = "Irányválasztási ablak megjelenítése Gremlinként",
 	["CChoices"] = "Irányválasztási ablak megjelenítése Chameleonként",
 
 	["List"] = "Animált játékoslista megjelenítése a sima Robloxos játéklista helyett",
