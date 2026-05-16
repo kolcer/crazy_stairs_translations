@@ -322,7 +322,7 @@ module.spells.names = {
 	--THIEF --completed
 	["steal"] = "Curi Tangga",
 	["stealabove"] = "Curi Tangga di Atas",
-	["place"] = "Kembali Tangga",
+	["place"] = "Kembalikan Tangga",
 	["uppass"] = "Tangga Spiral",
 	["sidepass"] = "Letakkan Jalan Pintas",
 	["drop"] = "Enyahkan Tangga",
@@ -462,13 +462,13 @@ local timedExtra = " Rank up to %s to increase the limit to 90s. Casting this sp
 
 module.spells.descriptions = {
 
-	--PATRON
-	["summon"] = "This spell allows you to create stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed.",
-	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
-	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
-	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
-	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
-	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
+	--PATRON --completed
+	["summon"] = "Mantra ini untuk membangun tangga di arah dipilih. Jika terdapat tangga menyilang yang berhalangan di arahnya, tangga tersebut akan dihancurkan.",
+	["restore"] = "Mantra ini untuk memanggil bola di lantai teratas ke platform terpilih. Naiklah ke peringkat Defender untuk mengurangi biayanya menjadi 2 Mana. Naiklah ke peringkat Saviour untuk menggandakan kecepatan bola yang akan pergi kepadamu.",
+	["split"] = "Mantra ini untuk membangun ulang tangga berbalikan arah. Tangga terbangun ulang akan menjadi normal bagaimanapun tipe tangga asli.",
+	["shrinkabove"] = "Mantra ini untuk menciutkan tangga di atas, supaya kamu bisa berjalan sekitar itu.",
+	["link"] = "Mantra ini untuk membuat jembatan energi di antara dua platform selama 60 detik. Jembatan energi tidak berbenda dari bawah. Naiklah ke peringkat Creator untuk memperpanjang waktu menjadi 120 detik.",
+	["portal"] = "Mantra ini untuk membuat portal yang berteleportasi pendaki ke platform di atas. Portal berlangsung selama 60 detik. Naiklah ke peringkat Protector untuk memperpanjang waktunya menjadi 120 detik.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
@@ -484,7 +484,7 @@ module.spells.descriptions = {
 	["fake"] = "Mantra ini untuk membangun tangga palsu di arah dipilih. Jika ada terdapat tangga menyilang yang berhalangan di arahnya, tangga tersebut akan dihancurkan. Siapa pun (termasukmu) yang berusaha untuk naik akan jatuh, kecuali Trickster, It dan pendaki dalam mode Fusi Hantu.",
 	["invisible"] =  "Mantra ini untuk membangun tangga tak terlihat. Namun, ini tidak bisa menghancurkan tangga menyilang yang berhalangan, jadi hanya dibangun di simpang kosong. Naiklah ke peringkat Jester untuk mendeteksi semua tangga tak terlihat dan punya opsi untuk tidak menunjukkannya.",
 	["disco"] = "Mantra ini untuk membuatkan tangga jadi berdisko. Siapa pun (termasukmu) akan berhenti dan menari selama 5 detik (biasanya dua kali) ketika menginjaknya. Naiklah ke peringkat Comic untuk menjadi kebal terhadap tangga berdisko.",
-	["trap"] = "Mantra ini untuk membuatkan platform jadi jebakan selama 60 detik. Siapa pun (termasukmu) yang berjalan dalam jebakan tersebut akan jatuh ke platform di bawahnya. Naiklah ke peringkat Jokester untuk mendeteksi platform jebakan. Naiklah ke peringkat Trickster untuk menjadi kebal terhadap platform jebakan.",
+	["trap"] = "Mantra ini untuk membuatkan platform menjadi jebakan selama 60 detik. Siapa pun (termasukmu) yang berjalan dalam jebakan tersebut akan jatuh ke platform di bawahnya. Naiklah ke peringkat Jokester untuk mendeteksi platform jebakan. Naiklah ke peringkat Trickster untuk menjadi kebal terhadap platform jebakan.",
 
 	["flipper"] = timed ..  "It allows you to cast as many flip stairs spells as you like for one minute. Always above stairs will be flipped, if found. If not, below stairs will be flipped instead."  .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "the Joker Rig. Stairs, once triggered, will flip automatically.",
@@ -543,12 +543,12 @@ module.spells.descriptions = {
 	["spectreunion"] = union,
 
 	--HACKER
-	["dash"] = "Mantra ini untuk nge‑flyhack ke arah dipilih.     This spell will teleport you in the chosen direction. You cannot teleport through blocking stairs. Rank up to CRACKER to speed up this spell by 50%.",
-	["blink"] = "Mantra ini untuk nge‑noclip menembusi tangga tak terkutuk di atas.   This spell will teleport you around any un-cursed blocking above stairs. If the above stairs do not effectively block the way, this spell won't work. Rank up to EXPLOITER to speed up this spell by 50%.",
-	["swap"] = "This spell will teleport you to the spot where your ghost is. Unlike other basic spells, Swap can be cast anywhere.",
-	["slide"] = "This spell will turn stairs into an Escalator. You can choose either Up or Down Escalator. Rank up to SCRIPTER to have an option to be immune to Escalators.",
-	["slideup"] = "This spell will hack in stairs in the chosen direction. For this to work, there have to be stairs already present in that intersection facing the opposite way. Hacked in stairs can be of any un-cursed type and will be restored upon emerging.",
-	["glitch"] = "This spell will glitch stairs, teleporting you and themselves to a different spot on the same level. Rank up to ZERO, to teleport stairs next to the orb, if you already are on the top level.",
+	["dash"] = "Mantra ini untuk nge‑flyhack ke arah dipilih. Kamu tidak bisa nge‑flyhack menembus tangga yang berhalangan. Naiklah ke peringkat Cracker untuk mempercepat mantra ini sebanyak 50%.",
+	["blink"] = "Mantra ini untuk nge‑noclip menembus tangga tak terkutuk di atas. If the above stairs do not effectively block the way, this spell won't work. Naiklah ke peringkat Exploiter untuk mempercepat mantra ini sebanyak 50%.",
+	["swap"] = "Mantra ini untuk berteleportasi ke tempat di mana hantumu berada. Tidak seperti mantra dasar lain, mantra ini bisa dilakukan di mana pun.",
+	["slide"] = "Mantra ini untuk mengubah tangga menjadi eskalator. Kamu bisa memilih eskalator naik atau turun. Naiklah ke peringkat Scripter untuk punya opsi untuk menjadi imun terhadap eskalator.",
+	["slideup"] = "Mantra ini untuk nge‑hack tangga di arah terpilih. For this to work, there have to be stairs already present in that intersection facing the opposite way. Tangga ter‑hack bisa menjadi berupa tipe apa pun tak terkutuk dan akan dipulihkan saat muncul.",
+	["glitch"] = "Mantra ini untuk memberikan glitch pada tangga, berteleportasimu dan mereka ke to tempat yang berbeda di lantai sama. Naiklah ke peringkat Zero untuk berteleportasi tangga ke tempat yang berdekatan dengan bola, kalau kamu sudah berada di lantai teratas.",
 
 	["hack"] = timed .. "It allows you to cast as many Upwards Escalators as you like for one minute. If there are blocking un-cursed stairs above, they will be demolished." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
 	["hackerrigevent"] = rig .. "the Hacker Rig. Stairs, once triggered it will teleport player and stairs to a different spot on the same level. Only one player will be teleported. Rank up to REAPER to have an option to walk on Hacker Rigs without triggering them.",
@@ -559,9 +559,9 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "Mantra ini untuk mencuri tangga normal atau dimanipulasi. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
+	["steal"] = "Mantra ini untuk mencuri tangga normal atau dimanipulasi. Mantra ini atau yang mencuri di atas diperlukan untuk melakukan mantra Thief dasar lainnya. Naiklah ke peringkat Hijacker supaya dapat mencuri tangga tak terkutuk apa pun. Naiklah ke peringkat Outlaw supaya dapat mencuri dua tangga sekaligus.",
+	["stealabove"] = "Mantra ini untuk mencuri tangga normal atau dimanipulasi di atas. Mantra ini atau yang mencuri di bawah diperlukan untuk melakukan mantra Thief dasar lainnya. Naiklah ke peringkat Hijacker supaya dapat mencuri tangga tak terkutuk apa pun. Naiklah ke peringkat Outlaw supaya dapat mencuri dua tangga sekaligus.",
+	["place"] = "Mantra ini untuk mengembalikan curian di arah dipilih. Namun, mantra ini tidak akan menghancurkan tangga menyilang, so you can only place stairs in an empty intersection.",
 	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
 	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
 	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
