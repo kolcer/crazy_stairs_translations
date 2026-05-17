@@ -171,8 +171,8 @@ module.gui.questions = { --completed
 
 module.gui.codes = { --completed
 
-	["title"] = "MASUKKAN KODENYA",
-	["body"] = "Masukkan kodemu di sini:",
+	["title"] = "MASUKKAN KODE",
+	["body"] = "Masukkan kode di sini:",
 	["prompt"] = "(kode)",
 	["button"] = "TEBUS",
 
@@ -203,17 +203,17 @@ module.gui.results = { --completed
 	["rank"] = "PERINGKAT",
 	["not"] = "N/A",
 	[1] = "PEMENANG!",
-	[2] = "ke‑2",
-	[3] = "ke‑3",
-	[4] = "ke‑4",
-	[5] = "ke‑5",
-	[6] = "ke‑6",
-	[7] = "ke‑7",
-	[8] = "ke‑8",
-	[9] = "ke‑9",
-	[10] = "ke‑10",
-	[11] = "ke‑11",
-	[12] = "ke‑12",
+	[2] = "Ke‑2",
+	[3] = "Ke‑3",
+	[4] = "Ke‑4",
+	[5] = "Ke‑5",
+	[6] = "Ke‑6",
+	[7] = "Ke‑7",
+	[8] = "Ke‑8",
+	[9] = "Ke‑9",
+	[10] = "Ke‑10",
+	[11] = "Ke‑11",
+	[12] = "Ke‑12",
 
 }
 
@@ -274,9 +274,9 @@ module.spells.names = {
 	--WICKED --completed
 	["destroy"] = "Hancurkan Tangga",
 	["destroyabove"] = "Hancurkan Tangga di Atas",
-	["bend"] = "Bengkok Tangga ke Atas",
+	["bend"] = "Bengkokkan Tangga ke Atas",
 	["damage"] = "Cacati Tangga di Atas",
-	["flatten"] = "Bengkok Tangga Terbalik ke Bawah",
+	["flatten"] = "Bengkokkan Tangga Terbalik ke Bawah",
 	["wall"] = "Buat Barikade" ,
 
 	["bender"] = "Pembengkok",
@@ -494,13 +494,13 @@ module.spells.descriptions = {
 	["jokerrefill"] = overload,
 	["jokerunion"] = union,
 
-	--WICKED
-	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti mantra lain, itu akan  will work on tangga apa pun. Naiklah ke peringkat Vile untuk cast this spell for free. Naiklah ke peringkat VICIOUS untuk mendapatkan 1 mana bonus everytime kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga… TERKUTUK ya.",
-	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
-	["bend"] = "This spell bends stairs up. Use it to gain access to above platform.",
-	["damage"] = "This spell turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
-	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform.",
-	["wall"] = "This spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Only Wickeds and Ghost Unions can go through such wall and on the link.",
+	--WICKED --completed
+	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti mantra lain, mantra ini bekerja pada tangga apa pun. Naiklah ke peringkat Vile untuk melakukan mantra ini secara gratis. Naiklah ke peringkat Vicious untuk mendapatkan 1 mana bonus setiap kali kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator supaya dapat menghancurkan tangga… TERKUTUK ya.",
+	["destroyabove"] = "Mantra ini untuk menghancurkan tangga di atas. Tidak seperti mantra lain, mantra ini bekerja pada tangga apa pun. Naiklah ke peringkat Vicious untuk mendapatkan 1 mana bonus setiap kali kamu menghancurkan tangga yang spesial apa pun. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
+	["bend"] = "Mantra ini untuk membengkokkan tangga ke atas. Menggunakan mantra ini untuk mengakses platform di atas.",
+	["damage"] = "Mantra ini untuk mencacati tangga menjadi obby dengan cara menghapus sebagian besar anak tangganya. Sebelum mencoba, ingatlah mengenai pendinginan lompat. Naiklah ke peringkat Destroyer untuk mendaki tangga seperti tangga normal.",
+	["flatten"] = "Mantra ini untuk membengkokkan tangga terbalik ke bawah. Menggunakan mantra ini untuk mengakses platform terbalik.",
+	["wall"] = "Mantra ini membuat barikade pada platform dan juga sebuah jembatan yang terhubung ke platform terbalik selama 60 detik. Hanya Wicked dan pendaki dalam mode Fusi Hantu yang dapat melewati dinding dan berjalan melalui jembatan.",
 
 	["bender"] = timed .. "It allows you to cast as many bend up stairs as you like for one minute. Both below and above stairs will be bent at the same time if requirements are met."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "the Wicked Rig. Stairs, once triggered, will destroy automatically. Rank up to Devil to walk on Wicked Rigs without triggering them.",
