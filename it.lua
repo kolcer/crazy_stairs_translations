@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --ITALIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -213,7 +213,8 @@ module.gui.menu = {
 
 module.gui.tutorial = {
 	["complete"] = "ASCESA COMPLETATA!",
-	["choose"] = "Seleziona la tua prima classe!",
+	["choose"] = "Seleziona la tua prima classe saltando sul trasformatore!",
+	["collect"] = "TOCCA LA SFERA PER CONTINUARE",
 	["difficulty"] = "Difficoltà:",
 }
 
@@ -383,7 +384,7 @@ module.spells.names = {
 
 	["reflection"] = "Specchio Riflesso",
 	["reaverevent"] = "Evento Monodirezionale",
-	["reaveraltevent"] = "Evento Sola Salita",
+	["reaveraltevent"] = "Evento Cristallizzazione",
 
 	--GREMLIN
 	["tram"] = "Genera Tram",
@@ -508,7 +509,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango OPERATOR per assicurati che la scala non sprofondi.",
 	["keeperevent"] = event .. "Movimento Casuale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
 	["keeperaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno ripristinate, senza eccezioni. A differenza dell'Evento Annientamento, i malefici saranno ignorati.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Movimento Casuale"),
+	["keepermode"] =  "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in modalità Keeper. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: Keeper Rig su scale normali e Movimento Casuale su scale non maledette, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -601,7 +602,7 @@ module.spells.descriptions = {
 	["autoup"] = "Abbassa la parte superiore della scala opposta, lasciando al suo posto una copia. Tale copia può essere scalata solo da altri Heretic o da giocatori con il sortilegio Unione Spettrale attivo. Può anche essere lanciato direttamente sulla scala.",
 
 	["malediction"] = timed .. "Permette di generare scale maledette in continuazione, per 60 secondi. Sblocca il rango BANISHED per poter demolire le scale maledette che bloccano il passaggio." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretic",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "Heretic Rig. Chi le calpesta diventa posseduto, inibendo gli incantesimi (ignorato con il rango UNBELIEVER sbloccato). I giocatori posseduti si possono liberare raccogliendo Mana.\nSblocca il rango EXILED per guadagnare 1 Mana per giocatore posseduto.",
+	["hereticrigevent"] = rig .. "Heretic Rig. Chi le calpesta diventa posseduto, negando la possibilità di lanciare incantesimi e di saltare (ignorato con il rango UNBELIEVER sbloccato). I giocatori posseduti si possono liberare raccogliendo Mana.\nSblocca il rango EXILED per guadagnare 1 Mana per giocatore posseduto.",
 	["hereticevent"] = event .. "Scisma Randomico.",
 	["hereticaltevent"] = event .. "Maledici Scale.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Scisma Randomico"),
@@ -611,7 +612,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "Combina la scala colpita con un'altra parallela in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
 	["twistrotate"] = "Combina la scala colpita con un'altra adiacente in base alla direzione scelta. Se non vi sono scale nella destinazione indicata, ne verrà generata una nuova.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
-	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
+	["twistup"] = "Combina la scala colpita con quella posizionata direttamente sopra, a patto che non sia maledetta. Se non vi è alcuna scala, ne verrà generata una nuova.\nSblocca il rango TRANSFORMER per poter combinare scale già unite.",
 	["canceltwist"] = "Ripristina la scala combinata colpita.\nSblocca il rango Combiner per poter lanciare questo incantesimo dalle piattaforme.\nSblocca il rango MIXER per rimuovere il costo di esecuzione.\nSblocca il rango OPTIMUS per guadagnare 1 Mana per scala ripristinata con questo incantesimo.",
 	["split2"] = "Taglia in due la scala colpita, garantendoti accesso a tutte e quattro le piattaforme.",
 	["splitalt"] = "Divide la scala colpita, permettendoti di aggirare la scala posizionata direttamente sopra e scalarla.",
@@ -619,7 +620,7 @@ module.spells.descriptions = {
 	["twister"] = timed .. "Permette di combinare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicer",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "Splicer Rig. Quando calpestate, si combineranno con altre scale in modo casuale (opzionale con il rango ASSEMBLER sbloccato).",
 	["splicerevent"] = event .. "Combina Scale a Caso.",
-	["spliceraltevent"] = event .. "Taglia Scale.",
+	["spliceraltevent"] = event .. "Dividi Scale.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Combina Scale a Caso"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
@@ -723,7 +724,7 @@ module.gui.ranks = {
 	["none_2"] = "Per lanciare incantesimi, DEVI selezionare una classe!",
 
 	["possessed_1"] = "Sei stato Posseduto!",
-	["possessed_3"] = "In questo stato, sia i tuoi incantesimi che il tuo rango sono inibiti.",
+	["possessed_3"] = "In questo stato, sia i tuoi incantesimi che il tuo rango sono inibiti. Inoltre non sei in grado di saltare.",
 
 	["hypnotised_1"] = "Sei stato Ipnotizzato!",
 	["hypnotised_3"] = "In questo stato, i tuoi comandi sono invertiti.",
@@ -1173,21 +1174,26 @@ module.gui.gameover.maxrank ={
 }
 
 module.gui.gameover.credits = {
-	["common"] = {
-		"SCALEMANIA",
-		"Gioco concettualizzato, progettato e sviluppato da Sleazel",
-		"Aiuto progettazione - cakegirlserina",
-		"Modelli provveduti da ZielonyLeszek",
-		"Sfondi provveduti dal generatore di @wwwtyro",
-		"Modulo Datastore e ProfileStore provveduti da loleris",
-		"Se sei arrivato fin qui, grazie per aver giocato!",
-	},
-	["climb"] = "Audio di %s - % da %",
-	["endgame"] = "Audio finale di %s - % da %",
-	["disco"] = "Audio piste da ballo di Joker - % da %",
-	["elevator"] = "Audio piattaforme di Drifter - % da %", --drifter platforms
+	["crazy"] = "SCALE",
+	["stairs"] = "MANIA",
+
+	["game"] = "Gioco concettualizzato da:",
+	["models"] = "Modelli provveduti da:",
+	["icons"] = "Icone di incantesimi provvedute da:",
+	["boxes"] = "Sfondi provveduti da:",
+	["data"] = "Modulo Datastore provveduto da:",
+
+	["translators"] = "TRADUTTORI:",
 	["testers"] = "COLLAUDATORI:",
 	["thanks"] = "RINGRAZIAMENTI SPECIALI:",
+	["music"] = "MUSICA:",
+	
+	["climb"] = "Audio Scalata",
+	["endgame"] = "Audio Finale",
+	["ghost"] = "Audio Unione Spettrale",
+	["disco"] = "Audio piste da ballo di Joker",
+	["elevator"] = "Audio piattaforme di Drifter", --drifter platforms
+	["finish"] = "Grazie per aver letto fin qui!",
 }
 
 module.static = {
@@ -1526,7 +1532,7 @@ module.guide = {
 		['restore'] = "Può essere lanciato sia sulle scale che sulle piattaforme, dove indicato dalle frecce. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
 		['deltwists'] = "Da lanciare sulle scale combinate. Sblocca il rango Combiner per poterle ripristinare direttamente dalle piattaforme.",
 		['ghosted'] = "Da lanciare su scale normali, spettralizzate, alterate da rig, oppure sulle piattaforme dove indicato dalle frecce.",
-		["flatten"] = "Può essere lanciato sulle scale normali o alterate da rig oppure sulle piattaforme dove indicato dalle frecce dove sono presenti scale opposte.",
+		["flatten"] = "Può essere lanciato sulle scale normali, quelle alterate da rig oppure sulle piattaforme dove indicato dalle frecce in cui sono presenti scale opposte.",
 		
 		["archpatron"] = "Genera Scale/Restringi Scale",
 		["archarchon"] = "Portale dimensionale su piattaforme/scale",
@@ -1880,7 +1886,7 @@ module.localfeedback = {
 	["noteleport"] = "Errore!",
 	["norefresh"] = "Non puoi ancora aggiornare la lista.",
 	["failedjoin"] = "Non è stato possibile aggiungerti alla gara.",
-	["nounion"] = "Il sortilegio Unione Spettrale è fuori uso al momento.",
+	["nounion"] = "Questo sortilegio non è attualmente disponibile.",
 }
 
 module.switchon = {
