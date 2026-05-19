@@ -509,7 +509,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "Keeper Rig. Quando calpestate, si spostano o ruotano in modo casuale (opzionale con il rango Sentinel sbloccato).\nSblocca il rango OPERATOR per assicurati che la scala non sprofondi.",
 	["keeperevent"] = event .. "Movimento Casuale. Questo sortilegio ha due modalità: Leggera e Forzata. In modalità forzata, eventuali scale in mezzo verranno demolite.",
 	["keeperaltevent"] = "Questo è un sortilegio Evento. Tutte le scale presenti nella torre verranno ripristinate, senza eccezioni. A differenza dell'Evento Annientamento, i malefici saranno ignorati.",
-	["keepermode"] =  "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in modalità Keeper. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: Keeper Rig su scale normali e Movimento Casuale su scale non maledette, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
+	["keepermode"] =  "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in modalità Keeper. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: Keeper Rig su scale normali e Movimento Casuale su scale non maledette, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale.",
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -1122,7 +1122,7 @@ module.gui.gameover.messages = {
 		"I tabloid ci hanno rovinato la reputazione, colpa di Hollywood",
 		"La mia necromanzia è a vostra disposizione",
 		"Ho bisogno di anim- MANA! Intendevo dire Mana",
- 		"Non preoccuparti di cadere, ci penserò io a farti rialzare",
+		"Non preoccuparti di cadere, ci penserò io a farti rialzare",
 	},
 	["GREMLIN"] = {
 		"GIRA, ATTORCIGLIA, E IPNOTIZZA",
@@ -1187,7 +1187,7 @@ module.gui.gameover.credits = {
 	["testers"] = "COLLAUDATORI:",
 	["thanks"] = "RINGRAZIAMENTI SPECIALI:",
 	["music"] = "MUSICA:",
-	
+
 	["climb"] = "Audio Scalata",
 	["endgame"] = "Audio Finale",
 	["ghost"] = "Audio Unione Spettrale",
@@ -1488,7 +1488,7 @@ module.guide = {
 		["prevolve"] = "Può essere lanciato in direzione oraria o antioraria.",
 		["top"] = "Può essere lanciato solo sulla cima della torre.",
 	},
-	
+
 	["stairs"] ={
 		["cursed"] = "Può essere lanciato su scale normali, alterate da rig e maledette.",
 		["all"] = "Può essere lanciato su qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
@@ -1510,7 +1510,7 @@ module.guide = {
 		["revolve"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["normalrig"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 	},
-	
+
 	["above"] = {
 		["cursed"] = "Può essere lanciato sotto a scale normali, maledette o alterate da rig.",
 		["all"] = "Può essere lanciato sotto a qualsiasi scala. Sblocca il rango Annihilator per poter demolire le scale maledette.",
@@ -1520,20 +1520,20 @@ module.guide = {
 		["slide"] = "Questo incantesimo ti permette di aggirare qualsiasi scala non maledetta.",
 		["normalrig"] = "Può essere lanciato solo sotto a scale normali o alterate da rig.",
 	},
-	
+
 	["dynamic"] = {
 		--hack, twister, bender and flipper
 		["flip"] = "Può essere lanciato sia sopra che sotto le scale normali, ribaltate o alterate da rig. Se l'esecuzione sulla scala sovrastante fallisce per qualsiasi motivo, verrà modificata quella colpita.",
 		["normalrig"] = "Può essere lanciato sia sopra che sotto scale normali o alterate da rig. L'incantesimo colpirà entrambe le scale se possibile.",
 		["slide"] = "Può essere lanciato su scale normali o alterate da rig. Le scale non maledette che bloccano il passaggio verranno demolite.",
 	},
-	
+
 	["both"] = {
 		['restore'] = "Può essere lanciato sia sulle scale che sulle piattaforme, dove indicato dalle frecce. Sblocca il rango Admiral per poter ripristinare le scale maledette.",
 		['deltwists'] = "Da lanciare sulle scale combinate. Sblocca il rango Combiner per poterle ripristinare direttamente dalle piattaforme.",
 		['ghosted'] = "Da lanciare su scale normali, spettralizzate, alterate da rig, oppure sulle piattaforme dove indicato dalle frecce.",
 		["flatten"] = "Può essere lanciato sulle scale normali, quelle alterate da rig oppure sulle piattaforme dove indicato dalle frecce in cui sono presenti scale opposte.",
-		
+
 		["archpatron"] = "Genera Scale/Restringi Scale",
 		["archarchon"] = "Portale dimensionale su piattaforme/scale",
 		["archthief"] = "Posiziona/Ruba Scale",
