@@ -157,7 +157,7 @@ module.gui.questions = {
 	["choose"] = "Válaszd meg, hogy ki kapja meg a(z) %s nevű terméket", 
 	["confirm"] = "Szeretnéd ajándékozni a(z) %s nevű terméket ennek a játékosnak: %s?", --second %s is the chosen player
 	["received"] = "Megszerezted a(z) %s terméket, mert %s neked ajándékozta!",
-	
+
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Tárhely",
 	["spectre"] = "Spectre",
@@ -238,12 +238,12 @@ module.gui.menu = {
 }
 
 module.gui.tutorial = {
-	
+
 	["complete"] = "NYERTÉL!",
 	["choose"] = "Válassz egy osztályt!\n(ugorj rá egy körre)",
-	["collect"] = "A FOJTATÁSHOZ ÉRINTSD MEG A GÖMBÖT"
+	["collect"] = "A FOJTATÁSHOZ ÉRINTSD MEG A GÖMBÖT",
 	["difficulty"] = "Nehézsége:",
-	
+
 }
 
 module.spells = {}
@@ -1225,8 +1225,8 @@ module.gui.gameover.credits = {
 	["thanks"] = "KÜLÖN KÖSZÖNET:",
 	["music"] = "ZENE:",
 
-	
-	["climb"] = "Mászás Zenéje,
+
+	["climb"] = "Mászás Zenéje",
 	["endgame"] = "Győzelmi Zenéje",
 	["ghost"] = "Szellem Únió Zenéje",
 	["disco"] = "Zenés Lépcső Zenéje",
@@ -1303,7 +1303,7 @@ module.static = {
 	["home_4"] = "„Bezzeg az én időmben nem voltak ilyen puccos varázslatok!”\nalapítónk idézete",
 
 	["oasis_1"] = "CHAMELEON OÁZISA",
-	["oasis_2"] = "JELMONDATUNK:\nMÁSOLJ\nUTÁNOZZ\nÉS\nLEPD MEG,
+	["oasis_2"] = "JELMONDATUNK:\nMÁSOLJ\nUTÁNOZZ\nÉS\nLEPD MEG",
 	["oasis_3"] = "ELŐNYÖK:\nBármikor és bárhol változtathatsz osztályt\nHÁTRÁNYOK:\nFizetős\nAz összes osztály felfejlesztése sok időbe kerül",
 	["oasis_4"] = "„Túl lusta vagyok ahhoz, hogy kitaláljak saját varázslatokat.”\nalapítónk idézete",
 
@@ -1584,7 +1584,7 @@ module.guide = {
 		['restore'] = "Végre lehet hajtani bármilyen lépcsőn vagy egy felületnek a nyilán ami mellet van egy lépcső.",
 		['deltwists'] = "Végre lehet hajtani csavart lépcsőkön vagy egy felületnek a nyilán ami mellet van egy csavart lépcső.",
 		['ghosted'] = "Végre lehet hajtani normális, riges vagy szellemesített lépcsőn vagy egy felületnek a nyilán ami mellet van egy normális, riges vagy szellemesített lépcső.",
-  ["flatten"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy szemben álló normális vagy riges lépcső. Végrehajtható lépcsőkön is.",
+		["flatten"] = "Csak olyan kereszteződésekben lehet végrehajtani, amelyben van egy szemben álló normális vagy riges lépcső. Végrehajtható lépcsőkön is.",
 
 		["archpatron"] = "Patron Lépcső Létrehozása (ha egy nyílon használod) vagy Lépcső Zsugorítása (ha egy lépcsőn használod).",
 		["archarchon"] = "Archon Felület Kapuja (ha egy nyílon használod) vagy Lépcső Kapuja (ha egy lépcsőn használod).",
@@ -1820,7 +1820,7 @@ module.serverfeedback = {
 	['noobmorph'] = "Végezd el a kiképzést, hogy osztályt változtathass!",
 	['noobnocode'] = "Végezd el a kiképzést, hogy kódokat használhass!",
 	['noobchameleon'] = "Végezd el a kiképzést, hogy Chameleont használhass!",
-	
+
 	--GIFTING
 	['notingame'] = "Nem sikerült ajándékozni, mert a játékos elhagyta a játékot!",
 	['alreadyowns'] = "A játékosnak már megvan ez a termék.",
