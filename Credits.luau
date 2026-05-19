@@ -43,6 +43,10 @@ local Credits = {
 		bottom = "Lapuskus86, Arnie_skunk & v01d_1ncept10n",
 	},
 	{
+		top = "廣州話",
+		bottom = "Lapuskus86, Arnie_skunk & v01d_1ncept10n",
+	},
+	{
 		ttop = "testers",
 		bottom = "",
 	},
@@ -100,7 +104,7 @@ local Credits = {
 	},
 	{
 		top = "Wortox_SzM",
-		bottom = "dude567329",
+		bottom = "funki",
 	},
 	{
 		ttop = "thanks",
