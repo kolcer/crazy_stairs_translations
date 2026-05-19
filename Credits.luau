@@ -44,7 +44,7 @@ local Credits = {
 	},
 	{
 		top = "廣州話",
-		bottom = "Lapuskus86, Arnie_skunk & v01d_1ncept10n",
+		bottom = "tlg723",
 	},
 	{
 		ttop = "testers",
