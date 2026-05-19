@@ -1254,7 +1254,7 @@ module.static = {
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
 
 	["cus_1"] = "MENARA KUSTOM",
-	["cus_2"] = "YOU DECIDE!",
+	["cus_2"] = "KAMU YANG TENTUKAN!",
 	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
 	["cus_5"] = "Tower Settings",
@@ -1363,7 +1363,7 @@ module.static = {
 	--END NEW
 
 	--SHARED
-	["leader_pro"] = "Pro Tower counts as 2 climbs",	
+	["leader_pro"] = "Mendaki Menara Pro dihitung 2 kali lipat",	
 	["leader_update"] = "Pembaruan dalam: ",	
 	["leader_updating"] = "Memperbarui…",	
 	["leader_rank"] = "PERINGKAT",
@@ -1445,21 +1445,21 @@ module.tutorial = {
 
 
 	["tut_big_1"] = "Selamat datang di Tangga Gila!",
-	["tut_big_2"] = "First learn how to morph.",
-	["tut_big_3"] = "You are now a Patron, Patrons can create stairs.",
+	["tut_big_2"] = "Pertama, belajar bagaimana cara berubah.",
+	["tut_big_3"] = "Kamu sekarang adalah seorang Patron! Patron dapat membangun tangan.",
 	["tut_big_4"] = "Semua mantra harus dilaksanakan dengan cara melompat.",
 	["tut_big_5"] = "Keren, 'kan? Sekarang ubahlah menjadi Joker. Joker dapat membalik tangga.",
 	["tut_big_6"] = "Kamu sekarang adalah seorang Joker, gunakan mantra ini untuk membalik tangga.",
 	["tut_big_7"] = "Sebagian mantra harus dilaksanakan pada tangga.",
-	["tut_big_8"] = "Now morph to Keeper. Keepers can move stairs.",
-	["tut_big_9"] = "You are now a Keeper, use this spell to move stairs.",
-	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
-	["tut_big_11"] = "You will encounter many blocking stairs in this game.",
-	["tut_big_12"] = "You are now a Wicked, use this spell to destroy blocking stairs.",
-	["tut_big_13"] = "You can destroy above stairs, by jumping on below ones.",
-	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
-	["tut_big_15"] = "You are now a Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
+	["tut_big_8"] = "Sekarang, ubahlah menjadi Keeper! Keeper dapat memindah tangga.",
+	["tut_big_9"] = "Kamu sekarang adalah seorang Keeper, gunakan mantra ini untuk memindah tangga.",
+	["tut_big_10"] = "Lompat pada panah ke depan untuk memindahkan tangga.",
+	["tut_big_11"] = "Ah, kamu akan melihat banyak tangga yang mengganggu begini dalam gim ini!",
+	["tut_big_12"] = "Kamu sekarang adalah seorang Wicked, gunakan mantra ini untuk menghancurkan tangga tersebut.",
+	["tut_big_13"] = "Kamu bisa menghancurkan tangga di atas dengan cara melompat pada bawahnya!",
+	["tut_big_14"] = "Sebelum kita mulai, biarkan aku tunjukkan kelas yang premium.",
+	["tut_big_15"] = "Kamu sekarang adalah seorang Spectre, Spectre adalah sebuah kelas premium cocok untuk bermain solo.",
+	["tut_big_16"] = "Tujuanmu—naik ke atas dan ambilkan bolanya. Selamat bermai! :]",
 --completed
 	["tut_select"] = "Pilih mantra ini.",
 --completed
@@ -1487,31 +1487,31 @@ module.where = {
 module.guide = {
 
 	--arrows
-	["arrow"] = {
-		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
-		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to BANISHED to demolish crossing cursed stairs.",
-		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
-		["any"] = "Can be executed on any un-cursed intersection.",
-		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
-		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
-		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
-		["soft"] = "Can be executed on an empty intersection only.",
-		["flatten"] = "Can be executed on an intersection with normal or rigged crossing stairs only.",
-		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
-		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
+	["arrow"] = { --completed
+		["through"] = "Dapat dilaksanakan pada simpang kosong atau melalui tangga tak berhalangan.",
+		["superforced"] = "Dapat dilaksanakan pada simpang kosong atau melalui tangga menyilang. Naiklah ke peringkat Banished untuk menghancurkan tangga terkutuk menyilang.",
+		["flicker"] = "Dapat dilaksanakan pada simpang kosong. Naiklah ke peringkat Infidel untuk melaksanakan pada simpang terkunci.",
+		["any"] = "Dapat dilaksanakan pada simpang tak terkunci apa pun.",
+		["wall"] = "Dapat dilaksaakan pada simpang tak terkunci apa pun, tanpa ada barikade atau portal di arah.",
+		["forced"] = "Dapat dilaksanakan pada simpang kosong atau melalui tangga menyilang tak terkutuk.",
+		["halfsoft"] = "Dapat dilaksanakan pada simpang kosong, atau melalui tangga menyilang tak terkutuk pada peringkat lebih tinggi.",
+		["soft"] = "Dapat dilaksanakan pada hanya simpang kosong.",
+		["flatten"] = "Dapat dilaksanakan pada simpang dengan hanya tangga menyilang normal atau dimanipulasi.",
+		["hack"] = "Dapat dilaksanakan pada simpang dengan hanya tangga menyilang tak terkutuk apa pun.",
+		["sidepass"] = "Dapat dilaksanakan pada simpang tak terkunci tanpa ada jalan pintas.",
 	},
 
 	["platform"]= {
 
 
 		--platform
-		["middle"] = "This spell has no special requirements.",
-		["diag"] = "Can be executed in both inner and outer diagonal directions.",
-		["outer"] = "Can be executed in perpendicular outer directions only.",
-		["centre"] = "This spell will demolish any small mirrors already on the current level, but not the big one.",
-		["inner"] = "Can be executed in inner diagonal directions only, without a link yet.",
-		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
-		["top"] = "Can be exectued on top platforms only.",
+		["middle"] = "Mantra ini tidak memerlukan         This spell has no special requirements.",
+		["diag"] = "Dapat dilaksanakan di arah diagonal dalam dan luar.",
+		["outer"] = "Dapat dilaksanakan di hanya arah dalam tegak lurus",
+		["centre"] = "Mantra ini akan menghapus platform cermin kecil yang sudah berada di lantai saat ini, tetapi bukan yang besar.",
+		["inner"] = "Dapat dilaksanakan di hanya arah diagonal dalam, tanpa ada jembatan.",
+		["prevolve"] = "Dapat dilaksanakan di arah searah jarum jam dan berlawanan arah jarum jam.",
+		["top"] = "Dapat dilaksanakan pada hanya platform teratas.",
 	},
 
 	["stairs"] ={
