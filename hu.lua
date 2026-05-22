@@ -682,7 +682,7 @@ module.spells.descriptions = {
 
 	["reflection"] = timed .. "bármennyiszer hozhatsz létre Hatalmas Tükröket egy percig. A szellemeddel automatikusan egybe fogsz válni." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavernek",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "Reaver Riget. Ha aktiválják, akkor az a játékos aki aktiválta tükröződve lesz. A játékosnak Manát kell találnia, hogy fel legyen szabadítva. Tükröződött játékosok a szellemük szemszögéből irányítják magukat, és nem hatnak rájuk Reaver tükrei. Ha rendelkezel WIGHT ranggal, akkor immunis leszel ilyen Rigekre.",
-	["reaverevent"] = event .. "lépcsőt átváltoztatja véletlenszerűen lezárt egyirányú lépcsővé. Az egyirányú lépcsők olyanok, mint a tükrös lépcsők, de csak az egyik irányuk le van zárva. Ha rendelkezel ILLUSION ranggal, akkor átmehetsz a lezárt oldalon is.",
+	["reaverevent"] = event .. "lépcsőt átváltoztatja véletlenszerűen lezárt egyirányú lépcsővé. Az egyirányú lépcsők olyanok, mint a tükrös lépcsők, de csak az egyik irányuk le van zárva. A lezárt oldalon csak Reaverek és Szellem Unióban lévő játékosok mehetnek át.",
 	["reaveraltevent"] = event .. "lépcsőt üveglépcsővé.",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Riget","átváltoztatják véletlenszerűen lezárt egyirányú lépcsővé"),
 	["reaverrefill"] = overload,
@@ -707,7 +707,7 @@ module.spells.descriptions = {
 	--CHAMELEON
 	["chamdown"] = "Ez régebben Keeper egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat egy normális vagy Riges lépcsőt lejjebb visz egy szinttel. Ha megvan a Keepernek a Captain rang, akkor mozgathatsz bármilyen nem átkozott lépcsőt.",
 	["chamdraw"] = "Ez régebben Heretic egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt egy felvonóhíddá. A lépcsőn lemenni lehetetlen, kivéve ha egy másik játékos aktiválja a hidat a lépcső aljáról.",
-	["oneways"] = "Ez régebben Reaver egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt egy egyirányú átjáróvá, ami közben egyesíti a játékosokat a szellemükkel. Megválaszthatod, hogy melyik irányt zárod le. Ha rendelkezel ILLUSION ranggal, akkor átmehetsz a lezárt oldalon is. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
+	["oneways"] = "Ez régebben Reaver egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt egy egyirányú átjáróvá, ami közben egyesíti a játékosokat a szellemükkel. Megválaszthatod, hogy melyik irányt zárod le. A lezárt oldalon csak Reaverek és Szellem Unióban lévő játékosok mehetnek át. Miközben egybe vagy válva a szellemeddel, rá tudsz menni Kicsi és Hatalmas tükrökre de a szellemed nem fog Manát gyűjteni.",
 	["ditch"] = "Ez régebben Thief egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a lépcsőt két kereszteződő lépcsőkké.",
 	["chamdrawabove"] = "Ez régebben Heretic egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat átváltoztatja a feletted lévő lépcsőt egy felvonóhíddá, ezért utána átmehetsz alattuk. A lépcsőn felmenni lehetetlen, kivéve ha egy másik játékos aktiválja a hidat a lépcső tetejéről. A régi Unbeliever rang már nem aktív és az automatikus hídleengedés sem lehetséges.",
 	["warp"] = "Ez régebben Wicked egyik varázslata volt, mielőtt el lett utasítva. Ez a varázslat meggörbít egy normális vagy riges lépcsőt a lépcsőhöz tartozó felület feletti felülethez.",
@@ -873,7 +873,7 @@ module.gui.ranks = {
 		[5] = "A tükreid 50%-kal tovább tartanak. (15mp-ig a hatalmas, 9mp-ig a Kicsi)",
 		[6] = "Van választásod arra, hogy ne aktiváld a Reaver Rigeket.",
 		[8] = "Az egybeválás varázsigéd az összes közeledben lévő játékoson is hat.",
-		[9] = "Az egyirányú lépcsők lezárt oldalán is átmehetsz.",
+		[9] = "Tükrökön 25%-kal gyorsabb vagy.",
 	},
 	["NECROMANCER"] = {
 		[4] = "Kettős Lépcsők varázslatból a szellemed lépcsője figyelem kívül hagyja az átkozott lépcsőket és kereszteződéseket.",
