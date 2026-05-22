@@ -1,4 +1,4 @@
---VERSION 4.2--
+--VERSION 4.3--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -143,7 +143,7 @@ module.gui.stats = {
 	["2124529966"] = "Skipped the Tutorial",
 	["2124826880"] = "Possessed Fate",
 	["3731010929572663"] = "Hypnotised Dream",
-	["840574993122888"] = "Reflected Destiny",
+	["840574993122888"] = "Perspective Reflected",
 	["2124913225"] = "Architect's Design",
 	["2124702954"] = "Rootkit Installed",
 	["2124702945"] = "Destroy Everything",
@@ -270,7 +270,8 @@ module.gui.menu = {
 module.gui.tutorial = {
 
 	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment!",
+	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
+	["collect"] = "COLLECT THE ORB TO CONTINUE"
 	["difficulty"] = "Difficulty:",
 
 }
@@ -444,7 +445,7 @@ module.spells.names = {
 
 	["reflection"] = "Reflection",
 	["reaverevent"] = "Cross Roads",
-	["reaveraltevent"] = "Conjucture",
+	["reaveraltevent"] = "Vitrification",
 
 
 	--GREMLIN
@@ -489,7 +490,7 @@ module.spells.names = {
 	["archnecro"] = "Dual or Undead stairs",
 	["archhacker"] = "Escalator or Hack-in",
 	["archkeeper"] = "Move or Restore",
-	["archsplicer"] = "Splice or Restore",
+	["archsplicer"] = "Splice or Split",
 	["archwicked"] = "Wall or Destroy",
 	["archgremlin"] = "Revolve stairs or a platform",
 	["archjoker"] = "Fake or Flip stairs",
@@ -574,7 +575,7 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to OPERATOR, for any rigs that you trigger to never go down. Rank up to SENTINEL to have an option not to trigger them.",
 	["keeperevent"] = event .. "the Random Move spell. Before executing you can choose soft or forced mode. In soft mode, this spell will move or rotate all normal stairs in random direction, without destroying anything in the process. In forced mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
 	["keeperaltevent"] = "This is an Event spell. It will restore all stairs in the game, including cursed ones. Unlike Purge it will not remove cursed intersections.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["keepermode"] =  "This is a Drone spell. It will change the drone mode to Keeper. In this mode drones will cast randomly either Keeper Rig on normal stairs or Random Move Spell on any un-cursed stairs. Special stairs will be restored instead. Outside of limits, drones will create and destroy respectively.",
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
@@ -643,7 +644,7 @@ module.spells.descriptions = {
 	["archonunion"] =  union,
 
 	--DRIFTER
-	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing.  You cannot surf through blocking stairs.",
+	["indrift"] = "This spell will create a temporary surfboard, moving you to a platform in a direction of your choosing. You cannot surf through blocking stairs.",
 	["updrift"] = "This spell will create an elevator using below and above platforms. The platforms will be restored after a given time period. Rank up to VAGABOND to speed up the movement. Rank up to TRAVELLER to be able to boost the lift to second level. Rank up to STRIDER to be able to boost lift again to third level.",
 	["diagdrift"] = "This spell will either: Create a horizontal elevator using below and any platform in a diagonal fashion. Such elevator will disappear after 7 return journeys. OR: If cast in outside direction, this spell will create an elevator would circle around the Tower once.",
 	["spin"] = "This spell will rotate below stairs 180 degrees. Rank up to NOMAD to be able to spin any uncursed stairs.",
@@ -667,7 +668,7 @@ module.spells.descriptions = {
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.  It can also be used on below stairs for trolling purposes.",
 
 	["malediction"] = timed .. "It allows you to create as many cursed stairs as you want for one minute. Rank up to BANISHED to destroy crossing cursed stairs." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
-	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
+	["hereticrigevent"] = rig .. "the Heretic Rig. Stairs, once triggered, will possess the triggering player. They will have to find Mana to be released. Possessed players cannot cast spells and they cannot jump. Rank up to UNBELIEVER to gain immunity to this rig. Rank up to EXILED to get 1 mana each time a player is possessed.",
 	["hereticevent"] = event .. "the Random Schism spell.",
 	["hereticaltevent"] = event .. "the Curse Stairs spell.",
 	["hereticmode"] = string.format(mode,"Heretic","Heretic Rig","Random Schism spell"),
@@ -677,7 +678,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
-	["twistup"] = "This spell will twist above stairs and likely below stairs too (if they are normal or rigged), so they create 2-level spiral staircase up. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistup"] = "This spell will twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
 	["split2"] = "This spell splits stairs into two opposing staircases, allowing you to access all four platforms.",
 	["splitalt"] = "This spell splits stairs into two separated staircases, allowing you to bypass above stairs - even when they are cursed.",
@@ -685,7 +686,7 @@ module.spells.descriptions = {
 	["twister"] = timed .. "It allows you to cast as many Split Stairs Spells as you like for one minute. Split spell variety will be chosen automatically for Your benefit." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "the Splicer Rig. Stairs, once triggered, will splice in a random direction. Rank up to ASSEMBLER to have the option to avoid Splicer Rigs.",
 	["splicerevent"] = event .. "the Random Splice spell.",
-	["spliceraltevent"] = event .. "the Split Stairs spell.",
+	["spliceraltevent"] = event .. "the Split Stairs Forward spell.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
@@ -695,7 +696,7 @@ module.spells.descriptions = {
 	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
 	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links will spin when a player jumps on them.",
 	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after two minutes.",
-	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to ACOLYTE to bring Orb to this point, if you cast it on the top level.",
+	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to ACOLYTE to bring the Orb to this point, if you cast it on the top level.",
 	["regen"] = "Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
 
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Rank up to LICH to demolish crossing cursed stairs with this spell." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
@@ -762,7 +763,7 @@ module.spells.descriptions = {
 	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
 	["archhacker"] = "This spell when used on platform's arrows, will hack-in any crossing stairs. When used on normal or rigged stairs, it will turn them into an Escalator of your choice.",
 	["archkeeper"] = "This spell when used on platform's arrows, will restore adjacent stairs. When used on normal or rigged stairs, it will move them in the direction of Your choice.",
-	["archsplicer"] = "This spell when used on platform's arrows, will restore adjacent twisted stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
+	["archsplicer"] = "This spell when used on platform's arrows, will split crossing stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
 	["archwicked"] = "This spell when used on platform's arrows, will create a wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
 	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
 	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
@@ -794,16 +795,16 @@ module.gui.ranks = {
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
-	["possessed_3"] = "As Possessed, you cannot use spells and your rank perks are inactive.",
+	["possessed_3"] = "As Possessed, you cannot use spells, your rank perks are inactive and you cannot jump.",
 
 	["hypnotised_1"] = "You have been Hypnotised!",
 	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
 
 	["reflected_1"] = "You have been Reflected!",
-	["reflected_3"] = "As Reflected, you control your ghost instead!",
+	["reflected_3"] = "As Reflected, you control yourself from your ghost perspective!",
 
 	["findmana"] = "Find Mana or Patron Rig to break free.",
-	["permanent"] = "Permanent mode - Complete climb or visit santcuary to de-morph.",
+	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
 
 	["architect_1"] = "You are now an Architect!",
 	["architect_2"] = "Architects cannot acquire any ranks.",
@@ -912,7 +913,7 @@ module.gui.ranks = {
 		[4] = "Create Dual Stairs will ignore cursed intersections and stairs on ghost's platform.",
 		[5] = "If you use a Revival Point on the top floor, it will bring the orb to where the point is placed.",
 		[6] = "Copy Platform spell will remove curses if it needs to.",
-		[8] = "You can demolish cursed stairs, while casting Dual Stairs.",
+		[8] = "You can demolish crossing cursed stairs, while casting Dual Stairs.",
 		[9] = "Regenerate restores 10 mana instead of 6, and will restore 5 mana to those nearby your ghost.",
 	},
 	["GREMLIN"] = {
@@ -1257,21 +1258,25 @@ module.gui.gameover.maxrank ={
 
 module.gui.gameover.credits = {
 
-	["common"] = {
-		"CRAZY STAIRS",
-		"Game conceptualized, designed and scripted by Sleazel",
-		"Help with design - cakegirlserina",
-		"Models by ZielonyLeszek",
-		"Skyboxes by @wwwtyro's generator",
-		"Datastore module, ProfileStore, by loleris",
-		"Thanks for playing!",	
-	},
-	["climb"] = "%s Climb Music - % by %",
-	["endgame"] = "%s Endgame Music - % by %",
-	["disco"] = "Disco stairs music - % by %",
-	["elevator"] = "Elevator music - % by %", --drifter platforms
+	["crazy"] = "CRAZY",
+	["stairs"] = "STAIRS",
+	["game"] = "A game by:",
+	["models"] = "Models by:",
+	["icons"] = "Spell Icons by:",
+	["boxes"] = "Skyboxes by:",
+	["data"] = "Datastore module by:",
+	["translators"] = "TRANSLATORS:",
 	["testers"] = "TESTERS:",
 	["thanks"] = "SPECIAL THANKS:",
+	["music"] = "MUSIC:",
+
+
+	["climb"] = "Climb music",
+	["endgame"] = "Endgame music",
+	["ghost"] = "Ghost Union music",
+	["disco"] = "Disco Stairs music",
+	["elevator"] = "Elevator music", --drifter platforms
+	["finish"] = "Thanks for playing!",
 
 }
 
@@ -1416,7 +1421,7 @@ module.static = {
 	["grave_1"] = "NECROMANCER'S GRAVE",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We aren�t actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'We aren't actually haunting you, we just wanna be friends.'\nour founder's quote",
 
 	--NEW (architect)
 	["studio_1"] = "ARCHITECT'S STUDIO",
@@ -1568,7 +1573,6 @@ module.guide = {
 		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
 		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
 		["soft"] = "Can be executed on an empty intersection only.",
-		["flatten"] = "Can be executed on an intersection with normal or rigged crossing stairs only.",
 		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
 		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
 	},
@@ -1634,6 +1638,7 @@ module.guide = {
 		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
 		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
 
+		["flatten"] = "Can be executed on an intersection with normal or rigged opposite stairs. Can be executed on stairs too.",
 		--NEW
 		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
 		["archarchon"] = "Archon's Platform Gate (when used on arrows) or Gate Stairs (when used on stairs)",
@@ -1641,7 +1646,7 @@ module.guide = {
 		["archnecro"] = "Necromancer's Create Dual Stairs (when used on arrows) or Undead Stairs (when used on stairs)",
 		["archhacker"] = "Hacker's Hack-In Stairs (when used on arrows) or Escalator (when used on stairs)",
 		["archkeeper"] = "Keeper's Restore Stairs (when used on arrows) or Move/Rotate Stairs (when used on stairs)",
-		["archsplicer"] = "Splicer's Restore Twisted Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
+		["archsplicer"] = "Splicer's Split Opposite Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
 		["archwicked"] = "Wicked's Wall without a Link (when used on arrows) or Destroy Stairs (when used on stairs)",
 		["archjoker"] = "Joker's Create Fake Stairs (when used on arrows) or Flip/Unflip Stairs (when used on stairs)",
 		["archspectre"] = "Spectre's Create Phantom Stairs (when used on arrows) or Ghost/UnGhost Stairs (when used on stairs)",
@@ -1703,8 +1708,8 @@ module.serverfeedback = {
 	["nomirror"] = "You need to be joined with ghost to walk on mirrors.",
 	--new
 	["noreflected"] = "This spell cannot be used when you are Reflected.",
-	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected",
-	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected",
+	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected.",
+	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected.",
 	--end new
 	["regenused"] = "Regen already used during this climb.",
 
@@ -1715,7 +1720,7 @@ module.serverfeedback = {
 	["spelllock"] = "You cannot cast spells now",
 	["nothere"] = "You can't use this spell in the tutorial.",
 	["onlyracers"] = "Only racing players can cast spells.",
-	--["cancelfirst"] = "You need to cancel current spell first...", --removed
+	["cancelfirst"] = "You need to cancel current spell first...",
 	["stashfull"] = "Your stairs stash is full.",
 	["stashempty"] = "You have to steal stairs before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
@@ -1970,7 +1975,7 @@ module.serverbroadcast = {
 	["newrace"] = "%s initiated a race - join them!",
 	["joined"] = "%s has joined the	race!",
 	["2min"] = "Nobody has challenged %s!",
-	["infstart"] = "Infinite race started!"
+	["infstart"] = "Infinite race started!",
 
 	--END NEW
 
@@ -2000,10 +2005,10 @@ module.localfeedback = {
 	["nomusic"] = "Music failed to load.",
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
+	["nounion"] = "You can't use Ghost Union right now.",
 
 	--NEW
 	["failedjoin"] = "Failed to join the race.",
-	["nounion"] = "You can't use Ghost Union right now.",
 	--END NEW
 
 }
@@ -2260,3 +2265,4 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
+
