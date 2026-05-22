@@ -651,7 +651,7 @@ module.spells.descriptions = {
 
 	["reflection"] = timed .. "Permette di generare specchi estesi in continuazione, per 60 secondi. Ti unirai automaticamente alla tua controfigura." .. string.format(timedExtra,RankData.REAVER[7].name,"Reaver",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "Reaver Rig. Chi le calpesta diventa estraniato (ignorato con il rango WIGTH sbloccato). I giocatori estraniati dovranno proseguire la scalata dal punto di vista della loro controfigura e si possono liberare raccogliendo Mana.",
-	["reaverevent"] = event .. "Scale a Senso Unico.",
+	["reaverevent"] = event .. "Scale a Senso Unico. Possono essere scalate in una sola direzione, ed i Reaver ne sono immuni.",
 	["reaveraltevent"] = event .. "Scale Riflettenti.",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Scale a Senso Unico"), --To change
 	["reaverrefill"] = overload,
@@ -674,10 +674,8 @@ module.spells.descriptions = {
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",
-	-- ["chamswap"] = "Questo è un incantesimo proibito dei Necromancer. Copia la tua controfigura. Tuttavia, a differenza di Unione di Reaver, questo incantesimo è solo visivo.",
-	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
-	["oneways"] = "Questo è un incantesimo proibito dei Reaver. Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura.\nSblocca il rango ILLUSION per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
+	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
+	["oneways"] = "Questo è un incantesimo proibito dei Reaver. Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura. Non hanno effetto sui Reaver.\nSblocca il rango ILLUSION per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
 	["chamdrawabove"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile a meno che un altro gicatore non attivi il ponte levatoio dall'alto. Il rango che influenzava questo incantesimo non ha più effetto.",
 	["ditch"] = "Questo è un incantesimo proibito dei Thief. Genera una scala nella direzione opposta a quella colpita nella stessa intersecazione, incrociandole tra loro.",
 	["warp"] = "Questo è un incantesimo proibito dei Wicked. Piega la scala colpita in modo tale da formare un collegamento verticale con la piattaforma superiore.",
@@ -835,7 +833,7 @@ module.gui.ranks = {
 		[5] = "I tuoi specchi durano il 50% in più. (15s esteso, 9s piccolo)",
 		[6] = "Non puoi più essere estraniato dalle scale alterate da Reaver Rig.",
 		[8] = "Puoi unire o separare giocatori nelle vicinanze alle/dalle loro controfigure.",
-		[9] = "Diventi immune alle scale a senso unico.",
+		[9] = "Quando cammini sugli specchi ti muovi più velocemente (del 25%).",
 	},
 	["NECROMANCER"] = {
 		[4] = "La tua controfigura ignora i malefici e le scale in mezzo quando esegui l'incantesimo Genera Scale Gemelle.",
