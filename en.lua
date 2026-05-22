@@ -743,7 +743,7 @@ module.spells.descriptions = {
 	--CHAMELEON
 	["chamdown"] = "This used to be a Keeper spell, before it got rejected. It will move any normal or rigged stairs down. If you have ranked Keeper to Captain, you may also move any un-cursed stairs.",
 	["chamdraw"] = "This used to be a Heretic spell, before it got rejected. It will turn stairs into drawbridge, making descent impossible unless other player activates bridge from below.",
-	["oneways"] = "This used to be a Reaver spell, before it got rejected. This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Rank up to Illusion to be immune to one-way stairs effect. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["oneways"] = "This used to be a Reaver spell, before it got rejected. This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Reavers can go both ways. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["ditch"] = "This used to be a thief spell, before it got rejected. It will turn stairs into a crossed staircase.",
 	["chamdrawabove"] = "This used to be a Heretic spell, before it got rejected. It will turn above stairs into drawbridge, allowing you to pass. Ascend is impossible unless other player activates bridge from above. Old Unbeliever rank is no longer active and auto draw from below is no longer possible.",
 	["warp"] = "This used to be a wicked spell, before it got rejected. It will warp stairs back to the platform.",
@@ -907,7 +907,7 @@ module.gui.ranks = {
 		[5] = "Your floor mirrors will last 50% longer. (15s big, 9s small)",
 		[6] = "You are now immune to Reaver Rigs.",
 		[8] = "Using merge spell will also affect nearby players.",
-		[9] = "You are now immune to one-way stairs.",
+		[9] = "You get a speed boost (25%) when walking on floor mirrors.",
 	},
 	["NECROMANCER"] = {
 		[4] = "Create Dual Stairs will ignore cursed intersections and stairs on ghost's platform.",
