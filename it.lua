@@ -651,7 +651,7 @@ module.spells.descriptions = {
 
 	["reflection"] = timed .. "Permette di generare specchi estesi in continuazione, per 60 secondi. Ti unirai automaticamente alla tua controfigura." .. string.format(timedExtra,RankData.REAVER[7].name,"Reaver",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "Reaver Rig. Chi le calpesta diventa estraniato (ignorato con il rango WIGTH sbloccato). I giocatori estraniati dovranno proseguire la scalata dal punto di vista della loro controfigura e si possono liberare raccogliendo Mana.",
-	["reaverevent"] = event .. "Scale a Senso Unico.",
+	["reaverevent"] = event .. "Scale a Senso Unico. Possono essere scalate in una sola direzione, ed i Reaver ne sono immuni.",
 	["reaveraltevent"] = event .. "Scale Riflettenti.",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Scale a Senso Unico"), --To change
 	["reaverrefill"] = overload,

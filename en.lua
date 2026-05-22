@@ -717,7 +717,7 @@ module.spells.descriptions = {
 
 	["reflection"] = timed .. "It allows you to cast as many Giant Mirrors as you like for one minute. You will be merged with your ghost automatically." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
 	["reaverrigevent"] = rig .. "the Reaver Rig. Stairs, once triggered, will Reflect the triggering player. They would have to find Mana to break free. Reflected players must control their characters from their ghost perspective. Reflected players are unaffected by Reaver mirrors. Rank up to WIGHT to get Reaver Rig immunity.",
-	["reaverevent"] = event .. "the Random One-Way Stairs spell. One-Way stairs work like Mirrored Stairs, but can be only used in one direction. Rank up to ILLUSION, to circumvent this effect.",
+	["reaverevent"] = event .. "the Random One-Way Stairs spell. One-Way stairs work like Mirrored Stairs, but can be only used in one direction. Reavers can go both ways.",
 	["reaveraltevent"] = event .. "the Glass Stairs spell.",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Random One-Way Stairs spell."),
 	["reaverrefill"] = overload,
