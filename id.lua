@@ -1,5 +1,10 @@
 --VERSION 4.1--
 --INDONESIAN / BAHASA INDONESIA--
+
+-- cast spells / mengenakan mantra or melakukan mantra
+-- cast [spell name] on / memantrai [nama mantra]
+-- execute spell / melaksanakan mantra?
+
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
 local RankData = require(game.ReplicatedFirst.DataModules:WaitForChild('RankData'))
