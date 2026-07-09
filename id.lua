@@ -308,48 +308,48 @@ module.spells.names = {
 	["patronaltevent"] = "Shrinkage",
 
 	--JOKER 
-	["flip"] = "Flip Stairs",
-	["flipabove"] = "Flip Above Stairs",
+	["flip"] = "Balik Tangga",
+	["flipabove"] = "Balik Tangga di Atas",
 	["fake"] = "Create Fake Stairs",
 	["invisible"] = "Create Invisible Stairs",
-	["disco"] = "Disco Stairs",
-	["trap"] = "Create Trap",
+	["disco"] = "Tangga Berdisko",
+	["trap"] = "Buat Platform Jebakan",
 
-	["flipper"] = "Flipper",
+	["flipper"] = "Pembalik",
 	["jokerevent"] = "The Cloak",
 	["jokeraltevent"] = "Flip Them All",
 
 	--WICKED
-	["destroy"] = "Destroy Stairs",
-	["destroyabove"] = "Destroy Above Stairs",
-	["bend"] = "Bend Stairs Up",
-	["damage"] = "Damage Above Stairs",
+	["destroy"] = "Hancurkan Tangga",
+	["destroyabove"] = "Hancurkan Tangga di Atas",
+	["bend"] = "Bengkokkan Tangga ke Atas",
+	["damage"] = "Cacati Tangga di Atas",
 	["flatten"] = "Bend Opposite Stairs Down",
-	["wall"] = "Create Wall" ,
+	["wall"] = "Buat Barikade" ,
 
 	["bender"] = "Bender",
 	["wickedevent"] = "Destruction",
 	["wickedaltevent"] = "Purge",
 
 	--KEEPER
-	["move"] = "Move Stairs",
+	["move"] = "Pindah Tangga",
 	["rotate"] = "Rotate Stairs",
-	["moveup"] = "Move Stairs Up",
-	["movedown"] = "Restore Stairs",
+	["moveup"] = "Pindah Tangga ke Atas",
+	["movedown"] = "Pulihkan Tangga",
 	["moverandom"] = "Random Above Move",
-	["rig"] = "Random Move",
+	["rig"] = "Pindah secara Acak",
 
 	["ascension"] = "Ascension",
 	["keeperevent"] = "Reshuffle",
 	["keeperaltevent"] = "Restoration",
 
 	--SPECTRE
-	["phantom"] = "Create Phantom Stairs",
-	["ghost"] = "Ghostify Above Stairs",
-	["shadow"] = "Ghostify Stairs",
-	["horizontal"] = "Horizontal Teleport",
-	["random"] = "Random Teleport",
-	["vertical"] = "Vertical Teleport",
+	["phantom"] = "Buat Tangga Berhantu",
+	["ghost"] = "Hantui Tangga di Atas",
+	["shadow"] = "Hantui Tangga",
+	["horizontal"] = "Teleportasi secara Horisontal",
+	["random"] = "Teleportasi secara Acak",
+	["vertical"] = "Teleportasi ke Atas",
 
 	["traveller"] = "Shimmering",
 	["spectreevent"] = "Phantom Shuffle",
@@ -368,8 +368,8 @@ module.spells.names = {
 	["hackeraltevent"] = "Breach",
 
 	--THIEF
-	["steal"] = "Steal Stairs",
-	["stealabove"] = "Steal Above Stairs",
+	["steal"] = "Curi Tangga",
+	["stealabove"] = "Curi Tangga di Atas",
 	["place"] = "Place Stairs",
 	["uppass"] = "Spiral Staircase",
 	["sidepass"] = "Create Bypass",
@@ -380,12 +380,12 @@ module.spells.names = {
 	["thiefaltevent"] = "Mega Bypass",
 
 	--ARCHON
-	["splitup"] = "Create Up Gate",
-	["splitrotate"] = "Create Rotated Gate",
-	["splitside"] = "Create Straight Gate",
-	["splitrandom"] = "Create Random Gate",
-	["cancelsplit"] = "Destroy Gate",
-	["splitforward"] = "Create Platform Gate",
+	["splitup"] = "Buka Portal ke Atas",
+	["splitrotate"] = "Buka Portal Rotated Gate",
+	["splitside"] = "Buka Portal  Straight Gate",
+	["splitrandom"] = "Buka Portal  Random Gate",
+	["cancelsplit"] = "Tutup Portal",
+	["splitforward"] = "Buka Portal Platform",
 
 	["splitter"] = "Portalmania",
 	["archonevent"] = "StairGåte-1",
@@ -404,10 +404,10 @@ module.spells.names = {
 	["drifteraltevent"] = "Liftage",
 
 	--HERETIC
-	["createcursed"] = "Create Cursed Stairs",
-	["curse"] = "Curse Stairs",
-	["curseabove"] = "Curse Above Stairs",
-	["curseinter"] = "Flicker",
+	["createcursed"] = "Buat Tangga Terkutuk",
+	["curse"] = "Kutuk Tangga",
+	["curseabove"] = "Kutuk Tangga di Atas",
+	["curseinter"] = "Salto",
 	["autodown"] = "Raise Schism",
 	["autoup"] = "Schism Opposite Down",
 
@@ -416,9 +416,9 @@ module.spells.names = {
 	["hereticaltevent"] = "Vengeance",
 
 	--SPLICER
-	["twistup"] = "Splice Stairs Up",
-	["twistside"] = "Splice Parallel Stairs",
-	["twistrotate"] = "Splice Adjacent Stairs",
+	["twistup"] = "Sambung Tangga ke Atas",
+	["twistside"] = "Sambung Tangga Sejajar",
+	["twistrotate"] = "Sambung Tangga Adjacent Stairs",
 	["canceltwist"] = "Restore Twisted Stairs",
 	["split2"] = "Split Stairs",
 	["splitalt"] = "Split Stairs Forward",
@@ -428,10 +428,10 @@ module.spells.names = {
 	["spliceraltevent"] = "Bisect",
 
 	--NECROMANCER
-	["createdual"] = "Create Dual Stairs",
-	["copyplatform"] = "Copy Ghost's Platform",
+	["createdual"] = "Buat Dual Stairs",
+	["copyplatform"] = "Salin Platform Ghost's Platform",
 	["soulbridge"] = "Create Soul Bridge",
-	["undeadabove"] = "Remove Soul Above",
+	["undeadabove"] = "Bunuh Tangga di Atas",
 	["revival"] = "Revival Point",
 	["regen"] = "Regenerate Mana",
 
@@ -440,12 +440,12 @@ module.spells.names = {
 	["necromanceraltevent"] = "Soul Harvest",
 
 	--REAVER
-	["createmirrored"] = "Create Mirrored Stairs",
-	["bigmirror"] = "Giant Mirror",
-	["smallmirror"] = "Small Mirror",
-	["outermirror"] = "Outer Mirror",
+	["createmirrored"] = "Buat Tangga Bercermin",
+	["bigmirror"] = "Cermin Besar",
+	["smallmirror"] = "Cermin Kecil",
+	["outermirror"] = "Cermin Luar",
 	["merge"] = "Reaver Merge",
-	["oneway"] = "Glass Stairs",
+	["oneway"] = "Tangga Kaca",
 
 	["reflection"] = "Reflection",
 	["reaverevent"] = "Cross Roads",
@@ -453,24 +453,24 @@ module.spells.names = {
 
 
 	--GREMLIN
-	["tram"] = "Create Tram Stairs",
-	["screwup"] = "Up Corkscrew",
-	["revolve"] = "Revolve Stairs",
-	["trapstairs"] = "Trapdoor Stairs",
-	["screwdown"] = "Down Corkscrew",
-	["spinplatform"] = "Revolve Platform",
+	["tram"] = "Buat Tangga Funikular",
+	["screwup"] = "Pilin Naik",
+	["revolve"] = "Kisar Tangga",
+	["trapstairs"] = "Tangga Jebakan",
+	["screwdown"] = "Pilin Turun",
+	["spinplatform"] = "Kisar Platform",
 
 	["tramway"] = "Tram-way",
 	["gremlinevent"] = "Revolvelution",
 	["gremlinaltevent"] = "Gridlock",
 
 	--TUTORIAL
-	["tcreate"] = "Create Stairs",
-	["tflip"] = "Flip Stairs",
+	["tcreate"] = "Buat Tangga",
+	["tflip"] = "Balik Tangga",
 	["tdestroy"] = "Destroy Above Stairs",
-	["tmove"] = "Move Stairs",
+	["tmove"] = "Pindah Tangga",
 	["tdash"] = "Dash",
-	["trestore"] = "Restore Stairs",
+	["trestore"] = "Pulihkan Tangga",
 
 	--CHAMELEON
 	["ditch"] = "Cross Stairs",
