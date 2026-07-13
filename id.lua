@@ -584,12 +584,12 @@ module.spells.descriptions = {
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "This spell will create Phantom Stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
-	["ghost"] = "This spells lets you ghostify above stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Use this spell again to de-ghostify stairs. ",
-	["shadow"] = "This spell lets you ghostify stairs. You can walk through ghostified stairs, but cannot walk on them unless you are ranked up to AETHER. Rank up to PHANTOM to cast this spell for free. Use this spell again to de-ghostify stairs.",
-	["horizontal"] = "This spell will teleport you in the chosen direction. You can teleport through any un-cursed stairs in the way.",
-	["random"] = "This spell will teleport you to a random platform on the same level.",
-	["vertical"] = "This spell will teleport you up, to the platform above.",
+	["phantom"] = "Mantra ini untuk membuat tangga berhantu pada arah yang terpilih. If there are any crossing stairs in the way, they will be destroyed. Phantom stairs will quickly fade away after casting, disappearing completely.",
+	["ghost"] = "Mantra ini untuk menghantui tangga yang berada di atas. Kamu bisa berjalan melalui tangga telah dihantui, tetapi tidak dapat mendaki pada tangga tersebut kecuali kamu telah menjadi peringkat Æther. Menggunakan mantra ini lagi untuk mewujudkan tangga yang telah dihantui.",
+	["shadow"] = "Mantra ini untuk menghantui tangga. Kamu bisa berjalan melalui tangga yang telah dihantui, tetapi tidak dapat mendaki pada tangga tersebut kecuali kamu telah menjadi peringkat Æther. Naiklah ke peringkat Phantom untuk mengenakan mantra ini secara gratis. Menggunakan mantra ini lagi untuk mewujudkan tangga yang telah dihantui.",
+	["horizontal"] = "Mantra ini untuk berteleportasi         will teleport you in the chosen direction. Kamu bisa berteleportasi melalui tangga tak terkutuk apa pun yang menghalangi.",
+	["random"] = "Mantra ini untuk berteleportasi ke platform yang acak di tingkat sama.        will teleport you to a random platform on the same level.",
+	["vertical"] = "Mantra ini untuk berteleportasi ke platform yang berada di atas.",
 
 	["traveller"] = timed ..  "It allows you to cast as many Horizontal Teleport spells, as you like for one minute."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
 	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to VISION to have an option to walk on Spectre Rigs without triggering them.",
@@ -616,8 +616,8 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["steal"] = "Mantra ini untuk mencuri sebuah tangga normal atau termanipulasi. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
+	["stealabove"] = "Mantra ini untuk mencuri sebuah tangga normal atau termanipulasi yang berada di atas. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
 	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
 	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
 	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
