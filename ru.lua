@@ -2185,7 +2185,7 @@ module.gui.gameover.extras = {
 
 	--["noobs"] = "Обучения для нубиков!",
 	["possessed"] = "Эти надоедливые Heretic'и!",
-	["hypnotized"] = "Где... я?",
+	["hypnotised"] = "Где... я?",
 	--NEW
 	["reflected"] = "Выпустите меня!",
 	--END NEW
