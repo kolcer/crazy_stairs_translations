@@ -298,7 +298,7 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Bangun Tangga",
 	["restore"] = "Call the Orb", 
-	["split"] = "Rebuild Opposite",
+	["split"] = "Buat Ulang Tangga Opposite",
 	["shrinkabove"] = "Shrink Above Stairs",
 	["link"] = "Create Link",
 	["portal"] = "Create Portal",
@@ -536,7 +536,7 @@ module.spells.descriptions = {
 	["patronunion"] = union,
 
 	--JOKER
-	["flip"] = "Mantra ini untuk      flips stairs around, so top will become bottom and vice versa. You may also flip such stairs back.",
+	["flip"] = "Mantra ini untuk membalik tangga, sehingga      so top will become bottom and vice versa. Tangga terbalik dapat dibalik lagi.",
 	["flipabove"] = "Mantra ini untuk      flips above stairs, so top will become bottom and vice versa. You may also flip such stairs back.",
 	["fake"] = "Mantra ini untuk      allows you to create fake stairs in the chosen direction. If there are any crossing stairs in the way, they will be destroyed. Any player (including you) that will attempt to climb them will fall through, with the exception of TRICKSTERS, ITS and players in the Ghost Union Mode.",
 	["invisible"] =  "Mantra ini untuk      creates invisible stairs. However, this will not destroy crossing stairs, so you can only place stairs in an empty intersection. Rank up to JESTER to see all invisible stairs, and have the option to not reveal them.",
@@ -568,12 +568,12 @@ module.spells.descriptions = {
 	["wickedunion"] = union,
 
 	--KEEPER
-	["move"] = "Mantra ini untuk memindahkan tangga        spell will move stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on the stairs, prompting you to choose direction. Stairs cannot be moved outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["rotate"] = "Mantra ini untuk       spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["moveup"] = "Mantra ini untuk memindahkan tangga ke atas, menghancurkan tangga yang menghalangi.      will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["move"] = "Mantra ini untuk memindahkan tangga secara horisontal, menghancurkan tangga apa pun yang menghalangi. After mengenakan, arrows will appear on the stairs, prompting you to choose direction. Tangga tidak dapat dipindahkan keluar        cannot be moved outside the game area. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+	["rotate"] = "Mantra ini untuk       spell will rotate stairs in a horizontal fashion, destroying any stairs in the way. After casting, arrows will appear on stairs, prompting you to choose direction. Stairs cannot be rotated outside the game area. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+	["moveup"] = "Mantra ini untuk memindahkan tangga ke atas, menghancurkan tangga yang menghalangi.      will move stairs up, destroying any stairs in the way. Stairs cannot be moved above top level. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
 	["movedown"] = "Mantra ini untuk memulihkan tangga apa pun yang spesial. Kalau tangga yang sudah normal, mantra ini tidak dapat dilaksanakan.         If stairs are already normal, this spell will not execute. Naiklah ke peringkat Captain untuk mengenakan mantra ini secara gratis. Naiklah ke peringkat Admiral supaya bisa dapat membebaskan tangga terkutuk dan simpang terkunci.",
-	["rig"] = "Mantra ini untuk     will move or rotate stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
-	["moverandom"] = "Mantra ini untuk         will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Rank up to CONTROLLER to move any un-cursed stairs.",
+	["rig"] = "Mantra ini untuk memindahkan atau tangga      will move or rotate stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
+	["moverandom"] = "Mantra ini untuk         will move or rotate above stairs in random direction, destroying any stairs in the way. Rank up to OPERATOR to avoid stairs going down. Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",
 
 	["ascension"] = timed .. "It allows you to cast as many move up spells as you like for one minute."  .. string.format(timedExtra,RankData.KEEPER[7].name,"Keepers",RankData.KEEPER[3].name),
 	["keeperrigevent"] = rig .. "the Keeper Rig. Stairs, once triggered, will move or rotate in random direction. Rank up to OPERATOR, for any rigs that you trigger to never go down. Rank up to SENTINEL to have an option not to trigger them.",
@@ -664,9 +664,9 @@ module.spells.descriptions = {
 	["drifterunion"] = union,
 
 	--HERETIC
-	["createcursed"] = "Mantra ini untuk      create cursed stairs in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
-	["curse"] = "Mantra ini untuk      curse below stairs. Use this spell again to uncurse stairs.",
-	["curseabove"] = "Mantra ini untuk      curse above stairs. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
+	["createcursed"] = "Mantra ini untuk membuat tangga terkutuk     create cursed stairs in the chosen direction. Any crossing stairs will be destroyed. Rank up to BANISHED to destroy crossing cursed stairs.",
+	["curse"] = "Mantra ini untuk mengutuk tangga. Gunakan mantra ini lagi untuk membebaskan tangga tersebut.",
+	["curseabove"] = "Mantra ini untuk mengutuk tangga yang berada di atas. Stairs will lift temporarily, allowing you to cross. Use this spell again to uncurse stairs.",
 	["curseinter"] = "Mantra ini untuk      allow you to flicker across to the opposite platform, if there are no stairs in the way. Intersection will become cursed after this spell, so other players cannot use it anymore. If you are ranked up to INFIDEL, you can use this spell on already cursed interscetions, uncursing them in the process.",
 	["autodown"] = "Use this spell to create and lift special mirrored section of the lower part of the staircase. Only ghost unions and Heretics can walk on that section.",
 	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Only ghost unions and Heretics can walk on that section.  It can also be used on below stairs for trolling purposes.",
@@ -975,7 +975,7 @@ module.gui.feedback = {
 
 	["title"] = "SEND FEEDBACK",
 	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
-	["send"] = "SEND",
+	["send"] = "KIRIM",
 	["locked"] = "LOCKED",
 
 }
@@ -984,8 +984,8 @@ module.gui.settings = {
 
 	--NEW
 
-	["Gameplay"] = "GAMEPLAY SETTINGS",
-	["Interface"] = "INTERFACE SETTINGS",
+	["Gameplay"] = "PENGATURAN JALAN MAIN",
+	["Interface"] = "PENGATURAN ANTARMUKA",
 
 	["Billboard"] = "Show Your own avatar billboard",
 	["Rank"] = "Show Your Overall Rank in the avatar billboard",
@@ -1015,11 +1015,11 @@ module.gui.gameover = {}
 
 module.gui.gameover.results = {
 
-	["class"] = "YOUR ALIGNMENT",
-	["time"] = "YOUR CLIMB TIME",
+	["class"] = "KELASMU",
+	["time"] = "WAKTU PENDAKIANMU",
 	["climbs"] = "CLIMBS AWARDED",
 	["tokens"] = "TOKENS AWARDED",
-	["rank"] = "YOUR CURRENT RANK",
+	["rank"] = "PERINGKATMU YANG SAAT INI",
 
 	--NEW
 	["role"] = "YOUR OVERALL RANK",
@@ -1029,13 +1029,13 @@ module.gui.gameover.results = {
 	["custom"] = "CUSTOM TOWER RECORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
 	["noVR"] = "CLASSIC TOWER RECORD", --this will show in noVR tower, as they share the same record
 
-	["cTime"] = "%s RECORD", --%s will be replaced by the used class
-	["levels"] = "LEVELS REACHED",
-	["cClimbs"]	= "%s CLIMBS", --%s will be replaced by the used class
-	["tClimbs"] = "TOTAL CLIMBS",
-	["tTokens"] = "%s TOKENS",	--%s will be replaced by the used class	(or multi)
-	["spells"] = "SPELLS USED",	--amount
-	["rRank"] = "RACE PLACEMENT",--if any
+	["cTime"] = "REKOR %s", --%s will be replaced by the used class
+	["levels"] = "TINGKAT REACHED",
+	["cClimbs"]	= "%s PENDAKIAN", --%s will be replaced by the used class
+	["tClimbs"] = "JUMLAH PENDAKIAN",
+	["tTokens"] = "%s TOKEN",	--%s will be replaced by the used class	(or multi)
+	["spells"] = "MANTRA USED",	--amount
+	["rRank"] = "POSISI BALAP",--if any
 	--END NEW
 
 }
@@ -1286,7 +1286,7 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "How do I play?",
+	["cla_1"] = "Bagaimana cara bermain? 🚫🧠",
 	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
 	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
@@ -1299,22 +1299,22 @@ module.static = {
 	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
-	["pro_1"] = "PRO TOWER",
+	["pro_1"] = "MENARA PRO",
 	["pro_2"] = "Even levels restrictions",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
-	["pro_5"] = "Cursed Stairs",
-	["pro_6"] = "In the Pro Tower Drones will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
-	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
-	["pro_8"] = "Only Heretics and Admirals can restore Cursed Stairs. Purge Event and Restoration will get rid of all cursed stairs too. However Drones will always create new ones in Pro Tower.",
-	["pro_9"] = "Cursed Intersections",
+	["pro_5"] = "Tangga Terkutuk",
+	["pro_6"] = "Di Menara Pro, dron akan secara acak membuat tangga terkutuk atau mengutuk tangga yang normal. Ada  There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
+	["pro_7"] = "Tangga terkutuk        immune to most spells. Kamu tidak bisa berteleportasi melalui tangga tersebut atau menggunakan adawdsadwsawdsa cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
+	["pro_8"] = "Hanya Heretic dan Admiral dapat membebaskan tangga terkutuk. Purge Event and Restoration will get rid of all cursed stairs too. However Drones will always create new ones in Pro Tower.",
+	["pro_9"] = "Simpang Terkunci",
 	["pro_10"] = "In the Pro Tower Drones will randomly create Cursed Intersections too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
-	["inf_1"] = "INFINITE TOWER",
+	["inf_1"] = "MENARA TAKTERBATAS",
 	["inf_2"] = "RACE MANDATORY",
-	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
+	["inf_3"] = "Di Menara Takterbatas, participating in the race is mandatory. Pendaki kasul           are not allowed to mengenakan mantra dan tidak akan  spells and will not receive any awards for climbing. Menyentuh the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
 	["inf_5"] = "Fallen Drone",
 	["inf_6"] = "Unlike classic and pro towers, Fallen Drone has a special task in the infinite tower.",
@@ -1325,7 +1325,7 @@ module.static = {
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
 
-	["cus_1"] = "CUSTOM TOWER",
+	["cus_1"] = "MENARA KUSTOM",
 	["cus_2"] = "YOU DECIDE!",
 	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
