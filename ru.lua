@@ -1853,11 +1853,11 @@ module.serverfeedback = {
 	--chameleon exceptions	
 	["chamtutorial"] = "Нельзя использовать Chameleon'а в обучении!",
 	["champossessed"] = "Одержимые не могут использовать Chameleon'а.",
-	["chamhypnotized"] = "Загипнотизированные не могут использовать Chameleon'а.",
+	["chamhypnotised"] = "Загипнотизированные не могут использовать Chameleon'а.",
 	["chamreflected"] = "Нельзя использовать Chameleon'а, пока ты Отражен(а).",
 	--["chamspell"] = "Please execute or cancel current spell first.", --removed
 	["morphpossessed"] = "Одержимые не могут сменить фракцию.",
-	["morphhypnotized"] = "Загипнотизированные не могут сменить фракцию.",
+	["morphhypnotised"] = "Загипнотизированные не могут сменить фракцию.",
 	["morphreflected"] = "Отражённые не могут сменить фракцию.",
 
 	["nocode"] = "Пожалуйста, сначала введи код.",
