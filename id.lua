@@ -555,7 +555,7 @@ module.spells.descriptions = {
 	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti mantra lainnya, mantra tersebut bekerja pada tangga apa pun. Naiklah ke peringkat Vile untuk mengenakan mantra ini secara gratis. Naiklah ke peringkat Vicious untuk mendapatkan 1 mana setiap kali kamu menghancurkan sebuah tangga yang spesial. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
 	["destroyabove"] = "Mantra ini untuk menghancurkan tangga yang berada di atas. Tidak seperti mantra lainnya, mantra tersebut bekerja pada tangga apa pun. Naiklah ke peringkat Vicious untuk mendapatkan 1 mana setiap kali kamu menghancurkan sebuah tangga yang spesial. Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
 	["bend"] = "Mantra ini untuk membengkokkan tangga ke atas. Gunakan mantra tersebut untuk mengakses ke platform yang berada di atas.",
-	["damage"] = "Mantra ini untuk       turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
+	["damage"] = "Mantra ini untuk mencacati tangga yang berada di atas dengan menghapus kebanyakan       turn above stairs into an obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "Mantra ini untuk       bends opposite stairs down. Use it to gain access to the opposite platform. It can also be used on below stairs for trolling purposes.",
 	["wall"] = "Mantra ini untuk membuat barikade      on the platform plus a link to opposite platform for 60 seconds. Hanya Wicked dan Ghost Unions dapat  go through such wall and on the link.",
 
@@ -680,7 +680,7 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "Mantra ini untuk      twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistside"] = "Mantra ini untuk      twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Naiklah ke peringkat Transformer untuk memantrai tangga t     use this spell on already twisted stairs.",
 	["twistrotate"] = "Mantra ini untuk      twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "Mantra ini untuk      twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "Mantra ini untuk      restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
