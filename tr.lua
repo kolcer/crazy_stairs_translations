@@ -7,43 +7,27 @@ local module = {}
 module.gui = {}
 
 module.gui.basic = {
-	["yes"] = "EVET",
-	["no"] = "HAYIR",
-	["ok"] = "TAMAM",
-	["menu"] = "MENÜ",
+
 	["default"] = "VARSAYILAN",
 	["validate"] = "DOĞRULA",
-	["play"] = "OYNA",
-	["skip"] = "ÖĞRETİCİYİ \n ATLA",
-	["loading"] = "YÜKLENİYOR, LÜTFEN BEKLE...",
-	["mode"] = "%s\nMODU",
-	["cd"] = "NİHAİ\nBEKLEME SÜRESİ",
-	["complete"] = "TAMAMLANDI",
+	
 }
 
 module.gui.switcher = {
-
-	["title"] = "SUNUCU DEĞİŞTİR",
-
-	["public"] = "GENEL SUNUCU",
-	["private"] = "ÖZEL SUNUCU",
 	["join"] = "KATIL",
 	["friends"] = "ÇEVRİMİÇİ ARKADAŞLAR",
 	["refresh"] = "yenileniyor...",
 	["fail"] = "YENİLENİRKEN HATA OLUŞTU!",
 
+	["refreshbutton"] = "REFRESH",
+	["failed"] = "Teleport failed!",
+	["classic"] = "Classic Tower",
+	["pro"] = "Pro Tower",
+	["custom"] = "Custom Tower",
+	["noVR"] = "VR Free Tower",
 }
 
 module.gui.serversettings = {
-
-	["title"] = "SAHİP AYARLARI",
-
-	["Moderation"] = "MODERASYON",
-	["rules"] = "Senin sunucun, senin kuralların.",
-	["temp"] = "Tüm susturmalar ve yasaklamalar geçicidir",
-	["kick"] = "AT",
-	["ban"] = "YASAKLA",
-	["mute"] = "SUSTUR",
 
 	["Drones"] = "DRONE AYARLARI",
 	["DronesReadOnly"] = "DRONE AYARLARI (sadece okuma)",
@@ -68,19 +52,19 @@ module.gui.serversettings = {
 	["EvenLevels"] = "Çift seviyeler kısıtlandı",
 	["OrbMoves"] = "Oyunsonu küresi, konum değiştirir",
 	["InfRegeneration"] = "Yeni sunucuda otomatik rejenerasyon, kule seviyeleri, sonsuz yarıştn sonra değişiyor",
-	["TowerLevels"] = "Tower Seviyeleri (veya sonsuz modda aktif seviyeler). Bir yarış veya rejenerasyon sırasında değiştirilemez",
+	["TowerSize"] = "Tower grid size (experimental)",
+	--["TowerLevels"] = "Tower Seviyeleri (veya sonsuz modda aktif seviyeler). Bir yarış veya rejenerasyon sırasında değiştirilemez",
 	["RaceDuration"] = "Maksimum Yarış Süresi. Mevcut yarışı etkilemeyecektir. (saniye)",
 	["InfStart"] = "Başlangıç ??Sonsuz modu tur aralığı (her turda 2 seviye oluşturulur) (saniye)",
 	["InfReduction"] = "Sonsuz mod aralık azaltma (her tur şu kadar daha kısadır) (saniye)",
 	["InfMin"] = "Sonsuz mod minimum aralık süresi (saniye)",
-	["Cooldown"] = "Etkinlik ve Teçhizat bekleme süresi (saniye))",
+	["CooldownTime"] = "Etkinlik ve Teçhizat bekleme süresi (saniye)",
 
 }
 
 module.gui.shop = {
-
-	["title"] = "CRAZY STAIRS DÜKKANI",
-
+	
+	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.",
 	["chameleon"] = "Chameleon'lar, tırmanma sırasında birleşim değiştirebilir.",
 	["spectre"] = "Spectre, tek kişilik oyun için en iyi olan ışınlanma tabanlı bir birleşimdir.",
 	["mana"] = "Mana depolama kapasitenizi 10 puan artırın.",
@@ -92,83 +76,103 @@ module.gui.shop = {
 	["3TOKENS"] = "3 Jeton (R$%d)",
 	["30TOKENS"] = "30 Jeton (R$%d)",
 	["300TOKENS"] = "300 Jeton (R$%d)",
-	["SPECTRE PASS"] = "Spectre Gamepass (R$%d)",
-	["MANA PASS"] = "20 Mana Kapasitesi Gamepass (R$%d)",
-	["CHAMELEON PASS"] = "Chameleon Gamepass (R$%d)",
+	
+	["SPECTRE"] = "Spectre Gamepass (R$%d)",
+	["MANA"] = "20 Mana Kapasitesi Gamepass (R$%d)",
+	["CHAMELEON"] = "Chameleon Gamepass (R$%d)",
+	["ARCHITECT"] = "Architect Gamepass (R$%d)",
 
 }
 
-module.gui.spellbar = {
+module.gui.nospellbar = {
 
-	["share"] = "MANA\nPAYLAŞ",
 	["nocasual"] = "SADECE YARIŞÇILAR BÜYÜ YAPABİLİR",
+	["possessed"] = "ELE GEÇİRİLDİN! (Mana bularak kurtul)",
+	
+	["pernament"] = "ELE GEÇİRİLDİN! (pernament mode)",
+	["cancelled"] = "CANCELLED...", --timed spell cancelled
 
 } 
 
 module.gui.stats = {
 
-	["total"] = "Toplam tırmanma: %d / Kazanmalar: %d",
-	["class"] = "%s tırmanmaları: %d",
-	["best"] = "En iyi %s zamanı: %.2f",
-	["na"] = "N/A",
+	["badges"] = "YOUR BADGES",
+	["climbs"] = "YOUR CLIMBS",
+	["total"] = "TOPLAM TIRMANMA/KAZANMALAR",
+	["best"] = "BEST TIME OVERALL",
+	["norecord"] = "[no record]",
 
+	["2124486274"] = "Prank the Creator",
+	["1803533030753957"] = "Black Hole",
+	["2124480173"] = "Wicked's Treason",
+	["2124480172"] = "Joker's Trick",
+	["2124637294"] = "Drifter's Voyage",
+	["2124517579"] = "Thief's Heist",
+	["4464785885277417"] = "Splicer's Twist",
+	["2124480174"] = "Keeper's Order",
+	["2124637293"] = "Archon's Connection",
+	["2124517578"] = "Hacker's Exploit",
+	["707445818894757"] = "Gremlin's Spiral",
+	["2124480171"] = "Patron's Pride",
+	["1407551481032773"] = "Reaver's Reflection",
+	["2124637295"] = "Heretic's Curse",
+	["1885715582646280"] = "Necromancer's Rite",
+	["2124480175"] = "Muggle's Logic",
+	["2124826874"] = "Full Circle",
+	["2124529966"] = "Skipped the Tutorial",
+	["2124826880"] = "Possessed Fate",
+	["3731010929572663"] = "Hypnotised Dream",
+	["840574993122888"] = "Perspective Reflected",
+	["2124913225"] = "Architect's Design",
+	["2124702954"] = "Rootkit yüklendi",
+	["2124702945"] = "Herşeyi yok et",
+	["2124702946"] = "Düzen yeniden sağlandı",
+	["128721686760593"] = "Beni döndürüyorsun, döndürüyorsun.",
+	["2124702952"] = "Asansörü kullanacağım",
+	["3121101516427751"] = "Dolaşıklık",
+	["2124702942"] = "Arkada Noob kalmayacak",
+	["2124702950"] = "Illuminati onaylandı",
+	["2124702951"] = "Benim, benim, hepsi BENİM!",
+	["1165646024608180"] = "Biz Tekiz!",
+	["2303731210592278"] = "Yüksel, yüksel, YÜKSEL!",
+	["2124702949"] = "Aforoz",
+	["2124702943"] = "Şaka yapmak yaşamaktır",
+	["2124702948"] = "Büyüler abartılıyor",
+	["2124826876"] = "Perfect Circle",
+	["2124645341"] = "Secret Badge",
+	["2126893403"] = "Super Secret Badge",
+	["2126893411"] = "Mega Secret Badge",
+	
 }
 
-module.gui.timedspell = {
+module.gui.questions = {
+	["cancel"] = "Zamanlı büyüyü iptal etmek için eminmisin? Jetonlar iade edilmeyecektir.",
+	["tutorial"]= "Would you like to play the tutorial?",
+	["skip"] = "Would you like to skip the tutorial?",
+	["reshuffle"] = "Merdivenlerin hareket ederken çarpışmaları önlemesini ister misiniz? Değilse, yoldaki herhangi bir merdiven yıkılacak.",
 
-	["possessed"] = "ELE GEÇİRİLDİN! (Mana bularak kurtul)",
-	["released"] = "KURTULDUN",
-	["timesup"] = "zaman doldu...",
+	["gift"] = "Do you want to gift %s Game Pass to another player?",
+	["choose"] = "Choose a player to receive %s Game Pass", 
+	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
+	["received"] = "You have received %s Game Pass, courtesy of %s!",
 
+	["architect"] = "Architect",
+	["mana"] = "+10 Mana Kapasitesi",
+	["spectre"] = "Spectre",
+	["chameleon"] = "Chameleon",
+
+	["race"] = "Join race?",
+	["racein"] = "Race in:",
+	["go"] = "GO!",
+	["raceoff"] = "Race cancelled",
+	
 }
-
-
-module.gui.activatecham = {
-
-	["title"] = "CHAMELEON'U ETKİNLEŞTİR",
-	["body"] = "Chameleon modunu etkinleştirmek istermisin?\nTüm tırmanış sırasında açık kalacak."
-
-}
-
-module.gui.caceltimed = {
-
-	["title"] = "ZAMANLI BÜYÜYÜ İPTAL ET",
-	["body"] = "Zamanlı büyüyü iptal etmek için eminmisin? Jetonlar iade edilmeyecektir."
-
-}
-
-module.gui.climbtimer = {
-
-	["prompt"] = "Merdivenlere\nÇık!",
-	["floor"] = "Kat",
-	["last"] = "Son zaman",
-
-}
-
 module.gui.codes = {
 
 	["title"] = "KODU GİR",
 	["body"] = "Kodunu buraya gir:",
 	["prompt"] = "(kod)",
 	["button"] = "DOĞRULA",
-
-}
-
-module.gui.gauges = {
-
-	["prompt"] = "Devam etmek için zıpla, iptal etmek için tekrar tıkla.",
-
-	["found"] = "%d merdiven bulundu (%.1f%% fill)",
-	["special"] = "%d tanesi özel (%.1f%%)",
-	["affected"] = "%d merdiven etkilenecek (%.1f%%)",
-	["cursed"] = "%d lanetli kavşak bulundu (%.1f%%)",
-	["fill"] = "%d tane merdiven oluşacak (%.1f%%)",
-	["purge"] = "%d obje yok olacak (%.1f%%)",
-	["normal"] = "%d zaten normal (%.1f%%)",
-	["restore"] = "%d merdiven onarılacak (%.1f%%)",
-	["bypass1"] = "%d yolda lanet var (%.1f%%)",
-	["bypass2"] = "%d baypass zaten var (%.1f%%)",
-	["bypass3"] = "%d baypass oluşacak (%.1f%%)",
 
 }
 
@@ -181,6 +185,7 @@ module.gui.jukebox = {
 	["climb"] = "TIRMANMA MÜZİĞİ",
 	["endgame"] = "OYUNSONU MÜZİĞİ",
 	["failed"] = "[yüklenirken hata oluştu]",
+	["off"] = "MUTED",
 
 }
 
@@ -209,16 +214,33 @@ module.gui.results = {
 
 }
 
-module.gui.racetimer = {
+module.gui.menu = {
 
-	["gather"] = "Sen yarışta\ndeğilsin",
-	["race"] = "YARIŞ\nBİTTİ",
-	["inf"] = "Elenildi",
-	["off"] = "YARIŞ\nZAMANLAYICISI",
-	["wait"] = "yarış ... içinde",
-	["on"] = "Rütbe",
+	["Codes"] = "Code entry",
+	["Feedback"] = "Send game feedback",
+	["Language"] = "Change game language",
+	["Music"] = "Music Jukebox",
+	["RaceResults"] = "Last race results",
+	["ServerSettings"] = "Tower Settings (Custom Tower)",
+	["Settings"] = "Game settings",
+	["Shop"] = "Buy game passes and tokens",
+	["Spectate"] = "Spectate other players",
+	["Stats"] = "Your badges and achievements",
+	["SwitchServer"] = "Switch Tower",
+	["Tokens"] = "Your tokens",
+	["Tutorial"] = "Play the Tutorial",
 
 }
+
+module.gui.tutorial = {
+
+	["complete"] = "CLIMB COMPLETED!",
+	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
+	["collect"] = "COLLECT THE ORB TO CONTINUE"
+	["difficulty"] = "Difficulty:",
+
+}
+
 
 
 module.spells = {}
@@ -265,7 +287,7 @@ module.spells.names = {
 	["bend"] = "Merdivenleri Yukarı Eğ",
 	["damage"] = "Üstteki Merdivene Hasar Ver",
 	["flatten"] = "Zıt Merdiveni Aşağıya Doğru Eğ",
-	["wall"] = "Duvar Oluştur" ,
+	["wall"] = "Duvar Oluştur",
 
 	["bender"] = "Eğici",
 	["wickedevent"] = "Yıkım",
@@ -279,7 +301,7 @@ module.spells.names = {
 	["moverandom"] = "Üsttekini Rastgele Hareket Ettir",
 	["rig"] = "Rastgele Haraket Ettir",
 
-	["ascension"] = "Yukarı hareket",
+	["ascension"] = "Yukarı Hareket",
 	["keeperevent"] = "Karışım",
 	["keeperaltevent"] = "Onarım",
 
@@ -349,7 +371,7 @@ module.spells.names = {
 	["curseabove"] = "Üstteki Merdiveni Lanetle",
 	["curseinter"] = "Kırpışma",
 	["autodown"] = "Bölünme Kaldır",
-	["autoup"] = "Bölünme İndir",
+	["autoup"] = "Schism Opposite Down",
 
 	["malediction"] = "Lanetleme",
 	["hereticevent"] = "Bölünme Etkinliği",
@@ -367,7 +389,7 @@ module.spells.names = {
 	["splicerevent"] = "Birleşim",
 	["spliceraltevent"] = "Ayrım",
 	
-	--necro
+	--NECROMANCER
 	["createdual"] = "Çift Merdiven Oluştur",
 	["copyplatform"] = "Hayaletin Platformunu Kopyala",
 	["soulbridge"] = "Ruh Köprüsü Oluştur",
@@ -379,20 +401,20 @@ module.spells.names = {
 	["necromancerevent"] = "Diriliş",
 	["necromanceraltevent"] = "Ruh Hasadı",
 	
-	--reaver
+	--REAVER
 	["createmirrored"] = "Aynalı Merdiven Oluştur",
 	["bigmirror"] = "Dev Ayna",
 	["smallmirror"] = "küçük Ayna",
 	["outermirror"] = "Dış Ayna",
 	["merge"] = "Reaver Birleşimi",
-	["oneway"] = "Tek-Yön Merdivenler",
+	["oneway"] = "Glass Stairs",
 
 	["reflection"] = "Refleks",
 	["reaverevent"] = "Çakışan Yollar",
-	["reaveraltevent"] = "Konjonktür",
+	["reaveraltevent"] = "Vitrification",
 	
 	
-	--gremlin
+	--GREMLIN
 	["tram"] = "Tram Merdiven Oluştur",
 	["screwup"] = "Yukarı Tirbuşon",
 	["revolve"] = "Döner Merdivenler",
@@ -403,17 +425,43 @@ module.spells.names = {
 	["tramway"] = "Tramvay",
 	["gremlinevent"] = "Dönme",
 	["gremlinaltevent"] = "Kilitlenme",
+	
+	--TUTORIAL
+	["tcreate"] = "Merdiven Oluştur",
+	["tflip"] = "Merdivenleri Çevir",
+	["tdestroy"] = "Üstteki Merdiveni Yok Et",
+	["tmove"] = "Merdivenleri Hareket Ettir",
+	["tdash"] = "Atıl",
+	["trestore"] = "Merdivenleri Onar",
 
 	--CHAMELEON
 	["ditch"] = "Çakışan Merdivenler",
 	["warp"] = "Çözgü Merdiveni",
-	["chamdown"] = "Merdiveni Aşağı Döğru Haraket ettir",
+	["chamdown"] = "Merdiveni Aşağı Döğru Haraket Ettir",
 	["chamdraw"] = "Aşağı Çekme Köprü",
-	["chamswap"] = "Copy Ghost (visual)",
 	["chamdrawabove"] = "Üsttekini Çekme Köprü Yap",
+	["oneways"] = "Tek-Yön Merdivenler",
 
 	--MISC (compatibility)
-	["reg"] = "Merdivenler Rejenerasyonda",
+	["mugglereg"] = "Merdivenler Rejenerasyonda",
+	["mugglecd"] = "Events and Rigs Cooldown",
+	["share"] = "Share mana (requires 2 Mana minimum)",
+
+	--ARCHITECT
+	["archpatron"] = "Create or shrink",
+	["archarchon"] = "Gate stairs or platform",
+	["archthief"] = "Steal or place",
+	["archnecro"] = "Dual or Undead stairs",
+	["archhacker"] = "Escalator or Hack-in",
+	["archkeeper"] = "Move or Restore",
+	["archsplicer"] = "Splice or Split",
+	["archwicked"] = "Wall or Destroy",
+	["archgremlin"] = "Revolve stairs or a platform",
+	["archjoker"] = "Fake or Flip stairs",
+	["archdrifter"] = "Drift or Elevator",
+	["archspectre"] = "Phantom or Ghost stairs",
+	["archreaver"] = "Mirrored or One-way stairs",
+	["archheretic"] = "Curse intersection or stairs",
 
 }-- " .. RankData.PATRON[7].name .. " 
 
@@ -466,7 +514,7 @@ module.spells.descriptions = {
 	["destroyabove"] = "Bu büyü üsttündeki merdivenleri yok edecektir. Diğer büyülere benzemez, bütün merdivenlerde yapılabilir. VILE rütbesine ulaş ve bu büyüyü bedava yap. VICIOUS rütbesine ulaş ve her özel merdiven yok ettiğinde 1 Mana kazan. ANNIHILATOR Rütbesine ulaş ve lanetli merdivenleri yok et",
 	["bend"] = "Bu büyü merdivenleri yukarı doğru büker. Bunu yukarıdaki platforma erişmek için kullanın.",
 	["damage"] = "Bu büyü, basamakların çoğunu kaldırarak üstteki merdivenleri bir parkura dönüştürür. Denemeden önce, zıplama sürenizin olduğunu hatırlayın. DESTROYER rütbesine ulaş ve bu merdivenlerin üzerinden sanki normal merdivenmiş gibi çık.",
-	["flatten"] = "Bu büyü zıt merdivenleri aşağı doğru büküyor. Bunu zıt taraftaki platforma ulaşmak için kullan.",
+	["flatten"] = "Bu büyü zıt merdivenleri aşağı doğru büküyor. Bunu zıt taraftaki platforma ulaşmak için kullan. It can also be used on below stairs for trolling purposes.",
 	["wall"] = "Bu büyü platformda enerji duvarı oluşturur ve 60 saniye boyunca karşı platforma bir bağlantı sağlar. Sadece Wicked'lar ve Hayalet kavuşmasındakiler duvarın içinden geçebilir ve bağın üsttünden yürüyebilir.",
 
 	["bender"] = timed .. "Bu size bir dakika boyunca merdivenleri yukarı doğru eğmeyi sağlar. Gereksinimler karşılanırsa hem alt hem de üst merdivenler aynı anda bükülecektir."  .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
@@ -489,14 +537,14 @@ module.spells.descriptions = {
 	["keeperrigevent"] = rig .. "Keeper Rig'i. Merdivenler tetiklendiğinde rastgele hareket ettirir. OPERATOR rütbesine ulaş ve tetiklediğin Rig'ler aslağa aşağı gitmez. SENTINEL rütbesine ulaş ve bu Rig'lere tetiklenmemek için bir opsiyon kazan.",
 	["keeperevent"] = event .. "rastgele hareket ettirecek. Çalıştırmadan önce yumuşak veya zorunlu modu seçebilirsiniz. Yumuşak modda hareket eden merdivenler, merdiven olmayan kavşaklara doğru hareket eder yani hiçbir merdiven yok olmaz. Zorunlu modda merdivenler yolunda bulunan merdivenler yok olucaktır.",
 	["keeperaltevent"] = "Bu bir etkinlik büyüsüdür. Bütün merdivenleri onarır, lanetli olanlar dahil.",
-	["keepermode"] =  string.format(mode,"Keeper","Keeper Rig","Random Move Spell"),
+	["keepermode"] =  "Bu bir drone büyüsü. Drone modunu Keeper yapacak. In this mode drones will cast randomly either Keeper Rig on normal stairs or Random Move Spell on any un-cursed stairs. Bunun yerine özel merdivenler onarılacak. Limitler dışında, Dronelar sırasıyla yaratacak ve yok edecek.",
 	["keeperrefill"] = overload,
 	["keeperunion"] = union,
 
 	--SPECTRE
 	["phantom"] = "Bu büyü seçilen yönde hayali merdiven oluşmasını sağlar. Çakışan merdiven yok edilir. Hayali merdiven hızlıca solar, tamamen ortadan kaybolur.",
-	["ghost"] = "Bu büyü üstteki merdivenleri hayaletleştirir. Bu merdiven içinden geçebilirsin, ama yürüyemezsin. AETHER rütbesine ulaş ve bu tür merdivenlerin üzerinden yürü. ",
-	["shadow"] = "Bu büyü merdivenleri hayaletleştirir yada hayalet olmaktan çıkarır. AETHER rütbesine ulaş ve bu tür merdivenlerin üzerinden yürü. PHANTOM rütbesine ulaş ve bu büyüyü bedava yap.",
+	["ghost"] = "Bu büyü üstteki merdivenleri hayaletleştirir. Bu merdiven içinden geçebilirsin, ama yürüyemezsin. AETHER rütbesine ulaş ve bu tür merdivenlerin üzerinden yürü. Use this spell again to de-ghostify stairs.",
+	["shadow"] = "Bu büyü merdivenleri hayaletleştirir yada hayalet olmaktan çıkarır. AETHER rütbesine ulaş ve bu tür merdivenlerin üzerinden yürü. PHANTOM rütbesine ulaş ve bu büyüyü bedava yap. Use this spell again to de-ghostify stairs.",
 	["horizontal"] = "Bu büyü seçilen yönde yatay ışınlanmanı sağlar. lanetli merdivenler dışındaki merdivenlerin içinden ışınlanabilirsin.",
 	["random"] = "Bu büyü bulunduğun kattaki rastgele bir platforma ışınlar.",
 	["vertical"] = "Bu büyü senin bulıunduğun platformun üstündeki platforma ışınlar.",
@@ -561,7 +609,7 @@ module.spells.descriptions = {
 	["indrift"] = "Bu büyü sörf tahtası oluşturur, seçilen yöndeki platforma kayar. Çakışan merdivenler varsa sörf yapılamaz.",
 	["updrift"] = "Bu büyü platformu bir asansöre çevirir ve asansör üstteki platforma çıkar. Platformlar bir zaman çizelgesinden sonra onarılır. VAGABOND rütbesine ulaş ve hızı arttır. TRAVELLER rütbesine ulaş ve asansörün bir kat daha yukarı çıkamsını sağla (3 kat). STRIDER rütbesine ulaş ve asansörün bir kat daha çıkmasını sağla (4 kat).",
 	["diagdrift"] = "Bu büyünün iki özelliği var. 1: Kulenin içinde çapraz bir şekilde yapıldığında seçilen yönde gidip gelen bir platform oluşturur. Asansördede olduğu gibi 7 turdan sonra onarılır. 2: Büyü kulenin dışına doğru yapıldığında, Kulenin çevresini bir tam tur dolanır.",
-	["spin"] = "Bu büyü merdivenleri 180 derece çevirir. NOMAD rütbesine ulaş ve kaymış merdivenleri çevirebil.",
+	["spin"] = "Bu büyü merdivenleri 180 derece çevirir. Rank up to NOMAD to be able to spin any uncursed stairs.",
 	["outdrift"] = "Bu büyü merdivenleri bulunduğun kattaki rastgele bir boş kavşağa kaydırır. NOMAD rütbesine ulaş ve kaymış merdivenleri tekrar kaydırabil.",
 	["driftabove"] = "Bu büyü üsttindeki merdivenin alt kısmını hafif kaldırır, yani altından geçebilir ve üstünden çıkabilirsin.",
 
@@ -580,7 +628,7 @@ module.spells.descriptions = {
 	["curseabove"] = "Bu büyü üstteki merdivenleri lanetler yada lanetini alır. Merdivenler Hafif yukarı kaldırılır ve altından geçmenizi sağlar.",
 	["curseinter"] = "Bu büyü seçilen yönde kırpışmanızı sağlar ve kırpışdığınız kavşak lanetlenir. Eğer INFIDEL rütbesine ulaştıysan lanetli kavşaklarda kırpışabilirsin ve bu sefer lanetini kaldırırsın.",
 	["autodown"] = "Bu büyü merdivenin alt kısmına özel aynalı bölüm oluşturur ve bunu kaldırır. Sadece Heretic'ler ve hayalet birleşiminde olanlar bunların üzerinden yürüyebilir.",
-	["autoup"] = "Bu büyü merdivenin üst kısmına özel aynalı bölüm oluşturur ve normal merdivenin üst kısmını indirir. Sadece Heretic'ler ve hayalet birleşiminde olanlar bunların üzerinden yürüyebilir.",
+	["autoup"] = "Use this spell to create special mirrored section of upper part of the crossing staircase, allowing you to access them. Regular steps will be lowered down. Sadece Heretic'ler ve hayalet birleşiminde olanlar bunların üzerinden yürüyebilir. It can also be used on below stairs for trolling purposes.",
 
 	["malediction"] = timed .. "bir dakika boyunca lanetli merdiven oluşturmanızı sağlar." .. string.format(timedExtra,RankData.HERETIC[7].name,"Heretics",RankData.HERETIC[3].name), 
 	["hereticrigevent"] = rig .. "Heretic Rig'i. Merdivenler tetiklendiğinde, tetikleyen kişi ele geçirilir. Kurtulmak için Mana toplamaları lazım. Ele geçirilen oyuncular büyü yapamaz. UNBELIEVER rütbesine ulaş ve buna bağışıklık kazan. EXILED rütbesine ulaş ve her ele geçirilen oyuncu için 1 Mana kazan.",
@@ -593,7 +641,7 @@ module.spells.descriptions = {
 	--SPLICER
 	["twistside"] = "Bu büyü merdivenleri sağdaki yada soldaki merdivenle birleştirir. Eğer birleştirmek istediğiniz yönde merdiven yoksa meriven oluşturulur. TRANSFORMER rütbesine ulaş ve zaten birleştirilmiz merdivenleri tekrar birleştir.",
 	["twistrotate"] = "Bu büyü merdivenleri çaprazındaki merdivenle birleştirir. Eğer birleştirmek istediğiniz yönde merdiven yoksa meriven oluşturulur. TRANSFORMER rütbesine ulaş ve zaten birleştirilmiz merdivenleri tekrar birleştir.",
-	["twistup"] = "Bu büyü üstteki merdiven ile bulunduğunuz merdiveni birleştirir. Yani 2 katlı sarmal merdiven yapar. Eğer birleştirmek istediğiniz yönde merdiven yoksa meriven oluşturulur. TRANSFORMER rütbesine ulaş ve zaten birleştirilmiz merdivenleri tekrar birleştir.",
+	["twistup"] = "This spell will twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "Bu büyü birleştirimiş merdivenleri onarır. COMBINER rütbesine ulaş ve platformdan kopmuş merdivenleri onar. MIXER rütbesine ulaş ve bu büyüyü ücretsiz yap. OPTIMUS rütbesine ulaş ve her onardığın birleştirilmiş merdiven için 1 Mana kazan.",
 	["split2"] = "Bu büyü merdiveni dik bir şekilde ortadan keser ve bir parçasını çevirir. Kısaca bu büyü 4 platfomu birleştirir.",
 	["splitalt"] = "Bu büyü merdiveni dik bir şekilde ortadan keser ve merdivenin üst kısmını açar yani üstteki merdivene geçebilirsin.",
@@ -601,20 +649,20 @@ module.spells.descriptions = {
 	["twister"] = timed .. "bir dakika boyuncu ikiye ayırma büyülerini yapmanızı sağlar. Eğer üstteki merdiven geçmenizi engelliyorsa ileriye doğru keser." .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "Splicer Rig'i. Merdivenler tetiklendiğinde rastgele yöndeki bir merdivenle birleşir. ASSEMBLER rütbesine ulaş ve bu Rig'e tetiklenmemek için bir opsiyon kazan.",
 	["splicerevent"] = event .. "merdivenleri rastgele yönde birleştirir.",
-	["spliceraltevent"] = event .. "merdivenleri keser.",
+	["spliceraltevent"] = event .. "merdivenleri i̇leri doğru keser.",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Random Splice spell"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
 
 	--NECROMANCER
-	["createdual"] = "Bu büyü senin olduğun ve hayaletinin olduğu yönde merdiven oluşturur, yani hayaletinin yanındaki kişiler kullanabilir. SKELETON rütbesine ulaş ve hayaletinin oluşturacağı yerdeki lanetli merdivenleri ve kavşaklerı yok say. LICH rütbesine ulaş ve çakışan merdivenleri yok et.",
+	["createdual"] = "Bu büyü senin olduğun ve hayaletinin olduğu yönde merdiven oluşturur, yani hayaletinin yanındaki kişiler kullanabilir. SKELETON rütbesine ulaş ve hayaletinin oluşturacağı yerdeki lanetli merdivenleri ve kavşaklerı yok say. LICH rütbesine ulaş ve çakışan lanetli merdivenleri yok et.",
 	["copyplatform"] = "Bu büyü hayaletinin olduğu platformdaki merdivenleri senin platformuna kopyalar. Kopyalanan merdivenler normal olur. REVENANT rütbesine ulaş ve lanetli kavşakları yok et.",
-	["soulbridge"] = "Bu büyü çaprazında bulunan bir yöne dönen bağ oluşturur. Hayaletinde aynı şeyi yapar. Necromancer bağları otomatik döner. Eğer haritanın ortasına bağ oluşturursanız, 'X' Şeklinde 2 bağ oluşur.",
-	["undeadabove"] = "Bu büyü senin ve hayaletinin üsttündeki merdivenlerin ruhunu alır. Eğer hayaletinin üstünde merdiven yoksa oluşur. Bu merdivenlerin atından geçebilir ve üstünden yürüyebiirsin, ama bir dakika sonra yavaş yavaş yok olur.",
+	["soulbridge"] = "Bu büyü çaprazında bulunan bir yöne dönen bağ oluşturur. Hayaletinde aynı şeyi yapar. Necromancer bağları otomatik döner. Necromancer links will spin when a player jumps on them.",
+	["undeadabove"] = "Bu büyü senin ve hayaletinin üsttündeki merdivenlerin ruhunu alır. Eğer hayaletinin üstünde merdiven yoksa oluşur. Bu merdivenlerin atından geçebilir ve üstünden yürüyebiirsin, ama iki dakika sonra yavaş yavaş yok olur.",
 	["revival"] = "Bu büyü hayaletinin olduğu platforma yeniden canlanma noktası koyar. Eğer bu noktanın altına düşersen, o noktaya ışınlanırsın. Yeniden canlanma noktası tek kullanımlıktır ve kuleyi tırmandıktan sonra yok olur. Chameleon dönüşümü de bu noktayı yok eder. Acolyte rütbesine ulaş ve yeniden canlanma noktasına küreyi çağır.",
 	["regen"] = "Bu büyü sana 6 Mana verir ve tek kullanımlıktır (kuleyi tırmanana kadar). Hyaletine yakın olan oyuncular 3 kazanır. DEATHBRINGER rütbesine ulaşınca sen 10 Mana kazanırsın ve hayaletinin yakınındakiler 5 Mana kazanır.", 
 	
-	["duality"] = timed .. "bir dakika boyunca çift merdivenler oluşturmanı sağlar. Rütbe gerekmesiz çakışan merdivenler yok olur." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
+	["duality"] = timed .. "bir dakika boyunca çift merdivenler oluşturmanı sağlar. LICH rütbesine ulaş ve çakışan lanetli merdivenleri yok et." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "Necromancer Rig'i. Merdivenler tetiklendiğinde ruhu alınır ve yavaşça yok olur.",
 	["necromancerevent"] = fill ..  "Oluşacak merdivenler ruhsuz olur ve zaman içinde yok olur.",
 	["necromanceraltevent"] = event .. "merdivenlerin ruhunu alır ve yok olurlar zamanla.",
@@ -623,17 +671,17 @@ module.spells.descriptions = {
 	["necromancerunion"] = union,
 
 	--REAVER
-	["createmirrored"] = "Bu büyü ortasında ayna olan merdiven oluşturur. Aynanın içinden geçtiğinde, hayaletinle birleşirsin. Tekrar aynadan geçersen hayaletinden ayrılırsın. POLTERGEIST rütbesine ulaş ve bu büyüyü yaparken çakışan merdivenleri yok et. Hayaletin ile birleşikken, zemin aynalarını kullanabilirsin ama hayaletin senin için Mana toplamaz.",
+	["createmirrored"] = "Bu büyü ortasında ayna olan merdiven oluşturur. Aynanın içinden geçtiğinde, hayaletinle birleşirsin. Tekrar aynadan geçersen hayaletinden ayrılırsın. Hayaletin ile birleşikken, zemin aynalarını kullanabilirsin ama hayaletin senin için Mana toplamaz.",
 	["bigmirror"] = "Bu büyü 10 saniye süren ve tüm katı içinde bulunduran devasa bir zemin aynası oluşturur. Sadece hayaleti ile birleşmiş kişiler bu aynanın üzerinden yürüyebilir ve hayaletinden ayrılır. Bu büyü yapıldığında kattaki bütün küçük aynaları yok eder. PRESENCE rütbesine ulaş ve bu büyünün süresini 15 yap.",
-	["smallmirror"] = "Bu büyü seçilen yönde bir ayna oluşturur. Ayna 6 saniye sonra yok olur ve 4 platformu birbirine bağlar. Sadece hayaleti ile birleşmiş kişiler bu aynanın üzerinden yürüyebilir ve hayaletinden ayrılır.PRESENCE rütbesine ulaş ve bu büyünün süresini 10 yap.",
+	["smallmirror"] = "Bu büyü seçilen yönde bir ayna oluşturur. Ayna 6 saniye sonra yok olur ve 4 platformu birbirine bağlar. Sadece hayaleti ile birleşmiş kişiler bu aynanın üzerinden yürüyebilir ve hayaletinden ayrılır. PRESENCE rütbesine ulaş ve bu büyünün süresini 10 yap.",
 	["outermirror"] = "Bu büyü dışarıya doğru bir ayna oluşturur ve aynanın tam karşısınada mayna oluşturur. Sadece dışa doğru yapılabilir. Bu aynadan geçince hayaletinle birleşirsin ve diğer aynadan çıkarsın. 60 saniye sonra aynalar yok olur.",
-	["merge"] = "Bu büyü hayaletinle birleşmeni sağlar ve REPLICA rütbesine ulaşınca bu büyü ile hayaletinden ayrılabilirsin.",
-	["oneway"] = "Bu büyü merdivenleri tek yönlü geçiş yapar. Geçebilinen yöndeki geçitten geçen oyuncuları hayaletiyle birleştirir. Hangi yönü bloklamasını istiyorsan seçebilirsin. ALIEN rütbesine ulaş ve tek yön merdivenlerden istediğin gibi geç.",
+	["merge"] = "Bu büyü hayaletinle birleşmeni sağlar ve REPLICA rütbesine ulaşınca bu büyü ile hayaletinden ayrılabilirsin. Rank up to POLTERGEIST to merge/unmerge nearby players.",
+	["oneway"] = "This spell will turn above stairs into Glass Stairs, allowing you to walk through them. Only players merged with ghost can walk on Glass Stairs.",
 
 	["reflection"] = timed .. "Bir dakika boyunca istediğiniz gibi devasa ayna yapmanızı sağlar. Otomatik bir şekilde hayaletinle birleşirsinde." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
-	["reaverrigevent"] = rig .. "Reaver Rig'i. Merdivenler tetiklendiğinde onları tek yönlü yapar. WIGHT rütbesine ulaş ve bu Rig'lere tetiklenmemek için bir opsiyon kazan.",
-	["reaverevent"] = event .. "merdivenleri rastgele tek yönlü yapar.",
-	["reaveraltevent"] = event .. "merdivenleri yukarıya doğru tek yönlü meriven yapar.",
+	["reaverrigevent"] = rig .. "Reaver Rig'i. Stairs, once triggered, will Reflect the triggering player. They would have to find Mana to break free. Reflected players must control their characters from their ghost perspective. Reflected players are unaffected by Reaver mirrors. Rank up to WIGHT to get Reaver Rig immunity.",
+	["reaverevent"] = event .. "merdivenleri rastgele tek yönlü yapar. One-Way stairs work like Mirrored Stairs, but can be only used in one direction. Reavers can go both ways.",
+	["reaveraltevent"] = event .. "the Glass Stairs spell.",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Random One-Way Stairs spell."),
 	["reaverrefill"] = overload,
 	["reaverunion"] = union,
@@ -656,8 +704,8 @@ module.spells.descriptions = {
 
 	--CHAMELEON
 	["chamdown"] = "Bu büyü Keeper büyüsüydü ve reddedildi. Merdivenleri aşağı haraket ettirir. Keeper'ınızı CAPTAIN rütbesine ulaştırdıysanız tüm merdivenler aşağı hareket ettirebilirsiniz.",
-	["chamswap"] = "Bu büyü Necromancer büyüsüydü ve reddedildi. Hayaletini kopyalar ama Reaver birleşmesine benzemez hayaletn hala ordadır. Bu büyü tamamlanmamışıt ve şuan sadece görüntü olarak çalışıyor.",
 	["chamdraw"] = "Bu büyü Heretic büyüsüydü ve reddedildi. Merdivenleri aşağı doğru çekme köprü yapar.",
+	["oneways"] = "Bu büyü Reaver büyüsüydü ve reddedildi. Merdivenleri tek yönlü geçiş yapar. Geçebilinen yöndeki geçitten geçen oyuncuları hayaletiyle birleştirir. Hangi yönü bloklamasını istiyorsan seçebilirsin. Reavers can go both ways.",
 	["ditch"] = "Bu büyü Thief büyüsüydü ve reddedildi. Merdivenlerin içine bir merdiven koyar yani merdivenler çakışmış olur.",
 	["chamdrawabove"] = "Bu büyü Heretic büyüsüydü ve reddedildi. Üstteki merdivenlerin alt kısmını çekme köprü yapar ve altından geçmenizi sağlar. Eski Unbeliever rütbesi otomatik oalrak çekme köprüyü açardı.",
 	["warp"] = "Bu büyü Wicked büyüsüydü. Merdivenlerin üstündeki kısmı üssteki playforma doğtu bükülür.",
@@ -667,6 +715,25 @@ module.spells.descriptions = {
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
 
+	--MISC
+	["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
+
+	--ARCHITECT
+	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
+	["archarchon"] = "This spell when used on platform's arrows, will create a gate between platforms. When used on stairs, it will gate them in the direction of Your choice.",
+	["archthief"] = "This spell when used on platform's arrows, will place normal stairs. When used on normal or rigged stairs it will steal them.",
+	["archnecro"] = "This spell when used on platform's arrows, will create Dual stairs. When used on normal or rigged stairs, it will turn them into Undead Stairs.",
+	["archhacker"] = "This spell when used on platform's arrows, will hack-in any crossing stairs. When used on normal or rigged stairs, it will turn them into an Escalator of your choice.",
+	["archkeeper"] = "This spell when used on platform's arrows, will restore adjacent stairs. When used on normal or rigged stairs, it will move them in the direction of Your choice.",
+	["archsplicer"] = "This spell when used on platform's arrows, will split crossing stairs. When used on normal or rigged stairs, it will twist them in the direction of Your choice.",
+	["archwicked"] = "This spell when used on platform's arrows, will create a wicked's wall without the link. When used on any uncursed stairs, it will destroy them.",
+	["archgremlin"] = "This spell when used on platform, will revolve the platform in the direction of Your choice. When used on normal or rigged stairs, it will revolve them in the direction of Your choice.",
+	["archjoker"] = "This spell when used on platform's arrows, will create fake stairs. When used on normal, flipped or rigged stairs, it flip or un-flip them.",
+	["archdrifter"] = "This spell when used on platform, will turn it into an elevator. When used on normal or rigged stairs, it will drift them into a random intersection.",
+	["archspectre"] = "This spell when used on platform's arrows, will create Phantom stairs. When used on normal, ghosted or rigged stairs, it will Ghost or un-Ghost them.",
+	["archreaver"] = "This spell when used on platform's arrows, will create Mirrored stairs. When used on normal or rigged stairs, it turn them into One-Way stairs of Your choice.",
+	["archheretic"] = "This spell when used on platform's arrows, will curse an empty intersection without flickering anyone. When used on normal, cursed or rigged stairs, it curse or un-curse them.",
+	
 }
 local CommonPerksInsertALignment = {
 	[1] = "Bu senin başlangıç %s rankın.",
@@ -674,7 +741,7 @@ local CommonPerksInsertALignment = {
 }
 local CommonPerksInsertTimedSpell = {
 	[3] = "Eğer biri %s büyüsü yaparsa, Senin Manan doldurulcak.",
-	[7] = "Senin %s büyün artık %50 daha uzun sürcek (90s).",
+	[7] = "Senin %s büyün artık %%50 daha uzun sürcek (90s).",
 }
 
 
@@ -686,7 +753,26 @@ module.gui.ranks = {
 	--none
 	["none_1"] = "Sen bir Birleşim seçmedin!",
 	["none_2"] = "Büyü yapma hakkın yok!",
-	["none_3"] = "Haritanın ortasındaki dönüşme yerlerinden Birleşim seç.",
+
+	["possessed_1"] = "You have been Possessed!",
+	["possessed_3"] = "As Possessed, you cannot use spells, your rank perks are inactive and you cannot jump.",
+
+	["hypnotised_1"] = "You have been Hypnotised!",
+	["hypnotised_3"] = "As Hypnotised, your controls are reversed!",
+
+	["reflected_1"] = "You have been Reflected!",
+	["reflected_3"] = "As Reflected, you control yourself from your ghost perspective!",
+
+	["findmana"] = "Find Mana or Patron Rig to break free.",
+	["permanent"] = "Permanent mode - Complete climb or visit sanctuary to de-morph.",
+
+	["architect_1"] = "You are now an Architect!",
+	["architect_2"] = "Architects cannot acquire any ranks.",
+	["architect_3"] = "Roam the tower to wreak havoc!",
+
+	["tutorial_1"] = "You are in the tutorial!",
+	["tutorial_2"] = "Collect Mana and use spells to climb the tower.",
+	["tutorial_3"] = "Make sure to catch the White Orb at the top!",
 
 	--shared
 	["higher"] = "RÜTBEYE ULAŞILDI",
@@ -710,7 +796,7 @@ module.gui.ranks = {
 		[5] = "Tüm görünmez merdivenleri görebilirsin ve onları ortaya çıkarmamak için bir opsiyon kazanırsın.",
 		[6] = "Tüm Tuzak platformlarını ve sahte merdivenleri görebilirsin.",
 		[8] = "Tuzak platformları ve sahte merdivenler üzerinden yürüyebilir ve tuzak platformlarında büyü yapabilirsin.", 
-		[9] = "Kandırılan her oyuncu için bir Mana kazanırsın",
+		[9] = "Kandırılan her oyuncu için bir Mana kazanırsın.",
 	},
 	["WICKED"] = {
 		[4] = "Hasarlı merdivenlerin üzerinden normal bir merdivenmiş gibi yürüyebilirsin",
@@ -720,7 +806,7 @@ module.gui.ranks = {
 		[9] = "Lanetli merdivenleri yok edebilirsin.",
 	},
 	["SPECTRE"] = { 
-		[4] = "Hayaletinin topladığı kristaller için ekstra bir Mana kazanırsın.", 
+		[4] = "Hayaletinin topladığı kristaller için ekstra bir Mana kazanırsın.",
 		[5] = "Merdivenleri Hayaletsizleştirme büyün artık bedava olur.",
 		[6] = "Hayaletinle küreyi alabilirsin.",
 		[8] = "Spectre Rig'lerine tetiklenmemek için bir opsiyonun olur.", 
@@ -756,7 +842,7 @@ module.gui.ranks = {
 	},
 	["DRIFTER"] = {
 		[4] = "Asansörletin iki kat daha hızlı ortaya çıkar ve hareket eder.",
-		[5] = "Kaydırılmış merdivenleri döndürebilirsin ve tekrar kaydırabilirsin.",
+		[5] = "You can now spin any uncursed stairs and drift already drifted stairs.",
 		[6] = "Asansörleri hem yükseliş hem de asansör büyüsü ile geliştirebilirsin. Vagabond rütbesi avantajı etki etmez.",
 		[8] = "Drifter Rig'lerine tetiklenmemek için bir opsiyonun olur.",
 		[9] = "Asansörleri hem yükseliş hem de asansör büyüsü ile iki kere geliştirebilirsin. Vagabond rütbesi avantajı etki etmez.",
@@ -778,15 +864,15 @@ module.gui.ranks = {
 	["REAVER"] = {
 		[4] = "Birleşme büyün ile hayaletinden ayrılabilirsin.",
 		[5] = "Zemin aynaların iki kat daha uzun süre kalır. (15s büyük, 9s küçük)",
-		[6] = "Reaver Rig'lerine tetiklenmemek için bir opsiyonun olur.",
-		[8] = "Aynalı merdiven oluştururken çakışan merdivenleri yok edebilirsin.",
-		[9] = "Tek yön merdivenler artık seni etkilemez.",
+		[6] = "You are now immune to Reaver Rigs.",
+		[8] = "Using merge spell will also affect nearby players.",
+		[9] = "You get a speed boost (25%) when walking on floor mirrors.",
 	},
 	["NECROMANCER"] = {
 		[4] = "Çift merdiven oluşturma büyün hayaletinin olduğu yerdeki lanetli merdiven ve kavşaklarını yok sayar.",
 		[5] = "Yeniden doğma noktasını son kata koyarsan küreyi oraya çağırır.",
 		[6] = "Platform kopyalama büyün lanetli kavşakları yok eder.",
-		[8] = "Çift merdiven oluştururken çakışan merdivenleri yok edersin.",
+		[8] = "You can demolish crossing cursed stairs, while casting Dual Stairs.",
 		[9] = "Mana yenileme büyün 6 Mana yerine 10 Mana yeniler ve hayaletinin yanındakiler 5 Man kazanır.",
 	},
 	["GREMLIN"] = {
@@ -806,7 +892,18 @@ module.gui.ranks = {
 		[8] = "30% daha hızlı yürürsün.",
 		[9] = "Zıplama gücün 20% artar.",
 	},
-
+	["NONE"] = {
+		[1] = "None cannot acquire any ranks. Jump on a morph in the middle of the map to change your alignment.",
+		[2] = "I am serious, NONE does not have any rank perks.",
+		[3] = "You are just wasting your time, you could at least rank up MUGGLE instead.",
+		[4] = "MUGGLE gets walkspeed boosts, you know? None does not get anything.",
+		[5] = "If you think there is a secret rank perk at the end, you must really underestimate my laziness.",
+		[6] = "Maybe you just like to torture yourself?",
+		[7] = "People at discord are lying, there is no secret perk at 50 climbs.",
+		[8] = "This is your final warning, stop before a total disappointment.",
+		[9] = "Your persistence is admirable. You get a total toggleable immunity to special stairs and an ability to pass through blocking stairs.",
+	},
+	
 	["CHAMELEON"] = { 
 		[1] = "Bu senin başlangıç CHAMELEON rütben. Diğer birleşimlerin avantajları Chameleon'u etkiler.",
 		[2] = "İSTİSNA! Drone modu SADECE CHAMELEON modundayken Mana kazanırsın.",
@@ -822,21 +919,11 @@ module.gui.ranks = {
 
 }
 
-module.gui.reshuffle = {
-
-	["title"] = "MERDİVENLERİ KARIŞTIRMA MODU",
-
-	["body"] = "Merdivenlerin hareket ederken çarpışmaları önlemesini ister misiniz? Değilse, yoldaki herhangi bir merdiven yıkılacak.",
-
 }
 
 module.gui.multitokens = {
 
-	["title"] = "JETONLARI SEÇ",
-
 	["info"] = "Yeni büyü açmak için 3 jetona ihtiyacın var.",
-	["notokens"] = "Multi jeton'ların tükendi",
-	["nopass"] = "GAMEPASS YOK",
 
 }
 
@@ -852,27 +939,26 @@ module.gui.feedback = {
 
 module.gui.settings = {
 
-	["title"] = "OYUN AYARLARI",
+	["Gameplay"] = "GAMEPLAY AYARLARI",
+	["Interface"] = "ARAYÜZ AYARLARI",	
 
-	["ANIM"] = "ANİMASYON\nAYARLARI",	
-	["MISC"] = "ÇEŞİTLİ\nAYARLAR",
-	["INTER"] = "ARAYÜZ\nAYARLARI",	
-	["INTER2"] = "EKSTRA ARAYÜZ\nAYARLARI",	
+	["Billboard"] = "Kendi avatar panonuzu gösterin",
+	["Rank"] = "Avatar billboard'da Genel Sıralamanızı Gösterin",
+	["Morph"] = "Dönüşme animasyonunu Deceiver yada Usurper kullanırken göster",
+	["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
 
-	["list"] = "Animasyonlu oyuncu listesini göster",
-	["morph"] = "Dönüşme animasyonunu Deceiver yada Usurper kullanırken göster",
-	["billboard"] = "Kendi avatar panonuzu gösterin",
-	["rank"] = "Avatar billboard'da Genel Sıralamanızı Gösterin",
-	["switchback"] = "Nihai büyu yaptıktan sonra otomatik normal büyülere geç",
-	["safecancel"] = "Zamanlı bir nihai büyüyü iptal ederken onay penceresini göster",
-	["multi"] = "Tırmanıştan sonra Multi Jeton penceresini göster",
-	["kchoices"] = "Keeper için yön seçimi penceresini göster (Xbox'ta çalışmaz)",
-	["hchoices"] = "Hacker için yön seçimi penceresini göster (Xbox'ta çalışmaz)",
-	["achoices"] = "Keeper için yön seçimi penceresini göster (Xbox'ta çalışmaz)",
-	["rchoices"] = "Reaver için yön seçimi penceresini göster (Xbox'ta çalışmaz)",
-	["schoices"] = "Splicer için yön seçimi penceresini göster (Xbox'ta çalışmaz)",
-	["gchoices"] = "Gremlin için yön seçimi penceresini göster (Xbox'ta çalışmaz)",
-	["stats"] = "Rig ve Etkinlik büyülerini kullanırken ekstra istatistikleri göster",
+	["KChoices"] = "Keeper için yön seçimi penceresini göster", --when using: move spells
+	["HChoices"] = "Hacker için yön seçimi penceresini göster", --escalator spell
+	["AChoices"] = "Keeper için yön seçimi penceresini göster", --gate spells 
+	["SChoices"] = "Splicer için yön seçimi penceresini göster", --splice spells
+	["GChoices"] = "Gremlin için yön seçimi penceresini göster", -- revolve spells
+	["CChoices"] = "Chameleon için yön seçimi penceresini göster", --One-Way stair spell
+
+	["List"] = "Show animated playerlist rather than standard Roblox Leaderboard",
+	["SwitchBack"] = "Nihai büyu yaptıktan sonra otomatik normal büyülere geç",
+	["SafeCancel"] = "Zamanlı bir nihai büyüyü iptal ederken onay penceresini göster",
+	["Multi"] = "Tırmanıştan sonra Multi Jeton penceresini göster",
+	["UISize"] = "Adjust the maximum width of the User Interface (%)"
 
 }
 
@@ -885,6 +971,17 @@ module.gui.gameover.results = {
 	["climbs"] = "TIRMANIŞ KAZANLIDI",
 	["tokens"] = "JETON KAZANILDI",
 	["rank"] = "ŞUANKİ RÜTBEN",
+
+	["role"] = "YOUR OVERALL RANK",
+	["classic"] = "CLASSIC TOWER RECORD",	
+	["pro"] = "PRO TOWER RECORD",	
+	["infinite"] = "INFINITE TOWER RECORD",
+	["custom"] = "CUSTOM TOWER RECORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
+	["noVR"] = "CLASSIC TOWER RECORD", --this will show in noVR tower, as they share the same record
+
+	["cTime"] = "%s RECORD", --%s will be replaced by the used class
+	["levels"] = "LEVELS REACHED",
+	["cClimbs"]	= "%s CLIMBS", --%s will be replaced by the used class
 
 }
 
@@ -1070,6 +1167,19 @@ module.gui.gameover.messages = {
 		"O merdiven nereye gitti?",
 		"Wheeeeeeeeeeeeeeeee!!!!!!",
 	},
+	["NONE"] = {
+		"DON'T, CEASE and REFRAIN",
+		"Muggle betrayed us, nothing means nothing.",
+		"[insert a message here]",
+		"If you don't do anything, you cannot fail.",
+		"There is nothing on top of the staircase.",
+		"You do realise NONE was just meant to be a bug fix, right?",
+		"Jump on a morph to change your alignment. Or not - I'm just a message, not a cop.",
+		"This is the proper way to climb stairs.",
+		"My legs are killing me.",
+		"Walkspeed and Jumppower are overrated.",
+		"Technically, I am the first class created in the game.",
+	},
 
 }
 
@@ -1091,101 +1201,39 @@ module.gui.gameover.maxrank ={
 	["OPTIMUS"] = "Dolaşıklık",
 	["ALIEN"] = "Biz Tekiz!",
 	["DAEMON"] = "Beni döndürüyorsun, döndürüyorsun.",
+	["BLACK HOLE"] = "The Nothingness", 
 
 }
 
 module.gui.gameover.credits = {
 
-	"CRAZY STAIRS",
-	"Oyun, Sleazel tarafından konsepti oluşturulmuş, tasarlanmış ve senaryolaştırılmıştır.",
-	"Tasarım konusunda yardım - cakegirlserina",
-	"Modeller ZielonyLeszek tarafından yapılmış",
-	"@wwwtyro'nun jeneratörü tarafından oluşturulan Skybox'lar",
-	"Kampfkarren tarafından geliştirilen veri kaydetme modülü, DataStore2",
-	"Orijinal liderlik tablosu komut dosyası ThatTimothy tarafından yazılmıştır.",
-	"DENEYİCİLER:",
-	"Roloversion",
-	"Ondrik132",
-	"dabsforlif",
-	"iiBIuestar",
-	"BertValkyrie",
-	"TDtheTV",
-	"waragency",
-	"d4vvd",
-	"portalgunner",
-	"DragonMaster1707",
-	"wf_sh",
-	"Keysiries",
-	"jakmat2",
-	"blankeht",
-	"ben10beg",
-	"bash1234567888",
-	"cakegirlserina",
-	"ÇEVİRİCİLER:",
-	"İngilizce - Sleazel",
-	"Polonyaca - Sleazel",
-	"Fransızca - Alexnumbers",	
-	"İtalyanca - Roloversion",	
-	"Hollandaca - Sanderk35_2",
-	"Romanca - NoobMaster38271",
-	"= ??? - ambronium",
-	"Portekizce - Cosmo",
-	"???? - OZEPJAH",
-	"??????? - NoobMaster38271",
-	"Ce tina - killerproXxgood",
-	"Endonezya dili - echocentrical",
-	"İspanyolca - TDtheTV",
-	"Almanca - 05_hallo",
-	"Slovakça  - Ondrik132",
-	"Boşnakça - xootynator",
-	"ÖZEL TEŞEKKÜRLER:",
-	"kolcer",
-	"ThatTimothy",
-	"SerpentineKing",
-	"WhereDidTheSunGo",
-	"b3ntheplay3r2",
-	"TehEpix2",
-	"Narvog1",
-	"shark66655",
-	"MÜZİK (APM katalog):",
-	"Giriş müziği - Allure by Martin Albert Sponticcia",
-	"\"None\" bitiriş müziği - Deceived by Martin Albert Sponticcia",
-	"Muggle müziği - Hyperdrive by Gary Leslie Scargill, Peter Nicholas Oldroyd",	
-	"Muggle bitiriş müziği - Reflections by Milan Pilar",
-	"Patron müziği - Tranquilize by Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
-	"Patron bitiriş müziği - Dreamers by Joseph Alexander",
-	"Joker müziği - Crosswind by Martin Albert Sponticcia",
-	"Joker bitiriş müziği - Fender Stab by Steven Raymond Bush",
-	"Wicked müziği - Wicked by Daniel Jay Nielsen, Nathan Duvall",
-	"Wicked bitiriş müziği - Something Wicked by Cris Velasco",
-	"Spectre müziği - Reflections by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Spectre bitiriş müziği - Cosmic Dust by Milan Pilar",
-	"Keeper music - Automotion by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Keeper bitiriş müziği - Synth On The Highway by Richard Adrian Maxwell Preston",
-	"Hacker music - Network by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Hacker bitiriş müziği - Descending Into Oblivion by Richard Adrian Maxwell Preston",
-	"Thief music - Reaching Out by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Thief bitiriş müziği - Soaring by Richard Adrian Maxwell Preston",
-	"Archon music - Aperture by Paul Emons, Richard Goodliff, Ian Robson",
-	"Archon bitiriş müziği - Rendezvous by Paul Emons, Richard Goodliff, Ian Robson",
-	"Drifter music - Communique by Gary Leslie Scargill, Peter Nicholas Oldroyd, Richard Francis Adrian Brown",
-	"Drifter bitiriş müziği - Fragile by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Heretic müziği - Mother by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Heretic bitiriş müziği - Being Me by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Chameleon müziği - Rah by Gary Leslie Scargill, Peter Nicholas Oldroyd",
-	"Chameleon bitiriş müziği - Midnight Runner by Richard Adrian Maxwell Preston",
-	"Hayalet birleşmesi müziği - Amber Garden by Paul Emons, Richard Goodliff, Ian Robso",
-	"Ele geçirilme müziği - Dark Souls by David Arkenstone",
-	"Joker'in disko merdiven müziği - To The Disco by Gordon Zola",
-	"Drifter'ın platform müziği - Radioactivity by Gary Leslie Scargill, Peter Nicholas Oldroyd, Patrick Gomersall",
-	"Oynadığınız için Teşekkürler!",	
+	["crazy"] = "CRAZY",
+	["stairs"] = "STAIRS",
+	["game"] = "A game by:",
+	["models"] = "Models by:",
+	["icons"] = "Spell Icons by:",
+	["boxes"] = "Skyboxes by:",
+	["data"] = "Datastore module by:",
+	["translators"] = "ÇEVİRİCİLER:",
+	["testers"] = "DENEYİCİLE:",
+	["thanks"] = "ÖZEL TEŞEKKÜRLER:",
+	["music"] = "MÜZİK:",
+
+
+	["climb"] = "Climb music",
+	["endgame"] = "Bitiriş müziği",
+	["ghost"] = "Hayalet Birleşmesi müziği",
+	["disco"] = "Disko Merdiven müziği",
+	["elevator"] = "Elevator music", --drifter platforms
+	["finish"] = "Oynadığınız için Teşekkürler!",
+
 }
 
 module.static = {
 
 	["cla_1"] = "Nasıl oynuyorum?",
-	["cla_2"] = "İlk olarak, Öğreticiyi tamamlamanız şiddetle tavsiye edilir. Henüz yapmadıysanız, lütfen oyuna yeniden katılın, aksi takdirde deneyim gerçekten kafa karıştırıcı hale gelebilir..",
-	["cla_3"] = "Oyunun amacı zirveye ulaşmak ve yüzen Enerji Küresini toplamaktır. Önce haritanın ortasındaki parlayan pedlerin üzerine atlayarak birleşiminizi(sınıfınızı) seçin.",
+	["cla_2"] = "İlk olarak, Öğreticiyi tamamlamanız şiddetle tavsiye edilir. Henüz yapmadıysanız, lütfen oyuna yeniden katılın, aksi takdirde deneyim gerçekten kafa karıştırıcı hale gelebilir.",
+	["cla_3"] = "Oyunun amacı zirveye ulaşmak ve yüzen Enerji Küresini toplamaktır. Önce haritanın ortasındaki parlayan pedlerin üzerine atlayarak birleşiminizi (sınıfınızı) seçin.",
 	["cla_4"] = "Seçimden memnun kaldıktan sonra, Mana'yı yeniden doldurmak için yüzen şekilleri topla ve merdivenleri tırman. Tırmanışta sana yardımcı olması için sınıf büyünü kullan.",
 	["cla_5"] = "Nasıl büyü yapılıyor?",
 	["cla_6"] = "Her büyünün, büyüyü yapmak için gerekli olan bir mana maliyeti vardır. Yeterli mana topladığınızda büyüye tıklayın. Elleriniz parlamaya başlayacak ve bu, büyünün başarılı bir şekilde yapıldığını gösterir.",
@@ -1228,7 +1276,7 @@ module.static = {
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
 	["cus_5"] = "Tower Settings",
 	["cus_6"] = "By changing the tower settings you can have it your way. Choose levels, restrict even levels or even set the tower to the infinite mode.",
-	["cus_7"] = "Only server owner can adjust the settings, therefore public servers are not supported in the Custom Tower.",
+	["cus_7"] = "Only server owner can adjust the settings.",
 	["cus_8"] = "Drone Settings",
 	["cus_9"] = "You can also change the small drone setting. Adjust the max count, the min count or even disable them altoghether.",
 
@@ -1310,7 +1358,7 @@ module.static = {
 	["hub_4"] = "'Never go in a straight line for too long.'\nour founder's quote",
 
 	["shack_1"] = "GREMLIN'S SHACK",
-	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
+	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTISE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
 	["shack_4"] = "'Come play with me.'\nour founder's quote",
 
@@ -1322,7 +1370,14 @@ module.static = {
 	["grave_1"] = "NECROMANCER'S GRAVE",
 	["grave_2"] = "OUR MOTTO:\nFOLLOW\nREVIVE\nAND\nBENEFIT",
 	["grave_3"] = "PROS:\nWorks well if other players follow your ghost.\nSpells help you and others as well.\nCONS:\nHeaviest alignment on mana.\nDifficult to get used to watching your ghost.",
-	["grave_4"] = "'We arent actually haunting you, we just wanna be friends.'\nour founder's quote",
+	["grave_4"] = "'We aren't actually haunting you, we just wanna be friends.'\nour founder's quote",
+
+	--NEW (architect)
+	["studio_1"] = "ARCHITECT'S STUDIO",
+	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
+	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
+	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
+	--END NEW
 
 	--SHARED
 	["leader_pro"] = "Pro Tower counts as 2 climbs",	
@@ -1337,8 +1392,8 @@ module.static = {
 	["over_desc"] = "Each acquired rank adds 1 point",
 	["over_rank"] = "RANK",
 	["over_req"] = "POINTS REQ",
-	["emperor_req"] = "* Requires Chamelon OR Spectre",
-	["overmind_req"] = "** Requires Chamelon AND Spectre",
+	["emperor_req"] = "* Requires Chameleon OR Spectre",
+	["overmind_req"] = "** Requires Chameleon AND Spectre",
 	["over_prefix"] = "PREFIX",
 	["over_passes"] = "GAME PASSES\nREQUIRED",
 	["over_notgroup"] = "OLIVE COLOR - not in group",
@@ -1402,32 +1457,39 @@ module.static = {
 
 }
 
---TUTORIAL
+--TUTORIAL (new)
 module.tutorial = {
 
+
 	["tut_big_1"] = "Welcome to Crazy Stairs!",
-	["tut_big_2"] = "First learn how to morph.",
-	["tut_big_3"] = "You are now a Patron, Patrons can create stairs.",
+	["tut_big_2"] = "First, collect some Mana.",
+	["tut_big_3"] = "You can create stairs with this spell.",
 	["tut_big_4"] = "All spells need to be executed by jumping.",
-	["tut_big_5"] = "Cool, huh? Now morph to Joker. Jokers can flip stairs.",
-	["tut_big_6"] = "You are now a Joker, use this spell to flip stairs.",
+	["tut_big_5"] = "Collect this Mana:",
+	["tut_big_6"] = "You can flip stairs with this spell.",
 	["tut_big_7"] = "Some spells need to be executed on stairs.",
-	["tut_big_8"] = "Now morph to Keeper. Keepers can move stairs.",
-	["tut_big_9"] = "You are now a Keeper, use this spell to move stairs.",
+	["tut_big_8"] = "Collect this Mana:",
+	["tut_big_9"] = "You can move stairs with this spell.",
 	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
 	["tut_big_11"] = "You will encounter many blocking stairs in this game.",
-	["tut_big_12"] = "You are now a Wicked, use this spell to destroy blocking stairs.",
+	["tut_big_12"] = "Use this spell to destroy blocking stairs.",
 	["tut_big_13"] = "You can destroy above stairs, by jumping on below ones.",
-	["tut_big_14"] = "Before we begin, let me show you the premium alignment.",
-	["tut_big_15"] = "You are now a Spectre, Spectre is a premium alignment best for solo play.",
-	["tut_big_16"] = "Your goal - reach the top and grab the orb. Good luck!",
+	["tut_big_14"] = "Collect this Mana:",
+	["tut_big_15"] = "Use this spell to teleport across platforms.",
+	["tut_big_16"] = "Jump on arrow to teleport.",
+	["tut_big_17"] = "You may find that some stairs are impossible to ascend.",
+	["tut_big_18"] = "Use this spell to fix them.",
+	["tut_big_19"] = "Restore can be cast either on stairs or on adjacent arrow.",
+	["tut_big_20"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
 
 	["tut_select"] = "Select this spell.",
 
 	["tut_small_init"] = "Jump to spawn tutorial",
-	["tut_small_morph"] = "Jump on morph.",
-	["tut_small_arrow"] = "Jump on arrow.",
-	["tut_small_stairs"] = "Jump on stairs.",
+	["tut_small_collect"] = "Collect Mana",
+	["tut_small_arrow"] = "Jump on arrow",
+	["tut_small_stairs"] = "Jump on stairs",
+	["tut_small_pellet"] = "Collect the Orb",
+	--end new
 
 }
 
@@ -1449,24 +1511,23 @@ module.guide = {
 
 	--arrows
 	["arrow"] = {
-		["through"] = "Can be executed on an empty intersections or through non-blocking stairs",
-		--["restore"] = "Can be executed next to.",
-		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Exiled to demolish crossing cursed stairs.",
+		["through"] = "Can be executed on an empty intersection or through non-blocking stairs",
+		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Banished to demolish crossing cursed stairs.",
+		--new
+		["superforcednecro"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Lich to demolish crossing cursed stairs.",
+		--end new
 		["flicker"] = "Can be executed on an empty intersection. Rank up to Infidel to execute on a cursed intersection.",
 		["any"] = "Can be executed on any un-cursed intersection.",
 		["wall"] = "Can be executed on any un-cursed intersection, without a Wall or Gate in the way.",
-		--["ghosted"] = "Can be only used on normal, rigged or ghosted stairs",
-		--["deltwists"] = "Can be only used on spliced stairs.",
 		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
 		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
 		["soft"] = "Can be executed on an empty intersection only.",
-		["flatten"] = "Can be executed on an intersection with normal or rigged crossing stairs only.",
 		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
 		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
 	},
 
 	["platform"]= {
-		
+
 
 		--platform
 		["middle"] = "This spell has no special requirements.",
@@ -1477,11 +1538,11 @@ module.guide = {
 		["prevolve"] = "Can be executed in both clockwise and counterclockwise directions.",
 		["top"] = "Can be exectued on top platforms only.",
 	},
-	
+
 	["stairs"] ={
-		
+
 		["cursed"] = "Can be exectued on normal, rigged or cursed stairs.",
-		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed staris.",
+		["all"] = "Can be executed on any stairs. Rank up to Annihilator to destroy cursed stairs.",
 		["steal"] = "Can be executed on normal or rigged stairs. Rank up to Hijacker to steal any un-cursed stairs.",
 		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
 		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
@@ -1501,11 +1562,11 @@ module.guide = {
 		["normalrig"] = "Can be executed on normal or rigged stairs only.",
 
 	},
-	
+
 	["above"] = {
-		
+
 		["cursed"] = "Can be exectued below normal, rigged or cursed stairs.",
-		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed staris.",
+		["all"] = "Can be executed below any stairs. Rank up to Annihilator to destroy above cursed stairs.",
 		["steal"] = "Can be executed below normal or rigged stairs. Rank up to Hijacker to steal any above un-cursed stairs.",
 		["flip"]= "Can be executed below normal, flipped or rigged stairs.",
 		["onedirection"] = "Can be executed below normal or rigged stairs. Rank up to Controller to move any above un-cursed stairs.",
@@ -1513,32 +1574,50 @@ module.guide = {
 		["normalrig"] = "Can be executed below normal or rigged stairs only.",
 
 	},
-	
+
 	["dynamic"] = {
 		--hack, twister, bender and flipper
 		['flip'] = "Can be executed on or below normal, flipped or rigged stairs. If above execution fails for any reason, below stairs will be affected instead.",
 		['normalrig'] = "Can be executed on or below any normal or rigged stairs. Spell will be applied to both above and below stairs.",
 		['slide'] = "Can be executed on normal or rigged stairs. If there are blocking un-cursed stairs above, they will be removed.",
 	},
-	
+
 	["both"] = {
 		['restore'] = "Can be executed on any stairs or on platform's arrow with any adjacent stairs. Rank up to Admiral to restore cursed stairs.",
 		['deltwists'] = "Can be executed on twisted stairs only or on platform's arrow with adjacent twisted stairs. Rank up to Combiner to restore de-attached stairs from platform.",
 		['ghosted'] = "Can be executed on normal, rigged or ghosted stairs or on platfrom's arrow with adjacent normal, rigged or ghosted stairs.",
 
+		["flatten"] = "Can be executed on an intersection with normal or rigged opposite stairs. Can be executed on stairs too.",
+		--NEW
+		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
+		["archarchon"] = "Archon's Platform Gate (when used on arrows) or Gate Stairs (when used on stairs)",
+		["archthief"] = "Thief's Place Stairs (when used on arrows) or Steal Stairs (when used on stairs)",
+		["archnecro"] = "Necromancer's Create Dual Stairs (when used on arrows) or Undead Stairs (when used on stairs)",
+		["archhacker"] = "Hacker's Hack-In Stairs (when used on arrows) or Escalator (when used on stairs)",
+		["archkeeper"] = "Keeper's Restore Stairs (when used on arrows) or Move/Rotate Stairs (when used on stairs)",
+		["archsplicer"] = "Splicer's Split Opposite Stairs (when used on arrows) or Twist Stairs (when used on stairs)",
+		["archwicked"] = "Wicked's Wall without a Link (when used on arrows) or Destroy Stairs (when used on stairs)",
+		["archjoker"] = "Joker's Create Fake Stairs (when used on arrows) or Flip/Unflip Stairs (when used on stairs)",
+		["archspectre"] = "Spectre's Create Phantom Stairs (when used on arrows) or Ghost/UnGhost Stairs (when used on stairs)",
+		["archreaver"] = "Reaver's Create Mirrored Stairs (when used on arrows) or One-Way Stairs (when used on stairs)",
+		["archheretic"] = "Heretic's Curse Intersection without Flicker (when used on arrows) or Curse/unCurse Stairs (when used on stairs)",
+
 	},
-	
+
 	['both2'] = {
-		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates."
+		['delsplits'] = "Can be excuted on gated stairs only. Rank up to Disciple to use this spell to remove Platform's gates.",
+
+		["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
+		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
-	
+
 	['anywhere'] = {
 		['anywhere'] = "This spell can be executed anywhere.",
 	},
-	
+
 	["nowhere"] = {
 		['slide'] = "This spell does not require an execution.",
-		
+
 	},
 
 }
@@ -1570,12 +1649,17 @@ module.spells.tokencosts = {
 }
 
 module.serverfeedback = {
-	 
+
 	--failed spell (local)
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough tokens!",
-	["coolwait"] = "You can't cast rigs and events now, please wait ",
-	["nomirror"] = "You need to be joined with ghost to walk on mirrors",
+	["coolwait"] = "You can't cast rigs and events now, please wait.",
+	["nomirror"] = "You need to be joined with ghost to walk on mirrors.",
+	--new
+	["noreflected"] = "This spell cannot be used when you are Reflected.",
+	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected.",
+	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected.",
+	--end new
 	["regenused"] = "Regen already used during this climb.",
 
 	--failed spell (server)
@@ -1590,9 +1674,6 @@ module.serverfeedback = {
 	["stashempty"] = "You have to steal stairs before casting this spell.",
 	["ultwait"] = "Another ultimate spell is in progress. Please wait.",
 	["notdefault"] = "Drones need to be back in default mode first. Please wait.",
-	["regwait"] = "You cannot cast rigs and events, while the Staircase is regenerating.",
-	["cooldownwait"] = "You can't cast rigs and events now, please wait %d seconds.",
-	["nospellsnow"] = "You cannot cast spells right now.",
 	["noreshuffle"] = "Choose reshuffle mode first!",
 	["oneoverload"] = "You can't have multiple Mana Overloads active.",
 	["cursed"] = "These stairs are cursed!",
@@ -1601,16 +1682,16 @@ module.serverfeedback = {
 	["locked"] = "These stairs are locked.",
 	["platformlocked"] = "Target platform is locked.",
 	["normalrig"] = "This spell works only on normal or rigged stairs.",
-	["cantblock"] = "Cannot curse, there are stairs here. (might be invisible)",
-	["cantblock2"] = "Cannot curse, there are crossing stairs in the way. (might be invisible)",
 	["noway"] = "Stairs are in the way. (might be invisible)",
 	["noway2"] = "Crossing stairs are in the way. (might be invisible)",
 	["noplatform"] = "No platform found in that direction.",
-	["nopass"] = "Pass can only be created on the outer platforms.",
+	--NEW
+	["nopass"] = "This spell can only be cast on the edge of the staircase.",
+	--END NEW
 	["pass"] = "Pass is already here.",
 	["link"] = "Link is already here.",
 	["noblink"] = "You can only blink through blocking stairs.",
-	["noblink2"] = "You cannot blink on bridges and bent down stairs.",
+	["noblink2"] = "You cannot blink on stairs disconnected from the above stairs.",
 	["noflip"] = "Only normal, flipped or rigged stairs can be flipped.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
 	["wrongdirection"] = "You cannot cast this spell in that direction.",
@@ -1620,20 +1701,24 @@ module.serverfeedback = {
 	["noground"] = "This spell cannot be cast on the ground level.",
 	["oddonly"] = "This spell cannot be cast on this level.",
 	["noabove"] = "No stairs found directly above.",
-	["linklimit"] = "Only \"above spells\" can be executed on links.",
 	["lock"] = "You cannot cast spells now",
-	["outdrift"] = "Outside drift can only be created on the outer platforms.",
+	--["outdrift"] = "Outside drift can only be created on the outer platforms.", --removed
 	["cantgate"] = "This direction is blocked.",
 	["wall"] = "Wall is already here.",
 	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
 	["nogate"] = "These stairs are not gated.",
-	["noghost"] = "Only ghosted stairs can be de-ghostified.",
-	["wrongsplit"] = "Other gate must be in the game area.",
-	["blockedplit"] = "Can't create split, target intersection is cursed.",
+	--NEW
+	["noghost"] = "This spell only works on normal, rigged and ghosted stairs.",
+	["wrongplace"] = "Other stairs must be in the game area.",
+	["archrace"] = "Architects cannot race!",
+	["noobrace"] = "You cannot race in the tutorial!",
+	["toolate"] = "A race is already in progress, try again later.",
+	["blockedplit"] = "Target intersection is cursed.",
+	--END NEW
 	["cursedtarget"] = "There are Cursed Stairs in that destination.",
-	["lockedsplit"] = "Cannot create split yet, other stairs are locked.",
+	["lockedother"] = "Cannot create stairs yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
-	["notwist"] = "Those stairs are not twisted.",--*
+	["notwist"] = "Those stairs are not twisted.",
 	["wrongmove"] = "Stairs cannot be moved out of game area.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
@@ -1641,23 +1726,30 @@ module.serverfeedback = {
 	["lockedinter"] = "This intersection is locked.",
 	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
 	["duplicatemirror"] = "There is already a mirror on this level.",
+	["norestore"] = "Thief bypasses and spirals cannot be restored.",
 
 	--higher rank required
 	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
 	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel flicker on cursed intersection.",
+	["infidel"] = "Rank up to Infidel to flicker on cursed intersection.",
 	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
 	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
 	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
-	["nomad"] = "Rank up to Nomad to spin already drifted stairs.",
+	--NEW
+	["nomad1"] = "Rank up to Nomad to spin any uncursed stairs.",
+	["nomad2"] = "Rank up to Nomad to drift already drifted stairs.",
+	--END NEW
 	["prodigy"] = "Rank up to Prodigy, to override Gates.",
 	["traveller"] = "Rank up to Traveller to boost Elevators.",
 	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
 	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
-	["lich"] = "Rank up to Lich to demolish crossing stairs",
+	--NEW
+	["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
+	--END NEW
 	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
 	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
 	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
+	["lich"] = "Rank up to Lich to demolish crossing cursed stairs.",
 
 	--rig activation
 	["keeperrig"] = "Stairs are moving!",
@@ -1676,19 +1768,19 @@ module.serverfeedback = {
 	["drifterrig"] = "Stairs are spinning!",
 	["splicerrig"] = "Stairs are twisting!",
 	["necrorig"] = "Stairs are fading!",
-	["reaverrig"] = "Stairs are now one way only!",
-	["gremlinrig"] = "You have been hypnotized!",
+	["reaverrig"] = "You have been reflected!",
+	["gremlinrig"] = "You have been hypnotised!",
 	["reveal"] = "You have revealed invisible stairs!",
-	
+
 	--drifer lifts
 	["boosted"] = "Drift boosted!",
 	["noboost"] = "Cannot boost, no more platforms above.",
 	["noupplatform"] = "Cannot boost, no more platforms above.",
-	
+
 	--mana overload
 	["overstarted"] = "You have activated Mana Overload!",
 	["overended"] = "Mana Overload ended.",
-	
+
 	--mana share
 	["2minshare"] = "At least 2 mana required...",
 	["noshare"] = "No nearby players to receive mana...",
@@ -1696,16 +1788,12 @@ module.serverfeedback = {
 	["toomuch"] = "%s has maximum Mana!",
 	["shared"] = "Mana shared with %s!",
 	["received"] = "%s has shared some Mana with you!",
-	
+
 	--prompts
-	["scancel"] = "Cancel your spell to change alignments.",
+	--["scancel"] = "Cancel your spell to change alignments.", --removed
 	["morph"] = "Jump here to become %s!",
-	
-	--race
-	["raceclosed"] = "Race is now closed.",
-	["stay"] = "Stay in the ring to take part in the race!",
-	["falsestart"] = "False Start.",
-	["charreset"] = "Character reset elimination.",
+	["race"] = "Jump here to intiate a new race.",
+	["norace"] = "Race is automatic in the infinite mode.",
 
 	--misc
 	["secret"] = "Secret found!",
@@ -1714,46 +1802,52 @@ module.serverfeedback = {
 	--chameleon exceptions	
 	["chamtutorial"] = "You can't use CHAMELEON in the tutorial!",
 	["champossessed"] = "You can't use chameleon while possessed.",
-	["chamhypnotized"] = "You can't use chameleon while hypnotized.",
-	["chamspell"] = "Please execute or cancel current spell first.",
+	["chamhypnotised"] = "You can't use chameleon while hypnotised.",
+	["chamreflected"] = "You can't use chameleon while reflected.",
+	--["chamspell"] = "Please execute or cancel current spell first.", --removed
 	["morphpossessed"] = "You can't change alignment while possessed.",
-	["morphhypnotized"] = "You can't change alignment while hypnotized.",
-	
+	["morphhypnotised"] = "You can't change alignment while hypnotised.",
+	["morphreflected"] = "You can't change alignment while reflected.",
+
 	["nocode"] = "Please enter the code first.",
 	["invalid"] = "This code is invalid.",
 	["old"] = "This code is no longer active.",
 	["accepted"] = "Code accepted.",
-	
+
 	--free demos
 	["tryspectre"] = "Spectre unlocked for 10 minutes! Do not leave server.",
 	["endspectre"] = "Spectre demo will end in 1 minute!",
 	["trycham"] = "Chameleon unlocked for 10 minutes! Do not leave server.",
 	["new20pass"] = "Mana limit increased!",
 	["newchampass"] = "You can now change alignment during climb!",
+	--NEW
+	["newarchpass"] = "You can now become an ARCHITECT!",
+	["tryarch"] = "Non-VR Architect unlocked for 10 minutes! Do not leave server.",
+	["endarch"] = "Non-VR Architect demo will end in 1 minute!",
+	--END NEW
 	["newspectrepass"] = "You can now become a SPECTRE!",
 	["endcham"] = "Chameleon demo will end in 1 minute!",
 	["trymana"] = "Bigger storage unlocked for 10 minutes! Do not leave server.",
 	["endmana"] = "Bigger storage demo will end in 1 minute!",
-	
-	
+
+
 	["used"] = "Code has been used already.",
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
-	
-	--private server moderation (might be re-implemented in the future)
-	["muted"] = "% is now muted.",
-	["unmuted"] =  "%s is now unmuted.",
-	["kicked"] = "%s has been kicked!",
-	["banned"] = "%s has been banned!",
-	["mekicked"] = "%s has kicked you from their server.",
-	["mebanned"] = "%s has banned you from their server.",
-	["permban"] = "%s has banned you from this game.",
-	["kick"] = "%s has kicked you from the game.",
-	["48ban"] = "%s has banned you for 48 hours.",
-	["exiled"] = "You are banned from this private server! THIS IS NOT A GAME BAN",
-	["permbanned"] = "You are banned from this game.",
-	["timeout"] = "Your ban will end in: %02i hours and %02i minutes.",
-	
+
+	--NEW
+	['noobteleport'] = "You cannot switch towers in the tutorial!",
+	['noobmorph'] = "Complete the tutorial to be able to morph!",
+	['noobnocode'] = "Complete the tutorial to be able to use codes!",
+	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
+
+	--GIFTING
+	['notingame'] = "Player has left the game, you cannot give the game pass!",
+	['alreadyowns'] = "Player already owns this game pass.",
+	['gotit'] = "You have received %s game pass, courtesy of %s",
+	['given'] = "%s has received %s game pass!",
+	--END NEW
+
 	--custom tower feedbacks
 	["notinrace"] = "You cannot switch to infinite mode during a race!",
 	["notinreg"] = "You cannot switch the infinite mode during a regeneration!",
@@ -1798,7 +1892,7 @@ module.serverfeedback = {
 	["min"] = "Minimum target staircases amount changed",
 	["curse"] = "Drone curse stairs chance changed",
 	["block"] = "Drone curse intersection chance changed",
-	
+
 
 
 }
@@ -1807,7 +1901,7 @@ module.serverbroadcast = {
 	["pranked"] = "%s pranked %s!",
 	["found"] = "%s has found %s's invisible stairs!",
 	["disco"] = "%s is enjoying %s's disco music.",
-	["trap"] = "%s has fallen for %s trap.",
+	["trap"] = "%s has fallen for %s's trap.",
 	["obby"] = "%s is attempting %s's obby.",
 	["default"] = "Drones are now back in the default mode.",
 	["reg"] = "Staircase is regenerating.",
@@ -1815,29 +1909,40 @@ module.serverbroadcast = {
 	["union"] = "%s has merged with their ghost!",
 	["eliminated"] = "%s has been eliminated.",
 	["won"] = "%s has won the race!",
-	["falsestart"] = "False Start",
-	["countdown"] = "Race in %d seconds!",
-	["2min"] = "Minimum two players required for the classic race!",
-	["noplayers"] = "No racing players, infinite mode will not start!",
+	--["falsestart"] = "False Start", --removed
+	--["countdown"] = "Race in %d seconds!", --removed
+	--["noplayers"] = "No racing players, infinite mode will not start!", --removed
 	["nojoin"] = "Race is now closed - no new players can join.",
-	["allfalse"] = "All players have False Started!",
+	--["allfalse"] = "All players have False Started!", --removed
 	["safety"] = "Tower levels have changed, this race will not start.",
 	["leader"] = "%s has taken the lead!",
 	["toolate"] = "Nobody has reached the top in time!",
-	["go"] = "GO!",
+	--["go"] = "GO!", --removed
 	["over"] = "Race over!",
+
+	--NEW
+	["newrace"] = "%s initiated a race - join them!",
+	["joined"] = "%s has joined the	race!",
+	["2min"] = "Nobody has challenged %s!",
+	["infstart"] = "Infinite race started!",
+
+	--END NEW
 
 }
 
 module.localfeedback = {
 
-	["cancel"] = "Cancel other spell first!",
+	--["cancel"] = "Cancel other spell first!", --removed
 	["nomana"] = "Not enough Mana!",
 	["notokens"] = "Not enough Tokens!",
 	["unlocked"] = "Spell unlocked!",
 	["maxmana"] = "Your mana is already at maximum!",
 	["nopurchase"] = "You do not need to purchase mana in the tutorial!",
-	["hascham"] = "You already have the Chameleon Pass!",
+	--NEW
+	["limitset"] = "You have a mana limiter active - purchase prevented.", --for refill mana
+	["hasarchitect"] = "You already have the Architect Pass!",
+	--END NEW
+	["haschameleon"] = "You already have the Chameleon Pass!",
 	["hasspectre"] = "You already have the Spectre Pass!",
 	["hasmana"] = "You already have the Bigger Storage Pass!",
 	["nomuggle"] = "You thought there were secret ultimate spells for Muggle but there weren't.",
@@ -1849,37 +1954,49 @@ module.localfeedback = {
 	["nomusic"] = "Music failed to load.",
 	["noteleport"] = "Teleport failed!", 
 	["norefresh"] = "You cannot refresh yet.",
+	["nounion"] = "You can't use Ghost Union right now.",
+
+	--NEW
+	["failedjoin"] = "Failed to join the race.",
+	--END NEW
 
 }
 
+
+--NEW (redone)
 module.switchon = {
 
-	["JOKER"] = "You will no longer reveal invisible stairs.",
-	["WICKED"] = "You will no longer trigger below Wicked Rigs.",
-	["KEEPER"] = "You will no longer trigger below Keeper Rigs.",
-	["SPECTRE"] = "You will no longer trigger below Spectre Rigs.",
-	["HACKER"] = "Escalators and rig immunity on.",
-	["ARCHON"] = "Only upward splits will teleport you.",
-	["DRIFTER"] = "You will no longer trigger below Drifter Rigs.",
-	["SPLICER"] = "You will no longer trigger below Splicer Rigs.",
-	["REAVER"] = "You will no longer trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews locked.",
+	["JOKER1"] = "You will no longer reveal invisible stairs.",
+	["WICKED1"] = "You will no longer trigger below Wicked Rigs.",
+	["KEEPER1"] = "You will no longer trigger below Keeper Rigs.",
+	["SPECTRE1"] = "You will no longer trigger below Spectre Rigs.",
+	["HACKER1"] = "Escalators immunity on.",
+	["HACKER2"] = "Escalators and rig immunity on.",
+	["ARCHON1"] = "Only upward splits will teleport you.",
+	["DRIFTER1"] = "You will no longer trigger below Drifter Rigs.",
+	["SPLICER1"] = "You will no longer trigger below Splicer Rigs.",
+	--["REAVER1"] = "You will no longer trigger below Reaver Rigs.", --removed
+	["GREMLIN1"] = "Nearby Corkscrews locked.",
+	["NONE"] = "All special effects immunity on.",
 
 }
 
 module.switchoff = {
 
-	["JOKER"] = "You will now reveal invisible stairs.",
-	["WICKED"] = "You will now trigger below Wicked Rigs.",
-	["KEEPER"] = "You will now trigger below Keeper Rigs.",
-	["SPECTRE"] = "You will now trigger below Spectre Rigs.",
-	["HACKER"] = "Escalators and rig immunity off.",
-	["ARCHON"] = "All except down splits will teleport you.",
-	["DRIFTER"] = "You will now trigger below Drifter Rigs.",
-	["SPLICER"] = "You will now trigger below Splicer Rigs.",
-	["REAVER"] = "You will now trigger below Reaver Rigs.",
-	["GREMLIN"] = "Nearby Corkscrews unlocked.",
+	["JOKER1"] = "You will now reveal invisible stairs.",
+	["WICKED1"] = "You will now trigger below Wicked Rigs.",
+	["KEEPER1"] = "You will now trigger below Keeper Rigs.",
+	["SPECTRE1"] = "You will now trigger below Spectre Rigs.",
+	["HACKER1"] = "Escalator immunity off.",
+	["HACKER2"] = "Escalator and rig immunity off.",
+	["ARCHON1"] = "All except down splits will teleport you.",
+	["DRIFTER1"] = "You will now trigger below Drifter Rigs.",
+	["SPLICER1"] = "You will now trigger below Splicer Rigs.",
+	--["REAVER1"] = "You will now trigger below Reaver Rigs.", --removed
+	["GREMLIN1"] = "Nearby Corkscrews unlocked.",
+	["NONE"] = "All special effects immunity off.",
 }
+--END NEW
 
 local timedSpell = "%s just cast the %s spell!"
 
@@ -1904,7 +2021,7 @@ module.eventspells = {
 	["keeperevent"] = "%s has just shuffled all normal stairs!",
 	["keeperaltevent"] = "%s has just restored all stairs!",
 
-	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50% chance of ghosting!",
+	["spectrerigevent"] = "%s has just rigged all normal stairs with a 50%% chance of ghosting!",
 	["spectreevent"] = "%s has just phantom shuffled all normal stairs!",
 	["spectrealtevent"] = "%s has just ghosted all normal stairs!",
 
@@ -1936,13 +2053,13 @@ module.eventspells = {
 	["necromancerevent"] = "%s has just overloaded the tower with Soulless stairs!",
 	["necromanceraltevent"] = "%s has just turned all normal stairs Soulless!",
 
-	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotize spell!",
+	["gremlinrigevent"] = "%s has just rigged all normal stairs with Hypnotise spell!",
 	["gremlinevent"] = "%s has just revolved all normal stairs!",
 	["gremlinaltevent"] = "%s has just overloaded the tower with Tram stairs!",
 
-	["reaverrigevent"] = "%s has just rigged all normal stairs with One-Way spell!",
+	["reaverrigevent"] = "%s has just rigged all normal stairs with Reflect spell!",
 	["reaverevent"] = "%s has just turned all normal stairs into random One-Ways!",
-	["reaveraltevent"] = "%s has turned all normal stairs into upward One-Ways!",
+	["reaveraltevent"] = "%s has turned all normal stairs into Glass Stairs!",
 
 	["newmode"] = "%s has just switched drones into %s mode!",
 
@@ -1954,7 +2071,7 @@ module.spells.extras = {
 	["Prompt"] = "Click a spell below, to learn how to use it",
 	["Title1"] = "Basic spells",
 	["Title2"] = "Unique ultimate spells",
-	["Title3"] = "Shared ultimate spells",
+	["Title3"] = "Shared ultimate and basic spells",
 	["ManaCost"] = "Mana Cost: %s", 
 	["TokenCost"] = "Token Cost: %s", 
 	["Special"] = "Special requirements: %s",
@@ -1964,10 +2081,12 @@ module.spells.extras = {
 	["ultimate"] = "Ultimate",
 	["unlock"] = "0 (3 to unlock)",
 	["none"] = "No special requirements",
-}
 
-module.gui.basic.jumpdelay = "jump delay"
-module.gui.basic.dancetime = "DANCE TIME!"
+	--NEW
+	["LeftHand"] = "Left Hand",
+	["RightHand"] = "Right Hand",
+
+}
 
 module.gui.mana = {
 
@@ -1987,7 +2106,7 @@ module.gui.mana = {
 	["ritual"] = "RITUAL",
 	["purge"] = "PURGE",
 	["blessing"] = "BLESSING",
-	["hack"] = "HACK",
+	--["hack"] = "HACK", --removed
 	["stash"] = "STASH",
 	["backdoor"] = "BACKDOOR",
 	["chamber"] = "CHAMBER",
@@ -2006,24 +2125,20 @@ module.gui.mana = {
 	["shack"] = "SHACK",
 	["regen"] = "REGENERATE",
 	["optimus"] = "OPTIMUS",
+	["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial
 
 }
 
-module.gui.hints = {
-	["bcancel"] = "Press B to cancel", --xbox b
-	["acancel"] = "Click again to cancel",
-	["ocancel"] = "Cancel other spell first", 
-}
 
 module.gui.gameover.extras = {
 
-	["noobs"] = "Tutorials are for noobs!",
+	--["noobs"] = "Tutorials are for noobs!", --removed
 	["possessed"] = "Those annoying Heretics!",
-	["hypnotized"] = "Where am I?",
+	["hypnotised"] = "Where am I?",
+	--NEW
+	["reflected"] = "Let me out!",
+	--END NEW
 	["new"] = "New rank acquired - %s",
-	["none1"] = "WAIT! WHAT?",
-	["none2"] = "Does this game",
-	["none3"] = "have spells?"
 
 }
 
@@ -2079,7 +2194,7 @@ end
 --fill in common spell names
 for spell, desc in pairs(CommonSpellNames) do
 
-	for class, _ in pairs(SpellData[spell].IMAGES) do
+	for class, _ in pairs(TowerData.RANKED_ALIGNMENTS) do
 
 		if class == "NONE" then continue end
 
