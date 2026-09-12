@@ -120,7 +120,7 @@ module.gui.stats = {
 	["1885715582646280"] = "Necromancer Szertartása",
 	["2124480175"] = "Muggle Logikája",
 	["2124826874"] = "Teljes Kör",
-	["2124529966"] = "Átugrottad A Kiképzést",
+	["2124529966"] = "None Semmije",
 	["2124826880"] = "Megszállott Sors",
 	["3731010929572663"] = "Hypnotizált Álom",
 	["840574993122888"] = "Tükröződött Távlat",
@@ -1975,7 +1975,7 @@ module.eventspells = {
 	["wickedaltevent"] = "%s az ÖSSZES lépcsőt elpusztítja!",
 
 	["keeperrigevent"] = "%s az összes normális lépcsőre rárak Keeper Riget!",
-	["keeperevent"] = "%s az összes normális lépcsőt átrendezi!",
+	["keeperevent"] = "%s az összes normális lépcsőt megmozgatja!",
 	["keeperaltevent"] = "%s az összes különleges lépcsőt helyreállítja!",
 
 	["spectrerigevent"] = "%s az összes normális lépcsőre rárak Spectre Riget!",
