@@ -271,7 +271,7 @@ module.gui.tutorial = {
 
 	["complete"] = "CLIMB COMPLETED!",
 	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
-	["collect"] = "COLLECT THE ORB TO CONTINUE"
+	["collect"] = "COLLECT THE ORB TO CONTINUE",
 	["difficulty"] = "Difficulty:",
 
 }
