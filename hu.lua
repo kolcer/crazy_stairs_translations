@@ -1,4 +1,4 @@
---VERSION 4.3--
+--VERSION 4.4--
 --HUNGARIAN--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -26,7 +26,7 @@ module.gui.switcher = {
 	["classic"] = "Klasszikus Torony",
 	["pro"] = "Profi Torony",
 	["custom"] = "Egyedi Torony",
-	["noVR"] = "VR Nélküli Torony",
+	["noVR"] = "Kezdő Torony",
 
 }
 
@@ -427,14 +427,6 @@ module.spells.names = {
 	["tramway"] = "Villamospálya",
 	["gremlinevent"] = "Forr(dul) A Dalom", 
 	["gremlinaltevent"] = "Torlódás",
-
-	--TUTORIAL
-	["tcreate"] = "Lépcső Létrehozása",
-	["tflip"] = "Lépcső Megfordítása",
-	["tdestroy"] = "Feletted Lévő Lépcső Elpusztítása",
-	["tmove"] = "Lépcső Mozgatása",
-	["tdash"] = "Lendület",
-	["trestore"] = "Lépcső Helyreállítása",
 
 	--CHAMELEON
 	["ditch"] = "Keresztező Lépcsők",
@@ -980,7 +972,7 @@ module.gui.gameover.results = {
 	["pro"] = "REKORDOD A PROFI TORONYBAN",	
 	["infinite"] = "REKORDOD A VÉGTELEN TORONYBAN",
 	["custom"] = "REKORDOD AZ EGYEDI TORONYBAN", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["noVR"] = "REKORDOD A KLASSZIKUS TORONYBAN", --this will show in noVR tower, as they share the same record
+	["noVR"] = "REKORDOD A KEZDŐ TORONYBAN",
 
 	["cTime"] = "REKORDOD %s-KÉNT", --%s will be replaced by the used class
 	["levels"] = "ELÉRT SZINTEK",
@@ -1463,29 +1455,32 @@ module.static = {
 module.tutorial = {
 
 	["tut_big_1"] = "Üdvözöljük az Őrült Lépcsőkben!",
-	["tut_big_2"] = "Először szedd fel ezt a Manát.",
-	["tut_big_3"] = "Ezzel a varázslattal létrehozhatsz lépcsőket.",
-	["tut_big_4"] = "Az összes varázslatot ugrással kell végrehajtani.",
-	["tut_big_5"] = "Szedd fel ezt a Manát:",
-	["tut_big_6"] = "Ezzel a varázslattal megfordíthatsz lépcsőket.",
-	["tut_big_7"] = "Néhány varázslatot lépcsőkön kell végrehajtani.",
-	["tut_big_8"] = "Szedd fel ezt a Manát:",
-	["tut_big_9"] = "Ezzel a varázslattal mozgathatsz lépcsőket.",
-	["tut_big_10"] = "Ugorj az előrefele mutató nyílra, hogy megmozgasd a lépcsőt.",
-	["tut_big_11"] = "Sok útban álló lépcsővel fogsz találkozni ebben a játékban.",
-	["tut_big_12"] = "Használd ezt a varázslatot, hogy elpusztítsd az utadban álló lépcsőt.",
-	["tut_big_13"] = "El tudsz pusztítani feletted lévő lépcsőket úgy, hogy ráugrasz az alattuk lévőre.",
-	["tut_big_14"] = "Szedd fel ezt a Manát:",
-	["tut_big_15"] = "Használd ezt a varázsigét, hogy felületek között teleportálj.",
-	["tut_big_16"] = "Ugorj a nyílra, hogy teleportálj.",
-	["tut_big_17"] = "Lehet, hogy találkozol olyan lépcsőkkel, amelyeken nem lehet felmenni.",
-	["tut_big_18"] = "Állítsd helyre a lépcsőt ezzel a varázslattal.",
-	["tut_big_19"] = "Ugorj rá a lépcsőre, vagy az ahhoz tartozó nyílra hogy helyreállítsd a lépcsőt.",
-	["tut_big_20"] = "Meg kell szerezned a legfelső szinten lévő gömböt, ha nyerni szeretnél. Sok szerencsét!",
+	["tut_big_2"] = "Először tanuld meg hogyan változtass osztályt. Ugorj a körre, hogy Patron legyél.",
+	["tut_big_3"] = "A Patreonok létre tudnak hozni lépcsőket, de a varázslatok varázsolásához Mana kell. Szedd fel az elötted lévő Manát.",
+	["tut_big_4"] = "Ezzel a varázslattal létre tudsz hozni lépcsőket. Válaszd ki a ezt a varázslatot a képernyőd alján.",
+	["tut_big_5"] = "Az összes varázslatot ugrással kell végrehajtani.",
+	["tut_big_6"] = "Menő, ugye? Most változz át Jokerré. A Jokerek meg tudnak fordítani lépcsőket.",
+	["tut_big_7"] = "Szedd fel ezt a Manát:",
+	["tut_big_8"] = "Most meg tudod fordítani a lépcsőt ezzel a varázslattal.",
+	["tut_big_10"] = "Néhány varázslatot lépcsőkön kell végrehajtani.",
+	["tut_big_11"] = "Most változz át Keeperré. A Keeperek tudnak lépcsőket mozgatni.",
+	["tut_big_12"] = "Szedd fel ezt a Manát:",
+	["tut_big_13"] = "Most meg tudod mozgatni a lépcsőt ezzel a varázslattal.",
+	["tut_big_14"] = "Ugorj az előrefele mutató nyílra, hogy megmozgasd a lépcsőt.",
+	["tut_big_15"] = "Most változz át Wickeddé. A Wickedek el tudnak pusztítani lépcsőket.",
+	["tut_big_16"] = "Sok útban álló lépcsővel fogsz találkozni ebben a játékban.",
+	["tut_big_17"] = "Ezzel a varázslattal viszont elpusztíthatod az ilyen lépcsőket.",
+	["tut_big_18"] = "Elpusztíthatod a feletted lévő lépcsőket úgy, hogy ráugrasz az alattuk lévőre.",
+	["tut_big_18"] = "Most változz at Hackerré. A Hackerek tudnak teleportálni.",
+	["tut_big_19"] = "Szedd fel ezt a Manát:",
+	["tut_big_20"] = "Használd ezt a varázsigét hogy átteleportálj az elötted lévő felületre.",
+	["tut_big_21"] = "Ugorj a nyílra, hogy teleportálj.",
+	["tut_big_22"] = "A nyeréshez meg kell szerezned a legfelső szinten lévő gömböt. Sok szerencsét!",
 
 	["tut_select"] = "Válaszd ki ezt a varázslatot.",
 
 	["tut_small_init"] = "Ugorj, hogy elkezdd a kiképzést",
+	["tut_small_morph"] = "Ugorj a körre",
 	["tut_small_collect"] = "Gyűjts Manát",
 	["tut_small_arrow"] = "Ugorj a nyílra",
 	["tut_small_stairs"] = "Ugorj a lépcsőre",
@@ -1702,7 +1697,6 @@ module.serverfeedback = {
 	["noghost"] = "Ez a varázslat csak normális, riges, vagy szellemesített lépcsőkön működik.",
 	["wrongplace"] = "A másik lépcsőnek a játék területen belül kell lennie.",
 	["archrace"] = "Nem változhatsz át Architectté miközben versenyzel.",
-	["noobrace"] = "A kiképzés közben nem lehet versenyezni!",
 	["toolate"] = "Most éppen van egy verseny folyamatban. Várd meg, hogy a mostani verseny befejeződjön.",
 	["blockedplit"] = "A célba vett irányban lévő kereszteződés átkozott.",
 	["cursedtarget"] = "Átkozott Lépcső van ebben az irányban.",
@@ -1792,10 +1786,12 @@ module.serverfeedback = {
 	["morphpossessed"] = "Nem változtathatsz osztályt miközben meg vagy szállva.",
 	["morphhypnotized"] = "Nem változtathatsz osztályt miközben hipnotizálva vagy.",
 	["morphreflected"] = "Nem változtathatsz osztályt miközben a tükörképedet irányítod.",
+	["bannedclass"] = "Ezt az osztályt (%s) nem lehet használni a kezdő toronyban.",
 
 	["nocode"] = "Légyszíves előbb írj be egy kódot.",
 	["invalid"] = "Ez a kód nem érvényes.",
 	["old"] = "Ez a kód nem aktív.",
+	["basic_arch"] = "Ezt a kódot nem használhatod a kezdő toronyban.",
 	["accepted"] = "Kód elfogadva.",
 
 	--free demos
@@ -1816,9 +1812,7 @@ module.serverfeedback = {
 	["tooshort"] = "Az üzeneted túl rövid volt és nem lett elküldve.",
 	["sent"] = "Az üzeneted sikeresen el lett küldve, köszönjük.",
 
-	['noobteleport'] = "A kiképzés közben nem válthatsz tornyot!",
-	['noobmorph'] = "Végezd el a kiképzést, hogy osztályt változtathass!",
-	['noobnocode'] = "Végezd el a kiképzést, hogy kódokat használhass!",
+	["noobteleport"] = "Végezd el a kiképzést, hogy változtathass tornyot!",
 	['noobchameleon'] = "Végezd el a kiképzést, hogy Chameleont használhass!",
 
 	--GIFTING
@@ -1905,6 +1899,8 @@ module.localfeedback = {
 	["unlocked"] = "Varázslat feloldva!",
 	["maxmana"] = "Már tele vagy Manával!",
 	["nopurchase"] = "Nem lehet Manát venni a kiképzésben!",
+	["notinbasic"] = "Nem használhatsz eseményeket a kezdő toronyban.",
+	--this is for chamelon clicking on the basic tower banned class
 	["limitset"] = "Be van kapcsolva a Mana határoló - vásárlás megakadályozva.", --for refill mana
 	["hasarchitect"] = "Már megvan az Architect osztály!",
 	["haschameleon"] = "Már megvan a Chameleon osztály!",
