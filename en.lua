@@ -1,4 +1,4 @@
---VERSION 4.3--
+--VERSION 4.4--
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -29,7 +29,7 @@ module.gui.switcher = {
 	["classic"] = "Classic Tower",
 	["pro"] = "Pro Tower",
 	["custom"] = "Custom Tower",
-	["noVR"] = "VR Free Tower",
+	["basic"] = "Basic Tower",
 	--END NEW
 
 }
@@ -460,13 +460,6 @@ module.spells.names = {
 	["gremlinevent"] = "Revolvelution",
 	["gremlinaltevent"] = "Gridlock",
 
-	--TUTORIAL
-	["tcreate"] = "Create Stairs",
-	["tflip"] = "Flip Stairs",
-	["tdestroy"] = "Destroy Above Stairs",
-	["tmove"] = "Move Stairs",
-	["tdash"] = "Dash",
-	["trestore"] = "Restore Stairs",
 
 	--CHAMELEON
 	["ditch"] = "Cross Stairs",
@@ -1023,7 +1016,7 @@ module.gui.gameover.results = {
 	["pro"] = "PRO TOWER RECORD",	
 	["infinite"] = "INFINITE TOWER RECORD",
 	["custom"] = "CUSTOM TOWER RECORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["noVR"] = "CLASSIC TOWER RECORD", --this will show in noVR tower, as they share the same record
+	["basic"] = "BASIC TOWER RECORD",
 
 	["cTime"] = "%s RECORD", --%s will be replaced by the used class
 	["levels"] = "LEVELS REACHED",
@@ -1428,6 +1421,8 @@ module.static = {
 	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
 	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
 	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
+	
+	["studio_basic"] = "Architect is not avialable in the Basic Tower.",
 	--END NEW
 
 	--SHARED
@@ -1513,29 +1508,32 @@ module.tutorial = {
 
 
 	["tut_big_1"] = "Welcome to Crazy Stairs!",
-	["tut_big_2"] = "First, collect some Mana.",
-	["tut_big_3"] = "You can create stairs with this spell.",
-	["tut_big_4"] = "All spells need to be executed by jumping.",
-	["tut_big_5"] = "Collect this Mana:",
-	["tut_big_6"] = "You can flip stairs with this spell.",
-	["tut_big_7"] = "Some spells need to be executed on stairs.",
-	["tut_big_8"] = "Collect this Mana:",
-	["tut_big_9"] = "You can move stairs with this spell.",
-	["tut_big_10"] = "Jump on the forward arrow to move stairs.",
-	["tut_big_11"] = "You will encounter many blocking stairs in this game.",
-	["tut_big_12"] = "Use this spell to destroy blocking stairs.",
-	["tut_big_13"] = "You can destroy above stairs, by jumping on below ones.",
-	["tut_big_14"] = "Collect this Mana:",
-	["tut_big_15"] = "Use this spell to teleport across platforms.",
-	["tut_big_16"] = "Jump on arrow to teleport.",
-	["tut_big_17"] = "You may find that some stairs are impossible to ascend.",
-	["tut_big_18"] = "Use this spell to fix them.",
-	["tut_big_19"] = "Restore can be cast either on stairs or on adjacent arrow.",
-	["tut_big_20"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
+	["tut_big_2"] = "First, learn how to morph. Jump on this pad to morph to Patron!",
+	["tut_big_3"] = "Patrons can create stairs, but you will need mana to cast spells. Here is some mana for You.",
+	["tut_big_4"] = "You can create stairs with this spell. Click on the corresponding button on bottom of your screen.",
+	["tut_big_5"] = "All spells need to be executed by jumping.",
+	["tut_big_6"] = "Cool huh? Now morph to Joker. Jokers can flip stairs.",
+	["tut_big_7"] = "Collect this Mana:",
+	["tut_big_8"] = "You can flip stairs with this spell.",
+	["tut_big_9"] = "Some spells need to be executed on stairs.",
+	["tut_big_10"] = "Now morph to Keeper. Keepers can move stairs around.",
+	["tut_big_11"] = "Collect this Mana:",
+	["tut_big_12"] = "You can move stairs with this spell.",
+	["tut_big_13"] = "Jump on the forward arrow to move stairs.",
+	["tut_big_14"] = "Now morph to Wicked. Wickeds can destroy stairs.",
+	["tut_big_15"] = "You will encounter many blocking stairs in this game.",
+	["tut_big_16"] = "Use this spell to destroy blocking stairs.",
+	["tut_big_17"] = "You can destroy above stairs, by jumping on below ones.",
+	["tut_big_18"] = "Now morph to Hacker. Hackers can teleport.",
+	["tut_big_19"] = "Collect this Mana:",
+	["tut_big_20"] = "Use this spell to teleport across platforms.",
+	["tut_big_21"] = "Jump on arrow to teleport.",
+	["tut_big_22"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
 
 	["tut_select"] = "Select this spell.",
 
 	["tut_small_init"] = "Jump to spawn tutorial",
+	["tut_small_morph"] = "Jump to morph",
 	["tut_small_collect"] = "Collect Mana",
 	["tut_small_arrow"] = "Jump on arrow",
 	["tut_small_stairs"] = "Jump on stairs",
@@ -1762,7 +1760,6 @@ module.serverfeedback = {
 	["noghost"] = "This spell only works on normal, rigged and ghosted stairs.",
 	["wrongplace"] = "Other stairs must be in the game area.",
 	["archrace"] = "Architects cannot race!",
-	["noobrace"] = "You cannot race in the tutorial!",
 	["toolate"] = "A race is already in progress, try again later.",
 	["blockedplit"] = "Target intersection is cursed.",
 	--END NEW
@@ -1859,10 +1856,12 @@ module.serverfeedback = {
 	["morphpossessed"] = "You can't change alignment while possessed.",
 	["morphhypnotised"] = "You can't change alignment while hypnotised.",
 	["morphreflected"] = "You can't change alignment while reflected.",
+	["bannedclass"] = "%s cannot be used in the Basic Tower.",
 
 	["nocode"] = "Please enter the code first.",
 	["invalid"] = "This code is invalid.",
 	["old"] = "This code is no longer active.",
+	["basic_arch"] = "You cannot claim free Architect demo in the Basic Tower.",
 	["accepted"] = "Code accepted.",
 
 	--free demos
@@ -1886,11 +1885,9 @@ module.serverfeedback = {
 	["tooshort"] = "Your message was too short and not sent.",
 	["sent"] = "Your message was sent successfully, thank you.",
 
-	--NEW
-	['noobteleport'] = "You cannot switch towers in the tutorial!",
-	['noobmorph'] = "Complete the tutorial to be able to morph!",
-	['noobnocode'] = "Complete the tutorial to be able to use codes!",
-	['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
+	--NEW 
+	["noobteleport"] = "Complete the tutorial to be able to switch towers!",
+	["noobchameleon"] = "Complete the tutorial to be able to use Chameleon!",
 
 	--GIFTING
 	['notingame'] = "Player has left the game, you cannot give the game pass!",
@@ -1989,6 +1986,8 @@ module.localfeedback = {
 	["unlocked"] = "Spell unlocked!",
 	["maxmana"] = "Your mana is already at maximum!",
 	["nopurchase"] = "You do not need to purchase mana in the tutorial!",
+	["notinbasic"] = "Events cannot be cast in the Basic Tower.",
+	--this is for chamelon clicking on the basic tower banned class
 	--NEW
 	["limitset"] = "You have a mana limiter active - purchase prevented.", --for refill mana
 	["hasarchitect"] = "You already have the Architect Pass!",
@@ -2265,4 +2264,3 @@ for spell, data in pairs(SpellData) do
 end
 
 return module
-
