@@ -972,7 +972,7 @@ module.gui.gameover.results = {
 	["pro"] = "REKORDOD A PROFI TORONYBAN",	
 	["infinite"] = "REKORDOD A VÉGTELEN TORONYBAN",
 	["custom"] = "REKORDOD AZ EGYEDI TORONYBAN", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["noVR"] = "REKORDOD A KEZDŐ TORONYBAN",
+	["basic"] = "REKORDOD A KEZDŐ TORONYBAN",
 
 	["cTime"] = "REKORDOD %s-KÉNT", --%s will be replaced by the used class
 	["levels"] = "ELÉRT SZINTEK",
