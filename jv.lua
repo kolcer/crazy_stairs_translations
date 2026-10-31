@@ -80,7 +80,7 @@ module.gui.shop = {
 
 	["chameleon"] = "Chameleon bisā ngganti kelas wektu pandakèn.",
 	["spectre"] = "Spectre iku kelas basis teleportasi nodheg kanggo ndaki dhèwèkan (solo play)",
-	["mana"] = "Jembaraké kapasitas manamu kanthi 10 poin.",
+	["mana"] = "Jembaraké kapasitas manamu kanthi poin 10.",
 
 	["3tokens"] = "Mbukak siji månterå utåwå nguncalaké telu månterå pokok.",
 	["30tokens"] = "Mbukak sapuluh månterå utåwå nguncalaké telung puluh månterå pokok.",
@@ -1568,27 +1568,27 @@ module.guide = {
 
 
 module.spells.manacosts = {
-	"0 mana",
-	"1 mana",
-	"2 mana",
-	"3 mana",
-	"4 mana", 
-	"0 mana + undhak-undhakan",
-	"1 mana + undhak-undhakan",
-	"2 mana + undhak-undhakan",
-	"3 mana + undhak-undhakan", 
+	"Mana 0",
+	"Mana 1",
+	"Mana 2",
+	"Mana 3",
+	"Mana 4", 
+	"Mana 0 + undhak-undhakan",
+	"Mana 1 + undhak-undhakan",
+	"Mana 2 + undhak-undhakan",
+	"Mana 3 + undhak-undhakan", 
 	"", 
-	"10 mana" 
+	"Mana 10" 
 }
 
 module.spells.tokencosts = {
 
-	"1 token",
-	"2 token",
-	"3 token",
+	"Token 1",
+	"Token 2",
+	"Token 3",
 
-	["chameleonrigevent"] = "2 multitoken",
-	["unlock"] = "(mbukak kanggo 3 token)",
+	["chameleonrigevent"] = "Multitoken 2",
+	["unlock"] = "(mbukak kanggo token 3)",
 }
 
 module.serverfeedback = {
