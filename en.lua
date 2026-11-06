@@ -984,7 +984,7 @@ module.gui.settings = {
 	["HChoices"] = "Show direction selection for Hacker, when using the escalator spell",
 	["AChoices"] = "Show direction selection for Archon, when using gate spells",
 	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
-	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell",
+	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell and the crazy stairs spell",
 	--new
 	["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
 	--endnew
