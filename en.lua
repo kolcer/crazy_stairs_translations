@@ -582,7 +582,7 @@ module.spells.descriptions = {
 	["traveller"] = timed ..  "It allows you to cast as many Horizontal Teleport spells, as you like for one minute."  .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
 	["spectrerigevent"] = rig .. "the Spectre Rig. Stairs, once triggered, will have a 50% chance of ghosting. Rank up to VISION to have an option to walk on Spectre Rigs without triggering them.",
 	["spectreevent"] = event .. "the Ghosted Random Move spell. Before executing you can choose soft ghosted or forced ghosted mode. In soft ghosted mode this spell will move or rotate normal stairs in random direction, without destroying anything in the process. In forced ghost mode, this spell will move or rotate all stairs in random direction, destroying any staircases in the way.",
-	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to AETHER to walk on ghostifised stairs. Ghost Union can also be used to walk on ghostified stairs.",
+	["spectrealtevent"] = "This is an Event spell. It will ghostify all normal stairs. Rank up to AETHER to walk on ghostified stairs. Ghost Union can also be used to walk on ghostified stairs.",
 	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Soft Ghosted Random Move Spell"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
@@ -604,7 +604,7 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thieref spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up BANDIT and OUTLAW to be able to steal 2 and 3 staircases respectively at a time.",
+	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up BANDIT and OUTLAW to be able to steal 2 and 3 staircases respectively at a time.",
 	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up BANDIT and OUTLAW to be able to steal 2 and 3 staircases respectively at a time",
 	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection. Rank up to ROBBER to place stairs on other normal or rigged stairs, crossing them.",
 	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute.",
