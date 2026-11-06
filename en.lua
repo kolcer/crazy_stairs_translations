@@ -172,6 +172,7 @@ module.gui.questions = {
 	["tutorial"]= "Would you like to play the tutorial?",
 	["skip"] = "Would you like to skip the tutorial?",
 	["reshuffle"] = "Do you want the stairs to avoid collisions while moving? If not, any stairs in the way will be destroyed.",
+	["tonormal"] = "%s alignment is not available in the Basic Tower. Would you like to teleport to the Normal Tower?",
 
 	--new
 	["gift"] = "Do you want to gift %s Game Pass to another player?",
