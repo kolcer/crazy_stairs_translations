@@ -450,7 +450,7 @@ module.spells.names = {
 
 	--GREMLIN
 	["tram"] = "Create Tram Stairs",
-	["screwup"] = "Up Corkscrew",
+	["screwup"] = "Random Above Crazy Stairs",
 	["revolve"] = "Revolve Stairs",
 	["trapstairs"] = "Trapdoor Stairs",
 	["screwdown"] = "Crazy Stairs",
@@ -466,7 +466,6 @@ module.spells.names = {
 	["warp"] = "Warp Stairs",
 	["chamdown"] = "Move Stairs Down",
 	["chamdraw"] = "Below Drawbridge",
-	--["chamswap"] = "Copy Ghost (visual)",
 	["chamdrawabove"] = "Above Drawbridge",
 	["oneways"] = "One-Way Stairs",
 
@@ -718,8 +717,8 @@ module.spells.descriptions = {
 
 	--GREMLIN
 	["tram"] = "This spell will create Tram Stairs in the chosen direction. Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
-	["screwdown"] = "This spell will turn below stairs into downwards corkscrew. It will be near to impossible to ascend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
-	["screwup"] = "This spell will turn above stairs into upwards corkscrew, allowing you to pass. It will be near to impossible to descend such stairs. Rank up to DAEMON to manually control rotation with a switch. (it may not work when there is another Daemon nearby).",
+	["screwdown"] = "This spell will turn below stairs into Crazy Stairs. Crazy Stairs will swing around 6 platforms 3 times, and you can choose thie initial rotation. Rank up to DAEMON to remotely bring back Crazy Stairs back to an adjacent platform.",
+	["screwup"] = "This spell will turn above stairs into Crazy Stairs. Crazy Stairs will swing around 6 platforms 3 times. The initial rotation will be random. Rank up to DAEMON to remotely bring back Crazy Stairs back to an adjacent platform.",
 	["revolve"] = "This spell will turn below stairs into revolving propeller on a Z axis. You can choose direction of the rotation. Stairs will stop briefly after each 180 turn.",
 	["trapstairs"] = "This spell will turn below stairs into a trap door. Stairs, once triggered, will revolve on X axis, dropping careless players below. Rank up to GOBLIN to detect Gremlin Traps. Rank up to DIABLO to be immune to Gremlin traps.",
 	["spinplatform"] = "This spell will revolve the whole platform with any adjacent stairs (including cursed ones), in the direction of your choice. Platform will pause briefly after each 90 degree turn. Once full 360 spin is achieved, platform will turn back to normal.",
