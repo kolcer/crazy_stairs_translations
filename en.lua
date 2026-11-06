@@ -1,4 +1,4 @@
---VERSION 4.4--
+--VERSION 4.4 (FINAL) --
 --BRITISH ENGLISH--
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
@@ -26,7 +26,7 @@ module.gui.switcher = {
 	--NEW
 	["refreshbutton"] = "REFRESH",
 	["failed"] = "Teleport failed!",
-	["classic"] = "Classic Tower",
+	["classic"] = "Normal Tower",
 	["pro"] = "Pro Tower",
 	["custom"] = "Custom Tower",
 	["basic"] = "Basic Tower",
@@ -453,7 +453,7 @@ module.spells.names = {
 	["screwup"] = "Up Corkscrew",
 	["revolve"] = "Revolve Stairs",
 	["trapstairs"] = "Trapdoor Stairs",
-	["screwdown"] = "Down Corkscrew",
+	["screwdown"] = "Crazy Stairs",
 	["spinplatform"] = "Revolve Platform",
 
 	["tramway"] = "Tram-way",
@@ -462,7 +462,7 @@ module.spells.names = {
 
 
 	--CHAMELEON
-	["ditch"] = "Cross Stairs",
+	["cork"] = "Corkscrew Stairs",
 	["warp"] = "Warp Stairs",
 	["chamdown"] = "Move Stairs Down",
 	["chamdraw"] = "Below Drawbridge",
@@ -513,7 +513,7 @@ module.spells.descriptions = {
 	["restore"] = "This spell calls the orb on the top level to the chosen platform. Rank up to DEFENDER to reduce the cost to 2 Mana. Rank up to SAVIOUR to double the speed at which the orb will travel to You.",
 	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type.",
 	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
-	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to extend the time to 120 seconds.",
+	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to cast Link in any direction.",
 	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
@@ -605,14 +605,14 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up to OUTLAW to be able to steal 2 staircases at a time.",
-	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection.",
-	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute. Rank up to BANDIT for the staircase to last two minutes.",
-	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute. Rank up to ROBBER for the bypass to last two minutes.",
+	["steal"] = "This spell allows you to steal a below normal or rigged stairs. Either this or steal above is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up BANDIT and OUTLAW to be able to steal 2 and 3 staircases respectively at a time.",
+	["stealabove"] = "This spell allows you to steal an above normal or rigged stairs. Either this or steal below is required to cast other basic thief spells. Rank up to HIJACKER to be able to steal any un-cursed stairs. Rank up BANDIT and OUTLAW to be able to steal 2 and 3 staircases respectively at a time",
+	["place"] = "This spell allows you to place the stolen stairs back in the chosen direction. However, this will not demolish crossing stairs, so you can only place stairs in an empty intersection. Rank up to ROBBER to place stairs on other normal or rigged stairs, crossing them.",
+	["uppass"] = "This spell allows you to create a spiral staircase from stolen stairs. It can only be cast on outer platforms and will last one minute.",
+	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute.",
 	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
 
-	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast through crossing stairs, as stairs will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
+	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be without stealing stairs, as they will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
 	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
 	["thiefevent"] = event .. "the Flatten Stairs spell.",
 	["thiefaltevent"] = "This is an Event spell. It will create bypass in each inward north and south intersection. If the intersection is cursed, bypass will not be created.",
@@ -737,7 +737,7 @@ module.spells.descriptions = {
 	["chamdown"] = "This used to be a Keeper spell, before it got rejected. It will move any normal or rigged stairs down. If you have ranked Keeper to Captain, you may also move any un-cursed stairs.",
 	["chamdraw"] = "This used to be a Heretic spell, before it got rejected. It will turn stairs into drawbridge, making descent impossible unless other player activates bridge from below.",
 	["oneways"] = "This used to be a Reaver spell, before it got rejected. This spell will turn below stairs into one-way passage, while merging players with their ghost, if they walk in proper direction. You can choose which direction to block. Reavers can go both ways. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["ditch"] = "This used to be a thief spell, before it got rejected. It will turn stairs into a crossed staircase.",
+	["cork"] = "This used to be a Gremlin spell, before it got rejected. It will turn stairs into a corkscrew staircase. You can choose the direction of spin, when casting this spell. Old Daemon perk is no longer active.",
 	["chamdrawabove"] = "This used to be a Heretic spell, before it got rejected. It will turn above stairs into drawbridge, allowing you to pass. Ascend is impossible unless other player activates bridge from above. Old Unbeliever rank is no longer active and auto draw from below is no longer possible.",
 	["warp"] = "This used to be a wicked spell, before it got rejected. It will warp stairs back to the platform.",
 
@@ -819,8 +819,8 @@ module.gui.ranks = {
 	["next"] = "Click on the right arrow to check requirements for the next rank.",
 
 	["PATRON"] = {
-		[4] = "Your links will last twice as long (120s).",
-		[5] = "Your portals will last twice as long (120s).",
+		[4] = "You can now create links in any uncursed direction.",
+		[5] = "You can now rebuild any uncursed stairs.",
 		[6] = "The cost of the Call the Orb spell is reduced to 2 Mana.",
 		[8] = "If you are out of Mana, jump on a platform to be blessed with 1 Mana.",
 		[9] = "Called Orb will travel twice as fast.",
@@ -861,11 +861,11 @@ module.gui.ranks = {
 		[9] = "If there is at least one free intersection, casting Glitch on the top level will create stairs leading to the orb.", 
 	},
 	["THIEF"] = {
-		[4] = "Your Bypass will now last twice as long (120s).",
-		[5] = "Your Spiral Staircase will now last twice as long (120s).",
+		[4] = "You can now cast Place Stairs on any normal or rigged stairs as well as platforms.",
+		[5] = "You can now keep 2 stolen stairs at the same time.",
 		[6] = "You can now steal any un-cursed stairs.",
 		[8] = "If you are out of Mana, jump on a platform to get 1 Mana from your stash.", 
-		[9] = "You can now keep 2 stolen stairs at the same time.",
+		[9] = "You can now keep 3 stolen stairs at the same time.",
 	},
 	["ARCHON"] = {
 		[4] = "You can now cast the Destroy Gate spell on platforms, to remove Platform Gates.",
@@ -914,7 +914,7 @@ module.gui.ranks = {
 		[5] = "You can now jump on platform to call all adjacent Trams.",
 		[6] = "You are now immune to Gremlin Rigs.",
 		[8] = "You are now immune to Gremlin Traps.",
-		[9] = "You can now control Corkscrew Stairs via a toggle. This may not work if there is another Daemon nearby.",
+		[9] = "You can now jump on platform to call and restore all adjacent Crazy Stairs.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Your jump cooldown is reduced by 0.125s.",
@@ -1012,7 +1012,7 @@ module.gui.gameover.results = {
 
 	--NEW
 	["role"] = "YOUR OVERALL RANK",
-	["classic"] = "CLASSIC TOWER RECORD",	
+	["classic"] = "NORMAL TOWER RECORD",	
 	["pro"] = "PRO TOWER RECORD",	
 	["infinite"] = "INFINITE TOWER RECORD",
 	["custom"] = "CUSTOM TOWER RECORD", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
@@ -1275,21 +1275,34 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["cla_1"] = "How do I play?",
-	["cla_2"] = "First, it is highly recommended to complete the tutorial. If you haven't done so, please rejoin the game, as the experience could get really confusing otherwise.",
-	["cla_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
-	["cla_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
-	["cla_5"] = "How do I cast spells?",
-	["cla_6"] = "Every spell has a mana cost that will be required to cast the spell. When you collect enough Mana click on the spell. Your hands will start to glow, indicating a successful cast.",
-	["cla_7"] = "After casting, the spell still needs to be executed. All spells are executed by jumping. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
-	["cla_8"] = "Once you complete the climb, you will receive 3 spell tokens, that will let you unlock one spell. Complete the climb again to unlock more spells. You can't use tokens from one class to unlock a spell from another.",
-	["cla_9"] = "How do I cast ultimate spells?",
-	["cla_10"] = "First you will need to unlock all basic spells to access the ultimate spells. Ultimate spells do not require unlocking themself, but they use Tokens instead of Mana when cast.",
-	["cla_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
-	["cla_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
+	["bas_1"] = "BASIC TOWER",
+	["bas_2"] = "How do I play?",
+	["bas_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
+	["bas_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
+	["bas_5"] = "How do I cast spells?",
+	["bas_6"] = "Every spell has a mana cost that will be required to cast the spell. When you collect enough Mana click on the spell. Your hands will start to glow, indicating a successful cast.",
+	["bas_7"] = "After casting, the spell still needs to be executed. All spells are executed by jumping. Depending on the spell, you will need to jump either on platform or stairs. Guide arrows will appear, to help you with the execution.",
+	["bas_8"] = "Once you complete the climb, you will receive 3 spell tokens, that will let you unlock one spell. Complete the climb again to unlock more spells. You can't use tokens from one class to unlock a spell from another.",
+	["bas_9"] = "How do I cast ultimate spells?",
+	["bas_10"] = "First you will need to unlock all basic spells to access the ultimate spells. Ultimate spells do not require unlocking themself, but they use Tokens instead of Mana when cast.",
+	["bas_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
+	["bas_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
+	["cla_1"] = "NORMAL TOWER",
+	["cla_2"] = "More alignments!",
+	["cla_3"] = "In the Normal Tower, in addition to Basic Tower alignments, you may also play as Gremlin, Splicer, Archon, Reaver, Heretic or even as a Muggle with no spells.",
+	["cla_4"] = "Those alignments are significantly harder to master than Basic Tower classes, and you may encounter more Crazy Stairs in this tower.",
+	["cla_5"] = "Be aware of the Architects!",
+	["cla_6"] = "Unlike Basic Tower, Normal Tower includes both VR and game pass Architects.",
+	["cla_7"] = "Architect is a special alignment, with an ability to fly. Architects have unlimited Mana and can be a help or a nuisance to other players. Architects are banned from Basic Tower only.",
+	["cla_8"] = "Encountering an Architect may be a blessing or a curse, and succesfully dodging Architect will require a maximum knowledge and practice of your preffered alignment skills.",
+	["cla_9"] = "Events and Rigs!",
+	["cla_10"] = "In the Normal Tower players are allowed to cast Ulitmate Events and Rigs.",
+	["cla_11"] = "Unlike Basic Tower, all your Ultimate spells are unlocked. You may cast Events that affect the whole staicase, or Rigs that will enchant all stairs with your chosen alignment spell.",
+	["cla_12"] = "Normal Tower will not be restored periodically, like Basic Tower, and it is up to the players to decide if they want messy staircase or not.",
+	
 	["pro_1"] = "PRO TOWER",
-	["pro_2"] = "Even levels restrictions",
+	["pro_2"] = "Even levels restrictions...",
 	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
 	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
 	["pro_5"] = "Cursed Stairs",
@@ -1299,14 +1312,14 @@ module.static = {
 	["pro_9"] = "Cursed Intersections",
 	["pro_10"] = "In the Pro Tower Drones will randomly create Cursed Intersections too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
-	["pro_12"] = "Only Heretics, Admirals and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
+	["pro_12"] = "Only Heretics, Admirals, Architects and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
 
 	["inf_1"] = "INFINITE TOWER",
 	["inf_2"] = "RACE MANDATORY",
 	["inf_3"] = "In the infinite tower, participating in the race is mandatory. Casual players are not allowed to cast spells and will not receive any awards for climbing. Touching the orb will just grant 10 Mana.",
 	["inf_4"] = "To 'complete' infinite tower you need to join the race and try to stay on it as long as you can. You will receive rewards (if any) upon elimination.",
 	["inf_5"] = "Fallen Drone",
-	["inf_6"] = "Unlike classic and pro towers, Fallen Drone has a special task in the infinite tower.",
+	["inf_6"] = "Unlike basic, normal and pro towers, Fallen Drone has a special task in the infinite tower.",
 	["inf_7"] = "Each 'raise interval', Fallen Drone will create 2 new levels. Each even level will be restricted. On top of that, some stairs or intersections may even become cursed.",
 	["inf_8"] = "First interval lasts for 20 seconds. Each raise will reduce the interval by half second, until the levels are created faster than they could be climbed.",
 	["inf_9"] = "Eraser",
@@ -1551,6 +1564,7 @@ module.where = {
 	["dynamic"] = "May affect both below and above stairs.",
 	["both"] = "Can be executed on either platform's arrows or stairs.",
 	["both2"] = "Can be executed on either platform or stairs.",
+	["both3"] = "Can be executed on platform's arrows or stairs on higher ranks.",
 	["anywhere"] = "Can be executed anywhere.",
 	["nowhere"] = "This spell does not require an execution.",
 
@@ -1561,6 +1575,7 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Can be executed on an empty intersection or through non-blocking stairs",
+		["link"] = "Can be executed on an empty intersection or through non-blocking stairs. Rank up to Creator to cast Link in any direction.",
 		["superforced"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Banished to demolish crossing cursed stairs.",
 		--new
 		["superforcednecro"] = "Can be executed on an empty intersection, or through crossing stairs. Rank up to Lich to demolish crossing cursed stairs.",
@@ -1571,6 +1586,7 @@ module.guide = {
 		["forced"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs.",
 		["halfsoft"] = "Can be executed on an empty intersection, or through un-cursed crossing stairs on higher ranks.",
 		["soft"] = "Can be executed on an empty intersection only.",
+		["soft2"] = "Can be executed on an empty intersection. Ranked up Thieves can cast this spell on normal or rigged stairs.",
 		["hack"] = "Can be executed on an intersection with any un-cursed crossing stairs only.",
 		["sidepass"] = "Can be executed on any un-cursed intersection without a Bypass yet.",
 	},
@@ -1609,6 +1625,7 @@ module.guide = {
 		["oneway"] = "Can be executed on normal or rigged stairs only.",
 		["revolve"] = "Can be executed on normal or rigged stairs only.",
 		["normalrig"] = "Can be executed on normal or rigged stairs only.",
+		["corkscrew"] = "Can be executed on normal or rigged stairs only."
 
 	},
 
@@ -1658,6 +1675,9 @@ module.guide = {
 
 		["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
 		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
+	},
+	['both3'] = {
+		["soft2"] = "Can be executed on an empty intersection only. Rank up to cast this spell on Normal or Rigged stairs too."
 	},
 
 	['anywhere'] = {
@@ -1783,6 +1803,7 @@ module.serverfeedback = {
 	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
 	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
 	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
+	
 	--NEW
 	["nomad1"] = "Rank up to Nomad to spin any uncursed stairs.",
 	["nomad2"] = "Rank up to Nomad to drift already drifted stairs.",
@@ -1798,6 +1819,11 @@ module.serverfeedback = {
 	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
 	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
 	["lich"] = "Rank up to Lich to demolish crossing cursed stairs.",
+	--new for 4.4
+	["creator"] = "Rank up to Creator to cast links in any direction.",
+	["protector"] = "Rank up to Protector to rebuild any uncursed stairs.",
+	["robber"] = "Rank up to Robber to cast this spell on stairs.",
+
 
 	--rig activation
 	["keeperrig"] = "Stairs are moving!",
@@ -2026,7 +2052,7 @@ module.switchon = {
 	["DRIFTER1"] = "You will no longer trigger below Drifter Rigs.",
 	["SPLICER1"] = "You will no longer trigger below Splicer Rigs.",
 	--["REAVER1"] = "You will no longer trigger below Reaver Rigs.", --removed
-	["GREMLIN1"] = "Nearby Corkscrews locked.",
+	--["GREMLIN1"] = "Nearby Corkscrews locked.", --removed
 	["NONE"] = "All special effects immunity on.",
 
 }
@@ -2043,7 +2069,7 @@ module.switchoff = {
 	["DRIFTER1"] = "You will now trigger below Drifter Rigs.",
 	["SPLICER1"] = "You will now trigger below Splicer Rigs.",
 	--["REAVER1"] = "You will now trigger below Reaver Rigs.", --removed
-	["GREMLIN1"] = "Nearby Corkscrews unlocked.",
+	--["GREMLIN1"] = "Nearby Corkscrews unlocked.", --removed
 	["NONE"] = "All special effects immunity off.",
 }
 --END NEW
