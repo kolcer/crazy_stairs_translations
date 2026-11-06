@@ -153,7 +153,8 @@ module.gui.questions = {
 	["skip"] = "Át szeretnéd ugrani a kiképzést?",
 	["reshuffle"] = "El szeretnéd kerülni a lépcsők ütközését? Ha nem, akkor az útban álló lépcsők el lesznek pusztítva.",
 	["tonormal"] = "Ezt az osztályt (%s) nem lehet a kezdő toronyban használni. Szeretnél elteleportálni a Normális toronyba?",
-
+	["raceconfirm"] = "Biztos, hogy be akarsz szállni a versenybe? A földszintre fogsz teleportálódni.",
+	
 	["gift"] = "Szeretnéd ajándékozni a(z) %s nevű terméket egy másik játékosnak?",
 	["choose"] = "Válaszd meg, hogy ki kapja meg a(z) %s nevű terméket", 
 	["confirm"] = "Szeretnéd ajándékozni a(z) %s nevű terméket ennek a játékosnak: %s?", --second %s is the chosen player
