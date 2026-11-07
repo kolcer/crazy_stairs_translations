@@ -181,6 +181,8 @@ module.gui.questions = {
 	["confirm"] = "Хочешь ли ты подарить пропуск \"%s\" игроку %s?", --second %s is the chosen player
 	["received"] = "Ты получил пропуск %s от игрока %s!",
 
+	["notenough"] = "Нужно завершить как минимум %d подъёмов, чтобы получить доступ к другим башням.",
+
 	["architect"] = "Architect",
 	["mana"] = "+10 макс. запас маны",
 	["spectre"] = "Spectre",
