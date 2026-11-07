@@ -180,6 +180,8 @@ module.gui.questions = {
 	["choose"] = "Choose a player to receive %s Game Pass", 
 	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
 	["received"] = "You have received %s Game Pass, courtesy of %s!",
+	
+	["notenough"] = "You need to complete at least %d climbs to be able to teleport to other towers.",
 
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Storage",
