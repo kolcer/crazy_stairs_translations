@@ -24,7 +24,7 @@ module.gui.switcher = {
 	["classic"] = "Torre Classica",
 	["pro"] = "Torre Professionale",
 	["custom"] = "Torre Personalizzabile",
-	["noVR"] = "Torre Senza Architect",
+	["noVR"] = "Torre per Principianti",
 }
 
 module.gui.serversettings = {
@@ -140,10 +140,13 @@ module.gui.questions = {
 	["tutorial"]= "Vuoi iniziare il tutorial?",
 	["skip"] = "Vuoi saltare il tutorial?",
 	["reshuffle"] = "Vuoi evitare collisioni tra le scale in movimento? Premi NO per effettuare un mescolamento forzato.",
+	["tonormal"] = "La classe %s non è disponibile nella Torre per Principianti. Vuoi visitare la Torre Classica?"
+	["raceconfirm"] = "Per poterti unire alla gara è necessario partire dal fondo della torre. Vuoi continuare?",
 	["gift"] = "Vuoi regalare il Pass %s a qualcuno?",
 	["choose"] = "Seleziona il giocatore che riceverà il Pass %s", 
 	["confirm"] = "Confermi di voler donare il Pass %s al giocatore %s?", --second %s is the chosen player
 	["received"] = "Hai ricevuto in dono il Pass %s da %s!",
+	["notenough"] = "Devi completare almeno %d ascese per poter visitare le altre torri.",
 	["architect"] = "Architect",
 	["mana"] = "+10 Contenitore Mana",
 	["spectre"] = "Spectre",
@@ -388,8 +391,8 @@ module.spells.names = {
 
 	--GREMLIN
 	["tram"] = "Genera Tram",
-	["screwdown"] = "Attorciglia Scale",
-	["screwup"] = "Attorciglia Scale in Alto",
+	["screwdown"] = "Ipnotizza Scale",
+	["screwup"] = "Ipnotizza Scale in Alto",
 	["revolve"] = "Scale Girevoli",
 	["trapstairs"] = "Scale Trappola",
 	["spinplatform"] = "Rotea Piattaforma",
@@ -398,20 +401,11 @@ module.spells.names = {
 	["gremlinevent"] = "Evento Tutti Giù per Terra",
 	["gremlinaltevent"] = "Evento Capolinea",
 
-	--TUTORIAL
-	["tcreate"] = "Genera Scale",
-	["tflip"] = "Ribalta Scale",
-	["tdestroy"] = "Demolisci Scale in Alto",
-	["tmove"] = "Muovi Scale",
-	["tdash"] = "Passaggio",
-	["trestore"] = "Ripristina Scale",
-
 	--CHAMELEON
-	["ditch"] = "Incrocia Scale",
+	["cork"] = "Attorciglia Scale",
 	["warp"] = "Distorci Scale",
 	["chamdown"] = "Sprofonda Scale",
 	["chamdraw"] = "Ponte Levatoio in Basso",
-	-- ["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
 	["oneways"] = "Scale a Senso Unico",
 
@@ -452,9 +446,9 @@ module.spells.descriptions = {
 	--PATRON
 	["summon"] = "Genera una scala normale nella direzione indicata, distruggendo eventuali scale in mezzo.",
 	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango DEFENDER per ridurre il costo a 2 Mana.\nSblocca il rango SAVIOUR per velocizzare il processo.",
-	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
+	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo. Sblocca il rango PROTECTOR per poter ricostruire qualsiasi scala non maledetta",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
-	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per raddoppiare la durata.",
+	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per poter creare collegamenti attraverso le scale.",
 	["portal"] = "Apre un portale sulla piattaforma colpita per 60 secondi, in grado di teletrasportare chiunque lo calpesti sulla piattaforma sovrastante.\nSblocca il rango PROTECTOR per raddoppiarne la durata",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patron",RankData.PATRON[3].name),
@@ -546,14 +540,14 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango OUTLAW per poter trasportare 2 scale alla volta.",
-	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango OUTLAW per poter trasportare 2 scale alla volta.",
-	["place"] = "Posiziona una scala rubata nella direzione indicata, se l'intersecazione è libera.",
-	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango BANDIT per raddoppiare la durata.",
-	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango ROBBER per raddoppiare la durata.",
+	["steal"] = "Ruba la scala colpita e la aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango BANDIT e OUTLAW per poter trasportare rispettivamente 2 e 3 scale alla volta.",
+	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e la aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango BANDIT e OUTLAW per poter trasportare rispettivamente 2 e 3 scale alla volta.",
+	["place"] = "Posiziona una scala rubata nella direzione indicata. Se il rango ROBBER è sbloccato, permette di incrociare la scala posizionata con una già presente (a patto che sia normale o alterata da rig).",
+	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.",
+	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.",
 	["drop"] = "Posiziona una scala piatta nella direzione indicata, se l'intersecazione è libera.",
 
-	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Eventuali scale che bloccano il passaggio verranno rubate automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thief",RankData.THIEF[3].name),
+	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Le scale vengono rubate automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thief",RankData.THIEF[3].name),
 	["thiefrigevent"] = rig .. "Thief Rig. Chi le calpesta perde 1 Mana, che viene trasferito a te se non hai cambiato classe e il tuo contenitore Mana non è pieno.",
 	["thiefevent"] = event .. "Posiziona Scale Piatte.",
 	["thiefaltevent"] = "Questo è un sortilegio Evento. Posiziona scorciatoie in tutte le intersecazioni disponibili, eccetto in quelle dove ci sono scale maledette o malefici.",
