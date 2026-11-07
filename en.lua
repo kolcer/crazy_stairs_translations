@@ -615,10 +615,10 @@ module.spells.descriptions = {
 	["sidepass"] = "This spell allows you to create a bent bypass from stolen stairs. It will be created in chosen direction and will last one minute.",
 	["drop"] = "This spell allows you to ditch stairs for free. You will need to find an empty intersection though. Ditched stairs are flat.",
 
-	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be without stealing stairs, as they will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
+	["heist"] = timed .. "It allows you to cast place stairs spell as many times as you like. Unlike regular place spell, this spell can be cast without stealing stairs, as they will be stolen automatically in this mode." .. string.format(timedExtra,RankData.THIEF[7].name,"Thieves",RankData.THIEF[3].name),
 	["thiefrigevent"] = rig .. "the Thief Rig. Stairs once triggered, will steal one Mana from triggering player and add it to your own Mana. You will not receive Mana if your Mana is at maximum. You will also not receive Mana if you change alignment.",
 	["thiefevent"] = event .. "the Flatten Stairs spell.",
-	["thiefaltevent"] = "This is an Event spell. It will create bypass in each inward north and south intersection. If the intersection is cursed, bypass will not be created.",
+	["thiefaltevent"] = "This is an Event spell. It will create bypasses in every intersection at the edge of the staircase. If the intersection is cursed, bypass will not be created.",
 	["thiefmode"] = string.format(mode,"Thief","Thief Rig","Steal or Place spell"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
@@ -990,7 +990,7 @@ module.gui.settings = {
 	["SChoices"] = "Show direction selection for Splicer, when using splice spells",
 	["GChoices"] = "Show direction selection for Gremlin, when using the revolve platform spell and the crazy stairs spell",
 	--new
-	["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
+	["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell and the corkscrew stairs spell",
 	--endnew
 
 
