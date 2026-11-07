@@ -21,7 +21,7 @@ module.gui.switcher = {
 	["refresh"] = "recarregando…",
 	["fail"] = "FALHA AO RECARREGAR!",
 
-  ["refreshbutton"] = "REFRESH", --HERE
+  	["refreshbutton"] = "REFRESH", --HERE
 	["failed"] = "Teleport failed!",
 	["classic"] = "Normal Tower",
 	["pro"] = "Pro Tower",
@@ -143,15 +143,6 @@ module.gui.stats = { --HERE
 	["2124645341"] = "Secret Badge",
 	["2126893403"] = "Super Secret Badge",
 	["2126893411"] = "Mega Secret Badge",
-
-}
-
-
-module.gui.timedspell = {
-
-	["possessed"] = "POSSUÍDO! (Encontre mana para se livrar)",
-	["released"] = "Livrado",
-	["timesup"] = "O tempo acabou...",
 
 }
 
