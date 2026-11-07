@@ -1272,6 +1272,7 @@ module.gui.gameover.credits = {
 	["ghost"] = "Музыка Призрачного Союза",
 	["disco"] = "Музыка Диско-Лестницы",
 	["elevator"] = "Музыка лифта", --drifter platforms
+	["crazies"] = "Музыка Чокнутой Лестницы", --gremlin crazy stairs music
 	["finish"] = "Спасибо за игру!",
 
 }
