@@ -1226,6 +1226,7 @@ module.gui.gameover.credits = {
 	["ghost"] = "Szellem Únió Zenéje",
 	["disco"] = "Zenés Lépcső Zenéje",
 	["elevator"] = "Lift Zenéje", --drifter platforms
+	["crazies"] = "Őrült Lépcső Zenéje",
 	["finish"] = "Köszönjük, hogy játszottál a játékkal!",
 }
 
