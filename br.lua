@@ -53,7 +53,7 @@ module.gui.serversettings = {
 	["CasualPlayers"] = "Jogadores casuais podem usar feitiços",
 	["Regeneration"] = "Geração automática de escadas após expurgo do Wicked (não funcionará no Modo Infinito)",
 	--["EvenLevels"] = "Níveis pares restritos",
-  ["TowerSize"] = "Tower grid size (experimental)", --HERE
+    ["TowerSize"] = "Tower grid size (experimental)", --HERE
 	["OrbMoves"] = "Esfera no fim do jogo muda de lugar",
 	["InfRegeneration"] = "Geração automática de escadaria após entrar no servidor, mudança de níveis na torre ou uma Corrida Infinita",
 	["TowerLevels"] = "Níveis de torre (ou níveis ativos no modo infinito). Não podem ser mudados durante uma corrida ou regeneração",
@@ -67,7 +67,7 @@ module.gui.serversettings = {
 
 module.gui.shop = {
 
-  ["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.", --HERE
+  	["architect"] = "The Architect game pass allows you to become an Architect without a VR headset.", --HERE
 	["chameleon"] = "Chameleons podem mudar de Alinhamento no meio de escaladas.",
 	["spectre"] = "Spectre é focado em teletransporte e é o melhor para jogar sozinho.",
 	["mana"] = "Expande o seu limite de Mana por 10.",
@@ -82,17 +82,17 @@ module.gui.shop = {
 	["SPECTRE PASS"] = "Game Pass do Spectre (R$%d)",
 	["MANA PASS"] = "20 Mana Storage Game Pass (R$%d)",
 	["CHAMELEON PASS"] = "Game Pass do Chameleon (R$%d)",
-  ["ARCHITECT"] = "Game Pass do Architect (R$%d)",
+  	["ARCHITECT"] = "Game Pass do Architect (R$%d)",
 
 }
 
 module.gui.nospellbar = {
 
-  ["nocasual"] = "APENAS PESSOAS QUE ESTÃO NA CORRIDA PODEM USAR FEITIÇOS",
-  ["possessed"] = "POSSUÍDO! (Encontre mana para se livrar)",
+    ["nocasual"] = "APENAS PESSOAS QUE ESTÃO NA CORRIDA PODEM USAR FEITIÇOS",
+    ["possessed"] = "POSSUÍDO! (Encontre mana para se livrar)",
 
-  ["permanent"] = "POSSUÍDO! (permanent mode)", --HERE
-	["cancelled"] = "CANCELLED...", --timed spell cancelled
+    ["permanent"] = "POSSUÍDO! (permanent mode)", --HERE
+    ["cancelled"] = "CANCELLED...", --timed spell cancelled
 } 
 
 module.gui.stats = { --HERE
@@ -125,20 +125,20 @@ module.gui.stats = { --HERE
 	["3731010929572663"] = "Hypnotised Dream",
 	["840574993122888"] = "Perspective Reflected",
 	["2124913225"] = "Architect's Design",
-	["2124702954"] = "Rootkit Installed",
-	["2124702945"] = "Destroy Everything",
-	["2124702946"] = "Order Restored",
-	["128721686760593"] = "You Spin me Round and Round.",
-	["2124702952"] = "I'll Take the Elevator",
+	["2124702954"] = "Rootkit instalado",
+	["2124702945"] = "Destruir tudo!",
+	["2124702946"] = "Ordem restaurada",
+	["128721686760593"] = "Você me faz girar e girar.",
+	["2124702952"] = "Eu vou pegar o elevador",
 	["3121101516427751"] = "The Entanglement",
-	["2124702942"] = "Leave no Noob Behind",
-	["2124702950"] = "Illuminati Confirmed",
-	["2124702951"] = "Mine, Mine all MINE!",
-	["1165646024608180"] = "We are One.",
+	["2124702942"] = "Deixar nenhum noob para trás",
+	["2124702950"] = "Illuminati Confirmado",
+	["2124702951"] = "Meu, meu, tudo MEU!",
+	["1165646024608180"] = "Nós somos um.",
 	["2303731210592278"] = "Rise, Rise, RISE!",
 	["2124702949"] = "Excommunication",
-	["2124702943"] = "Pranking is Living",
-	["2124702948"] = "Spells are Overrated",
+	["2124702943"] = "Fazer pegadinhas é viver",
+	["2124702948"] = "Feitiços são superestimados",
 	["2124826876"] = "Perfect Circle",
 	["2124645341"] = "Secret Badge",
 	["2126893403"] = "Super Secret Badge",
@@ -163,6 +163,7 @@ module.gui.questions = { --here
 	["reshuffle"] = "Você quer que as escadas evitem colisões enquanto se movem? Se não, quaisquer escadas no caminho serão destruídas.",
 	["tonormal"] = "%s alignment is not available in the Basic Tower. Would you like to teleport to the Normal Tower?",
 	["raceconfirm"] = "Are you sure you want to join the race? You will be teleported to the bottom of the tower.",
+	["notenough"] = "You need to complete at least %d climbs to be able to teleport to other towers.",
 
 	--new
 	["gift"] = "Do you want to gift %s Game Pass to another player?",
@@ -202,7 +203,7 @@ module.gui.jukebox = {
 	["climb"] = "MÚSICA DE ESCALADA",
 	["endgame"] = "MÚSICA DO FIM DE JOGO",
 	["failed"] = "[falha ao carregar]",
-  ["off"] = "MUTED", --HERE
+    ["off"] = "MUTED", --HERE
 
 }
 
@@ -726,8 +727,8 @@ module.spells.descriptions = {
 	["chameleonrefill"] = overload,
 	["chameleonunion"] = union,
 
-  --HERE
-  ["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
+ 	--HERE
+  	["share"] = "With this spell you can share Your own Mana with a nearby player. You can only share one Mana at a time, and you must have two Mana minimum to do this.",
 
 	--ARCHITECT
 	["archpatron"] = "This spell used on platform's arrows, will create normal stairs. When used on normal or rigged stairs, it will shrink them.",
@@ -752,7 +753,7 @@ local CommonPerksInsertALignment = {
 }
 local CommonPerksInsertTimedSpell = {
 	[3] = "Se alguém usar %s, sua Mana será enchida.",
-	[7] = "Seu feitiço %s vai durar 50% a mais (90s).",
+	[7] = "Seu feitiço %s vai durar 50%% a mais (90s).",
 }
 
 
@@ -948,20 +949,20 @@ module.gui.settings = { --HERE
 	["Gameplay"] = "GAMEPLAY SETTINGS",
 	["Interface"] = "CONFIGURAÇÕES DE INTERFACE",	
 
-  ["Billboard"] = "Mostrar seu próprio avatar no billboard",
-  ["Rank"] = "Mostrar seu Rank Geral no billboard do avatar",
-	["Morph"] = "Mostrar animação de transformação quando estiver usando Deceiver ou Usurper",
-  ["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
+    ["Billboard"] = "Mostrar seu próprio avatar no billboard",
+    ["Rank"] = "Mostrar seu Rank Geral no billboard do avatar",
+    ["Morph"] = "Mostrar animação de transformação quando estiver usando Deceiver ou Usurper",
+    ["ManaLimit"] = "Reduce Your own Mana capacity for an extra challenge",
 
 	["KChoices"] = "Mostrar a janela de seleção da direção para Keeper, when using move spells",
 	["HChoices"] = "Mostrar a janela de seleção da direção para Hacker, when using the escalator spell",
 	["AChoices"] = "Mostrar a janela de seleção da direção para Archon, when using gate spells",
 	["SChoices"] = "Mostrar a janela de seleção da direção para Splicer, when using splice spells",
 	["GChoices"] = "Mostrar a janela de seleção da direção para Gremlin, when using the revolve platform spell and the crazy stairs spell",
-  ["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
+    ["CChoices"] = "Show direction selection for Chameleon, when using the One-Way Stairs spell",
 
 	["List"] = "Mostrar lista de jogadores animada",
-  ["SwitchBack"] = "Automaticamente trocar para os feitiços básicos depois de executar um feitiço supremo",
+    ["SwitchBack"] = "Automaticamente trocar para os feitiços básicos depois de executar um feitiço supremo",
 	["SafeCancel"] = "Mostrar janela de confirmação quando estiver cancelando um feitiço supremo temporizado",
 	["Multi"] = "Mostrar janela de seleção do Multi Token depois da escalada",
 }
@@ -976,7 +977,7 @@ module.gui.gameover.results = {
 	["tokens"] = "TOKENS RECEBIDOS",
 	["rank"] = "SEU RANK ATUAL",
   --HERE
-  ["role"] = "YOUR OVERALL RANK",
+    ["role"] = "YOUR OVERALL RANK",
 	["classic"] = "NORMAL TOWER RECORD",	
 	["pro"] = "PRO TOWER RECORD",	
 	["infinite"] = "INFINITE TOWER RECORD",
@@ -989,7 +990,7 @@ module.gui.gameover.results = {
 
 }
 
-– COMEÇA A PARTIR DAQUI:
+–- COMEÇA A PARTIR DAQUI:
 
 module.gui.gameover.messages = {
 
@@ -1131,7 +1132,7 @@ module.gui.gameover.messages = {
 		"Separe um pouco a sua vida",
 		"A bagunça de outras pessoas é a ordem do Splicer",
 		"Eu obviamente consigo conectar aquelas escadas",
-		“Conecte-se com pessoas - não, CONECTE-SE COM ESCADAS!",
+		"Conecte-se com pessoas - não, CONECTE-SE COM ESCADAS!",
 		"Minha mente é toda dobrada tipo assim",
 		"Separar ou juntar - eis a questão",
 		"Obrigado Markerquest, você me salvou",
@@ -1200,13 +1201,14 @@ module.gui.gameover.maxrank ={
 	["ADMIRAL"] = "Ordem restaurada",
 	["OUTLAW"] = "Meu, meu, tudo MEU!",
 	["ZERO"] = "Rootkit instalado",
-	["EXILED"] = "Excommunication",
+	["EXILED"] = "Excommunication",--HERE
 	["ILLUMINATI"] = "Illuminati confirmado",
 	["STRIDER"] = "Eu vou pegar o elevador",
-	["DEATHBRINGER"] = "Rise, rise, RISE!",
-	["OPTIMUS"] = "The Entanglement",
+	["DEATHBRINGER"] = "Rise, rise, RISE!",--HERE
+	["OPTIMUS"] = "The Entanglement",--HERE
 	["ALIEN"] = "Nós somos um",
 	["DAEMON"] = "Você me faz girar e girar.",
+	["BLACK HOLE"] = "The Nothingness", --HERE
 
 }
 
@@ -1234,7 +1236,7 @@ module.gui.gameover.credits = { --HERE
 
 module.static = {--HERE
 
-  ["bas_1"] = "BASIC TOWER",
+  	["bas_1"] = "BASIC TOWER",
 	["bas_2"] = "Como eu jogo?",
 	["bas_3"] = "O objetivo do jogo é chegar no topo e coletar a Orbe de Energia flutuante. Primeiro escolha seu Alinhamento (classe) pulando nos botões brilhantes no meio do mapa.",
 	["bas_4"] = "Quando estiver feliz com sua escolha, colete formas voadoras para reencher sua Mana e subir as escadas. Use o feitiço da sua classe para ajudar você na escalada.",
@@ -1247,7 +1249,7 @@ module.static = {--HERE
 	["bas_11"] = "Complete the climb enough times to unlock all basic spells. You may want to try to win the race to get extra Tokens. There is also option to purchase tokens. Once unlocked, click leftmost button or press 'C'",
 	["bas_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
-  ["cla_1"] = "NORMAL TOWER",
+  	["cla_1"] = "NORMAL TOWER",
 	["cla_2"] = "More alignments!",
 	["cla_3"] = "In the Normal Tower, in addition to Basic Tower alignments, you may also play as Gremlin, Splicer, Archon, Reaver, Heretic or even as a Muggle with no spells.",
 	["cla_4"] = "Those alignments are significantly harder to master than Basic Tower classes, and you may encounter more Crazy Stairs in this tower.",
@@ -1312,62 +1314,62 @@ module.static = {--HERE
 	["home_1"] = "CASA DO MUGGLE",
 	["home_2"] = "NOSSO LEMA:\nANDAR\nPULAR\nE\nCAIR",
 	["home_3"] = "PRÓS:\nVelocidade e poder de pulo aumenta em ranks maiores\nDireito de se gabar\nCONTRAS:\nSem feitiços\nFica preso facilmente",
-	["home_4"] = "'We did not have those fancy spells in alpha stage!'\nour founder's quote",
+	["home_4"] = "'Nós não tínhamos aqueles feitiços chiques no estágio alpha!'\nditado do nosso fundador",
 
 	["oasis_1"] = "CHAMELEON'S OASIS",
 	["oasis_2"] = "OUR MOTTO:\nCOPY\nIMITATE\nAND\nSURPRISE",
 	["oasis_3"] = "PROS:\nCan change alignments anywhere, anytime\nCONS:\nCosts Robux\nRanking up all classes takes time",
-	["oasis_4"] = "'I am too lazy to come up with my own spells.'\nour founder's quote",
+	["oasis_4"] = "'Eu sou muito preguiçoso para criar meus próprios feitiços.'\nditado do nosso fundador",
 
 	["nexus_1"] = "HERETIC'S NEXUS",
 	["nexus_2"] = "OUR MOTTO:\nYOU\nSHALL\nNOT\nPASS",
 	["nexus_3"] = "PROS:\nBest in pro tower\nCannot be stopped\nCONS:\nTeaming is tricky\nMana hungry",
-	["nexus_4"] = "'Banning black magic is like banning fun.'\nour founder's quote",
+	["nexus_4"] = "'Banir magia negra é tipo banir diversão.'\nditado do nosso fundador",
 
 	["guild_1"] = "THIEF'S GUILD",
 	["guild_2"] = "OUR MOTTO:\nBORROW\nUSE\nAND\nRETURN",
 	["guild_3"] = "PROS:\nMana efficient\nVersatile\nCONS:\nNeeds to steal stairs\nCannot destroy crossing stairs",
-	["guild_4"] = "'It's called borrowing actually.'\nour founder's quote",
+	["guild_4"] = "'Na verdade se chama pegar emprestado.'\nditado do nosso fundador",
 
 	["nether_1"] = "SPECTRE'S NETHER",
 	["nether_2"] = "OUR MOTTO:\nDISAPPEAR\nHIDE\nAND\nTELEPORT",
 	["nether_3"] = "PROS:\nFast spells\nPerfect for solo play\nCONS:\nCosts Robux\nNot recommended for teams",
-	["nether_4"] = "'Of course teleporting is safe.'\nour founder's quote (MIA)",
+	["nether_4"] = "'Óbvio que se teleportar é seguro.'\nditado do nosso fundador (MIA)",
 
 	["study_1"] = "ARCHON'S STUDY",
 	["study_2"] = "OUR MOTTO:\nOPEN\nPORTAL\n???\nPROFIT",
 	["study_3"] = "PROS:\nUseful Rig\nConfuses opponents\nCONS:\nHardest to learn\nRequires planning",
-	["study_4"] = "'I used to rule this staircase.'\nour founder's quote",
+	["study_4"] = "'Eu costumava governar essa escada.'\nditado do nosso fundador",
 
 	["haven_1"] = "PATRON'S HAVEN",
 	["haven_2"] = "OUR MOTTO:\nHELP\nPROTECT\nAND\nCREATE",
 	["haven_3"] = "PROS:\nEasiest to learn\nTeam player\nCONS:\nUses a lot of Mana\nMay attract leechers",
-	["haven_4"] = "'Those noobs need our help!'\nour founder's quote",
+	["haven_4"] = "'Aqueles noobs precisam da nossa ajuda!'\nditado do nosso fundador",
 
 	["shelter_1"] = "DRIFTER'S SHELTER",
 	["shelter_2"] = "OUR MOTTO:\nSURF\nRIDE\nAND\nGLIDE",
 	["shelter_3"] = "PROS:\nVersatile\nTeam player\nCONS:\nRequires some parkour skills\nTricky in pro towers",
-	["shelter_4"] = "'Who needs stairs anyway? We're in space!'\nour founder's quote",
+	["shelter_4"] = "'Quem precisa de escadas no primeiro lugar? Estamos no espaço!'\nditado do nosso fundador",
 
 	["circus_1"] = "JOKER'S CIRCUS",
 	["circus_2"] = "OUR MOTTO:\nDECEIVE\nCONFUSE\nAND\nLAUGH",
 	["circus_3"] = "PROS:\nMade for trolling\nFlips are very useful\nCONS:\nExpensive spells\nYou may ruin friendships",
-	["circus_4"] = "'This staircase is a joke.'\nour founder's quote",
+	["circus_4"] = "'Essa escadaria é uma pegadinha.'\nditado do nosso fundador",
 
 	["base_1"] = "KEEPER'S BASE",
 	["base_2"] = "OUR MOTTO:\nMOVE\nROTATE\nAND\nCONTROL",
 	["base_3"] = "PROS:\nCan restore stairs\nCan reuse stairs\nCONS:\nRequires parkour to use correctly\nUseless without stairs",
-	["base_4"] = "'Stop messing up my staircase!'\nour founder's quote",
+	["base_4"] = "'Parem de bagunçar a minha escadaria!'\nditado do nosso fundador",
 
 	["chamber_1"] = "WICKED'S CHAMBER",
 	["chamber_2"] = "OUR MOTTO:\nPREVENT\nBLOCK\nAND\nDESTROY",
 	["chamber_3"] = "PROS:\nCan destroy any stairs\nCan purge whole staircase\nCONS:\nOver-reliant on stairs",
-	["chamber_4"] = "'I'm not evil, there are just too many stairs.'\nour founder's quote",
+	["chamber_4"] = "'Eu não sou do mal, é só que tem escadas demais.'\nditado do nosso fundador",
 
 	["backdoor_1"] = "HACKER'S BACKDOOR",
 	["backdoor_2"] = "OUR MOTTO:\nEXPLOIT\nGLITCH\nAND\nBREAK",
 	["backdoor_3"] = "PROS:\nFastest alignment\nHard to follow\nCONS:\nOver-reliant on stairs\nUseless in teams",
-	["backdoor_4"] = "'Fair play? There's no such thing.'\nour founder's quote",
+	["backdoor_4"] = "'Jogo limpo?? Não existe tal coisa.'\nditado do nosso fundador",
 
 	["hub_1"] = "HUB DO SPLICER",
 	["hub_2"] = "NOSSO LEMA:\nTORCER\nEMENDAR\nE\nCONECTAR",
@@ -1377,19 +1379,19 @@ module.static = {--HERE
 	["shack_1"] = "GREMLIN'S SHACK",
 	["shack_2"] = "OUR MOTTO:\nROTATE\nREVOLVE\nAND\nHYPNOTIZE",
 	["shack_3"] = "PROS:\nNo pros\nSeriously, don't use\nCONS:\nEveryone will hate you.\nEVERYONE",
-	["shack_4"] = "'Come play with me.'\nour founder's quote",
+	["shack_4"] = "'Venha brincar comigo!'\nditado do nosso fundador",
 
 	["mirror_1"] = "ESPELHO DO REAVER",
 	["mirror_2"] = "NOSSO LEMA:\nREFLETIR\nSUBSTITUIR\nE\nJUNTAR",
 	["mirror_3"] = "PRÓS:\nEspelhos podem ser usados por outros jogadores.\nCONTRAS:\nA mecânica de juntar e separar pode ser confusa.",
-	["mirror_4"] = "'Espelhos são como portas.'\nditado do nosso fundador",
+	["mirror_4"] = "'Espelhos são apenas portas.'\nditado do nosso fundador",
 
 	["grave_1"] = "TÚMULO DO NECROMANCER",
 	["grave_2"] = "NOSSO LEMA:\nSEGUIR\nREVIVER\nE\nBENEFICIAR",
 	["grave_3"] = "PRÓS:\nFunciona bem se outros jogadores seguirem seu fantasma.\nFeitiços ajudam você e os outros.\nCONTRAS:\nAlinhamento mais dependente em mana.\nDifícil se acostumar caso você esteja vendo seu fantasma.",
-	["grave_4"] = "'Nós não estamos realmente te assombrando, só queremos ser seu amigo.'\nditado do nosso fundador",
+	["grave_4"] = "'Nós não estamos te assombrando de verdade, só queremos ser seu amigo.'\nditado do nosso fundador",
 
-  ["studio_1"] = "ARCHITECT'S STUDIO",
+  	["studio_1"] = "ARCHITECT'S STUDIO",
 	["studio_2"] = "OUR MOTTO:\nDESIGN\nIMPLEMENT\nAND\nTEST",
 	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
 	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
@@ -1417,7 +1419,7 @@ module.static = {--HERE
 	["over_group"] = "COR TURQUESA - está no grupo",
 	["over_mod"] = "MODERADOR - jogador é um moderador",
 	["over_admin"] = "ADMIN - jogador é um admin", -- pwease sleazel uwu
-	["over_owner"] = "PRANK ME - Game creator (sleazel)",
+	["over_owner"] = "PRANK ME - Game creator (sleazel)", --HERE
 
 	--OTHER
 	["muggle_lead"] = "MUGGLES APRESSADOS",
@@ -1503,11 +1505,11 @@ module.tutorial = { --HERE
 	["tut_select"] = "Selecione esse feitiço.",
 
 	["tut_small_init"] = "Pule para spawnar o tutorial",
-  ["tut_small_collect"] = "Collect Mana",
+    ["tut_small_collect"] = "Collect Mana",
 	["tut_small_morph"] = "Pule no morph.",
 	["tut_small_arrow"] = "Pule na seta.",
 	["tut_small_stairs"] = "Pule na escada.",
-  ["tut_small_pellet"] = "Collect the Orb",
+    ["tut_small_pellet"] = "Collect the Orb",
 
 }
 
@@ -1520,7 +1522,7 @@ module.where = {
 	["dynamic"] = "Pode afetar tantos as escadas de baixo quanto as de cima.",
 	["both"] = "Pode ser executado tanto nas setas das plataformas quanto nas escadas",
 	["both2"] = "Pode ser executado tanto em plataformas quanto escadas.",
-  ["both3"] = "Can be executed on platform's arrows or stairs on higher ranks.", --HERE
+    ["both3"] = "Can be executed on platform's arrows or stairs on higher ranks.", --HERE
 	["anywhere"] = "Pode ser executado em qualquer lugar.",
 	["nowhere"] = "Esse feitiço não requer uma execução.",
 
@@ -1533,7 +1535,7 @@ module.guide = {
 		["through"] = "Pode ser executado em uma interseção vazia ou através de escadas que não bloqueiam o caminho",
 		["link"] = "Can be executed on an empty intersection or through non-blocking stairs. Rank up to Creator to cast Link in any direction.",--HERE
 		["superforced"] = "Pode ser executado em uma interseção vazia ou através de escadas que cruzam. Suba para o rank Banished para demolir escadas amaldiçoadas que cruzam.",
-    ["superforcednecro"] = "Pode ser executado em uma interseção vazia ou através de escadas que cruzam. Suba para o rank Lich para demolir escadas amaldiçoadas que cruzam.",
+        ["superforcednecro"] = "Pode ser executado em uma interseção vazia ou através de escadas que cruzam. Suba para o rank Lich para demolir escadas amaldiçoadas que cruzam.",
 		["flicker"] = "Pode ser executado em uma interseção vazia. Suba para o rank Infidel para executar em uma interseção amaldiçoada.",
 		["any"] = "Pode ser executado em qualquer interseção não amaldiçoada.",
 		["wall"] = "Pode ser executado em qualquer interseção não amaldiçoada, sem uma  Parede ou Portão no caminho.",
@@ -1581,7 +1583,7 @@ module.guide = {
 		["oneway"] = "Pode ser executado apenas em escadas normais ou sabotadas.",
 		["revolve"] = "Pode ser executado apenas em escadas normais ou sabotadas.",
 		["normalrig"] = "Pode ser executado apenas em escadas normais ou sabotadas.",
-    ["corkscrew"] = "Pode ser executado apenas em escadas normais ou sabotadas."
+        ["corkscrew"] = "Pode ser executado apenas em escadas normais ou sabotadas."
 
 	},
 	
@@ -1608,7 +1610,7 @@ module.guide = {
 		['restore'] = "Pode ser executado em qualquer escada ou nas setas da plataforma com qualquer escada adjacente. Suba para o rank Admiral para restaurar escadas amaldiçoadas.",
 		['deltwists'] = "Pode ser executado apenas em escadas torcidas ou nas setas da plataforma com escadas adjacentes torcidas. Suba para o rank Combiner para restaurar escadas não ligadas com a plataforma.",
 		['ghosted'] = "Pode ser executado em escadas normais, sabotadas ou fantasmagorizadas ou nas setas da plataforma com escadas adjacentes normais, sabotadas ou fantasmagorizadas.",
-    ["flatten"] = "Can be executed on an intersection with normal or rigged opposite stairs. Can be executed on stairs too.",
+        ["flatten"] = "Can be executed on an intersection with normal or rigged opposite stairs. Can be executed on stairs too.",
 		--NEW (HERE)
 		["archpatron"] = "Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
 		["archarchon"] = "Archon's Platform Gate (when used on arrows) or Gate Stairs (when used on stairs)",
@@ -1628,7 +1630,7 @@ module.guide = {
 	['both2'] = {
 		['delsplits'] = "Só pode ser executado em escadas com Portões. Suba para o rank Disciple para usar esse feitiço para remover os Portões de uma plataforma."
   --here
-    ["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
+        ["archgremlin"] = "Gremlin's Revolve Platform (when used on platform) or Revolve Stairs (when used on stairs)",
 		["archdrifter"] = "Drifter's Elevator (when used on platform) or Random Drift Stairs (when used on stairs)",
 	},
 
@@ -1682,7 +1684,7 @@ module.serverfeedback = {
 	["nomirror"] = "Você precisa estar unido com o seu fantasma para andar em espelhos",
 	["regenused"] = "Regeneração já foi usada durante essa escalada.",
   --HERE
-  ["noreflected"] = "This spell cannot be used when you are Reflected.",
+    ["noreflected"] = "This spell cannot be used when you are Reflected.",
 	["noflyarch"] = "You cannot fly as Architect when Possessed, Hypnotized or Reflected.",
 	["noblackhole"] = "You cannot use Black Hole perk when Possessed, Hypnotized or Reflected.",
 
@@ -1730,7 +1732,7 @@ module.serverfeedback = {
 	["nogate"] = "Essas escadas não possuem um portão.",
 --HERE
 	["noghost"] = "This spell only works on normal, rigged and ghosted stairs.",
-  ["archrace"] = "Architects cannot race!",
+    ["archrace"] = "Architects cannot race!",
 	["toolate"] = "A race is already in progress, try again later.",
 	["wrongsplit"] = "Target intersection is cursed.",
 
@@ -1746,7 +1748,7 @@ module.serverfeedback = {
 	["lockedinter"] = "Essa intercessão está travada.",
 	["toponly"] = "O feitiço de 'Chamar a Esfera' só pode ser conjurado no topo da torre.",
 	["duplicatemirror"] = "Já tem um espelho nesse nível.",
-  ["norestore"] = "Thief bypasses and spirals cannot be restored.", --HERE
+    ["norestore"] = "Thief bypasses and spirals cannot be restored.", --HERE
 
 	--higher rank required
 	["admiral2"] = "Suba para o rank Admiral para des-amaldiçoar escadas.",
@@ -1766,8 +1768,8 @@ module.serverfeedback = {
 	["transformer"] = "Suba para o rank Transformer para unir escadas que já estão emendadas.",
 	["strider"] = "Suba para o rank Strider para aplicar um impulso em dobro em Drifts para Cima.",
   --here
-  ["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
-  ["creator"] = "Rank up to Creator to cast links in any direction.",
+    ["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
+    ["creator"] = "Rank up to Creator to cast links in any direction.",
 	["protector"] = "Rank up to Protector to rebuild any uncursed stairs.",
 	["robber"] = "Rank up to Robber to cast this spell on stairs.",
 
@@ -1966,7 +1968,7 @@ module.localfeedback = {
 	["noteleport"] = "Teleporte falhou!", 
 	["norefresh"] = "Você não pode atualizar ainda.",
 --HERE
-  ["nounion"] = "You can't use Ghost Union right now.",
+    ["nounion"] = "You can't use Ghost Union right now.",
 	["failedjoin"] = "Failed to join the race.",
 
 }
@@ -1982,7 +1984,7 @@ module.switchon = {
 	["ARCHON1"] = "Apenas as divisões para cima irão te teleportar.",
 	["DRIFTER1"] = "Você não aciona mais os Rigs do Drifter.",
 	["SPLICER1"] = "Você não aciona mais os Rigs do Splicer.",
-  ["NONE"] = "All special effects immunity on.", --HERE
+    ["NONE"] = "All special effects immunity on.", --HERE
 
 }
 
@@ -1997,7 +1999,7 @@ module.switchoff = {
 	["ARCHON1"] = "Todas, exceto as divisões para baixo, irão te teleportar.",
 	["DRIFTER1"] = "Você agora aciona os Rigs do Drifter.",
 	["SPLICER1"] = "Você agora aciona os Rigs do Splicer.",
-  ["NONE"] = "All special effects immunity off.",
+    ["NONE"] = "All special effects immunity off.",
 }
 
 local timedSpell = "%s acabou de realizar o feitiço de %s!"
@@ -2073,7 +2075,7 @@ module.spells.extras = {
 	["Prompt"] = "Clique em um feitiço abaixo para aprender a como usá-lo",
 	["Title1"] = "Feitiços básicos",
 	["Title2"] = "Feitiços supremos únicos",
-  ["Title3"] = "Shared ultimate and basic spells", --HERE
+    ["Title3"] = "Shared ultimate and basic spells", --HERE
 	["ManaCost"] = "Custo de Mana: %s", 
 	["TokenCost"] = "Custo de Tokens: %s", 
 	["Special"] = "Requisitos Especiais: %s",
@@ -2084,7 +2086,7 @@ module.spells.extras = {
 	["unlock"] = "0 (3 para desbloquear)",
 	["none"] = "Sem requisitos especiais",
   --HERE
-  ["LeftHand"] = "Left Hand",
+    ["LeftHand"] = "Left Hand",
 	["RightHand"] = "Right Hand",
 }
 
@@ -2124,7 +2126,7 @@ module.gui.mana = {
 	["shack"] = "CABANA",
 	["regen"] = "REGENERE",
 	["optimus"] = "OPTIMUS",
-  ["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial (HERE)
+    ["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial (HERE)
 
 }
 
@@ -2132,7 +2134,7 @@ module.gui.gameover.extras = {
 
 	["possessed"] = "Esses Heretics chatos!",
 	["hypnotized"] = "Onde eu estou?",
-  ["reflected"] = "Let me out!", --HERE
+    ["reflected"] = "Let me out!", --HERE
 	["new"] = "Novo rank adquirido - %s",
 
 }
