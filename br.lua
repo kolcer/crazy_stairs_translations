@@ -1231,6 +1231,7 @@ module.gui.gameover.credits = { --HERE
 	["ghost"] = "Música da União Fantasma",
 	["disco"] = "Música das escadas de discoteca",
 	["elevator"] = "Música da elevador", --drifter platforms
+	["crazies"] = "Crazy Stairs music", --gremlin crazy stairs
 	["finish"] = "Obrigado por jogar!",
 }
 
