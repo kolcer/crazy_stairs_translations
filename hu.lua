@@ -1256,7 +1256,6 @@ module.static = {
 	["cla_9"] = "Események és Rigek!",
 	["cla_10"] = "A normális toronyban lehet használni Eseményeket és Rigeket.",
 	["cla_11"] = "Az Események olyanok mint az átlagos varázslatok, csak az egész toronyra hatnak. A Rigek az összes normális lépcsőre hatnak, és ha valaki rálép, akkor történik egy az osztályhoz hasonló hatás.",
-	["cla_12"] = "A Kezdő toronnyal ellentétben ez a torony nem fog autómatikusan helyreállni. A játékosokon múlik, hogy mennyire őrültek lesznek a lépcsők.",
 
 	["pro_1"] = "PROFI TORONY",
 	["pro_2"] = "Páros szintek korlátozása",
