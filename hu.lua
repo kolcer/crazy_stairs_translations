@@ -1245,7 +1245,7 @@ module.static = {
 	["cla_11"] = "Mászd meg ezt a tornyot legalább ötszőr, hogy szerezz elegendő zsetont, de hamarabb is elérheted ezt, ha nyersz versenyeket vagy ha veszel zsetonokat. Amikor az megvan, nyomd meg a legbaloldalibb gombot vagy a 'C' billentyűt.",
 	["cla_12"] = "Néhány különleges varázslat időzített, és nem kell ugrással végrehajtani, de megszüntetésük után nem kapod vissza a zsetonjaidat. Néhány különleges varázslatot nem lehet ebben a toronyban megvarázsolni. Légyszíves olvasd el a további információkat az osztálynak a szentélyében, hogy megtudj többet az adott különleges varázslatról mielőtt megvarázsolnád.",
 
-	["cla_1"] = "NORMÁLIS TORONY,
+	["cla_1"] = "NORMÁLIS TORONY",
 	["cla_2"] = "Több osztály!",
 	["cla_3"] = "Ebben a toronyban használhatod az összes osztályt.",
 	["cla_4"] = "A kezdő toronyban lezárt osztályokat nehezebb elsajátítani, és többféle lépcsővel találkozhatsz.",
