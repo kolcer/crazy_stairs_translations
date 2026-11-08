@@ -1491,8 +1491,7 @@ module.tutorial = {
 	["tut_big_19"] = "Most változz at Hackerré. A Hackerek tudnak teleportálni.",
 	["tut_big_20"] = "Szedd fel ezt a Manát:",
 	["tut_big_21"] = "Használd ezt a varázsigét hogy átteleportálj az elötted lévő felületre.",
-	["tut_big_22"] = "Ugorj a nyílra, hogy teleportálj.",
-	["tut_big_23"] = "A nyeréshez meg kell szerezned a legfelső szinten lévő gömböt. Sok szerencsét!",
+	["tut_big_22"] = "A nyeréshez meg kell szerezned a legfelső szinten lévő gömböt. Sok szerencsét!",
 
 	["tut_select"] = "Válaszd ki ezt a varázslatot.",
 
