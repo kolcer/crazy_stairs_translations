@@ -517,7 +517,7 @@ module.spells.descriptions = {
 	["split"] = "This spell recreates below stairs in the opposite direction. Recreated stairs will be normal regardeless of original stairs type. Rank up to PROTECTOR to be able to rebuild any un-cursed stairs.",
 	["shrinkabove"] = "This spell shrinks above stairs, allowing you to walk around them.",
 	["link"] = "This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to cast Link in any direction.",
-	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.",
+	["portal"] = "This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds.",
 
 	["summoner"] = timed ..  "It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .."the Patron Rig. Patron Rig, once triggered, will increase triggering player Mana by one. If player has maximum Mana, stairs will not trigger. After triggering, stairs will become normal again.",
