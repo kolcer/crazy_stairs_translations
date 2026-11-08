@@ -917,7 +917,7 @@ module.gui.ranks = {
 		[5] = "You can now jump on platform to call all adjacent Trams.",
 		[6] = "You are now immune to Gremlin Rigs.",
 		[8] = "You are now immune to Gremlin Traps.",
-		[9] = "You can now jump on platform to call and restore all adjacent Crazy Stairs.",
+		[9] = "You can now jump on platforms to call and restore all adjacent Crazy Stairs.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Your jump cooldown is reduced by 0.125s.",
