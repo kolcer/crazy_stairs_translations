@@ -1301,7 +1301,7 @@ module.static = {
 	["cla_7"] = "Architect is a special alignment, with an ability to fly. Architects have unlimited Mana and can be a help or a nuisance to other players. Architects are banned from Basic Tower only.",
 	["cla_8"] = "Encountering an Architect may be a blessing or a curse, and succesfully dodging Architect will require a maximum knowledge and practice of your preffered alignment skills.",
 	["cla_9"] = "Events and Rigs!",
-	["cla_10"] = "In the Normal Tower players are allowed to cast Ulitmate Events and Rigs.",
+	["cla_10"] = "In the Normal Tower players are allowed to cast Ultimate Events and Rigs.",
 	["cla_11"] = "Unlike Basic Tower, all your Ultimate spells are unlocked. You may cast Events that affect the whole staicase, or Rigs that will enchant all stairs with your chosen alignment spell.",
 	
 	["pro_1"] = "PRO TOWER",
