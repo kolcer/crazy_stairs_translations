@@ -653,8 +653,8 @@ module.spells.descriptions = {
 
 	--GREMLIN
 	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango FIEND per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Attorciglia la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango DAEMON per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri DAEMON).",
-	["screwup"] = "Attorciglia la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango DAEMON per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri DAEMON).",
+	["screwdown"] = "Ipnotizza la scala colpita facendola girovagare attorno 6 piattaforme, per 3 volte, e puoi deciderne la direzione iniziale. Raggiungi il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
+	["screwup"] = "Ipnotizza la scala posizionata direttamente sopra a quella colpita facendola girovagare attorno 6 piattaforme, per 3 volte. Raggiungi il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
 	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno verticalmente di 180 gradi ogni breve intervallo.",
 	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango GOBLIN per rilevarle, e il rango DIABLO per diventarne immune",
 	["spinplatform"] = "Fa ruotare l'intera piattaforma e le scale che partono da essa di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette possono essere ruotate in questo modo.",
@@ -668,10 +668,11 @@ module.spells.descriptions = {
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
+	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",
+	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
 	["oneways"] = "Questo è un incantesimo proibito dei Reaver. Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura. Non hanno effetto sui Reaver.\nSblocca il rango ILLUSION per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
 	["chamdrawabove"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile a meno che un altro gicatore non attivi il ponte levatoio dall'alto. Il rango che influenzava questo incantesimo non ha più effetto.",
-	["ditch"] = "Questo è un incantesimo proibito dei Thief. Genera una scala nella direzione opposta a quella colpita nella stessa intersecazione, incrociandole tra loro.",
+	["cork"] = "Questo è un incantesimo proibito dei Gremlin. Attorciglia la scala colpia permettendoti di decidere la direzione iniziale. Il rango che influenzava questo incantesimo non ha più effetto.",
 	["warp"] = "Questo è un incantesimo proibito dei Wicked. Piega la scala colpita in modo tale da formare un collegamento verticale con la piattaforma superiore.",
 
 	["chameleonrigevent"] = rig .. "Chameleon Rig. L'effetto viene scelto in modo casuale tra quelli esistenti degli altri allineamenti.",
@@ -746,8 +747,8 @@ module.gui.ranks = {
 	["next"] = "Premi sulla freccia verso destra per scoprire gli altri ranghi.",
 
 	["PATRON"] = {
-		[4] = "La durata dei collegamenti è raddoppiata (120s).",
-		[5] = "La durata dei portali è raddoppiata (120s).",
+		[4] = "Puoi generare collegamenti attraverso le scale, a patto che non ci siano malefici o scale maledette.",
+		[5] = "Puoi ricostruire qualsiasi scala ad eccezione di quelle maledette."",
 		[6] = "Richiama Sfera richiede 2 Mana per l'esecuzione (da 3 Mana).",
 		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per ricevere in dono 1 Mana.",
 		[9] = "La sfera viene richiamata più velocemente.",
@@ -788,11 +789,11 @@ module.gui.ranks = {
 		[9] = "Quando lanci l'incantesimo Scale Anomale in cima alla torre, vieni teletrasportato nelle vicinanze della sfera finale (se possibile).",
 	},
 	["THIEF"] = {
-		[4] = "Le tue Scorciatoie durano il doppio del tempo (da 60s a 120s).",
-		[5] = "Le tue scale a chiocciola durano il doppio del tempo (da 60s a 120s).",
+		[4] = "Puoi incrociare le scale posizionate con quelle già presenti, solo se sono normali o alterate da rig",
+		[5] = "Puoi tenere due scale di scorta invece di una.",
 		[6] = "Puoi rubare qualsiasi scala ad eccezione di quelle maledette.",
 		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per rubare 1 Mana.",
-		[9] = "Puoi tenere due scale di scorta invece di una.",
+		[9] = "Puoi tenere tre scale di scorta invece di due.",
 	},
 	["ARCHON"] = {
 		[4] = "Puoi lanciare l'incantesimo Scollega Portali Dimensionali sulle piattaforme.",
@@ -841,7 +842,7 @@ module.gui.ranks = {
 		[5] = "Puoi richiamare i Tram dalle piattaforme.",
 		[6] = "Non puoi più essere ipnotizzato dalle scale alterate da Gremlin Rig.",
 		[8] = "Sei immune alle Scale Trappola.",
-		[9] = "Ottieni l'opzione per interrompere le scale attorcigliate. (potrebbero esserci problemi con più Gremlin)",
+		[9] = "Puoi richiamare e ripristinare le scale ipnotizzate che girovagano nelle vicinanze.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Ricarica salto ridotta di 0.125 secondi.",
@@ -905,7 +906,7 @@ module.gui.settings = {
 	["RChoices"] = "Mostra icone direzionali per REAVER (solo PC)",
 	["SChoices"] = "Mostra icone direzionali per SPLICER (solo PC)",
 	["GChoices"] = "Mostra icone direzionali per GREMLIN (solo PC)",
-	["CChoices"] = "Mostra icone direzionali per CHAMELEON (Scale a Senso Unico)",
+	["CChoices"] = "Mostra icone direzionali per CHAMELEON (solo PC)",
 
 	["List"] = "Attiva lista giocatori animata",
 	["SwitchBack"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
@@ -928,7 +929,7 @@ module.gui.gameover.results = {
 	["pro"] = "RECORD TORRE PROFESSIONALE",
 	["infinite"] = "RECORD TORRE SENZA FINE",
 	["custom"] = "RECORD TORRE PERSONALIZZABILE", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["noVR"] = "RECORD TORRE CLASSICA", --this will show in noVR tower, as they share the same record
+	["basic"] = "RECORD TORRE PER PRINCIPIANTI",
 
 	["cTime"] = "MIGLIOR TEMPO CRONOMETRATO CON %s", --%s will be replaced by the used class
 	["levels"] = "PIANI RAGGIUNTI",
@@ -1189,18 +1190,30 @@ module.gui.gameover.credits = {
 }
 
 module.static = {
-	["cla_1"] = "Come si gioca?",
-	["cla_2"] = "Prima di iniziare, ti consigliamo di completare il tutorial. Se non l'hai ancora fatto, attivalo dal menu, altrimenti l’esperienza di gioco potrebbe risultare confusa.",
-	["cla_3"] = "L'obiettivo del gioco è raggiungere la cima e raccogliere la Sfera Finale. Prima di iniziare, scegli la tua classe saltando sui trasformatori posizionati al centro della mappa.",
-	["cla_4"] = "Felice con la tua scelta, puoi iniziare a scalare la torre collezionando i cristalli di Mana mentre procedi; ti saranno utili per poter lanciare gli incantesimi. Fai uso della varietà di incantesimi che ogni classe offre.",
-	["cla_5"] = "Come si lanciano gli incantesimi?",
-	["cla_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segnalando che l’incantesimo è pronto.",
-	["cla_7"] = "Dopo aver selezionato l’incantesimo, devi eseguirlo saltando. A seconda dell’incantesimo, dovrai saltare su scale o piattaforme. Segui le frecce guida per indicazioni.",
-	["cla_8"] = "Per ogni salita completata riceverai 3 gettoni da usare per sbloccare incantesimi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi, ad eccezione dei gettoni Multiuso",
-	["cla_9"] = "Come si lanciano i sortilegi?",
-	["cla_10"] = "Per lanciare i sortilegi devi prima sbloccare tutti gli incantesimi base. I sortilegi non vanno sbloccati, ma consumano Gettoni invece di Mana.",
-	["cla_11"] = "Per ottenere i gettoni necessari a sbloccare tutti gli incantesimi di una classe è necessario scalare la torre almeno 5 volte, però è possibile ottenerne altri extra vincendo le gare o acquistandoli dal negozio. Per accedere alla lista dei sortilegi, clicca l'icona a sinistra degli incantesimi o premi il tasto 'C'.",
-	["cla_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati, ma interromperne l'effetto non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle classi.",
+	["bas_1"] = "TORRE PER PRINCIPIANTI",
+	["bas_2"] = "Come si gioca?",
+	["bas_3"] = "L'obiettivo del gioco è raggiungere la cima e raccogliere la Sfera Finale. Prima di iniziare, scegli la tua classe saltando sui trasformatori posizionati al centro della mappa.",
+	["bas_4"] = "Felice con la tua scelta, puoi iniziare a scalare la torre collezionando i cristalli di Mana mentre procedi; ti saranno utili per poter lanciare gli incantesimi. Fai uso della varietà di incantesimi che ogni classe offre.",
+	["bas_5"] = "Come si lanciano gli incantesimi?",
+	["bas_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segnalando che l’incantesimo è pronto.",
+	["bas_7"] = "Dopo aver selezionato l’incantesimo, devi eseguirlo saltando. A seconda dell’incantesimo, dovrai saltare su scale o piattaforme. Segui le frecce guida per indicazioni.",
+	["bas_8"] = "Per ogni salita completata riceverai 3 gettoni da usare per sbloccare incantesimi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi, ad eccezione dei gettoni Multiuso",
+	["bas_9"] = "Come si lanciano i sortilegi?",
+	["bas_10"] = "Per lanciare i sortilegi devi prima sbloccare tutti gli incantesimi base. I sortilegi non vanno sbloccati, ma consumano Gettoni invece di Mana.",
+	["bas_11"] = "Per ottenere i gettoni necessari a sbloccare tutti gli incantesimi di una classe è necessario scalare la torre almeno 5 volte, però è possibile ottenerne altri extra vincendo le gare o acquistandoli dal negozio. Per accedere alla lista dei sortilegi, clicca l'icona a sinistra degli incantesimi o premi il tasto 'C'.",
+	["bas_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati, ma interromperne l'effetto non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle classi.",
+
+	["cla_1"] = "TORRE CLASSICA",
+	["cla_2"] = "Più classi disponibili!",
+	["cla_3"] = "In questa torre puoi anche trasformarti in Gremlin, Splicer, Archon, Reaver, Heretic o Muggle, una classe per professionisti che non ha incantesimi",
+	["cla_4"] = "Queste classi richiedono più attenzioni per poter essere usate al meglio, inoltre puoi incontrare nuovi tipi di scale speciali",
+	["cla_5"] = "Attenzione agli Architect!",
+	["cla_6"] = "Questa torre permette ai giocatori di usare Architect tramite gamepass o VR.",
+	["cla_7"] = "Gli Architect sono in grado di lanciare incantesimi di diverse classi senza limite di Mana, e possono anche volare tra le scale.",
+	["cla_8"] = "Incontrarne uno può essere un'arma a doppio taglio: se non sono disposti ad aiutarti, la difficoltà dell'ascesa può aumentare considerabilmente.",
+	["cla_9"] = "Sortilegi e Rig!",
+	["cla_10"] = "Nella torre Classica è possibile lanciare i sortilegi.",
+	["cla_11"] = "I sortilegi sono in grado di modificare l'intera torre o di alterare le scale con un effetto che cambia di classe in classe.",
 
 	["pro_1"] = "TORRE PROFESSIONALE",
 	["pro_2"] = "Vincolo dei piani pari",
