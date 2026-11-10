@@ -1216,7 +1216,7 @@ module.static = {
 	["cla_11"] = "I sortilegi sono in grado di modificare l'intera torre o di alterare le scale con un effetto che cambia di classe in classe.",
 
 	["pro_1"] = "TORRE PROFESSIONALE",
-	["pro_2"] = "Vincolo dei piani pari",
+	["pro_2"] = "Vincolo dei piani pari...",
 	["pro_3"] = "Nella torre professionale, alcuni incantesimi non possono essere usati sui piani pari. Crea Trappola, Crea Portale, Emersione, Posiziona Scale a Chiocciola e altri possono essere lanciati solo sui piani dispari.",
 	["pro_4"] = "Neanche i Drifter possono usare queste piattaforme. Sono facilmente riconoscibili grazie al cerchio rosso al centro.",
 	["pro_5"] = "Scale maledette",
@@ -1225,7 +1225,7 @@ module.static = {
 	["pro_9"] = "Malefici",
 	["pro_10"] = "Come se non fosse abbastanza, i Droni possono anche creare malefici. Le intersecazioni normali hanno il 20% di diventare maledette e le frecce guida nelle vicinanze diventeranno rosse con una croce al centro.",
 	["pro_11"] = "I malefici inibiscono tutti gli incantesimi che vengono lanciati sulle frecce, pertanto quelli che portano alla generazione di scale o che teletrasportano l'utente su altre piattaforme (verso la direzione della freccia) non possono essere lanciati.",
-	["pro_12"] = "Solo Heretic, Keeper e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annientamento, tuttavia la Rigenerazione ne creerà di nuovi.",
+	["pro_12"] = "Solo Heretic, Keeper, Architect e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annientamento, tuttavia la Rigenerazione ne creerà di nuovi.",
 
 	["inf_1"] = "TORRE SENZA FINE",
 	["inf_2"] = "CORSA OBBLIGATORIA",
@@ -1347,6 +1347,8 @@ module.static = {
 	["studio_3"] = "PRO:\nPossibilità di volare\nNon richiede Mana\nCONTRO:\nCosta Robux\nNon possiede ranghi",
 	["studio_4"] = "'Questa torre adesso mi appartiene'\ncitazione dal nostro fondatore",
 
+	["studio_basic"] = "Architect non è disponibile nella Torre per Principianti.",
+
 	--SHARED
 	["leader_pro"] = "La torre professionale conferisce 2 Ascese per completamento",
 	["leader_update"] = "Aggiornamento in: ",
@@ -1427,29 +1429,32 @@ module.static = {
 --TUTORIAL
 module.tutorial = {
 	["tut_big_1"] = "Benvenuto in ScaleMania!",
-	["tut_big_2"] = "Prima di tutto, colleziona quel cristallo di Mana.",
-	["tut_big_3"] = "Seleziona l'incantesimo Genera Scale.",
-	["tut_big_4"] = "Tutti gli incantesimi si lanciano saltando.",
-	["tut_big_5"] = "Notevole, vero? Adesso colleziona quest'altro cristallo di Mana:",
-	["tut_big_6"] = "Ora, seleziona l'incantesimo Ribalta Scale per proseguire.",
-	["tut_big_7"] = "Alcuni incantesimi vengono eseguiti saltando sopra le scale.",
-	["tut_big_8"] = "Ci stai prendendo la mano. Raccogli questo cristallo di Mana:",
-	["tut_big_9"] = "Ben fatto, ora seleziona l'incantesimo Muovi Scale per continuare.",
-	["tut_big_10"] = "Salta sulla freccia che indica in avanti per spostare la scala.",
-	["tut_big_11"] = "Troverai molte scale che ostacoleranno il tuo passaggio.",
-	["tut_big_12"] = "Stai andando bene! Seleziona l'incantesimo Demolisci Scale in Alto per procedere.",
-	["tut_big_13"] = "Alcuni incantesimi interagiscono con le scale situate in alto, prova con questo.",
-	["tut_big_14"] = "Assumi questo cristallo di Mana:",
-	["tut_big_15"] = "Seleziona l'incantesimo Passaggio per teletrasportati di piattaforma.",
-	["tut_big_16"] = "Salta sulla freccia per eseguire l'incantesimo!",
-	["tut_big_17"] = "Alcune scale potrebbero non essere ospitali ed impedirti di proseguire il passaggio.",
-	["tut_big_18"] = "Seleziona questo incantesimo per sistemarle.",
-	["tut_big_19"] = "Questo incantesimo può essere lanciato sia sulle scale che sulle frecce.",
-	["tut_big_20"] = "Il tuo obiettivo? Raggiungi la cima della torre e tocca la Sfera Finale in movimento. Alla prossima!",
+	["tut_big_2"] = "Prima di tutto, impara a cambiare classe.",
+	["tut_big_3"] = "La classe Patron è in grado di generare scale, tuttavia ha bisogno di mana per far ciò. Ecco del mana per iniziare.",
+	["tut_big_4"] = "Seleziona l'incantesimo Genera Scale.",
+	["tut_big_5"] = "Tutti gli incantesimi si lanciano saltando.",
+	["tut_big_6"] = "Non c'è modo di proseguire? Trasformati in Joker per ribaltare la situazione.",
+	["tut_big_7"] = "Questa volta colleziona tu il cristallo di Mana.",
+	["tut_big_8"] = "Questo incantesimo ti permette di ribaltare le scale.",
+	["tut_big_9"] = "Alcuni incantesimi vengono eseguiti saltando sopra le scale.",
+	["tut_big_10"] = "Ci stai prendendo la mano. Trasformati in Keeper per poter muovere le scale.",
+	["tut_big_11"] = "Colleziona quest'altro cristallo di Mana.",
+	["tut_big_12"] = "Con questo incantesimo potrai spostare le scale.",
+	["tut_big_13"] = "Salta sulla freccia che indica in avanti per spostare la scala.",
+	["tut_big_14"] = "Non ti piacciono le scale? Diventa un Wicked per distruggerle.",
+	["tut_big_15"] = "Troverai molte scale che ostacoleranno il tuo passaggio.",
+	["tut_big_16"] = "Seleziona l'incantesimo Demolisci Scale in Alto per procedere.",
+	["tut_big_17"] = "Alcuni incantesimi interagiscono con le scale situate in alto.",
+	["tut_big_18"] = "E' ora di darci una mossa! Trasformati in Hacker per poterti teletrasportare.",
+	["tut_big_19"] = "Colleziona l'ultimo cristallo di Mana.",
+	["tut_big_20"] = "Seleziona l'incantesimo Passaggio per teletrasportati di piattaforma.",
+	["tut_big_21"] = "Salta sulla freccia per eseguire l'incantesimo!",
+	["tut_big_22"] = "Questa è una sfera simile a quella che si trova in cima alla torre. Raggiungila per completare la tua ascesa. Alla prossima!",
 
 	["tut_select"] = "Seleziona questo incantesimo:",
 
 	["tut_small_init"] = "Esegui un salto per iniziare il tutorial",
+	["tut_small_morph"] = "Salta per strasformarti",
 	["tut_small_collect"] = "Colleziona Mana",
 	["tut_small_arrow"] = "Salta sulla freccia",
 	["tut_small_stairs"] = "Salta sulle scale",
@@ -1464,6 +1469,7 @@ module.where = {
 	["dynamic"] = "Può modificare sia la scala colpita che quella sovrastante.",
 	["both"] = "Può essere eseguito sia dalle frecce presenti sulle piattaforme che dalle scale",
 	["both2"] = "Può essere eseguito sia su piattaforme che su scale.",
+	["both3"] = "Può essere eseguito sia su piattaforme che su scale a ranghi avanzati.",
 	["anywhere"] = "Può essere lanciato ovunque.",
 	["nowhere"] = "Questo incantesimo si attiva al momento della selezione.",
 }
@@ -1472,6 +1478,7 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale intangibili.",
+		["link"] = "Puo essere lanciato nelle intersecazioni libere o attraverso scale intangibili. Raggiungi il rango Creator per poterlo lanciare attraverso qualsiasi scala non maledette",
 		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango BANISHED per poter demolire le scale maledette.",
 		["superforcednecro"] = "Può essere lanciato nelle intersecazioni libere e senza malefici. Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
 		["flicker"] = "Può essere lanciato solo nelle intersecazioni libere (e maledette con il rango INFIDEL sbloccato).",
@@ -1480,6 +1487,7 @@ module.guide = {
 		["forced"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette.",
 		["halfsoft"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
 		["soft"] = "Può essere lanciato solo nelle intersecazioni libere.",
+		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. I thief di rango più alto possono usare l'incantesimo su scale normali o alterate da rig.",
 		["hack"] = "Può essere lanciato solo attraverso scale opposte non maledette.",
 		["sidepass"] = "Può essere lanciato nelle intersecazioni senza malefici e senza scorciatoie.",
 	},
@@ -1514,6 +1522,7 @@ module.guide = {
 		["oneway"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["revolve"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["normalrig"] = "Può essere lanciato solo su scale normali o alterate da rig.",
+		["corkscrew"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 	},
 	
 	["above"] = {
@@ -1557,6 +1566,10 @@ module.guide = {
 		['delsplits'] = "Può essere lanciato su scale con portali dimensionali. Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
 		["archgremlin"] = "Rotea Piattaforma/Scale Girevoli",
 		["archdrifter"] = "Elevazione/Dirottamento Casuale",
+	},
+
+	['both3'] = {
+		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. Aumenta il tuo rango per usare l'incantesimo su scale normali o alterate da rig."
 	},
 
 	['anywhere'] = {
@@ -1650,9 +1663,6 @@ module.serverfeedback = {
 	["noghost"] = "Questo incantesimo può essere lanciato solo su scale normali, alterate da rig o spettralizzate.",
 	["wrongplace"] = "L'altra scala si deve trovare all'interno dell'area di gioco.",
 	["archrace"] = "Che gara sarebbe con un Architect come partecipante?!",
-	-- ["noobrace"] = "You cannot race in the tutorial!",
-	["noobrace"] = "Concludi il Tutorial per poter unirti alla gara!",
-	-- ["toolate"] = "A race is already in progress, try again later.",
 	["toolate"] = "Una gara è attualmente in corso, ritenta più tardi.",
 	["blockedplit"] = "L'intersecazione è maledetta.",
 	["cursedtarget"] = "Le scale sono maledette.",
@@ -1688,6 +1698,9 @@ module.serverfeedback = {
 	["transformer"] = "Sblocca il rango TRANSFORMER per poter ricombinare le scale già combinate.",
 	["strider"] = "Sblocca il rango STRIDER per poter potenziare gli ascensori due volte.",
 	["lich"] = "Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
+	["creator"] = "Sblocca il rango CREATOR per poter generare collegamenti attraverso scale non maledette.",
+	["protector"] = "Sblocca il rango PROTECTOR per poter ricostruire qualsiasi scala non maledetta.",
+	["robber"] = "Sblocca il rango ROBBER per poter lanciare questo incantesimo sulle scale.",
 
 	--rig activation
 	["keeperrig"] = "Le scale si stanno muovendo!",
@@ -1748,26 +1761,21 @@ module.serverfeedback = {
 	["chamreflected"] = "Devi liberarti dell'Estraneamento prima.",
 	["morphpossessed"] = "Devi liberarti della Possessione prima.",
 	["morphhypnotised"] = "Devi liberarti dell'Ipnosi prima.",
-	-- ["morphreflected"] = "You can't change alignment while reflected.",
 	["morphreflected"] = "Devi liberarti dall'Estraniamento prima.",
+	["bannedclass"] = "%s non è disponibile nella Torre per Principianti.",
 
 	--code
 	["nocode"] = "Inserisci un codice.",
 	["invalid"] = "Codice invalido.",
 	["old"] = "Questo codice non è più attivo.",
+	["basic_arch"] = "Non puoi riscattare la demo gratuita di Architect nella Torre per Principianti.",
 	["accepted"] = "Codice accettato.",
 	["used"] = "Questo codice è già stato usato.",
 	["tooshort"] = "Messaggio troppo corto.",
 	["sent"] = "Messaggio inviato, grazie!",
 
-	-- ['noobteleport'] = "You cannot switch towers in the tutorial!",
-	-- ['noobmorph'] = "Complete the tutorial to be able to morph!",
-	-- ['noobnocode'] = "Complete the tutorial to be able to use codes!",
-	-- ['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
-	['noobteleport'] = "Non puoi cambiare torre nel Tutorial!",
-	['noobmorph'] = "Concludi il Tutorial per cambiare classe!",
-	['noobnocode'] = "Concludi il Tutorial per poter usare i codici!",
-	['noobchameleon'] = "Concludi il Tutorial per poter usufruire del Pass Chameleon!",
+	["noobteleport"] = "Concludi il Tutorial per poter cambiare torre!",
+	["noobchameleon"] = "Concludi il Tutorial per poterti trasformare in Chameleon!",
 
 	-- --GIFTING
 	-- ['notingame'] = "Player has left the game, you cannot give the game pass!",
@@ -1876,6 +1884,8 @@ module.localfeedback = {
 	["unlocked"] = "Incantesimo sbloccato!",
 	["maxmana"] = "Contenitore Mana pieno!",
 	["nopurchase"] = "Non puoi acquistare Mana nel tutorial!",
+	["notinbasic"] = "I sortilegi evento non possono essere lanciati nella Torre per Principianti.",
+	--this is for chamelon clicking on the basic tower banned class
 	["limitset"] = "Per acquistare Mana, disabilita il limite che hai imposto.", --for refill mana
 	["hasarchitect"] = "Possiedi già il pass Architect!",
 	["hascham"] = "Possiedi già il pass Chameleon!",
@@ -1905,7 +1915,7 @@ module.switchon = {
 	["DRIFTER1"] = "Immunità ai rig di Drifter attivata.",
 	["SPLICER1"] = "Immunità ai rig di Splicer attivata.",
 	-- ["REAVER1"] = "Immunità ai rig di Reaver attivata.", -- Rimosso
-	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
+	-- ["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
 	["NONE"] = "Immunità globale attivata.",
 }
 
@@ -1920,7 +1930,7 @@ module.switchoff = {
 	["DRIFTER1"] = "Immunità ai rig di Drifter disattivata.",
 	["SPLICER1"] = "Immunità ai rig di Splicer disattivata.",
 	-- ["REAVER1"] = "Immunità ai rig di Reaver disattivata.", -- Rimosso
-	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
+	-- ["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
 	["NONE"] = "Immunità globale disattivata.",
 }
 
