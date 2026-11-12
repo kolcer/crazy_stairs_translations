@@ -141,7 +141,7 @@ module.gui.questions = {
 	["skip"] = "Vuoi saltare il tutorial?",
 	["reshuffle"] = "Vuoi evitare collisioni tra le scale in movimento? Premi NO per effettuare un mescolamento forzato.",
 	["tonormal"] = "La classe %s non è disponibile nella Torre per Principianti. Vuoi visitare la Torre Classica?"
-	["raceconfirm"] = "Per poterti unire alla gara è necessario partire dal fondo della torre. Vuoi continuare?",
+	["raceconfirm"] = "Il punto di partenza della gara si trova in fondo alla torre. Perderai il progresso della scalata in corso. Vuoi continuare?",
 	["gift"] = "Vuoi regalare il Pass %s a qualcuno?",
 	["choose"] = "Seleziona il giocatore che riceverà il Pass %s", 
 	["confirm"] = "Confermi di voler donare il Pass %s al giocatore %s?", --second %s is the chosen player
@@ -439,7 +439,7 @@ local rig = "Questo è un sortilegio Rig. Tutte le scale normali verranno altera
 local event = "Questo è un sortilegio Evento. Tutte le scale normali verranno alterate una alla volta dall'incantesimo " -- do not remove space
 local fill = "Questo è un sortilegio Culmine. Verranno generate scale in tutte le intersecazioni libere e senza malefici. " -- do not remove spaces
 local mode = "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in modalità %s. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: %s e %s, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
-local timedExtra = " Raggiungi il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
+local timedExtra = " Sblocca il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
 
 module.spells.descriptions = {
 
@@ -448,7 +448,7 @@ module.spells.descriptions = {
 	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango DEFENDER per ridurre il costo a 2 Mana.\nSblocca il rango SAVIOUR per velocizzare il processo.",
 	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo. Sblocca il rango PROTECTOR per poter ricostruire qualsiasi scala non maledetta",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
-	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per poter creare collegamenti attraverso le scale.",
+	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per poter generare collegamenti attraverso le scale non maledette.",
 	["portal"] = "Apre un portale sulla piattaforma colpita per 60 secondi, in grado di teletrasportare chiunque lo calpesti sulla piattaforma sovrastante.\nSblocca il rango PROTECTOR per raddoppiarne la durata",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patron",RankData.PATRON[3].name),
@@ -653,8 +653,8 @@ module.spells.descriptions = {
 
 	--GREMLIN
 	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango FIEND per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Ipnotizza la scala colpita facendola girovagare attorno 6 piattaforme, per 3 volte, e puoi deciderne la direzione iniziale. Raggiungi il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
-	["screwup"] = "Ipnotizza la scala posizionata direttamente sopra a quella colpita facendola girovagare attorno 6 piattaforme, per 3 volte. Raggiungi il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
+	["screwdown"] = "Ipnotizza la scala colpita facendola girovagare attorno 6 piattaforme, per 3 volte, e puoi deciderne la direzione iniziale. Sblocca il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
+	["screwup"] = "Ipnotizza la scala posizionata direttamente sopra a quella colpita facendola girovagare attorno 6 piattaforme, per 3 volte. Sblocca il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
 	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno verticalmente di 180 gradi ogni breve intervallo.",
 	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango GOBLIN per rilevarle, e il rango DIABLO per diventarne immune",
 	["spinplatform"] = "Fa ruotare l'intera piattaforma e le scale che partono da essa di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette possono essere ruotate in questo modo.",
@@ -748,7 +748,7 @@ module.gui.ranks = {
 
 	["PATRON"] = {
 		[4] = "Puoi generare collegamenti attraverso le scale, a patto che non ci siano malefici o scale maledette.",
-		[5] = "Puoi ricostruire qualsiasi scala ad eccezione di quelle maledette."",
+		[5] = "Puoi ricostruire qualsiasi scala ad eccezione di quelle maledette.",
 		[6] = "Richiama Sfera richiede 2 Mana per l'esecuzione (da 3 Mana).",
 		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per ricevere in dono 1 Mana.",
 		[9] = "La sfera viene richiamata più velocemente.",
@@ -842,7 +842,7 @@ module.gui.ranks = {
 		[5] = "Puoi richiamare i Tram dalle piattaforme.",
 		[6] = "Non puoi più essere ipnotizzato dalle scale alterate da Gremlin Rig.",
 		[8] = "Sei immune alle Scale Trappola.",
-		[9] = "Puoi richiamare e ripristinare le scale ipnotizzate che girovagano nelle vicinanze.",
+		[9] = "Puoi richiamare e ripristinare le scale ipnotizzate dalle piattaforme, a patto che siano nelle vicinaze.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Ricarica salto ridotta di 0.125 secondi.",
@@ -1186,6 +1186,7 @@ module.gui.gameover.credits = {
 	["ghost"] = "Audio Unione Spettrale",
 	["disco"] = "Audio piste da ballo di Joker",
 	["elevator"] = "Audio piattaforme di Drifter", --drifter platforms
+	["crazies"] = "Audio scale ipnotizzate di Gremlin", --gremlin crazy stairs music
 	["finish"] = "Grazie per aver letto fin qui!",
 }
 
@@ -1205,8 +1206,8 @@ module.static = {
 
 	["cla_1"] = "TORRE CLASSICA",
 	["cla_2"] = "Più classi disponibili!",
-	["cla_3"] = "In questa torre puoi anche trasformarti in Gremlin, Splicer, Archon, Reaver, Heretic o Muggle, una classe per professionisti che non ha incantesimi",
-	["cla_4"] = "Queste classi richiedono più attenzioni per poter essere usate al meglio, inoltre puoi incontrare nuovi tipi di scale speciali",
+	["cla_3"] = "In questa torre puoi anche trasformarti in Gremlin, Splicer, Archon, Reaver, Heretic o Muggle, una classe per professionisti che non ha incantesimi.",
+	["cla_4"] = "Queste classi richiedono più attenzioni per poter essere usate al meglio, inoltre puoi incontrare nuovi tipi di scale speciali.",
 	["cla_5"] = "Attenzione agli Architect!",
 	["cla_6"] = "Questa torre permette ai giocatori di usare Architect tramite gamepass o VR.",
 	["cla_7"] = "Gli Architect sono in grado di lanciare incantesimi di diverse classi senza limite di Mana, e possono anche volare tra le scale.",
@@ -1429,7 +1430,7 @@ module.static = {
 --TUTORIAL
 module.tutorial = {
 	["tut_big_1"] = "Benvenuto in ScaleMania!",
-	["tut_big_2"] = "Prima di tutto, impara a cambiare classe.",
+	["tut_big_2"] = "Prima di tutto, impara a cambiare classe trasformandoti in Patron.",
 	["tut_big_3"] = "La classe Patron è in grado di generare scale, tuttavia ha bisogno di mana per far ciò. Ecco del mana per iniziare.",
 	["tut_big_4"] = "Seleziona l'incantesimo Genera Scale.",
 	["tut_big_5"] = "Tutti gli incantesimi si lanciano saltando.",
@@ -1478,7 +1479,7 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale intangibili.",
-		["link"] = "Puo essere lanciato nelle intersecazioni libere o attraverso scale intangibili. Raggiungi il rango Creator per poterlo lanciare attraverso qualsiasi scala non maledette",
+		["link"] = "Puo essere lanciato nelle intersecazioni libere o attraverso scale intangibili. Sblocca il rango Creator per poterlo lanciare attraverso qualsiasi scala non maledetta.",
 		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango BANISHED per poter demolire le scale maledette.",
 		["superforcednecro"] = "Può essere lanciato nelle intersecazioni libere e senza malefici. Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
 		["flicker"] = "Può essere lanciato solo nelle intersecazioni libere (e maledette con il rango INFIDEL sbloccato).",
@@ -1487,7 +1488,7 @@ module.guide = {
 		["forced"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette.",
 		["halfsoft"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
 		["soft"] = "Può essere lanciato solo nelle intersecazioni libere.",
-		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. I thief di rango più alto possono usare l'incantesimo su scale normali o alterate da rig.",
+		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. I Thief di rango più alto possono usare l'incantesimo su scale normali o alterate da rig.",
 		["hack"] = "Può essere lanciato solo attraverso scale opposte non maledette.",
 		["sidepass"] = "Può essere lanciato nelle intersecazioni senza malefici e senza scorciatoie.",
 	},
@@ -1569,7 +1570,7 @@ module.guide = {
 	},
 
 	['both3'] = {
-		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. Aumenta il tuo rango per usare l'incantesimo su scale normali o alterate da rig."
+		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. Aumenta il tuo rango per poter usare l'incantesimo su scale normali o alterate da rig."
 	},
 
 	['anywhere'] = {
