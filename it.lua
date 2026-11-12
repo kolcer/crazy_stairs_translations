@@ -24,7 +24,7 @@ module.gui.switcher = {
 	["classic"] = "Torre Classica",
 	["pro"] = "Torre Professionale",
 	["custom"] = "Torre Personalizzabile",
-	["noVR"] = "Torre Senza Architect",
+	["noVR"] = "Torre per Principianti",
 }
 
 module.gui.serversettings = {
@@ -140,10 +140,13 @@ module.gui.questions = {
 	["tutorial"]= "Vuoi iniziare il tutorial?",
 	["skip"] = "Vuoi saltare il tutorial?",
 	["reshuffle"] = "Vuoi evitare collisioni tra le scale in movimento? Premi NO per effettuare un mescolamento forzato.",
+	["tonormal"] = "La classe %s non è disponibile nella Torre per Principianti. Vuoi visitare la Torre Classica?"
+	["raceconfirm"] = "Il punto di partenza della gara si trova in fondo alla torre. Perderai il progresso della scalata in corso. Vuoi continuare?",
 	["gift"] = "Vuoi regalare il Pass %s a qualcuno?",
 	["choose"] = "Seleziona il giocatore che riceverà il Pass %s", 
 	["confirm"] = "Confermi di voler donare il Pass %s al giocatore %s?", --second %s is the chosen player
 	["received"] = "Hai ricevuto in dono il Pass %s da %s!",
+	["notenough"] = "Devi completare almeno %d ascese per poter visitare le altre torri.",
 	["architect"] = "Architect",
 	["mana"] = "+10 Contenitore Mana",
 	["spectre"] = "Spectre",
@@ -388,8 +391,8 @@ module.spells.names = {
 
 	--GREMLIN
 	["tram"] = "Genera Tram",
-	["screwdown"] = "Attorciglia Scale",
-	["screwup"] = "Attorciglia Scale in Alto",
+	["screwdown"] = "Ipnotizza Scale",
+	["screwup"] = "Ipnotizza Scale in Alto",
 	["revolve"] = "Scale Girevoli",
 	["trapstairs"] = "Scale Trappola",
 	["spinplatform"] = "Rotea Piattaforma",
@@ -398,20 +401,11 @@ module.spells.names = {
 	["gremlinevent"] = "Evento Tutti Giù per Terra",
 	["gremlinaltevent"] = "Evento Capolinea",
 
-	--TUTORIAL
-	["tcreate"] = "Genera Scale",
-	["tflip"] = "Ribalta Scale",
-	["tdestroy"] = "Demolisci Scale in Alto",
-	["tmove"] = "Muovi Scale",
-	["tdash"] = "Passaggio",
-	["trestore"] = "Ripristina Scale",
-
 	--CHAMELEON
-	["ditch"] = "Incrocia Scale",
+	["cork"] = "Attorciglia Scale",
 	["warp"] = "Distorci Scale",
 	["chamdown"] = "Sprofonda Scale",
 	["chamdraw"] = "Ponte Levatoio in Basso",
-	-- ["chamswap"] = "Copia Controfigura (solo visivo)",
 	["chamdrawabove"] = "Ponte Levatoio in Alto",
 	["oneways"] = "Scale a Senso Unico",
 
@@ -445,16 +439,16 @@ local rig = "Questo è un sortilegio Rig. Tutte le scale normali verranno altera
 local event = "Questo è un sortilegio Evento. Tutte le scale normali verranno alterate una alla volta dall'incantesimo " -- do not remove space
 local fill = "Questo è un sortilegio Culmine. Verranno generate scale in tutte le intersecazioni libere e senza malefici. " -- do not remove spaces
 local mode = "Questo è un sortilegio di manipolazione dei Droni. I Droni entreranno in modalità %s. Se il numero di scale rientra nei limiti, i Droni lanceranno casualmente questi incantesimi: %s e %s, inoltre le scale alterate verranno ripristinate. Fuori dai limiti, i Droni genereranno o distruggeranno le scale."
-local timedExtra = " Raggiungi il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
+local timedExtra = " Sblocca il rango %s per estendere la durata del sortilegio fino a 90s. Riempie il contenitore Mana di altri %s che hanno il rango %s sbloccato." -- do not remove leading space
 
 module.spells.descriptions = {
 
 	--PATRON
 	["summon"] = "Genera una scala normale nella direzione indicata, distruggendo eventuali scale in mezzo.",
 	["restore"] = "Se lanciato in cima alla torre, richiama la sfera finale sulla piattaforma colpita.\nSblocca il rango DEFENDER per ridurre il costo a 2 Mana.\nSblocca il rango SAVIOUR per velocizzare il processo.",
-	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo.",
+	["split"] = "Cambia la direzione della scala colpita, ripristinandola nel processo. Sblocca il rango PROTECTOR per poter ricostruire qualsiasi scala non maledetta",
 	["shrinkabove"] = "Restringe la scala posizionata direttamente sopra a quella colpita, permettendoti di aggirarla e scalarla.",
-	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per raddoppiare la durata.",
+	["link"] = "Genera un collegamento temporaneo nella direzione indicata, facendo da ponte tra due piattaforme. Dura 60 secondi ed è intangibile dal basso.\nSblocca il rango CREATOR per poter generare collegamenti attraverso le scale non maledette.",
 	["portal"] = "Apre un portale sulla piattaforma colpita per 60 secondi, in grado di teletrasportare chiunque lo calpesti sulla piattaforma sovrastante.\nSblocca il rango PROTECTOR per raddoppiarne la durata",
 
 	["summoner"] = timed .. "Permette di generare scale in continuazione, per 60 secondi." .. string.format(timedExtra,RankData.PATRON[7].name,"Patron",RankData.PATRON[3].name),
@@ -546,14 +540,14 @@ module.spells.descriptions = {
 	["hackerunion"] =  union,
 
 	--THIEF
-	["steal"] = "Ruba la scala colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango OUTLAW per poter trasportare 2 scale alla volta.",
-	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e l'aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango OUTLAW per poter trasportare 2 scale alla volta.",
-	["place"] = "Posiziona una scala rubata nella direzione indicata, se l'intersecazione è libera.",
-	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.\nSblocca il rango BANDIT per raddoppiare la durata.",
-	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.\nSblocca il rango ROBBER per raddoppiare la durata.",
+	["steal"] = "Ruba la scala colpita e la aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango BANDIT e OUTLAW per poter trasportare rispettivamente 2 e 3 scale alla volta.",
+	["stealabove"] = "Ruba la scala posizionata direttamente sopra a quella colpita e la aggiunge al tuo inventario. Per poter usare gli altri incantesimi è necessario possedere scale all'interno del proprio inventario.\nSblocca il rango HIJACKER per poter rubare qualsiasi scala (tranne quelle maledette).\nSblocca il rango BANDIT e OUTLAW per poter trasportare rispettivamente 2 e 3 scale alla volta.",
+	["place"] = "Posiziona una scala rubata nella direzione indicata. Se il rango ROBBER è sbloccato, permette di incrociare la scala posizionata con una già presente (a patto che sia normale o alterata da rig).",
+	["uppass"] = "Posiziona una scala a chiocciola che collega la piattaforma colpita a quella posizionata direttamente sopra (solo su piattaforme perimetrali). Dura 60 secondi.",
+	["sidepass"] = "Posiziona una scorciatoia che raggira eventuali scale in mezzo nella direzione indicata. Dura 60 secondi.",
 	["drop"] = "Posiziona una scala piatta nella direzione indicata, se l'intersecazione è libera.",
 
-	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Eventuali scale che bloccano il passaggio verranno rubate automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thief",RankData.THIEF[3].name),
+	["heist"] = timed .. "Permette di posizionare scale normali in continuazione, per 60 secondi. Le scale vengono rubate automaticamente." .. string.format(timedExtra,RankData.THIEF[7].name,"Thief",RankData.THIEF[3].name),
 	["thiefrigevent"] = rig .. "Thief Rig. Chi le calpesta perde 1 Mana, che viene trasferito a te se non hai cambiato classe e il tuo contenitore Mana non è pieno.",
 	["thiefevent"] = event .. "Posiziona Scale Piatte.",
 	["thiefaltevent"] = "Questo è un sortilegio Evento. Posiziona scorciatoie in tutte le intersecazioni disponibili, eccetto in quelle dove ci sono scale maledette o malefici.",
@@ -659,8 +653,8 @@ module.spells.descriptions = {
 
 	--GREMLIN
 	["tram"] = "Genera un Tram nella direzione indicata. Queste scale sono più corte del solito e si spostano subito dopo la generazione, tuttavia possono essere riportate indietro saltandoci sopra.\nSblocca il rango FIEND per poter richiamare i Tram dalle piattaforme.",
-	["screwdown"] = "Attorciglia la scala colpita in senso orario, rendendone la scalata un'impresa.\nSblocca il rango DAEMON per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri DAEMON).",
-	["screwup"] = "Attorciglia la scala posizionata direttamente sopra a quella colpita in senso antiorario, rendendone la discesa un'impresa.\nSblocca il rango DAEMON per mettere in pausa l'attorcigliamento delle scale (potrebbe non funzionare in presenza di altri DAEMON).",
+	["screwdown"] = "Ipnotizza la scala colpita facendola girovagare attorno 6 piattaforme, per 3 volte, e puoi deciderne la direzione iniziale. Sblocca il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
+	["screwup"] = "Ipnotizza la scala posizionata direttamente sopra a quella colpita facendola girovagare attorno 6 piattaforme, per 3 volte. Sblocca il rango DAEMON per poterle richiamare da una piattaforma adiacente.",
 	["revolve"] = "Rende la scala colpita girevole, permettendonti di decidere la direzione. Queste scale si capovolgeranno verticalmente di 180 gradi ogni breve intervallo.",
 	["trapstairs"] = "Trasforma la scala colpita in una trappola. Quando calpestate, gireranno su se stesse facendo cadere i malcapitati al piano di sotto.\nSblocca il rango GOBLIN per rilevarle, e il rango DIABLO per diventarne immune",
 	["spinplatform"] = "Fa ruotare l'intera piattaforma e le scale che partono da essa di 90 gradi per quattro volte, permettendoti di decidere la direzione. Anche le scale maledette possono essere ruotate in questo modo.",
@@ -674,10 +668,11 @@ module.spells.descriptions = {
 	["gremlinunion"] = union,
 
 	--CHAMELEON
-	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
+	["chamdown"] = "Questo è un incantesimo proibito dei Keeper. Sprofonda la scala colpita di un piano.\nSblocca il rango CONTROLLER di Keeper per poter sprofondare qualsiasi scala non maledetta.",
+	["chamdraw"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la discesa impossibile a meno che un altro gicatore non attivi il ponte levatoio dal basso.",
 	["oneways"] = "Questo è un incantesimo proibito dei Reaver. Rende la scala colpita a senso unico (puoi scegliere la direzione da bloccare), camminaci attraverso per unirti o separarti dalla tua controfigura. Non hanno effetto sui Reaver.\nSblocca il rango ILLUSION per diventarne immune. Durante l'unione, la tua controfigura non sarà in grado di raccogliere mana per conto tuo, ma in compenso sarai in grado di camminare sulle superfici riflettenti.",
 	["chamdrawabove"] = "Questo è un incantesimo proibito degli Heretic. Trasforma la scala posizionata direttamente sopra a quella colpita in un ponte levatoio, sottraendo la parte inferiore e rendendo la salita impossibile a meno che un altro gicatore non attivi il ponte levatoio dall'alto. Il rango che influenzava questo incantesimo non ha più effetto.",
-	["ditch"] = "Questo è un incantesimo proibito dei Thief. Genera una scala nella direzione opposta a quella colpita nella stessa intersecazione, incrociandole tra loro.",
+	["cork"] = "Questo è un incantesimo proibito dei Gremlin. Attorciglia la scala colpia permettendoti di decidere la direzione iniziale. Il rango che influenzava questo incantesimo non ha più effetto.",
 	["warp"] = "Questo è un incantesimo proibito dei Wicked. Piega la scala colpita in modo tale da formare un collegamento verticale con la piattaforma superiore.",
 
 	["chameleonrigevent"] = rig .. "Chameleon Rig. L'effetto viene scelto in modo casuale tra quelli esistenti degli altri allineamenti.",
@@ -752,8 +747,8 @@ module.gui.ranks = {
 	["next"] = "Premi sulla freccia verso destra per scoprire gli altri ranghi.",
 
 	["PATRON"] = {
-		[4] = "La durata dei collegamenti è raddoppiata (120s).",
-		[5] = "La durata dei portali è raddoppiata (120s).",
+		[4] = "Puoi generare collegamenti attraverso le scale, a patto che non ci siano malefici o scale maledette.",
+		[5] = "Puoi ricostruire qualsiasi scala ad eccezione di quelle maledette.",
 		[6] = "Richiama Sfera richiede 2 Mana per l'esecuzione (da 3 Mana).",
 		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per ricevere in dono 1 Mana.",
 		[9] = "La sfera viene richiamata più velocemente.",
@@ -794,11 +789,11 @@ module.gui.ranks = {
 		[9] = "Quando lanci l'incantesimo Scale Anomale in cima alla torre, vieni teletrasportato nelle vicinanze della sfera finale (se possibile).",
 	},
 	["THIEF"] = {
-		[4] = "Le tue Scorciatoie durano il doppio del tempo (da 60s a 120s).",
-		[5] = "Le tue scale a chiocciola durano il doppio del tempo (da 60s a 120s).",
+		[4] = "Puoi incrociare le scale posizionate con quelle già presenti, solo se sono normali o alterate da rig",
+		[5] = "Puoi tenere due scale di scorta invece di una.",
 		[6] = "Puoi rubare qualsiasi scala ad eccezione di quelle maledette.",
 		[8] = "Solo ed esclusivamente quando sei a corto di Mana, puoi saltare su una piattaforma per rubare 1 Mana.",
-		[9] = "Puoi tenere due scale di scorta invece di una.",
+		[9] = "Puoi tenere tre scale di scorta invece di due.",
 	},
 	["ARCHON"] = {
 		[4] = "Puoi lanciare l'incantesimo Scollega Portali Dimensionali sulle piattaforme.",
@@ -847,7 +842,7 @@ module.gui.ranks = {
 		[5] = "Puoi richiamare i Tram dalle piattaforme.",
 		[6] = "Non puoi più essere ipnotizzato dalle scale alterate da Gremlin Rig.",
 		[8] = "Sei immune alle Scale Trappola.",
-		[9] = "Ottieni l'opzione per interrompere le scale attorcigliate. (potrebbero esserci problemi con più Gremlin)",
+		[9] = "Puoi richiamare e ripristinare le scale ipnotizzate dalle piattaforme, a patto che siano nelle vicinaze.",
 	},
 	["MUGGLE"] = { 
 		[2] = "Ricarica salto ridotta di 0.125 secondi.",
@@ -911,7 +906,7 @@ module.gui.settings = {
 	["RChoices"] = "Mostra icone direzionali per REAVER (solo PC)",
 	["SChoices"] = "Mostra icone direzionali per SPLICER (solo PC)",
 	["GChoices"] = "Mostra icone direzionali per GREMLIN (solo PC)",
-	["CChoices"] = "Mostra icone direzionali per CHAMELEON (Scale a Senso Unico)",
+	["CChoices"] = "Mostra icone direzionali per CHAMELEON (solo PC)",
 
 	["List"] = "Attiva lista giocatori animata",
 	["SwitchBack"] = "Ritorna alla lista di incantesimi dopo aver lanciato un sortilegio",
@@ -934,7 +929,7 @@ module.gui.gameover.results = {
 	["pro"] = "RECORD TORRE PROFESSIONALE",
 	["infinite"] = "RECORD TORRE SENZA FINE",
 	["custom"] = "RECORD TORRE PERSONALIZZABILE", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["noVR"] = "RECORD TORRE CLASSICA", --this will show in noVR tower, as they share the same record
+	["basic"] = "RECORD TORRE PER PRINCIPIANTI",
 
 	["cTime"] = "MIGLIOR TEMPO CRONOMETRATO CON %s", --%s will be replaced by the used class
 	["levels"] = "PIANI RAGGIUNTI",
@@ -1191,25 +1186,38 @@ module.gui.gameover.credits = {
 	["ghost"] = "Audio Unione Spettrale",
 	["disco"] = "Audio piste da ballo di Joker",
 	["elevator"] = "Audio piattaforme di Drifter", --drifter platforms
+	["crazies"] = "Audio scale ipnotizzate di Gremlin", --gremlin crazy stairs music
 	["finish"] = "Grazie per aver letto fin qui!",
 }
 
 module.static = {
-	["cla_1"] = "Come si gioca?",
-	["cla_2"] = "Prima di iniziare, ti consigliamo di completare il tutorial. Se non l'hai ancora fatto, attivalo dal menu, altrimenti l’esperienza di gioco potrebbe risultare confusa.",
-	["cla_3"] = "L'obiettivo del gioco è raggiungere la cima e raccogliere la Sfera Finale. Prima di iniziare, scegli la tua classe saltando sui trasformatori posizionati al centro della mappa.",
-	["cla_4"] = "Felice con la tua scelta, puoi iniziare a scalare la torre collezionando i cristalli di Mana mentre procedi; ti saranno utili per poter lanciare gli incantesimi. Fai uso della varietà di incantesimi che ogni classe offre.",
-	["cla_5"] = "Come si lanciano gli incantesimi?",
-	["cla_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segnalando che l’incantesimo è pronto.",
-	["cla_7"] = "Dopo aver selezionato l’incantesimo, devi eseguirlo saltando. A seconda dell’incantesimo, dovrai saltare su scale o piattaforme. Segui le frecce guida per indicazioni.",
-	["cla_8"] = "Per ogni salita completata riceverai 3 gettoni da usare per sbloccare incantesimi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi, ad eccezione dei gettoni Multiuso",
-	["cla_9"] = "Come si lanciano i sortilegi?",
-	["cla_10"] = "Per lanciare i sortilegi devi prima sbloccare tutti gli incantesimi base. I sortilegi non vanno sbloccati, ma consumano Gettoni invece di Mana.",
-	["cla_11"] = "Per ottenere i gettoni necessari a sbloccare tutti gli incantesimi di una classe è necessario scalare la torre almeno 5 volte, però è possibile ottenerne altri extra vincendo le gare o acquistandoli dal negozio. Per accedere alla lista dei sortilegi, clicca l'icona a sinistra degli incantesimi o premi il tasto 'C'.",
-	["cla_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati, ma interromperne l'effetto non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle classi.",
+	["bas_1"] = "TORRE PER PRINCIPIANTI",
+	["bas_2"] = "Come si gioca?",
+	["bas_3"] = "L'obiettivo del gioco è raggiungere la cima e raccogliere la Sfera Finale. Prima di iniziare, scegli la tua classe saltando sui trasformatori posizionati al centro della mappa.",
+	["bas_4"] = "Felice con la tua scelta, puoi iniziare a scalare la torre collezionando i cristalli di Mana mentre procedi; ti saranno utili per poter lanciare gli incantesimi. Fai uso della varietà di incantesimi che ogni classe offre.",
+	["bas_5"] = "Come si lanciano gli incantesimi?",
+	["bas_6"] = "Ogni incantesimo ha un costo in Mana. Quando ne hai abbastanza, clicca sull’icona dell’incantesimo. Le tue mani inizieranno a brillare, segnalando che l’incantesimo è pronto.",
+	["bas_7"] = "Dopo aver selezionato l’incantesimo, devi eseguirlo saltando. A seconda dell’incantesimo, dovrai saltare su scale o piattaforme. Segui le frecce guida per indicazioni.",
+	["bas_8"] = "Per ogni salita completata riceverai 3 gettoni da usare per sbloccare incantesimi. I gettoni sono specifici per la classe scelta e non possono essere usati per altre classi, ad eccezione dei gettoni Multiuso",
+	["bas_9"] = "Come si lanciano i sortilegi?",
+	["bas_10"] = "Per lanciare i sortilegi devi prima sbloccare tutti gli incantesimi base. I sortilegi non vanno sbloccati, ma consumano Gettoni invece di Mana.",
+	["bas_11"] = "Per ottenere i gettoni necessari a sbloccare tutti gli incantesimi di una classe è necessario scalare la torre almeno 5 volte, però è possibile ottenerne altri extra vincendo le gare o acquistandoli dal negozio. Per accedere alla lista dei sortilegi, clicca l'icona a sinistra degli incantesimi o premi il tasto 'C'.",
+	["bas_12"] = "Alcuni sortilegi sono temporanei e non richiedono il salto per essere attivati, ma interromperne l'effetto non restituisce i gettoni spesi. Per maggiori dettagli, consulta le descrizioni nei santuari delle classi.",
+
+	["cla_1"] = "TORRE CLASSICA",
+	["cla_2"] = "Più classi disponibili!",
+	["cla_3"] = "In questa torre puoi anche trasformarti in Gremlin, Splicer, Archon, Reaver, Heretic o Muggle, una classe per professionisti che non ha incantesimi.",
+	["cla_4"] = "Queste classi richiedono più attenzioni per poter essere usate al meglio, inoltre puoi incontrare nuovi tipi di scale speciali.",
+	["cla_5"] = "Attenzione agli Architect!",
+	["cla_6"] = "Questa torre permette ai giocatori di usare Architect tramite gamepass o VR.",
+	["cla_7"] = "Gli Architect sono in grado di lanciare incantesimi di diverse classi senza limite di Mana, e possono anche volare tra le scale.",
+	["cla_8"] = "Incontrarne uno può essere un'arma a doppio taglio: se non sono disposti ad aiutarti, la difficoltà dell'ascesa può aumentare considerabilmente.",
+	["cla_9"] = "Sortilegi e Rig!",
+	["cla_10"] = "Nella torre Classica è possibile lanciare i sortilegi.",
+	["cla_11"] = "I sortilegi sono in grado di modificare l'intera torre o di alterare le scale con un effetto che cambia di classe in classe.",
 
 	["pro_1"] = "TORRE PROFESSIONALE",
-	["pro_2"] = "Vincolo dei piani pari",
+	["pro_2"] = "Vincolo dei piani pari...",
 	["pro_3"] = "Nella torre professionale, alcuni incantesimi non possono essere usati sui piani pari. Crea Trappola, Crea Portale, Emersione, Posiziona Scale a Chiocciola e altri possono essere lanciati solo sui piani dispari.",
 	["pro_4"] = "Neanche i Drifter possono usare queste piattaforme. Sono facilmente riconoscibili grazie al cerchio rosso al centro.",
 	["pro_5"] = "Scale maledette",
@@ -1218,7 +1226,7 @@ module.static = {
 	["pro_9"] = "Malefici",
 	["pro_10"] = "Come se non fosse abbastanza, i Droni possono anche creare malefici. Le intersecazioni normali hanno il 20% di diventare maledette e le frecce guida nelle vicinanze diventeranno rosse con una croce al centro.",
 	["pro_11"] = "I malefici inibiscono tutti gli incantesimi che vengono lanciati sulle frecce, pertanto quelli che portano alla generazione di scale o che teletrasportano l'utente su altre piattaforme (verso la direzione della freccia) non possono essere lanciati.",
-	["pro_12"] = "Solo Heretic, Keeper e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annientamento, tuttavia la Rigenerazione ne creerà di nuovi.",
+	["pro_12"] = "Solo Heretic, Keeper, Architect e i Droni possono rimuovere tali malefici. Seguendo lo stesso esempio delle scale maledette, anche i malefici vengono rimossi in seguito all'Evento Annientamento, tuttavia la Rigenerazione ne creerà di nuovi.",
 
 	["inf_1"] = "TORRE SENZA FINE",
 	["inf_2"] = "CORSA OBBLIGATORIA",
@@ -1340,6 +1348,8 @@ module.static = {
 	["studio_3"] = "PRO:\nPossibilità di volare\nNon richiede Mana\nCONTRO:\nCosta Robux\nNon possiede ranghi",
 	["studio_4"] = "'Questa torre adesso mi appartiene'\ncitazione dal nostro fondatore",
 
+	["studio_basic"] = "Architect non è disponibile nella Torre per Principianti.",
+
 	--SHARED
 	["leader_pro"] = "La torre professionale conferisce 2 Ascese per completamento",
 	["leader_update"] = "Aggiornamento in: ",
@@ -1420,29 +1430,32 @@ module.static = {
 --TUTORIAL
 module.tutorial = {
 	["tut_big_1"] = "Benvenuto in ScaleMania!",
-	["tut_big_2"] = "Prima di tutto, colleziona quel cristallo di Mana.",
-	["tut_big_3"] = "Seleziona l'incantesimo Genera Scale.",
-	["tut_big_4"] = "Tutti gli incantesimi si lanciano saltando.",
-	["tut_big_5"] = "Notevole, vero? Adesso colleziona quest'altro cristallo di Mana:",
-	["tut_big_6"] = "Ora, seleziona l'incantesimo Ribalta Scale per proseguire.",
-	["tut_big_7"] = "Alcuni incantesimi vengono eseguiti saltando sopra le scale.",
-	["tut_big_8"] = "Ci stai prendendo la mano. Raccogli questo cristallo di Mana:",
-	["tut_big_9"] = "Ben fatto, ora seleziona l'incantesimo Muovi Scale per continuare.",
-	["tut_big_10"] = "Salta sulla freccia che indica in avanti per spostare la scala.",
-	["tut_big_11"] = "Troverai molte scale che ostacoleranno il tuo passaggio.",
-	["tut_big_12"] = "Stai andando bene! Seleziona l'incantesimo Demolisci Scale in Alto per procedere.",
-	["tut_big_13"] = "Alcuni incantesimi interagiscono con le scale situate in alto, prova con questo.",
-	["tut_big_14"] = "Assumi questo cristallo di Mana:",
-	["tut_big_15"] = "Seleziona l'incantesimo Passaggio per teletrasportati di piattaforma.",
-	["tut_big_16"] = "Salta sulla freccia per eseguire l'incantesimo!",
-	["tut_big_17"] = "Alcune scale potrebbero non essere ospitali ed impedirti di proseguire il passaggio.",
-	["tut_big_18"] = "Seleziona questo incantesimo per sistemarle.",
-	["tut_big_19"] = "Questo incantesimo può essere lanciato sia sulle scale che sulle frecce.",
-	["tut_big_20"] = "Il tuo obiettivo? Raggiungi la cima della torre e tocca la Sfera Finale in movimento. Alla prossima!",
+	["tut_big_2"] = "Prima di tutto, impara a cambiare classe trasformandoti in Patron.",
+	["tut_big_3"] = "La classe Patron è in grado di generare scale, tuttavia ha bisogno di mana per far ciò. Ecco del mana per iniziare.",
+	["tut_big_4"] = "Seleziona l'incantesimo Genera Scale.",
+	["tut_big_5"] = "Tutti gli incantesimi si lanciano saltando.",
+	["tut_big_6"] = "Non c'è modo di proseguire? Trasformati in Joker per ribaltare la situazione.",
+	["tut_big_7"] = "Questa volta colleziona tu il cristallo di Mana.",
+	["tut_big_8"] = "Questo incantesimo ti permette di ribaltare le scale.",
+	["tut_big_9"] = "Alcuni incantesimi vengono eseguiti saltando sopra le scale.",
+	["tut_big_10"] = "Ci stai prendendo la mano. Trasformati in Keeper per poter muovere le scale.",
+	["tut_big_11"] = "Colleziona quest'altro cristallo di Mana.",
+	["tut_big_12"] = "Con questo incantesimo potrai spostare le scale.",
+	["tut_big_13"] = "Salta sulla freccia che indica in avanti per spostare la scala.",
+	["tut_big_14"] = "Non ti piacciono le scale? Diventa un Wicked per distruggerle.",
+	["tut_big_15"] = "Troverai molte scale che ostacoleranno il tuo passaggio.",
+	["tut_big_16"] = "Seleziona l'incantesimo Demolisci Scale in Alto per procedere.",
+	["tut_big_17"] = "Alcuni incantesimi interagiscono con le scale situate in alto.",
+	["tut_big_18"] = "E' ora di darci una mossa! Trasformati in Hacker per poterti teletrasportare.",
+	["tut_big_19"] = "Colleziona l'ultimo cristallo di Mana.",
+	["tut_big_20"] = "Seleziona l'incantesimo Passaggio per teletrasportati di piattaforma.",
+	["tut_big_21"] = "Salta sulla freccia per eseguire l'incantesimo!",
+	["tut_big_22"] = "Questa è una sfera simile a quella che si trova in cima alla torre. Raggiungila per completare la tua ascesa. Alla prossima!",
 
 	["tut_select"] = "Seleziona questo incantesimo:",
 
 	["tut_small_init"] = "Esegui un salto per iniziare il tutorial",
+	["tut_small_morph"] = "Salta per strasformarti",
 	["tut_small_collect"] = "Colleziona Mana",
 	["tut_small_arrow"] = "Salta sulla freccia",
 	["tut_small_stairs"] = "Salta sulle scale",
@@ -1457,6 +1470,7 @@ module.where = {
 	["dynamic"] = "Può modificare sia la scala colpita che quella sovrastante.",
 	["both"] = "Può essere eseguito sia dalle frecce presenti sulle piattaforme che dalle scale",
 	["both2"] = "Può essere eseguito sia su piattaforme che su scale.",
+	["both3"] = "Può essere eseguito sia su piattaforme che su scale a ranghi avanzati.",
 	["anywhere"] = "Può essere lanciato ovunque.",
 	["nowhere"] = "Questo incantesimo si attiva al momento della selezione.",
 }
@@ -1465,6 +1479,7 @@ module.guide = {
 	--arrows
 	["arrow"] = {
 		["through"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale intangibili.",
+		["link"] = "Puo essere lanciato nelle intersecazioni libere o attraverso scale intangibili. Sblocca il rango Creator per poterlo lanciare attraverso qualsiasi scala non maledetta.",
 		["superforced"] = "Può essere lanciato in qualsiasi intersecazione. Sblocca il rango BANISHED per poter demolire le scale maledette.",
 		["superforcednecro"] = "Può essere lanciato nelle intersecazioni libere e senza malefici. Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
 		["flicker"] = "Può essere lanciato solo nelle intersecazioni libere (e maledette con il rango INFIDEL sbloccato).",
@@ -1473,6 +1488,7 @@ module.guide = {
 		["forced"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette.",
 		["halfsoft"] = "Può essere lanciato nelle intersecazioni libere o attraverso scale opposte non maledette (con ranghi specifici sbloccati).",
 		["soft"] = "Può essere lanciato solo nelle intersecazioni libere.",
+		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. I Thief di rango più alto possono usare l'incantesimo su scale normali o alterate da rig.",
 		["hack"] = "Può essere lanciato solo attraverso scale opposte non maledette.",
 		["sidepass"] = "Può essere lanciato nelle intersecazioni senza malefici e senza scorciatoie.",
 	},
@@ -1507,6 +1523,7 @@ module.guide = {
 		["oneway"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["revolve"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 		["normalrig"] = "Può essere lanciato solo su scale normali o alterate da rig.",
+		["corkscrew"] = "Può essere lanciato solo su scale normali o alterate da rig.",
 	},
 
 	["above"] = {
@@ -1550,6 +1567,10 @@ module.guide = {
 		['delsplits'] = "Può essere lanciato su scale con portali dimensionali. Sblocca il rango Disciple per poter rimuovere i portali dimensionali sulle piattaforme.",
 		["archgremlin"] = "Rotea Piattaforma/Scale Girevoli",
 		["archdrifter"] = "Elevazione/Dirottamento Casuale",
+	},
+
+	['both3'] = {
+		["soft2"] = "Può essere lanciato solo nelle intersecazioni libere. Aumenta il tuo rango per poter usare l'incantesimo su scale normali o alterate da rig."
 	},
 
 	['anywhere'] = {
@@ -1643,9 +1664,6 @@ module.serverfeedback = {
 	["noghost"] = "Questo incantesimo può essere lanciato solo su scale normali, alterate da rig o spettralizzate.",
 	["wrongplace"] = "L'altra scala si deve trovare all'interno dell'area di gioco.",
 	["archrace"] = "Che gara sarebbe con un Architect come partecipante?!",
-	-- ["noobrace"] = "You cannot race in the tutorial!",
-	["noobrace"] = "Concludi il Tutorial per poter unirti alla gara!",
-	-- ["toolate"] = "A race is already in progress, try again later.",
 	["toolate"] = "Una gara è attualmente in corso, ritenta più tardi.",
 	["blockedplit"] = "L'intersecazione è maledetta.",
 	["cursedtarget"] = "Le scale sono maledette.",
@@ -1681,6 +1699,9 @@ module.serverfeedback = {
 	["transformer"] = "Sblocca il rango TRANSFORMER per poter ricombinare le scale già combinate.",
 	["strider"] = "Sblocca il rango STRIDER per poter potenziare gli ascensori due volte.",
 	["lich"] = "Sblocca il rango LICH per poter demolire le scale maledette che bloccano il passaggio.",
+	["creator"] = "Sblocca il rango CREATOR per poter generare collegamenti attraverso scale non maledette.",
+	["protector"] = "Sblocca il rango PROTECTOR per poter ricostruire qualsiasi scala non maledetta.",
+	["robber"] = "Sblocca il rango ROBBER per poter lanciare questo incantesimo sulle scale.",
 
 	--rig activation
 	["keeperrig"] = "Le scale si stanno muovendo!",
@@ -1741,26 +1762,21 @@ module.serverfeedback = {
 	["chamreflected"] = "Devi liberarti dell'Estraneamento prima.",
 	["morphpossessed"] = "Devi liberarti della Possessione prima.",
 	["morphhypnotised"] = "Devi liberarti dell'Ipnosi prima.",
-	-- ["morphreflected"] = "You can't change alignment while reflected.",
 	["morphreflected"] = "Devi liberarti dall'Estraniamento prima.",
+	["bannedclass"] = "%s non è disponibile nella Torre per Principianti.",
 
 	--code
 	["nocode"] = "Inserisci un codice.",
 	["invalid"] = "Codice invalido.",
 	["old"] = "Questo codice non è più attivo.",
+	["basic_arch"] = "Non puoi riscattare la demo gratuita di Architect nella Torre per Principianti.",
 	["accepted"] = "Codice accettato.",
 	["used"] = "Questo codice è già stato usato.",
 	["tooshort"] = "Messaggio troppo corto.",
 	["sent"] = "Messaggio inviato, grazie!",
 
-	-- ['noobteleport'] = "You cannot switch towers in the tutorial!",
-	-- ['noobmorph'] = "Complete the tutorial to be able to morph!",
-	-- ['noobnocode'] = "Complete the tutorial to be able to use codes!",
-	-- ['noobchameleon'] = "Complete the tutorial to be able to use Chameleon!",
-	['noobteleport'] = "Non puoi cambiare torre nel Tutorial!",
-	['noobmorph'] = "Concludi il Tutorial per cambiare classe!",
-	['noobnocode'] = "Concludi il Tutorial per poter usare i codici!",
-	['noobchameleon'] = "Concludi il Tutorial per poter usufruire del Pass Chameleon!",
+	["noobteleport"] = "Concludi il Tutorial per poter cambiare torre!",
+	["noobchameleon"] = "Concludi il Tutorial per poterti trasformare in Chameleon!",
 
 	-- --GIFTING
 	-- ['notingame'] = "Player has left the game, you cannot give the game pass!",
@@ -1869,6 +1885,8 @@ module.localfeedback = {
 	["unlocked"] = "Incantesimo sbloccato!",
 	["maxmana"] = "Contenitore Mana pieno!",
 	["nopurchase"] = "Non puoi acquistare Mana nel tutorial!",
+	["notinbasic"] = "I sortilegi evento non possono essere lanciati nella Torre per Principianti.",
+	--this is for chamelon clicking on the basic tower banned class
 	["limitset"] = "Per acquistare Mana, disabilita il limite che hai imposto.", --for refill mana
 	["hasarchitect"] = "Possiedi già il pass Architect!",
 	["hascham"] = "Possiedi già il pass Chameleon!",
@@ -1898,7 +1916,7 @@ module.switchon = {
 	["DRIFTER1"] = "Immunità ai rig di Drifter attivata.",
 	["SPLICER1"] = "Immunità ai rig di Splicer attivata.",
 	-- ["REAVER1"] = "Immunità ai rig di Reaver attivata.", -- Rimosso
-	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
+	-- ["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze saranno bloccate.",
 	["NONE"] = "Immunità globale attivata.",
 }
 
@@ -1913,7 +1931,7 @@ module.switchoff = {
 	["DRIFTER1"] = "Immunità ai rig di Drifter disattivata.",
 	["SPLICER1"] = "Immunità ai rig di Splicer disattivata.",
 	-- ["REAVER1"] = "Immunità ai rig di Reaver disattivata.", -- Rimosso
-	["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
+	-- ["GREMLIN1"] = "Le scale attorcigliate nelle vicinanze torneranno a funzionare normalmente.",
 	["NONE"] = "Immunità globale disattivata.",
 }
 
