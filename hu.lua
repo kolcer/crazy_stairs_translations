@@ -1390,6 +1390,8 @@ module.static = {
 	["studio_3"] = "ELŐNYÖK:\nTud repülni\nNem használ Manát\nHÁTRÁNYOK:\nFizetős\nNem nyerhet",
 	["studio_4"] = "„Most viszont én uralom a lépcsőházat!”\nalapítónk idézete",
 
+	["not_available"] = "NEM ELÉRHETŐ A KEZDŐ TORONYBAN",
+
 	--SHARED
 	["leader_pro"] = "Profi Torony 2 mászást ad",
 	["leader_update"] = "Következő Frissítés:",	
