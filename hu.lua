@@ -27,6 +27,7 @@ module.gui.switcher = {
 	["pro"] = "Profi Torony",
 	["custom"] = "Egyedi Torony",
 	["basic"] = "Kezdő Torony",
+	["infinite"] = "Végtelen Torony",
 
 }
 
