@@ -30,6 +30,7 @@ module.gui.switcher = {
 	["pro"] = "Pro Tower",
 	["custom"] = "Custom Tower",
 	["basic"] = "Basic Tower",
+	["infinite"] = "Infinite Tower",
 	--END NEW
 
 }
