@@ -30,6 +30,7 @@ module.gui.switcher = {
 	["pro"] = "Про Башня",
 	["custom"] = "Своя Башня",
 	["basic"] = "Лёгкая Башня",
+	["infinite"] = "Бесконечная Башня",
 	--END NEW
 
 }
