@@ -746,7 +746,7 @@ module.spells.descriptions = {
 	--"This spell creates an energy bridge between platforms for 60 seconds. Links are intangible from below. Rank up to the CREATOR rank to cast Link in any direction.
 	["link"] = "依個咒語會在兩個平台之間建立一條能量橋, 維持60秒. 能量橋可以由下面行去上去. 等級上升到 CREATOR 去可以喺任何方向用能量橋.",
 	--This spell creates portal that will teleport all players one platform up. Portal lasts 60 seconds. Rank up to PROTECTOR to extend the time to 120 seconds.
-	["portal"] = "依個咒語會建立一個傳送門. 傳送門會傳送所有玩家上一層, 維持60秒. 等級上升到 PROTECTOR 去增加時限到去120秒.",
+	["portal"] = "依個咒語會建立一個傳送門. 傳送門會傳送所有玩家上一層, 維持60秒.",
 
 	--It allows you to create as many stairs as you like for one minute. Keep jumping on the arrows to create stairs.
 	["summoner"] = timed ..  "佢會比你一分鐘隨你鍾意建立樓梯. 不斷跳喺箭嘴上面去建立樓梯." .. string.format(timedExtra,RankData.PATRON[7].name,RankData.PATRON[3].name,"Patrons"),
@@ -919,7 +919,7 @@ module.spells.descriptions = {
 	["thiefevent"] = event .. "平地樓梯咒語" .. event2,
 	--Mega Bypass
 	-- This is an Event spell. It will create bypasses in every intersection at the edge of the staircase. If the intersection is cursed, bypass will not be created.
-	["thiefaltevent"] = "依個係突發事件咒語. 佢會喺所有交叉點側邊嘅平台嘅角落頭到建立繞道. 如果個交叉點係被詛咒, 繞道唔會被建立.",
+	["thiefaltevent"] = "依個係突發事件咒語. 佢會喺所有樓梯塔外面嘅平台之間嘅交叉點到建立繞道. 如果個交叉點係被詛咒, 繞道唔會被建立.",
 	["thiefmode"] = string.format(mode,"Thief","Thief Rig","偷走樓梯咒語或放走樓梯咒語"),
 	["thiefrefill"] = overload,
 	["thiefunion"] = union,
@@ -2390,8 +2390,12 @@ module.static = {
 	--'Now I rule this staircase!'\nour founder's quote"
 	["studio_4"] = "'我依家係統治呢條樓梯塔果個人!'\n我哋嘅創辦人嘅金句",
 
-	--Architect is not avialable in the Basic Tower.
-	["studio_basic"] = "Architect 唔可以喺初級塔到用",
+	-- --Architect is not avialable in the Basic Tower.
+	-- ["studio_basic"] = "Architect 唔可以喺初級塔到用",
+
+	--"NOT AVAILABLE IN THE BASIC TOWER"
+	["not_available"] = "唔可以喺初級塔到用",
+
 	--END NEW
 
 	--SHARED
