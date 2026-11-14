@@ -1438,7 +1438,7 @@ module.static = {
 	["studio_3"] = "PROS:\nAbility to Fly\nDoes not use Mana\nCONS:\nCost Robux\nCannot acquire climbs",
 	["studio_4"] = "'Now I rule this staircase!'\nour founder's quote",
 	
-	["studio_basic"] = "Architect is not avialable in the Basic Tower.",
+	["not_available"] = "NOT AVAILABLE IN THE BASIC TOWER",
 	--END NEW
 
 	--SHARED
