@@ -1348,7 +1348,7 @@ module.static = {
 	["studio_3"] = "PRO:\nPossibilità di volare\nNon richiede Mana\nCONTRO:\nCosta Robux\nNon possiede ranghi",
 	["studio_4"] = "'Questa torre adesso mi appartiene'\ncitazione dal nostro fondatore",
 
-	["studio_basic"] = "Architect non è disponibile nella Torre per Principianti.",
+	["not_available"] = "ESCLUSO DALLA TORRE PER PRINCIPIANTI",
 
 	--SHARED
 	["leader_pro"] = "La torre professionale conferisce 2 Ascese per completamento",
