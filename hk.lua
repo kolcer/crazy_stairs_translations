@@ -52,6 +52,9 @@ module.gui.switcher = {
 
 	--Basic Tower
 	["basic"] = "初級塔",
+
+	--Infinite Tower
+	["infinite"] = "無限塔",
 	--END NEW
 
 }
