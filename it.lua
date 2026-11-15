@@ -19,12 +19,14 @@ module.gui.switcher = {
 	["friends"] = "AMICI COLLEGATI",
 	["refresh"] = "sto aggiornando la lista...",
 	["fail"] = "IMPOSSIBILE AGGIORNARE LA LISTA!",
+
 	["refreshbutton"] = "AGGIORNA",
 	["failed"] = "Teletrasporto fallito!",
 	["classic"] = "Torre Classica",
 	["pro"] = "Torre Professionale",
 	["custom"] = "Torre Personalizzabile",
-	["noVR"] = "Torre per Principianti",
+	["basic"] = "Torre per Principianti",
+	["infinite"] = "Torre Senza Fine",
 }
 
 module.gui.serversettings = {
