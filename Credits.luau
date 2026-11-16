@@ -47,6 +47,10 @@ local Credits = {
 		bottom = "tlg723",
 	},
 	{
+		top = "ESPAÑOL",
+		bottom = "That1Dummy",
+	},
+	{
 		ttop = "testers",
 		bottom = "",
 	},
