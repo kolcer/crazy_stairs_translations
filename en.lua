@@ -1025,10 +1025,6 @@ module.gui.gameover.results = {
 	["cTime"] = "%s RECORD", --%s will be replaced by the used class
 	["levels"] = "LEVELS REACHED",
 	["cClimbs"]	= "%s CLIMBS", --%s will be replaced by the used class
-	["tClimbs"] = "TOTAL CLIMBS",
-	["tTokens"] = "%s TOKENS",	--%s will be replaced by the used class	(or multi)
-	["spells"] = "SPELLS USED",	--amount
-	["rRank"] = "RACE PLACEMENT",--if any
 	--END NEW
 
 }
