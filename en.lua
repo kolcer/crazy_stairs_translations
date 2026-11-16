@@ -1616,6 +1616,7 @@ module.guide = {
 		["onedirection"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
 		["straight"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
 		["rotate"] = "Can be executed on normal or rigged stairs. Rank up to Controller to move any un-cursed stairs.",
+		["rebuild"] = "Can be executed on normal or rigged stairs. Rank up to Protector to rebuild any un-cursed stairs."
 		["flip"]= "Can be executed on normal, flipped or rigged stairs.",
 		["gate"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates.",
 		["gatestr"] = "Can be executed on normal or rigged stairs. Rank up to Prodigy to override gates",
