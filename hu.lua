@@ -1562,6 +1562,7 @@ module.guide = {
 		["onedirection"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["straight"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["rotate"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
+		["rebuild"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["flip"]= "Végre lehet hajtani normális, riges vagy megfordított lépcsőkön.",
 		["gate"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
 		["gatestr"] = "Végre lehet hajtani normális vagy riges lépcsőkön.",
