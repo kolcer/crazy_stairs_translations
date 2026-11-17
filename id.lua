@@ -278,10 +278,10 @@ module.gui.menu = {
 --end screen tutorial
 module.gui.tutorial = {
 
-	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
-	["collect"] = "COLLECT THE ORB TO CONTINUE",
-	["difficulty"] = "Difficulty:",
+	["complete"] = "PENDAKIAN DISELESAIKAN!",
+	["choose"] = "Mohon memilih kelas pertama kamu dulu! (lompat pada pad morph)",
+	["collect"] = "SENTUHLAH SFER UNTUK MELANJUTKAN",
+	["difficulty"] = "Kesulitan:",
 
 }
 
@@ -309,8 +309,8 @@ module.spells.names = {
 	["portal"] = "Ciptakan Portal",
 
 	["summoner"] = "Pembangun",
-	["patronevent"] = "Stairs Overload",
-	["patronaltevent"] = "Shrinkage",
+	["patronevent"] = "Berkati Semenara",
+	["patronaltevent"] = "<i>Drink Me Potion</i> Tumpah",
 
 	--JOKER 
 	["flip"] = "Balik Tangga",
@@ -321,8 +321,8 @@ module.spells.names = {
 	["trap"] = "Platform Jebak",
 
 	["flipper"] = "Pembalik",
-	["jokerevent"] = "The Cloak",
-	["jokeraltevent"] = "Flip Them All",
+	["jokerevent"] = "Kesalahan Ajaib",
+	["jokeraltevent"] = "Balik Semua Tangga",
 
 	--WICKED
 	["destroy"] = "Hancurkan Tangga",
@@ -333,8 +333,8 @@ module.spells.names = {
 	["wall"] = "Ciptakan Barikade" ,
 
 	["bender"] = "Pembengkok",
-	["wickedevent"] = "Destruction",
-	["wickedaltevent"] = "Purge",
+	["wickedevent"] = "Hancurkan Hampirlah Semua Tangga",
+	["wickedaltevent"] = "Habiskan Semenara",
 
 	--KEEPER
 	["move"] = "Pindahkan Tangga",
@@ -344,9 +344,9 @@ module.spells.names = {
 	["moverandom"] = "Pindahkan Tangga di Atas secara Acak",
 	["rig"] = "Pindahkan Tangga secara Acak",
 
-	["ascension"] = "Ascension",
-	["keeperevent"] = "Reshuffle",
-	["keeperaltevent"] = "Restoration",
+	["ascension"] = "Penaik",
+	["keeperevent"] = "Perombakan",
+	["keeperaltevent"] = "Pemulihan",
 
 	--SPECTRE
 	["phantom"] = "Ciptakan Tangga Berhantu",
@@ -357,8 +357,8 @@ module.spells.names = {
 	["vertical"] = "Teleportasi secara Vertikal",
 
 	["traveller"] = "Peteleportasi",
-	["spectreevent"] = "Phantom Shuffle",
-	["spectrealtevent"] = "Æther Realm",
+	["spectreevent"] = "Imajinasi Menara",
+	["spectrealtevent"] = "Alam Æther",
 
 	--HACKER
 	["dash"] = "Flyhack",
@@ -366,7 +366,7 @@ module.spells.names = {
 	["swap"] = "Teleportasi ke Hantumu",
 	["slide"] = "Eskalator",
 	["slideup"] = "Hack In Stairs",
-	["glitch"] = "Glitch Stairs",
+	["glitch"] = "Glitch Tangga",
 
 	["hack"] = "Mekanik Eskalator",
 	["hackerevent"] = "Escalation",
@@ -981,8 +981,8 @@ module.gui.settings = {
 
 	--NEW
 
-	["Gameplay"] = "GAMEPLAY SETTINGS",
-	["Interface"] = "INTERFACE SETTINGS",
+	["Gameplay"] = "PENGATURAN PERMAINAN",
+	["Interface"] = "PENGATURAN ANTARMUKA",
 
 	["Billboard"] = "Show Your own avatar billboard",
 	["Rank"] = "Show Your Overall Rank in the avatar billboard",
@@ -1044,7 +1044,7 @@ module.gui.gameover.messages = {
 		"Those noobs need our help",
 		"There would be no hope without us Patrons",
 		"11 out of 10, on the scale of niceness",
-		"Sharing is caring",
+		"“Berbagi adalah peduli.”",
 		"You can never have too many stairs",
 		"There is no I in Team, but there is definitely a Patron",
 		"You cannot have a staircase without stairs",
@@ -1054,7 +1054,7 @@ module.gui.gameover.messages = {
 		"DECEIVE, CONFUSE and LAUGH",
 		"This staircase is a joke",
 		"Why so serious?",
-		"HA! HA! HA!",
+		"WAKAKA!",
 		"Relax and watch them fall",
 		"You mad bro?",
 		"You know the rules and so do I",
@@ -1131,7 +1131,7 @@ module.gui.gameover.messages = {
 		"EXPLOIT, GLITCH and BREAK",
 		"Fair play? There's no such thing",
 		"Wait! This staircase is not real... Are we living in a simulated Roblox experience?",
-		"01000011 01010010 01000001 01011010 01011001 00100000 01010011 01010100 01000001 01001001 01010010 01010011",
+		"01010100 01000001 01001110 01000111 01000111 01000001 00100000 01000111 01001001 01001100 01000001",
 		"Have you seen any rules posted anywhere here?",
 		"I'm cheating? Everybody here is",
 		"I mean few tweaks here and there - Hardly an exploit",
@@ -1259,24 +1259,24 @@ module.gui.gameover.maxrank ={
 
 module.gui.gameover.credits = {
 
-	["crazy"] = "CRAZY",
-	["stairs"] = "STAIRS",
-	["game"] = "A game by:",
+	["crazy"] = "TANGGA",
+	["stairs"] = "GILA",
+	["game"] = "Sebuah permainan dibuat oleh:",
 	["models"] = "Models by:",
 	["icons"] = "Spell Icons by:",
 	["boxes"] = "Skyboxes by:",
 	["data"] = "Datastore module by:",
 	["translators"] = "TRANSLATORS:",
-	["testers"] = "TESTERS:",
+	["testers"] = "PENGUJI:",
 	["thanks"] = "SPECIAL THANKS:",
-	["music"] = "MUSIC:",
+	["music"] = "MUSIK:",
 
 
-	["climb"] = "Climb music",
-	["endgame"] = "Endgame music",
-	["ghost"] = "Ghost Union music",
+	["climb"] = "Musik pendakian",
+	["endgame"] = "Musik akhir permainan",
+	["ghost"] = "Musik Fusi Hantu",
 	["disco"] = "Disco Stairs music",
-	["elevator"] = "Elevator music", --drifter platforms
+	["elevator"] = "Musik lift", --drifter platforms
 	["crazies"] = "Crazy Stairs music", --gremlin crazy stairs music
 	["finish"] = "Thanks for playing!",
 
