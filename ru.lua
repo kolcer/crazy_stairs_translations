@@ -1025,10 +1025,6 @@ module.gui.gameover.results = {
 	["cTime"] = "РЕКОРД ЗА %s'А", --%s will be replaced by the used class
 	["levels"] = "ПРОЙДЕНО УРОВНЕЙ",
 	["cClimbs"]	= "ПОДЪЁМОВ ЗА %s'А", --%s will be replaced by the used class
-	["tClimbs"] = "ВСЕГО ПОДЪЁМОВ",
-	["tTokens"] = "%s-ТОКЕНЫ",	--%s will be replaced by the used class	(or multi)
-	["spells"] = "ЗАКЛИНАНИЙ ИСПОЛЬЗОВАНО",	--amount
-	["rRank"] = "МЕСТО В ГОНКЕ",--if any
 	--END NEW
 
 }
