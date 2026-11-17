@@ -270,19 +270,6 @@ module.gui.menu = {
 
 }
 
---NEW
---end screen tutorial
-module.gui.tutorial = {
-
-	["complete"] = "CLIMB COMPLETED!",
-	["choose"] = "Please choose your first alignment! (jump on a morph pad)",
-	["collect"] = "COLLECT THE ORB TO CONTINUE",
-	["difficulty"] = "Difficulty:",
-
-}
-
---END NEW
-
 module.spells = {}
 
 --SPELL NAMES
@@ -1880,9 +1867,6 @@ module.serverfeedback = {
 	["chamhypnotised"] = "You can't use chameleon while hypnotised.",
 	["chamreflected"] = "You can't use chameleon while reflected.",
 	--["chamspell"] = "Please execute or cancel current spell first.", --removed
-	["morphpossessed"] = "You can't change alignment while possessed.",
-	["morphhypnotised"] = "You can't change alignment while hypnotised.",
-	["morphreflected"] = "You can't change alignment while reflected.",
 	["bannedclass"] = "%s cannot be used in the Basic Tower.",
 
 	["nocode"] = "Please enter the code first.",
