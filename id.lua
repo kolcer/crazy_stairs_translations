@@ -23,17 +23,17 @@ module.gui.basic = {
 
 module.gui.switcher = {
 
-	["join"] = "JOIN",
-	["friends"] = "FRIENDS ONLINE",
-	["refresh"] = "refreshing...",
-	["fail"] = "FAILED TO REFRESH!",
+	["join"] = "MASUK",
+	["friends"] = "TEMAN DARING",
+	["refresh"] = "memperbarui...",
+	["fail"] = "GAGAL MEMPERBARUI!",
 
 	--NEW
-	["refreshbutton"] = "REFRESH",
-	["failed"] = "Teleport failed!",
+	["refreshbutton"] = "PERBARUI",
+	["failed"] = "Gagal masuk!",
 	["classic"] = "Menara Normal",
 	["pro"] = "Menara Ahli",
-	["custom"] = "Menara Kustom",
+	["custom"] = "Menara Personal",
 	["basic"] = "Menara Sederhana",
 	--END NEW
 
@@ -181,12 +181,12 @@ module.gui.questions = {
 	["raceconfirm"] = "Are you sure you want to join the race? You will be teleported to the bottom of the tower.",
 
 	--new
-	["gift"] = "Do you want to gift %s Game Pass to another player?",
-	["choose"] = "Choose a player to receive %s Game Pass", 
-	["confirm"] = "Do you want to gift %s Game Pass to %s?", --second %s is the chosen player
-	["received"] = "You have received %s Game Pass, courtesy of %s!",
+	["gift"] = "Apakah kamu mau menghadiahkan pas gim %s kepada seorang lain?",
+	["choose"] = "Pilih orang untuk menerima pas gim %s", 
+	["confirm"] = "Yakinkah kamu mau memberikan gim pas %s kepada %s?", --second %s is the chosen player
+	["received"] = "Kamu telah menerima pas gim %s, berkat %s!",
 	
-	["notenough"] = "You need to complete at least %d climbs to be able to teleport to other towers.",
+	["notenough"] = "Kamu memerlukan           need to complete at least %d climbs to be able to teleport to other towers.",
 
 	["architect"] = "Architect",
 	["mana"] = "+10 Mana Storage",
@@ -195,10 +195,10 @@ module.gui.questions = {
 
 	--end new
 	--new
-	["race"] = "Join race?",
-	["racein"] = "Race in:",
-	["go"] = "GO!",
-	["raceoff"] = "Race cancelled",
+	["race"] = "Maukah ikuti balap?",
+	["racein"] = "Balap mulai di:",
+	["go"] = "JALAN!",
+	["raceoff"] = "Balap dibatalkan",
 	--end new
 }
 --END NEW
@@ -263,7 +263,7 @@ module.gui.menu = {
 	["Language"] = "Terjemahan",
 	["Music"] = "Kotak Juke",
 	["RaceResults"] = "Hasil Balap Terakhir",
-	["ServerSettings"] = "Pengaturan Menara (Menara Kustom)",
+	["ServerSettings"] = "Pengaturan Menara (Menara Personal)",
 	["Settings"] = "Pengaturan Permainan",
 	["Shop"] = "Toko Tangga Gila",
 	["Spectate"] = "Tontonan",
@@ -677,7 +677,7 @@ module.spells.descriptions = {
 	["hereticunion"] =  union,
 
 	--SPLICER
-	["twistside"] = "This spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
+	["twistside"] = "Mantra ini untuk      spell will twist stairs in right or left direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistrotate"] = "This spell will twist stairs in the rotated horizontal direction, connecting them to the neighbouring staircase. If there are no stairs in the chosen destination, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["twistup"] = "This spell will twist stairs in the upward direction, connecting them to the above staircase. If there are no stairs above, they will be created. Rank up to TRANSFORMER to use this spell on already twisted stairs.",
 	["canceltwist"] = "This spell will restore any twisted stairs. Rank up to COMBINER to cast this spell from platform on disconnected twisted stairs. Rank up to MIXER to cast this spell for free. Rank up to OPTIMUS to gain 1 Mana every time You restore twisted stairs.",
@@ -964,16 +964,16 @@ module.gui.ranks = {
 
 module.gui.multitokens = {
 
-	["info"] = "You need 3 tokens to unlock a spell.",
+	["info"] = "Kamu butuh 3 token untuk membuka sebuah mantra.",
 
 }
 
 module.gui.feedback = {
 
-	["title"] = "SEND FEEDBACK",
-	["prompt"] = "Click here to send a message to the developers! (minimum of 20 characters. We know who you are so please - no spam.)",
-	["send"] = "SEND",
-	["locked"] = "LOCKED",
+	["title"] = "UMPAN BALIK",
+	["prompt"] = "Ketik di sini untuk mengirim pesan ke developer! (minimum 20 karakter)",
+	["send"] = "KIRIM",
+	["locked"] = "DIKUNCI",
 
 }
 
@@ -1023,7 +1023,7 @@ module.gui.gameover.results = {
 	["classic"] = "REKOR MENARA NORMAL",	
 	["pro"] = "REKOR MENARA AHLI",	
 	["infinite"] = "REKOR MENARA INFINIT",
-	["custom"] = "REKOR MENARA KUSTOM", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
+	["custom"] = "REKOR MENARA PERSONAL", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
 	["basic"] = "REKOR MENARA SEDERHANA",
 
 	["cTime"] = "REKOR %s", --%s will be replaced by the used class
@@ -1285,7 +1285,7 @@ module.gui.gameover.credits = {
 module.static = {
 
 	["bas_1"] = "MENARA SEDERHANA",
-	["bas_2"] = "How do I play?",
+	["bas_2"] = "Gimana cara bermain?",
 	["bas_3"] = "The goal of the game is to reach the top and collect the floating Energy Orb. First choose your alignment (class) by jumping on the glowing pads in the middle of the map.",
 	["bas_4"] = "Once happy with the choice, collect floating shapes to refill Mana and climb the stairs. Use your class spell to help you with the climb.",
 	["bas_5"] = "How do I cast spells?",
@@ -1298,8 +1298,8 @@ module.static = {
 	["bas_12"] = "Some ultimate spells are timed, and do not require execution. Please read more info in the Alignment Guilds to learn more about an ultimate spell, before casting. Cancelling a timed spell will not refund tokens",
 
 	["cla_1"] = "MENARA NORMAL",
-	["cla_2"] = "More alignments!",
-	["cla_3"] = "In the Normal Tower, in addition to Basic Tower alignments, you may also play as Gremlin, Splicer, Archon, Reaver, Heretic or even as a Muggle with no spells.",
+	["cla_2"] = "Ada lebih banyak kelas!",
+	["cla_3"] = "Dalam Menara Normal the Normal Tower, in addition to Basic Tower alignments, you may also play as Gremlin, Splicer, Archon, Reaver, Heretic or even as a Muggle with no spells.",
 	["cla_4"] = "Those alignments are significantly harder to master than Basic Tower classes, and you may encounter more Crazy Stairs in this tower.",
 	["cla_5"] = "Be aware of the Architects!",
 	["cla_6"] = "Unlike Basic Tower, Normal Tower includes both VR and game pass Architects.",
@@ -1310,14 +1310,14 @@ module.static = {
 	["cla_11"] = "Unlike Basic Tower, all your Ultimate spells are unlocked. You may cast Events that affect the whole staicase, or Rigs that will enchant all stairs with your chosen alignment spell.",
 	
 	["pro_1"] = "MENARA AHLI",
-	["pro_2"] = "Even levels restrictions...",
-	["pro_3"] = "In the Pro Tower some platform spells cannot be cast on the even levels. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
-	["pro_4"] = "Drifters cannot drift those platforms neither.Affected platforms are marked with the red circle in the middle.",
-	["pro_5"] = "Cursed Stairs",
-	["pro_6"] = "In the Pro Tower Drones will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
+	["pro_2"] = "Tingkat genap dibataskan...",
+	["pro_3"] = "Dalam Menara Ahli, beberapa mantra platform tidak dapat dikenakan pada tingkat genap. Trap, Create Portal, Vertical Teleport, Spiral Staicase and Random Teleport can only be executed on odd levels.",
+	["pro_4"] = "Drifter tidak dapat melayangkan platformnya.        cannot drift those platforms neither. Platform terpengaruh adalah         Affected platforms are marked with the red circle in the middle.",
+	["pro_5"] = "Tangga Terkutuk",
+	["pro_6"] = "Dalam Menara Ahli,            will randomly create Cursed Stairs or turn normal stairs into Cursed ones. There is 20% chance of Cursed Stairs apperance. Guide arrows will not show near Cursed Stairs.",
 	["pro_7"] = "Cursed Stairs are immune to most spells. You cannot teleport through them nor use Hacker Blink spell. Furthermore, all spells that would cause Cursed Stairs destruction will not work (like Keeper's Move).",
 	["pro_8"] = "Only Heretics and Admirals can restore Cursed Stairs. Purge Event and Restoration will get rid of all cursed stairs too. However Drones will always create new ones in Pro Tower.",
-	["pro_9"] = "Cursed Intersections",
+	["pro_9"] = "Simpang Terkunci",
 	["pro_10"] = "In the Pro Tower Drones will randomly create Cursed Intersections too. When Drone finds an empty Intersection, there is 20% chance of the Curse. Guide Arrows will turn to crosses to mark the intersection.",
 	["pro_11"] = "Cursed Intersections prevent all platform spells, that are executed on arrows. You cannot create stairs, links nor teleport through Cursed Intersection.",
 	["pro_12"] = "Only Heretics, Admirals, Architects and Drones can restore Cursed Intersections. As with Cursed Stairs, Wicked's Purge Event will remove all Curses, but during regeneration new ones will appear.",
@@ -1335,9 +1335,9 @@ module.static = {
 	["inf_11"] = "Much like Fallen Drone, eraser will speed up. It will however raise steadily, rather than removing 2 levels at the same time.",
 	["inf_12"] = "Stairs and platforms touched by eraser will vanish. Try to avoid the eraser for as long as you can to ensure victory.",
 
-	["cus_1"] = "MENARA KUSTOM",
+	["cus_1"] = "MENARA PERSONAL",
 	["cus_2"] = "KAMU YANG TENTUKAN!",
-	["cus_3"] = "In custom tower you can adjust any tower settings to your liking.",
+	["cus_3"] = "Dalam Menara Personal, kamu bisa mengatur pengaturan apa pun menjadi yang sesuka hatimu.",
 	["cus_4"] = "Rewards in Custom Tower are halved. You will get 1 token each 12 levels and qualifying climb each 30 levels.",
 	["cus_5"] = "Tower Settings",
 	["cus_6"] = "By changing the tower settings you can have it your way. Choose levels, restrict even levels or even set the tower to the infinite mode.",
@@ -1528,9 +1528,9 @@ module.static = {
 module.tutorial = {
 
 
-	["tut_big_1"] = "Welcome to Crazy Stairs!",
-	["tut_big_2"] = "First, learn how to morph. Jump on this pad to morph to Patron!",
-	["tut_big_3"] = "Patrons can create stairs, but you will need mana to cast spells. Here is some Mana for You.",
+	["tut_big_1"] = "Selamat datang di Tangga Gila!",
+	["tut_big_2"] = "Pertama-tama, belajar bagaimana berubah. Lompatlah pada pad ini untuk berubah menjadi Patron!",
+	["tut_big_3"] = "Patron dapat menciptakan tangga, tapi kamu akan membutuhkan mana untuk mengenakan mantra. Here is some Mana for You.",
 	["tut_big_4"] = "You can create stairs with this spell. Click on the corresponding button on the bottom of your screen.",
 	["tut_big_5"] = "All spells need to be executed by jumping.",
 	["tut_big_6"] = "Cool huh? Now morph to Joker. Jokers can flip stairs.",
@@ -1549,7 +1549,7 @@ module.tutorial = {
 	["tut_big_19"] = "Collect this Mana:",
 	["tut_big_20"] = "Use this spell to teleport across platforms.",
 	["tut_big_21"] = "Jump on arrow to teleport.",
-	["tut_big_22"] = "You need to get to this orb at the top of the staircase to win. Good luck!",
+	["tut_big_22"] = "You need to get to this orb at the top of the staircase to win. Selamat bermain!",
 
 	["tut_select"] = "Select this spell.",
 
@@ -1773,59 +1773,59 @@ module.serverfeedback = {
 	["noflip"] = "Only normal, flipped or rigged stairs can be flipped.",
 	["nothingtocopy"] = "No staircases are available to copy for you nor your ghost.",
 	["wrongdirection"] = "You cannot cast this spell in that direction.",
-	["notfound"] = "Stairs not found.",
+	["notfound"] = "Tangga tidak ditemukan.",
 	["nocursedblink"] = "You can't blink around cursed stairs.",
 	["nostairs"] = "There are no stairs here.",
-	["noground"] = "This spell cannot be cast on the ground level.",
-	["oddonly"] = "This spell cannot be cast on this level.",
-	["noabove"] = "No stairs found directly above.",
-	["lock"] = "You cannot cast spells now",
+	["noground"] = "Mantra ini tidak dapat dikenakan pada tingkat bawah.",
+	["oddonly"] = "Mantra ini tidak dapat dikenakan pada tingkat ini.",
+	["noabove"] = "Tidak ada tangga di atas, lihat ke atas kok?",
+	["lock"] = "Kamu tidak bisa mengenakan mantra sekarang.",
 	--["outdrift"] = "Outside drift can only be created on the outer platforms.", --removed
 	["cantgate"] = "This direction is blocked.",
-	["wall"] = "Wall is already here.",
-	["nocurse"] = "Only normal, cursed or rigged stairs can be cursed/uncursed.",
-	["nogate"] = "These stairs are not gated.",
+	["wall"] = "Barikade sudah ada di sini.",
+	["nocurse"] = "Hanya tangga normal, dimanipulasi ataupun terkutuk bisa dikutuk/dibebaskan.",
+	["nogate"] = "Tangga ini tidak berportal.",
 	--NEW
-	["noghost"] = "This spell only works on normal, rigged and ghosted stairs.",
+	["noghost"] = "Mantra ini hanya berfungsi pada tangga normal, dimanipulasi dan dihantui!",
 	["wrongplace"] = "Other stairs must be in the game area.",
-	["archrace"] = "Architects cannot race!",
+	["archrace"] = "Architect cannot race!",
 	["toolate"] = "A race is already in progress, try again later.",
 	["blockedplit"] = "Target intersection is cursed.",
 	--END NEW
-	["cursedtarget"] = "There are Cursed Stairs in that destination.",
+	["cursedtarget"] = "Waduh, ada tangga terkutuk lah di arahmu!",
 	["lockedother"] = "Cannot create stairs yet, other stairs are locked.",
 	["failedgate"] = "Split creation has failed.",
-	["notwist"] = "Those stairs are not twisted.",
-	["wrongmove"] = "Stairs cannot be moved out of game area.",
+	["notwist"] = "Tangga ini sih lurus.",
+	["wrongmove"] = "Tangga tidak dapat dipindah keluar dari area permainan.",
 	["blockedmove"] = "Can't move stairs, target intersection is cursed.",
 	["lockedmove"] = "Cannot move stairs yet, blocking stairs are locked.",
-	["normal"] = "These stairs are normal.",
+	["normal"] = "Gapapa, tangga ini normal kok!",
 	["lockedinter"] = "This intersection is locked.",
-	["toponly"] = "The 'Call the Orb' spell can only be cast on the top level.",
+	["toponly"] = "Mantra ini hanya dilaksanakan pada tingkat teratas lah!",
 	["duplicatemirror"] = "There is already a mirror on this level.",
-	["norestore"] = "Thief bypasses and spirals cannot be restored.",
+	["norestore"] = "Tangga spiral dan pintasan Thief tidak dapat dipulihkan… (haha ga kuat mantra pulih)",
 
 	--higher rank required
-	["admiral2"] = "Rank up to Admiral to uncurse Stairs.",
-	["admiral"] = "Rank up to Admiral to uncurse intersections.",
-	["infidel"] = "Rank up to Infidel to flicker on cursed intersection.",
-	["banished"] = "Rank up to Banished, to destroy crossing Cursed Stairs.",
-	["annihilator"] = "Rank up to Annihilator to destroy Cursed Stairs.",
-	["disciple"] = "Rank up to Disciple to destroy Platform Splits.",
+	["admiral2"] = "Naiklah ke peringkat Admiral untuk membebaskan tangga terkutuk",
+	["admiral"] = "Naiklah ke peringkat Admiral untuk membuka simpang terkunci.",
+	["infidel"] = "Naiklah ke peringkat Infidel untuk bersalto pada simpang terkunci.",
+	["banished"] = "Naiklah ke peringkat Banished untuk menghancurkan tangga terkutuk yang menyilang.",
+	["annihilator"] = "Naiklah ke peringkat Annihilator untuk menghancurkan tangga terkutuk.",
+	["disciple"] = "Naiklah ke peringkat Disciple untuk menutup portal platform.",
 	
 	--NEW
-	["nomad1"] = "Rank up to Nomad to spin any uncursed stairs.",
-	["nomad2"] = "Rank up to Nomad to drift already drifted stairs.",
+	["nomad1"] = "Naiklah ke peringkat Nomad untuk memutar tangga tak terkutuk apa pun.",
+	["nomad2"] = "Naiklah ke peringkat Nomad untuk melayangkan tangga sudah dilayangkan.",
 	--END NEW
-	["prodigy"] = "Rank up to Prodigy, to override Gates.",
-	["traveller"] = "Rank up to Traveller to boost Elevators.",
-	["controller"] = "Rank up to Controller, to move any uncursed stairs.",--*
-	["replica"] = "Rank up to Replica, to use this spell to unmerge.",--*
+	["prodigy"] = "Naiklah ke peringkat Prodigy untuk mengesampingkan portal sudah ada.",
+	["traveller"] = "Naiklah ke peringkat Traveller untuk mendorong lift.",
+	["controller"] = "Naiklah ke peringkat Controller untuk memindahkan tangga tak terkutuk apa pun.",--*
+	["replica"] = "Naiklah ke peringkat Replica untuk mengenakan mantra ini lagi untuk berpisah.",--*
 	--NEW
-	["skeleton"] = "Rank up to Skeleton to remove curses while using this spell.",
+	["skeleton"] = "Naiklah ke peringkat Skeleton untuk mengesampkingkan kuncian saat mengenakan mantra ini.",
 	--END NEW
-	["hijacker"] = "Rank up to Hijacker to steal any uncursed stairs.",
-	["transformer"] = "Rank up to Transformer to splice already spliced stairs.",
+	["hijacker"] = "Naiklah ke peringkat Hijacker untuk mencuri tangga tak terkutuk apa pun.",
+	["transformer"] = "Naiklah ke peringkat Transformer untuk menyambung tangga sudah disambung.",
 	["strider"] = "Rank up to Strider to double boost UP DRIFTS.",
 	["lich"] = "Rank up to Lich to demolish crossing cursed stairs.",
 	--new for 4.4
@@ -2153,62 +2153,62 @@ module.eventspells = {
 
 module.spells.extras = {
 
-	["Prompt"] = "Click a spell below, to learn how to use it",
-	["Title1"] = "Basic spells",
-	["Title2"] = "Unique ultimate spells",
-	["Title3"] = "Shared ultimate and basic spells",
-	["ManaCost"] = "Mana Cost: %s", 
-	["TokenCost"] = "Token Cost: %s", 
-	["Special"] = "Special requirements: %s",
-	["Execution"] = "Execution: %s",
-	["Description"] = "Description: %s",
-	["basic"] = "Basic",
-	["ultimate"] = "Ultimate",
-	["unlock"] = "0 (3 to unlock)",
-	["none"] = "No special requirements",
+	["Prompt"] = "Pilih sebuah mantra di bawah untuk belajar cara menggunakannya",
+	["Title1"] = "Mantra dasar",
+	["Title2"] = "Mantra pokok yang unik",
+	["Title3"] = "Mantra pokok yang dibagi + mantra dasar",
+	["ManaCost"] = "Biaya mana: %s", 
+	["TokenCost"] = "Biaya token: %s", 
+	["Special"] = "Syarat khusus: %s",
+	["Execution"] = "Pelaksanaan: %s",
+	["Description"] = "Deskripsi: %s",
+	["basic"] = "Dasar",
+	["ultimate"] = "Pokok",
+	["unlock"] = "0 (3 untuk membuka)",
+	["none"] = "Tidak ada syarat khusus",
 
 	--NEW
-	["LeftHand"] = "Left Hand",
-	["RightHand"] = "Right Hand",
+	["LeftHand"] = "Tangan Kiri",
+	["RightHand"] = "Tangan Kanan",
 
 }
 
 module.gui.mana = {
 
 	["mana"] = "MANA", --main name
-	["ghost"] = "GHOST",
+	["ghost"] = "HANTU",
 	["spirit"] = "SPIRIT", --only for spirit spectres
-	["welcome"] = "WELCOME",
-	["drones"] = "DRONES",
-	["orb"] = "ORB",
+	["welcome"] = "SELAMAT DATANG",
+	["drones"] = "DRON",
+	["orb"] = "SFER",
 	["refill"] = "REFILL", --for all 2nd rank bonuses
 	["overload"] = "OVERLOAD",
-	["steal"] = "STEAL",
-	["gift"] = "GIFT",
-	["share"] = "SHARE",
+	["steal"] = "MENCURI",
+	["gift"] = "HADIAH",
+	["share"] = "DIBAGI",
 	["prank"] = "PRANK",
 	["possession"] = "POSSESSION",
 	["ritual"] = "RITUAL",
-	["purge"] = "PURGE",
-	["blessing"] = "BLESSING",
+	["purge"] = "HANCURAN",
+	["blessing"] = "BERKAH",
 	--["hack"] = "HACK", --removed
-	["stash"] = "STASH",
-	["backdoor"] = "BACKDOOR",
-	["chamber"] = "CHAMBER",
-	["base"] = "BASE",
-	["circus"] = "CIRCUS",
-	["shelter"] = "SHELTER",
-	["haven"] = "HAVEN",
-	["study"] = "STUDY",
-	["nether"] = "NETHER",
-	["guild"] = "GUILD",
-	["nexus"] = "NEXUS",
+	["stash"] = "SIMPANAN",
+	["backdoor"] = "PINTU BELAKANG",
+	["chamber"] = "KAMAR",
+	["base"] = "PANGKALAN",
+	["circus"] = "SIRKUS",
+	["shelter"] = "TENDA",
+	["haven"] = "SURGA",
+	["study"] = "TELAAH",
+	["nether"] = "NERAKA",
+	["guild"] = "PENYEMBUNYIAN",
+	["nexus"] = "PERHUBUNGAN",
 	["oasis"] = "OASIS",
-	["hub"] = "HUB",
-	["mirror"] = "MIRROR",
-	["grave"] = "GRAVE",
-	["shack"] = "SHACK",
-	["regen"] = "REGENERATE",
+	["hub"] = "PUSAT",
+	["mirror"] = "CERMIN",
+	["grave"] = "PUSARA",
+	["shack"] = "GUBUK",
+	["regen"] = "REPRODUKSI",
 	["optimus"] = "OPTIMUS",
 	["tutorial"] = "TUTORIAL",--player mana is drained upon starting tutorial
 
@@ -2218,12 +2218,12 @@ module.gui.mana = {
 module.gui.gameover.extras = {
 
 	--["noobs"] = "Tutorials are for noobs!", --removed
-	["possessed"] = "Those annoying Heretics!",
-	["hypnotised"] = "Where am I?",
+	["possessed"] = "Heretic yang menyebalkan itu!",
+	["hypnotised"] = "Eh, dimana aku?",
 	--NEW
-	["reflected"] = "Let me out!",
+	["reflected"] = "Biarkan aku pergi!",
 	--END NEW
-	["new"] = "New rank acquired - %s",
+	["new"] = "Peringkat baru dicapai - %s",
 
 }
 
@@ -2238,8 +2238,8 @@ module.gui.gameover.raceplacements = {
 	"You have placed eighth.",
 	"You have placed ninth.",
 	"You have placed tenth.",
-	"You have placed eleventh.",
-	"You have placed twelfth.",
+	"Kamu telah mencapai posisi kesebelas.",
+	"Kamu telah mencapai posisi keduabelas. Semangat buat balap-balap berikutnya, semua orang bisa dapat peringkat tinggi karena pengalaman kok.",
 }
 
 -- PREPARATION --
