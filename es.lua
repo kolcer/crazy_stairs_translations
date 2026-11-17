@@ -172,8 +172,8 @@ module.gui.questions = {
 	["cancel"] = "¿Quieres cancelar este hechizo cronometrado? Los monedas no serán reembolsados.",
 	["tutorial"]= "¿Volver a hacer el tutorial?",
 	["skip"] = "¿Saltar el tutorial?",
-	["reshuffle"] = "¿Quieres que las escaleras eviten las collisiones mientras se mueven? Si no, cualquier escalera en el camino será destruida.",
-	["tonormal"] = "%s no se puede usar en Torre Básica. ¿Quiéres teletransportar a la Torre Normal?",
+	["reshuffle"] = "¿Quieres que las escaleras eviten las colisiones mientras se mueven? Si no, cualquier escalera en el camino será destruida.",
+	["tonormal"] = "%s no se puede usar en Torre Básica. ¿Quieres teletransportar a la Torre Normal?",
 	["raceconfirm"] = "¿Seguro que quiéres participar en la carrera? ¡Te teletransportarás al fondo de la torre!",
 
 	--new
@@ -257,7 +257,7 @@ module.gui.menu = {
 	["Codes"] = "Activar código",
 	["Feedback"] = "Enviar mensaje sobre el juego",
 	["Language"] = "Idioma",
-	["Music"] = "Configuracíon de música",
+	["Music"] = "Configuración de música",
 	["RaceResults"] = "Resultados de la ultima carrera",
 	["ServerSettings"] = "Ajustes de la torre (Torre Personalizada)",
 	["Settings"] = "Ajustes del juego",
@@ -318,7 +318,7 @@ module.spells.names = {
 
 	["flipper"] = "Volteador",
 	["jokerevent"] = "Ocultación",
-	["jokeraltevent"] = "Voltealas Todas",
+	["jokeraltevent"] = "Voltéalas Todas",
 
 	--WICKED
 	["destroy"] = "Destruir Escaleras",
@@ -329,7 +329,7 @@ module.spells.names = {
 	["wall"] = "Crear Pared" ,
 
 	["bender"] = "Doblador",
-	["wickedevent"] = "Destruccíón",
+	["wickedevent"] = "Destrucción",
 	["wickedaltevent"] = "Purga",
 
 	--KEEPER
@@ -383,14 +383,14 @@ module.spells.names = {
 	--ARCHON
 	["splitup"] = "Portal Vertical",
 	["splitrotate"] = "Portal Adyacente",
-	["splitside"] = "Portal Paralela",
+	["splitside"] = "Portal Paralelo",
 	["splitrandom"] = "Portal Aleatoria",
 	["cancelsplit"] = "Quitar Portal",
 	["splitforward"] = "Portal en plataforma",
 
 	["splitter"] = "Portalmanía",
 	["archonevent"] = "¿Dónde Estoy?",
-	["archonaltevent"] = "Divisíon",
+	["archonaltevent"] = "División",
 
 	--DRIFTER
 	["indrift"] = "Surfear",
@@ -448,7 +448,7 @@ module.spells.names = {
 	["merge"] = "Unión Reaver",
 	["oneway"] = "Escaleras cristales de arriba",
 
-	["reflection"] = "Refleccíon",
+	["reflection"] = "Reflección",
 	["reaverevent"] = "Encrucijada",
 	["reaveraltevent"] = "Vitrificación",
 
@@ -511,9 +511,9 @@ local mode = "Este es un hechizo de dron. Cambiará el modo de todos los drones 
 local timedExtra = " Sube de rango a %s para extender el límite a 90s. Invocar este hechizo también rellenará el Mana de todos los %s que tengan al menos el rango %s." -- do not remove leading space
 module.spells.descriptions = { 
 	--PATRON
-	["summon"] = "Este hechizo the permite crear 1 escalera en la dirección elegida. Si hay alguna escalera en el camino, serán demolidas.",
+	["summon"] = "Este hechizo te permite crear una escalera en la dirección elegida. Si hay alguna escalera en el camino, serán demolidas.",
 	["restore"] = "Este hechizo llama al orbe en el piso superior a la plataforma elegida. Sube tu rango a Defender para reducir el costo a 2 Mana. Sube tu rango a Saviour para duplicar la velocidad a la cual el orbe viene hacia ti.",
-	["split"] = "Este hechizo reconstuirá las escaleras en el direccíon contrario. Sube tu rango a Protector para poder reconstruir cualquier escalera especial.",
+	["split"] = "Este hechizo reconstuirá las escaleras en el dirección contrario. Sube tu rango a Protector para poder reconstruir cualquier escalera especial.",
 	["shrinkabove"] = "Este hechizo encoge las escaleras de arriba, dejandote pasar a lado de ellas.",
 	["link"] = "Este hechizo crea puente entre plataformas por 60 segundos. Los puentes no son tangibles por debajo. Sube de rango a Creator para poder crear puentes en cualquier dirección.",
 	["portal"] = "Este hechizo creará un portal que teletransportará a todos los jugadores que entren en el una plataforma arriba. El portal dura 60 segundos.",
@@ -530,9 +530,9 @@ module.spells.descriptions = {
 	["flip"] = "Este hechizo voltea una escalada, de tal manera que la parte superior sera la parte inferior y viceversa. De cualquier manera, voltear las escaleras de vuelta si es posible.",
 	["flipabove"] = "Este hechizo voltea las escaleras de arriba, de tal manera que la parte superior sera la parte inferior y viceversa. De cualquier manera, voltear las escaleras de vuelta si es posible.",
 	["fake"] = "Este hechizo crea escaleras falsas en la dirección elegida. Si hay alguna escalera en el camino, esta será demolida. Cualquier jugador (incluyendote) que las intente subir caerá. Sube tu rango a Trickster para poder caminar en ellas.",
-	["invisible"] =  "Este hechizo crea escaleras invisibles. Tristemente, estas no demoleran escaleras en el camino, asi que solo las puedes colocar en una intersección vacia. Sube de rango a Jester para tener de opción de ver o no ver todas las escaleras invisibles.",
+	["invisible"] =  "Este hechizo crea escaleras invisibles. Tristemente, estas no demoleran escaleras en el camino, así que solo las puedes colocar en una intersección vacia. Sube de rango a Jester para tener de opción de ver o no ver todas las escaleras invisibles.",
 	["disco"] = "Este hechizo pone a las escaleras en modo disco. Cualquier jugador (incluyendote) parará y bailará en ellas durante 5 segundos (usalmente el doble). Los rangos Comic y superiores son inmunes a las escaleras disco.",
-	["trap"] = "Este hechizo transforma una plataforma en una trampa por 60 segundos. Cualquier jugador (incluyendote) que camine en la trampa caerá a la plataforma inferior. Sube de rango a Jokester para tener la opción de ver plataformas trampa. Sube to rango a Trickster para poder caminar en ellas.",
+	["trap"] = "Este hechizo transforma una plataforma en una trampa por 60 segundos. Cualquier jugador (incluyendote) que camine en la trampa caerá a la plataforma inferior. Sube de rango a Jokester para tener la opción de ver plataformas trampa. Sube tu rango a Trickster para poder caminar en ellas.",
 
 	["flipper"] = timed .. "Te permite voltear cuantas escaleras quieras por 1 minuto. Si se encuentra alguna escalera arriba también será volteada, si no, la de abajo." .. string.format(timedExtra,RankData.JOKER[7].name,"Jokers",RankData.JOKER[3].name),
 	["jokerrigevent"] = rig .. "en escaleras con Joker Rig. Cuando estas sean activadas se voltearán automáticamente.",
@@ -594,7 +594,7 @@ module.spells.descriptions = {
 	["dash"] = "Este hechizo te teletransportará en la dirección escogida. A diferencia del hechizo de Spectre, no puedes ir si hay escaleras en el camino. Sube de rango a Cracker para que este hechizo vaya un 50% mas rápido.",
 	["blink"] = "Este hechizo te teletransportará alrededor de las escaleras de arriba. Las escaleras de arriba deben estar en la dirección opuesta de las escaleras de abajo para que este hechizo funcione. Sube de rango a Exploiter para que este hechizo vaya un 50% mas rápido.",
 	["swap"] = "Este hechizo te teletransportará al punto donde tu fantasma esté. A diferencia de otros hechizos básicos, este puede ser usado en cualquier lado.",
-	["slide"] = "Este hechizo convertirá las escaleras en escaleras mecánicas con dirección elegido. El elevador solo funcionará cuando hayan jugadores en él. Sube de rango a Scripter para poder pausar cualquier escalera mecánica.",
+	["slide"] = "Este hechizo convertirá las escaleras en escaleras mecánicas con dirección elegido. El elevador solo funcionará cuando haya jugadores en él. Sube de rango a Scripter para poder pausar cualquier escalera mecánica.",
 	["slideup"] = "Este hechizo hackeará escaleras opuestas y las teletransportará a tus pies. Debería estar escaleras opuestas de la plataforma.",
 	["glitch"] = "Este hechizo glitcheará las escaleras, teletransportandote a ti y a estas a un lugar diferente en el mismo nivel. Sube de rango a Zero, para teletransportar las escaleras a lado del orbe si estás en el nivel superior.",
 
@@ -609,7 +609,7 @@ module.spells.descriptions = {
 	--THIEF
 	["steal"] = "Este hechizo te permite robar una escalera normal o rigeadas. Este hechizo o el de robar escaleras de arriba son requeridos para otros hechizos de Thief básicos. Sube de rango a Hijacker para poder robar cualquier tipo de escaleras.",
 	["stealabove"] = "Este hechizo te permite robar una escalera normal o rigeadas que esté encima de ti. Este hechizo o el de robar escaleras de abajo son requeridos para otros hechizos de Thief básicos. Sube de rango a Hijacker para poder robar cualquier tipo de escaleras.",
-	["place"] = "Este hechizo te permite colocar las escaleras que hayas robado en la dirección escogida. Este hechizo no demole escaleras en el camino como el hechizo de Patron, asi que tienes que colocarlas en una intersección vacía. Sube tu rango a Robber para colocar escaleras sobre escaleras.",
+	["place"] = "Este hechizo te permite colocar las escaleras que hayas robado en la dirección escogida. Este hechizo no demole escaleras en el camino como el hechizo de Patron, así que tienes que colocarlas en una intersección vacía. Sube tu rango a Robber para colocar escaleras sobre escaleras.",
 	["uppass"] = "Este hechizo te permite crear una escalera espiral con escaleras robadas. Solo puede ser usada en plataformas exteriores y durará 1 minuto.",
 	["sidepass"] = "Este hechizo te permite crear una rama doblado con escaleras robadas. Será creado en la dirección escogida y durará 1 minuto.",
 	["drop"] = "Este hechizo te permite crear escaleras planas gratis. De cualquier forma, necesitarás una intersección vacia.",
@@ -641,7 +641,7 @@ module.spells.descriptions = {
 	--DRIFTER
 	["indrift"] = "Este hechizo creará una tabla de surf temporal, moviendote y a otros jugadores a la plataforma que esté en la dirección que hayas escogido.",
 	["updrift"] = "Este hechizo creará un elevador usando la plataforma en la que estés y la de arriba. Las plataformas serán restauradas despupes de un periodo de tiempo. Sube de rango a Vagabond para que el elevador sea más rápido. Sube de rango a Traveller para impulsar el elevador a un segundo nivel. Sube de rango a Strider para impulsar el elevador a un tercer nivel.",
-	["diagdrift"] = "Este hechizo creará un elevador usando la plaforma en la que estés y cualquier otra en una dirección diagonal. Las plataformas serán restuaradas después de un periodo de tiempo. Se puede usar en los plataformas de borde para orbitar el torre una vez.",
+	["diagdrift"] = "Este hechizo creará un elevador usando la plaforma en la que estés y cualquier otra en una dirección diagonal. Las plataformas serán restuaradas después de un periodo de tiempo. Se puede usar en las plataformas de borde para orbitar el torre una vez.",
 	["spin"] = "Este hechizo rotará las escaleras de abajo 180 grados. Sube de rango a Nomad para poder girar cualquier tipo de escalera.",
 	["outdrift"] = "Este hechizo desplazará escaleras en un intersección libre aleatoriamente. Sube tu rango a Nomad para desplazar escaleras ya desplazadas.",
 	["driftabove"] = "Este hechizo levantará las escaleras de arriba, para que puedas caminar debajo de ellas y subirlas, si deseas.",
@@ -689,10 +689,10 @@ module.spells.descriptions = {
 	--NECROMANCER
 	["createdual"] = "Este hechizo creará escaleras para ti y tu fantasma también. Sube tu rango a Skeleton para que el fantasma ignora escaleras y intersecciones hechizadas. Sube tu rango a Lich para destruir escaleras hechizadas en el camino.",
 	["copyplatform"] = "Este hechizo replicará escaleras en la plataforma de tu fantasma y vice-versa. Escaleras copiadas siempre estará normales. Sube tu rango a Revenant para que el hechizo puede quitar escaleras y intersecciones hechizadas.",
-	["soulbridge"] = "Este hechizo creará un puente diagonal. Tu fantasma lo creará tambien en el dirección contrario. Esos puentes girará cuando alguien salta en ellos.",
+	["soulbridge"] = "Este hechizo creará un puente diagonal. Tu fantasma lo creará tambien en la dirección contrario. Esos puentes girará cuando alguien salta en ellos.",
 	["undeadabove"] = "Este hechizo quitará alma de las escaleras de arriba. Si no hay escaleras arriba de tu fantasma, van a estar creadas. Se puede caminar a través de ellos y sobre ellos también, pero desaparecerá despues de dos minutos.",
-	["revival"] = "Usa ese hechizo para crear una punto de renacimiento donde está tu fantasma. Si caes debajo del punto, vas a estar teletransportado ahí y el punto estará eliminada. También estará eliminada cuando creas otro, cambias de clase o terminas la escalada. Sube tu rango a Acolyte para llamar el orbe a ese punto, si lo usas en el nível con el orbe.",
-	["regen"] = "Este hechizo regenará 6 Mana para tí y 3 mana para jugadores al lado de tu fantasma. Sube tu rango a Deathbringer para regenerar 10 Mana y 5 mana respectivamente.", 
+	["revival"] = "Usa ese hechizo para crear una punto de renacimiento donde está tu fantasma. Si caes debajo del punto, vas a estar teletransportado ahí y el punto estará eliminada. También estará eliminada cuando creas otro, cambias de clase o terminas la escalada. Sube tu rango a Acolyte para llamar el orbe a ese punto, si lo usas en el nivel con el orbe.",
+	["regen"] = "Este hechizo regenará 6 Mana para ti y 3 mana para jugadores cerca de tu fantasma. Sube tu rango a Deathbringer para regenerar 10 Mana y 5 mana respectivamente.", 
 
 	["duality"] = timed .. "Te permite crear escaleras duales infinitas durante un minuto." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "en escaleras con Necromancer Rig. Cuando eses sean activadas, quitará la alma de las escaleras.",
@@ -705,13 +705,13 @@ module.spells.descriptions = {
 	--REAVER
 	["createmirrored"] = "Este hechizo creará escaleras con un espejo. Cuando entras el espejo, te unirías (o separas si ya estas unid@s) con tu fantasma. Cuando estas unid@, puedes usar espejos en el suelo pero tu fantasma no obtendrá Mana.",
 	["bigmirror"] = "Este hechizo creará un espejo gigante por 10 segundos. Solo jugadores unidos con su fantasma se puede caminar en eses espejos. Sube tu rango a Presence para que duran 15 segundos.",
-	["smallmirror"] = "Este hechizo creará un espejo pequeño por 6 segundos en el dirección elegido. Solo jugadores unidos con su fantasma se puede caminar en eses espejos. Sube tu rango a Presence para que duran 9 segundos",
+	["smallmirror"] = "Este hechizo creará un espejo pequeño por 6 segundos en la dirección elegida. Solo jugadores unidos con su fantasma se puede caminar en eses espejos. Sube tu rango a Presence para que duran 9 segundos",
 	["outermirror"] = "Este hechizo creará un portal al borde de la torre y otro en el lado contrario. Solo se puede usar una plataformas al borde de la torre. Quién entra ese portal va a estar unidos con su fantasma y teletransportado al otro lado. Desaparecerá después de un minuto. Cuando estas unid@, puedes usar espejos en el suelo pero tu fantasma no obtendrá Mana.",
 	["merge"] = "Este hechizo te unirá con tu fantasma inmediatamente. Sube tu rango a Replica para poder separarte de tu fantasma con este hechizo. Sube tu rango a Poltergeist para afectar otras personas cerca de ti. Cuando estas unid@, puedes usar espejos en el suelo pero tu fantasma no obtendrá Mana.",
 	["oneway"] = "Este hechizo transformará las escaleras de arriba en escaleras de cristal, permitiendote caminar a través de ellas. Solo jugadores unidos con su fantasma puede caminar en esas escaleras.",
 
 	["reflection"] = timed .. "Te permite crear espejos gigantes infinitas durante un minuto." .. string.format(timedExtra,RankData.REAVER[7].name,"Reavers",RankData.REAVER[3].name), 
-	["reaverrigevent"] = rig .. "en escaleras con Reaver Rig. Cuando eses sean activadas, reflejará la persona que lo activó. Tendría que encuentrar Mana para liberarse. Jugadores reflejados controlan sus personajes desde el perspectivo de su fantasma. Sube tu rango a WIGHT para obtener inmunidad a esas rigs.",
+	["reaverrigevent"] = rig .. "en escaleras con Reaver Rig. Cuando eses sean activadas, reflejará la persona que lo activó. Tendría que encontrar Mana para liberarse. Jugadores reflejados controlan sus personajes desde el perspectivo de su fantasma. Sube tu rango a WIGHT para obtener inmunidad a esas rigs.",
 	["reaverevent"] = event .. "Escaleras Unidireccionales. Esas escaleras funciona como escaleras con espejo, pero solo se puede usar en un sentido. Reavers no son afectados.",
 	["reaveraltevent"] = event .. "Escaleras de Cristal",
 	["reavermode"] = string.format(mode,"Reaver","Reaver Rig","Escaleras Unidireccionales"),
@@ -724,10 +724,10 @@ module.spells.descriptions = {
 	["screwup"] = "Este hechizo transformará escaleras de arriba en escaleras locas. Escaleras locas girará en torno a 6 plataformas 3 veces, y la rotación inicial va a ser aleatoria. Sube tu rango a Daemon para llamar escaleras locas adyacentes de tu plataforma.",
 	["revolve"] = "Este hechizo transformará la escalera en una hélice que gira en torno a un eje Z. Puedes elegir el sentido de rotación.",
 	["trapstairs"] = "Este hechizo transformará las escaleras en una trampa. Cuando eses sean activadas, girarán a un eje X. Sube tu rango a Goblin para detectar eses trampas. Sube tu rango a DIABLO para obtener immunidad a esas trampas.",
-	["spinplatform"] = "Este hechizo girará la plataforma entero con todos sus escaleras, en el direccíon elegido. Plataforma pausará cada 90 grados. Cuando se gira 360 grados, volverá ser una plataforma normal.",
+	["spinplatform"] = "Este hechizo girará la plataforma entero con todos sus escaleras, en el dirección elegido. Plataforma pausará cada 90 grados. Cuando se gira 360 grados, volverá ser una plataforma normal.",
 
 	["tramway"] = timed .. "Te deja crear tranvías infinitas durante un minuto." .. string.format(timedExtra,RankData.GREMLIN[7].name,"Gremlins",RankData.GREMLIN[3].name), 
-	["gremlinrigevent"] = rig .. "en escaleras con Gremlin Rig. Cuando eses sean activadas, hipnotizará la persona que lo activó. Tendría que encuentrar Mana para liberarse. Jugadores hipnotizados tendrá sus controles invertidos. Sube tu rango a Hobgoblin para obtener immunidad a eses rigs.",
+	["gremlinrigevent"] = rig .. "en escaleras con Gremlin Rig. Cuando eses sean activadas, hipnotizará la persona que lo activó. Tendría que encontrar Mana para liberarse. Jugadores hipnotizados tendrá sus controles invertidos. Sube tu rango a Hobgoblin para obtener immunidad a eses rigs.",
 	["gremlinevent"] = event .. "Escaleras giratorias.", 
 	["gremlinaltevent"] = fill .. "Esas escaleras será tranvías.",
 	["gremlinmode"] = string.format(mode,"Gremlin","Gremlin Rig","Escaleras giratorias"),
@@ -737,7 +737,7 @@ module.spells.descriptions = {
 
 	--CHAMELEON
 	["chamdown"] = "Este era antes un hechizo de Keeper, antes de que fuera rechazado. Moverá cualquier escalera normal o rigeadas hacia abajo. Si tienes el rango Captain en Keeper, también puedes mover escaleras especiales.",
-	["chamdraw"] = "Este era antes un hechizo de Heretic, antes de que fuera rechazado. Convertirá las escaleras en un puente elevadizo, haciendo el decenso imposible a menos que otro jugador active el puente por abajo.",
+	["chamdraw"] = "Este era antes un hechizo de Heretic, antes de que fuera rechazado. Convertirá las escaleras en un puente elevadizo, haciendo el descenso imposible a menos que otro jugador active el puente por abajo.",
 	["oneways"] = "Este era antes un hechizo de Reaver, antes de que fuera rechazado. Convertirá las escaleras en escaleras unidireccionales. Esas escaleras funciona como escaleras con espejo, pero solo se puede usar en un sentido. Reavers no son afectados.",
 	["cork"] = "Este era antes un hechizo de Gremlin, antes de que fuera rechazado. Convertirá escaleras en escaleras sacacorchos.",
 	["chamdrawabove"] = "Este era antes un hechizo de Heretic, antes de que fuera rechazado. Convertirá las escaleras de arriba en un puente elevadizo, permitiéndote pasar. Subir es imposible al menos que otro jugador active el puente por arriba. El viejo rango Unbeliever ya no está activo y la activación automática por abajo ya no es posible.",
@@ -753,18 +753,18 @@ module.spells.descriptions = {
 
 	--ARCHITECT
 	["archpatron"] = "Cuando usas este hechizo en las flechas de plataforma, creará escaleras. Cuando lo usas en escaleras normales o rigeados, las encogerás.",
-	["archarchon"] = "Cuando usas este hechizo en las flechas de plataforma o en escaleras normales, creará un portal en el dirección elegido.",
+	["archarchon"] = "Cuando usas este hechizo en las flechas de plataforma o en escaleras normales, creará un portal en la dirección elegida.",
 	["archthief"] = "Cuando usas este hechizo en las flechas de plataforma, colocarás escaleras. Cuando lo usas en escaleras normales o rigeados, lo robarás.",
 	["archnecro"] = "Cuando usas este hechizo en las flechas de plataforma, creará escaleras duales. Cuando lo usas en escaleras normales o rigeados, quitará la alma.",
 	["archhacker"] = "Cuando usas este hechizo en las flechas de plataforma, hackeará escaleras opuestas. Cuando lo usas en escaleras normales o rigeados, mecanizará la escalera.",
-	["archkeeper"] = "Cuando usas este hechizo en las flechas de plataforma, restaurá escaleras adyacentes. Cuando lo usas en escaleras normales o rigeados, moverá en el dirección elegido.",
-	["archsplicer"] = "Cuando usas este hechizo en las flechas de plataforma, partirá escaleras opuestas. Cuando lo usas en escaleras normales o rigeados, empalmará en el dirección elegido.",
+	["archkeeper"] = "Cuando usas este hechizo en las flechas de plataforma, restaurá escaleras adyacentes. Cuando lo usas en escaleras normales o rigeados, moverá en la dirección elegida.",
+	["archsplicer"] = "Cuando usas este hechizo en las flechas de plataforma, partirá escaleras opuestas. Cuando lo usas en escaleras normales o rigeados, empalmará en la dirección elegida.",
 	["archwicked"] = "Cuando usas este hechizo en las flechas de plataforma, creará un pared de Wicked sin el puente. Cuando lo usas en cualquier escalera, lo destruirás.",
-	["archgremlin"] = "Cuando usas este hechizo en una plataforma o en escaleras normales o rigeados, girará la plataforma en el dirección elegido",
+	["archgremlin"] = "Cuando usas este hechizo en una plataforma o en escaleras normales o rigeados, girará la plataforma en la dirección elegida",
 	["archjoker"] = "Cuando usas este hechizo en las flechas de plataforma, creará escaleras falsas. Cuando lo usas en escaleras volteadas, normales o rigeados, los voltearás.",
 	["archdrifter"] = "Cuando usas este hechizo en una plataforma, lo convertirá en un elevador. Cuando lo usas en escaleras normales o rigeados, lo desplazarás.",
 	["archspectre"] = "Cuando usas este hechizo en las flechas de plataforma, creará escaleras fantasmas. Cuando lo usas en escaleras fantasmizados, normales o rigeados, lo fantasmizarás or desfantasmizarás.",
-	["archreaver"] = "Cuando usas este hechizo en las flechas de plataforma, creará escaleras de espejo. Cuando lo usas en escaleras normales o rigeados, lo convertirás en escaleras unidireccionales en el dirección elegido.",
+	["archreaver"] = "Cuando usas este hechizo en las flechas de plataforma, creará escaleras de espejo. Cuando lo usas en escaleras normales o rigeados, lo convertirás en escaleras unidireccionales en la dirección elegida.",
 	["archheretic"] = "Cuando usas este hechizo en las flechas de plataforma, hechizará el intersección. Cuando lo usas en escaleras hechizados, normales o rigeados, las hechizarás o deshechizarás.",
 
 }
@@ -787,7 +787,7 @@ module.gui.ranks = {
 	--none
 
 	["none_1"] = "No has elegido una clase!",
-	["none_2"] = "Para usar hechizos, ¡DEBERÍAS elegir un clase!",
+	["none_2"] = "Para usar hechizos, ¡DEBERÍAS elegir una clase!",
 
 	--NEW
 	["possessed_1"] = "¡Estas Poseíd@!",
@@ -874,9 +874,9 @@ module.gui.ranks = {
 	["ARCHON"] = {
 		[4] = "Ahora puedes lanzar el hechizo Quitar Portal en plataformas.",
 		[5] = "El hechizo Quitar Portal ahora es gratis.",
-		[6] = "Las portales nunca te teletransportarán hacia abajo.",
+		[6] = "los portales nunca te teletransportarán hacia abajo.",
 		[8] = "Ahora puedes lanzar hechizos en escaleras ya conectadas con portal.",
-		[9] = "Ahora tienes la opción de evitar teletransportes en todos las portales excepto las que van hacia arriba.",
+		[9] = "Ahora tienes la opción de evitar teletransportes en todos los portales excepto las que van hacia arriba.",
 	},
 	["DRIFTER"] = {
 		[4] = "Tus elevadores aparecerán y se moverán 50% más rápido.",
@@ -889,7 +889,7 @@ module.gui.ranks = {
 		[4] = "Cuando no tengas Mana, puedes tocar una escalera hechizada para deshechizarlas y recibir 1 Mana.",
 		[5] = "Ahora eres inmune a los Heretic Rigs.",
 		[6] = "Ahora puedes lanzar el hechizo PARPADEO para deshechizar una intersección.",
-		[8] = "Los hechizos CREAR ESCALERAS HECHIZADAS y MALEDICTOR ahora pueden demoler escaleras hechizadas que se cruzen en su camino.",
+		[8] = "Los hechizos CREAR ESCALERAS HECHIZADAS y MALEDICTOR ahora pueden demoler escaleras hechizadas que se crucen en su camino.",
 		[9] = "Recibirás Mana cada vez que alguien sea poseído.",
 	},
 	["SPLICER"] = {
@@ -902,7 +902,7 @@ module.gui.ranks = {
 	["REAVER"] = {
 		[4] = "Puedes usar el Unión para desunirte.",
 		[5] = "Tus espejos del suelo dura 50% más. (15s gigante, 9s pequeño)",
-		[6] = "Ahora eres imune a los Reaver Rigs.",
+		[6] = "Ahora eres inmune a los Reaver Rigs.",
 		[8] = "Usando Unión afectará jugadores cerca de ti.",
 		[9] = "Obtendrás un aumento de velocidad (25%) cuando caminas en espejos del suelo.",
 	},
@@ -916,8 +916,8 @@ module.gui.ranks = {
 	["GREMLIN"] = {
 		[4] = "Puedes detectar las trampas.",
 		[5] = "Puedes saltar en una plataforma para llamar tranvías.",
-		[6] = "Ahora eres imune a los Gremlin Rigs.",
-		[8] = "Ahora eres imune a las trampas",
+		[6] = "Ahora eres inmune a los Gremlin Rigs.",
+		[8] = "Ahora eres inmune a las trampas",
 		[9] = "Puedes saltar en una plataforma para llamar escaleras locas adyacentes.",
 	},
 	["MUGGLE"] = { 
@@ -1008,19 +1008,19 @@ module.gui.gameover = {}
 
 module.gui.gameover.results = {
 
-	["class"] = "TU CLASE",
-	["time"] = "TU TIEMPO DE ESCALADA",
-	["climbs"] = "ESCALADAS OTORGADAS",
-	["tokens"] = "MONEDAS OTORGADAS",
+	["class"] = "CLASE",
+	["time"] = "TIEMPO",
+	["climbs"] = "ESCALADAS OBTENIDAS",
+	["tokens"] = "MONEDAS OBTENIDAS",
 	["rank"] = "TU RANGO ACTUAL",
 
 	--NEW
 	["role"] = "TU RANGO UNIVERSAL",
-	["classic"] = "TORRE NORMAL",	
-	["pro"] = "TORRE PRO",	
-	["infinite"] = "TORRE INFINITA",
-	["custom"] = "TORRE PERSONALIZADA", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
-	["basic"] = "TORRE BÁSICA",
+	["classic"] = "RÉCORD DE TORRE",	
+	["pro"] = "RÉCORD DE TORRE",	
+	["infinite"] = "RÉCORD DE TORRE",
+	["custom"] = "RÉCORD DE TORRE", --this will show in custom tower, but it will always be N/A, as custom tower does not keep records
+	["basic"] = "RÉCORD DE TORRE",
 
 	["cTime"] = "RÉCORD DE %s", --%s will be replaced by the used class
 	["levels"] = "NIVELES LLEGADOS",
@@ -1290,19 +1290,19 @@ module.static = {
 	["bas_5"] = "¿Cómo uso hechizos?",
 	["bas_6"] = "Todos los hechizos require Mana para poder ejecutarlas.",
 	["bas_7"] = "Todos los hechizos deberian estar ejecutadas saltando. Algunas hechizos require que saltas en escaleras, otras en plataformas... Para ayudar comunicar dónde hay que saltar, flechas van a aparecer.",
-	["bas_8"] = "Cuando haces una escalada, obtendrás 3 monedas de tu clase. Puedes desbloquer otros hechizos con esas monedas (3 para cada). No puedes usar monedas de un clase para desbloquear hechizos de otro.",
+	["bas_8"] = "Cuando haces una escalada, obtendrás 3 monedas de tu clase. Puedes desbloquer otros hechizos con esas monedas (3 para cada). No puedes usar monedas de una clase para desbloquear hechizos de otro.",
 	["bas_9"] = "¿Cómo uso hechizos ultimatum?",
 	["bas_10"] = "Primero tienes que desbloquear todos los hechizos normales. Cuando lo hagas, todos los hechizos ultimatum será desbloqueadas también. Hechizos ultimatum necesita Monedas, NO Mana para ejecutarlas.",
 	["bas_11"] = "Puedes acceder hechizos ultimatum cliqueando al botón más a la izquierda",
-	["bas_12"] = "Algúnos hechizos ultimatum son cronometrados. Puedes aprender más sobre tus hechizos en las guias del clase.",
+	["bas_12"] = "Algunos hechizos ultimatum son cronometrados. Puedes aprender más sobre tus hechizos en las guias de la clase.",
 
 	["cla_1"] = "TORRE NORMAL",
 	["cla_2"] = "¡Más Clases!",
-	["cla_3"] = "En Torre Normal, los clases Gremlin, Splicer, Archon, Reaver, Heretic y Muggle son desbloqueadas y puedes transformarte en ellos.",
-	["cla_4"] = "Esas clases sun muchisimo más difícil a aprender que las de Torre Básica, y puedes encontrar más escaleras locas aquí.",
+	["cla_3"] = "En Torre Normal, las clases Gremlin, Splicer, Archon, Reaver, Heretic y Muggle son desbloqueadas y puedes transformarte en ellos.",
+	["cla_4"] = "Esas clases son muchisimo más difícil a aprender que las de Torre Básica, y puedes encontrar más escaleras locas aquí.",
 	["cla_5"] = "¡Cuidado con los Architects!",
 	["cla_6"] = "En torre normal, también hay Architects.",
-	["cla_7"] = "Architect es un clase especial, que pueden volar. Architects tiene Mana infinita y puede ayudar O molestar a jugadores.",
+	["cla_7"] = "Architect es una clase especial, que pueden volar. Architects tiene Mana infinita y puede ayudar O molestar a jugadores.",
 	["cla_8"] = "Encontrarse con un Architect puede ser una bendición o una maldición; lograr esquivarlo requerirá el máximo conocimiento y práctica de las habilidades propias de tu clase preferida.",
 	["cla_9"] = "¡Eventos y Rigs!",
 	["cla_10"] = "En Torre Normal, jugadores pueden ejecutar eventos y Rigs.",
@@ -1313,7 +1313,7 @@ module.static = {
 	["pro_3"] = "En Torre Pro, algunos hechizos de plataforma no se pueden usar en niveles pares sino solo en impares.",
 	["pro_4"] = "Esas plataformas son marcados con color negro y un X en el medio.",
 	["pro_5"] = "Escaleras Hechizadas",
-	["pro_6"] = "En Torre Pro, hay escaleras hechizadas. Esas escaleras son completamente imune a muchos hechizos.",
+	["pro_6"] = "En Torre Pro, hay escaleras hechizadas. Esas escaleras son completamente inmune a muchos hechizos.",
 	["pro_7"] = "",
 	["pro_8"] = "Solo Heretics y algunos rangos especiales de algunos clases pueden restaurar o quitar esas escaleras. Pero drones siempre crearán nuevas.",
 	["pro_9"] = "Intersecciones Hechizados",
@@ -1327,7 +1327,7 @@ module.static = {
 	["inf_4"] = "Para 'completar' esa torre, tienes que sobrevive tanto tiempo como puedas. Recibirás recompensas cuando estas eliminad@. Tocando el Orbe simplemente te da +10 Mana.",
 	["inf_5"] = "Fallen Drone",
 	["inf_6"] = "Fallen Drone (el dron blanco) tiene un misión especial en esta torre.",
-	["inf_7"] = "Fallen Drone creará niveles sin parar. Aumentará el velocidad cuando más tiemp sobrevives.",
+	["inf_7"] = "Fallen Drone creará niveles sin parar. Aumentará el velocidad cuando más tiempo sobrevives.",
 	["inf_8"] = "Borrador",
 	["inf_9"] = "El borrador ascende y elimina plataformas y escaleras. Aumentará el velocidad también como Fallen Drone. Si caes debajo del Borrador, estás eliminad@",
 	["inf_10"] = "Imagínalo como lava ascendente.",
@@ -1428,7 +1428,7 @@ module.static = {
 
 	["mirror_1"] = "ESPEJO DE REAVER",
 	["mirror_2"] = "NUESTRO LEMA:\nREFLEJAR\nSUSTITUIR\nY\nUNIRSE",
-	["mirror_3"] = "PROS:\nOtras personas pueden usar espejos\nCONTRAS:\nMecánica del clase puede ser dificil de entender.",
+	["mirror_3"] = "PROS:\nOtras personas pueden usar espejos\nCONTRAS:\nMecánica de la clase puede ser dificil de entender.",
 	["mirror_4"] = "'Los espejos no son más que puertas.'\nnuestro fundador",
 
 	["grave_1"] = "TUMBA DE NECROMANCER",
@@ -1475,7 +1475,7 @@ module.static = {
 	["hacker_lead"] = "HACKERS ENCRIPTADOS",
 	["hacker_ranks"] = "RANGOS DE HACKER",
 
-	["wicked_lead"] = "WICKEDS VIOLENTES",
+	["wicked_lead"] = "WICKEDS VIOLENTOS",
 	["wicked_ranks"] = "RANGOS DE WICKED",
 
 	["keeper_lead"] = "KEEPERS PREPARADOS",
@@ -1615,7 +1615,7 @@ module.guide = {
 		["onedirection"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube tu rango a Controller para mover cualquier escalera especial.",
 		["straight"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube tu rango a Controller para mover cualquier escalera especial.",
 		["rotate"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube tu rango a Controller para mover cualquier escalera especial.",
-		["rebuild"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube to rango a Protector para reconstruir cualquier escalera especial",
+		["rebuild"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube tu rango a Protector para reconstruir cualquier escalera especial",
 		["flip"]= "Se ejecuta sobre escaleras normales, rigeadas o volteadas.",
 		["gate"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube tu rango a Prodigy para ejecutar sobre escaleras que ya tiene portal.",
 		["gatestr"] = "Se ejecuta sobre escaleras normales o rigeadas. Sube tu rango a Prodigy para ejecutar sobre escaleras que ya tiene portal",
@@ -1657,7 +1657,7 @@ module.guide = {
 		['deltwists'] = "Se ejecuta en cualquier escalera empalmada o en una plataforma con escaleras empalmadas adyacentes. Sube tu rango a Combiner para poder restaurar escaleras desconectadas de la plataforma.",
 		['ghosted'] = "Se ejecuta en cualquier escalera normal, rigeada o fantasmizada o en una plataforma con escaleras normales, rigeadas o fantasmizadas adyacentes",
 
-		["flatten"] = "Se ejecuta en un intersección con escaleras normales o rigeadas en el dirección contrario. Se ejecuta en escaleras también.",
+		["flatten"] = "Se ejecuta en un intersección con escaleras normales o rigeadas en la dirección contrario. Se ejecuta en escaleras también.",
 		
 		--Hiding these because it's very redundant info and it saves time. -Dummy
 		["archpatron"] = "",--"Patron's Create Stairs (when used on arrows) or Shrink Stairs (when used on stairs)",
@@ -1728,11 +1728,11 @@ module.serverfeedback = {
 	["nomana"] = "No tienes suficiente Mana!",
 	["notokens"] = "No tienes suficientes monedas!",
 	["coolwait"] = "No puedes invocar eventos o rigs ahora, por favor espera",
-	["nomirror"] = "Tienes que estar unidos con tu fantasma para caminar en espejos.",
+	["nomirror"] = "Tienes que estar unid@s con tu fantasma para caminar en espejos.",
 	--new
 	["noreflected"] = "No puedes usar este hechizo ahora.",
 	["noflyarch"] = "No puedes volar ahora.",
-	["noblackhole"] = "No puedes usar este poder ahora.",
+	["noblackhole"] = "No puedes ser el agujero negro ahora.",
 	--end new
 	["regenused"] = "Ya usaste regeneración una vez.",
 
@@ -1748,7 +1748,7 @@ module.serverfeedback = {
 	["stashempty"] = "Necesitas robar escaleras antes de usar este hechizo.",
 	["ultwait"] = "Otro hechizo ultimatum esta en progreso. Por favor espera.",
 	["notdefault"] = "Los drones deben estar en modo por defecto primero. Por favor espera.",
-	["noreshuffle"] = "¡Escoje el modo barajar primero!",
+	["noreshuffle"] = "¡Escoge el modo barajar primero!",
 	["oneoverload"] = "No puedes tener multiples Sobrecargas de Mana activas.",
 	["cursed"] = "¡Estas escaleras son hechizadas!",
 	["cursed2"] = "¡Hay escaleras hechizadas en el camino!",
@@ -1783,7 +1783,7 @@ module.serverfeedback = {
 	["nogate"] = "Estas escaleras no tiene portal.",
 	--NEW
 	["noghost"] = "Solo las escaleras fantasmizado, normal o rigeado puede estar fantasmizado.",
-	["wrongplace"] = "Deberia estar en el torre.",
+	["wrongplace"] = "Debería estar en el torre.",
 	["archrace"] = "¡Architects no pueden hacer carrera!",
 	["toolate"] = "Ya hay una carrera. Inténtalo después",
 	["blockedplit"] = "No se puede crear puerta, la intersección objetivo esta hechizada.",
@@ -1792,7 +1792,7 @@ module.serverfeedback = {
 	["lockedother"] = "Otras escaleras estan bloqueadas.",
 	["failedgate"] = "La creación del portal hay fallado.",
 	["notwist"] = "Esas escaleras no estan empalmadas.",
-	["wrongmove"] = "Las escaleras no pueden ser movidas fuera del area de juego.",
+	["wrongmove"] = "Debería estar en el torre.",
 	["blockedmove"] = "Intersección hechizada.",
 	["lockedmove"] = "No se puede mover las escaleras, las escaleras que bloquean el camino estan bloqueadas.",
 	["normal"] = "Estas escaleras son normales.",
@@ -2000,7 +2000,7 @@ module.serverbroadcast = {
 	["over"] = "Carrera finalizada!",
 
 	--NEW
-	["newrace"] = "%s comienzó una carrera, ¡desafíale!",
+	["newrace"] = "%s comenzó una carrera, ¡desafíale!",
 	["joined"] = "%s ha entrado en la carrera",
 	["2min"] = "Nadie desafió %s",
 	["infstart"] = "¡Carrera infinita ha empezado!",
@@ -2053,7 +2053,7 @@ module.switchon = {
 	["SPECTRE1"] = "Ya no activarás Spectre Rigs.",
 	["HACKER1"] = "Imunidad de escaleras mecánicas activadas.",
 	["HACKER2"] = "Imunidad de escaleras mecánicas y rigs activadas.",
-	["ARCHON1"] = "Solo las portales que van hacía arriba te teletransportarán.",
+	["ARCHON1"] = "Solo los portales que van hacía arriba te teletransportarán.",
 	["DRIFTER1"] = "Ya no activarás Drifter Rigs.",
 	["SPLICER1"] = "Ya no activarás Splicer rigs.",
 	--["REAVER1"] = "You will no longer trigger below Reaver Rigs.", --removed
@@ -2070,7 +2070,7 @@ module.switchoff = {
 	["SPECTRE1"] = "Ahora activarás Spectre Rigs.",
 	["HACKER1"] = "Imunidad de escaleras mecánicas desactivadas.",
 	["HACKER2"] = "Imunidad de escaleras mecánicas y rigs desactivadas.",
-	["ARCHON1"] = "Ahora todas las portales excepto las que van abajo te teletransportarán.",
+	["ARCHON1"] = "Ahora todas los portales excepto las que van abajo te teletransportarán.",
 	["DRIFTER1"] = "Ahora activarás Drifter Rigs.",
 	["SPLICER1"] = "Ahora activarás Splicer Rigs.",
 	--["REAVER1"] = "You will now trigger below Reaver Rigs.", --removed
