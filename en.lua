@@ -446,7 +446,7 @@ module.spells.names = {
 	["smallmirror"] = "Small Mirror",
 	["outermirror"] = "Outer Mirror",
 	["merge"] = "Reaver Merge",
-	["oneway"] = "Glass Stairs",
+	["oneway"] = "Glass Stairs Above",
 
 	["reflection"] = "Reflection",
 	["reaverevent"] = "Cross Roads",
