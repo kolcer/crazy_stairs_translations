@@ -48,7 +48,7 @@ local Credits = {
 	},
 	{
 		top = "ESPAÑOL",
-		bottom = "That1Dummy",
+		bottom = "That1Dummy & TDtheTV",
 	},
 	{
 		ttop = "testers",
