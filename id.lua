@@ -238,18 +238,18 @@ module.gui.results = {
 	["time"] = "TIME",
 	["rank"] = "RANK",
 	["not"] = "N/A",
-	[1] = "WINNER",
-	[2] = "2nd",
-	[3] = "3rd",
-	[4] = "4th",
-	[5] = "5th",
-	[6] = "6th",
-	[7] = "7th",
-	[8] = "8th",
-	[9] = "9th",
-	[10] = "10th",
-	[11] = "11th",
-	[12] = "12th",
+	[1] = "PEMENANG",
+	[2] = "Ke-2",
+	[3] = "Ke-3",
+	[4] = "Ke-4",
+	[5] = "Ke-5",
+	[6] = "Ke-6",
+	[7] = "Ke-7",
+	[8] = "Ke-8",
+	[9] = "Ke-9",
+	[10] = "Ke-10",
+	[11] = "Ke-11",
+	[12] = "Ke-12",
 
 }
 
@@ -259,17 +259,17 @@ module.gui.results = {
 module.gui.menu = {
 
 	["Codes"] = "Code entry",
-	["Feedback"] = "Send game feedback",
-	["Language"] = "Change game language",
-	["Music"] = "Music Jukebox",
+	["Feedback"] = "Umpan Balik",
+	["Language"] = "Terjemahan",
+	["Music"] = "Kotak Juke",
 	["RaceResults"] = "Last race results",
 	["ServerSettings"] = "Tower Settings (Custom Tower)",
-	["Settings"] = "Game settings",
-	["Shop"] = "Buy game passes and tokens",
-	["Spectate"] = "Spectate other players",
+	["Settings"] = "Pengaturan Permainan",
+	["Shop"] = "Toko Tangga Gila",
+	["Spectate"] = "Tontonan",
 	["Stats"] = "Your badges and achievements",
 	["SwitchServer"] = "Switch Tower",
-	["Tokens"] = "Your tokens",
+	["Tokens"] = "Simpanan Token-mu",
 	["Tutorial"] = "Play the Tutorial",
 
 }
@@ -292,10 +292,10 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "%s Rig",
-	["mode"] = "Drones %s Mode",
+	["rigevent"] = "Manipulasi %s",
+	["mode"] = "Mode %s Dron",
 	["refill"] = "Mana Overload (%s)",
-	["union"] = "Ghost Union (%s)",
+	["union"] = "Fusi Hantu (%s)",
 }
 
 module.spells.names = {
@@ -552,7 +552,7 @@ module.spells.descriptions = {
 	["destroy"] = "Mantra ini untuk menghancurkan tangga. Tidak seperti lain-lainnya, itu bisa berfungsi pada tangga apa pun. Naiklah ke peringkat Vile untuk mengenakan mantra ini secara gratis. Naiklah ke peringkat Vicious      spell destroys stairs. Unlike other spells, it will work on any stairs. Rank up to VILE to cast this spell for free. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
 	["destroyabove"] = "This spell destroys above stairs. Unlike other spells, it will work on any stairs. Rank up to VICIOUS to get 1 Mana everytime you destroy any special stairs. Rank up to ANNIHILATOR to destroy cursed stairs.",
 	["bend"] = "Mantra ini untuk membengkokkan tangga ke atas. Use it to gain access to above platform.",
-	["damage"] = "Tangga ini untuk mencacati tangga yang berada di atas menjadi obby, by removing most of the steps. Before attempting, remember about jump cooldown. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
+	["damage"] = "Tangga ini untuk mencacati tangga yang berada di atas menjadi obby, by removing most of the steps. Sebelum mencoba, ingatlah mengenai waktu jeda lompat. Rank up to DESTROYER to walk on obbies just like on normal stairs.",
 	["flatten"] = "This spell bends opposite stairs down. Use it to gain access to the opposite platform. It can also be used on below stairs for trolling purposes.",
 	["wall"] = "Mantra ini untuk menciptakan barikade di platform          spell creates energy wall on the platform plus a link to opposite platform for 60 seconds. Hanya Wicked dan Pefusi Hantu yang bisa melewati barikade dan berjalan melalui jembatan.",
 
@@ -693,12 +693,12 @@ module.spells.descriptions = {
 	["splicerunion"] = union,
 
 	--NECROMANCER
-	["createdual"] = "This spell will Create Stairs for both you and Your ghost, so that players near the ghost can use them. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Rank up to LICH to demolish crossing cursed stairs with this spell.",
-	["copyplatform"] = "This spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
-	["soulbridge"] = "This spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links will spin when a player jumps on them.",
-	["undeadabove"] = "This spell will remove soul from above stairs and stairs above your ghost. If there are no stairs above your ghost, they will be created. Such stairs can be walked through and walked on, but will fade away after two minutes.",
+	["createdual"] = "Mantra ini untuk menciptakan tangga untuk kamu sama hantumu, agar pendaki yang dekat dengan hantu bisa mendaki pada tangga tersebut. Rank up to SKELETON for ghost to ignore cursed stairs and intersections. Naiklah ke peringkat Lich untuk  menghancurkan tangga terkutuk yang menyilang dengan mantra ini      Rank up to LICH to demolish crossing cursed stairs with this spell.",
+	["copyplatform"] = "Mantra ini menyalin tangga apa pun dari platform hantumu       spell will copy any stairs from ghost platform to yours and vice-versa. Stairs will be copied in mirrored fashion. Copied stairs will always be normal. Rank up to REVENANT for this spell to remove curses if it needs to.",
+	["soulbridge"] = "Mantra ini untuk menciptakan jembatan putar      spell will create a rotating link between Yours and any diagonal platform of Your choice. Your ghost will also create a link in the opposite direction. Necromancer links will spin when a player jumps on them.",
+	["undeadabove"] = "Mantra ini untuk mematikan tangga yang berada di atas kamu dan hantumu. Jika tidak ada tangga yang berada di atas hantumu, itu akan diciptakan. Such stairs can be walked through and walked on, but will fade away after two minutes.",
 	["revival"] = "Use this spell to create a 'revival' point where your ghost is. If you ever fall below such point, you will be teleported there. Revival point will be removed after use, completed climb or when you cast another one. Chameleon morph will also remove the point. Rank up to ACOLYTE to bring the Orb to this point, if you cast it on the top level.",
-	["regen"] = "Use this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Players near Your ghost will get 3 Mana too. Rank up to DEATHBRINGER to regenerate 10 Mana and 5 Mana for players near Your ghost.", 
+	["regen"] = "Mantra ini untuk mereproduksi mana         this spell to regenerate Mana once per climb. You will get 6 Mana points upon use. Pendaki yang dekat dengan hantumu akan juga diberi 3 mana. Naiklah ke peringkat Deathbringer untuk mereproduksi 10 mana dan 5 mana untuk pendaki yang dekat dengan hantumu.", 
 
 	["duality"] = timed .. "It allows you to cast at many Dual Stairs as you like for one minute. Rank up to LICH to demolish crossing cursed stairs with this spell." .. string.format(timedExtra,RankData.NECROMANCER[7].name,"Necromancers",RankData.NECROMANCER[3].name), 
 	["necromancerrigevent"] = rig .. "the Necromancer Rig. Stairs, once triggered, will have their soul removed and will fade away.",
@@ -709,8 +709,8 @@ module.spells.descriptions = {
 	["necromancerunion"] = union,
 
 	--REAVER
-	["createmirrored"] = "This spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
-	["bigmirror"] = "This spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. Giant mirrors will remove any small mirrors on the level. Rank up to PRESENCE to extend mirror lifetime to 15 seconds.",
+	["createmirrored"] = "Mantra ini untuk menciptakan tangga        spell will Create Stairs with a mirror in the middle. Once you walk through the mirror, you will merge with Your ghost. Walk through the mirror again and you will separate from Your ghost. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
+	["bigmirror"] = "Mantra ini untuk menciptakan        spell will create a giant mirror on the whole level for 10 seconds. Only players merged with their ghost can walk on the mirror. Giant mirrors will remove any small mirrors on the level. Rank up to PRESENCE to extend mirror lifetime to 15 seconds.",
 	["smallmirror"] = "This spell will create a small mirror in the chosen direction for 6 seconds. Only players merged with their ghost can walk on the mirror. Rank up to PRESENCE to extend mirror lifetime to 9 seconds.",
 	["outermirror"] = "This spell will create a mirror in the outer direction and twin mirror on the other side of the map. It can only be used in outer platforms. Players who walk through such mirror will merge with their ghost and teleport to the connected mirror on the other side of the tower. Mirror will disappear after 60 seconds. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
 	["merge"] = "Use this spell to manually merge with Your ghost. Rank up to REPLICA to use this spell to unmerge from Your ghost. Rank up to POLTERGEIST to merge/unmerge nearby players. While merged with ghost, you can use floor mirrors but your ghost will not collect Mana for you.",
@@ -725,7 +725,7 @@ module.spells.descriptions = {
 	["reaverunion"] = union,
 
 	--GREMLIN
-	["tram"] = "Mantra ini untuk membangun tangga funikular di arah ditentukan. Tangga funikular hanya ada       Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Rank up to FIEND to remotely bring back away Trams from any platform.",
+	["tram"] = "Mantra ini untuk menciptakan tangga funikular di arah yang tertenu. Tangga funikular hanya ada       Tram stairs have only half the length of the normal stairs, and once created will automatically travel to the target platform. To make stairs travel back, jump on them without a spell equipped. Naiklah ke peringkat Fiend untuk memanggil jarak jauh tangga funikular dari platform apa pun            Rank up to FIEND to remotely bring back away Trams from any platform.",
 	["screwdown"] = "This spell will turn below stairs into Crazy Stairs. Crazy Stairs will swing around 6 platforms 3 times, and you can choose thie initial rotation. Rank up to DAEMON to remotely bring back Crazy Stairs back to an adjacent platform.",
 	["screwup"] = "This spell will turn above stairs into Crazy Stairs. Crazy Stairs will swing around 6 platforms 3 times. The initial rotation will be random. Rank up to DAEMON to remotely bring back Crazy Stairs back to an adjacent platform.",
 	["revolve"] = "This spell will turn below stairs into revolving propeller on a Z axis. You can choose direction of the rotation. Stairs will stop briefly after each 180 turn.",
