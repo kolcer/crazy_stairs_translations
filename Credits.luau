@@ -32,7 +32,7 @@ local Credits = {
 	},
 	{
 		top = "ITALIANO",
-		bottom = "Roloversion & Pio_Centorame",
+		bottom = "Roloversion + Pio_Centorame",
 	},
 	{
 		top = "MAGYAR",
@@ -40,7 +40,7 @@ local Credits = {
 	},
 	{
 		top = "РУССКИЙ",
-		bottom = "Lapuskus86, Arnie_skunk & v01d_1ncept10n",
+		bottom = "Lapuskus86, Arnie_skunk + v01d_1ncept10n",
 	},
 	{
 		top = "廣州話",
@@ -48,7 +48,7 @@ local Credits = {
 	},
 	{
 		top = "ESPAÑOL",
-		bottom = "That1Dummy & TDtheTV",
+		bottom = "That1Dummy + TDtheTV",
 	},
 	{
 		ttop = "testers",
