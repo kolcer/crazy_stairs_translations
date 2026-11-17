@@ -50,8 +50,8 @@ module.gui.serversettings = {
 	["DroneDelay"] = "Velocidad de giro de drones (segundos)",
 	["DroneMax"] = "Cantidad maxima de escaleras (los drones exclusivamente destruiran sobre este límite)",
 	["DroneMin"] = "Cantidad minima de escaleras (los drones exclusivamente crearan por debajo de este límite)",
-	["DroneBlock"] = "Chance de escaleras hechizadas por cada encuentro con una intersección vacia (porcentaje)",
-	["DroneCurse"] = "Chance de escaleras hechizadas por creación y encuentro con escaleras normales (porcentaje)",
+	["DroneBlock"] = "Probabilidad de escaleras hechizadas por cada encuentro con una intersección vacia (porcentaje)",
+	["DroneCurse"] = "Probabilidad de escaleras hechizadas por creación y encuentro con escaleras normales (porcentaje)",
 
 	["Tower"] = "CONFIGURACIÓN DE LA TORRE",
 	["TowerReadOnly"] = "CONFIGURACIÓN DE LA TORRE (lectura solamente)",
@@ -60,7 +60,7 @@ module.gui.serversettings = {
 	["Regeneration"] = "Generación automatica de escaleras después de La Purga De Wicked (no funciona en el modo infinito)",
 	["EvenLevels"] = "Niveles Pares Restringidos",
 	["OrbMoves"] = "El orbe final cambia de posición",
-	["InfRegeneration"] = "Generación de escaleras automática en un nuevo servidor, los niveles de la torre cambian después de la carrera infinita",
+	["InfRegeneration"] = "Generación de escaleras automática en un nuevo servidor, los niveles de la torre cambian y después de la carrera infinita",
 	--deprecated
 	--["TowerLevels"] = "Tower levels (or active levels in the infinite mode). Cannot be changed during a race or a regeneration",
 	["TowerSize"] = "Tamaño de cuadrícula (experimental)",
@@ -501,11 +501,11 @@ module.spells.names = {
 }
 
 -- common description stuff
-local union = "Este es una hechizo cronometrado de Unión de Fantasma. Cuando estes en este modo, puedes ir en medio de escaleras que bloqueen el camino y caminar en las escaleras fantasma, falsas y obbies. , Las escaleras especiales no tendrán efecto en ti, y no activarás rigs. Tristemente, no puedes usar hechizos en este modo."
+local union = "Este es una hechizo cronometrado de Unión de Fantasma. Cuando estes en este modo, puedes ir en medio de escaleras que bloqueen, las escaleras especiales no tendrán efecto en ti, y no activarás rigs. Tristemente, no puedes usar hechizos en este modo."
 local overload = "Este es un hechizo de Sobrecarga. Te garantizará 1 Mana cada 6 segundos por 1 minuto. (10 en total). Solo puedes tener 1 sobrecarga activada a la vez."
 local timed = "Este es un hechizo cronometrado. "  -- do not remove space
 local rig = "Este es un hechizo rig. Transformará a todas las escaleras normales, una por una, " -- do not remove space
-local event = "Este es un hechizo de evento. " -- do not remove space
+local event = "Este es un hechizo de evento. Afectará todas las escaleras con el hechizo " -- do not remove space
 local fill = "Este es un hechizo de evento. Creará escaleras en cada intersección no hechizada libre. " -- do not remove spaces
 local mode = "Este es un hechizo de dron. Cambiará el modo de todos los drones a %s. En este modo los drones utilizarán aleatoriamente %s o %s en escaleras normales. Las escaleras especiales, en cambio, serán restauradas. Fuera de los límites, los drones crearán y destruirán respectivamente."
 local timedExtra = " Sube de rango a %s para extender el límite a 90s. Invocar este hechizo también rellenará el Mana de todos los %s que tengan al menos el rango %s." -- do not remove leading space
@@ -517,7 +517,7 @@ module.spells.descriptions = {
 	["shrinkabove"] = "Este hechizo encoge las escaleras de arriba, dejandote pasar a lado de ellas.",
 	["link"] = "Este hechizo crea puente entre plataformas por 60 segundos. Los puentes no son tangibles por debajo. Sube de rango a Creator para poder crear puentes en cualquier dirección.",
 	["portal"] = "Este hechizo creará un portal que teletransportará a todos los jugadores que entren en el una plataforma arriba. El portal dura 60 segundos.",
-
+	
 	["summoner"] = timed .. "Te permite crear tantas escaleras como quieras por 1 minuto, tal y como lo harías con el hechizo Crear Escaleras." .. string.format(timedExtra,RankData.PATRON[7].name,"Patrons",RankData.PATRON[3].name),
 	["patronrigevent"] = rig .. "en escaleras con Patron Rig. Cuando estas sean activadas incrementarán el Mana de quien lo toque por 1. Si el jugador tiene la cantidad de Mana máxima, las escaleras no se activarán. Después de activarlas, las escaleras se volverán normales.",
 	["patronevent"] = fill,
@@ -548,7 +548,7 @@ module.spells.descriptions = {
 	["bend"] = "Este hechizo dobla escaleras hacia arriba. Utilízalo para obtener acceso a plataformas superiores.",
 	["damage"] = "Este hechizo transforma las escaleras de arriba en un obby, removiendo la mayoría de los peldaños. Antes de probarlos, recuerda sobre el cooldown de salto. Sube de rango a Destroyer para caminar en obbies tal y como le harías en escaleras normales.",
 	["flatten"] = "Este hechizo dobla escaleras hacia abajo. Utilízalo para obtener acceso a la plataforma opuesta.",
-	["wall"] = "Este hechizo crea uan pared de energía + un puente a la plataforma opuesta por 60 segundos. Solo Wickeds pueden ir en medio de la pared y del puente. La pared puede ser forzada por un teleporte de Spectre, un impulso de\tHacker or una Unión de Fantasma.",
+	["wall"] = "Este hechizo crea uan pared de energía + un puente a la plataforma opuesta por 60 segundos. Solo Wickeds pueden ir en medio de la pared y del puente.",
 
 	["bender"] = timed .. "Te permite doblar escaleras hacia arriba tantas veces quieras por 1 minuto. Ambas las escaleras en las que estes y las de arriba serán dobladas a la vez si los requisitos son cumplidos." .. string.format(timedExtra,RankData.WICKED[7].name,"Wickeds",RankData.WICKED[3].name),
 	["wickedrigevent"] = rig .. "en escaleras con Wicked Rig. Cuando estas sean activadas, se destruirán automáticamente. Sube de rango a Devil para caminar en Wicked Rigs sin activarlas.",
@@ -585,7 +585,7 @@ module.spells.descriptions = {
 	["traveller"] = timed .. "Te permite usar tantas veces quieras el hechizo de teletransportación horizontal por 1 minuto." .. string.format(timedExtra,RankData.SPECTRE[7].name,"Spectres",RankData.SPECTRE[3].name),
 	["spectrerigevent"] = rig .. "en escaleras con Spectre Rig. Cuando estas sean activadas, tendrán un chance del 50% de volverse fantasma. Sube de rango a Vision para poder caminar en Spectre Rigs sin activarlas.",
 	["spectreevent"] = "Este es un hechizo de evento. Antes de invocarlo deberás escoger el modo suave o forzado. En modo suave, este hechizo moverá o rotará todas las escaleras normales en una dirección aleatoria sin destruir nada en el proceso. En modo forzado, este hechizo moverá o rotará todas las escaleras normales en una dirección aleatoria destruyendo cualquier escalera en el camino.",
-	["spectrealtevent"] = event .. "Convertir en escaleras fantasma. Sube de rango a Aether para caminar en escaleras fantasma. La Unión de Fantasma también puede ser usada para caminar en escaleras fantasma.",
+	["spectrealtevent"] = event .. "Convertir en escaleras fantasma. Sube de rango a Aether para caminar en escaleras fantasma.",
 	["spectremode"] = string.format(mode,"Spectre","Spectre Rig","Movimiento Fantasma Suave o Girar"),
 	["spectrerefill"] = overload,
 	["spectreunion"] = union,
@@ -978,11 +978,11 @@ module.gui.settings = {
 	--NEW
 
 	["Gameplay"] = "CONFIGURACIÓN DE JUEGO",
-	["Interface"] = "CONFIGURACIÓN\nDE INTERFAZ",
+	["Interface"] = "CONFIGURACIÓN DE INTERFAZ",
 
-	["Billboard"] = "Mostrar El Billboard De Tu Avatar",
-	["Rank"] = "Mostrar tu Rango Universal en la lista de avatars",
-	["Morph"] = "Mostrar Animación De Morph Al Usar Deceiver o Usurper",
+	["Billboard"] = "Mostrar tu nombre a ti mism@",
+	["Rank"] = "Mostrar tu Rango Universal",
+	["Morph"] = "Mostrar Animación de transformación al usar Deceiver o Usurper",
 	["ManaLimit"] = "Reduce tu propia capacidad de Mana",
 
 	["KChoices"] = "Mostrar Ventana De Dirección De Selección Para Keeper",
@@ -996,9 +996,9 @@ module.gui.settings = {
 
 
 	["List"] = "Mostrar Lista De Jugadores Animada en vez de la lista normal de Roblox",
-	["SwitchBack"] = "Cambiar Automaticamente A Hechizos Básicos Después De Ejecutar Un Hechizo Ultimatum",
-	["SafeCancel"] = "Mostrar Confirmación Al Cancelar Un Hechizo Ultimatum Cronometrado",
-	["Multi"] = "Mostrar Ventana De Selección De Multimonedas Después De La Escalada",
+	["SwitchBack"] = "Cambiar automaticamente a Hechizos Básicos después de ejecutar en hechizo ultimatum",
+	["SafeCancel"] = "Mostrar confirmación al cancelar un hechizo ultimatum cronometrado",
+	["Multi"] = "Mostrar tus Multimonedas después de una escalada si te sobra Multimonedas",
 	["UISize"] = "Tamaño del interfaz"
 	--END NEW
 
@@ -1546,7 +1546,7 @@ module.tutorial = {
 	["tut_big_19"] = "Coge Mana:",
 	["tut_big_20"] = "Usa este hechizo.",
 	["tut_big_21"] = "Saltar en la flecha.",
-	["tut_big_22"] = "Tienes que llegar al orbe arriba de todo para ganar. Bien suerte!",
+	["tut_big_22"] = "Tienes que llegar al orbe arriba de todo para ganar. ¡Bien suerte!",
 
 	["tut_select"] = "Selecciona este hechizo.",
 
