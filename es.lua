@@ -299,68 +299,68 @@ module.spells.names = {
 	--PATRON
 	["summon"] = "Crear Escaleras",
 	["restore"] = "Llamar al Orbe", 
-	["split"] = "Reconstruir Opuesto",
-	["shrinkabove"] = "Encoger Escaleras De Arriba",
-	["link"] = "Crear Puente",
-	["portal"] = "Crear Portal",
+	["split"] = "Reconstruir opuesto",
+	["shrinkabove"] = "Encoger escaleras de arriba",
+	["link"] = "Crear puente",
+	["portal"] = "Crear portal",
 
 	["summoner"] = "Invocador",
-	["patronevent"] = "Sobrecarga De Escaleras",
+	["patronevent"] = "Sobrecarga de Escaleras",
 	["patronaltevent"] = "Encogimiento",
 
 	--JOKER 
-	["flip"] = "Voltear Escaleras",
-	["flipabove"] = "Voltear Escaleras De Arriba",
-	["fake"] = "Crear Escaleras Falsas",
-	["invisible"] = "Crear Escaleras Invisibles",
-	["disco"] = "Escaleras Disco",
-	["trap"] = "Crear Trampa",
+	["flip"] = "Voltear escaleras",
+	["flipabove"] = "Voltear escaleras de arriba",
+	["fake"] = "Crear escaleras falsas",
+	["invisible"] = "Crear escaleras invisibles",
+	["disco"] = "Escaleras disco",
+	["trap"] = "Crear trampa",
 
 	["flipper"] = "Volteador",
 	["jokerevent"] = "Ocultación",
 	["jokeraltevent"] = "Voltéalas Todas",
 
 	--WICKED
-	["destroy"] = "Destruir Escaleras",
-	["destroyabove"] = "Destruir Escaleras De Arriba",
-	["bend"] = "Doblar Escaleras Hacia Arriba",
-	["damage"] = "Dañar Escaleras De Arriba",
-	["flatten"] = "Doblar Escaleras Opuestas Hacia Abajo",
-	["wall"] = "Crear Pared" ,
+	["destroy"] = "Destruir escaleras",
+	["destroyabove"] = "Destruir escaleras de arriba",
+	["bend"] = "Doblar hacia arriba",
+	["damage"] = "Dañar escaleras de arriba",
+	["flatten"] = "Doblar opuestas hacia abajo",
+	["wall"] = "Crear pared" ,
 
 	["bender"] = "Doblador",
 	["wickedevent"] = "Destrucción",
-	["wickedaltevent"] = "Purga",
+	["wickedaltevent"] = "La Purga",
 
 	--KEEPER
-	["move"] = "Mover Escaleras",
-	["rotate"] = "Rotar Escaleras",
-	["moveup"] = "Mover Escaleras Hacia Arriba",
-	["movedown"] = "Restaurar Escaleras",
-	["moverandom"] = "Mover Escaleras De Arriba Aleatoriamente",
-	["rig"] = "Mover Escaleras Aleatoriamente",
+	["move"] = "Mover escaleras",
+	["rotate"] = "Rotar escaleras",
+	["moveup"] = "Mover hacia arriba",
+	["movedown"] = "Restaurar escaleras",
+	["moverandom"] = "Movimiento aleatorio de arriba",
+	["rig"] = "Movimiento aleatorio",
 
 	["ascension"] = "Ascendedor",
 	["keeperevent"] = "Baraja",
 	["keeperaltevent"] = "Restauración",
 
 	--SPECTRE
-	["phantom"] = "Crear Escaleras Fantasma",
-	["ghost"] = "Fantasmizar Escaleras De Arriba",
-	["shadow"] = "Fantasmizar Escaleras",
-	["horizontal"] = "Teletransporte Horizontal",
-	["random"] = "Teletransporte Aleatorio",
-	["vertical"] = "Teletransporte Vertical",
+	["phantom"] = "Crear escaleras efímeras",
+	["ghost"] = "Fantasmizar escaleras de arriba",
+	["shadow"] = "Fantasmizar escaleras",
+	["horizontal"] = "Teletransporte horizontal",
+	["random"] = "Teletransporte aleatorio",
+	["vertical"] = "Teletransporte vertical",
 
 	["traveller"] = "Reluciente",
 	["spectreevent"] = "Baraja Fantasma",
-	["spectrealtevent"] = "Reino del Éter",
+	["spectrealtevent"] = "Reino Del Éter",
 
 	--HACKER
-	["dash"] = "Impulso Horizontal",
+	["dash"] = "Impulso horizontal",
 	["blink"] = "Destello",
 	["swap"] = "Intercambio",
-	["slide"] = "Escaleras Mecánicas",
+	["slide"] = "Escaleras mecánicas",
 	["slideup"] = "Hackear escaleras opuestas", 
 	["glitch"] = "Glichear escaleras",
 
@@ -369,23 +369,23 @@ module.spells.names = {
 	["hackeraltevent"] = "Brecha",
 
 	--THIEF
-	["steal"] = "Robar Escaleras",
-	["stealabove"] = "Robar Escaleras De Arriba",
-	["place"] = "Colocar Escaleras",
-	["uppass"] = "Escaleras en Espiral",
-	["sidepass"] = "Crear Rama",
-	["drop"] = "Tierra Plana",
+	["steal"] = "Robar escaleras",
+	["stealabove"] = "Robar escaleras de arriba",
+	["place"] = "Colocar escaleras",
+	["uppass"] = "Colocar en espiral",
+	["sidepass"] = "Crear rama",
+	["drop"] = "Descartar escaleras",
 
 	["heist"] = "Robo",
 	["thiefevent"] = "Tierra Plana",
-	["thiefaltevent"] = "Ramas en bucle",
+	["thiefaltevent"] = "Ramas En Bucle",
 
 	--ARCHON
-	["splitup"] = "Portal Vertical",
-	["splitrotate"] = "Portal Adyacente",
-	["splitside"] = "Portal Paralelo",
-	["splitrandom"] = "Portal Aleatoria",
-	["cancelsplit"] = "Quitar Portal",
+	["splitup"] = "Portal vertical",
+	["splitrotate"] = "Portal adyacente",
+	["splitside"] = "Portal paralelo",
+	["splitrandom"] = "Portal aleatorio",
+	["cancelsplit"] = "Quitar portal",
 	["splitforward"] = "Portal en plataforma",
 
 	["splitter"] = "Portalmanía",
@@ -394,35 +394,35 @@ module.spells.names = {
 
 	--DRIFTER
 	["indrift"] = "Surfear",
-	["outdrift"] = "Desplazar escaleras",
+	["outdrift"] = "Desplazamiento aleatorio",
 	["updrift"] = "Elevador",
 	["diagdrift"] = "Desplazo diagonal",
-	["spin"] = "Girar Escaleras",
-	["driftabove"] = "Levantar Escaleras De Arriba",
+	["spin"] = "Girar escaleras",
+	["driftabove"] = "Levantar escaleras de arriba",
 
 	["riser"] = "Ascensor",
-	["drifterevent"] = "Desplazamiento",
+	["drifterevent"] = "Lío",
 	["drifteraltevent"] = "Levantamiento",
 
 	--HERETIC
-	["createcursed"] = "Crear Escaleras Hechizadas",
-	["curse"] = "Hechizar Escaleras",
-	["curseabove"] = "Hechizar Escaleras De Arriba",
+	["createcursed"] = "Crear escaleras hechizadas",
+	["curse"] = "Hechizar escaleras",
+	["curseabove"] = "Hechizar escaleras de arriba",
 	["curseinter"] = "Parpadeo",
-	["autodown"] = "Elevar Cisma",
-	["autoup"] = "Bajar Cisma Opuesta",
+	["autodown"] = "Elevar cisma",
+	["autoup"] = "Bajar cisma opuesta",
 
 	["malediction"] = "Maledictor",
 	["hereticevent"] = "Desunión",
 	["hereticaltevent"] = "Venganza",
 
 	--SPLICER
-	["twistup"] = "Empalmar escaleras arriba",
-	["twistside"] = "Empalmar escaleras paralelas",
-	["twistrotate"] = "Empalmar escaleras adyacentes",
-	["canceltwist"] = "Restaurar escaleras empalmadas",
+	["twistup"] = "Empalme arriba",
+	["twistside"] = "Empalme paralelo",
+	["twistrotate"] = "Empalme adyacente",
+	["canceltwist"] = "Restaurar empalme",
 	["split2"] = "Partir escaleras",
-	["splitalt"] = "Partir escaleras hacia adelante",
+	["splitalt"] = "Partir hacia adelante",
 
 	["twister"] = "Divisor",
 	["splicerevent"] = "Entrelazar",
@@ -430,21 +430,21 @@ module.spells.names = {
 
 	--NECROMANCER
 	["createdual"] = "Crear escaleras duales",
-	["copyplatform"] = "Replica la plataforma del fantasma",
-	["soulbridge"] = "Crear puente del alma",
+	["copyplatform"] = "Replica plataforma del fantasma",
+	["soulbridge"] = "Crear puente alma",
 	["undeadabove"] = "Quitar alma de arriba",
 	["revival"] = "Punto de renacimiento",
-	["regen"] = "Regenerar Mana",
+	["regen"] = "Regenerar mana",
 
 	["duality"] = "Dualidad",
 	["necromancerevent"] = "Resurrección",
-	["necromanceraltevent"] = "Cosecha de almas",
+	["necromanceraltevent"] = "Cosecha De Almas",
 
 	--REAVER
 	["createmirrored"] = "Crear escaleras espejo",
-	["bigmirror"] = "Espejo Gigante",
-	["smallmirror"] = "Espejo Pequeño",
-	["outermirror"] = "Espejo Exterior",
+	["bigmirror"] = "Espejo gigante",
+	["smallmirror"] = "Espejo pequeño",
+	["outermirror"] = "Espejo exterior",
 	["merge"] = "Unión Reaver",
 	["oneway"] = "Escaleras cristales de arriba",
 
@@ -454,25 +454,25 @@ module.spells.names = {
 
 
 	--GREMLIN
-	["tram"] = "Crear Tranvía",
+	["tram"] = "Crear tranvía",
 	["screwup"] = "Escaleras de arriba locas",
 	["revolve"] = "Escaleras giratorias",
 	["trapstairs"] = "Escaleras trampa",
-	["screwdown"] = "Escaleras Locas",
+	["screwdown"] = "Escaleras locas",
 	["spinplatform"] = "Plataforma giratoria",
 
 	["tramway"] = "Conductor",
-	["gremlinevent"] = "Todo da vueltas...",
+	["gremlinevent"] = "Todo Da Vueltas...",
 	["gremlinaltevent"] = "Atasco",
 
 
 	--CHAMELEON
-	["cork"] = "Escaleras Sacacorchos",
-	["warp"] = "Atraer Escaleras",
-	["chamdown"] = "Mover Escaleras Abajo",
-	["chamdraw"] = "Puente Levadizo",
-	["chamdrawabove"] = "Puente Levadizo De Arriba",
-	["oneways"] = "Escaleras Unidireccional",
+	["cork"] = "Escaleras sacacorchos",
+	["warp"] = "Atraer escaleras",
+	["chamdown"] = "Mover escaleras abajo",
+	["chamdraw"] = "Puente levadizo",
+	["chamdrawabove"] = "Puente levadizo de arriba",
+	["oneways"] = "Escaleras unidireccionales",
 
 	--NEW
 
@@ -575,7 +575,7 @@ module.spells.descriptions = {
 	["keeperunion"] = union,
 
 	--SPECTRE
-	["phantom"] = "Este hechizo creará escaleras \"fantasma\" en la dirección escogida. Si hay escaleras en el camino, estas serán demolidas. Las escaleras fantasmas se desvanecerán después de invocarlas, desapareciendo completamente.",
+	["phantom"] = "Este hechizo creará escaleras efímeras en la dirección escogida. Si hay escaleras en el camino, estas serán demolidas. Las escaleras efímeras se desvanecerán después de invocarlas, desapareciendo completamente.",
 	["ghost"] = "Este hechizo te permite fantasmizar las escaleras de arriba. Puedes caminar en medio de escaleras fantasma, pero no puedes caminar en ellas a menos que tengas el rango Aether.",
 	["shadow"] = "Este hechizo te permite fantasmizar o defantasmizar escaleras. Puedes caminar en medio de escaleras fantasma, pero no puedes caminar en ellas a menos que tengas el rango Aether. Sube de rango a Phantom para usar este hechizo gratis.",
 	["horizontal"] = "Este hechizo te teletransportará horizontalmente en la dirección elegida. Puedes teletransportarte incluso si hay escaleras en el camino.",
@@ -817,10 +817,10 @@ module.gui.ranks = {
 	["current"] = "TU RANGO ACTUAL",
 	["lower"] = "RANGO NO ADQUIRIDO",
 
-	["more"] = "Necesitas %d escaladas mas como %s para obtener este rango.",
-	["done"] = "Ya posees un rango más alto. Todos los efectos de rangos inferiores se añadirán a tu rango actual.",
+	["more"] = "Necesitas %d escaladas más como %s para obtener este rango.",
+	["done"] = "Ya tienes un rango más alto. Todos los efectos de rangos inferiores se añadirán a tu rango actual.",
 	["max"] = "Este es el rango máximo. Has hecho %d escaladas como %s.",
-	["next"] = "Haz click en la flecha a la derecha, para ver los requisitos para el siguiente rango.",
+	["next"] = "Haz click en la flecha a la derecha para ver los requisitos para el siguiente rango.",
 
 	["PATRON"] = {
 		[4] = "Puedes crear puentes en cualquier dirección.",
@@ -1284,7 +1284,7 @@ module.gui.gameover.credits = {
 module.static = {
 
 	["bas_1"] = "TORRE BÁSICA",
-	["bas_2"] = "¿Como se juega?",
+	["bas_2"] = "¿Cómo se juega?",
 	["bas_3"] = "La misión del juego es tocar al orbe arriba de todo. Pero primero, eliges una clase en el medio del torre.",
 	["bas_4"] = "Coge cristales para regenerar Mana y sube las escaleras. Usa tus hechizos para ayudarte en la escalada.",
 	["bas_5"] = "¿Cómo uso hechizos?",
@@ -1299,7 +1299,7 @@ module.static = {
 	["cla_1"] = "TORRE NORMAL",
 	["cla_2"] = "¡Más Clases!",
 	["cla_3"] = "En Torre Normal, las clases Gremlin, Splicer, Archon, Reaver, Heretic y Muggle son desbloqueadas y puedes transformarte en ellos.",
-	["cla_4"] = "Esas clases son muchisimo más difícil a aprender que las de Torre Básica, y puedes encontrar más escaleras locas aquí.",
+	["cla_4"] = "Esas clases son muchisimas más difíciles a aprender que las de Torre Básica, y puedes encontrar más escaleras locas aquí.",
 	["cla_5"] = "¡Cuidado con los Architects!",
 	["cla_6"] = "En torre normal, también hay Architects.",
 	["cla_7"] = "Architect es una clase especial, que pueden volar. Architects tiene Mana infinita y puede ayudar O molestar a jugadores.",
@@ -1328,10 +1328,10 @@ module.static = {
 	["inf_5"] = "Fallen Drone",
 	["inf_6"] = "Fallen Drone (el dron blanco) tiene un misión especial en esta torre.",
 	["inf_7"] = "Fallen Drone creará niveles sin parar. Aumentará el velocidad cuando más tiempo sobrevives.",
-	["inf_8"] = "Borrador",
-	["inf_9"] = "El borrador ascende y elimina plataformas y escaleras. Aumentará el velocidad también como Fallen Drone. Si caes debajo del Borrador, estás eliminad@",
-	["inf_10"] = "Imagínalo como lava ascendente.",
-	["inf_11"] = "",
+	["inf_8"] = "",
+	["inf_9"] = "El Borrador",
+	["inf_10"] = "El borrador ascende y elimina plataformas y escaleras. Aumentará el velocidad también como Fallen Drone. Si caes debajo del Borrador, estás eliminad@",
+	["inf_11"] = "Puedes imaginarlo como lava ascendiente.",
 	["inf_12"] = "",
 
 	["cus_1"] = "TORRE PERSONALIZADA",
@@ -1462,8 +1462,8 @@ module.static = {
 	["overmind_req"] = "** Require Chameleon Y Spectre",
 	["over_prefix"] = "PREFIJO",
 	["over_passes"] = "GAMEPASSES\nREQUERIDOS",
-	["over_notgroup"] = "COLOR OLIVA - no esta en el grupo",
-	["over_group"] = "COLOR CELESTE - esta en el grupo",
+	["over_notgroup"] = "COLOR OLIVA - no está en el grupo",
+	["over_group"] = "COLOR CELESTE - está en el grupo",
 	["over_mod"] = "MODERATOR - el jugador es un moderador",
 	["over_admin"] = "ADMIN - el jugador es un admin",
 	["over_owner"] = "PRANK ME - creador del juego (Sleazel)",
@@ -1728,106 +1728,106 @@ module.serverfeedback = {
 	["nomana"] = "No tienes suficiente Mana!",
 	["notokens"] = "No tienes suficientes monedas!",
 	["coolwait"] = "No puedes invocar eventos o rigs ahora, por favor espera",
-	["nomirror"] = "Tienes que estar unid@s con tu fantasma para caminar en espejos.",
+	["nomirror"] = "Tienes que estar unid@s con tu fantasma para caminar en espejos",
 	--new
-	["noreflected"] = "No puedes usar este hechizo ahora.",
-	["noflyarch"] = "No puedes volar ahora.",
-	["noblackhole"] = "No puedes ser el agujero negro ahora.",
+	["noreflected"] = "No puedes usar este hechizo ahora",
+	["noflyarch"] = "No puedes volar ahora",
+	["noblackhole"] = "No puedes ser el agujero negro ahora",
 	--end new
-	["regenused"] = "Ya usaste regeneración una vez.",
+	["regenused"] = "Ya usaste regeneración una vez este escalada",
 
 	--failed spell (server)
-	["unknown"] = "Problema desconocido.", --this should not show for normal players, only exploiters
-	["lockedspell"] = "¡Este hechizo está bloqueado!",
-	["possessed"] = "No puedes usar hechizos mentras estes poseído.",
+	["unknown"] = "Error desconocido", --this should not show for normal players, only exploiters
+	["lockedspell"] = "Este hechizo está bloqueado",
+	["possessed"] = "No puedes usar hechizos ahora",
 	["spelllock"] = "No puedes usar hechizos ahora",
-	["nothere"] = "No puedes usar este hechizo en el tutorial.",
-	["onlyracers"] = "Solo los corredores pueden usar hechizos.",
-	["cancelfirst"] = "Necesitas cancelar tu hechizo actual primero...",
-	["stashfull"] = "Tu reserva de escaleras esta llena.",
-	["stashempty"] = "Necesitas robar escaleras antes de usar este hechizo.",
-	["ultwait"] = "Otro hechizo ultimatum esta en progreso. Por favor espera.",
-	["notdefault"] = "Los drones deben estar en modo por defecto primero. Por favor espera.",
-	["noreshuffle"] = "¡Escoge el modo barajar primero!",
-	["oneoverload"] = "No puedes tener multiples Sobrecargas de Mana activas.",
-	["cursed"] = "¡Estas escaleras son hechizadas!",
-	["cursed2"] = "¡Hay escaleras hechizadas en el camino!",
-	["blocked"] = "Esta intersección esta hechizada.",
-	["locked"] = "Estas escaleras estan bloqueadas.",
-	["platformlocked"] = "La plataforma objetivo esta bloqueada.",
-	["normalrig"] = "Este hechizo solo funciona en escaleras normales y rigeadas.",
+	["nothere"] = "No puedes usar este hechizo en el tutorial",
+	["onlyracers"] = "Solo los corredores pueden usar hechizos",
+	["cancelfirst"] = "Necesitas cancelar tu hechizo actual primero",
+	["stashfull"] = "Tu reserva de escaleras esta llena",
+	["stashempty"] = "Necesitas robar escaleras para usar este hechizo",
+	["ultwait"] = "Otro hechizo ultimatum esta en progreso. Por favor espera",
+	["notdefault"] = "Los drones deben estar en modo por defecto primero. Por favor espera",
+	["noreshuffle"] = "Escoge el modo barajar primero",
+	["oneoverload"] = "Ya tienes Sobrecarga de Mana activada",
+	["cursed"] = "Estas escaleras son hechizadas",
+	["cursed2"] = "Hay escaleras hechizadas en el camino",
+	["blocked"] = "Esta intersección está hechizada",
+	["locked"] = "Estas escaleras están bloqueadas",
+	["platformlocked"] = "La plataforma objetivo está bloqueada",
+	["normalrig"] = "Este hechizo solo funciona en escaleras normales y rigeadas",
 	["noway"] = "Hay escaleras aqui (pueden ser invisibles)",
 	["noway2"] = "Hay escaleras en el camino (pueden ser invisibles)",
-	["noplatform"] = "Ninguna plataforma hallada en esa dirección.",
+	["noplatform"] = "Ninguna plataforma hallada en esa dirección",
 	--NEW
 	["nopass"] = "Ese hechizo solo se usa en los plataformas del borde",
 	--END NEW
-	["pass"] = "Ya hay un Pase aqui.",
-	["link"] = "Ya hay un Puente aqui.",
-	["noblink"] = "Solo puedes usar destello en medio de escaleras que esten en el camino.",
-	["noblink2"] = "No puedes usar destello en escaleras desconectadas de la plataforma.",
-	["noflip"] = "Solo las escaleras normales, volteadas o rigeadas pueden ser volteadas.",
-	["nothingtocopy"] = "No hay nada para replicar.",
-	["wrongdirection"] = "No puedes usar este hechizo en esa dirección.",
-	["notfound"] = "Escaleras no encontradas.",
-	["nocursedblink"] = "No puedes usar destello alrededor de las escaleras hechizadas.",
-	["nostairs"] = "No hay escaleras aqui.",
-	["noground"] = "Este hechizo no puede ser usado al nivel del suelo.",
-	["oddonly"] = "Este hechizo no puede ser usado en este nivel.",
-	["noabove"] = "No escaleras encontradas directamente arriba.",
+	["pass"] = "Ya hay un Pase aqui",
+	["link"] = "Ya hay un Puente aqui",
+	["noblink"] = "Solo puedes usar destello en medio de escaleras que esten en el camino",
+	["noblink2"] = "No puedes usar destello en escaleras desconectadas de la plataforma",
+	["noflip"] = "Solo las escaleras normales, volteadas o rigeadas pueden ser volteadas",
+	["nothingtocopy"] = "No hay nada para replicar",
+	["wrongdirection"] = "No puedes usar este hechizo en esa dirección",
+	["notfound"] = "Escaleras no encontradas",
+	["nocursedblink"] = "No puedes usar destello alrededor de las escaleras hechizadas",
+	["nostairs"] = "No hay escaleras aqui",
+	["noground"] = "Este hechizo no puede se puede usar en nivel del suelo",
+	["oddonly"] = "Este hechizo no puede se puede usar en este nivel",
+	["noabove"] = "Escaleras directamente arriba no encontradas",
 	["lock"] = "No puedes usar hechizos ahora",
 	--["outdrift"] = "Outside drift can only be created on the outer platforms.", --removed
-	["cantgate"] = "Esta dirección esta bloqueada.",
-	["wall"] = "Ya hay una pared aqui.",
-	["nocurse"] = "Solo las escaleras normales, hechizadas o rigeadas pueden ser hechizadas/deshechizadas.",
-	["nogate"] = "Estas escaleras no tiene portal.",
+	["cantgate"] = "Esta dirección esta bloqueada",
+	["wall"] = "Ya hay una pared aqui",
+	["nocurse"] = "Solo las escaleras normales, hechizadas o rigeadas pueden ser hechizadas/deshechizadas",
+	["nogate"] = "Estas escaleras no tiene portal",
 	--NEW
-	["noghost"] = "Solo las escaleras fantasmizado, normal o rigeado puede estar fantasmizado.",
-	["wrongplace"] = "Debería estar en el torre.",
-	["archrace"] = "¡Architects no pueden hacer carrera!",
+	["noghost"] = "Solo las escaleras fantasmizado, normal o rigeado puede estar fantasmizado",
+	["wrongplace"] = "Debería estar en el torre",
+	["archrace"] = "Architects no pueden hacer carrera",
 	["toolate"] = "Ya hay una carrera. Inténtalo después",
-	["blockedplit"] = "No se puede crear puerta, la intersección objetivo esta hechizada.",
+	["blockedplit"] = "No se puede crear portal, la intersección objetivo esta hechizada",
 	--END NEW
 	["cursedtarget"] = "Hay escaleras hechizadas en esa destinación",
-	["lockedother"] = "Otras escaleras estan bloqueadas.",
-	["failedgate"] = "La creación del portal hay fallado.",
-	["notwist"] = "Esas escaleras no estan empalmadas.",
-	["wrongmove"] = "Debería estar en el torre.",
-	["blockedmove"] = "Intersección hechizada.",
-	["lockedmove"] = "No se puede mover las escaleras, las escaleras que bloquean el camino estan bloqueadas.",
-	["normal"] = "Estas escaleras son normales.",
-	["lockedinter"] = "Esta intersección está bloqueada.",
-	["toponly"] = "'Llamar al orbe' solo puede ser usado en el nivel superior.",
-	["duplicatemirror"] = "Ya hay un espejo.",
-	["norestore"] = "No se puede restaurar eso.",
+	["lockedother"] = "Otras escaleras estan bloqueadas",
+	["failedgate"] = "La creación del portal ha fallado",
+	["notwist"] = "Esas escaleras no están empalmadas",
+	["wrongmove"] = "Debería estar en el torre",
+	["blockedmove"] = "Intersección hechizada",
+	["lockedmove"] = "No se puede mover las escaleras, las escaleras que bloquean el camino estan bloqueadas",
+	["normal"] = "Estas escaleras son normales",
+	["lockedinter"] = "Esta intersección está bloqueada",
+	["toponly"] = "'Llamar al orbe' solo puede ser usado en el nivel superior",
+	["duplicatemirror"] = "Ya hay un espejo",
+	["norestore"] = "No se puede restaurar eso",
 
 	--higher rank required
 	["admiral2"] = "Sube de rango a Admiral para deshechizar escaleras",
-	["admiral"] = "Sube de rango a Admiral para deshechizar intersecciones.",
-	["infidel"] = "Sube de rango a Infidel para deshechizar intersecciones.",
-	["banished"] = "Sube de rango a Banished, para demoler escaleras hechizadas en el camino.",
-	["annihilator"] = "Sube de rango a Annihilator para destruir escaleras hechizadas.",
-	["disciple"] = "Sube de rango a Disciple para quitar portales en plataformas.",
+	["admiral"] = "Sube de rango a Admiral para deshechizar intersecciones",
+	["infidel"] = "Sube de rango a Infidel para deshechizar intersecciones",
+	["banished"] = "Sube de rango a Banished, para demoler escaleras hechizadas en el camino",
+	["annihilator"] = "Sube de rango a Annihilator para destruir escaleras hechizadas",
+	["disciple"] = "Sube de rango a Disciple para quitar portales en plataformas",
 	
 	--NEW
-	["nomad1"] = "Sube tu rango a Nomad para girar cualquier escalera especial.",
-	["nomad2"] = "Sube tu rango a Nomad para desplazar escaleras ya desplazadas.",
+	["nomad1"] = "Sube tu rango a Nomad para girar cualquier escalera especial",
+	["nomad2"] = "Sube tu rango a Nomad para desplazar escaleras ya desplazadas",
 	--END NEW
-	["prodigy"] = "Sube de rango a Prodigy, para invalidar portales.",
-	["traveller"] = "Sube de rango a Traveller para impulsar elevadores.",
-	["controller"] = "Sube de rango a Controller, para mover cualquier escalera especial.",--*
-	["replica"] = "Sube tu rango a Replica, para desunir con este hechizo.",--*
+	["prodigy"] = "Sube de rango a Prodigy para invalidar portales",
+	["traveller"] = "Sube de rango a Traveller para impulsar elevadores",
+	["controller"] = "Sube de rango a Controller para mover cualquier escalera especial",--*
+	["replica"] = "Sube tu rango a Replica para desunir con este hechizo",--*
 	--NEW
-	["skeleton"] = "Sube tu rango a Skeleton para quitar escaleras y intersecciones hechizadas.",
+	["skeleton"] = "Sube tu rango a Skeleton para quitar escaleras y intersecciones hechizadas",
 	--END NEW
-	["hijacker"] = "Sube de rango a Hijacker para robar cualquier escalera especial.",
-	["transformer"] = "Sube tu rango a Transformer para empalmar escaleras ya empalmadas.",
-	["strider"] = "Sube de rango a Strider para impulsar elevadores por el doble.",
+	["hijacker"] = "Sube de rango a Hijacker para robar cualquier escalera especial",
+	["transformer"] = "Sube tu rango a Transformer para empalmar escaleras ya empalmadas",
+	["strider"] = "Sube de rango a Strider para impulsar elevadores por el doble",
 	["lich"] = "Sube tu rango a Lich para destruir escaleras hechizadas en el camino",
 	--new for 4.4
-	["creator"] = "Sube tu rango a Creator para poner puente en cualquier dirección.",
-	["protector"] = "Sube tu rango a Protector para reconstruir cualquier escaleras especiales.",
-	["robber"] = "Sube tu rango a Robber para colocar escaleras sobre escaleras.",
+	["creator"] = "Sube tu rango a Creator para poner puente en cualquier dirección",
+	["protector"] = "Sube tu rango a Protector para reconstruir cualquier escaleras especiales",
+	["robber"] = "Sube tu rango a Robber para colocar escaleras sobre escaleras",
 
 
 	--rig activation
@@ -1837,63 +1837,63 @@ module.serverfeedback = {
 	["wickedrig"] = "¡Las escaleras están colapsando!",
 	["spectrerig"] = "¡Las escaleras se han fantasmizado!",
 	["notspectrerig"] = "¡Las escaleras NO se han fantasmizado!",
-	["patronrig"] = "¡Haz recibido 1 Mana, cortesía de %s!",
+	["patronrig"] = "¡Has recibido 1 Mana, cortesía de %s!",
 	["thiefrig"] = "¡%s te ha robado 1 Mana!",
-	["mythiefrig"] = "Haz robado 1 mana de %s",
-	["notthiefrig"] = "%s ya no es un Thief - no mana robado.",
-	["leftthiefrig"] = "El Thief ha salido del juego - mana no robado.",
+	["mythiefrig"] = "Has robado 1 Mana de %s",
+	["notthiefrig"] = "%s ya no es un Thief, Mana no robado.",
+	["leftthiefrig"] = "El Thief ha salido del juego, Mana no robado.",
 	["hereticrig"] = "¡Haz sido poseíd@!",
 	["archonrig"] = "¡Teletransporte de fase!",
 	["drifterrig"] = "¡Las escaleras están girando!",
-	["splicerrig"] = "¡Las escaleras están uniendo!",
-	["necrorig"] = "¡Las escaleras estan desapareciendo!",
+	["splicerrig"] = "¡Las escaleras están conectando!",
+	["necrorig"] = "¡Las escaleras están desapareciendo!",
 	["reaverrig"] = "¡Haz sido reflejad@!",
 	["gremlinrig"] = "¡Haz sido hipnotizad@!",
 	["reveal"] = "¡Haz revelado escaleras invisibles!",
 
 	--drifer lifts
 	["boosted"] = "¡Elevador impulsado!",
-	["noboost"] = "No se puede impulsar, no hay más plataformas arriba.",
-	["noupplatform"] = "No se puede impulsar, no hay más plataformas arriba.",
+	["noboost"] = "No se puede impulsar, no hay más plataformas arriba",
+	["noupplatform"] = "No se puede impulsar, no hay más plataformas arriba",
 
 	--mana overload
-	["overstarted"] = "Haz activado Sobrecarga de Mana!",
-	["overended"] = "Sobrecarga de Mana finalizada.",
+	["overstarted"] = "¡Haz activado Sobrecarga de Mana!",
+	["overended"] = "Sobrecarga de Mana finalizada",
 
 	--mana share
-	["2minshare"] = "Al menos 2 mana requerido...",
-	["noshare"] = "No hay jugadores cerca para recibir mana...",
-	["noinf"] = "¡No puedes compartir mana infinito!",
-	["toomuch"] = "¡%s tiene la cantidad máxima de Mana!",
-	["shared"] = "Mana compartido con %s!",
-	["received"] = "%s ha compartido un poco de Mana contigo!",
+	["2minshare"] = "Al menos 2 mana requerido",
+	["noshare"] = "No hay jugadores cerca para recibir Mana",
+	["noinf"] = "No puedes compartir mana infinito",
+	["toomuch"] = "%s tiene la cantidad máxima de Mana",
+	["shared"] = "¡Mana compartido con %s!",
+	["received"] = "¡%s ha compartido Mana contigo!",
 
 	--prompts
 	--["scancel"] = "Cancel your spell to change alignments.", --removed
 	["morph"] = "Salta aquí para convertirte en %s",
-	["race"] = "Salta aquí para comenzar una carrera.",
-	["norace"] = "Carrera es automático en modo infinito.",
+	["race"] = "Salta aquí para comenzar una carrera",
+	["norace"] = "Carrera es automático en modo infinito",
 
 	--misc
 	["secret"] = "¡Secreto encontrado!!",
 	["unlocked"] = "¡Hechizo desbloqueado!",
 
 	--chameleon exceptions	
-	["chamtutorial"] = "¡No puedes usar CHAMELEON en el tutorial!",
-	["champossessed"] = "No puedes usar CHAMELEON ahora.",
-	["chamhypnotised"] = "No puedes usar CHAMELEON ahora.",
-	["chamreflected"] = "No puedes usar CHAMELEON ahora.",
+	["chamtutorial"] = "No puedes usar CHAMELEON en el tutorial",
+	["champossessed"] = "No puedes usar CHAMELEON ahora",
+	["chamhypnotised"] = "No puedes usar CHAMELEON ahora",
+	["chamreflected"] = "No puedes usar CHAMELEON ahora",
 	--["chamspell"] = "Please execute or cancel current spell first.", --removed
 	["morphpossessed"] = "No puedes cambiar tu clase mientras estes poseíd.",
 	["morphhypnotised"] = "You can't change alignment while hypnotised.",
 	["morphreflected"] = "You can't change alignment while reflected.",
 	["bannedclass"] = "%s no se puede usar en Torre Básica.",
 
-	["nocode"] = "Por favor ingresa un código primero.",
-	["invalid"] = "Este código es invalido.",
-	["old"] = "Este código ya no está activo.",
-	["basic_arch"] = "No se puede usar este código en Torre Básica.",
-	["accepted"] = "Código aceptado.",
+	["nocode"] = "Por favor ingresa un código primero",
+	["invalid"] = "Este código es invalido",
+	["old"] = "Este código ya no está activo",
+	["basic_arch"] = "No se puede usar este código en Torre Básica",
+	["accepted"] = "Código aceptado",
 
 	--free demos
 	["tryspectre"] = "¡Spectre desbloqueado por 10 minutos! No te vayas del servidor.",
@@ -1912,17 +1912,17 @@ module.serverfeedback = {
 	["endmana"] = "¡El demo de almacenamiento incrementado terminará en 1 minuto!",
 
 
-	["used"] = "El código ya ha sido utilizado.",
-	["tooshort"] = "Tu código ha sido muy corto y no ha sido enviado.",
-	["sent"] = "Tu mensaje ha sido enviado, gracias.",
+	["used"] = "El código ya ha sido utilizado",
+	["tooshort"] = "Tu código ha sido muy corto y no ha sido enviado",
+	["sent"] = "Tu mensaje ha sido enviado, gracias",
 
 	--NEW 
-	["noobteleport"] = "Completa el tutorial para cambiar de torre.",
-	["noobchameleon"] = "Complete el tutorial para usar Chameleon.",
+	["noobteleport"] = "Completa el tutorial para cambiar de torre",
+	["noobchameleon"] = "Completa el tutorial para usar Chameleon",
 
 	--GIFTING
 	['notingame'] = "Jugador se salió del juego",
-	['alreadyowns'] = "Ya tiene ese gamepass.",
+	['alreadyowns'] = "Ya tiene ese gamepass",
 	['gotit'] = "¡Ahora tienes %s, %s te lo regaló!",
 	['given'] = "¡%s ahora tiene %s!",
 	--END NEW
@@ -1977,32 +1977,32 @@ module.serverfeedback = {
 }
 
 module.serverbroadcast = {
-	["pranked"] = "%s ha hecho una broma a %s!",
-	["found"] = "%s ha encontrado las escaleras invisibles de %s!",
+	["pranked"] = "¡%s ha hecho una broma a %s!",
+	["found"] = "¡%s ha encontrado las escaleras invisibles de %s!",
 	["disco"] = "%s esta disfrutando la música disco de %s.",
 	["trap"] = "%s cayó en la trampa de %s.",
 	["obby"] = "%s esta probando el obby de %s.",
 	["default"] = "Los drones estan de vuelta en el modo por defecto.",
-	["reg"] = "La escalera se está regenerando",
-	["done"] = "Regeneración completa.",
-	["union"] = "%s se ha fusionado con su fantasma!",
+	["reg"] = "La torre se está regenerando",
+	["done"] = "Regeneración completada.",
+	["union"] = "¡%s se ha fusionado con su fantasma!",
 	["eliminated"] = "%s ha sido eliminado.",
-	["won"] = "%s ha ganado la carrera!",
+	["won"] = "¡%s ha ganado la carrera!",
 	--["falsestart"] = "False Start", --removed
 	--["countdown"] = "Race in %d seconds!", --removed
 	--["noplayers"] = "No racing players, infinite mode will not start!", --removed
 	["nojoin"] = "La carrera esta cerrada - no más jugadores nuevos se pueden unir.",
 	--["allfalse"] = "All players have False Started!", --removed
 	["safety"] = "Los niveles de la torre han cambiado. La carrera no empezará.",
-	["leader"] = "%s ha tomado la delantera!",
-	["toolate"] = "Nadie ha alcanzado la meta a tiempo!",
+	["leader"] = "¡%s ha tomado la delantera!",
+	["toolate"] = "¡Nadie ha alcanzado la meta a tiempo!",
 	--["go"] = "GO!", --removed
-	["over"] = "Carrera finalizada!",
+	["over"] = "¡Carrera finalizada!",
 
 	--NEW
 	["newrace"] = "%s comenzó una carrera, ¡desafíale!",
 	["joined"] = "%s ha entrado en la carrera",
-	["2min"] = "Nadie desafió %s",
+	["2min"] = "Nadie desafió %s.",
 	["infstart"] = "¡Carrera infinita ha empezado!",
 
 	--END NEW
@@ -2012,12 +2012,12 @@ module.serverbroadcast = {
 module.localfeedback = {
 
 	--["cancel"] = "Cancel other spell first!", --removed
-	["nomana"] = "No tienes mana suficiente!",
-	["notokens"] = "No tienes monedas suficiente!",
-	["unlocked"] = "Hechizo desbloqueado!",
-	["maxmana"] = "Tu mana ya está al máximo!",
-	["nopurchase"] = "No necesitas comprar Mana en el tutorial!",
-	["notinbasic"] = "No se puede ejecutar eventos en Torre Básica.",
+	["nomana"] = "No tienes mana suficiente",
+	["notokens"] = "No tienes monedas suficiente",
+	["unlocked"] = "¡Hechizo desbloqueado!",
+	["maxmana"] = "Tu Mana ya está al máximo",
+	["nopurchase"] = "No necesitas comprar Mana en el tutorial",
+	["notinbasic"] = "No se puede lanzar eventos en Torre Básica",
 	--this is for chamelon clicking on the basic tower banned class
 	--NEW
 	["limitset"] = "Tienes activado un límite de Mana", --for refill mana
@@ -2028,17 +2028,17 @@ module.localfeedback = {
 	["hasmana"] = "¡Ya lo tienes!",
 	["nomuggle"] = "Creíste que había hechizos secretos para Muggle pero no habían.",
 	["nonone"] = "Creíste que había hechizos ultimatum secretos para None pero no habían.",
-	["nounlocks"] = "Desbloquea todos los hechizos básicos para acceder a los hechizos ultimatum!",
-	["onetoken"] = "Has recibido un Moneda Especial de %s!",
-	["moretokens"] = "Has recibido unas Monedas Especiales de %s!",
-	["music"] = "Música cambiada correctamente.",
-	["nomusic"] = "Error al cargar música.",
+	["nounlocks"] = "Desbloquea todos los hechizos básicos para acceder a los hechizos ultimatum",
+	["onetoken"] = "Has recibido un Moneda Especial de %s",
+	["moretokens"] = "Has recibido unas Monedas Especiales de %s",
+	["music"] = "Música cambiada correctamente",
+	["nomusic"] = "Error al cargar música",
 	["noteleport"] = "¡Teleporte fallido!", 
-	["norefresh"] = "No puedes actualizar todavía.",
-	["nounion"] = "No puedes usar este hechizo ahora.",
+	["norefresh"] = "No puedes actualizar todavía",
+	["nounion"] = "No puedes usar este hechizo ahora",
 
 	--NEW
-	["failedjoin"] = "Error al participar en la carrera.",
+	["failedjoin"] = "Error al participar en la carrera",
 	--END NEW
 
 }
@@ -2047,15 +2047,15 @@ module.localfeedback = {
 --NEW (redone)
 module.switchon = {
 
-	["JOKER1"] = "Ya no revelarás escaleras invisibles.",
-	["WICKED1"] = "Ya no activarás Wicked Rigs.",
-	["KEEPER1"] = "Ya no activarás Keeper Rigs.",
-	["SPECTRE1"] = "Ya no activarás Spectre Rigs.",
-	["HACKER1"] = "Imunidad de escaleras mecánicas activadas.",
-	["HACKER2"] = "Imunidad de escaleras mecánicas y rigs activadas.",
-	["ARCHON1"] = "Solo los portales que van hacía arriba te teletransportarán.",
-	["DRIFTER1"] = "Ya no activarás Drifter Rigs.",
-	["SPLICER1"] = "Ya no activarás Splicer rigs.",
+	["JOKER1"] = "Ya no revelarás escaleras invisibles",
+	["WICKED1"] = "Ya no activarás Wicked Rigs",
+	["KEEPER1"] = "Ya no activarás Keeper Rigs",
+	["SPECTRE1"] = "Ya no activarás Spectre Rigs",
+	["HACKER1"] = "Imunidad de escaleras mecánicas activadas",
+	["HACKER2"] = "Imunidad de escaleras mecánicas y rigs activadas",
+	["ARCHON1"] = "Solo los portales que van hacía arriba te teletransportarán",
+	["DRIFTER1"] = "Ya no activarás Drifter Rigs",
+	["SPLICER1"] = "Ya no activarás Splicer rigs",
 	--["REAVER1"] = "You will no longer trigger below Reaver Rigs.", --removed
 	--["GREMLIN1"] = "Nearby Corkscrews locked.", --removed
 	["NONE"] = "Eres el agujero negro.",
@@ -2064,102 +2064,102 @@ module.switchon = {
 
 module.switchoff = {
 
-	["JOKER1"] = "Ahora revelarás escaleras invisibles.",
-	["WICKED1"] = "Ahora activarás Wicked Rigs.",
-	["KEEPER1"] = "Ahora activarás Keeper Rigs.",
-	["SPECTRE1"] = "Ahora activarás Spectre Rigs.",
-	["HACKER1"] = "Imunidad de escaleras mecánicas desactivadas.",
-	["HACKER2"] = "Imunidad de escaleras mecánicas y rigs desactivadas.",
-	["ARCHON1"] = "Ahora todas los portales excepto las que van abajo te teletransportarán.",
-	["DRIFTER1"] = "Ahora activarás Drifter Rigs.",
-	["SPLICER1"] = "Ahora activarás Splicer Rigs.",
+	["JOKER1"] = "Ahora revelarás escaleras invisibles",
+	["WICKED1"] = "Ahora activarás Wicked Rigs",
+	["KEEPER1"] = "Ahora activarás Keeper Rigs",
+	["SPECTRE1"] = "Ahora activarás Spectre Rigs",
+	["HACKER1"] = "Imunidad de escaleras mecánicas desactivadas",
+	["HACKER2"] = "Imunidad de escaleras mecánicas y rigs desactivadas",
+	["ARCHON1"] = "Ahora todas los portales excepto las que van abajo te teletransportarán",
+	["DRIFTER1"] = "Ahora activarás Drifter Rigs",
+	["SPLICER1"] = "Ahora activarás Splicer Rigs",
 	--["REAVER1"] = "You will now trigger below Reaver Rigs.", --removed
 	--["GREMLIN1"] = "Nearby Corkscrews unlocked.", --removed
 	["NONE"] = "Aún sigues vacio.",
 }
 --END NEW
 
-local timedSpell = "%s ha usado el hechizo %s!"
+local timedSpell = "¡%s ha usado el hechizo %s!"
 
 module.timedspells = {}
 
 
 module.eventspells = {
 
-	["patronrigevent"] = "%s ha implementado a todas las escaleras normales 1 MANA DE REGALO!",
-	["patronevent"] = "%s ha llenado toda la torre de escaleras!",
-	["patronaltevent"] = "%s ha encogido todas las escaleras normales!",
+	["patronrigevent"] = "¡%s ha implementado a todas las escaleras normales 1 MANA DE REGALO!",
+	["patronevent"] = "¡%s ha llenado toda la torre de escaleras!",
+	["patronaltevent"] = "¡%s ha encogido todas las escaleras normales!",
 
-	["jokerrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO VOLTEADOR!",
-	["jokerevent"] = "%s ha ocultado todas las escaleras normales!",
-	["jokeraltevent"] = "%s ha volteado todas las escaleras normales!",
+	["jokerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO VOLTEADOR!",
+	["jokerevent"] = "¡%s ha ocultado todas las escaleras normales!",
+	["jokeraltevent"] = "¡%s ha volteado todas las escaleras normales!",
 
-	["wickedrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO DESTRUCTOR!",
-	["wickedevent"] = "%s ha destruido todas las escaleras normales!",
-	["wickedaltevent"] = "%s ha destruido TODAS las escaleras!",
+	["wickedrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO DESTRUCTOR!",
+	["wickedevent"] = "¡%s ha destruido todas las escaleras normales!",
+	["wickedaltevent"] = "¡%s ha destruido TODAS las escaleras!",
 
-	["keeperrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO MOVER ALEATORIAMENTE!",
-	["keeperevent"] = "%s ha movido aleatoriamente todas las escaleras normales!",
-	["keeperaltevent"] = "%s ha restaurado todas las escaleras!",
+	["keeperrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO MOVER ALEATORIAMENTE!",
+	["keeperevent"] = "¡%s ha movido aleatoriamente todas las escaleras normales!",
+	["keeperaltevent"] = "¡%s ha restaurado todas las escaleras!",
 
-	["spectrerigevent"] = "%s ha implementado a todas las escaleras normales EL PROBABILIDAD DE FANTASMIZARSE!",
-	["spectreevent"] = "%s ha movido de manera fantasmal todas las escaleras normales!",
-	["spectrealtevent"] = "%s ha fantasmizado todas las escaleras normales!",
+	["spectrerigevent"] = "¡%s ha implementado a todas las escaleras normales EL PROBABILIDAD DE FANTASMIZARSE!",
+	["spectreevent"] = "¡%s ha movido de manera fantasmal todas las escaleras normales!",
+	["spectrealtevent"] = "¡%s ha fantasmizado todas las escaleras normales!",
 
-	["hackerrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO GLITCHEAR!",
-	["hackerevent"] = "%s ha transformado todas las escaleras normales a mecánicas!",
-	["hackeraltevent"] = "%s ha transformado todas las escaleras normales a mecánicas de subida!",
+	["hackerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO GLITCHEAR!",
+	["hackerevent"] = "¡%s ha transformado todas las escaleras normales a mecánicas!",
+	["hackeraltevent"] = "¡%s ha transformado todas las escaleras normales a mecánicas de subida!",
 
-	["thiefrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO ROBAR MANA!",
-	["thiefevent"] = "%s ha aplanado todas las escaleras normales!",
-	["thiefaltevent"] = "%s ha creado ramas alrededor del torre!",
+	["thiefrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO ROBAR MANA!",
+	["thiefevent"] = "¡%s ha aplanado todas las escaleras normales!",
+	["thiefaltevent"] = "¡%s ha creado ramas alrededor del torre!",
 
-	["archonrigevent"] = "%s ha implementado a todas las escaleras normales UN PORTAL!",
-	["archonevent"] = "%s ha portalizado aleatoriamente todas las escaleras normales!",
-	["archonaltevent"] = "%s ha portalizado verticalmente todas las escaleras normales!",
+	["archonrigevent"] = "¡%s ha implementado a todas las escaleras normales UN PORTAL!",
+	["archonevent"] = "¡%s ha portalizado aleatoriamente todas las escaleras normales!",
+	["archonaltevent"] = "¡%s ha portalizado verticalmente todas las escaleras normales!",
 
-	["drifterrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO ROTADOR!",
-	["drifterevent"] = "%s ha desplazado aleatoriamente todas las escaleras normales!",
-	["drifteraltevent"] = "%s ha levantado todas las escaleras normales!",
+	["drifterrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO ROTADOR!",
+	["drifterevent"] = "¡%s ha desplazado aleatoriamente todas las escaleras normales!",
+	["drifteraltevent"] = "¡%s ha levantado todas las escaleras normales!",
 
-	["hereticrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO POSEEDOR!",
-	["hereticevent"] = "%s ha cismatizado a todas las escaleras normales!",
-	["hereticaltevent"] = "%s ha hechizado todas las escaleras normales!",
+	["hereticrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO POSEEDOR!",
+	["hereticevent"] = "¡%s ha cismatizado a todas las escaleras normales!",
+	["hereticaltevent"] = "¡%s ha hechizado todas las escaleras normales!",
 
-	["splicerrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO EMPALMAR!",
-	["splicerevent"] = "%s ha empalmado todas las escaleras",
-	["spliceraltevent"] = "%s ha dividido todas las escaleras!",
+	["splicerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO EMPALMAR!",
+	["splicerevent"] = "¡%s ha empalmado todas las escaleras",
+	["spliceraltevent"] = "¡%s ha dividido todas las escaleras!",
 
-	["necromancerrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO QUITAR ALMA!",
-	["necromancerevent"] = "%s ha llenado el torre con escaleras sin alma!",
-	["necromanceraltevent"] = "%s ha quitado las almas de todas las escaleras normales!",
+	["necromancerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO QUITAR ALMA!",
+	["necromancerevent"] = "¡%s ha llenado el torre con escaleras sin alma!",
+	["necromanceraltevent"] = "¡%s ha quitado las almas de todas las escaleras normales!",
 
-	["gremlinrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO HIPNOTIZAR!",
-	["gremlinevent"] = "%s ha girado todas las escaleras",
-	["gremlinaltevent"] = "%s ha llenado el torre con tranvías!",
+	["gremlinrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO HIPNOTIZAR!",
+	["gremlinevent"] = "¡%s ha girado todas las escaleras!",
+	["gremlinaltevent"] = "¡%s ha llenado el torre con tranvías!",
 
-	["reaverrigevent"] = "%s ha implementado a todas las escaleras normales EL HECHIZO REFLEJAR!",
-	["reaverevent"] = "%s ha convertido las escaleras en escaleras unidireccionales!",
-	["reaveraltevent"] = "%s ha convertido las escaleras en escaleras de cristal!",
+	["reaverrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO REFLEJAR!",
+	["reaverevent"] = "¡%s ha convertido las escaleras en escaleras unidireccionales!",
+	["reaveraltevent"] = "¡%s ha convertido las escaleras en escaleras de cristal!",
 
-	["newmode"] = "%s ha cambiado los drones a modo %s!",
+	["newmode"] = "¡%s ha cambiado los drones a modo %s!",
 
-	["chameleonrigevent"] = "%s ha implementado a todas las escaleras normales un hechizo misterioso!"
+	["chameleonrigevent"] = "¡%s ha implementado a todas las escaleras normales un hechizo misterioso!"
 }
 
 module.spells.extras = {
 
-	["Prompt"] = "Haz click en uno de estos hechizos, para aprender como usarlo",
+	["Prompt"] = "Cliquear un hechizo para aprender como usarlo",
 	["Title1"] = "Hechizos básicos",
-	["Title2"] = "Hechizos Ultimate únicos",
-	["Title3"] = "Hechizos Ultimate compartidos",
+	["Title2"] = "Hechizos ultimatum únicos",
+	["Title3"] = "Hechizos ultimatum comunes",
 	["ManaCost"] = "Costo en Mana: %s", 
 	["TokenCost"] = "Costo en Monedas: %s", 
 	["Special"] = "Requisitos especiales: %s",
 	["Execution"] = "Ejecución: %s",
 	["Description"] = "Descripción: %s",
 	["basic"] = "Básico",
-	["ultimate"] = "Ultimate",
+	["ultimate"] = "Ultimatum",
 	["unlock"] = "0 (3 para desbloquear)",
 	["none"] = "Sin requisitos especiales",
 
@@ -2173,7 +2173,7 @@ module.gui.mana = {
 
 	["mana"] = "MANA", --main name
 	["ghost"] = "FANTASMA",
-	["spirit"] = "ESPÍRITU", --only for spirit spectres
+	["spirit"] = "SPIRIT", --only for spirit spectres
 	["welcome"] = "BIENVENIDO",
 	["drones"] = "DRONES",
 	["orb"] = "ORBE",
@@ -2219,7 +2219,7 @@ module.gui.gameover.extras = {
 	--NEW
 	["reflected"] = "¡Libérame!",
 	--END NEW
-	["new"] = "Nuevo rango adquirido - %s",
+	["new"] = "Nuevo rango adquirido: %s",
 
 }
 
