@@ -1307,6 +1307,7 @@ module.static = {
 	["cla_9"] = "¡Eventos y Rigs!",
 	["cla_10"] = "En Torre Normal, jugadores pueden ejecutar eventos y Rigs.",
 	["cla_11"] = "Todos tus hechizos ultimatum son desbloqueados. Puedes lanzar eventos que afectan la torre entera, o Rigs que encantarán todas las escaleras con el hechizo de clase que hayas elegido.",
+	["cla_12"] = "",
 	
 	["pro_1"] = "TORRE PRO",
 	["pro_2"] = "Restricciones de niveles pares...",
