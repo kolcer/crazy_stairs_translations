@@ -1217,6 +1217,7 @@ module.static = {
 	["cla_9"] = "Sortilegi e Rig!",
 	["cla_10"] = "Nella torre Classica è possibile lanciare i sortilegi.",
 	["cla_11"] = "I sortilegi sono in grado di modificare l'intera torre o di alterare le scale con un effetto che cambia di classe in classe.",
+	["cla_12"] = "",
 
 	["pro_1"] = "TORRE PROFESSIONALE",
 	["pro_2"] = "Vincolo dei piani pari...",
