@@ -1287,6 +1287,7 @@ module.static = {
 	["cla_9"] = "Events and Rigs!",
 	["cla_10"] = "In the Normal Tower players are allowed to cast Ultimate Events and Rigs.",
 	["cla_11"] = "Unlike Basic Tower, all your Ultimate spells are unlocked. You may cast Events that affect the whole staicase, or Rigs that will enchant all stairs with your chosen alignment spell.",
+	["cla_12"] = "",
 	
 	["pro_1"] = "PRO TOWER",
 	["pro_2"] = "Even levels restrictions...",
