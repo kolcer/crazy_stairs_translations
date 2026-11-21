@@ -1,6 +1,5 @@
 --VERSION 4.4--
 --SPANISH--
--- COMPLETE! Hopefully --
 
 local TowerData = require(game.ReplicatedFirst:WaitForChild('DataModules'):WaitForChild('TowerData'))
 local SpellData = require(game.ReplicatedFirst.DataModules:WaitForChild('SpellData'))
@@ -14,12 +13,13 @@ module.gui.basic = {
 
 	["default"] = "PREDETERMINADO",
 	["validate"] = "VALIDAR",
+	["leftgame"] = "[jugador/a se salió del juego]"
 
 }
 
 module.gui.switcher = {
 
-	["join"] = "UNIRSE",
+	["join"] = "UNIR",
 	["friends"] = "AMIGOS EN LÍNEA",
 	["refresh"] = "actualizando...",
 	["fail"] = "¡ERROR AL ACTUALIZAR!",
@@ -50,7 +50,7 @@ module.gui.serversettings = {
 	["DroneDelay"] = "Velocidad de giro de drones (segundos)",
 	["DroneMax"] = "Cantidad maxima de escaleras (los drones exclusivamente destruiran sobre este límite)",
 	["DroneMin"] = "Cantidad minima de escaleras (los drones exclusivamente crearan por debajo de este límite)",
-	["DroneBlock"] = "Probabilidad de escaleras hechizadas por cada encuentro con una intersección vacia (porcentaje)",
+	["DroneBlock"] = "Probabilidad de intersecciones hechizadas por cada encuentro con una intersección vacia (porcentaje)",
 	["DroneCurse"] = "Probabilidad de escaleras hechizadas por creación y encuentro con escaleras normales (porcentaje)",
 
 	["Tower"] = "CONFIGURACIÓN DE LA TORRE",
@@ -169,7 +169,7 @@ module.gui.stats = {
 }
 
 module.gui.questions = {
-	["cancel"] = "¿Quieres cancelar este hechizo cronometrado? Los monedas no serán reembolsados.",
+	["cancel"] = "¿Quieres cancelar este hechizo cronometrado? Las monedas no serán reembolsadas.",
 	["tutorial"]= "¿Volver a hacer el tutorial?",
 	["skip"] = "¿Saltar el tutorial?",
 	["reshuffle"] = "¿Quieres que las escaleras eviten las colisiones mientras se mueven? Si no, cualquier escalera en el camino será destruida.",
@@ -178,11 +178,11 @@ module.gui.questions = {
 
 	--new
 	["gift"] = "¿Quieres regalar %s a otro jugador?",
-	["choose"] = "Elige un recipiente para %s", 
-	["confirm"] = "Quieres regalar %s a %s?", --second %s is the chosen player
+	["choose"] = "Elige un destinatario para %s", 
+	["confirm"] = "¿Quieres regalar %s a %s?", --second %s is the chosen player
 	["received"] = "Ahora tienes el gamepass %s, ¡%s te lo regaló!",
 	
-	["notenough"] = "Tienes que tener %d escaladas para teletransportar a otras torres.",
+	["notenough"] = "Tienes que completar %d escaladas en total para teletransportarte a otras torres.",
 
 	["architect"] = "Architect",
 	["mana"] = "+10 Almacenamiento de Mana",
@@ -191,7 +191,7 @@ module.gui.questions = {
 
 	--end new
 	--new
-	["race"] = "Participar en la carrera?",
+	["race"] = "¿Participar en la carrera?",
 	["racein"] = "Empieza en:",
 	["go"] = "¡YA!",
 	["raceoff"] = "Carrera cancelado",
@@ -288,7 +288,7 @@ module.spells = {}
 --SPELL NAMES
 
 local CommonSpellNames = {
-	["rigevent"] = "Rig de %s",
+	["rigevent"] = "%s Rig",
 	["mode"] = "Drones Modo %s",
 	["refill"] = "Sobrecarga de Mana (%s)",
 	["union"] = "Unión de Fantasma (%s)",
@@ -297,7 +297,7 @@ local CommonSpellNames = {
 module.spells.names = {
 
 	--PATRON
-	["summon"] = "Crear Escaleras",
+	["summon"] = "Crear escaleras",
 	["restore"] = "Llamar al Orbe", 
 	["split"] = "Reconstruir opuesto",
 	["shrinkabove"] = "Encoger escaleras de arriba",
@@ -641,7 +641,7 @@ module.spells.descriptions = {
 	--DRIFTER
 	["indrift"] = "Este hechizo creará una tabla de surf temporal, moviendote y a otros jugadores a la plataforma que esté en la dirección que hayas escogido.",
 	["updrift"] = "Este hechizo creará un elevador usando la plataforma en la que estés y la de arriba. Las plataformas serán restauradas despupes de un periodo de tiempo. Sube de rango a Vagabond para que el elevador sea más rápido. Sube de rango a Traveller para impulsar el elevador a un segundo nivel. Sube de rango a Strider para impulsar el elevador a un tercer nivel.",
-	["diagdrift"] = "Este hechizo creará un elevador usando la plaforma en la que estés y cualquier otra en una dirección diagonal. Las plataformas serán restuaradas después de un periodo de tiempo. Se puede usar en las plataformas de borde para orbitar el torre una vez.",
+	["diagdrift"] = "Este hechizo creará un elevador usando la plaforma en la que estés y cualquier otra en una dirección diagonal. Las plataformas serán restuaradas después de un periodo de tiempo. Se puede usar en las plataformas de borde para orbitar la torre una vez.",
 	["spin"] = "Este hechizo rotará las escaleras de abajo 180 grados. Sube de rango a Nomad para poder girar cualquier tipo de escalera.",
 	["outdrift"] = "Este hechizo desplazará escaleras en un intersección libre aleatoriamente. Sube tu rango a Nomad para desplazar escaleras ya desplazadas.",
 	["driftabove"] = "Este hechizo levantará las escaleras de arriba, para que puedas caminar debajo de ellas y subirlas, si deseas.",
@@ -790,13 +790,13 @@ module.gui.ranks = {
 	["none_2"] = "Para usar hechizos, ¡DEBERÍAS elegir una clase!",
 
 	--NEW
-	["possessed_1"] = "¡Estas Poseíd@!",
+	["possessed_1"] = "¡Estás Poseíd@!",
 	["possessed_3"] = "No puedes lanzar hechizos, tus poderes de rango estan desactivados y no puedes saltar.",
 
-	["hypnotised_1"] = "¡Estas Hipnotizad@!",
+	["hypnotised_1"] = "¡Estás Hipnotizad@!",
 	["hypnotised_3"] = "Tus controles estan invertidos.",
 
-	["reflected_1"] = "¡Estas Reflejad@!",
+	["reflected_1"] = "¡Estás Reflejad@!",
 	["reflected_3"] = "Te controlas a ti mismo desde la perspectiva de tu fantasma.",
 
 	["findmana"] = "Encuentra Mana o un Patron Rig para liberarte.",
@@ -1135,7 +1135,7 @@ module.gui.gameover.messages = {
 		"Escaleras mecanicas de por vida",
 	},
 	["HERETIC"] = {
-		"NO PASARÁS!",
+		"NO VAS A PASAR!",
 		"Banear la magia es como banear la diversión",
 		"Posee a la gente. Manten a el Overmind satisfecho.",
 		"Muerte y caida",
@@ -1155,7 +1155,7 @@ module.gui.gameover.messages = {
 		"El pastel es una mentira",
 		"Hay un portal para cada problema",
 		"Confundir a todos con mis portales: ¡Cumplido!",
-		"No puedo usando mi Archon potar"
+		"No puedo usando mi potar de Archon"
 	},
 	["DRIFTER"] = {
 		"SURFEAR, MONTAR y PLANEAR",
@@ -1177,13 +1177,13 @@ module.gui.gameover.messages = {
 		"¿Conectar con personas? No no, ¡CONECTAR CON ESCALERAS!",
 		"No me confundes con Archon. Conecto escaleras de una manera muy distinta.",
 		"Dividir o Empalmar - esa es la pregunta",
-		"Gracias MarkerQuest, me salvaste",
+		"Gracias MarkerQuest, me has salvado",
 		"Esas escaleras son bastantes rectas",
 	},
 	["REAVER"] = {
 		"REFLEJAR, SUSTITUIR y UNIRSE",
 		"Los espejos no son más que puertas.",
-		"El torre es un ilusión",
+		"La torre es un ilusión",
 		"Puedes ver tu alma en el espejo",
 		"¿Los estamos observando, o nos están observando a nosotros?",
 		"Lo siento mucho Wicked, tienes siete años de mala suerte",
@@ -1218,7 +1218,7 @@ module.gui.gameover.messages = {
 	},
 	["NONE"] = {
 		"NO, PARAR y CESA",
-		"Muggle es un traidor, 'nada' significa NADA.",
+		"Muggle es un traidor. 'Nada' significa NADA.",
 		"[Insertar Texto Aquí]",
 		"No puedes fallar si no hagas nada.",
 		"No hay nada arriba.",
@@ -1283,9 +1283,9 @@ module.gui.gameover.credits = {
 
 module.static = {
 
-	["bas_1"] = "TORRE BÁSICA",
+	["bas_1"] = "TORRE\nBÁSICA",
 	["bas_2"] = "¿Cómo se juega?",
-	["bas_3"] = "La misión del juego es tocar al orbe arriba de todo. Pero primero, eliges una clase en el medio del torre.",
+	["bas_3"] = "La misión del juego es tocar al orbe arriba de todo. Pero primero, eliges una clase en el medio de la torre.",
 	["bas_4"] = "Coge cristales para regenerar Mana y sube las escaleras. Usa tus hechizos para ayudarte en la escalada.",
 	["bas_5"] = "¿Cómo uso hechizos?",
 	["bas_6"] = "Todos los hechizos require Mana para poder ejecutarlas.",
@@ -1293,10 +1293,10 @@ module.static = {
 	["bas_8"] = "Cuando haces una escalada, obtendrás 3 monedas de tu clase. Puedes desbloquer otros hechizos con esas monedas (3 para cada). No puedes usar monedas de una clase para desbloquear hechizos de otro.",
 	["bas_9"] = "¿Cómo uso hechizos ultimatum?",
 	["bas_10"] = "Primero tienes que desbloquear todos los hechizos normales. Cuando lo hagas, todos los hechizos ultimatum será desbloqueadas también. Hechizos ultimatum necesita Monedas, NO Mana para ejecutarlas.",
-	["bas_11"] = "Puedes acceder hechizos ultimatum cliqueando al botón más a la izquierda",
+	["bas_11"] = "Puedes acceder hechizos ultimatum cliqueando al botón a la izquierda",
 	["bas_12"] = "Algunos hechizos ultimatum son cronometrados. Puedes aprender más sobre tus hechizos en las guias de la clase.",
 
-	["cla_1"] = "TORRE NORMAL",
+	["cla_1"] = "TORRE\nNORMAL",
 	["cla_2"] = "¡Más Clases!",
 	["cla_3"] = "En Torre Normal, las clases Gremlin, Splicer, Archon, Reaver, Heretic y Muggle son desbloqueadas y puedes transformarte en ellos.",
 	["cla_4"] = "Esas clases son muchisimas más difíciles a aprender que las de Torre Básica, y puedes encontrar más escaleras locas aquí.",
@@ -1309,25 +1309,25 @@ module.static = {
 	["cla_11"] = "Todos tus hechizos ultimatum son desbloqueados. Puedes lanzar eventos que afectan la torre entera, o Rigs que encantarán todas las escaleras con el hechizo de clase que hayas elegido.",
 	["cla_12"] = "",
 	
-	["pro_1"] = "TORRE PRO",
-	["pro_2"] = "Restricciones de niveles pares...",
-	["pro_3"] = "En Torre Pro, algunos hechizos de plataforma no se pueden usar en niveles pares sino solo en impares.",
-	["pro_4"] = "Esas plataformas son marcados con color negro y un X en el medio.",
+	["pro_1"] = "TORRE\nPRO",
+	["pro_2"] = "Niveles pares...",
+	["pro_3"] = "En Torre Pro, algunos hechizos de plataforma no se pueden usar en niveles pares sino solo en impares. En esas plataformas, no puedes crear portales, espejos, elevadores, etc.",
+	["pro_4"] = "Esas plataformas son marcados con color negro y un símbolo X en el medio.",
 	["pro_5"] = "Escaleras Hechizadas",
-	["pro_6"] = "En Torre Pro, hay escaleras hechizadas. Esas escaleras son completamente inmune a muchos hechizos.",
-	["pro_7"] = "",
-	["pro_8"] = "Solo Heretics y algunos rangos especiales de algunos clases pueden restaurar o quitar esas escaleras. Pero drones siempre crearán nuevas.",
+	["pro_6"] = "En Torre Pro, hay escaleras hechizadas. Esas escaleras son inmune a muchos hechizos. No puedes moverlas, destruirlas, crear portales a través de ellas, etc.",
+	["pro_7"] = "Solo Heretics y algunos rangos especiales de algunos clases pueden restaurar o quitar esas escaleras. Pero los drones siempre crearán nuevas.",
+	["pro_8"] = "",
 	["pro_9"] = "Intersecciones Hechizados",
-	["pro_10"] = "También hay intersecciones hechizados que bloquean TODOS los hechizos que requiren flecha de plataforma.",
-	["pro_11"] = "Solo Heretics y algunos rangos especiales de algunos clases pueden quitar esas intersecciones.",
+	["pro_10"] = "También hay intersecciones hechizados que bloquean TODOS los hechizos que requiren la flecha de una plataforma. No puedes usar NÍNGUN hechizo de flecha en eses intersecciones y tampoco puede haber escaleras en eses intersecciones.",
+	["pro_11"] = "Solo Heretics y algunos rangos especiales de algunos clases pueden quitar esas intersecciones. Pero los drones siempre crearán nuevas.",
 	["pro_12"] = "",
 
-	["inf_1"] = "TORRE INFINITA",
-	["inf_2"] = "CARRERA OBLIGATORIA",
+	["inf_1"] = "TORRE\nINFINITA",
+	["inf_2"] = "Carrera Obligatoria",
 	["inf_3"] = "En Torre Infinita, deberías participar en una carrera para ganar recompensas y usar hechizos.",
 	["inf_4"] = "Para 'completar' esa torre, tienes que sobrevive tanto tiempo como puedas. Recibirás recompensas cuando estas eliminad@. Tocando el Orbe simplemente te da +10 Mana.",
 	["inf_5"] = "Fallen Drone",
-	["inf_6"] = "Fallen Drone (el dron blanco) tiene un misión especial en esta torre.",
+	["inf_6"] = "Fallen Drone (el dron blanco) hace algo diferente en esta torre.",
 	["inf_7"] = "Fallen Drone creará niveles sin parar. Aumentará el velocidad cuando más tiempo sobrevives.",
 	["inf_8"] = "",
 	["inf_9"] = "El Borrador",
@@ -1336,26 +1336,30 @@ module.static = {
 	["inf_12"] = "",
 
 	["cus_1"] = "TORRE PERSONALIZADA",
-	["cus_2"] = "¡TU DECIDE!",
-	["cus_3"] = "Puedes configurar el torre casi como quieras..",
+	["cus_2"] = "¡Tú decides!",
+	["cus_3"] = "Puedes configurar casi todos los ajustes de la torre. Puedes configurar el tamaño de la torre, ponerlo en modo infinito, etc. También puedes configurar los drones.",
 	["cus_4"] = "Las recompensas en la Torre Personalizada se reducen a la mitad. Obtendrás 1 moneda cada 12 niveles y una escalada cada 30 niveles.",
 	["cus_5"] = "",--"Tower Settings",
 	["cus_6"] = "",--"By changing the tower settings you can have it your way. Choose levels, restrict even levels or even set the tower to the infinite mode.",
 	["cus_7"] = "",--"Only server owner can adjust the settings.",
 	["cus_8"] = "",--"Drone Settings",
 	["cus_9"] = "",--"You can also change the small drone setting. Adjust the max count, the min count or even disable them altoghether.",
+	["cus_10"] = "",
+	["cus_11"] = "",
+	["cus_12"] = "",
 
-	["vr_1"] = "Al jugar Crazy Stairs en VR automaticamente te convertirás en un Architect.",
-	["vr_2"] = "A diferencia de los jugadores normales, Architect no quieres ascender la torre. Tu meta es ayudar o prevenir que otros jugadores alcancen el orbe.",
-	["vr_3"] = "Al opción es tuya. ¿Serán una amenaza o un héroe? O simplemente quieres jugar con la torre? La opción es tuya.",
-	["vr_4"] = "¿Cómo navegar?",
-	["vr_5"] = "Usa la palanca izquierda para moverte hacia delante o atrás. Moverla para los lados te hará moverte hacia la izquierda y la derecha.",
-	["vr_6"] = "Usa la palanca derecha para moverte arriba o abajo, inclinar la palanca de izquiera a derecha resultara en un giro de la cámara 'perfecto'.",
-	["vr_7"] = "Intena mantenerte afuera de la torre parau na mejor vista y mayor facilidad al apuntar.",
-	["vr_8"] = "¿Cómo usar los hechizos?",
-	["vr_9"] = "Para empezar un hechizo, apreta el orbe de energia con el boton Grip. Un puntero laser aparecerá, el cual te ayudará a apuntar a las escaleras y plataformas.",
-	["vr_10"] = "Ejecuta el hechizo con el botton Trigger mientras sostienes el botón Grip. Cada clase en VR tiene 2 hechizos. Uno para plataformas y otro para escaleras. Dependiendo en el objetivo, el hechizo adecuado será elegido.",
-	["vr_11"] = "Para cambiar una clase en VR, presiona y manter el botton Trigger, sin el botón Grip. Después escoge el alignment con palanca de la mano correspondiente.",
+	["vr_1"] = "REALIDAD\nVIRTUAL",
+	["vr_2"] = "Al jugar Crazy Stairs en VR, automáticamente te convertirás en un Architect.",
+	["vr_3"] = "A diferencia de los jugadores normales, Architect no quieres ascender la torre. Tu meta es ayudar o prevenir que otros jugadores alcancen el orbe.",
+	["vr_4"] = "Al opción es tuya. ¿Serán una amenaza o un héroe? ¿O simplemente quieres jugar con la torre? La opción es tuya.",
+	["vr_5"] = "¿Cómo navegar?",
+	["vr_6"] = "Usa la palanca izquierda para moverte hacia delante o atrás. Moverla para los lados te hará moverte hacia la izquierda y la derecha.",
+	["vr_7"] = "Usa la palanca derecha para moverte arriba o abajo, inclinar la palanca de izquiera a derecha resultara en un giro de la cámara 'perfecto'.",
+	["vr_8"] = "Intena mantenerte afuera de la torre para mejor vista y mayor facilidad al apuntar.",
+	["vr_9"] = "¿Cómo usar los hechizos?",
+	["vr_10"] = "Para empezar un hechizo, apreta el orbe de energia con el boton Grip. Un puntero laser aparecerá, el cual te ayudará a apuntar a las escaleras y plataformas.",
+	["vr_11"] = "Ejecuta el hechizo con el botton Trigger mientras sostienes el botón Grip. Cada clase en VR tiene 2 hechizos. Uno para plataformas y otro para escaleras. Dependiendo en el objetivo, el hechizo adecuado será elegido.",
+	["vr_12"] = "Para cambiar una clase en VR, presiona y manter el botton Trigger, sin el botón Grip. Después escoge el alignment con palanca de la mano correspondiente.",
 
 	["home_1"] = "CASA DE MUGGLE",
 	["home_2"] = "NUESTRO LEMA:\nCAMINAR\nSALTAR\nY\nCAER",
@@ -1368,7 +1372,7 @@ module.static = {
 	["oasis_4"] = "'Soy muy perezoso para tener mis propios hechizos'\nnuestro fundador",
 
 	["nexus_1"] = "NEXUS DE HERETIC",
-	["nexus_2"] = "NUESTRO LEMA:\n¡NO\nPASARÁS!",
+	["nexus_2"] = "NUESTRO LEMA:\nNO\nVAS\nA\nPASAR!",
 	["nexus_3"] = "PROS:\nMejor en la Torre Pro\nNo puede ser detenido\nCONTRAS:\nUsarlo para equipos de dificil\nRequiere bastante mana",
 	["nexus_4"] = "'Banear la magia es como banear la diversión'\nnuestro fundador",
 
@@ -1380,7 +1384,7 @@ module.static = {
 	["nether_1"] = "NETHER DE SPECTRE",
 	["nether_2"] = "NUESTRO LEMA:\nDESAPARECER\nOCULTARSE\nY\nTELETRANSPORTARSE",
 	["nether_3"] = "PROS:\nHechizos rápidos\nPerfecto para jugar solo\nCONTRAS:\nCuesta Robux\nNo recomendado para equipos",
-	["nether_4"] = "'Claro que teletransportarse es seguro'\nnuestro fundador",
+	["nether_4"] = "'Claro que teletransportarse es seguro'\nnuestro fundador (DESAPARECIDO)",
 
 	["study_1"] = "ESTUDIO DE ARCHON",
 	["study_2"] = "NUESTRO LEMA:\nABRIR\nPORTAL\n???\nAPROVECHAR",
@@ -1424,7 +1428,7 @@ module.static = {
 
 	["shack_1"] = "CHOZA DE GREMLIN",
 	["shack_2"] = "NUESTRO LEMA:\nGIRAR\nROTAR\nY\nHIPNOTIZAR",
-	["shack_3"] = "PROS:\nNada.\nEn serio, no lo usas.\nCONTRAS:\nTodo el mundo te odiará.\nTODO.",
+	["shack_3"] = "PROS:\nNada. Ninguna cosa buena.\nNo lo usas.\nCONTRAS:\nTodo el mundo te odiará.\nTODOS.",
 	["shack_4"] = "'¡Juega conmigo!'\nnuestro fundador",
 
 	["mirror_1"] = "ESPEJO DE REAVER",
@@ -1447,7 +1451,7 @@ module.static = {
 	--END NEW
 
 	--SHARED
-	["leader_pro"] = "La Torre Pro cuenta como 2 escaladas",	
+	["leader_pro"] = "Torre Pro cuenta como 2 escaladas",	
 	["leader_update"] = "Actualizando en: ",	
 	["leader_updating"] = "Actualizando...",	
 	["leader_rank"] = "RANGO",
@@ -1464,7 +1468,7 @@ module.static = {
 	["over_prefix"] = "PREFIJO",
 	["over_passes"] = "GAMEPASSES\nREQUERIDOS",
 	["over_notgroup"] = "COLOR OLIVA - no está en el grupo",
-	["over_group"] = "COLOR CELESTE - está en el grupo",
+	["over_group"] = "COLOR AZUL - está en el grupo",
 	["over_mod"] = "MODERATOR - el jugador es un moderador",
 	["over_admin"] = "ADMIN - el jugador es un admin",
 	["over_owner"] = "PRANK ME - creador del juego (Sleazel)",
@@ -1518,7 +1522,7 @@ module.static = {
 	["chameleon_lead"] = "CHAMELEONS VELOCES",
 	["chameleon_ranks"] = "RANGOS DE CHAMELEON",
 
-	["dailies"] = "LOS RECORDS DE HOY",
+	["dailies"] = "RECORDS DE HOY",
 	["most_climbs"] = "MÁS ESCALADAS",
 	["most_wins"] = "MÁS CARRERAS GANADAS", 
 
@@ -1543,7 +1547,7 @@ module.tutorial = {
 	["tut_big_15"] = "Vas a encontrar muchas escaleras que bloquean a tu camino.",
 	["tut_big_16"] = "Usa este hechizo",
 	["tut_big_17"] = "Puedes destruir escaleras de arriba, saltando en las debajo.",
-	["tut_big_18"] = "Ahora usa Hacker. Los Hackers teletransportan.",
+	["tut_big_18"] = "Ahora usa Hacker. Los Hackers se teletransportan.",
 	["tut_big_19"] = "Coge Mana:",
 	["tut_big_20"] = "Usa este hechizo.",
 	["tut_big_21"] = "Saltar en la flecha.",
@@ -1552,10 +1556,10 @@ module.tutorial = {
 	["tut_select"] = "Selecciona este hechizo.",
 
 	["tut_small_init"] = "Salta para iniciar tutorial",
-	["tut_small_morph"] = "Salta en el pad.",
+	["tut_small_morph"] = "Salta en el pad",
 	["tut_small_collect"] = "Coge Mana",
-	["tut_small_arrow"] = "Salta en la flecha.",
-	["tut_small_stairs"] = "Salta en la escalera.",
+	["tut_small_arrow"] = "Salta en la flecha",
+	["tut_small_stairs"] = "Salta en la escalera",
 	["tut_small_pellet"] = "Tocar el Orbe",
 	--end new
 
@@ -1778,13 +1782,13 @@ module.serverfeedback = {
 	["noabove"] = "Escaleras directamente arriba no encontradas",
 	["lock"] = "No puedes usar hechizos ahora",
 	--["outdrift"] = "Outside drift can only be created on the outer platforms.", --removed
-	["cantgate"] = "Esta dirección esta bloqueada",
+	["cantgate"] = "Esta dirección está bloqueada",
 	["wall"] = "Ya hay una pared aqui",
 	["nocurse"] = "Solo las escaleras normales, hechizadas o rigeadas pueden ser hechizadas/deshechizadas",
 	["nogate"] = "Estas escaleras no tiene portal",
 	--NEW
 	["noghost"] = "Solo las escaleras fantasmizado, normal o rigeado puede estar fantasmizado",
-	["wrongplace"] = "Debería estar en el torre",
+	["wrongplace"] = "Debería estar en la torre",
 	["archrace"] = "Architects no pueden hacer carrera",
 	["toolate"] = "Ya hay una carrera. Inténtalo después",
 	["blockedplit"] = "No se puede crear portal, la intersección objetivo esta hechizada",
@@ -1793,7 +1797,7 @@ module.serverfeedback = {
 	["lockedother"] = "Otras escaleras estan bloqueadas",
 	["failedgate"] = "La creación del portal ha fallado",
 	["notwist"] = "Esas escaleras no están empalmadas",
-	["wrongmove"] = "Debería estar en el torre",
+	["wrongmove"] = "Debería estar en la torre",
 	["blockedmove"] = "Intersección hechizada",
 	["lockedmove"] = "No se puede mover las escaleras, las escaleras que bloquean el camino estan bloqueadas",
 	["normal"] = "Estas escaleras son normales",
@@ -2091,15 +2095,15 @@ module.eventspells = {
 	["patronevent"] = "¡%s ha llenado toda la torre de escaleras!",
 	["patronaltevent"] = "¡%s ha encogido todas las escaleras normales!",
 
-	["jokerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO VOLTEADOR!",
+	["jokerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO VOLTEAR!",
 	["jokerevent"] = "¡%s ha ocultado todas las escaleras normales!",
 	["jokeraltevent"] = "¡%s ha volteado todas las escaleras normales!",
 
-	["wickedrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO DESTRUCTOR!",
+	["wickedrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO DESTRUIR!",
 	["wickedevent"] = "¡%s ha destruido todas las escaleras normales!",
 	["wickedaltevent"] = "¡%s ha destruido TODAS las escaleras!",
 
-	["keeperrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO MOVER ALEATORIAMENTE!",
+	["keeperrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO MOVER!",
 	["keeperevent"] = "¡%s ha movido aleatoriamente todas las escaleras normales!",
 	["keeperaltevent"] = "¡%s ha restaurado todas las escaleras!",
 
@@ -2119,11 +2123,11 @@ module.eventspells = {
 	["archonevent"] = "¡%s ha portalizado aleatoriamente todas las escaleras normales!",
 	["archonaltevent"] = "¡%s ha portalizado verticalmente todas las escaleras normales!",
 
-	["drifterrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO ROTADOR!",
+	["drifterrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO GIRAR!",
 	["drifterevent"] = "¡%s ha desplazado aleatoriamente todas las escaleras normales!",
 	["drifteraltevent"] = "¡%s ha levantado todas las escaleras normales!",
 
-	["hereticrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO POSEEDOR!",
+	["hereticrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO POSEER!",
 	["hereticevent"] = "¡%s ha cismatizado a todas las escaleras normales!",
 	["hereticaltevent"] = "¡%s ha hechizado todas las escaleras normales!",
 
@@ -2132,12 +2136,12 @@ module.eventspells = {
 	["spliceraltevent"] = "¡%s ha dividido todas las escaleras!",
 
 	["necromancerrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO QUITAR ALMA!",
-	["necromancerevent"] = "¡%s ha llenado el torre con escaleras sin alma!",
+	["necromancerevent"] = "¡%s ha llenado la torre con escaleras sin alma!",
 	["necromanceraltevent"] = "¡%s ha quitado las almas de todas las escaleras normales!",
 
 	["gremlinrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO HIPNOTIZAR!",
 	["gremlinevent"] = "¡%s ha girado todas las escaleras!",
-	["gremlinaltevent"] = "¡%s ha llenado el torre con tranvías!",
+	["gremlinaltevent"] = "¡%s ha llenado la torre con tranvías!",
 
 	["reaverrigevent"] = "¡%s ha implementado a todas las escaleras normales EL HECHIZO REFLEJAR!",
 	["reaverevent"] = "¡%s ha convertido las escaleras en escaleras unidireccionales!",
@@ -2191,7 +2195,7 @@ module.gui.mana = {
 	--["hack"] = "HACK", --removed
 	["stash"] = "RESERVA",
 	["backdoor"] = "BACKDOOR",
-	["chamber"] = "CÁMARA",
+	["chamber"] = "APOSENTO",
 	["base"] = "BASE",
 	["circus"] = "CIRCO",
 	["shelter"] = "REFUGIO",
@@ -2216,7 +2220,7 @@ module.gui.gameover.extras = {
 
 	--["noobs"] = "Tutorials are for noobs!", --removed
 	["possessed"] = "¡Esos Heretics fastidiosos!",
-	["hypnotised"] = "¿Qué pasó?",
+	["hypnotised"] = "¿Qué pasó? ¿Dónde estoy?",
 	--NEW
 	["reflected"] = "¡Libérame!",
 	--END NEW
