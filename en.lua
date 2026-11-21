@@ -1339,7 +1339,7 @@ module.static = {
 	["vr_9"] = "How do I cast spells?",
 	["vr_10"] = "To cast a spell, squeeze magic orb with the grip button. Laser pointer will appear that will help you target stairs and platforms for spell execution.",
 	["vr_11"] = "Execute the spell with the trigger button, while still holding the grip button. Each alignment in VR has two spells. One platform and one stairs spell. Depending on the target, a proper spell will be chosen.",
-	["vr_12"] = "To change an alingment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
+	["vr_12"] = "To change an alignment in the VR mode, press and hold the trigger button, without the grip button. You can then change alignment with the corresponding hand's thumbstick.",
 
 	["home_1"] = "MUGGLE'S HOME",
 	["home_2"] = "OUR MOTTO:\nWALK\nJUMP\nAND\nFALL",
