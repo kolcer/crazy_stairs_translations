@@ -1553,7 +1553,7 @@ module.tutorial = {
 
 	["tut_select"] = "Select this spell.",
 
-	["tut_small_init"] = "Jump to spawn tutorial",
+	["tut_small_init"] = "Lompat untuk memulai tutorial, jika tidak semakin goblok",
 	["tut_small_morph"] = "Jump to morph",
 	["tut_small_collect"] = "Collect Mana",
 	["tut_small_arrow"] = "Jump on arrow",
@@ -2188,7 +2188,7 @@ module.gui.mana = {
 	["share"] = "DIBAGI",
 	["prank"] = "PRANK",
 	["possession"] = "POSSESSION",
-	["ritual"] = "RITUAL",
+	["ritual"] = "RITUIL",
 	["purge"] = "HANCURAN",
 	["blessing"] = "BERKAH",
 	--["hack"] = "HACK", --removed
@@ -2231,14 +2231,14 @@ module.gui.gameover.raceplacements = {
 	"YOU HAVE WON THE RACE!",
 	"SECOND PLACE!",
 	"THIRD PLACE!",
-	"You have placed fourth.",
+	"Kamu telah mencapai posisi keempat. Be crybaby like a 6 years old boy, ayo. 🙄",
 	"You have placed fifth.",
 	"You have placed sixth.",
 	"You have placed seventh.",
 	"You have placed eighth.",
 	"You have placed ninth.",
-	"You have placed tenth.",
-	"Kamu telah mencapai posisi kesebelas.",
+	"Kamu telah mencapai posisi kesepuluh. Fokuslah urusan kau, malah pembalap lain.",
+	"Kamu telah mencapai posisi kesebelas. Biar lagi kau semakin pandai gim ini, apa pun posisimu.",
 	"Kamu telah mencapai posisi keduabelas. Semangat buat balap-balap berikutnya, semua orang bisa dapat peringkat tinggi karena pengalaman kok.",
 }
 
