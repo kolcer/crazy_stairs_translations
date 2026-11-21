@@ -13,6 +13,7 @@ module.gui.basic = {
 
 	["default"] = "ПО УМОЛЧАНИЮ",
 	["validate"] = "ПОДТВЕРДИТЬ",
+	["leftgame"] = "[игрок вышел]",
 
 }
 
