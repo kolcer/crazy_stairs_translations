@@ -12,7 +12,7 @@ module.gui = {}
 module.gui.basic = {
 	["default"] = "ALAP",
 	["validate"] = "ÉRVÉNYESÍTÉS",
-	["left"] = "[játékos elhagyta a játékot]",
+	["leftgame"] = "[játékos elhagyta a játékot]",
 
 }
 
