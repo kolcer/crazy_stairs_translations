@@ -13,7 +13,7 @@ module.gui.basic = {
 
 	["default"] = "DEFAULT",
 	["validate"] = "VALIDATE",
-	["left"] = "[player left]",
+	["leftgame"] = "[player left]",
 
 }
 
