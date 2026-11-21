@@ -2231,7 +2231,7 @@ module.gui.gameover.raceplacements = {
 	"YOU HAVE WON THE RACE!",
 	"SECOND PLACE!",
 	"THIRD PLACE!",
-	"Kamu telah mencapai posisi keempat. Be crybaby like a 6 years old boy, ayo. 🙄",
+	"Kamu telah mencapai posisi keempat. Jadilah <i>sore loser</i> kayak bocil umur 6 tahun sih. 🙄",
 	"You have placed fifth.",
 	"You have placed sixth.",
 	"You have placed seventh.",
