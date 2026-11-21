@@ -1235,7 +1235,7 @@ module.static = {
 
 	["bas_1"] = "KEZDŐ TORONY",
 	["bas_2"] = "Hogyan kell játszani?",
-	["cla_3"] = "A játéknak az a célja, hogy feljuss a legfelső szintre és megszerezd a lebegő Energikus Gömböt. Először válassz egy osztályt úgy, hogy ráugrasz egy pálya közepén levő körre.",
+	["bas_3"] = "A játéknak az a célja, hogy feljuss a legfelső szintre és megszerezd a lebegő Energikus Gömböt. Először válassz egy osztályt úgy, hogy ráugrasz egy pálya közepén levő körre.",
 	["bas_4"] = "Miután megelégedtél a választásoddal, mászd meg a lépcsőket. Gyűjts lebegő kristályokat, hogy feltöltsd a Manádat. Használd az osztályod varázslatait, hogy segítsen rajtad a mászásban.",
 	["bas_5"] = "Hogyan kell varázsolni?",
 	["bas_6"] = "Mindegyik varázslat kerül valamennyi Manába. Ha van elég Manád, akkor nyomd meg a varázslatot. A kezeid elkezdenek világítani azt jelezve, hogy sikeresen tudtál varázsolni.",
@@ -1498,7 +1498,7 @@ module.tutorial = {
 	["tut_big_18"] = "Most változz at Hackerré. A Hackerek tudnak teleportálni.",
 	["tut_big_19"] = "Szedd fel ezt a Manát:",
 	["tut_big_20"] = "Használd ezt a varázsigét hogy átteleportálj az elötted lévő felületre.",
-	["tut_big_21"] = "A teleportáláshoz ugarj a nyílra."
+	["tut_big_21"] = "A teleportáláshoz ugarj a nyílra.",
 	["tut_big_22"] = "A nyeréshez meg kell szerezned a legfelső szinten lévő gömböt. Sok szerencsét!",
 
 	["tut_select"] = "Válaszd ki ezt a varázslatot.",
