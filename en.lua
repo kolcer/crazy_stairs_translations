@@ -1329,7 +1329,7 @@ module.static = {
 	["cus_11"] = "",
 	["cus_12"] = "",
 
-	["vr_1"] = "VR",
+	["vr_1"] = "VIRTUAL REALITY",
 	["vr_2"] = "Architect in VR mode",
 	["vr_3"] = "Unlike regular players, Architects do not need to ascend the staircase. Your goal is to help or troll other players that are climbing the tower.",
 	["vr_4"] = "The choice is yours. Will you be a menace or a saviour? Or do you simply want to mess around? Have fun!",
