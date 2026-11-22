@@ -17,6 +17,8 @@ module.gui.basic = {
 	["default"] = "預設",
 	--Validate
 	["validate"] = "驗證",
+	--[player left]
+	["leftgame"] = "[已離開玩家]",
 
 }
 
@@ -1554,19 +1556,19 @@ module.gui.gameover = {}
 module.gui.gameover.results = {
 
 	--Your Alignment
-	["class"] = "你嘅 ALIGNMENT",
+	["class"] = "ALIGNMENT",
 	--Your Climb Time
-	["time"] = "你嘅攀爬時間",
+	["time"] = "攀爬時間",
 	--Climbs Awarded
 	["climbs"] = "獲得攀爬次數",
 	--Tokens Awarded
 	["tokens"] = "獲得代幣數量",
 	--Your Current Rank
-	["rank"] = "你依家嘅等級",
+	["rank"] = "依家嘅等級",
 
 	--NEW
 	--Your Overall Rank
-	["role"] = "你嘅總體等級",
+	["role"] = "總體等級",
 	--Classic Tower Record
 	["classic"] = "普通塔紀錄",
 	--Pro Tower Record	
