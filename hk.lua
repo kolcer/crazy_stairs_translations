@@ -3253,7 +3253,7 @@ module.eventspells = {
 	["keeperevent"] = "%s 重新排整所有普通樓梯!",
 	["keeperaltevent"] = "%s 恢復所有樓梯!",
 
-	["spectrerigevent"] = "%s 壟斷所有普通樓梯去50%機會鬼化樓梯!",
+	["spectrerigevent"] = "%s 壟斷所有普通樓梯去50%%機會鬼化樓梯!",
 	["spectreevent"] = "%s 幻影重新排整所有普通樓梯!",
 	["spectrealtevent"] = "%s 鬼化所有普通樓梯!",
 
