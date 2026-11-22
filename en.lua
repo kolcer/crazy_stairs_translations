@@ -776,7 +776,7 @@ module.gui.ranks = {
 	--none
 
 	["none_1"] = "You have not chosen an alignment!",
-	["none_2"] = "To cast spells, you MUST pick a class!",
+	["none_2"] = "To cast spells, you MUST pick an alignment!",
 
 	--NEW
 	["possessed_1"] = "You have been Possessed!",
