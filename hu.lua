@@ -967,12 +967,12 @@ module.gui.gameover = {}
 module.gui.gameover.results = {
 
 	["class"] = "OSZTÁLYOD",
-	["time"] = "MÁSZÁSOD IDEJE",
+	["time"] = "IDŐD",
 	["climbs"] = "JUTALMAZOTT MÁSZÁSOK",
 	["tokens"] = "JUTALMAZOTT ZSETONOK",
 	["rank"] = "JELENLEGI RANGOD",
 
-	["role"] = "AZ ÖSSZEFOGLALÓ RANGOD",
+	["role"] = "ÖSSZEFOGLALÓ RANGOD",
 	["classic"] = "REKORDOD A NORMÁLIS TORONYBAN",
 	["pro"] = "REKORDOD A PROFI TORONYBAN",	
 	["infinite"] = "REKORDOD A VÉGTELEN TORONYBAN",
@@ -981,7 +981,7 @@ module.gui.gameover.results = {
 
 	["cTime"] = "REKORDOD %s-KÉNT", --%s will be replaced by the used class
 	["levels"] = "ELÉRT SZINTEK",
-	["cClimbs"] = "ENNYI MÁSZÁSOD VAN %s-KÉNT", --%s will be replaced by the used class
+	["cClimbs"] = "MÁSZÁSAID %s-KÉNT", --%s will be replaced by the used class
 	--["tClimbs"] = "ENNYI MÁSZÁSOD VAN ÖSSZEVONVA",
 	--["tTokens"] = "ENNYI %s ZSETONOD VAN", %s will be replaced by the used class (or multi)
 	--["spells"] = "ENNYI VARÁZSLATOT HASZNÁLTÁL", amount
