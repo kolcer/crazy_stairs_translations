@@ -996,14 +996,14 @@ module.gui.gameover = {}
 
 module.gui.gameover.results = {
 
-	["class"] = "YOUR ALIGNMENT",
-	["time"] = "YOUR CLIMB TIME",
+	["class"] = "ALIGNMENT",
+	["time"] = "TIME",
 	["climbs"] = "CLIMBS AWARDED",
 	["tokens"] = "TOKENS AWARDED",
-	["rank"] = "YOUR CURRENT RANK",
+	["rank"] = "CURRENT RANK",
 
 	--NEW
-	["role"] = "YOUR OVERALL RANK",
+	["role"] = "OVERALL RANK",
 	["classic"] = "NORMAL TOWER RECORD",	
 	["pro"] = "PRO TOWER RECORD",	
 	["infinite"] = "INFINITE TOWER RECORD",
