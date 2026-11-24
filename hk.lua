@@ -1126,7 +1126,7 @@ module.spells.descriptions = {
 	--["ditch"] = "喺未被廢除果陣, 依個原本係一個 Thief 咒語. 佢會將下面樓梯變成X字形樓梯.",
 	
 	--This used to be a Gremlin spell, before it got rejected. It will turn stairs into a corkscrew staircase. You can choose the direction of spin, when casting this spell. Old Daemon perk is no longer active.
-	["cork"] = "喺未被廢除果陣, 依個原本係一個 Gremlin 咒語. 佢會將下面樓梯變成螺絲形樓梯. 你可以喺用依個咒語果陣揀旋轉方向.  舊 Daemon 等級嘅功能已停用"
+	["cork"] = "喺未被廢除果陣, 依個原本係一個 Gremlin 咒語. 佢會將下面樓梯變成螺絲形樓梯. 你可以喺用依個咒語果陣揀旋轉方向.  舊 Daemon 等級嘅功能已停用",
 
 	--This used to be a Heretic spell, before it got rejected. It will turn above stairs into drawbridge, allowing you to pass. Ascend is impossible unless other player activates bridge from above. Old Unbeliever rank is no longer active and auto draw from below is no longer possible.
 	["chamdrawabove"] = "喺未被廢除果陣, 依個原本係一個 Heretic 咒語. 佢會將上面樓梯變成吊橋, 比你行上去. 搞到冇可能向上行除非有人由上面觸發吊橋. 舊 UNBELIEVER 等級嘅功能已停用, 唔會再自動觸發吊橋.",
@@ -2064,7 +2064,6 @@ module.gui.gameover.maxrank ={
 
 module.gui.gameover.credits = {
 
-	["common"] = {
 
 		--[[
 		OLD
