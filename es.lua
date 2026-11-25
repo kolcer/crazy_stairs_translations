@@ -13,7 +13,7 @@ module.gui.basic = {
 
 	["default"] = "PREDETERMINADO",
 	["validate"] = "VALIDAR",
-	["leftgame"] = "[jugador/a se salió del juego]"
+	["leftgame"] = "[jugador/a se salió]"
 
 }
 
@@ -123,13 +123,13 @@ module.gui.stats = {
 	["climbs"] = "TUS ESCALADAS",
 	["total"] = "ESCALADAS/VICTORIAS EN TOTAL",
 	["best"] = "MEJOR TIEMPO EN GENERAL",
-	["norecord"] = "¿?",
+	["norecord"] = "[sin récord]",
 
 	["2124486274"] = "Hazle una broma al creador", -- Prank the creator
 	["1803533030753957"] = "Agujero Negro",
 	["2124480173"] = "Malicia de Wicked",
 	["2124480172"] = "Truco de Joker",
-	["2124637294"] = "Voyage de Drifter",
+	["2124637294"] = "Viaje de Drifter",
 	["2124517579"] = "Robo de Thief",
 	["4464785885277417"] = "Torce de Splicer",
 	["2124480174"] = "Orden de Keeper",
@@ -220,7 +220,7 @@ module.gui.jukebox = {
 	["endgame"] = "MÚSICA DE VICTORIA",
 	["failed"] = "[error al cargar]",
 	--NEW
-	["off"] = "MUDO",
+	["off"] = "SILENCIADO",
 	--END NEW
 }
 
@@ -425,8 +425,8 @@ module.spells.names = {
 	["splitalt"] = "Partir hacia adelante",
 
 	["twister"] = "Divisor",
-	["splicerevent"] = "Entrelazar",
-	["spliceraltevent"] = "Bisecar",
+	["splicerevent"] = "Entrelazamiento",
+	["spliceraltevent"] = "Bisección",
 
 	--NECROMANCER
 	["createdual"] = "Crear escaleras duales",
@@ -600,8 +600,8 @@ module.spells.descriptions = {
 
 	["hack"] = timed .. "Te deja mecanizar cualquier escalera normal. Si hay algun escalera arriba, va a ser destruido." .. string.format(timedExtra,RankData.HACKER[7].name,"Hackers",RankData.HACKER[3].name),
 	["hackerrigevent"] = rig .. "en escaleras con Hacker Rig. Cuando estas sean activadas, teletransportarán al jugador y a las escaleras a un lugar diferente en el mismo nivel. Solo un jugador será teletransportado. Sube de rango a Reaper para poder caminar en Hacker Rigs sin activarlas.",
-	["hackerevent"] = event .. "Transformar en escaleras mecánicas que vayan hacia arriba o hacia abajo.",
-	["hackeraltevent"] = event .. "Transformar en escaleras mecánicas que vayan hacia arriba.",
+	["hackerevent"] = event .. "Escaleras Mecánicas",
+	["hackeraltevent"] = event .. "Escaleras mecánicas hacia arriba.",
 	["hackermode"] = string.format(mode,"Hacker","Hacker Rig","Escalera Mecánica"),
 	["hackerrefill"] = overload,
 	["hackerunion"] =  union,
@@ -632,8 +632,8 @@ module.spells.descriptions = {
 
 	["splitter"] = timed .. "Te permite crear cuantas portales de plataformas quieras por 1 minuto." .. string.format(timedExtra,RankData.ARCHON[7].name,"Archons",RankData.ARCHON[3].name), 
 	["archonrigevent"] = rig .. "en escaleras con Archon Rig. Cuando estas sean activadas, teletransportarán al jugador en la dirección en la que esté caminando, cruzando en medio de las escaleras en el camino. Después de ser activadas, las escaleras se volverán normales.",
-	["archonevent"] = event .. "Crear portales aleatorias.",
-	["archonaltevent"] = event .. "Crear portales que vayan hacia arriba.",
+	["archonevent"] = event .. "Portales aleatoria.",
+	["archonaltevent"] = event .. "Portal vertical.",
 	["archonmode"] = string.format(mode,"Archon","Archon Rig","División Aleatoria"),
 	["archonrefill"] = overload,
 	["archonunion"] =  union,
@@ -680,8 +680,8 @@ module.spells.descriptions = {
 
 	["twister"] = timed .. "Te permite dividir cualquier escalera durante un minuto. Variante del hechizo va a estar elegido automáticamente" .. string.format(timedExtra,RankData.SPLICER[7].name,"Splicers",RankData.SPLICER[3].name), 
 	["splicerrigevent"] = rig .. "en escaleras con Splicer Rig. Cuando estas sean activadas, empalmará en un dirección aleatoria. Sube tu rango a Assembler para poder tener immunidad a ese rig.",
-	["splicerevent"] = event .. "Empalmar Aleatoriamente.",
-	["spliceraltevent"] = event .. "Partir escaleras hacia adelante",
+	["splicerevent"] = event .. "Empalmar aleatoriamente.",
+	["spliceraltevent"] = event .. "Partir hacia adelante",
 	["splicermode"] = string.format(mode,"Splicer","Splicer Rig","Empalmar Aleatoriamente"),
 	["splicerrefill"] = overload,
 	["splicerunion"] = union,
@@ -1012,10 +1012,10 @@ module.gui.gameover.results = {
 	["time"] = "TIEMPO",
 	["climbs"] = "ESCALADAS OBTENIDAS",
 	["tokens"] = "MONEDAS OBTENIDAS",
-	["rank"] = "TU RANGO ACTUAL",
+	["rank"] = "RANGO ACTUAL",
 
 	--NEW
-	["role"] = "TU RANGO UNIVERSAL",
+	["role"] = "RANGO UNIVERSAL",
 	["classic"] = "RÉCORD DE TORRE",	
 	["pro"] = "RÉCORD DE TORRE",	
 	["infinite"] = "RÉCORD DE TORRE",
@@ -1135,7 +1135,7 @@ module.gui.gameover.messages = {
 		"Escaleras mecanicas de por vida",
 	},
 	["HERETIC"] = {
-		"NO VAS A PASAR!",
+		"¡NO VAS A PASAR!",
 		"Banear la magia es como banear la diversión",
 		"Posee a la gente. Manten a el Overmind satisfecho.",
 		"Muerte y caida",
@@ -1276,7 +1276,7 @@ module.gui.gameover.credits = {
 	["disco"] = "Escaleras Disco",
 	["elevator"] = "Plataformas de Drifter", --drifter platforms
 	["crazies"] = "Escaleras Locas (hechizo)", --gremlin crazy stairs music
-	["finish"] = "Gracias por jugar!",
+	["finish"] = "¡Gracias por jugar!",
 
 }
 
@@ -1372,7 +1372,7 @@ module.static = {
 	["oasis_4"] = "'Soy muy perezoso para tener mis propios hechizos'\nnuestro fundador",
 
 	["nexus_1"] = "NEXUS DE HERETIC",
-	["nexus_2"] = "NUESTRO LEMA:\nNO\nVAS\nA\nPASAR!",
+	["nexus_2"] = "NUESTRO LEMA:\n¡NO\nVAS\nA\nPASAR!",
 	["nexus_3"] = "PROS:\nMejor en la Torre Pro\nNo puede ser detenido\nCONTRAS:\nUsarlo para equipos de dificil\nRequiere bastante mana",
 	["nexus_4"] = "'Banear la magia es como banear la diversión'\nnuestro fundador",
 
@@ -1386,7 +1386,7 @@ module.static = {
 	["nether_3"] = "PROS:\nHechizos rápidos\nPerfecto para jugar solo\nCONTRAS:\nCuesta Robux\nNo recomendado para equipos",
 	["nether_4"] = "'Claro que teletransportarse es seguro'\nnuestro fundador (DESAPARECIDO)",
 
-	["study_1"] = "ESTUDIO DE ARCHON",
+	["study_1"] = "ESCUELA DE ARCHON",
 	["study_2"] = "NUESTRO LEMA:\nABRIR\nPORTAL\n???\nAPROVECHAR",
 	["study_3"] = "PROS:\nRigs útiles\nConfunde a los oponentes\nCONTRAS:\nEl más dificil de aprender\nRequiere planeación",
 	["study_4"] = "'Antes reinaba esta torre'\nnuestro fundador",
@@ -1751,8 +1751,8 @@ module.serverfeedback = {
 	["cancelfirst"] = "Necesitas cancelar tu hechizo actual primero",
 	["stashfull"] = "Tu reserva de escaleras esta llena",
 	["stashempty"] = "Necesitas robar escaleras para usar este hechizo",
-	["ultwait"] = "Otro hechizo ultimatum esta en progreso. Por favor espera",
-	["notdefault"] = "Los drones deben estar en modo por defecto primero. Por favor espera",
+	["ultwait"] = "Otro hechizo ultimatum está en progreso, por favor espera",
+	["notdefault"] = "Los drones deben estar en modo por defecto primero, por favor espera",
 	["noreshuffle"] = "Escoge el modo barajar primero",
 	["oneoverload"] = "Ya tienes Sobrecarga de Mana activada",
 	["cursed"] = "Estas escaleras son hechizadas",
@@ -1777,8 +1777,8 @@ module.serverfeedback = {
 	["notfound"] = "Escaleras no encontradas",
 	["nocursedblink"] = "No puedes usar destello alrededor de las escaleras hechizadas",
 	["nostairs"] = "No hay escaleras aqui",
-	["noground"] = "Este hechizo no puede se puede usar en nivel del suelo",
-	["oddonly"] = "Este hechizo no puede se puede usar en este nivel",
+	["noground"] = "Este hechizo no se puede usar en nivel del suelo",
+	["oddonly"] = "Este hechizo no se puede usar en este nivel",
 	["noabove"] = "Escaleras directamente arriba no encontradas",
 	["lock"] = "No puedes usar hechizos ahora",
 	--["outdrift"] = "Outside drift can only be created on the outer platforms.", --removed
@@ -2200,7 +2200,7 @@ module.gui.mana = {
 	["circus"] = "CIRCO",
 	["shelter"] = "REFUGIO",
 	["haven"] = "PARAÍSO",
-	["study"] = "ESTUDIO",
+	["study"] = "ESCUELA",
 	["nether"] = "NETHER",
 	["guild"] = "GREMIO",
 	["nexus"] = "NEXUS",
